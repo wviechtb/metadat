@@ -1,6 +1,6 @@
 # `metadat`
 
-[![cran version](https://www.r-pkg.org/badges/version-ago/pavo)](https://cran.r-project.org/package=pavo/)
+[![cran version](https://www.r-pkg.org/badges/version-ago/metadat)](https://cran.r-project.org/package=metadat/)
 
 ## Meta-analytic datasets for R
 
