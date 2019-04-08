@@ -18,4 +18,3 @@ Meta-analytic datasets for R
 - [ ] port over existing datasets
 - [ ] document/describe the workflow (raw -> clean data) and add contributor guidelines
 - [ ] tests for contributions via PR
-- [ ] 
