@@ -1,12 +1,30 @@
 # `metadat`
 
-Meta-analytic datasets for R
+[![cran version](https://www.r-pkg.org/badges/version-ago/pavo)](https://cran.r-project.org/package=pavo/)
 
-## Contributing data
+## Meta-analytic datasets for R
+
+### Installation
+
+To download the development version of `metadat`, you can:
+
+* use the [`remotes`](https://github.com/r-lib/remotes) package:
+
+```r
+# install.packages("remotes")
+remotes::install_github("wviechtb/metadat")
+```
+
+* download files from GitHub and install using `$R CMD INSTALL` or, from within R:
+
+```r
+install.packages(path, type = "source", repos = NULL)
+```
+
+### Contributing data
 
 
-
-## todo
+### todo
 
 - [X] create todo
 - [ ] naming scheme
