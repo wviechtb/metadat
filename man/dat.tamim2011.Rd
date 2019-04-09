@@ -30,6 +30,13 @@ Second-Order Meta-Analysis and Validation Study. \emph{Review of Educational Res
 ### copy data into 'dat' and examine data
 dat <- dat.tamim2011
 dat
+if(require(metafor)){
+	# fit a random-effects meta-analysis
+	REMA<-rma(yi = yi, sei=sei, data=dat)
+	summary(REMA)
+	forest(REMA)
+}
+
 }
 \keyword{datasets}
 \concept{sociology}
