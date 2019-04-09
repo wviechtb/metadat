@@ -49,14 +49,14 @@
 \details{
 A meta-analysis of the effects of early-life dietary restriction on longevity. The data come studies in a range of species, where one group experiences a dietary restriction (quantity and/or quality, usually protein and/or calorie restrictions) early in life, and the other (control group) is given an unrestricted diet (often ad libitum food access).
 
-Longevity was quantified in two different ways in the primary literature, either as survival curves, or as average life-span, which were thus analysed in two analyses using two effect sizes were used, the log hazard ratio (lnHR), and standardized mean difference, (dat.english2016.1 and dat.english2016.2) respectively. In the case of the lnHR data the effect size has been pre-computed. There can be more than one effect size per-study, depending on the experimental design. dat.english2016.2 was re-analysed in Senior, Nakagawa, Raubenheimer, Simpson & Noble. 2017. Dietary restriction increases variability in longevity. Biology Letters, 13, 3.  
+Longevity was quantified in two different ways in the primary literature, either as survival curves, or as average life-span, which were thus analysed in two analyses using two effect sizes were used, the log hazard ratio (lnHR), and standardized mean difference, (dat.english2016.1 and dat.english2016.2) respectively. In the case of the lnHR data the effect size has been pre-computed. There can be more than one effect size per-study, depending on the experimental design. dat.english2016.2 was re-analysed in Senior, Nakagawa, Raubenheimer, Simpson & Noble. 2017. Dietary restriction increases variability in longevity. Biology Letters, 13, 3.
 }
 \source{
 English, S. & Uller, T. (2018). Does early-life diet affect longevity? A meta-analysis across experimental studies. \emph{Biology Letters}, \bold{12}, 9.
 }
 \examples{
   ### copy data into 'dat' and examine data
-  dat <- dat.english2016
+  dat <- dat.english2016.1
   dat
 }
 \keyword{datasets}

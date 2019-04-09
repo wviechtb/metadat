@@ -1,5 +1,7 @@
 prep_data <- function(rebuild=FALSE, overwrite=NULL) {
 
+   cat("\n")
+
    ### load .rfiles.txt (that already exist)
    .rfiles <- read.table("data-raw/.rfiles.txt", header=FALSE, as.is=TRUE)[[1]]
 
@@ -38,11 +40,16 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
       ### [rda]: paste T/F if the rda files already exist or not
       cat(ifelse(rda.files.exist, "T    ", "F    "))
 
-      ### if rebuild=TRUE or if the rda files do not exist, process the data preparation script
-      ### [Build]: paste T/F if the data processing script is run
+      ### if rebuild=TRUE or if the rda files do not exist, try running the data preparation script
+      ### [Build]: paste T/F if the data processing script was run (without error)
       if (rebuild || !rda.files.exist) {
-         cat("T      ")
-         source(rfiles[i])
+         rfilerun <- try(source(paste0("data-raw/", rfiles[i])), silent=TRUE)
+         if (inherits(rfilerun, "try-error")) {
+            warning("Error while running ", rfiles[i], ".", call.=FALSE)
+            cat("F      ")
+         } else {
+            cat("T      ")
+         }
       } else {
          cat("F      ")
       }
@@ -64,7 +71,7 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
          cat("F   ")
       }
 
-      ### if it doesn't exist or if it is part of 'overwrite', create template <root>.Rd file
+      ### if it doesn't exist or if it is in 'overwrite' vector, create template <root>.Rd file
       ### [Create]: paste T/F if template <root>.Rd file is created
       if (!rd.exists || paste0(root, ".Rd") %in% overwrite) {
          cat("T      ")
@@ -77,20 +84,14 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
 
    }
 
-   ### make sure every .rda file in 'data' is in lower case
-   #for (i in seq_along(rfiles)) {
-   #
-   #}
+   ### make sure every .rda file in 'data' is lower case
+   for (i in seq_along(data.files)) {
+      file.rename(paste0("data/", data.files[i]), paste0("data/", tolower(data.files[i])))
+   }
 
+   ### write updated .rfiles.txt file to 'data-raw' directory
    write.table(rfiles, file="data-raw/.rfiles.txt", row.names=FALSE, col.names=FALSE)
 
-}
-
-### this is just for testing purposes; ignore
-
-if (T) {
-
-setwd("/home/wviechtb/work/meta_analysis/metadat/repo")
-prep_data()
+   cat("\n")
 
 }
