@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-dat.xia2008<- read.csv("/data-raw/dat.xia2008.csv", encoding = "UTF-8")
-=======
 dat.xia2008<- read.csv("data-raw/dat.xia2008.csv", encoding = "UTF-8")
->>>>>>> 4ddb555d9265392406dbb938363fc80b7471a171
 dat.xia2008$Seed.plant.Spore.plant<-as.character(dat.xia2008$Seed.plant.Spore.plant)
 dat.xia2008$Seed.plant.Spore.plant[which(dat.xia2008$Seed.plant.Spore.plant == "SporePlant")]<-"Sporeplant"
 dat.xia2008$Seed.plant.Spore.plant<-as.factor(dat.xia2008$Seed.plant.Spore.plant)
