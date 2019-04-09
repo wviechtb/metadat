@@ -46,3 +46,4 @@ dat
 \concept{ecology}
 \concept{plant}
 \concept{standardized mean difference}
+\concept{non-independence}
