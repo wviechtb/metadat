@@ -43,3 +43,6 @@ dat <- dat.xia2008
 dat
 }
 \keyword{datasets}
+\concept{ecology}
+\concept{plant}
+\concept{standardized mean difference}
