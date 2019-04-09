@@ -1,12 +1,20 @@
 
-rd_generator <- function(data, dir = getwd(), overwrite = FALSE) { 
+rd_generator <- function(dir = getwd(), overwrite = FALSE) { 
   
-  names <- get_studies()
+  # List the study data
+  study_names <- get_studies(dir)
   
+  # Check what documentation currently exists
+  doc_names <- get_existing_rd(dir)
   
+  # Keep names of data files that do not have documentation
+  names <- setdiff(study_names, doc_names)
+  
+  # Loop through undocumented data an created templace documentation
   for(i in names){
     
-  }
+  # Load data
+  data <- get(load(paste0(dir, '/data/', names[i], '.rda')))
   
   # check data frame
   if (class(data) != "data.frame") {
@@ -27,6 +35,9 @@ rd_generator <- function(data, dir = getwd(), overwrite = FALSE) {
   
   close(con)
   
+  }
+  
+  
 }
 
 get_studies <- function(dir = getwd()) {
@@ -37,6 +48,16 @@ get_studies <- function(dir = getwd()) {
   study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
 
   return(study.names)
+}
+
+get_existing_rd <- function(dir = getwd()) {
+  # List data files
+  files <- list.files(paste0(dir, "/man/"))
+  
+  # Get unique studies
+  doc.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
+  
+  return(doc.names)
 }
 
 # Generate preamble
