@@ -36,5 +36,11 @@
 ### copy data into 'dat' and examine data
 dat <- dat.bangertdrowns2004
 dat
+
+### random-effects model
+if (require(metafor)) {
+res <- rma(yi, vi, data=dat)
+res
+}
 }
 \keyword{datasets}
