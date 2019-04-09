@@ -2,10 +2,8 @@
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   
   # Check if it's a single file being specified (otherwise it's a directory, as default)
-  #single_file <- ifelse(grepl(".rda", dir, ignore.case = TRUE), TRUE, FALSE)
 
   # List the study data
-  #study_names <- ifelse(single_file, tools::file_path_sans_ext(dir), get_studies(dir))
   study_names <- get_studies(dir)
 
   if(!overwrite){
@@ -48,8 +46,8 @@ get_studies <- function(dir = getwd()) {
   files <- list.files(paste0(dir, "/data/"))
 
   # Get unique studies
-  #study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
-  study.names <- unique(tools::file_path_sans_ext(files))
+  study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
+  #study.names <- unique(tools::file_path_sans_ext(files))
 
   return(study.names)
 }
