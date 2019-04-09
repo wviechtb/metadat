@@ -1,4 +1,4 @@
-dat.xia2008<- read.csv("data-raw/dat.xia2008.csv", encoding = "UTF-8")
+dat.xia2008<- read.csv("data-raw/dat.xia2008.csv")
 dat.xia2008$Seed.plant.Spore.plant<-as.character(dat.xia2008$Seed.plant.Spore.plant)
 dat.xia2008$Seed.plant.Spore.plant[which(dat.xia2008$Seed.plant.Spore.plant == "SporePlant")]<-"Sporeplant"
 dat.xia2008$Seed.plant.Spore.plant<-as.factor(dat.xia2008$Seed.plant.Spore.plant)
@@ -35,4 +35,5 @@ names(dat.xia2008)[10]<-"Tissue_type"
 names(dat.xia2008)[19]<-"N_amount_g.m.2yr.1"
 dat.xia2008[,c(1:10, 17, 18)]<-data.frame(lapply(dat.xia2008[,c(1:10, 17, 18)], as.character), stringsAsFactors=FALSE)
 dat.xia2008<-dat.xia2008[,-dim(dat.xia2008)[2]]
+Encoding(dat.xia2008$Reference)<-"latin1"
 save(dat.xia2008, file="data/dat.xia2008.rda", ascii=FALSE)
