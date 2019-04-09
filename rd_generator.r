@@ -1,43 +1,38 @@
 
-rd_generator <- function(dir = getwd(), overwrite = FALSE) { 
-  
+rd_generator <- function(dir = getwd(), overwrite = FALSE) {
+
   # List the study data
   study_names <- get_studies(dir)
-  
+
   # Check what documentation currently exists
   doc_names <- get_existing_rd(dir)
-  
+
   # Keep names of data files that do not have documentation
   names <- setdiff(study_names, doc_names)
-  
+
   # Loop through undocumented data an created templace documentation
-  for(i in names){
-    
-  # Load data
-  data <- get(load(paste0(dir, '/data/', names[i], '.rda')))
-  
-  # check data frame
-  if (class(data) != "data.frame") {
-    stop(" Data is not a dataframe")
+  for (i in names) {
+
+    # Load data
+    data <- get(load(paste0(dir, "/data/", names[i], ".rda")))
+
+    # Check it's a data frame
+    if (class(data) != "data.frame") {
+      stop(" Data is not a dataframe")
+    }
+
+    # Generate documentation sections
+    preamble <- preamble_table(names[i])
+    meta_dat_table2 <- meta_dat_table(data)
+    postamble <- postamble_table(names[i])
+
+    # Output
+    con <- try(file(file.path(paste0(dir, "/man/"), paste0(names[i], ".Rd")), "w"))
+    write.table(preamble, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(meta_dat_table2, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(postamble, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    close(con)
   }
-  
-  preamble <- preamble_table("dat.valstad2017")
-  meta_dat_table2 <- meta_dat_table(data)
-  postamble <- postamble_table("dat.valstad2017")
-  
-  # Output
-  names <- get_studies()
-  con <- try(file(file.path(dir, paste0(names[1], ".Rd")), "w"))
-  
-  write.table(preamble, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-  write.table(meta_dat_table2, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-  write.table(postamble, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-  
-  close(con)
-  
-  }
-  
-  
 }
 
 get_studies <- function(dir = getwd()) {
@@ -53,10 +48,10 @@ get_studies <- function(dir = getwd()) {
 get_existing_rd <- function(dir = getwd()) {
   # List data files
   files <- list.files(paste0(dir, "/man/"))
-  
-  # Get unique studies
+
+  # Get unique documentation
   doc.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
-  
+
   return(doc.names)
 }
 
@@ -70,7 +65,7 @@ preamble_table <- function(study.name) {
   use <- paste0("\\usage{", study.name, "}")
   format <- "\\format{The data frame contains the following columns:"
   tabular <- "\\tabular{lll}{"
-  
+
   return(rbind(name, docType, alias, title, descrp, use, format, tabular))
 }
 
@@ -97,4 +92,3 @@ postamble_table <- function(study.name) {
 
   return(rbind(closer, closer, details, source, examples1, examples2, examples3, examples4, closer, keywords))
 }
-
