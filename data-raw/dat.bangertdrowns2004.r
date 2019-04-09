@@ -1,4 +1,4 @@
-dat.bangertdrowns2004 <- read.table("dat.bangertdrowns2004.txt", header=TRUE, stringsAsFactors=FALSE)
+dat.bangertdrowns2004 <- read.table("data-raw/dat.bangertdrowns2004.txt", header=TRUE, stringsAsFactors=FALSE)
 names(dat.bangertdrowns2004)[5] <- "Ni"
 dat.bangertdrowns2004$ni <- dat.bangertdrowns2004$Ni
 dat.bangertdrowns2004$Ni <- NULL
@@ -11,4 +11,4 @@ attr(dat.bangertdrowns2004, "vi.names") <- "vi"
 attr(dat.bangertdrowns2004$yi, "measure") <- "SMD"
 attr(dat.bangertdrowns2004$yi, "ni") <- dat.bangertdrowns2004$ni
 class(dat.bangertdrowns2004) <- c("escalc", "data.frame")
-save(dat.bangertdrowns2004, file="../data/dat.bangertdrowns2004.rda", ascii=FALSE)
+save(dat.bangertdrowns2004, file="data/dat.bangertdrowns2004.rda", ascii=FALSE)
