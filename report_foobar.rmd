@@ -1,0 +1,11 @@
+\name{dat.valstad2017}
+\docType{data}
+\alias{dat.valstad2017}
+\title{ }
+\description{ }
+\usage{dat.valstad2017}
+\format{The data frame contains the following columns:
+\tabular{lll}{
+\bold{x} \tab \code{integer} \tab \cr
+\bold{y} \tab \code{factor} \tab \cr
+\bold{z} \tab \code{integer} \tab \cr
