@@ -40,7 +40,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   }
 }
 
-get_studies <- function(dir = getwd()) {
+get_studies <- function(dir) {
   
   # List data files
   files <- list.files(paste0(dir, "/data/"))
@@ -52,7 +52,8 @@ get_studies <- function(dir = getwd()) {
   return(study.names)
 }
 
-get_existing_rd <- function(dir = getwd()) {
+
+get_existing_rd <- function(dir) {
   
   # List data files
   files <- list.files(paste0(dir, "/man/"))
@@ -62,6 +63,7 @@ get_existing_rd <- function(dir = getwd()) {
 
   return(doc.names)
 }
+
 
 # Generate preamble
 preamble_table <- function(study.name) {
