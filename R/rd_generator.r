@@ -1,5 +1,4 @@
 
-
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   
   # List the study data
