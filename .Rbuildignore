@@ -4,3 +4,5 @@
 ^docs$
 ^vignettes/pkgdown$
 ^data-raw$
+^.*\.Rproj$
+^\.Rproj\.user$
