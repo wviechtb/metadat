@@ -6,7 +6,6 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   primary_study_names <- get_studies(dir, full = FALSE)
   
   if(!overwrite){
-    
     # Check what documentation currently exists
     doc_names <- get_existing_rd(dir)
     
@@ -15,13 +14,10 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
     all_study_names <- unlist(apply(as.data.frame(primary_study_names), 1, function(x) grep(x, all_study_names, value = TRUE)))
   }
   
-  # Loop through undocumented data and created templace documentation
-  for (i in primary_study_names) {
+  # Loop through undocumented data and created template documentation
+  for (i in 1:length(primary_study_names)) {
 
-    full_study_names <- unlist(apply(as.data.frame(primary_study_names[i]), 1, function(x) grep(x, all_study_names, value = TRUE)))
-    
-    # Load all data into a list
-    data <- lapply(full_study_names, function(x) get(load(paste0(dir, "/data/", x, ".rda"))))
+    full_study_names <- unlist(lapply(primary_study_names, function(x) grep(x, all_study_names, value = TRUE)))
     
     # Open new file connection
     con <- try(file(file.path(paste0(dir, "/man/"), paste0(primary_study_names[i], ".Rd")), "w"))
@@ -29,16 +25,19 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
     # Write the single preamble
     write.table(preamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
     
-    for(j in length(data)){
+    for(j in 1:length(full_study_names)){
+      
+      # Load data
+      data <- get(load(paste0(dir, "/data/", as.character(full_study_names[[j]]), ".rda")))
       
       # Check it's a data frame
-      if (class(data[[j]]) != "data.frame") {
+      if (class(data) != "data.frame") {
         stop(" Data is not a dataframe")
       }
       
       # Write the meta-data table
       write.table(tabular(full_study_names[j]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-      write.table(meta_dat_table(data[[j]]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+      write.table(meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
     }
     
     # Write the postamble
@@ -50,6 +49,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   
 }
 
+# List available .rda files
 get_studies <- function(dir, full = TRUE) {
   
   # List data files
@@ -64,6 +64,7 @@ get_studies <- function(dir, full = TRUE) {
   return(study.names)
 }
 
+# List existing documentation files
 get_existing_rd <- function(dir) {
   
   # List data files
@@ -93,8 +94,7 @@ tabular <- function(study.name){
       return(data.frame(rbind(format, tabular), stringsAsFactors = FALSE))
 }
 
-
-## Generate metadata table
+# Generate metadata table
 meta_dat_table <- function(data) {
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
