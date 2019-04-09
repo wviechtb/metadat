@@ -45,6 +45,9 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
     # Close the file connection
     close(con)
+    
+    # Output message
+    message(paste0("Built ", primary_study_names[i], ".Rd"))
   }
 }
 
