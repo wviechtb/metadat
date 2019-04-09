@@ -37,7 +37,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
       # Write the meta-data table
       write.table(tabular(full_study_names[j]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-      write.table(meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+      write.table(meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
     }
 
     # Write the postamble
@@ -84,25 +84,28 @@ preamble_table <- function(study.name) {
   name <- paste0("\\name{", study.name, "}")
   docType <- "\\docType{data}"
   alias <- paste0("\\alias{", study.name, "}")
-  title <- "\\title{ }"
-  descrp <- "\\description{ }"
+  title <- "\\title{ADD_TITLE}"
+  descrp <- "\\description{ADD_DESCRIPTION}"
   use <- paste0("\\usage{", study.name, "}")
-  return(data.frame(rbind(name, docType, alias, title, descrp, use), stringsAsFactors = FALSE))
+  format <- paste0("\\format{")
+  return(data.frame(rbind(name, docType, alias, title, descrp, use, format), stringsAsFactors = FALSE))
 }
 
 # Generate table start
 tabular <- function(study.name) {
-  format <- paste0("\\format{The data frame ", study.name, " contains the following columns:")
+  info <- paste0("The data frame ", study.name, " contains the following columns:")
   tabular <- "\\tabular{lll}{"
-  return(data.frame(rbind(format, tabular), stringsAsFactors = FALSE))
+  return(data.frame(rbind(info, tabular), stringsAsFactors = FALSE))
 }
 
 # Generate metadata table
 meta_dat_table <- function(data) {
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
-  descrp <- rep(paste0("\\tab", " ", "\\cr"), length = length(variables))
+  descrp <- rep(paste0("\\tab", " ADD_DESCRIPTION ", "\\cr"), length = length(variables))
+  closer <- c("}", NA, NA)
   meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
+  meta_dat_table <- rbind(meta_dat_table, closer)
 
   return(data.frame(meta_dat_table, stringsAsFactors = FALSE))
 }
@@ -110,13 +113,14 @@ meta_dat_table <- function(data) {
 # Generate postamble
 postamble_table <- function(study.name) {
   closer <- "}"
-  details <- "\\details{ }"
-  source <- "\\source{ }"
+  details <- "\\details{ADD_DETAILS}"
+  source <- "\\source{ADD_REFERENCE}"
   examples1 <- "\\examples{"
   examples2 <- "### copy data into 'dat' and examine data"
   examples3 <- paste0("dat <- ", study.name)
   examples4 <- "dat"
-  keywords <- "\\keywords{datasets}"
+  keyword <- "\\keyword{datasets}"
+  concept <- "\\concept{ADD_CONCEPT}"
 
-  return(data.frame(rbind(closer, closer, details, source, examples1, examples2, examples3, examples4, closer, keywords)))
+  return(data.frame(rbind(closer, details, source, examples1, examples2, examples3, examples4, closer, keyword, concept)))
 }

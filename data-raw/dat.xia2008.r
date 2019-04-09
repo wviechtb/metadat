@@ -35,5 +35,7 @@ names(dat.xia2008)[10]<-"Tissue_type"
 names(dat.xia2008)[19]<-"N_amount_g.m.2yr.1"
 dat.xia2008[,c(1:10, 17, 18)]<-data.frame(lapply(dat.xia2008[,c(1:10, 17, 18)], as.character), stringsAsFactors=FALSE)
 dat.xia2008<-dat.xia2008[,-dim(dat.xia2008)[2]]
-Encoding(dat.xia2008$Reference)<-"latin1"
+dat.xia2008$Reference[which(dat.xia2008$Reference == "\xf8ien DI 2004")]<-"Oien DI 2004"
+dat.xia2008$Reference[which(dat.xia2008$Reference == "L\xd9scher A et al. 2000")]<-"Luscher A et al. 2000"
+dat.xia2008$Reference[which(dat.xia2008$Reference == "L\xcdHirondelle SJ 1992")]<-"LiHirondelle SJ 1992"
 save(dat.xia2008, file="data/dat.xia2008.rda", ascii=FALSE)

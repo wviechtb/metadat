@@ -5,6 +5,7 @@ Title: Meta-Analysis Datasets
 Authors@R: c(person(given = "Wolfgang", family = "Viechtbauer", role = c("aut","cre"), email = "wvb@metafor-project.org", comment = c(ORCID = "0000-0003-3463-4063")), person(given = "Daniel", family="Noble", role="aut", email = ""), person(given = "Thomas", family="White", role="aut", email = ""), person(given = "Alistair", family="Senior", role="aut", email = ""))
 Depends: R (>= 3.2.0)
 Imports: utils, tools
+Suggests: metafor
 Description: A collection of meta-analytic datasets.
 License: GPL (>=2)
 ByteCompile: TRUE
