@@ -85,13 +85,13 @@ meta_dat_table <- function(data) {
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
   descrp <- rep(paste0("\\tab", " ", "\\cr"), length = length(variables))
   meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
-
+ closer <- "}"
   return(meta_dat_table)
 }
 
 # Generate postamble
 postamble_table <- function(study.name) {
-  closer <- "}"
+   closer <- "}"
   details <- "\\details{ }"
   source <- "\\source{ }"
   examples1 <- "\\examples{"
