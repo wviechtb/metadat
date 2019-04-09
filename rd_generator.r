@@ -1,20 +1,27 @@
 
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
+  
+  # Check if it's a single file being specified (otherwise it's a directory, as default)
+  #single_file <- ifelse(grepl(".rda", dir, ignore.case = TRUE), TRUE, FALSE)
 
   # List the study data
+  #study_names <- ifelse(single_file, tools::file_path_sans_ext(dir), get_studies(dir))
   study_names <- get_studies(dir)
 
-  # Check what documentation currently exists
-  doc_names <- get_existing_rd(dir)
-
-  # Keep names of data files that do not have documentation
-  names <- setdiff(study_names, doc_names)
-
+  if(!overwrite){
+    
+    # Check what documentation currently exists
+    doc_names <- get_existing_rd(dir)
+    
+    # Keep names of data files that do not have documentation
+    study_names <- setdiff(study_names, doc_names)
+  }
+  
   # Loop through undocumented data an created templace documentation
-  for (i in names) {
+  for (i in study_names) {
 
     # Load data
-    data <- get(load(paste0(dir, "/data/", names[i], ".rda")))
+    data <- get(load(paste0(dir, "/data/", study_names[i], ".rda")))
 
     # Check it's a data frame
     if (class(data) != "data.frame") {
@@ -22,9 +29,9 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
     }
 
     # Generate documentation sections
-    preamble <- preamble_table(names[i])
+    preamble <- preamble_table(study_names[i])
     meta_dat_table2 <- meta_dat_table(data)
-    postamble <- postamble_table(names[i])
+    postamble <- postamble_table(study_names[i])
 
     # Output
     con <- try(file(file.path(paste0(dir, "/man/"), paste0(names[i], ".Rd")), "w"))
@@ -36,16 +43,19 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 }
 
 get_studies <- function(dir = getwd()) {
+  
   # List data files
   files <- list.files(paste0(dir, "/data/"))
 
   # Get unique studies
-  study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
+  #study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
+  study.names <- unique(tools::file_path_sans_ext(files))
 
   return(study.names)
 }
 
 get_existing_rd <- function(dir = getwd()) {
+  
   # List data files
   files <- list.files(paste0(dir, "/man/"))
 
