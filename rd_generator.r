@@ -73,19 +73,23 @@ preamble_table <- function(study.name) {
   title <- "\\title{ }"
   descrp <- "\\description{ }"
   use <- paste0("\\usage{", study.name, "}")
-  format <- "\\format{The data frame contains the following columns:"
-  tabular <- "\\tabular{lll}{"
-
-  return(rbind(name, docType, alias, title, descrp, use, format, tabular))
+  return(rbind(name, docType, alias, title, descrp, use))
 }
+
+tabular <- function(data){
+    format <- paste0("\\format{The data frame ",  data, " contains the following columns:")
+    tabular <- "\\tabular{lll}{"
+    return(rbind(format, tabular))
+}
+
 
 ## Generate metadata table
 meta_dat_table <- function(data) {
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
   descrp <- rep(paste0("\\tab", " ", "\\cr"), length = length(variables))
-  meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
- closer <- "}"
+
+  meta_dat_table <- cbind(format, tabular, variables, type, descrp, deparse.level = 0)
   return(meta_dat_table)
 }
 
