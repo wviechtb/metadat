@@ -5,12 +5,6 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
    #rfiles <- rfiles[rfiles != "prep_data.r"]
    #rfiles
 
-   ### change working directory to 'data-raw'
-   setwd("data-raw")
-
-   ### change working directory back to root on exit
-   on.exit(setwd(".."))
-
    cat("File", paste0(rep(" ", max(nchar(rfiles))-4), collapse=""), "New", "Build", "\n")
    cat(paste0(rep("-", max(nchar(rfiles))), collapse=""), "-----------", "\n", sep="")
 
@@ -22,7 +16,7 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
 
       ### list all .rda files in the 'data' directory
       ### TODO: do we need to do this within the loop?
-      rda.files <- list.files(path="../data/")
+      rda.files <- list.files(path="data")
 
       ### grep for all root.<anything>.rda files
       rda.files <- grep(paste0("^", root, ".*.rda"), rda.files, value=TRUE)
