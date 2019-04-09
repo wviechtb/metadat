@@ -1,57 +1,69 @@
 
+
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   
-  # Check if it's a single file being specified (otherwise it's a directory, as default)
-
   # List the study data
-  study_names <- get_studies(dir)
-
+  all_study_names <- get_studies(dir, full = TRUE)
+  primary_study_names <- get_studies(dir, full = FALSE)
+  
   if(!overwrite){
     
     # Check what documentation currently exists
     doc_names <- get_existing_rd(dir)
     
     # Keep names of data files that do not have documentation
-    study_names <- setdiff(study_names, doc_names)
+    primary_study_names <- setdiff(primary_study_names, doc_names)
+    all_study_names <- unlist(apply(as.data.frame(primary_study_names), 1, function(x) grep(x, all_study_names, value = TRUE)))
   }
   
-  # Loop through undocumented data an created templace documentation
-  for (i in study_names) {
+  # Loop through undocumented data and created templace documentation
+  for (i in primary_study_names) {
 
-    # Load data
-    data <- get(load(paste0(dir, "/data/", study_names[i], ".rda")))
-
-    # Check it's a data frame
-    if (class(data) != "data.frame") {
-      stop(" Data is not a dataframe")
+    full_study_names <- unlist(apply(as.data.frame(primary_study_names[i]), 1, function(x) grep(x, all_study_names, value = TRUE)))
+    
+    # Load all data into a list
+    data <- lapply(full_study_names, function(x) get(load(paste0(dir, "/data/", x, ".rda"))))
+    
+    # Open new file connection
+    con <- try(file(file.path(paste0(dir, "/man/"), paste0(primary_study_names[i], ".Rd")), "w"))
+    
+    # Write the single preamble
+    write.table(preamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    
+    for(j in length(data)){
+      
+      # Check it's a data frame
+      if (class(data[[j]]) != "data.frame") {
+        stop(" Data is not a dataframe")
+      }
+      
+      # Write the meta-data table
+      write.table(tabular(full_study_names[j]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+      write.table(meta_dat_table(data[[j]]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
     }
+    
+    # Write the postamble
+    write.table(postamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
-    # Generate documentation sections
-    preamble <- preamble_table(study_names[i])
-    meta_dat_table2 <- meta_dat_table(data)
-    postamble <- postamble_table(study_names[i])
-
-    # Output
-    con <- try(file(file.path(paste0(dir, "/man/"), paste0(names[i], ".Rd")), "w"))
-    write.table(preamble, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-    write.table(meta_dat_table2, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-    write.table(postamble, con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    # Close the file connection
     close(con)
   }
+  
 }
 
-get_studies <- function(dir) {
+get_studies <- function(dir, full = TRUE) {
   
   # List data files
   files <- list.files(paste0(dir, "/data/"))
 
   # Get unique studies
-  study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
-  #study.names <- unique(tools::file_path_sans_ext(files))
+  if(full)
+    study.names <- unique(tools::file_path_sans_ext(files))
+  else
+    study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
 
   return(study.names)
 }
-
 
 get_existing_rd <- function(dir) {
   
@@ -64,7 +76,6 @@ get_existing_rd <- function(dir) {
   return(doc.names)
 }
 
-
 # Generate preamble
 preamble_table <- function(study.name) {
   name <- paste0("\\name{", study.name, "}")
@@ -73,13 +84,14 @@ preamble_table <- function(study.name) {
   title <- "\\title{ }"
   descrp <- "\\description{ }"
   use <- paste0("\\usage{", study.name, "}")
-  return(rbind(name, docType, alias, title, descrp, use))
+  return(data.frame(rbind(name, docType, alias, title, descrp, use), stringsAsFactors = FALSE))
 }
 
-tabular <- function(data){
-    format <- paste0("\\format{The data frame ",  data, " contains the following columns:")
+# Generate table start
+tabular <- function(study.name){
+    format <- paste0("\\format{The data frame ",  study.name, " contains the following columns:")
     tabular <- "\\tabular{lll}{"
-    return(rbind(format, tabular))
+      return(data.frame(rbind(format, tabular), stringsAsFactors = FALSE))
 }
 
 
@@ -88,14 +100,14 @@ meta_dat_table <- function(data) {
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
   descrp <- rep(paste0("\\tab", " ", "\\cr"), length = length(variables))
-
-  meta_dat_table <- cbind(format, tabular, variables, type, descrp, deparse.level = 0)
-  return(meta_dat_table)
+  meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
+  
+  return(data.frame(meta_dat_table, stringsAsFactors = FALSE))
 }
 
 # Generate postamble
 postamble_table <- function(study.name) {
-   closer <- "}"
+  closer <- "}"
   details <- "\\details{ }"
   source <- "\\source{ }"
   examples1 <- "\\examples{"
@@ -104,5 +116,6 @@ postamble_table <- function(study.name) {
   examples4 <- "dat"
   keywords <- "\\keywords{datasets}"
 
-  return(rbind(closer, closer, details, source, examples1, examples2, examples3, examples4, closer, keywords))
+  return(data.frame(rbind(closer, closer, details, source, examples1, examples2, examples3, examples4, closer, keywords)))
 }
+
