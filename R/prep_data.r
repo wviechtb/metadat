@@ -1,12 +1,33 @@
-prep_data <- function(rebuild=FALSE, overwrite=NULL) {
+prep_data <- function(rebuild=FALSE, overwrite, pkgdir) {
 
    cat("\n")
 
+   ### if 'pkgdir' argument is unspecified, assume it is the current working directory
+   if (missing(pkgdir)) {
+      pkgdir <- normalizePath(".")
+      cat("Package root directory:", pkgdir, "\n\n")
+   }
+
+   ### check if package root directory actually exists and that it has
+   ### a DESCRIPTION file with "Package: metadat" in the first line
+   if (dir.exists(pkgdir)) {
+      if (!file.exists(paste0(pkgdir, "/DESCRIPTION")))
+         stop("No DESCRIPTION file in the package root directory.")
+      if (readLines(paste0(pkgdir, "/DESCRIPTION"), n=1) != "Package: metadat")
+         stop("DESCRIPTION file in the package root directory is not for the 'metadat' package.")
+   } else {
+      stop("Specified 'pkgdir' directory does not exist.")
+   }
+
+   data_raw.dir <- paste0(pkgdir, "/data-raw/")
+   data.dir     <- paste0(pkgdir, "/data/")
+   man.dir      <- paste0(pkgdir, "/man/")
+
    ### load .rfiles.txt (that already exist)
-   .rfiles <- read.table("data-raw/.rfiles.txt", header=FALSE, as.is=TRUE)[[1]]
+   .rfiles <- read.table(paste0(data_raw.dir, ".rfiles.txt"), header=FALSE, as.is=TRUE)[[1]]
 
    ### get names of all data preparation scripts (.r/.R files) in the 'data-raw' directory
-   rfiles <- list.files(path="data-raw", pattern=".[rR]$")
+   rfiles <- list.files(path=data_raw.dir, pattern=".[rR]$")
 
    ### paste header for output
    cat("File", paste0(rep(" ", max(nchar(rfiles))-4), collapse=""), "new ", "rda ", "build ", "Rd ", "create", "\n")
@@ -29,7 +50,7 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
       root <- substr(rfiles[i], 1, nchar(rfiles[i])-2)
 
       ### get names of all .rda files in the 'data' directory (do we need to do this within the loop?)
-      rda.files <- list.files(path="data", pattern=".rda$")
+      rda.files <- list.files(path=data.dir, pattern=".rda$")
 
       ### grep names of all <root>.<anything>.rda files (could be one or multiple)
       rda.files <- grep(paste0("^", root, ".*.rda"), rda.files, value=TRUE)
@@ -43,7 +64,7 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
       ### if rebuild=TRUE or if the rda files do not exist, try running the data preparation script
       ### [Build]: paste T/F if the data processing script was run (without error)
       if (rebuild || !rda.files.exist) {
-         rfilerun <- try(source(paste0("data-raw/", rfiles[i])), silent=TRUE)
+         rfilerun <- try(source(paste0(data_raw.dir, rfiles[i])), silent=TRUE)
          if (inherits(rfilerun, "try-error")) {
             warning("Error while running ", rfiles[i], ".", call.=FALSE)
             cat("F      ")
@@ -55,14 +76,14 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
       }
 
       ### list all files in the 'data' directory (possibly includes non-.rda files)
-      data.files <- list.files(path="data")
+      data.files <- list.files(path=data.dir)
 
       ### check if there are now any non-.rda files in 'data'; if so, throw an error
       if (any(tools::file_ext(data.files) != "rda"))
          stop("\n\nThere are non-.rda files in the 'data' directory.\nData preparation scripts must create only .rda files.")
 
       ### check if <root>.Rd file exists in 'man' directory
-      rd.exists <- file.exists(paste0("man/", root, ".Rd"))
+      rd.exists <- file.exists(paste0(man.dir, root, ".Rd"))
 
       ### [Rd]: paste T/F if <root>.Rd file exists or not
       if (rd.exists) {
@@ -73,7 +94,7 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
 
       ### if it doesn't exist or if it is in 'overwrite' vector, create template <root>.Rd file
       ### [Create]: paste T/F if template <root>.Rd file is created
-      if (!rd.exists || paste0(root, ".Rd") %in% overwrite) {
+      if (!rd.exists || !missing(overwrite) && paste0(root, ".Rd") %in% overwrite) {
          cat("T      ")
          #genrd(root, rda.files)
       } else {
@@ -85,12 +106,12 @@ prep_data <- function(rebuild=FALSE, overwrite=NULL) {
    }
 
    ### make sure every .rda file in 'data' is lower case
-   for (i in seq_along(data.files)) {
-      file.rename(paste0("data/", data.files[i]), paste0("data/", tolower(data.files[i])))
+   for (data.file in data.files) {
+      file.rename(paste0(data.dir, data.file), paste0(data.dir, tolower(data.file)))
    }
 
    ### write updated .rfiles.txt file to 'data-raw' directory
-   write.table(rfiles, file="data-raw/.rfiles.txt", row.names=FALSE, col.names=FALSE)
+   write.table(rfiles, file=paste0(data_raw.dir, ".rfiles.txt"), row.names=FALSE, col.names=FALSE)
 
    cat("\n")
 
