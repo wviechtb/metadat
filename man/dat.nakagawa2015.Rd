@@ -1,5 +1,6 @@
 \name{dat.nakagawa2015}
 \docType{data}
+\alias{dat.nakagawa2015}
 \alias{dat.nakagawa2015.1}
 \alias{dat.nakagawa2015.2}
 \alias{dat.nakagawa2015.3}
