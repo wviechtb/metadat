@@ -30,14 +30,16 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
       # Load data
       data <- get(load(paste0(dir, "/data/", as.character(full_study_names[[j]]), ".rda")))
 
-      # Check it's a data frame
-      if (class(data) != "data.frame") {
-        stop(" Data is not a dataframe")
-      }
+      # Check if the data are 'primary' based on whether the file ends in a numeric character, 
+      # and generate full metadata if so, otherwise produce minimal metadata (e.g. for .phylo, .corr, etc.)
+      dat_type <- ifelse(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))), 'other', 'primary')
 
-      # Write the meta-data table
-      write.table(tabular(full_study_names[j]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-      write.table(meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
+      # Write the meta-data table header
+      write.table(tabular(full_study_names[j], dat_type), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+      
+      # Write main metadata, only if data are 'primary'
+      if(dat_type == 'primary')
+        write.table(meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
     }
 
     # Write the postamble
@@ -92,21 +94,27 @@ preamble_table <- function(study.name) {
 }
 
 # Generate table start
-tabular <- function(study.name) {
-  info <- paste0("The data frame ", study.name, " contains the following columns:")
-  tabular <- "\\tabular{lll}{"
-  return(data.frame(rbind(info, tabular), stringsAsFactors = FALSE))
+tabular <- function(study.name, dat_type) {
+  if(dat_type == 'primary'){
+    info <- paste0("The data frame ", study.name, " contains the following columns:")
+    tabular <- "\\tabular{lll}{"
+    return(data.frame(rbind(info, tabular), stringsAsFactors = FALSE))
+  }else if(dat_type == 'other'){
+    info <- paste0("The data ", study.name, " contains ADD_DETAILS")
+    return(data.frame(info, stringsAsFactors = FALSE))
+  }
 }
 
 # Generate metadata table
 meta_dat_table <- function(data) {
+  
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
   descrp <- rep(paste0("\\tab", " ADD_DESCRIPTION ", "\\cr"), length = length(variables))
   closer <- c("}", NA, NA)
   meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
   meta_dat_table <- rbind(meta_dat_table, closer)
-
+  
   return(data.frame(meta_dat_table, stringsAsFactors = FALSE))
 }
 
