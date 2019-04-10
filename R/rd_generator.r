@@ -25,7 +25,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
     con <- try(file(file.path(paste0(dir, "/man/"), paste0(primary_study_names[i], ".Rd")), "w"))
 
     # Write the single preamble
-    write.table(.preamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(.preamble_table(primary_study_names[i], full_study_names), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
     for (j in 1:length(full_study_names)) {
 
@@ -84,10 +84,11 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 }
 
 # Generate preamble
-.preamble_table <- function(study.name) {
+.preamble_table <- function(study.name, full.study.names) {
   name <- paste0("\\name{", study.name, "}")
   docType <- "\\docType{data}"
-  alias <- paste0("\\alias{", study.name, "}")
+  alias <- lapply(full.study.names, function(x) paste0("\\alias{", x, "}"))
+  alias <- do.call(rbind, alias)
   title <- "\\title{ADD_TITLE}"
   descrp <- "\\description{ADD_DESCRIPTION}"
   use <- paste0("\\usage{", study.name, "}")
