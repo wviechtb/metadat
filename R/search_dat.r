@@ -1,5 +1,5 @@
 
-dat_search <- function(pattern, fields = NULL){
+search_dat <- function(pattern, fields = NULL){
   
   if(is.null(fields))
     fields <- c("title", "alias", "concept", "name", "keyword")
@@ -22,6 +22,6 @@ dat_search <- function(pattern, fields = NULL){
 }
 
 #Examples
-#dat_search("education")
-#dat_search("ecology")
-#dat_search("besson", fields = "name")
+#search_dat("education")
+#search_dat("ecology")
+#search_dat("besson", fields = "name")
