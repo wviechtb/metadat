@@ -43,7 +43,7 @@ prep_data <- function(rebuild=FALSE, overwrite, pkgdir) {
       ### check if the data preparation file is already in .rfile.txt
       rfile.exists <- rfiles[i] %in% .rfiles
 
-      ### [New]: paste T/F if it is a new script or not
+      ### [new]: paste T/F if it is a new script or not
       cat(ifelse(!rfile.exists, "T    ", "F    "))
 
       ### get 'root' name of the data preparation script (remove .r/.R extension)
@@ -62,7 +62,7 @@ prep_data <- function(rebuild=FALSE, overwrite, pkgdir) {
       cat(ifelse(rda.files.exist, "T    ", "F    "))
 
       ### if rebuild=TRUE or if the rda files do not exist, try running the data preparation script
-      ### [Build]: paste T/F if the data processing script was run (without error)
+      ### [build]: paste T/F if the data processing script was run (without error)
       if (rebuild || !rda.files.exist) {
          rfilerun <- try(source(paste0(data_raw.dir, rfiles[i])), silent=TRUE)
          if (inherits(rfilerun, "try-error")) {
@@ -93,7 +93,7 @@ prep_data <- function(rebuild=FALSE, overwrite, pkgdir) {
       }
 
       ### if it doesn't exist or if it is in 'overwrite' vector, create template <root>.Rd file
-      ### [Create]: paste T/F if template <root>.Rd file is created
+      ### [create]: paste T/F if template <root>.Rd file is created
       if (!rd.exists || !missing(overwrite) && paste0(root, ".Rd") %in% overwrite) {
          cat("T      ")
          #genrd(root, rda.files)
