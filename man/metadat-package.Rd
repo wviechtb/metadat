@@ -26,6 +26,9 @@
 \section{Citing the Package}{
    If you use these data, please cite both the \pkg{metadat} package (see \code{citation("metadat")} for the reference) and the original source of the data as given under the help file of a dataset.
 }
+\section{Bug/Error Reports}{
+   If you think you have found an error in an existing dataset or a bug in the package in general, please go to \url{https://github.com/wviechtb/metafor/issues} and open up a new issue.
+}
 \author{
    Thomas White \email{thomas.white026@gmail.com} \cr
    Daniel Noble \email{daniel.noble@anu.edu.au} \cr
