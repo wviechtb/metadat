@@ -38,4 +38,4 @@ dat.xia2008<-dat.xia2008[,-dim(dat.xia2008)[2]]
 dat.xia2008$Reference[which(dat.xia2008$Reference == "\xf8ien DI 2004")]<-"Oien DI 2004"
 dat.xia2008$Reference[which(dat.xia2008$Reference == "L\xd9scher A et al. 2000")]<-"Luscher A et al. 2000"
 dat.xia2008$Reference[which(dat.xia2008$Reference == "L\xcdHirondelle SJ 1992")]<-"LiHirondelle SJ 1992"
-save(dat.xia2008, file="data/dat.xia2008.rda", ascii=FALSE)
+save(dat.xia2008, file="data/dat.xia2008.rda")
