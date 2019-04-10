@@ -115,7 +115,7 @@ meta_dat_table <- function(data) {
   meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
   meta_dat_table <- rbind(meta_dat_table, closer)
   
-  return(data.frame(meta_dat_table, stringsAsFactors = FALSE))
+  return(data.frame(meta_dat_table, stringsAsFactors = FALSE, row.names = 1:nrow(meta_dat_table)))
 }
 
 # Generate postamble
@@ -123,6 +123,7 @@ postamble_table <- function(study.name) {
   closer <- "}"
   details <- "\\details{ADD_DETAILS}"
   source <- "\\source{ADD_REFERENCE}"
+  author <- "\\author{ADD_CONTRIBUTOR_NAME, \\email{ADD_EMAIL}}"
   examples1 <- "\\examples{"
   examples2 <- "### copy data into 'dat' and examine data"
   examples3 <- paste0("dat <- ", study.name)
@@ -130,5 +131,5 @@ postamble_table <- function(study.name) {
   keyword <- "\\keyword{datasets}"
   concept <- "\\concept{ADD_CONCEPT}"
 
-  return(data.frame(rbind(closer, details, source, examples1, examples2, examples3, examples4, closer, keyword, concept)))
+  return(data.frame(rbind(closer, details, source, author, examples1, examples2, examples3, examples4, closer, keyword, concept)))
 }
