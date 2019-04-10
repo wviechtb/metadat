@@ -1,0 +1,17 @@
+authors                 year      ni      ri   controls  design            a_measure      c_measure  meanage     quality
+"Axelsson et al."       2009     109   0.187   none      cross-sectional   self-report    other      22.00       1
+"Axelsson et al."       2011     749   0.162   none      cross-sectional   self-report    NEO        53.59       1
+"Bruce et al."          2010      55   0.340   none      prospective       other          NEO        43.36       2
+"Christensen et al."    1999     107   0.320   none      cross-sectional   self-report    other      41.70       1
+"Christensen & Smith"   1995      72   0.270   none      prospective       other          NEO        46.39       2
+"Cohen et al."          2004      65   0.000   none      prospective       other          NEO        41.20       2
+"Dobbels et al."        2005     174   0.175   none      cross-sectional   self-report    NEO        52.30       1
+"Ediger et al."         2007     326   0.050   multiple  prospective       self-report    NEO        41.00       3
+"Insel et al."          2006      58   0.260   none      prospective       other          other      77.00       2
+"Jerant et al."         2011     771   0.010   multiple  prospective       other          NEO        78.60       3
+"Moran et al."          1997      56  -0.090   multiple  prospective       other          NEO        57.20       2
+"O'Cleirigh et al."     2007      91   0.370   none      prospective       self-report    NEO        37.90       2
+"Penedo et al."         2003     116   0.000   none      cross-sectional   self-report    NEO        39.20       1
+"Quine et al."          2012     537   0.150   none      prospective       self-report    other      69.00       2
+"Stilley et al."        2004     158   0.240   none      prospective       other          NEO        46.20       3
+"Wiebe & Christensen"   1997      65   0.040   none      prospective       other          NEO        56.00       1

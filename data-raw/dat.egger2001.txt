@@ -1,0 +1,17 @@
+id  study          year ai     n1i   ci    n2i
+1   Morton         1984 1      40    2     36
+2   Rasmussen      1986 9      135   23    135
+3   Smith          1986 2      200   7     200
+4   Abraham        1987 1      48    1     46
+5   Feldstedt      1988 10     150   8     148
+6   Shechter       1989 1      59    9     56
+7   Ceremuzynski   1989 1      25    3     23
+8   Bertschat      1989 0      22    1     21
+9   Singh          1990 6      76    11    75
+10  Pereira        1990 1      27    7     27
+11  Shechter       1991 2      89    12    80
+12  Golf           1991 5      23    13    33
+13  Thogersen      1991 4      130   8     122
+14  LIMIT-2        1992 90     1159  118   1157
+15  Shechter       1995 4      107   17    108
+16  ISIS-4         1995 2216   29011 2103  29039

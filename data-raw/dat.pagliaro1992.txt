@@ -1,0 +1,55 @@
+study trt xi ni
+ 1  beta-blockers   2   43
+ 1  sclerotherapy   9   42
+ 1  control  13   41
+ 2  beta-blockers  12   68
+ 2  sclerotherapy  13   73
+ 2  control  13   72
+ 3  beta-blockers   4   20
+ 3  control   4   16
+ 4  beta-blockers  20  116
+ 4  control  30  111
+ 5  beta-blockers   1   30
+ 5  control  11   49
+ 6  beta-blockers   7   53
+ 6  control  10   53
+ 7  beta-blockers  18   85
+ 7  control  31   89
+ 8  beta-blockers   2   51
+ 8  control  11   51
+ 9  beta-blockers   8   23
+ 9  control   2   25
+10  sclerotherapy   4   18
+10  control   0   19
+11  sclerotherapy   3   35
+11  control  22   36
+12  sclerotherapy   5   56
+12  control  30   53
+13  sclerotherapy   5   16
+13  control   6   18
+14  sclerotherapy   3   23
+14  control   9   22
+15  sclerotherapy  11   49
+15  control  31   46
+16  sclerotherapy  19   53
+16  control   9   60
+17  sclerotherapy  17   53
+17  control  26   60
+18  sclerotherapy  10   71
+18  control  29   69
+19  sclerotherapy  12   41
+19  control  14   41
+20  sclerotherapy   0   21
+20  control   3   20
+21  sclerotherapy  13   33
+21  control  14   35
+22  sclerotherapy  31  143
+22  control  23  138
+23  sclerotherapy  20   55
+23  control  19   51
+24  sclerotherapy   3   13
+24  control  12   16
+25  sclerotherapy   3   21
+25  control   5   28
+26  sclerotherapy   6   22
+26  control   2   24

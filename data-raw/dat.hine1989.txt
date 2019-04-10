@@ -1,0 +1,7 @@
+study source       n1i n2i ai ci
+1 "Chopra et al."   39  43  2  1
+2 "Mogensen"        44  44  4  4
+3 "Pitt et al."    107 110  6  4
+4 "Darby et al."   103 100  7  5
+5 "Bennett et al." 110 106  7  3
+6 "O'Brien et al." 154 146 11  4

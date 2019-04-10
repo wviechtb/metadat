@@ -1,0 +1,38 @@
+author year country cases or ci.lb ci.ub design
+Garfinkel 1981 USA 153 1.18 0.90 1.54 cohort
+Hirayama 1984 Japan 200 1.45 1.02 2.08 cohort
+Butler 1988 USA 8 2.02 0.48 8.56 cohort
+Cardenas 1997 USA 150 1.20 0.80 1.60 cohort
+Chan 1982 "Hong Kong" 84 0.75 0.43 1.30 case-control
+Correa 1983 USA 22 2.07 0.81 5.25 case-control
+Trichopolous 1983 Greece 62 2.13 1.19 3.83 case-control
+Buffler 1984 USA 41 0.80 0.34 1.90 case-control
+Kabat 1984 USA 24 0.79 0.25 2.45 case-control
+Lam 1985 "Hong Kong" 60 2.01 1.09 3.72 case-control
+Garfinkel 1985 USA 134 1.23 0.81 1.87 case-control
+Wu 1985 USA 29 1.20 0.50 3.30 case-control
+Akiba 1986 Japan 94 1.52 0.87 2.63 case-control
+Lee 1986 UK 32 1.03 0.41 2.55 case-control
+Koo 1987 "Hong Kong" 86 1.55 0.90 2.67 case-control
+Pershagen 1987 Sweden 70 1.03 0.61 1.74 case-control
+Humble 1987 USA 20 2.34 0.81 6.75 case-control
+Lam 1987 "Hong Kong" 199 1.65 1.16 2.35 case-control
+Gao 1987 China 246 1.19 0.82 1.73 case-control
+Brownson 1987 USA 19 1.52 0.39 5.96 case-control
+Geng 1988 China 54 2.16 1.08 4.29 case-control
+Shimizu 1988 Japan 90 1.08 0.64 1.82 case-control
+Inoue 1988 Japan 22 2.55 0.74 8.78 case-control
+Kalandidi 1990 Greece 90 1.62 0.90 2.91 case-control
+Sobue 1990 Japan 144 1.06 0.74 1.52 case-control
+Wu-Williams 1990 China 417 0.79 0.62 1.02 case-control
+Liu 1991 China 54 0.74 0.32 1.69 case-control
+Jockel 1991 Germany 23 2.27 0.75 6.82 case-control
+Brownson 1992 USA 431 0.97 0.78 1.21 case-control
+Stockwell 1992 USA 210 1.60 0.80 3.00 case-control
+Du 1993 China 75 1.19 0.66 2.13 case-control
+Liu 1993 China 38 1.66 0.73 3.78 case-control
+Fontham 1994 USA 651 1.26 1.04 1.54 case-control
+Kabat 1995 USA 67 1.10 0.62 1.96 case-control
+Zaridze 1995 Russia 162 1.66 1.12 2.45 case-control
+Sun 1996 China 230 1.16 0.80 1.69 case-control
+Wang 1996 China 135 1.11 0.67 1.84 case-control

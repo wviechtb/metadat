@@ -1,0 +1,10 @@
+study  source               n1i   m1i   sd1i  n2i   m2i   sd2i
+1      "Edinburgh"          155   55    47    156   75    64
+2      "Orpington-Mild"     31    27    7     32    29    4
+3      "Orpington-Moderate" 75    64    17    71    119   29
+4      "Orpington-Severe"   18    66    20    18    137   48
+5      "Montreal-Home"      8     14    8     13    18    11
+6      "Montreal-Transfer"  57    19    7     52    18    4
+7      "Newcastle"          34    52    45    33    41    34
+8      "Umea"               110   21    16    183   31    27
+9      "Uppsala"            60    30    27    52    23    20

@@ -1,0 +1,15 @@
+study authors xi ni
+1 "Giannotta et al." 16 17
+2 "Haraguchi and Ebina" 10 12
+3 "Swift and Solomon" 4 8
+4 "Kassell et al." 43 58
+5 "Tanabe et al." 10 10
+6 "Awad et al." 25 42
+7 "Finn et al." 13 14
+8 "Hadeishi et al." 12 12
+9 "Otsubo et al." 22 41
+10 "Muizelaar and Becker" 4 5
+11 "Rosenstein et al." 5 6
+12 "Levy et al." 18 23
+13 "Shimoda et al." 58 68
+14 "Solomon et al." 6 10

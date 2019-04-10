@@ -1,0 +1,10 @@
+id  author                     year   pre.nti   pre.nci  pre.xti  pre.xci  oedema  fup.nti  fup.nci  ped.xti  ped.xci  stb.xti  stb.xci  ned.xti  ned.xci
+1   "Weseley & Douglas"        1962       131       136       14       14  0           131      136        1        4        1        2        0        2
+2   "Flowers et al."           1962       385       134       21       17  0           335      110        6        3        3        2        3        1
+3   "Menzies"                  1964        57        48       14       24  1            57       48        3        2        1        1        2        1
+4   "Fallis et al."            1964        38        40        6       18  0            34       40        1        3        0        1        1        2
+5   "Cuadros & Tatum"          1964      1011       760       12       35  1          1011      760       14       13        6        5        8        8
+6   "Landesman et al."         1965      1370      1336      138      175  0          1370     1336       24       19       NA       NA       NA       NA
+7   "Kraus et al."             1966       506       524       15       20  0           506      524       14       16        6        9        8        7
+8   "Tervila & Vartiainen"     1971       108       103        6        2  0           108      103        0        0        0        0        0        0
+9   "Campbell & MacGillivray"  1975       153       102       65       40  0           153      102        0        0        0        0        0        0

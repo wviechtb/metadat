@@ -1,0 +1,14 @@
+author            year    scq   ni   xi   mi  ethnicity    patients  select  sens
+"Andrade et al."  2005  21.00   29   11   18  other        starting      no  <400
+"Fairley et al."  2003  22.67   33   24    9  caucasian  continuing     yes  <400
+"Goujard et al."  2003  15.07  326  179  147  caucasian  continuing      no  <400
+"Holzemer et al." 2006   3.67  240   82  158  other      continuing      no   400
+"Knobel et al."   1999   8.60  110   60   50  caucasian    starting      no  <400
+"Murphy et al."   2002  27.80   29   11   18  other      continuing     yes   400
+"Pradier et al."  2003   4.80  244   99  145  caucasian  continuing      no  <400
+"Rathbun et al."  2005  12.07   17    9    8  caucasian    starting      no  <400
+"Remien et al."   2005  20.00  215   88  127  other      continuing     yes  <400
+"Tuldra et al."   2000   7.47   26   17    9  caucasian    starting      no   400
+"van Servellen"   2005   7.80  138   26  112  other      continuing     yes   400
+"Wagner et al."   2006  10.47   55   23   32  other        starting     yes   400
+"Wohl et al."     2006  22.80   54   40   14  other        starting      no   400

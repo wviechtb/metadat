@@ -1,0 +1,16 @@
+author          year  n1i    m1i   sd1i  n2i    m2i   sd2i  ai  bi  ci  di  type
+Cote            1997   50   2.20  12.73   54   5.20  12.50  NA  NA  NA  NA  1
+Ghosh           1998  140  17.60  24.20  136  34.10  38.80  NA  NA  NA  NA  1
+Hayward         1996   23   0.38   0.56   19   0.23   0.29  NA  NA  NA  NA  1
+Heard           1999   97   2.09   5.93   94   2.66   4.95  34  63  36  58  1
+Ignacio-Garcia  1995   35   4.92   6.05   35  20.00  26.34  24  11  29   6  1
+Knoell          1998   45   0.85   4.75   55   2.31   9.16  NA  NA  NA  NA  1
+Lahdensuo       1996   56   2.80   9.00   59   4.80   7.20  13  43  25  34  1
+Sommaruga       1995   20  24.10  11.80   20  31.80  17.90  NA  NA  NA  NA  1
+Zeiger          1991  128   1.40   3.30  143   2.30   7.60  NA  NA  NA  NA  1
+Garret          1994  119   6.23  12.20  100   5.71   8.57  58  42  57  33  2
+Neri            1996   32   2.10   8.00   33   5.10  14.00   7  25  13  20  3
+Hilton          1986   86   0.73   1.48  100   0.47   1.20  NA  NA  NA  NA  4
+Gallefoss       1999   25   8.00  32.00   24  26.00  70.00  NA  NA  NA  NA  5
+Yoon            1993   28     NA     NA   28     NA     NA   5  23   4  24  1
+Brewin          1995   12     NA     NA   33     NA     NA   0  12  16  17  3

@@ -1,0 +1,11 @@
+trial  author               year   ni   outcome    yi      vi     v1i    v2i
+1      "Pihlstrom et al."   1983   14   PD       0.47   .0075   .0075  .0030
+1      "Pihlstrom et al."   1983   14   AL      -0.32   .0077   .0030  .0077
+2      "Lindhe et al."      1982   15   PD       0.20   .0057   .0057  .0009
+2      "Lindhe et al."      1982   15   AL      -0.60   .0008   .0009  .0008
+3      "Knowles et al."     1979   78   PD       0.40   .0021   .0021  .0007
+3      "Knowles et al."     1979   78   AL      -0.12   .0014   .0007  .0014
+4      "Ramfjord et al."    1987   89   PD       0.26   .0029   .0029  .0009
+4      "Ramfjord et al."    1987   89   AL      -0.31   .0015   .0009  .0015
+5      "Becker et al."      1988   16   PD       0.56   .0148   .0148  .0072
+5      "Becker et al."      1988   16   AL      -0.39   .0304   .0072  .0304

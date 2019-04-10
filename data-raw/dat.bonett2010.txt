@@ -1,0 +1,10 @@
+study  source                               ni   ai   mi  caregivers
+1      "Atienza & Parris Stephens (2000)"  103  .93   20       women
+2      "Hooker et al. (2002)"               64  .91   20       mixed
+3      "Martire et al. (1997)"             118  .94   20       women
+4      "Bass et al. (1996)"                401  .89   20       mixed
+5      "Miller et al. (1995)"              215  .90   20       mixed
+6      "Hooker et al. (1992)"               51  .89   20       mixed
+7      "Hooker et al. (2000)"              175  .86   20       mixed
+8      "Brody et al. (1990)"               311  .91   20       mixed
+9      "Brody et al. (1995)"               492  .90   20       women

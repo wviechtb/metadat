@@ -1,0 +1,131 @@
+table id trial                          ai   n1i    ci   n2i
+6   1.1  "Balcon"                        14    56    15    58
+6   1.2  "Clausen"                       18    66    19    64
+6   1.3  "Multicentre"                   15   100    12    95
+6   1.4  "Barber"                        10    52    12    47
+6   1.5  "Norris"                        21   226    24   228
+6   1.6  "Kahler"                         3    38     6    31
+6   1.7  "Ledwich"                        2    20     3    20
+6   1.8  "Snow 1"                        NA    NA    NA    NA
+6   1.9  "Snow 2"                        19    76    15    67
+6   1.10 "Fuccella"                      15   106     9   114
+6   1.11 "Briant"                         5    62     4    57
+6   1.12 "Pitt"                           0     9     0     8
+6   1.13 "Lombardo"                       8   133    11   127
+6   1.14 "Thompson"                       3    48     3    49
+6   1.15 "Hutton"                         0    16     0    13
+6   1.16 "Tonkin"                         1    42     1    46
+6   1.17 "Gupta"                          0    25     3    25
+6   2.1  "Barber"                        14   221    15   228
+6   2.2  "Yusuf"                          0    11     0    11
+6   2.3  "Wilcox 1"                       8   259     7   129
+6   2.4  "Wilcox 2"                       6   157     4   158
+6   2.5  "CPRG"                           3   177     2   136
+9   3.1  "Sloman"                         3    26     4    23
+9   3.2  "Waagstein"                      0    39     0    15
+9   3.3  "Evemy"                          6    46     3    48
+9   3.4  "Peter"                          1    47     2    48
+9   3.5  "Norris 1"                       0    20     0    23
+9   3.5  "Norris 2"                       1    33     0    29
+9   3.6  "Mueller"                        3    47     1    44
+9   3.7  "Macleod"                        1    26     0    26
+9   3.8  "Lloyd"                          1    15     1    15
+9   3.9  "Azancot"                        0    14     0    12
+9   3.10 "von Essen"                      1    25     1    26
+9   3.11 "Nigam"                          0    20     0    20
+9   3.12 "Yusuf"                          4   244    13   233
+9   3.13 "UKCSG"                          4    56     5    52
+9   3.14 "ICSG"                           3    73     4    71
+9   3.15 "Federman"                       1    50     0    51
+9   3.16 "Heber"                          3    83     0    83
+9   3.17 "Norris (PREMIS)"               15   364    14   371
+9   3.18 "Gupta"                          0    15     0    15
+9   3.19 "Campbell"                       1    20     2    19
+9   3.20 "Roberts (MILIS)"                0   134     0   135
+9   3.21 "MIAMI"                         74  2877    87  2901
+9   3.22 "Owensby"                        0    50     1    50
+9   3.23 "Ayerst"                        NA    NA    NA    NA
+9   3.24 "ISIS"                          NA    NA    NA    NA
+9   4.1  "Andersen"                      29   238    24   242
+9   4.2  "Salathia"                      25   416    20   384
+9   4.3  "Hjalmarson"                    18   698    23   697
+10  5.1  "Reynolds (1 y)"                 3    38     3    39
+10  5.2  "Wilhelmsson (2 y)"              7   114    14   116
+10  5.3  "Ahlmark (2 y)"                  5    69    11    93
+10  5.4  "Multicentre Int (1-3 y)"      102  1533   127  1520
+10  5.5  "Baber (3-9 mo)"                28   355    27   365
+10  5.6  "Rehnqvist (1 y)"                4    59     6    52
+10  5.7  "Norwegian Multicentre (1-3 y)" 98   945   152   939
+10  5.8  "Taylor (mean 4 y)"             60   632    48   471
+10  5.9  "Hansteen (1 y)"                25   278    37   282
+10  5.10 "BHAT TM (median 2 y)"         138  1916   188  1921
+10  5.11 "Julian (1 y)"                  64   873    52   583
+10  5.12 "Australian/Swedish (2 y)"      45   263    47   266
+10  5.13 "Manger Cats (1 y)"              9   291    16   293
+10  5.14 "EIS (1 y)"                     57   858    45   883
+10  5.15 "Rehnqvist (3 y)"               25   154    31   147
+10  5.16 "Ciba-Geigy"                    NA    NA    NA    NA
+10  2.1  "Barber (2 y)"                  33   207    38   213
+10  2.2  "Yusuf"                          1    11     1    11
+10  2.3  "Wilcox 1 (1 y)"                28   251    12   122
+10  2.4  "Wilcox 2 (6 wk)"                8   151     6   154
+10  2.5  "CPRG (8 wk)"                    6   174     3   134
+10  4.1  "Andersen (1 y)"                32   209    40   218
+10  4.2  "Salathia (1 y)"                27   391    43   364
+10  4.3  "Hjalmarson (13 wk)"            22   680    39   674
+11  5.1  "Reynolds"                       3    38     2    39
+11  5.2  "Wilhelmsson"                   16   114    18   116
+11  5.3  "Ahlmark"                        3    69    14    93
+11  5.4  "Multicentre Int"               75  1533    97  1520
+11  5.5  "Baber"                         15   355    15   365
+11  5.6  "Rehnqvist"                      3    59     5    52
+11  5.7  "Norwegian Multicentre"         90   945   131   939
+11  5.8  "Taylor"                        67   632    58   471
+11  5.9  "Hansteen"                      16   278    21   282
+11  5.10 "BHAT"                         103  1916   121  1921
+11  5.11 "Julian"                        24   873    22   583
+11  5.12 "Australian/Swedish"            25   263    28   266
+11  5.13 "Manger Cats"                   16   291    20   293
+11  5.14 "EIS"                           36   858    38   883
+11  5.15 "Rehnqvist"                     18   154    31   147
+11  5.16 "Ciba-Geigy"                    NA    NA    NA    NA
+11  2.1  "Barber"                         9   222    21   226
+11  2.2  "Yusuf"                          0    11     0    11
+11  2.3  "Wilcox 1"                      NA    NA    NA    NA
+11  2.4  "Wilcox 2"                       1   157     5   158
+11  2.5  "CPRG"                           3   177     7   136
+11  4.1  "Andersen"                      NA    NA    NA    NA
+11  4.2  "Salathia"                      NA    NA    NA    NA
+11  4.3  "Hjalmarson"                    26   698    39   697
+12a 5.1  "Reynolds"                      3    39     3    39
+12a 5.2  "Wilhelmsson"                   3   114    11   116
+12a 5.3  "Ahlmark"                       1    69     9    93
+12a 5.4  "Multicentre Int"              29  1533    51  1520
+12a 5.5  "Baber"                        10   355     6   365
+12a 5.6  "Rehnqvist"                     3    59     4    52
+12a 5.7  "Norwegian Multicentre"        66   945   110   939
+12a 5.8  "Taylor"                       33   632    25   471
+12a 5.9  "Hansteen"                     11   278    23   282
+12a 5.10 "BHAT"                         64  1916    89  1921
+12a 5.11 "Julian"                       25   873    14   583
+12a 5.12 "Australian/Swedish"           NA    NA    NA    NA
+12a 5.13 "Manger Cats"                   7   290    11   293
+12a 5.14 "EIS"                          25   858    24   883
+12a 5.15 "Rehnqvist"                     9   154    21   147
+12a 5.16 "Ciba-Geigy"                   NA    NA    NA    NA
+12b 5.1  "Reynolds"                      0    39     0    39
+12b 5.2  "Wilhelmsson"                   4   114     3   116
+12b 5.3  "Ahlmark"                       4    69     2    93
+12b 5.4  "Multicentre Int"              73  1533    76  1520
+12b 5.5  "Baber"                        18   355    21   365
+12b 5.6  "Rehnqvist"                     1    59     2    52
+12b 5.7  "Norwegian Multicentre"        32   945    42   939
+12b 5.8  "Taylor"                       27   632    23   471
+12b 5.9  "Hansteen"                     14   278    14   282
+12b 5.10 "BHAT"                         74  1916    99  1921
+12b 5.11 "Julian"                       39   873    38   583
+12b 5.12 "Australian/Swedish"           NA    NA    NA    NA
+12b 5.13 "Manger Cats"                   2   290     5   293
+12b 5.14 "EIS"                          32   858    21   883
+12b 5.15 "Rehnqvist"                    16   154    10   147
+12b 5.16 "Ciba-Geigy"                   NA    NA    NA    NA

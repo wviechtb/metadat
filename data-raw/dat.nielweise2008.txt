@@ -1,0 +1,10 @@
+study  authors             year   x1i    t1i    x2i    t2i
+1      "Bong et al."       2003     7   1344     11   1988
+2      "Ciresi et al."     1996     8   1600      8   1461
+3      "Hanna et al."      2004     3  12012     14  10962
+4      "Harter et al."     2002     6   1536     10   1503
+5      "Jaeger et al."     2001     1    370      1    483
+6      "Jaeger et al."     2005     1    729      8    913
+7      "Logghe et al."     1997    17   6760     15   6840
+8      "Ostendorf et al."  2005     3   1107      7   1015
+9      "Pemberton et al."  1996     2    320      3    440

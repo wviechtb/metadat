@@ -1,0 +1,16 @@
+author year ai n1i ci n2i age diag.ab diag.cb diag.pn ctrl
+Balmes 1991 4 48 7 56 adults 1 0 0 amoxyclav
+Beghi 1995 22 69 2 73 adults 0 1 0 amoxyclav
+Biebuyck 1996 53 497 53 257 adults 1 1 0 amoxyclav
+Daniel 1991 5 121 10 120 adults 1 0 0 amoxycillin
+Ferwerda 2001 5 55 7 53 children 0 0 1 amoxyclav
+Gris 1996 6 34 2 33 adults 1 1 1 amoxyclav
+Harris 1998 11 125 4 63 children 0 0 1 amoxyclav
+Hoepelman 1993 4 48 4 51 adults 1 0 0 amoxyclav
+Hoepelman 1998 3 62 5 61 adults 0 1 0 amoxyclav
+Mertens 1992 1 25 5 25 adults 0 1 0 amoxycillin
+Sevieri 1993 5 25 2 25 adults 0 1 0 amoxyclav
+Whitlock 1995 0 29 2 27 adults 0 1 0 amoxyclav
+Wubbel 1999 1 39 2 49 children 0 0 1 amoxyclav
+Zachariah 1996 8 173 7 173 adults 1 1 1 amoxyclav
+Zheng 2002 12 38 2 42 adults 0 1 0 amoxyclav
