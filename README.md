@@ -39,8 +39,8 @@ We welcome contributions of new datasets to the package. For each dataset, there
   - Start R, load the `metadat` package (i.e., `library(metadat)`, and then run the `prep_data()` function (either set the working directory to the location of the source package beforehand or use the `pkgdir` argument of the `prep_data()` function to specify the source package location).
   - For a new dataset, this should create a boilerplate template for a corresponding help file in the `/man/` directory, named `dat.<author><year>.Rd`. Edit the help file, adding the title and a short description of the dataset in general, a description of each variable in the dataset, further details on the dataset (e.g., the field of research, how the data was collected, the purpose of the dataset or what it was used for, the effect size or outcome measure used in the analysis, the types of analyses/models that can be illustrated with the dataset), a reference for the source of the dataset, one or multiple concept terms, the name and email address of the contributor of the dataset, and (optionally) example code to illustrate the analysis of the dataset.
   - Either make a pull request (if you are familiar with this workflow) or zip up the `dat.<author><year>.<ext>`, `dat.<author><year>.r`, `dat.<author><year>.rda`, and `dat.<author><year>.Rd` files and open up a [new issue at GitHub](https://github.com/wviechtb/metadat/issues), attaching the zip file.
-- **via email**
-  - If the above makes no sense to you, you can also email one of the package authors with a cleaned, raw data file in `.txt` or `.csv` format, along with a meta-data file (format doesn't matter) that includes the information described above.
+- **via issue or email**
+  - If the above makes no sense to you, you can also open an issue or email one of the package authors and attach a zip file including a cleaned, raw data file in `.txt` or `.csv` format, along with a meta-data file (format doesn't matter) that includes the information described above.
 
 ### Citing the Package
 
