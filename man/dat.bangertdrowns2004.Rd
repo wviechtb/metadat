@@ -42,5 +42,8 @@ if (require(metafor)) {
 res <- rma(yi, vi, data=dat)
 res
 }
+
 }
 \keyword{datasets}
+\concept{standardized mean different}
+\concept{education}
