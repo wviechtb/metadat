@@ -27,9 +27,9 @@
    If you use these data, please cite both the \pkg{metadat} package (see \code{citation("metadat")} for the reference) and the original source of the data as given under the help file of a dataset.
 }
 \author{
-   Thomas White \email{} \cr
-   Daniel Noble \email{} \cr
-   Alistair Senior \email{} \cr
+   Thomas White \email{thomas.white026@gmail.com} \cr
+   Daniel Noble \email{daniel.noble@anu.edu.au} \cr
+   Alistair Senior \email{alistair.senior@sydney.edu.au} \cr
    Wolfgang Viechtbauer \email{wvb@metafor-project.org}
 }
 \keyword{package}

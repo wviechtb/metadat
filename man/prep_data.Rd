@@ -13,4 +13,8 @@ prep_data(rebuild=FALSE, overwrite, pkgdir)
 \details{
    The function ...
 }
+\author{
+Wolfgang Viechtbauer \email{wvb@metafor-project.org}
+}
 \keyword{file}
+\keyword{internal}

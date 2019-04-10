@@ -12,4 +12,8 @@ rd_generator(dir = getwd(), overwrite = FALSE)
 \details{
    The function ...
 }
+\author{
+Thomas E. White \email{thomas.white026@gmail.com}
+}
 \keyword{file}
+\keyword{internal}

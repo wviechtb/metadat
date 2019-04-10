@@ -12,4 +12,7 @@ dat_search("ecology")
 \details{
    \code{data_search} permits searching of the datasets based on a number of concept ideas. For example, users may want to simply find datasets that are used in ecology, psychology or social sciences. In which case, they can add these search terms in to find relevant datasets and open the specific help files associated with these data sets to explore more detail before loading them.
 }
+\author{
+Daniel Noble \email{daniel.noble@anu.edu.au}
+}
 \keyword{file}
