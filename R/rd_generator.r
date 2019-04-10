@@ -96,6 +96,8 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   docType <- "\\docType{data}"
   alias <- lapply(full.study.names, function(x) paste0("\\alias{", x, "}"))
   alias <- do.call(rbind, alias)
+  if(length(full.study.names) > 1)
+    alias <- rbind(alias, paste0("\\alias{", study.name, "}"))
   title <- "\\title{ADD_TITLE}"
   descrp <- "\\description{ADD_DESCRIPTION}"
   use <- paste0("\\usage{", study.name, "}")
