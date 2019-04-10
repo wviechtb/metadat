@@ -1,6 +1,9 @@
 # `metadat`
 
 [![cran version](https://www.r-pkg.org/badges/version-ago/metadat)](https://cran.r-project.org/package=metadat/)
+[![Build Status](https://travis-ci.org/wviechtb/metadat.svg?branch=master)](https://travis-ci.org/wviechtb/metadat/)
+[![Coverage status](https://codecov.io/gh/wviechtb/metadat/branch/master/graph/badge.svg)](https://codecov.io/github/wviechtb/metadat?branch=master)
+[![cran downloads](https://cranlogs.r-pkg.org/badges/grand-total/metadat)](https://cran.r-project.org/package=metadat/)
 
 ## Meta-analytic datasets for R
 
