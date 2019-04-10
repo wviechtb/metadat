@@ -18,3 +18,4 @@ dat_search <- function(pattern, fields = "concept"){
 #Examples
 #dat_search("education")
 #dat_search("ecology")
+#dat_search("besson", fields = "name")

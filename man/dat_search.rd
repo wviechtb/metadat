@@ -1,7 +1,7 @@
 \name{dat_search}
 \alias{dat_search}
 \title{Searching data function}
-\description{Searches all existing data files based on concept descriptors. Prompts users to }
+\description{Searches all existing data files based on data descriptor fields of interest (e.g., name, concept, topic). Prompts users to choose one matching dataset of interest}
 \usage{
 dat_search("ecology")
 }
