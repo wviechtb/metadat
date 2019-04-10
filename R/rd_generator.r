@@ -90,7 +90,8 @@ preamble_table <- function(study.name) {
   descrp <- "\\description{ADD_DESCRIPTION}"
   use <- paste0("\\usage{", study.name, "}")
   format <- paste0("\\format{")
-  return(data.frame(rbind(name, docType, alias, title, descrp, use, format), stringsAsFactors = FALSE))
+  out <- rbind(name, docType, alias, title, descrp, use, format)
+  return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
 }
 
 # Generate table start
@@ -98,7 +99,8 @@ tabular <- function(study.name, dat_type) {
   if(dat_type == 'primary'){
     info <- paste0("The data frame ", study.name, " contains the following columns:")
     tabular <- "\\tabular{lll}{"
-    return(data.frame(rbind(info, tabular), stringsAsFactors = FALSE))
+    out <- rbind(info, tabular)
+    return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
   }else if(dat_type == 'other'){
     info <- paste0("The data ", study.name, " contains ADD_DETAILS", "\\cr")
     return(data.frame(info, stringsAsFactors = FALSE))
@@ -131,5 +133,7 @@ postamble_table <- function(study.name) {
   keyword <- "\\keyword{datasets}"
   concept <- "\\concept{ADD_CONCEPT}"
 
-  return(data.frame(rbind(closer, details, source, author, examples1, examples2, examples3, examples4, closer, keyword, concept)))
+  out <- rbind(closer, details, source, author, examples1, examples2, examples3, examples4, closer, keyword, concept)
+  
+  return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
 }
