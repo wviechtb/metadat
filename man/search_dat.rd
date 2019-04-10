@@ -1,9 +1,9 @@
-\name{dat_search}
-\alias{dat_search}
+\name{search_dat}
+\alias{search_dat}
 \title{Searching data function}
 \description{Searches all existing data files based on data descriptor fields of interest (e.g., name, concept, topic). Prompts users to choose one matching dataset of interest}
 \usage{
-dat_search("ecology")
+dat_search(pattern = "ecology", fields = NULL)
 }
 \arguments{
    \item{pattern}{Character string specifying the search pattern to match within the data files using fuzzy matching.}
