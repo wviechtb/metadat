@@ -1,8 +1,14 @@
 
-dat_search <- function(pattern, fields = "concept"){
+dat_search <- function(pattern, fields = NULL){
+  
+  if(is.null(fields))
+    fields <- c("title", "alias", "concept", "name", "keyword")
 	
 	# Get names of matching datasets
-	names <- utils::help.search(pattern, package = "metadat", fields = fields)$matches$Name
+	names <- unique(utils::help.search(pattern, package = "metadat", fields = fields)$matches$Name)
+	
+	if(length(names) == 0)
+	  return(message('No results found'))
 	
 	# Get titles of matching datasets
 	title <- utils::help.search(pattern, package = "metadat", fields = fields)$matches$Name

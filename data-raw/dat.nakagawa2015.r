@@ -9,11 +9,13 @@ dat.nakagawa2015.1$reference[which(dat.nakagawa2015.1$reference == "Gonz\x88lez-
 dat.nakagawa2015.1$reference[which(dat.nakagawa2015.1$reference == "M\xcbller 1990")]<-"Meller 1990"
 dat.nakagawa2015.1$reference[which(dat.nakagawa2015.1$reference == "M\xcbller & Mousseau 2003")]<-"Meller  & Mousseau 2003"
 dat.nakagawa2015.1$reference[which(dat.nakagawa2015.1$reference == "R\xcbnning et al. 2007")]<-"Renning et al. 2007"
+dat.nakagawa2015.1$trait_details[which(dat.nakagawa2015.1$trait_details == "Fl\xf4gell_nge")]<-"Flogell_nge"
 dat.nakagawa2015.2$reference[which(dat.nakagawa2015.2$reference == "L\xe3pez-Mart\xean et al. 2006")]<-"Lapez-Marten et al 2006"
 dat.nakagawa2015.2$reference[which(dat.nakagawa2015.2$reference == "Sl\xf6dek 1991")]<-"Slodek 1991"
 dat.nakagawa2015.2$reference[which(dat.nakagawa2015.2$reference == "L\xe3pez-Gonz\xf6lez & Polaco 1998")]<-"Lapez-Gonzolez & Polaco 1998"
 dat.nakagawa2015.2$reference[which(dat.nakagawa2015.2$reference == "Bechsh\xe8ft et al. 2008")]<-"Bechsheft et al. 2008"
 dat.nakagawa2015.2$reference[which(dat.nakagawa2015.2$reference == "L\xe3pez-Fuster et al. 2006")]<-"Lapez-Fuster et al. 2006"
+dat.nakagawa2015.3$Behaviour.details[which(dat.nakagawa2015.3$Behaviour.details == "Proportion time following moving stripes by na\xb4ve fish")]<-"Proportion time following moving stripes by naive fish"
 library(ape)
 dat.nakagawa2015.phy1<-read.tree("data-raw/dat.nakagawa2015.phy1.tre")
 dat.nakagawa2015.phy2<-read.tree("data-raw/dat.nakagawa2015.phy2.tre")
