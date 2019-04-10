@@ -13,7 +13,8 @@ rd_generator(dir = getwd(), overwrite = FALSE)
    The function ...
 }
 \author{
-Thomas E. White \email{thomas.white026@gmail.com}
+   Thomas White \email{thomas.white026@gmail.com} \cr
+   Daniel Noble \email{daniel.noble@anu.edu.au} \cr
 }
 \keyword{file}
 \keyword{internal}
