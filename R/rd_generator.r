@@ -12,6 +12,8 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
     # Keep names of data files that do not have documentation
     primary_study_names <- setdiff(primary_study_names, doc_names)
+    if(length(primary_study_names) == 0)
+      return(message('Documentation up to date'))
     all_study_names <- unlist(apply(as.data.frame(primary_study_names), 1, function(x) grep(x, all_study_names, value = TRUE)))
   }
 
