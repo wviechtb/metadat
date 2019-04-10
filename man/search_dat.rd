@@ -3,7 +3,7 @@
 \title{Searching data function}
 \description{Searches all existing data files based on data descriptor fields of interest (e.g., name, concept, topic). Prompts users to choose one matching dataset of interest}
 \usage{
-dat_search(pattern = "ecology", fields = NULL)
+search_dat(pattern, fields)
 }
 \arguments{
    \item{pattern}{Character string specifying the search pattern to match within the data files using fuzzy matching.}
