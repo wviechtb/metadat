@@ -1,4 +1,4 @@
-prep_data <- function(rebuild=FALSE, overwrite, pkgdir) {
+prep_dat <- function(rebuild=FALSE, overwrite, pkgdir) {
 
    cat("\n")
 
