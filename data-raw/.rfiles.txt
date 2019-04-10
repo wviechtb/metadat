@@ -2,6 +2,8 @@
 "dat.besson2016.r"
 "dat.cleasby2012.r"
 "dat.english2016.r"
+"dat.nakagawa2015.r"
+"dat.tamim2011.r"
 "dat.valstad2017.r"
 "dat.weaver2018.r"
 "dat.xia2008.r"
