@@ -3,12 +3,12 @@
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
   # List the study data
-  all_study_names <- get_studies(dir, full = TRUE)
-  primary_study_names <- get_studies(dir, full = FALSE)
+  all_study_names <- .get_studies(dir, full = TRUE)
+  primary_study_names <- .get_studies(dir, full = FALSE)
 
   if (!overwrite) {
     # Check what documentation currently exists
-    doc_names <- get_existing_rd(dir)
+    doc_names <- .get_existing_rd(dir)
 
     # Keep names of data files that do not have documentation
     primary_study_names <- setdiff(primary_study_names, doc_names)
@@ -23,7 +23,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
     con <- try(file(file.path(paste0(dir, "/man/"), paste0(primary_study_names[i], ".Rd")), "w"))
 
     # Write the single preamble
-    write.table(preamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(.preamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
     for (j in 1:length(full_study_names)) {
 
@@ -35,15 +35,15 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
       dat_type <- ifelse(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))), 'other', 'primary')
 
       # Write the meta-data table header
-      write.table(tabular(full_study_names[j], dat_type), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+      write.table(.tabular(full_study_names[j], dat_type), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
       
       # Write main metadata, only if data are 'primary'
       if(dat_type == 'primary')
-        write.table(meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
+        write.table(.meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
     }
 
     # Write the postamble
-    write.table(postamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(.postamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
     # Close the file connection
     close(con)
@@ -54,7 +54,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 }
 
 # List available .rda files
-get_studies <- function(dir, full = TRUE) {
+.get_studies <- function(dir, full = TRUE) {
 
   # List data files
   files <- list.files(paste0(dir, "/data/"))
@@ -70,7 +70,7 @@ get_studies <- function(dir, full = TRUE) {
 }
 
 # List existing documentation files
-get_existing_rd <- function(dir) {
+.get_existing_rd <- function(dir) {
 
   # List data files
   files <- list.files(paste0(dir, "/man/"))
@@ -82,7 +82,7 @@ get_existing_rd <- function(dir) {
 }
 
 # Generate preamble
-preamble_table <- function(study.name) {
+.preamble_table <- function(study.name) {
   name <- paste0("\\name{", study.name, "}")
   docType <- "\\docType{data}"
   alias <- paste0("\\alias{", study.name, "}")
@@ -95,7 +95,7 @@ preamble_table <- function(study.name) {
 }
 
 # Generate table start
-tabular <- function(study.name, dat_type) {
+.tabular <- function(study.name, dat_type) {
   if(dat_type == 'primary'){
     info <- paste0("The data frame ", study.name, " contains the following columns:")
     tabular <- "\\tabular{lll}{"
@@ -108,7 +108,7 @@ tabular <- function(study.name, dat_type) {
 }
 
 # Generate metadata table
-meta_dat_table <- function(data) {
+.meta_dat_table <- function(data) {
   
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
@@ -121,7 +121,7 @@ meta_dat_table <- function(data) {
 }
 
 # Generate postamble
-postamble_table <- function(study.name) {
+.postamble_table <- function(study.name) {
   closer <- "}"
   details <- "\\details{ADD_DETAILS}"
   source <- "\\source{ADD_REFERENCE}"
