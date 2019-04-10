@@ -7,7 +7,7 @@
    The \pkg{metadat} package contains a large collection of meta-analytic datasets. These datasets are useful for teaching purposes, illustrating/testing certain meta-analytic methods, and validating published analyses.
 }
 \section{Browsing and Searching for Datasets}{
-   A listing of all datasets in the package can be obtained with \code{help(package=metadat}. Each datasets is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the field of research, the outcome measure used for the analysis, the model(s)/package(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.
+   A listing of all datasets in the package can be obtained with \code{help(package=metadat)}. Each datasets is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the field of research, the outcome measure used for the analysis, the model(s)/package(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.
 }
 \section{Contributing New Datasets}{
    We welcome contributions of new datasets to the package. For each dataset, there must be a citable reference, ideally in a peer-reviewed journal or publication. The general workflow for contributing a new dataset is as follows.
