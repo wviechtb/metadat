@@ -48,16 +48,3 @@ We welcome contributions of new datasets to the package. For each dataset, there
 ## Citing the Package
 
 If you use these data, please cite both the `metadat` package (see `citation("metadat")` for the reference) and the original source of the data as given under the help file of a dataset.
-
-### todo
-
-- [X] create todo
-- [X] naming scheme
-  - dat.authoryear
-  - dat.authoryearb.1
-  - dat.authoryear.corr
-  - dat.authoryear.phylo
-- [X] boilerplate function for doc generation
-- [ ] port over existing datasets
-- [X] document/describe the workflow (raw -> clean data) and add contributor guidelines
-- [ ] tests for contributions via PR
