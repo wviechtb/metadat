@@ -36,18 +36,12 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
       # and generate full metadata if so, otherwise produce minimal metadata (e.g. for .phylo, .corr, etc.)
       dat_type <- ifelse(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))), 'other', 'primary')
       
-      eg1 <- 'dat.bar2015.rda'  # PRIMARY
-      eg2 <- 'dat.foo2015.1.rda'  # PRIMARY
-      eg3 <- 'dat.foo2015.corr.rda'  # SECONDARY
-      
       if(primary_study_names[i] == full_study_names[[j]])
         dat_type <- 'primary'
       else if(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))))
         dat_type <- 'other'
       else
         dat_type <- 'primary'
-      
-      #dat_type <- ifelse(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))), 'other', 'primary')
 
       # Write the meta-data table header
       write.table(.tabular(full_study_names[j], dat_type), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
