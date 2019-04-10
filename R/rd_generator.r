@@ -113,7 +113,7 @@ meta_dat_table <- function(data) {
   descrp <- rep(paste0("\\tab", " ADD_DESCRIPTION ", "\\cr"), length = length(variables))
   closer <- c("}", NA, NA)
   meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
-  meta_dat_table <- suppressWarnings(rbind(meta_dat_table, closer))
+  meta_dat_table <- rbind(meta_dat_table, closer)
   
   return(data.frame(meta_dat_table, stringsAsFactors = FALSE))
 }
