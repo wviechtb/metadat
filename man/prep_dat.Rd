@@ -1,9 +1,9 @@
-\name{prep_data}
-\alias{prep_data}
+\name{prep_dat}
+\alias{prep_dat}
 \title{Data preparation function}
 \description{Function to run data processing scripts.}
 \usage{
-prep_data(rebuild=FALSE, overwrite, pkgdir)
+prep_dat(rebuild=FALSE, overwrite, pkgdir)
 }
 \arguments{
    \item{rebuild}{logical indicating whether the entire database should be rebuild (default is \code{FALSE}.}
@@ -13,4 +13,8 @@ prep_data(rebuild=FALSE, overwrite, pkgdir)
 \details{
    The function ...
 }
+\author{
+Wolfgang Viechtbauer \email{wvb@metafor-project.org}
+}
 \keyword{file}
+\keyword{internal}

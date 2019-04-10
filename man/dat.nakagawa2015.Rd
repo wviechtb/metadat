@@ -1,6 +1,10 @@
 \name{dat.nakagawa2015}
 \docType{data}
-\alias{dat.nakagawa2015}
+\alias{dat.nakagawa2015.1}
+\alias{dat.nakagawa2015.2}
+\alias{dat.nakagawa2015.3}
+\alias{dat.nakagawa2015.phy1}
+\alias{dat.nakagawa2015.phy2}
 \title{Meta-analysis of variance: ecological and evolutionary applications and beyond.}
 \description{Data from Nakagawa et al. 2015, which is a methdological paper decribing effect sizes for studying the effects of a treatment/factor on variance. The study contains three different meta-analytic datasets and two phylogenys.}
 \usage{dat.nakagawa2015}

@@ -1,6 +1,7 @@
 \name{dat.english2016}
 \docType{data}
-\alias{dat.english2016}
+\alias{dat.english2016.1}
+\alias{dat.english2016.2}
 \title{Does early-life diet affect longevity? A meta-analysis across experimental studies}
 \description{Results from studies on the effects of early-life dietary restriction on longevity.}
 \usage{dat.english2016}

@@ -4,7 +4,9 @@
 
 ## Meta-analytic datasets for R
 
-### Installation
+The `metadat` package contains a large collection of meta-analytic datasets. These datasets are useful for teaching purposes, illustrating/testing certain meta-analytic methods, and validating published analyses.
+
+## Installation
 
 To download the development version of `metadat`, you can:
 
@@ -21,14 +23,31 @@ remotes::install_github("wviechtb/metadat")
 install.packages(path, type = "source", repos = NULL)
 ```
 
-### Contributing data
-There are currently 3 ways to contribute data. 
+## Browsing and Searching for Datasets
 
-1) **Make a pull request**:  Fork the package. Add your data to the `data-raw/` folder and run the `prep_data.r` and `rd_generator` functions of `metadat`. The files generated in `man` for the relevant dataset need to be correctly filled in with the data descriptors. We have provided prompts for the relevant information that is required to submit (e.g., `ADD DESCRPTION`). Fill all these out and make a pull request via Github [here](https://github.com/wviechtb/metadat/pulls)
+A listing of all datasets in the package can be obtained with `help(package=metadat}`. Each dataset is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the field of research, the outcome measure used for the analysis, the model(s)/package(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.
 
-2) **Load a ZIP as an Issue**: All data sets require two files. The first is the raw data file in raw format (e.g., .csv, .txt) and an associated .Rd file that describes the data set. You can find an example [here](https://github.com/wviechtb/metadat/blob/master/man/dat.bangertdrowns2004.Rd). These files can be compressed (ZIP) and loaded in issues [here](https://github.com/wviechtb/metadat/issues).
+`search_dat()` is an available function that can be used to query the existing data in the package to explore their help files. It uses fuzzy matching, and queries the data name, title, keyword and concept fields to identify relevant datasets that may be of interest.
 
-3) **Email Data and Metadata**: You can also email one of the contributors with a cleaned, raw data file in .txt or .csv along with a meta-data file (format doesn't matter) with a description of the data, title and source of publication (if available), each column and an associated descriptor of that column. Details on how the data was collected, what is was used for, packages used to analyse data, type of effect size, models run, question tested, and the field of research.
+
+## Contributing New Datasets
+
+We welcome contributions of new datasets to the package. For each dataset, there must be a citable reference, ideally in a peer-reviewed journal or publication. The general workflow for contributing a new dataset is as follows:
+
+- **via pull request**
+  - Install the `metadat` package in R in the usual manner (i.e., `install.packages("metadat")`.
+  - If you are familiar with Git/GitHub and making pull requests, fork the [package repository](https://github.com/wviechtb/metadat). Otherwise, download the source version of the package [from GitHub](https://github.com/wviechtb/metadat/archive/master.zip) and unzip the file to some directory on your computer.
+  - Place the raw data (in a non-binary format) in the `data-raw` directory. The file should be named `dat.<author><year>.<ext>`, where `<author>` is the last name of the first author of the publication from which the data come, `<year>` is the publication year, and `<ext>` is the file extension (e.g., `.txt`, `.csv`).
+  - Place a corresponding R script in the `data-raw` directory named `dat.<author><year>.r` that reads in the data, possibly does some data cleaning/processing, and then saves the dataset to the `data` directory (using `save()`), with name `dat.<author><year>.rda`.
+  - Start R, load the `metadat` package (i.e., `library(metadat)`, and then run the `prep_dat()` function (either set the working directory to the location of the source package beforehand or use the `pkgdir` argument of the `prep_dat()` function to specify the source package location).
+  - For a new dataset, this should create a boilerplate template for a corresponding help file in the `/man/` directory, named `dat.<author><year>.Rd`. Edit the help file, adding the title and a short description of the dataset in general, a description of each variable in the dataset, further details on the dataset (e.g., the field of research, how the data was collected, the purpose of the dataset or what it was used for, the effect size or outcome measure used in the analysis, the types of analyses/models that can be illustrated with the dataset), a reference for the source of the dataset, one or multiple concept terms, the name and email address of the contributor of the dataset, and (optionally) example code to illustrate the analysis of the dataset.
+  - Either make a pull request (if you are familiar with this workflow) or zip up the `dat.<author><year>.<ext>`, `dat.<author><year>.r`, `dat.<author><year>.rda`, and `dat.<author><year>.Rd` files and open up a [new issue at GitHub](https://github.com/wviechtb/metadat/issues), attaching the zip file.
+- **via github issue or email**
+  - If the above makes no sense to you, you can also open an issue or email one of the package authors and attach a zip file including a cleaned, raw data file in `.txt` or `.csv` format, along with a meta-data file (format doesn't matter) that includes the information described above.
+
+## Citing the Package
+
+If you use these data, please cite both the `metadat` package (see `citation("metadat")` for the reference) and the original source of the data as given under the help file of a dataset.
 
 ### todo
 
@@ -40,5 +59,5 @@ There are currently 3 ways to contribute data.
   - dat.authoryear.phylo
 - [X] boilerplate function for doc generation
 - [ ] port over existing datasets
-- [ ] document/describe the workflow (raw -> clean data) and add contributor guidelines
+- [X] document/describe the workflow (raw -> clean data) and add contributor guidelines
 - [ ] tests for contributions via PR

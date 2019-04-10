@@ -32,6 +32,9 @@
 \source{
    Bangert-Drowns, R. L., Hurley, M. M., & Wilkinson, B. (2004). The effects of school-based writing-to-learn interventions on academic achievement: A meta-analysis. \emph{Review of Educational Research}, \bold{74}, 29--58.
 }
+\author{
+Wolfgang Viechtbauer \email{wvb@metafor-project.org}
+}
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.bangertdrowns2004
