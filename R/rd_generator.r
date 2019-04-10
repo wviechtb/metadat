@@ -17,7 +17,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
   # Loop through undocumented data and create template documentation
   for (i in 1:length(primary_study_names)) {
-    full_study_names <- unlist(lapply(primary_study_names, function(x) grep(x, all_study_names, value = TRUE)))
+    full_study_names <- unlist(lapply(primary_study_names[i], function(x) grep(x, all_study_names, value = TRUE)))
 
     # Open new file connection
     con <- try(file(file.path(paste0(dir, "/man/"), paste0(primary_study_names[i], ".Rd")), "w"))
@@ -100,7 +100,7 @@ tabular <- function(study.name, dat_type) {
     tabular <- "\\tabular{lll}{"
     return(data.frame(rbind(info, tabular), stringsAsFactors = FALSE))
   }else if(dat_type == 'other'){
-    info <- paste0("The data ", study.name, " contains ADD_DETAILS")
+    info <- paste0("The data ", study.name, " contains ADD_DETAILS", "\\cr")
     return(data.frame(info, stringsAsFactors = FALSE))
   }
 }
