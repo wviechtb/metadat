@@ -2,6 +2,9 @@
 \docType{data}
 \alias{dat.nakagawa2015.1}
 \alias{dat.nakagawa2015.2}
+\alias{dat.nakagawa2015.3}
+\alias{dat.nakagawa2015.phy1}
+\alias{dat.nakagawa2015.phy2}
 \title{ADD_TITLE}
 \description{ADD_DESCRIPTION}
 \usage{dat.nakagawa2015}
