@@ -20,7 +20,7 @@ The data frame dat.cleasby2012.1 contains the following columns:
 \bold{Within} \tab \code{integer} \tab ADD_DESCRIPTION \cr
 \bold{Extra} \tab \code{integer} \tab ADD_DESCRIPTION \cr
 \bold{Difference} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-}  
+}
 The data frame dat.cleasby2012.2 contains the following columns:
 \tabular{lll}{
 \bold{Species} \tab \code{factor} \tab ADD_DESCRIPTION \cr
@@ -33,14 +33,14 @@ The data frame dat.cleasby2012.2 contains the following columns:
 \bold{ZW} \tab \code{numeric} \tab ADD_DESCRIPTION \cr
 \bold{NW} \tab \code{integer} \tab ADD_DESCRIPTION \cr
 \bold{WW} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-}  
+}
 }
 \details{ADD_DETAILS}
 \source{ADD_REFERENCE}
 \author{ADD_CONTRIBUTOR_NAME, \email{ADD_EMAIL}}
 \examples{
 ### copy data into 'dat' and examine data
-dat <- dat.cleasby2012
+dat <- dat.cleasby2012.1
 dat
 }
 \keyword{datasets}
