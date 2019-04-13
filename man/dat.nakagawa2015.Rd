@@ -85,24 +85,30 @@ phy <- dat.nakagawa2015.phy1
 if((require(metafor) && require(ape))){
 	
 	# Calculate the effect sizes - log coefficient of variance ratio
-	dat<-escalc(measure = "CVR", n1i = male_n, m1i = male_mean, sd1i = male_SD, n2i = female_n, m2i = female_mean, sd2i = female_SD, data=dat)
+	dat <- escalc(measure = "CVR", n1i = male_n, m1i = male_mean, 
+	                               sd1i = male_SD, n2i = female_n, 
+	                               m2i = female_mean, sd2i = female_SD, 
+	                               data=dat)
 	
 	# Convert phy to ultrametric format (Grafen's method)
 	phy<-compute.brlen(phy)
 	
 	# Convert to correlation matrix
-	CorMatrix<-vcv.phylo(phy, cor=TRUE)
-	Cov<-CorMatrix[match(dat$animal, rownames(CorMatrix)),match(dat$animal, colnames(CorMatrix))]
+	CorMatrix <- vcv.phylo(phy, cor=TRUE)
+	Cov <- CorMatrix[match(dat$animal, rownames(CorMatrix)),
+	                 match(dat$animal, colnames(CorMatrix))]
 	
 	# Ensure the random effects are factors
-	dat$effect.id<-as.factor(dat$effect.id)
-	dat$species<-as.factor(dat$species)
-	dat$animal<-as.factor(dat$animal)
+	dat$effect.id <- as.factor(dat$effect.id)
+	dat$species <- as.factor(dat$species)
+	dat$animal <- as.factor(dat$animal)
 	
 	# Fit the models
-	REMA<-rma.mv(yi = yi , V = vi, random=list(~1|effect.id), data=dat)
+	REMA <- rma.mv(yi = yi , V = vi, random=list(~1|effect.id), data=dat)
 	summary(REMA)
-	PMA<-rma.mv(yi = yi , V = vi, random=list(~1|animal, ~1|effect.id), R=list(animal = Cov), data=dat)
+	PMA <- rma.mv(yi = yi , V = vi, 
+	              random=list(~1|animal, ~1|effect.id), 
+	              R = list(animal = Cov), data=dat)
 	summary(PMA)
 }
 }
