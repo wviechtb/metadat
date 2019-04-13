@@ -24,6 +24,7 @@
 "dat.lee2004.r"
 "dat.li2007.r"
 "dat.linde2005.r"
+"dat.maire2019.r"
 "dat.mcdaniel1994.r"
 "dat.molloy2014.r"
 "dat.nakagawa2007.r"
