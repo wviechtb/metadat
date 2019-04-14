@@ -144,7 +144,11 @@ if((require(metafor) && require(ape))){
 	# phylogenetic signals are sometimes quantified as phylogenetic heritability, or 'Pagel's lambda': sigma_phylo / sigma_total
 	PMA$sigma2[1]/sum(PMA$sigma2)
 	 
-	 # an alternative is to include the typical sampling error in the total variance, which becomes analagous to I2 for the phylogeny
+	 # an alternative is to include the typical sampling variance in the total variance, which becomes analagous to I2 for the phylogeny
+	 
+	 # calculate the typical sampling variance
+	 tsv<-((sum(1/dat$vi)) * (length(dat$vi)-1)) / (((sum(1/dat$vi))^2) - (sum((1/dat$vi)^2)))
+	PMA$sigma2[1]/(sum(PMA$sigma2) + tsv)
 	 
 }
 }
