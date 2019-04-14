@@ -118,6 +118,7 @@ if((require(metafor) && require(ape))){
 	# demonstrated with the maternal size, offspring size correlation
 	dat<-dat.lim2014.1
 	phy<-dat.lim2014.phy1	
+	plot(phy, cex=0.25)
 	
 	# calculate the sample variance for zr
 	dat$vi<-(1/sqrt(dat$N-1))^2
