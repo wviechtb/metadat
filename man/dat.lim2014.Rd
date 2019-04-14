@@ -19,87 +19,85 @@ The data frame dat.lim2014.1 contains the following columns:
 \bold{Datapoint} \tab \code{integer} \tab a unqiue numeric identifier for the specific correlation \cr
 \bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
 \bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
-\bold{Common.Name} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{N} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Maternal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Offspring} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Reproduction} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Propagule} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Environment} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Author} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{year} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Phylum} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Class} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Order} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Family} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Genus} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{RU} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{yi} \tab \code{numeric} \tab ADD_DESCRIPTION \cr
+\bold{Common.Name} \tab \code{character} \tab common name of the species \cr
+\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
+\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
+\bold{Offspring} \tab \code{character} \tab the trait used to quantify offspring size \cr
+\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
+\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
+\bold{Environment} \tab \code{character} \tab is the correlaiton quanitifed in the wild or in captivity \cr
+\bold{Author} \tab \code{character} \tab authors of the primary study \cr
+\bold{year} \tab \code{character} \tab year published \cr
+\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
+\bold{Class} \tab \code{character} \tab class of the species \cr
+\bold{Order} \tab \code{character} \tab order of the species \cr
+\bold{Family} \tab \code{character} \tab family of the species \cr
+\bold{Genus} \tab \code{character} \tab genus of the species \cr
+\bold{RU} \tab \code{character} \tab single of lifetime reproductive unit \cr
+\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
 }  
 The data frame dat.lim2014.2 contains the following columns:
 \tabular{lll}{
-\bold{Article} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Datapoint} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Amniotes} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{animal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Common.Name} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{N} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Maternal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Fecundity} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Reproduction} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Propagule} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Environment} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Author} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{year} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Phylum} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Class} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Order} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Family} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Genus} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{RU} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{yi} \tab \code{numeric} \tab ADD_DESCRIPTION \cr
+\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
+\bold{Datapoint} \tab \code{integer} \tab a unqiue numeric identifier for the specific correlation \cr
+\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
+\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
+\bold{Common.Name} \tab \code{character} \tab common name of the species \cr
+\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
+\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
+\bold{Fecundity} \tab \code{character} \tab the trait used to quantify offspring numbers \cr
+\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
+\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
+\bold{Environment} \tab \code{character} \tab is the correlaiton quanitifed in the wild or in captivity \cr
+\bold{Author} \tab \code{character} \tab authors of the primary study \cr
+\bold{year} \tab \code{character} \tab year published \cr
+\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
+\bold{Class} \tab \code{character} \tab class of the species \cr
+\bold{Order} \tab \code{character} \tab order of the species \cr
+\bold{Family} \tab \code{character} \tab family of the species \cr
+\bold{Genus} \tab \code{character} \tab genus of the species \cr
+\bold{RU} \tab \code{character} \tab single of lifetime reproductive unit \cr
+\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
 }  
 The data frame dat.lim2014.3 contains the following columns:
 \tabular{lll}{
-\bold{Article} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Amniotes} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{animal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{N} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Maternal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Offspring} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Propagule} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Reproduction} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Environment} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Author} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Date} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Species} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Phylum} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Class} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Order} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Family} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Genus} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{yi} \tab \code{numeric} \tab ADD_DESCRIPTION \cr
+\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
+\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
+\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
+\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
+\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
+\bold{Offspring} \tab \code{character} \tab the trait used to quantify offspring size \cr
+\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
+\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
+\bold{Environment} \tab \code{character} \tab is the correlaiton quanitifed in the wild or in captivity \cr
+\bold{Author} \tab \code{character} \tab authors of the primary study \cr
+\bold{Date} \tab \code{character} \tab year published \cr
+\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
+\bold{Class} \tab \code{character} \tab class of the species \cr
+\bold{Order} \tab \code{character} \tab order of the species \cr
+\bold{Family} \tab \code{character} \tab family of the species \cr
+\bold{Genus} \tab \code{character} \tab genus of the species \cr
+\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
 }  
 The data frame dat.lim2014.4 contains the following columns:
 \tabular{lll}{
-\bold{Article} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Amniotes} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{animal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{N} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Maternal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Offspring} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Propagule} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Reproduction} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Environment} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Author} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Date} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Species} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Phylum} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Class} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Order} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Family} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Genus} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{yi} \tab \code{numeric} \tab ADD_DESCRIPTION \cr
+\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
+\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
+\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
+\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
+\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
+\bold{Offspring} \tab \code{character} \tab the trait used to quantify offspring size \cr
+\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
+\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
+\bold{Environment} \tab \code{character} \tab is the correlaiton quanitifed in the wild or in captivity \cr
+\bold{Author} \tab \code{character} \tab authors of the primary study \cr
+\bold{Date} \tab \code{character} \tab year published \cr
+\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
+\bold{Class} \tab \code{character} \tab class of the species \cr
+\bold{Order} \tab \code{character} \tab order of the species \cr
+\bold{Family} \tab \code{character} \tab family of the species \cr
+\bold{Genus} \tab \code{character} \tab genus of the species \cr
+\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
 }  
 The data dat.lim2014.phy1 contains a phylogeny for the species in dat.lim2014.1\cr
 The data dat.lim2014.phy2 contains a phylogeny for the species in dat.lim2014.2\cr
