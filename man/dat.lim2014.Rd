@@ -104,7 +104,11 @@ The data dat.lim2014.phy2 contains a phylogeny for the species in dat.lim2014.2\
 The data dat.lim2014.phy3 contains a phylogeny for the species in dat.lim2014.3\cr
 The data dat.lim2014.phy4 contains a phylogeny for the species in dat.lim2014.4\cr
 }
-\details{ADD_DETAILS}
+\details{
+	A meta-analysis on the strength of correlation between 1) maternal size and offspring size (dat.lim2014.1), 2) maternal size and maternal fecundity (dat.lim2014.2), 3) offspring size and offspring number (dat.lim2014.3), 4) offspring size and offspring number, adjusted for maternal size (dat.lim2014.4).
+	
+	In each case the correlation is given as the z-transformed correlation coefficient. In places these have been computed from other statsitics in the primary literature. A number of predictors related to life-history traits of the species are given. Topologies for the phylogenetic relationship between the species included in each data set are included. 
+	}
 \source{Lim, J.N., Senior, A.M. & Nakagawa, S. (2014). Heterogeneity in individual quality and reproductive trade‐offs within species. \emph{Evolution}, \bold{8}, 2306-2318.}
 \author{Alistair M Senior, \email{alistair.senior@sydney.edu.au}}
 \examples{
