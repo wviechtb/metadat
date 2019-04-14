@@ -37,6 +37,7 @@
 \source{
    Xia, J., & Wan, J. (2008). Global response patterns of terrestrial plant species to nitrogen addition. \emph{New Phytologist}, \bold{179}, 428--439.
 }
+\author{Alistair M Senior, \email{alistair.senior@sydney.edu.au}}
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.xia2008

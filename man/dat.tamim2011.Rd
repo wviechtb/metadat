@@ -26,6 +26,7 @@ Second-Order Meta-Analysis and Validation Study}
    Tamim, R.A, Bernard, R.M., Borokhovski, E., Abrami, P.C. & Schmid, R.F. (2011). What Forty Years of Research Says About the Impact of Technology on Learning: A
 Second-Order Meta-Analysis and Validation Study. \emph{Review of Educational Research}, \bold{81}, 4--28.
 }
+\author{Alistair M Senior, \email{alistair.senior@sydney.edu.au}}
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.tamim2011
