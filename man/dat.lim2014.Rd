@@ -9,8 +9,8 @@
 \alias{dat.lim2014.phy3}
 \alias{dat.lim2014.phy4}
 \alias{dat.lim2014}
-\title{ADD_TITLE}
-\description{ADD_DESCRIPTION}
+\title{Heterogeneity in individual quality and reproductive trade‐offs within species}
+\description{Correlations between: 1) maternal size and offspring size (dat.lim2014.1), 2) maternal size and maternal fecundity (dat.lim2014.2), 3) offspring size and offspring number (dat.lim2014.3), 4) offspring size and offspring number, adjusted for maternal size (dat.lim2014.4)}
 \usage{dat.lim2014}
 \format{
 The data frame dat.lim2014.1 contains the following columns:
@@ -103,18 +103,21 @@ The data frame dat.lim2014.4 contains the following columns:
 \bold{Genus} \tab \code{character} \tab ADD_DESCRIPTION \cr
 \bold{yi} \tab \code{numeric} \tab ADD_DESCRIPTION \cr
 }  
-The data dat.lim2014.phy1 contains ADD_DETAILS\cr
-The data dat.lim2014.phy2 contains ADD_DETAILS\cr
-The data dat.lim2014.phy3 contains ADD_DETAILS\cr
-The data dat.lim2014.phy4 contains ADD_DETAILS\cr
+The data dat.lim2014.phy1 contains a phylogeny for the species in dat.lim2014.1\cr
+The data dat.lim2014.phy2 contains a phylogeny for the species in dat.lim2014.2\cr
+The data dat.lim2014.phy3 contains a phylogeny for the species in dat.lim2014.3\cr
+The data dat.lim2014.phy4 contains a phylogeny for the species in dat.lim2014.4\cr
 }
 \details{ADD_DETAILS}
-\source{ADD_REFERENCE}
-\author{ADD_CONTRIBUTOR_NAME, \email{ADD_EMAIL}}
+\source{Lim, J.N., Senior, A.M. & Nakagawa, S. (2014). Heterogeneity in individual quality and reproductive trade‐offs within species. \emph{Evolution}, \bold{8}, 2306-2318.}
+\author{Alistair M Senior, \email{alistair.senior@sydney.edu.au}}
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.lim2014
 dat
 }
 \keyword{datasets}
-\concept{ADD_CONCEPT}
+\concept{ecology}
+\concept{evolution}
+\concept{phylogeny}
+\concept{correlation}
