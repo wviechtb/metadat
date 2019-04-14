@@ -15,11 +15,10 @@
 \format{
 The data frame dat.lim2014.1 contains the following columns:
 \tabular{lll}{
-\bold{Article} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Datapoint} \tab \code{integer} \tab ADD_DESCRIPTION \cr
-\bold{Amniotes} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{animal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Species} \tab \code{character} \tab ADD_DESCRIPTION \cr
+\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
+\bold{Datapoint} \tab \code{integer} \tab a unqiue numeric identifier for the specific correlation \cr
+\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
+\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
 \bold{Common.Name} \tab \code{character} \tab ADD_DESCRIPTION \cr
 \bold{N} \tab \code{integer} \tab ADD_DESCRIPTION \cr
 \bold{Maternal} \tab \code{character} \tab ADD_DESCRIPTION \cr
@@ -43,7 +42,6 @@ The data frame dat.lim2014.2 contains the following columns:
 \bold{Datapoint} \tab \code{integer} \tab ADD_DESCRIPTION \cr
 \bold{Amniotes} \tab \code{character} \tab ADD_DESCRIPTION \cr
 \bold{animal} \tab \code{character} \tab ADD_DESCRIPTION \cr
-\bold{Species} \tab \code{character} \tab ADD_DESCRIPTION \cr
 \bold{Common.Name} \tab \code{character} \tab ADD_DESCRIPTION \cr
 \bold{N} \tab \code{integer} \tab ADD_DESCRIPTION \cr
 \bold{Maternal} \tab \code{character} \tab ADD_DESCRIPTION \cr
