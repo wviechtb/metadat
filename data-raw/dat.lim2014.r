@@ -3,7 +3,6 @@ dat.lim2014.1<-dat.lim2014.1[,c(1:6, 17:19, 21, 22, 23, 25, 26, 28:32, 36, 35)]
 names(dat.lim2014.1)[dim(dat.lim2014.1)[2]]<-"yi"
 save(dat.lim2014.1, file="data/dat.lim2014.1.rda")
 
-
 dat.lim2014.2 <- read.csv("data-raw/dat.lim2014.2.csv", stringsAsFactors = F)
 dat.lim2014.2<-dat.lim2014.2[,c(1:6, 17, 18, 20, 21, 22, 23, 25, 26, 28:32, 36, 35)]
 names(dat.lim2014.2)[dim(dat.lim2014.2)[2]]<-"yi"
@@ -29,3 +28,8 @@ my.repro[which(my.repro == 0)]<-"it"
 dat.lim2014.4$Reproduction<-my.repro
 save(dat.lim2014.4, file="data/dat.lim2014.4.rda")
 
+library(ape)
+dat.lim2014.phy1 <- read.tree("data-raw/dat.lim2014.phy1.tre")
+dat.lim2014.phy2 <- read.tree("data-raw/dat.lim2014.phy2.tre")
+dat.lim2014.phy3 <- read.tree("data-raw/dat.lim2014.phy3.tre")
+dat.lim2014.phy4 <- read.tree("data-raw/dat.lim2014.phy4.tre")
