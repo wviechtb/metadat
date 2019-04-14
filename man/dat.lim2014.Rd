@@ -115,7 +115,7 @@ The data dat.lim2014.phy4 contains a phylogeny for the species in dat.lim2014.4\
 # exploring phylogeneitc effects - the metafor and ape packages are required
 if((require(metafor) && require(ape))){
 	
-	# demonstrated with the maternal size, offpsring size correlation
+	# demonstrated with the maternal size, offspring size correlation
 	dat<-dat.lim2014.1
 	phy<-dat.lim2014.phy1	
 	
@@ -148,8 +148,7 @@ if((require(metafor) && require(ape))){
 	 
 	 # calculate the typical sampling variance
 	 tsv<-((sum(1/dat$vi)) * (length(dat$vi)-1)) / (((sum(1/dat$vi))^2) - (sum((1/dat$vi)^2)))
-	PMA$sigma2[1]/(sum(PMA$sigma2) + tsv)
-	 
+	PMA$sigma2[1]/(sum(PMA$sigma2) + tsv)	 
 }
 }
 \keyword{datasets}
