@@ -1,0 +1,72 @@
+﻿species,yi,trait,measure,n,source
+Avena barbata,0.9,LH,GD,62,Price et al. 1984
+Bicyclus anynana,-0.3,M,H,75,Oosterhout 1998
+Bicyclus anynana,0.07,M,Ha,81,"Saccheri et al. 1996, 1999"
+Carduelis chloris,0.71,M,GD,60,Merila 1997
+Carduelis chloris,0.5,M,GD,60,Merila 1997
+Clarkia williamsonii,-0.3,LH,GD,51,Price et al. 1984
+Clupea harengus,0.59,M,P,110,Ryman et al. 1984
+Cottus,0.73,M,P,247,Strauss 1991
+Cottus,0.19,M,P,241,Strauss 1989
+Daphnia obtusa,0.16,LH,H,79,Spitze 1993
+Daphnia pulex,-0.17,LH,Hb,100,Lynch et al. 1999
+Dipodomys,0.06,M,GD,88,Schnell et al. 1978
+Dipodomys,0.29,M,GD,88,Schnell et al. 1978
+Dipodomys,-0.09,M,GD,88,Schnell et al. 1978
+Dipodomys,0.11,M,GD,88,Schnell et al. 1978
+Dolichopoda,-0.3,M,GD,70,Allegrucci et al. 1987
+Drosophila melanogaster,0.89,M,H,52,Briscoe et al. 1992
+Drosophila melanogaster,0.3,M,H,39,"R. Frankham, unpubl. data"
+Drosophila melanogaster,0.21,M,H,27,"D. Gilligan, unpubl. data"
+Drosophila melanogaster,0.31,M,H,27,"D. Gilligan, unpubl. data"
+Drosophila melanogaster,0.69,M,H,26,Lopez-Fanjul and Hill 1973
+Fringilla coelebs,0.68,M,P,145,Dennison and Baker 1991
+Gentiana pneumonanthe,-0.49,LH,P,42,Oostermeijer et al. 1995
+Gypsophila fastigiate,0.59,M,GD,53,Prentice 1992
+Hordeum jubatum,-0.23,LH,GD,165,Price et al. 1984
+Hordeum spontaneoum,0.37,M,P,66,Nevo t al. 1979
+Hordeum vulgare,-0.13,LH,GD,33,Price et al. 1984
+Mullus barbatus,0.08,M,GDc,66,Mammuris et al. 1998
+Mullus barbatus,0.05,M,GDc,124,Mammuris et al. 1998
+Mullus barbatus,0.09,M,Pc,124,Mammuris et al. 1998
+Mullus barbatus Multiple,0.3,M,Pc,66,Mammuris et al. 1998
+Multiple,-0.04,LH,H,57,Butlin and Tregenza 1998
+Mus musculus,-0.36,LH,H,63,Butlin and Tregenza 1998
+Musca domestica,0.09,LH,P,37,Schnell and Selander 1981
+Musca domestica,0.53,M,H,24,Bryant et al. 1999
+Musca domestica,0.14,LH,H,41,Reed 1998
+Nassella pulchra,0.57,M,P,100,Bryant 1984
+Oncorhynchus gorbuscha,0.46,M,GD,54,Knapp and Rice 1998
+Oncorhynchus gorbuscha,0.51,M,GD,104,Beacham and Withler 1985
+Pararge aegeria,0.27,M,GD,104,Beacham and Withler 1985
+Pararge aegeria,-0.51,M,P,46,Berwaerts et al. 1998
+Passarella iliaca,0.52,LH,P,42,Berwaerts et al. 1998
+Peromyscus maniculatus,-0.07,M,P,114,Zink et al. 1985
+Peromyscus maniculatus,0.02,M,GD,52,Aquadro and Kilpatrick 1981
+Peromyscus maniculatus,0.12,M,GDd,67,Ashley and Willis 1989
+Peromyscus maniculatus,0.18,M,GDd,25,Ashley and Willis 1989
+Peromyscus polionutus,0.82,M,P,52,Aquadro and Kilpatrick 1981
+Petrorhagia prolifera,0.01,M,GD,112,Schnell and Selander 1981
+Phlox drummondii,0.22,M,GD,32,Lonn and Prentice 1990
+Phlox drummondii,0.42,M,GD,85,Schwaegerle et al. 1986
+Phlox drummondii,-0.48,LH,H,40,Schwaegerle et al. 1986
+Raphanus sativus,-0.61,M,H,76,Schwaegerle et al. 1986
+Rattus rattus,0.75,M ,GD,211,Rabbani et al. 1998
+Rattus rattus,-0.6,M,GD,90,Patton et al. 1975
+Salvia pratensis,0.77,M,P,90,Patton et al. 1975
+Scabiosa,0.16,LH,P,130,Ouborg and Van Treuren 1995
+Scabiosa,0.84,M,H,35,Waldmann and Andersson 1998
+Sigmodon hispidus,0.14,LH,H,35,Waldmann and Andersson 1998
+Thomomys bottae,-0.57,M,P,57,McClenaghan and Gaines 1981
+Thomomys,0.87,M,P,84,Soule and Zegers 1996
+Thomomys bottae,0.58,M,P,131,Soule and Zegers 1986
+Tupinambis,0.14,M,P,135,Zink et al. 1985
+Tupinambis,0.13,LH,P,21,Colli et al. 1998
+Tupinambis,-0.22,LH,P,26,Colli et al. 1998
+Urocyon littoralis,-0.12,M,P,27,Colli et al. 1998
+Urocyon littoralis,0.78,M,GD,84,Wayne et al. 1991
+Uta stansburiana,0.45,M,P,84,Wayne et al. 1991
+Wyeomyia smithii,0.73,M,P,67,Soule 1973
+Wyeomyia smithii,-0.66,LH,H,81,Armbruster et al. 1998
+Zonotrichia capensis,-0.88,LH,H,57,Armbruster et al. 1998
+,0.17,M,P,73,Yezerina et al. 1992
