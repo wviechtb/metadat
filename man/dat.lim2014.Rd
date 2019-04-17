@@ -78,6 +78,7 @@ The data frame dat.lim2014.3 contains the following columns:
 \bold{Family} \tab \code{character} \tab family of the species \cr
 \bold{Genus} \tab \code{character} \tab genus of the species \cr
 \bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
+\bold{Datapoint} \tab \code{integer} \tab a unqiue numeric identifier for the specific correlation \cr
 }
 The data frame dat.lim2014.4 contains the following columns:
 \tabular{lll}{
@@ -98,6 +99,7 @@ The data frame dat.lim2014.4 contains the following columns:
 \bold{Family} \tab \code{character} \tab family of the species \cr
 \bold{Genus} \tab \code{character} \tab genus of the species \cr
 \bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
+\bold{Datapoint} \tab \code{integer} \tab a unqiue numeric identifier for the specific correlation \cr
 }
 The data dat.lim2014.phy1 contains a phylogeny for the species in dat.lim2014.1\cr
 The data dat.lim2014.phy2 contains a phylogeny for the species in dat.lim2014.2\cr
