@@ -1,11 +1,13 @@
 dat.lim2014.1 <- read.csv("data-raw/dat.lim2014.1.csv", stringsAsFactors = F)
 dat.lim2014.1<-dat.lim2014.1[,c(1:4, 6, 17:19, 21, 22, 23, 25, 26, 28:32, 36, 35)]
 names(dat.lim2014.1)[dim(dat.lim2014.1)[2]]<-"yi"
+dat.lim2014.1$Datapoint<-seq(1, dim(dat.lim2014.1)[1], 1)
 save(dat.lim2014.1, file="data/dat.lim2014.1.rda")
 
 dat.lim2014.2 <- read.csv("data-raw/dat.lim2014.2.csv", stringsAsFactors = F)
 dat.lim2014.2<-dat.lim2014.2[,c(1:4, 6, 17, 18, 20, 21, 22, 23, 25, 26, 28:32, 36, 35)]
 names(dat.lim2014.2)[dim(dat.lim2014.2)[2]]<-"yi"
+dat.lim2014.2$Datapoint<-seq(1, dim(dat.lim2014.2)[1], 1)
 save(dat.lim2014.2, file="data/dat.lim2014.2.rda")
 
 dat.lim2014.3 <- read.csv("data-raw/dat.lim2014.3.csv", stringsAsFactors = F)
@@ -16,6 +18,7 @@ my.repro<-dat.lim2014.3$Reproduction
 my.repro<-as.character(my.repro)
 my.repro[which(my.repro == 0)]<-"it"
 dat.lim2014.3$Reproduction<-my.repro
+dat.lim2014.3$Datapoint<-seq(1, dim(dat.lim2014.3)[1], 1)
 save(dat.lim2014.3, file="data/dat.lim2014.3.rda")
 
 dat.lim2014.4 <- read.csv("data-raw/dat.lim2014.4.csv", stringsAsFactors = F)
@@ -26,6 +29,7 @@ my.repro<-dat.lim2014.4$Reproduction
 my.repro<-as.character(my.repro)
 my.repro[which(my.repro == 0)]<-"it"
 dat.lim2014.4$Reproduction<-my.repro
+dat.lim2014.4$Datapoint<-seq(1, dim(dat.lim2014.4)[1], 1)
 save(dat.lim2014.4, file="data/dat.lim2014.4.rda")
 
 library(ape)
