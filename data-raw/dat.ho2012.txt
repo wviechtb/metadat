@@ -1,0 +1,11 @@
+"author" "yi" "sei"
+"1" "Devilly et al" -0.463 0.409
+"2" "Taylor et al" -0.385 0.377
+"3" "Jaberghadri" 0.075 0.506
+"4" "Rothbaum" 0.288 0.321
+"5" "Johnson & Lubin" 0.328 0.458
+"6" "Lee et al" 0.412 0.4
+"7" "Power et al" 0.493 0.292
+"8" "Ironson et al" 0.523 0.484
+"9" "Vaughan et al" 0.532 0.397
+"10" "Rogers et al" 1.178 0.712
