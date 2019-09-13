@@ -1,0 +1,57 @@
+id;Author;Year;Paradigm;Measure;Age_months;n;Dropped_participants;Dropped_participants_corrected;Familiarization;Belief;Agent;Target_object_Presence;Object_movements;Motive_transformation;Salience_of_agents_MS;Interaction;Design;Test_trials;logit.p.;vlogit.p.;sei
+voe1;Onishi & Baillargeon;2005;VOE;VOE;15.23;14;14;7;2;L;real present person;real, present;1;other reason;absence;no;BS;1;2.3398012;1.1514538;1.073058153
+voe2;Onishi & Baillargeon;2005;VOE;VOE;15.23;14;NA;7;2;L;real present person;real, present;1;other reason;absence;no;BS;1;3.0834589;1.2830486;1.132717352
+al1;Southgate et al.;2007;AL;AL;25.13;10;16;8;2;L;videotaped person;absent;1;other reason;back turned;no;BS;1;2.197225;1.111111;1.054092501
+al2;Southgate et al.;2007;AL;AL;25.2;10;NA;8;2;L;videotaped person;absent;2;other reason;back turned;no;BS;1;1.386294;0.625;0.790569415
+voe3;Surian et al. ;2007;VOE;VOE;13.13;28;8;8;5;L;virtual agent;real, present;1;other reason;absence;no;BS;1;0.9250377;0.4934802;0.702481459
+voe4;Surian et al. ;2007;VOE;VOE;13.1;26;7;7;5;L;virtual agent;real, present;1;other reason;absence;no;BS;1;0.4897258;0.5263789;0.725519745
+voe5;Song et al.;2008;VOE;VOE;18.6;14;9;9;3;L;real present person;real, present;1;other reason;absence;no;BS;1;2.5574571;1.1843525;1.088279606
+voe6;Song et al.;2008;VOE;VOE;18.57;16;13;13;3;L;real present person;real, present;1;other reason;absence;no;BS;1;2.6481471;1.0527578;1.026039863
+int1;Buttelmann et al.;2009;Interactive;Help;18;25;119;60;0;L;real present person;real, present;1;trick;absence;yes;BS;1;0.9444616;0.1984127;0.445435405
+int2;Buttelmann et al.;2009;Interactive;Help;16.3;25;NA;59;0;L;real present person;real, present;1;trick;absence;yes;BS;1;1.386294;0.25;0.5
+voe7;Scott & Baillargeon;2009;VOE;VOE;17.73;14;19;19;4;I;real present person;real, present;0;other reason;absence;no;WS;2;1.126369;0.2802925;0.529426577
+voe8;Scott & Baillargeon;2009;VOE;VOE;17.8;14;10;10;4;I;real present person;real, present;0;other reason;absence;no;WS;2;1.822959;0.3536756;0.594706314
+int3;Southgate et al.;2010;Interactive;Pointing;17.73;12;3;3;0;L;real present person;real, present;1;trick;absence;yes;BS;1;1.098612;0.4444444;0.666666633
+int4;Southgate et al.;2010;Interactive;Pointing;17.83;12;11;11;0;L;real present person;real, present;1;trick;absence;yes;BS;1;1.609438;0.6;0.774596669
+int5;Southgate et al.;2010;Interactive;Pointing;17.97;12;6;6;0;L;real present person;real, present;1;trick;absence;yes;BS;1;1.098612;0.4444444;0.666666633
+voe9;Scott et al.;2010;VOE;VOE;18.67;18;10;10;1;NP;real present person;real, present;0;other reason;absence;no;BS;1;2.3216632;0.8882644;0.942477798
+voe10;Scott et al.;2010;VOE;VOE;18.8;16;3;3;2;NP;real present person;real, present;0;other reason;absence;no;BS;1;1.7956614;0.9211631;0.959772421
+al3;Senju et al.;2011;AL;AL;18;18;12;12;4;L;videotaped person;absent;1;other reason;first-person experience;no;BS;1;1.252763;0.3214286;0.566946735
+voe11;Luo;2011;VOE;VOE;10.1;12;7;7;3;L;real present person;real, present;0;other reason;absence;no;WS;2;1.0128669;0.31690148;0.562940032
+al4;Surian & Geraci;2012;AL;AL;17.13;24;2;2;2;L;virtual agent;real, present;1;other reason;absence;no;WS;1;0.8873032;0.2016807;0.449088744
+al5;Surian & Geraci;2012;AL;AL;11.5;16;3;3;2;L;virtual agent;real, present;1;other reason;absence;no;WS;1;-0.2513144;0.2539683;0.503952676
+al6;Meristo et al.;2012;AL;AL;23;10;4;4;2;L;virtual agent;real, present;1;other reason;absence;no;WS;1;3.044522;2.095238;1.447493696
+al7;Thoermer et al.;2012;AL;AL;18.07;44;10;10;2;L;videotaped person;absent;2;other reason;back turned;no;BS;1;0.1823216;0.09166667;0.302765041
+int6;Knudsen & Liszkowski (a);2012;Interactive;Pointing;18.4;19;5;5;0;L;real present person;absent;2;other reason;absence;yes;BS;4;0.5389965;0.2261905;0.475594891
+int7;Knudsen & Liszkowski (a);2012;Interactive;Pointing;18.67;19;5;5;0;L;real present person;absent;2;other reason;absence;yes;BS;4;-0.1053605;0.2111111;0.45946828
+int8;Knudsen & Liszkowski (b);2012;Interactive;Pointing;18.33;16;7;7;0;L;real present person;real, present;1;other reason;absence;yes;BS;2;-0.2513144;0.2539683;0.503952676
+int9;Knudsen & Liszkowski (b);2012;Interactive;Pointing;24.47;16;NA;6;0;L;real present person;real, present;1;other reason;absence;yes;WS;2;0.7884574;0.2909091;0.539359898
+voe12;Yott & Poulin-Dubois;2012;VOE;VOE;18.77;34;34;34;3;L;real present person;real, present;1;other reason;absence;no;BS;1;1.5780054;0.4276829;0.653974694
+voe13;Poulin-Dubois et al.;2013;VOE;VOE;16.13;51;17;17;3;L;real present person;real, present;1;other reason;used a blindfold;no;BS;1;-0.33;0.2631895;0.51301998
+int10;Buttelmann et al.;2014;Interactive;Help;18.3;18;21;21;0;C;real present person;real, present;0;other reason;absence;yes;BS;1;0.6931472;0.25;0.5
+al8;Zmyj et al.;2015;AL;AL;18.07;22;15;15;2;L;videotaped person;absent;2;other reason;back turned;no;BS;1;-0.7621401;0.2095238;0.457737698
+int11;Buttelmann et al.;2015;Interactive;Help;18.17;31;10;10;0;I;real present person;real, present;0;other reason;absence;yes;BS;4;0.06453852;0.1291667;0.359397691
+voe14;Scott et al.;2015;VOE;VOE;17.47;18;3;3;6;I;real present person;absent;0;trick;absence;no;BS;1;2.5393191;0.9211631;0.959772421
+voe15;Scott et al.;2015;VOE;VOE;17.53;18;7;7;6;I;real present person;absent;0;trick;absence;no;BS;1;2.1221453;0.8553657;0.924859827
+voe16;Scott et al.;2015;VOE;VOE;17.4;18;5;5;6;I;real present person;absent;0;trick;absence;no;BS;1;2.1221453;0.8553657;0.924859827
+voe17;Yott & Poulin-Dubois;2016;VOE;VOE;16;72;25;25;3;L;real present person;real, present;1;other reason;absence;no;WS;2;0.4471367;0.04708104;0.216981658
+int12;Fizke et al.;2017;Interactive;Help;26;23;25;23;0;L;real present person;real, present;1;trick;absence;yes;BS;2;-0.8266786;0.2053571;0.453163436
+int13;Fizke et al.;2017;Interactive;Help;26;23;NA;23;0;I;real present person;real, present;0;trick;absence;yes;BS;2;-0.4418328;0.1825397;0.42724665
+voe19;Moriguchi et al.;2017;VOE;VOE;18.5;37;1;1;2;L;real present person;real, present;1;other reason;absence;no;WS;1;1.18949;0.1079077;0.328493075
+al9;Kulke et al.;2018;AL;AL;24.5;11;0;0;4;L;videotaped person;absent;1;other reason;back turned;no;BS;1;-0.9808293;0.4583333;0.677003176
+al10;Kulke et al.;2018;AL;AL;24.5;9;0;0;4;L;videotaped person;absent;2;other reason;back turned;no;BS;1;0.2231436;0.45;0.670820393
+al11;Grosse Wiesmann et al.;2018;AL;AL;25.2;25;7;4;2;L;videotaped person;absent;1;other reason;back turned;no;BS;1;0.08004271;0.1602564;0.400320372
+al12;Grosse Wiesmann et al.;2018;AL;AL;25.2;25;NA;3;2;L;videotaped person;absent;2;other reason;back turned;no;BS;1;-0.08004271;0.1602564;0.400320372
+al13;Dorrenberg et al.;2018;AL;AL;24.53;50;16;8;2;L;videotaped person;absent;1;other reason;back turned;no;WS;2;0.4895482;0.08488964;0.291358267
+al14;Dorrenberg et al.;2018;AL;AL;24.53;49;NA;8;2;L;videotaped person;absent;2;other reason;back turned;no;WS;NA;-1.126011;0.1103604;0.332205358
+al15;Schuwerk et al.;2018;AL;AL;25.5;58;20;20;2;L;videotaped person;absent;2;other reason;back turned;no;BS;1;-0.06899287;0.06904762;0.262769138
+int14;Poulin-Dubois & Yott;2018;Interactive;Help;18;53;19;19;0;L;real present person;real, present;1;trick;absence;yes;WS;1;-0.5819215;0.08204334;0.286432086
+int15;Powell et al.;2018;Interactive;Help;18.6;94;34;17;0;L;real present person;real, present;1;trick;absence;yes;BS;1;0.5221894;0.04552058;0.213355525
+int16;Powell et al.;2018;Interactive;Pointing;25.5;16;NA;17;0;L;real present person;real, present;1;other reason;absence;yes;WS;2;0.7884574;0.2909091;0.539359898
+int17;Priewasser et al.;2018;Interactive;Help;25.64;14;17;17;0;L;real present person;real, present;1;trick;absence;yes;BS;1;2.564949;1.076923;1.037749006
+int18;Crivello & Poulin-Dubois;2018;Interactive;Help;18.4;41;15;15;0;L;real present person;real, present;1;trick;absence;yes;BS;1;-0.5500463;0.1051282;0.324234791
+int19;Crivello & Poulin-Dubois;2018;Interactive;Help;18.47;97;9;9;0;L;real present person;real, present;1;trick;absence;yes;BS;1;0.3117796;0.04224739;0.205541699
+int20;Dorrenberg et al.;2018;Interactive;Pointing;24.53;32;3;3;0;L;real present person;real, present;1;trick;absence;yes;BS;3;0.5108256;0.1333333;0.365148326
+voe18;Dorrenberg et al.;2018;VOE;VOE;24.53;26;9;9;2;L;videotaped person;real, present;1;other reason;absence;no;WS;2;0.3225528;0.12853416;0.35851661
+int21;Kiraly et al.;2018;Interactive;Pointing;18.1;15;12;12;0;L;real present person;real, present;1;trick;first-person experience (belief-revision);yes;BS;1;-1.011601;0.3409091;0.583874216
+int22;Kiraly et al.;2018;Interactive;Pointing;18;15;6;6;0;L;real present person;real, present;1;trick;first-person experience;yes;BS;1;0.6931472;0.3;0.547722558
