@@ -55,7 +55,7 @@ dat$Object_movements <- as.factor(dat$Object_movements)
 dat$Belief <- as.factor(dat$Belief)
 
 # First model 
-res <- rma(yi=logit.p., vi = vi, data=dat, slab = paste(Author, Year)) 
+res <- rma(yi=logit.p., sei = sei, data=dat, slab = paste(Author, Year)) 
 res
 
 # Funnel plot
