@@ -65,3 +65,4 @@ predict(res, newmods=c(rep(0,26), 1, -1), transf=exp, digits=2)
 }
 }
 \keyword{datasets}
+\concept{medicine}

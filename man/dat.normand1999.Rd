@@ -49,3 +49,4 @@ text( 5, 11, "Observed SMD [95\% CI]", pos=2, cex=.8)
 }
 }
 \keyword{datasets}
+\concept{medicine}
