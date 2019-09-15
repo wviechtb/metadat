@@ -60,4 +60,3 @@ funnel(res)
 \keyword{datasets}
 \concept{psychology}
 \concept{medicine}
-

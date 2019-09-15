@@ -56,3 +56,4 @@ predict(res, transf=transf.ilogit)
 }
 }
 \keyword{datasets}
+\concept{medicine}
