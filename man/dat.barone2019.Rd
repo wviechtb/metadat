@@ -126,8 +126,5 @@ text(-11, 46.5, pos=4, cex=0.75, bquote(paste("RE Model for Subgroup (Q = ",
 }
 }
 \keyword{datasets}
-\concept{publication bias}
-\concept{logit transformed proportion}
 \concept{infants}
 \concept{psychology}
-\concept{developmental psychology}
