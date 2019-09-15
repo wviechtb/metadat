@@ -1,4 +1,4 @@
-context("test-dat.begg1989.R")
+context("Checking analysis example: dat.begg1989")
 library(metadat)
 library(metafor)
 
