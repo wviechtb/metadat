@@ -63,3 +63,5 @@ predict(res, newmods=diag(4), transf=exp, digits=2)
 }
 }
 \keyword{datasets}
+\concept{medicine}
+\concept{psychiatry}

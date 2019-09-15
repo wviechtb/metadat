@@ -31,3 +31,4 @@ rma(yi = yi, sei = sei, data = dat)
 }
 }
 \keyword{datasets}
+\concept{psychology}
