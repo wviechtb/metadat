@@ -1,13 +1,15 @@
 language: r
-r:
-  - oldrel
-  - release
-  - devel
-cache: packages
-r_packages: covr
+
+sudo: required
+
+env: _R_CHECK_CRAN_INCOMING_=FALSE
+
+r_packages:
+  - covr
+  - devtools
+
+r_github_packages:
+  - codecov/example-r
+
 after_success:
-  - Rscript -e 'covr::codecov()'
-notifications:
-  email:
-    on_success: never
-    on_failure: never
+  - Rscript -e 'library(covr);codecov()'
