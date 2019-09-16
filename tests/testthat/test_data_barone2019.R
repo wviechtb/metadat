@@ -16,7 +16,7 @@ test_that('data dimensions are correct', {
   expect_equal(nrow(dat), 56)
 })
 
-test_that(' data labels are correct', {
+test_that('data labels are correct', {
   expect_equal(names(dat)[1], "id")
   expect_equal(names(dat)[2], "Author")
   expect_equal(names(dat)[3], "Year")
