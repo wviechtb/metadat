@@ -7,6 +7,9 @@ env: _R_CHECK_CRAN_INCOMING_=FALSE
 r_packages:
   - covr
   - devtools
+  - BiasedUrn
+  - metafor
+  - digest
 
 r_github_packages:
   - codecov/example-r
