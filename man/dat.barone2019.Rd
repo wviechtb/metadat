@@ -42,7 +42,7 @@
 \author{W. Kyle Hamilton, \email{whamilton@ucmerced.edu}}
 \examples{
 if (require(metafor)) {
-# This code example is a very slightly modified version of the one provided by the authors 
+# This code example is a very slightly modified version of the one provided by the authors
 # which can be found here https://osf.io/s5ajt/?view_only=d2605771dd664831a104318db9ff7aa9
 
 ## Make copy of dataset
@@ -54,73 +54,183 @@ dat$Test_trials <- as.factor(dat$Test_trials)
 dat$Object_movements <- as.factor(dat$Object_movements)
 dat$Belief <- as.factor(dat$Belief)
 
-# First model 
-res <- rma(yi=logit.p., sei = sei, data=dat, slab = paste(Author, Year)) 
+# First model
+res <-
+  rma(
+    yi = logit.p.,
+    sei = sei,
+    data = dat,
+    slab = paste(Author, Year)
+  )
 res
 
 # Funnel plot
 # Note the nonsymmetrical distribution in this funnel plot
 # this is an example of publication bias.
-funnel(res, main="Standard Error")
+funnel(res, main = "Standard Error")
 
 # Forest plot (grouped by paradigm)
-par(mar=c(4,4,1,2))
+par(mar = c(4, 4, 1, 2))
 dat$Paradigm[order(dat$Paradigm)]
 rows = c(5:19, 23:44, 48:66)
 length(rows)
 table(dat$Paradigm)
 ### set up forest plot (with 2x2 table counts added; rows argument is used
 ### to specify exactly in which rows the outcomes will be plotted)
-forest(res, xlim=c(-11, 10),  ylim=c(-1, 70),
-       order=order(dat$Paradigm), rows=rows,
-       xlab="",  mlab="")
+forest(
+  res,
+  xlim = c(-11, 10),
+  ylim = c(-1, 70),
+  order = order(dat$Paradigm),
+  rows = rows,
+  xlab = "",
+  mlab = ""
+)
 
 ### add text with Q-value, dfs, p-value, and I^2 statistic
-text(-11, -1, pos=4, cex=0.75, bquote(paste("RE Model for All Studies (Q = ",
-                                            .(formatC(res$QE, digits=2, format="f")), ", df = ", .(res$k - res$p),
-                                            ", p = ", .(formatC(res$QEp, digits=2, format="f")), "; ", I^2, " = ",
-                                            .(formatC(res$I2, digits=1, format="f")), "\%)")))
+text(-11,-1, pos = 4, cex = 0.75, bquote(
+  paste(
+    "RE Model for All Studies (Q = ",
+    .(formatC(
+      res$QE, digits = 2, format = "f"
+    )),
+    ", df = ",
+    .(res$k - res$p),
+    ", p = ",
+    .(formatC(
+      res$QEp, digits = 2, format = "f"
+    )),
+    "; ",
+    I ^ 2,
+    " = ",
+    .(formatC(
+      res$I2, digits = 1, format = "f"
+    )),
+    "\%)"
+  )
+))
 
 ### set font expansion factor (as in forest() above) and use bold italic
 ### font and save original settings in object 'op'
-op <- par(cex=0.75, font=4)
+op <- par(cex = 0.75, font = 4)
 
 ### add text for the subgroups
-text(-11, c(16,41,63)+4, pos=4, c("AL",
-                                  "Interactive",
-                                  "VOE"))
+text(-11, c(16, 41, 63) + 4, pos = 4, c("AL",
+                                        "Interactive",
+                                        "VOE"))
 
 ### switch to bold font
-par(font=2)
+par(font = 2)
 
 ### set par back to the original settings
 par(op)
 
 ### fit random-effects model in the three subgroups
-res.AL <-  rma(yi=logit.p., sei = sei , data=dat[dat$Paradigm == "AL",], slab = paste(Author, Year), method = "REML") 
+res.AL <-
+  rma(
+    yi = logit.p.,
+    sei = sei ,
+    data = dat[dat$Paradigm == "AL", ],
+    slab = paste(Author, Year),
+    method = "REML"
+  )
 res.AL
-res.inter <- rma(yi=logit.p., sei = sei, data=dat[dat$Paradigm == "Interactive",], slab = paste(Author, Year), method = "REML")
+res.inter <-
+  rma(
+    yi = logit.p.,
+    sei = sei,
+    data = dat[dat$Paradigm == "Interactive", ],
+    slab = paste(Author, Year),
+    method = "REML"
+  )
 res.inter
-res.VOE<- rma(yi=logit.p., sei=sei, data=dat[dat$Paradigm == "VOE",], slab = paste(Author, Year), method = "REML")
+res.VOE <-
+  rma(
+    yi = logit.p.,
+    sei = sei,
+    data = dat[dat$Paradigm == "VOE", ],
+    slab = paste(Author, Year),
+    method = "REML"
+  )
 res.VOE
 ### add summary polygons for the three subgroups
-addpoly(res.AL, row=2.5, cex=0.75, mlab="")
-addpoly(res.inter, row= 21.5, cex=0.75, mlab="")
-addpoly(res.VOE, row= 46.5, cex=0.75, mlab="")
+addpoly(res.AL,
+        row = 2.5,
+        cex = 0.75,
+        mlab = "")
+addpoly(res.inter,
+        row = 21.5,
+        cex = 0.75,
+        mlab = "")
+addpoly(res.VOE,
+        row = 46.5,
+        cex = 0.75,
+        mlab = "")
 
 ### add text with Q-value, dfs, p-value, and I^2 statistic for subgroups
-text(-11, 2.5, pos=4, cex=0.75, bquote(paste("RE Model for Subgroup (Q = ",
-                                             .(formatC(res.AL$QE, digits=2, format="f")), ", df = ", .(res.AL$k - res.AL$p),
-                                             ", p = ", .(formatC(res.AL$QEp, digits=2, format="f")), "; ", I^2, " = ",
-                                             .(formatC(res.AL$I2, digits=1, format="f")), "\%)")))
-text(-11, 21.5, pos=4, cex=0.75, bquote(paste("RE Model for Subgroup (Q = ",
-                                              .(formatC(res.inter$QE, digits=2, format="f")), ", df = ", .(res.inter$k - res.inter$p),
-                                              ", p = ", .(formatC(res.inter$QEp, digits=2, format="f")), "; ", I^2, " = ",
-                                              .(formatC(res.inter$I2, digits=1, format="f")), "\%)")))
-text(-11, 46.5, pos=4, cex=0.75, bquote(paste("RE Model for Subgroup (Q = ",
-                                              .(formatC(res.VOE$QE, digits=2, format="f")), ", df = ", .(res.VOE$k - res.VOE$p),
-                                              ", p = ", .(formatC(res.VOE$QEp, digits=2, format="f")), "; ", I^2, " = ",
-                                              .(formatC(res.VOE$I2, digits=1, format="f")), "\%)")))
+text(-11, 2.5, pos = 4, cex = 0.75, bquote(
+  paste(
+    "RE Model for Subgroup (Q = ",
+    .(formatC(
+      res.AL$QE, digits = 2, format = "f"
+    )),
+    ", df = ",
+    .(res.AL$k - res.AL$p),
+    ", p = ",
+    .(formatC(
+      res.AL$QEp, digits = 2, format = "f"
+    )),
+    "; ",
+    I ^ 2,
+    " = ",
+    .(formatC(
+      res.AL$I2, digits = 1, format = "f"
+    )),
+    "\%)"
+  )
+))
+text(-11, 21.5, pos = 4, cex = 0.75, bquote(
+  paste(
+    "RE Model for Subgroup (Q = ",
+    .(formatC(
+      res.inter$QE, digits = 2, format = "f"
+    )),
+    ", df = ",
+    .(res.inter$k - res.inter$p),
+    ", p = ",
+    .(formatC(
+      res.inter$QEp, digits = 2, format = "f"
+    )),
+    "; ",
+    I ^ 2,
+    " = ",
+    .(formatC(
+      res.inter$I2, digits = 1, format = "f"
+    )),
+    "\%)"
+  )
+))
+text(-11, 46.5, pos = 4, cex = 0.75, bquote(
+  paste(
+    "RE Model for Subgroup (Q = ",
+    .(formatC(
+      res.VOE$QE, digits = 2, format = "f"
+    )),
+    ", df = ",
+    .(res.VOE$k - res.VOE$p),
+    ", p = ",
+    .(formatC(
+      res.VOE$QEp, digits = 2, format = "f"
+    )),
+    "; ",
+    I ^ 2,
+    " = ",
+    .(formatC(
+      res.VOE$I2, digits = 1, format = "f"
+    )),
+    "\%)"
+  )
+))
 
 
 }
