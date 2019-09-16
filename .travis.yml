@@ -1,18 +1,30 @@
 language: r
-
+cache: packages
+r: release
+dist: xenial
+warnings_are_errors: true
+r_check_args: --no-tests --as-cran --no-manual
 sudo: required
 
-env: _R_CHECK_CRAN_INCOMING_=FALSE
+env:
+  - NOT_CRAN=true
 
 r_packages:
   - covr
   - devtools
   - BiasedUrn
-  - metafor
   - digest
+  - lme4
+  - gsl
+  - R.rsp
+  - metafor
 
-r_github_packages:
-  - codecov/example-r
+apt_packages:
+  - libgsl-dev
+  
 
 after_success:
   - Rscript -e 'library(covr);codecov()'
+  
+  
+  
