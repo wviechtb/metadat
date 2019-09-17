@@ -56,3 +56,4 @@ predict(res, newmods=c(0,1), digits=2)
 }
 }
 \keyword{datasets}
+\concept{psychology}

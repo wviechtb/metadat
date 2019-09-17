@@ -22,6 +22,7 @@
    Pritz, M. B. (1997). Treatment of cerebral vasospasm due to aneurysmal subarachnoid hemorrhage: Past, present, and future of hyperdynamic therapy. \emph{Neurosurgery Quarterly}, \bold{7}, 273--285.
 }
 \examples{
+\dontrun{
 if (require(metafor)) {
 
 ### copy data into 'dat' and examine data
@@ -53,6 +54,7 @@ predict(res, transf=transf.ilogit)
 res <- rma.glmm(measure="PLO", xi=xi, ni=ni, data=dat)
 predict(res, transf=transf.ilogit)
 
-}
+}}
 }
 \keyword{datasets}
+\concept{medicine}

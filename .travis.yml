@@ -1,13 +1,31 @@
 language: r
-r:
-  - oldrel
-  - release
-  - devel
 cache: packages
-r_packages: covr
+r: release
+dist: xenial
+warnings_are_errors: true
+r_check_args: --no-tests --as-cran --no-manual
+sudo: required
+
+env:
+  - NOT_CRAN=true
+
+r_packages:
+  - ape
+  - covr
+  - devtools
+  - BiasedUrn
+  - digest
+  - lme4
+  - gsl
+  - R.rsp
+  - metafor
+
+apt_packages:
+  - libgsl-dev
+  
+
 after_success:
-  - Rscript -e 'covr::codecov()'
-notifications:
-  email:
-    on_success: never
-    on_failure: never
+  - Rscript -e 'library(covr);codecov()'
+  
+  
+  
