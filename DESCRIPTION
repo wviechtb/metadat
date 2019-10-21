@@ -2,7 +2,7 @@ Package: metadat
 Version: 0.1-0
 Date: 2019-04-08
 Title: Meta-Analysis Datasets
-Authors@R: c(person(given = "Thomas", family="White", role="aut", email = ""), person(given = "Daniel", family="Noble", role="aut", email = ""), person(given = "Alistair", family="Senior", role="aut", email = ""), person(given = "Wolfgang", family = "Viechtbauer", role = c("aut","cre"), email = "wvb@metafor-project.org", comment = c(ORCID = "0000-0003-3463-4063")))
+Authors@R: c(person(given = "Thomas", family="White", role="aut", email = ""), person(given = "Daniel", family="Noble", role="aut", email = ""), person(given = "Alistair", family="Senior", role="aut", email = ""), person(given = "Kyle", family="Hamilton", role="aut", email = "kyle.hamilton@gmail.com"), person(given = "Wolfgang", family = "Viechtbauer", role = c("aut","cre"), email = "wvb@metafor-project.org", comment = c(ORCID = "0000-0003-3463-4063")))
 Depends: R (>= 3.5.0)
 Imports: utils, tools
 Suggests: metafor, ape, multcomp, testthat
