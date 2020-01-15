@@ -22,10 +22,6 @@ r_packages:
 
 apt_packages:
   - libgsl-dev
-  
 
 after_success:
   - Rscript -e 'library(covr);codecov()'
-  
-  
-  
