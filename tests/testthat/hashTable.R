@@ -52,6 +52,7 @@ hashTable <-
     raudenbush1985 = "5bfd11acfc218bb9a3f103560d5a8d77",
     reed2001 = "df3b41d7d1370874df93282386b93828",
     riley2003 = "c688fa209f860e85a1aa1f8c8f88f4ee",
+    sala2019 = "9b25d414de97c7b20ca131415f88c964",
     senn2013 = "b845a2bc3436efff179e8c34cb99602a",
     tamim2011 = "ee32588082de08a6253997326c52de1a",
     valstad2017 = "c9a119f8268b7ed05fac1b47a9126700",

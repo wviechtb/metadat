@@ -42,6 +42,7 @@
 "dat.raudenbush1985.r"
 "dat.reed2001.r"
 "dat.riley2003.r"
+"dat.sala2019.r"
 "dat.senn2013.r"
 "dat.tamim2011.r"
 "dat.valstad2017.r"
