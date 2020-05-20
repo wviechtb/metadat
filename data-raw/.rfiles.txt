@@ -43,6 +43,7 @@
 "dat.reed2001.r"
 "dat.riley2003.r"
 "dat.senn2013.r"
+"dat.sorokowski2019.r"
 "dat.tamim2011.r"
 "dat.valstad2017.r"
 "dat.weaver2018.r"
