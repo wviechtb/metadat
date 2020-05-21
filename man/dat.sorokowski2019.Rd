@@ -1,11 +1,13 @@
 \name{dat.sorokowski2019}
 \docType{data}
 \alias{dat.sorokowski2019}
-\title{Studies on Sex Differences in Human Olfaction}
+\alias{dat.sorokowski2019.1}
+\alias{dat.sorokowski2019.2}
+\title{Sex differences in human olfaction: A meta-analysis.}
 \description{Sex Differences in Human Olfaction including discrimination, threshold, and identification.}
 \usage{dat.sorokowski2019}
 \format{
-The data frame dat.sorokowski2019.1 contains data for olfactory discrimination and consists of the following columns:
+The data frame dat.sorokowski2019.1 contains data for olfactory discrimination and the data frame dat.sorokowski2019.2 contains data for olfactory identification. Both consists of the following columns:
 \tabular{lll}{
 \bold{ID}        \tab \code{numeric}   \tab Study ID number \cr
 \bold{Author}     \tab \code{character} \tab Author or authors of the paper \cr
@@ -22,8 +24,6 @@ The data frame dat.sorokowski2019.1 contains data for olfactory discrimination a
 \bold{sdMen}        \tab \code{numeric}   \tab Standard deviation for men \cr
 \bold{ageMeanMen}        \tab \code{numeric}   \tab Mean age for men \cr
 \bold{ageSDMen}        \tab \code{numeric}   \tab Standard deviation of age for men \cr
-
-
 }
 }
 \details{
@@ -34,4 +34,56 @@ The data frame dat.sorokowski2019.1 contains data for olfactory discrimination a
 \source{
   Sorokowski, P., Karwowski, M., Misiak, M., Marczak, M. K., Dziekan, M., Hummel, T., & Sorokowska, A. (2019). Sex differences in human olfaction: A meta-analysis. \emph{Frontiers in Psychology}, 10, 242.
 }
+\examples{
+  if (require(metafor)) {
+    ### Recreating Sorokowski et al. (2019). Sex differences in human olfaction: A meta-analysis. 
+    ### Frontiers in Psychology, 10, 242.
+    
+    ### copy olfactory discrimination data into 'dat' and examine data
+    dat1 <- dat.sorokowski2019.1
+    dat1
+    
+    ### calculate standardized mean differences and corresponding sampling variances
+    dat1 <-
+      escalc(
+        measure = "SMD",
+        m1i = meanWomen ,
+        sd1i = sdWoman,
+        n1i = Nwomen,
+        m2i = meanMen,
+        sd2i = sdMen,
+        n2i = Nmen,
+        data = dat1
+      )
+    
+    ### meta-analysis of mean differences using the 
+    ### restricted maximum-likelihood estimator and a random-effects model
+    res1 <- rma(yi, vi, method = "REML", data = dat1)
+    res1
+    
+    ### copy olfactory identification  data into 'dat' and examine data
+    dat2 <- dat.sorokowski2019.2
+    dat2
+    
+    ### calculate standardized mean differences and corresponding sampling variances
+    dat2 <-
+      escalc(
+        measure = "SMD",
+        m1i = meanWomen ,
+        sd1i = sdWoman,
+        n1i = Nwomen,
+        m2i = meanMen,
+        sd2i = sdMen,
+        n2i = Nmen,
+        data = dat2
+      )
+    
+    ### meta-analysis of mean differences using the 
+    ### restricted maximum-likelihood estimator and a random-effects model
+    res2 <- rma(yi, vi, method = "REML", data = dat2)
+    res2
+  }
+  }
 \keyword{datasets}
+\concept{psychology}
+\concept{standardized mean difference}
