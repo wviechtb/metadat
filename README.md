@@ -16,7 +16,7 @@ To download the development version of `metadat`, you can:
 * use the [`remotes`](https://github.com/r-lib/remotes) package:
 
 ```r
-# install.packages("remotes")
+install.packages("remotes")
 remotes::install_github("wviechtb/metadat")
 ```
 
@@ -30,8 +30,7 @@ install.packages(path, type = "source", repos = NULL)
 
 A listing of all datasets in the package can be obtained with `help(package=metadat}`. Each dataset is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the field of research, the outcome measure used for the analysis, the model(s)/package(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.
 
-`search_dat()` is an available function that can be used to query the existing data in the package to explore their help files. It uses fuzzy matching, and queries the data name, title, keyword and concept fields to identify relevant datasets that may be of interest.
-
+`search_dat()` is a function that can be used to query the existing data in the package to explore their help files. It uses fuzzy matching, and queries the data name, title, keyword and concept fields to identify relevant datasets that may be of interest.
 
 ## Contributing New Datasets
 

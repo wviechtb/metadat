@@ -1,4 +1,3 @@
-
 # Main function for generating docs
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
