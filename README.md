@@ -2,8 +2,9 @@ metadat: Meta-analytic datasets for R
 =====================================
 
 [![License: GPL (>=2)](https://img.shields.io/badge/license-GPL-blue)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
-<!-- [![CRAN Version](https://www.r-pkg.org/badges/version/metadat)](https://cran.r-project.org/package=metadat) -->
-<!-- [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/metadat)](https://cran.r-project.org/package=metadat) -->
+[![R build status](https://github.com/wviechtb/metadat/workflows/R-CMD-check/badge.svg)](https://github.com/wviechtb/metadat/actions)
+[![CRAN Version](https://www.r-pkg.org/badges/version/metadat)](https://cran.r-project.org/package=metadat)
+[![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/metadat)](https://cran.r-project.org/package=metadat)
 
 ## Description
 
