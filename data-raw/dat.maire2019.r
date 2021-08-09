@@ -1,5 +1,10 @@
-dat.maire2019.data <- read.table("data-raw/dat.maire2019.data.txt", header=TRUE, as.is=TRUE)
-save(dat.maire2019.data, file="data/dat.maire2019.data.rda")
+# Maire, A., Thierry, E., Viechtbauer, W., & Daufresne, M. (2019). Poleward
+# shift in large-river fish communities detected with a novel meta-analysis
+# framework. Freshwater Biology, 64(6), 1143-1156.
 
-dat.maire2019.dmat <- read.table("data-raw/dat.maire2019.dmat.txt", header=TRUE, as.is=TRUE)
-save(dat.maire2019.dmat, file="data/dat.maire2019.dmat.rda")
+# data from ~/work/meta_analysis/data/maire2019/
+
+dat <- read.table("data-raw/dat.maire2019.data.txt", header=TRUE, stringsAsFactors=FALSE)
+dmat <- read.table("data-raw/dat.maire2019.dmat.txt", header=TRUE)
+dat.maire2019 <- list(dat=dat, dmat=dmat)
+save(dat.maire2019, file="data/dat.maire2019.rda")

@@ -1,0 +1,20 @@
+study year country ibs.crit days visits x.p n.p x.a n.a jadad
+Bensoussan 1998 Australia "Rome I" 112 7 11 32 29 38 5
+Blanchard 1992 USA Other 84 12 21 30 20 31 3
+Brinkhaus 2005 Germany Other 126 5 30 46 14 23 5
+Carling 1989 Sweden Other 14 2 5 13 17 30 3
+Davis 2006 UK "Rome II" 30 2 6 23 11 27 5
+Dew 1984 Wales Other 14 NA 5 29 24 29 2
+Gade 1989 Denmark Other 28 3 9 22 26 32 4
+Halpern 1996 USA Manning 42 NA 13 18 17 18 5
+Kim 2003 USA "Rome II" 56 NA 5 13 4 12 4
+Leung 2006 "Hong Kong" "Rome II" 56 2 26 59 21 60 5
+Lu 2005 Singapore "Rome II" 56 NA 8 17 15 17 3
+Madisch 2004 Germany "Rome II" 28 3 20 52 37 51 4
+Nash 1986 England Other 14 NA 17 33 13 33 4
+Niedzielin 2001 Poland Manning 28 2 3 20 19 20 3
+Olesen 2000 Denmark Manning 84 5 30 46 29 50 5
+Rees 1979 Wales Other 21 NA 5 16 13 16 1
+Sallon 2002 Israel "Rome I" 84 4 8 26 25 33 5
+Yadav 1989 India Other 42 NA 17 50 37 57 5
+Whorwell 2006 UK "Rome II" 28 2 37 90 55 90 5

@@ -21,17 +21,23 @@
    The dataset was used in the article by Stijnen et al. (2010) to illustrate various generalized linear mixed-effects models for the meta-analysis of incidence rates and incidence rate ratios (see \sQuote{References}).
 }
 \source{
-   Niel-Weise, B. S., Stijnen, T., & van den Broek, P. J. (2008). Anti-infective-treated central venous catheters for total parenteral nutrition or chemotherapy: A systematic review. \emph{Journal of Hospital Infection}, \bold{69}, 114--123.
+   Niel-Weise, B. S., Stijnen, T., & van den Broek, P. J. (2008). Anti-infective-treated central venous catheters for total parenteral nutrition or chemotherapy: A systematic review. \emph{Journal of Hospital Infection}, \bold{69}(2), 114--123. \verb{https://doi.org/10.1016/j.jhin.2008.02.020}
 }
 \references{
-   Stijnen, T., Hamza, T. H., & Ozdemir, P. (2010). Random effects meta-analysis of event outcome in the framework of the generalized linear mixed model with applications in sparse data. \emph{Statistics in Medicine}, \bold{29}, 3046--3067.
+   Stijnen, T., Hamza, T. H., & Ozdemir, P. (2010). Random effects meta-analysis of event outcome in the framework of the generalized linear mixed model with applications in sparse data. \emph{Statistics in Medicine}, \bold{29}(29), 3046--3067. \verb{https://doi.org/10.1002/sim.4040}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.nielweise2008
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### standard (inverse-variance) random-effects model
 res <- rma(measure="IRR", x1i=x1i, t1i=t1i, x2i=x2i, t2i=t2i, data=dat)
@@ -39,12 +45,13 @@ print(res, digits=3)
 predict(res, transf=exp, digits=2)
 
 ### random-effects conditional Poisson model
-\dontrun{
 res <- rma.glmm(measure="IRR", x1i=x1i, t1i=t1i, x2i=x2i, t2i=t2i, data=dat, model="CM.EL")
 print(res, digits=3)
-predict(res, transf=exp, digits=2)}
+predict(res, transf=exp, digits=2)
 
 }
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{incidence rates}
+\concept{generalized linear models}

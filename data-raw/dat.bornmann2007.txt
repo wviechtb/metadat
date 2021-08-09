@@ -1,0 +1,67 @@
+"study"	"obs"	"doctype"	"gender"	"year"	"org"	"country"	"type"	"discipline"	"waward"	"wtotal"	"maward"	"mtotal"
+"Ackers (2000)"	1	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Physical Sciences"	139	711	274	1029
+"Ackers (2000)"	2	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Physical Sciences"	45	258	166	908
+"Ackers (2000)"	3	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Physical Sciences"	44	236	219	928
+"Ackers (2000)"	4	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Physical Sciences"	63	251	96	507
+"Ackers (2000)"	5	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Social Sciences / Biology"	157	910	252	1118
+"Ackers (2000)"	6	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Physical Sciences"	114	589	460	2244
+"Ackers (2000)"	7	"Grey"	"M&F"	1996	"MSCA"	"Europe"	"Fellowship"	"Life Sciences / Biology"	381	2027	489	2275
+"Allmendinger (2002)"	1	"Article"	"M&F"	1993	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	8	13	53	72
+"Allmendinger (2002)"	2	"Article"	"M&F"	1994	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	5	8	53	82
+"Allmendinger (2002)"	3	"Article"	"M&F"	1995	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	6	8	63	97
+"Allmendinger (2002)"	4	"Article"	"M&F"	1996	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	8	16	53	94
+"Allmendinger (2002)"	5	"Article"	"M&F"	1997	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	4	11	43	92
+"Allmendinger (2002)"	6	"Article"	"M&F"	1998	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	20	44	55	93
+"Allmendinger (2002)"	7	"Article"	"M&F"	1999	"DFG"	"Europe"	"Grant"	"Social Sciences / Biology"	5	15	70	116
+"Bazeley (1998)"	1	"Article"	"F"	1995	"ARC"	"Australia"	"Grant"	"Multidisciplinary"	11	56	82	344
+"Bornmann (2005)"	1	"Article"	"M"	1992.5	"BIF"	"Europe"	"Fellowship"	"Life Sciences / Biology"	204	1085	430	1612
+"Brouns (2000)"	1	"Article"	"F"	1993.5	"NWO/KNAW"	"Europe"	"Fellowship"	"Social Sciences / Biology"	8	12	25	33
+"Brouns (2000)"	2	"Article"	"F"	1993.5	"NWO/KNAW"	"Europe"	"Fellowship"	"Social Sciences / Biology"	6	16	26	44
+"Brouns (2000)"	3	"Article"	"F"	1993.5	"NWO/KNAW"	"Europe"	"Fellowship"	"Physical Sciences"	21	25	127	236
+"Brouns (2000)"	4	"Article"	"F"	1993.5	"NWO/KNAW"	"Europe"	"Fellowship"	"Life Sciences / Biology"	9	34	77	168
+"Brouns (2000)"	5	"Article"	"F"	1993.5	"NWO/KNAW"	"Europe"	"Fellowship"	"Life Sciences / Biology"	30	67	82	174
+"Dexter (2002)"	1	"Grey"	"M"	2000.5	"WT"	"United Kingdom"	"Fellowship"	"Life Sciences / Biology"	54	174	84	280
+"Dexter (2002)"	2	"Grey"	"M"	2000.5	"WT"	"United Kingdom"	"Grant"	"Life Sciences / Biology"	84	290	253	791
+"Dexter (2002)"	3	"Grey"	"M"	2000.5	"WT"	"United Kingdom"	"Grant"	"Life Sciences / Biology"	4	17	30	70
+"Emery (1992)"	1	"Article"	"M&F"	1990	"NIH"	"United States"	"Fellowship"	"Life Sciences / Biology"	23	91	39	203
+"Friesen (1998)"	1	"Letter"	"M"	1998	"MRC"	"Canada"	"Grant"	"Life Sciences / Biology"	297	1167	1160	4368
+"Friesen (1998)"	2	"Letter"	"M"	1998	"MRC"	"Canada"	"Fellowship"	"Life Sciences / Biology"	20	143	64	386
+"Friesen (1998)"	3	"Letter"	"M"	1998	"MRC"	"Canada"	"Fellowship"	"Life Sciences / Biology"	111	858	222	1361
+"Goldsmith (2002)"	1	"Grey"	"F"	1979	"NSF"	"United States"	"Fellowship"	"Multidisciplinary"	146	1447	378	2841
+"Goldsmith (2002)"	2	"Grey"	"F"	1993	"NSF"	"United States"	"Fellowship"	"Multidisciplinary"	379	3858	491	4776
+"Grant (1997)"	1	"Letter"	"M"	1996	"WT"	"United Kingdom"	"Grant"	"Life Sciences / Biology"	72	268	302	1097
+"Grant (1997)"	2	"Letter"	"M"	1995.5	"WT"	"United Kingdom"	"Fellowship"	"Life Sciences / Biology"	9	105	12	220
+"Grant (1997)"	3	"Letter"	"M"	1996	"MRC"	"United Kingdom"	"Grant"	"Life Sciences / Biology"	49	167	163	617
+"Grant (1997)"	4	"Letter"	"M"	1995	"MRC"	"United Kingdom"	"Fellowship"	"Life Sciences / Biology"	11	107	28	169
+"Jayasinghe (2001)"	1	"Article"	"M"	1996	"ARC"	"Australia"	"Grant"	"Multidisciplinary"	98	461	537	2520
+"NSF (2005)"	1	"Grey"	NA	1997	"NSF"	"United States"	"Grant"	"Multidisciplinary"	1950	5396	7859	24532
+"NSF (2005)"	2	"Grey"	NA	1998	"NSF"	"United States"	"Grant"	"Multidisciplinary"	1938	5627	7323	22513
+"NSF (2005)"	3	"Grey"	NA	1999	"NSF"	"United States"	"Grant"	"Multidisciplinary"	1682	5315	7428	23022
+"NSF (2005)"	4	"Grey"	NA	2000	"NSF"	"United States"	"Grant"	"Multidisciplinary"	1949	5509	7778	23671
+"NSF (2005)"	5	"Grey"	NA	2001	"NSF"	"United States"	"Grant"	"Multidisciplinary"	1894	5839	7867	25510
+"NSF (2005)"	6	"Grey"	NA	2002	"NSF"	"United States"	"Grant"	"Multidisciplinary"	2012	6704	8203	27500
+"NSF (2005)"	7	"Grey"	NA	2003	"NSF"	"United States"	"Grant"	"Multidisciplinary"	2090	7335	8495	31238
+"NSF (2005)"	8	"Grey"	NA	2004	"NSF"	"United States"	"Grant"	"Multidisciplinary"	2118	8427	7923	33300
+"Over (1996)"	1	"Article"	"M"	1993	"ARC"	"Australia"	"Grant"	"Multidisciplinary"	12	39	62	217
+"Sigelman (1987)"	1	"Article"	"M"	1985.5	"NSF"	"United States"	"Grant"	"Social Sciences / Biology"	2	17	31	129
+"Taplick (2005)"	1	"Grey"	"M"	2002.5	"EMBO"	"Europe"	"Fellowship"	"Life Sciences / Biology"	307	578	274	492
+"Taplick (2005)"	2	"Grey"	"M"	2000	"EMBO"	"Europe"	"Fellowship"	"Life Sciences / Biology"	544	3263	954	4440
+"Taplick (2005)"	3	"Grey"	"M"	2002	"EMBO"	"Europe"	"Fellowship"	"Life Sciences / Biology"	32	268	110	800
+"Viner (2004)"	1	"Article"	"M"	1994	"EPSRC"	"United Kingdom"	"Grant"	"Physical Sciences"	122	181	3256	5500
+"Viner (2004)"	2	"Article"	"M"	1998	"EPSRC"	"United Kingdom"	"Grant"	"Physical Sciences"	129	199	3327	5232
+"Ward (1998)"	1	"Article"	"M&F"	1995.5	"NHMRC"	"Australia"	"Fellowship"	"Life Sciences / Biology"	43	120	102	301
+"Wellcome Trust (1997)"	1	"Grey"	"M&F"	1995	"WT"	"United Kingdom"	"Grant"	"Life Sciences / Biology"	15	23	55	115
+"Wenneras (1997)"	1	"Commentary"	"F"	1995	"MRC"	"Europe"	"Fellowship"	"Physical Sciences"	4	52	16	62
+"Willems (2001)"	1	"Grey"	"F"	1997	"DFG"	"Europe"	"Grant"	"Life Sciences / Biology"	392	725	2219	3962
+"Willems (2001)"	2	"Grey"	"F"	1998	"DFG"	"Europe"	"Grant"	"Life Sciences / Biology"	443	837	2370	4269
+"Willems (2001)"	3	"Grey"	"F"	1999	"DFG"	"Europe"	"Grant"	"Life Sciences / Biology"	424	761	2467	4287
+"Willems (2001)"	4	"Grey"	"F"	2000	"DFG"	"Europe"	"Grant"	"Life Sciences / Biology"	483	885	2388	4217
+"Wood (1997)"	1	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Life Sciences / Biology"	10	51	58	241
+"Wood (1997)"	2	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Life Sciences / Biology"	9	56	64	281
+"Wood (1997)"	3	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Physical Sciences"	2	13	48	198
+"Wood (1997)"	4	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Physical Sciences"	1	14	45	177
+"Wood (1997)"	5	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Physical Sciences"	5	25	66	291
+"Wood (1997)"	6	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Social Sciences / Biology"	25	104	57	259
+"Wood (1997)"	7	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Physical Sciences"	3	13	63	240
+"Wood (1997)"	8	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Social Sciences / Biology"	32	122	92	358
+"Wood (1997)"	9	"Book"	"F"	1995	"ARC"	"Australia"	"Grant"	"Physical Sciences"	6	17	76	346

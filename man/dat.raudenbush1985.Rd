@@ -23,34 +23,41 @@
 
    In the following years, a series of studies were conducted attempting to replicate this rather controversial finding. However, the great majority of those studies were unable to demonstrate a statistically significant difference between the two experimental groups in terms of IQ scores. Raudenbush (1984) conducted a meta-analysis based on 19 such studies to further examine the evidence for the existence of the \sQuote{Pygmalion effect}. The dataset includes the results from these studies.
 
-   The effect size measure used for the meta-analysis was the standardized mean difference (\code{yi}), with positive values indicating that the supposed \sQuote{bloomers} had, on average, higher IQ scores than those in the control group. The \code{weeks} variable indicates the number of weeks of prior contact between teachers and students before the expectancy induction. Testing was done either in a group setting or individually, which is indicated by the \code{setting} variable. Finally, the \code{tester} variable indicates whether the test administrators were either aware or blind to the researcher-provided designations of the children's intellectual potential.
+   The outcome measure used for the meta-analysis was the standardized mean difference (\code{yi}), with positive values indicating that the supposed \sQuote{bloomers} had, on average, higher IQ scores than those in the control group. The \code{weeks} variable indicates the number of weeks of prior contact between teachers and students before the expectancy induction. Testing was done either in a group setting or individually, which is indicated by the \code{setting} variable. Finally, the \code{tester} variable indicates whether the test administrators were either aware or blind to the researcher-provided designations of the children's intellectual potential.
 
    The data in this dataset were obtained from Raudenbush and Bryk (1985) with information on the \code{setting} and \code{tester} variables extracted from Raudenbush (1984).
 }
 \source{
-   Raudenbush, S. W. (1984). Magnitude of teacher expectancy effects on pupil IQ as a function of the credibility of expectancy induction: A synthesis of findings from 18 experiments. \emph{Journal of Educational Psychology}, \bold{76}, 85--97.
+   Raudenbush, S. W. (1984). Magnitude of teacher expectancy effects on pupil IQ as a function of the credibility of expectancy induction: A synthesis of findings from 18 experiments. \emph{Journal of Educational Psychology}, \bold{76}(1), 85--97. \verb{https://doi.org/10.1037/0022-0663.76.1.85}
 
-   Raudenbush, S. W., & Bryk, A. S. (1985). Empirical Bayes meta-analysis. \emph{Journal of Educational Statistics}, \bold{10}, 75--98.
+   Raudenbush, S. W., & Bryk, A. S. (1985). Empirical Bayes meta-analysis. \emph{Journal of Educational Statistics}, \bold{10}(2), 75--98. \verb{https://doi.org/10.3102/10769986010002075}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.raudenbush1985
 dat
 
+\dontrun{
+
+### load metafor package
+require(metafor)
+
 ### random-effects model
-res <- rma(yi, vi, data=dat)
+res <- rma(yi, vi, data = dat)
 res
 
 ### create weeks variable where values larger than 3 are set to 3
 dat$weeks.c <- ifelse(dat$week > 3, 3, dat$week)
 
 ### mixed-effects model with weeks.c variable as moderator
-res <- rma(yi, vi, mods=~weeks.c, data=dat, digits=3)
+res <- rma(yi, vi, mods = ~ weeks.c, data = dat, digits = 3)
 res
 
 }
 }
 \keyword{datasets}
 \concept{education}
+\concept{standardized mean differences}

@@ -24,13 +24,20 @@
    The 6 studies provide data with respect to the number of strokes in the warfarin and the comparison (placebo or control) group. In addition, the number of patients and the total person-time (in years) is provided for the two groups. The goal of the meta-analysis was to examine the effectiveness of adjusted-dose warfarin for preventing strokes in patients with atrial fibrillation.
 }
 \source{
-   Hart, R. G., Benavente, O., McBride, R., & Pearce, L. A. (1999). Antithrombotic therapy to prevent stroke in patients with atrial fibrillation: A meta-analysis. \emph{Annals of Internal Medicine}, \bold{131}, 492--501.
+   Hart, R. G., Benavente, O., McBride, R., & Pearce, L. A. (1999). Antithrombotic therapy to prevent stroke in patients with atrial fibrillation: A meta-analysis. \emph{Annals of Internal Medicine}, \bold{131}(7), 492--501. \verb{https://doi.org/10.7326/0003-4819-131-7-199910050-00003}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.hart1999
+dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### calculate log incidence rate ratios and corresponding sampling variances
 dat <- escalc(measure="IRR", x1i=x1i, x2i=x2i, t1i=t1i, t2i=t2i, data=dat)
@@ -49,13 +56,11 @@ forest(res, xlim=c(-11, 5), at=log(c(.05, .25, 1, 4)), atransf=exp,
        slab=paste0(dat$study, " (", dat$year, ")"),
        ilab=cbind(paste(dat$x1i, "/", dat$t1i, sep=" "),
        paste(dat$x2i, "/", dat$t2i, sep=" ")),
-       ilab.xpos=c(-6.5,-4), cex=.85)
+       ilab.xpos=c(-6.5,-4), cex=.85, header="Study (Year)")
 op <- par(cex=.85, font=2)
-text(-11, 7.5, "Study (Year)", pos=4)
-text(  5, 7.5, "IRR [95\% CI]", pos=2)
-text(c(-6.5,-4), 8.0, c("Warfarin", "Control"))
+text(c(-6.5,-4), 8.5, c("Warfarin", "Control"))
 text(c(-6.5,-4), 7.5, c("Strokes / PT", "Strokes / PT"))
-segments(x0=-7.75, y0=7.75, x1=-2.75, y1=7.75)
+segments(x0=-8, y0=8, x1=-2.75, y1=8)
 par(op)
 
 ### meta-analysis of incidence rate differences using a random-effects model
@@ -66,3 +71,5 @@ res
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
+\concept{incidence rates}

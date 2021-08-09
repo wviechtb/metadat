@@ -16,29 +16,30 @@
    The dataset includes the results from 26 randomized controlled trials examining the effectiveness of nonsurgical treatments for the prevention of first bleeding in patients with cirrhosis. Patients were either treated with beta-blockers, endoscopic sclerotherapy, or with a nonactive treatment (control). Two trials included all three treatment conditions, 7 trials compared beta-blockers against control, and 17 trials compared sclerotherapy against control. The dataset has been used in various papers to illustrate methods for conducting a network meta-analysis / mixed treatment comparison.
 }
 \source{
-   Pagliaro, L., D'Amico, G., \enc{Sörensen}{Soerensen}, T. I. A., Lebrec, D., Burroughs, A. K., Morabito, A., \enc{Tiné}{Tine}, F., Politi, F., & Traina, M. (1992). Prevention of first bleeding in cirrhosis: A meta-analysis of randomized trials of nonsurgical treatment. \emph{Annals of Internal Medicine}, \bold{117}, 59--70.
+   Pagliaro, L., D'Amico, G., \enc{Sörensen}{Soerensen}, T. I. A., Lebrec, D., Burroughs, A. K., Morabito, A., \enc{Tiné}{Tine}, F., Politi, F., & Traina, M. (1992). Prevention of first bleeding in cirrhosis: A meta-analysis of randomized trials of nonsurgical treatment. \emph{Annals of Internal Medicine}, \bold{117}(1), 59--70. \verb{https://doi.org/10.7326/0003-4819-117-1-59}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.pagliaro1992
 dat
 
+\dontrun{
+
+### load metafor package
+require(metafor)
+
 ### restructure dataset to a contrast-based format
-dat.c <- lapply(split(dat.pagliaro1992, dat.pagliaro1992$study),
-                function(x) cbind(x[-nrow(x),2:4], x[rep(nrow(x),nrow(x)-1),]))
-dat.c <- do.call(rbind, dat.c)
-dat.c <- dat.c[,c(4,1,5,2,3,6,7)]
-names(dat.c) <- c("study", "trt1", "trt2", "ai", "n1i", "ci", "n2i")
-rownames(dat.c) <- 1:nrow(dat.c)
+dat.c <- to.wide(dat, study="study", grp="trt", grpvars=3:4)
 dat.c
 
 ### Mantel-Haenszel results for beta-blockers and sclerotherapy versus control, respectively
-rma.mh(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i,
-       data=dat.c, subset=(trt1=="beta-blockers"), digits=2)
-rma.mh(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i,
-       data=dat.c, subset=(trt1=="sclerotherapy"), digits=2)
+rma.mh(measure="OR", ai=xi.1, n1i=ni.1, ci=xi.2, n2i=ni.2,
+       data=dat.c, subset=(trt.1=="beta-blockers"), digits=2)
+rma.mh(measure="OR", ai=xi.1, n1i=ni.1, ci=xi.2, n2i=ni.2,
+       data=dat.c, subset=(trt.1=="sclerotherapy"), digits=2)
 
 ### calculate log odds for each study arm
 dat <- escalc(measure="PLO", xi=xi, ni=ni, data=dat)
@@ -66,3 +67,6 @@ predict(res, newmods=c(rep(0,26), 1, -1), transf=exp, digits=2)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{odds ratios}
+\concept{Mantel-Haenszel method}
+\concept{network meta-analysis}

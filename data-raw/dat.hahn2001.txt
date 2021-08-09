@@ -1,0 +1,13 @@
+study ai n1i ci n2i
+"Banhladesh 1995a" 4 19 5 19
+"Banhladesh 1996a" 0 18 0 18
+"CHOICE 2001" 34 341 50 334
+"Colombia 2000" 7 71 16 69
+"Egypt 1886a" 6 45 5 44
+"Egypt 1996b" 1 94 8 96
+"India 1984a" 0 22 0 22
+"India 2000b" 11 88 12 82
+"Mexico 1990a" 2 82 7 84
+"Panama 1982" 0 33 0 30
+"USA 1982" 0 15 1 20
+"WHO 1995" 33 221 43 218

@@ -15,11 +15,11 @@
 \bold{co2.elev} \tab \code{numeric}   \tab elevated CO2 level (treatment group) \cr
 \bold{units}    \tab \code{character} \tab units for CO2 exposure levels \cr
 \bold{time}     \tab \code{numeric}   \tab maximum length of time (days) of CO2 exposure \cr
-\bold{pot}      \tab \code{character} \tab growing method (see below) \cr
-\bold{method}   \tab \code{character} \tab CO2 exposure facility (see below) \cr
+\bold{pot}      \tab \code{character} \tab growing method (see \sQuote{Details}) \cr
+\bold{method}   \tab \code{character} \tab CO2 exposure facility (see \sQuote{Details}) \cr
 \bold{stock}    \tab \code{character} \tab planting stock code \cr
-\bold{xtrt}     \tab \code{character} \tab interacting treatment code (see below) \cr
-\bold{level}    \tab \code{character} \tab interacting treatment level codes (see below) \cr
+\bold{xtrt}     \tab \code{character} \tab interacting treatment code (see \sQuote{Details}) \cr
+\bold{level}    \tab \code{character} \tab interacting treatment level codes (see \sQuote{Details}) \cr
 \bold{m1i}      \tab \code{numeric}   \tab mean plant mass under elevated CO2 level (treatment group) \cr
 \bold{sd1i}     \tab \code{numeric}   \tab standard deviation of plant mass underelevated CO2 level (treatment group) \cr
 \bold{n1i}      \tab \code{numeric}   \tab number of observations under elevated CO2 level (treatment group) \cr
@@ -42,23 +42,30 @@
    } In addition, the studies differed with respect to various design variables, including CO2 exposure duration (\code{time}), growing method (\code{pot}: number = pot size in liters; \code{GRND} = plants rooted in ground; \code{HYDRO} = solution or aeroponic culture), CO2 exposure facility (\code{method}: \code{GC} = growth chamber; \code{GH} = greenhouse; \code{OTC} = field-based open-top chamber), and planting stock (\code{stock}: \code{SEED} = plants started from seeds; \code{SAP} = plants started from cuttings). The goal of the meta-analysis was to examine the effects of elevated CO2 levels on plant physiology and growth and the interacting effects of the environmental (and design) variables.
 }
 \source{
-   Hedges, L. V., Gurevitch, J., & Curtis, P. S. (1999). The meta-analysis of response ratios in experimental ecology. \emph{Ecology}, \bold{80}, 1150--1156. (data obtained from \emph{Ecological Archives}, E080-008-S1, at: \url{http://www.esapubs.org/archive/ecol/E080/008/})
+   Hedges, L. V., Gurevitch, J., & Curtis, P. S. (1999). The meta-analysis of response ratios in experimental ecology. \emph{Ecology}, \bold{80}(4), 1150--1156. \verb{https://doi.org/10.1890/0012-9658(1999)080[1150:TMAORR]2.0.CO;2} (data obtained from \emph{Ecological Archives}, E080-008-S1, at: \url{https://esapubs.org/archive/ecol/E080/008/})
 }
 \references{
-   Curtis, P. S., & Wang, X. (1998). A meta-analysis of elevated CO2 effects on woody plant mass, form, and physiology. \emph{Oecologia}, \bold{113}, 299--313.
+   Curtis, P. S., & Wang, X. (1998). A meta-analysis of elevated CO2 effects on woody plant mass, form, and physiology. \emph{Oecologia}, \bold{113}(3), 299--313. \verb{https://doi.org/10.1007/s004420050381}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.curtis1998
+head(dat)
 
-### calculate log ratio of means and corresponding sampling variances
+\dontrun{
+
+### load metafor package
+require(metafor)
+
+### calculate (log transformed) ratios of means and corresponding sampling variances
 dat <- escalc(measure="ROM", m1i=m1i, sd1i=sd1i, n1i=n1i,
                              m2i=m2i, sd2i=sd2i, n2i=n2i, data=dat)
-dat
+head(dat)
 
-### meta-analysis of log ratio of means using a random-effects model
+### meta-analysis using a random-effects model
 res <- rma(yi, vi, method="DL", data=dat)
 res
 
@@ -77,3 +84,4 @@ predict(res, transf=exp, digits=2)
 }
 \keyword{datasets}
 \concept{ecology}
+\concept{ratios of means}

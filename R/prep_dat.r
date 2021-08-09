@@ -31,8 +31,17 @@ prep_dat <- function(rebuild=FALSE, overwrite, pkgdir) {
    if (!dir.exists(man.dir))
       stop("Cannot find 'man' directory.")
 
-   # load .rfiles.txt (that already exist)
-   .rfiles <- read.table(paste0(data_raw.dir, ".rfiles.txt"), header=FALSE, as.is=TRUE)[[1]]
+   # load .rfiles.txt (if it exists)
+   if (file.exists(paste0(data_raw.dir, ".rfiles.txt"))) {
+      .rfiles <- read.table(paste0(data_raw.dir, ".rfiles.txt"), header=FALSE, as.is=TRUE)[[1]]
+   } else {
+      .rfiles <- NULL
+   }
+
+   # try running Rscript
+   tmp <- try(suppressWarnings(system2("Rscript", args="-e 1", stdout=TRUE, stderr=TRUE)), silent=TRUE)
+   if (inherits(tmp, "try-error"))
+      stop("Cannot run 'Rscript'. Make sure that Rscript/Rscript.exe is on the system path.")
 
    # get names of all data preparation scripts (.r/.R files) in the 'data-raw' directory
    rfiles <- list.files(path=data_raw.dir, pattern=".[rR]$")
@@ -72,13 +81,21 @@ prep_dat <- function(rebuild=FALSE, overwrite, pkgdir) {
       # if rebuild=TRUE or if the rda files do not exist, try running the data preparation script
       # [build]: paste T/F if the data processing script was run (without error)
       if (rebuild || !rda.files.exist) {
-         rfilerun <- try(source(paste0(data_raw.dir, rfiles[i])), silent=TRUE)
-         if (inherits(rfilerun, "try-error")) {
+
+         #rfilerun <- try(source(paste0(data_raw.dir, rfiles[i])), silent=TRUE)
+         #if (inherits(rfilerun, "try-error")) {
+
+         # run each script in its own independent process
+         cmd <- paste0(data_raw.dir, rfiles[i])
+         out <- suppressWarnings(system2("Rscript", cmd, stdout=TRUE, stderr=TRUE))
+
+         if (isTRUE(attributes(out)$status == 1)) {
             warning("Error while running ", rfiles[i], ".", call.=FALSE)
             cat("F      ")
          } else {
             cat("T      ")
          }
+
       } else {
          cat("F      ")
       }

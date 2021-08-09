@@ -26,23 +26,28 @@
    The data were obtained from Tables 1 and 2 in Collins and Langman (1985). The authors used Peto's (one-step) method for meta-analyzing the 27 trials. This approach is implemented in the \code{\link[metafor]{rma.peto}} function. Using the same dataset, van Houwelingen, Zwinderman, and Stijnen (1993) describe some alternative approaches for analyzing these data, including fixed and random-effects conditional logistic models. Those are implemented in the \code{\link[metafor]{rma.glmm}} function.
 }
 \source{
-   Collins, R., & Langman, M. (1985). Treatment with histamine H2 antagonists in acute upper gastrointestinal hemorrhage. \emph{New England Journal of Medicine}, \bold{313}, 660--666.
+   Collins, R., & Langman, M. (1985). Treatment with histamine H2 antagonists in acute upper gastrointestinal hemorrhage. \emph{New England Journal of Medicine}, \bold{313}(11), 660--666. \verb{https://doi.org/10.1056/NEJM198509123131104}
 }
 \references{
-   van Houwelingen, H. C., Zwinderman, K. H., & Stijnen, T. (1993). A bivariate approach to meta-analysis. \emph{Statistics in Medicine}, \bold{12}, 2273--2284.
+   van Houwelingen, H. C., Zwinderman, K. H., & Stijnen, T. (1993). A bivariate approach to meta-analysis. \emph{Statistics in Medicine}, \bold{12}(24), 2273--2284. \verb{https://doi.org/10.1002/sim.4780122405}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.collins1985a
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### meta-analysis of log ORs using Peto's method (outcome: persistent or recurrent bleedings)
 res <- rma.peto(ai=b.xti, n1i=nti, ci=b.xci, n2i=nci, data=dat)
 print(res, digits=2)
 
-\dontrun{
 ### meta-analysis of log ORs using a conditional logistic regression model (FE model)
 res <- rma.glmm(measure="OR", ai=b.xti, n1i=nti, ci=b.xci, n2i=nci, data=dat,
                 model="CM.EL", method="FE")
@@ -58,7 +63,6 @@ res <- rma.glmm(measure="OR", ai=b.xti, n1i=nti, ci=b.xci, n2i=nci, data=dat,
                 model="CM.EL", method="ML")
 summary(res)
 predict(res, transf=exp, digits=2)
-}
 
 ### meta-analysis of log ORs using Peto's method (outcome: need for surgery)
 res <- rma.peto(ai=o.xti, n1i=nti, ci=o.xci, n2i=nci, data=dat)
@@ -72,3 +76,6 @@ print(res, digits=2)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{odds ratios}
+\concept{Peto's method}
+\concept{generalized linear models}

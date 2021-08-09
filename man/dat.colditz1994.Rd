@@ -2,7 +2,7 @@
 \docType{data}
 \alias{dat.colditz1994}
 \title{Studies on the Effectiveness of the BCG Vaccine Against Tuberculosis}
-\description{Results from 13 studies examining the effectiveness of the Bacillus Calmette-Guerin (BCG) vaccine against tuberculosis.}
+\description{Results from 13 studies examining the effectiveness of the Bacillus Calmette-Guerin (BCG) vaccine against tuberculosis. \loadmathjax}
 \usage{
 dat.colditz1994
 }
@@ -20,7 +20,7 @@ dat.colditz1994
 }
 }
 \details{
-   The 13 studies provide data in terms of \eqn{2 \times 2}{2x2} tables in the form:
+   The 13 studies provide data in terms of \mjeqn{2 \times 2}{2x2} tables in the form:
    \tabular{lcc}{
                     \tab TB positive \tab TB negative \cr
    vaccinated group \tab \code{tpos} \tab \code{tneg} \cr
@@ -30,20 +30,27 @@ dat.colditz1994
    The dataset has been used in several publications to illustrate meta-analytic methods (see \sQuote{References}).
 }
 \source{
-   Colditz, G. A., Brewer, T. F., Berkey, C. S., Wilson, M. E., Burdick, E., Fineberg, H. V., & Mosteller, F. (1994). Efficacy of BCG vaccine in the prevention of tuberculosis: Meta-analysis of the published literature. \emph{Journal of the American Medical Association}, \bold{271}, 698--702.
+   Colditz, G. A., Brewer, T. F., Berkey, C. S., Wilson, M. E., Burdick, E., Fineberg, H. V., & Mosteller, F. (1994). Efficacy of BCG vaccine in the prevention of tuberculosis: Meta-analysis of the published literature. \emph{Journal of the American Medical Association}, \bold{271}(9), 698--702. \verb{https://doi.org/10.1001/jama.1994.03510330076038}
 }
 \references{
-   Berkey, C. S., Hoaglin, D. C., Mosteller, F., & Colditz, G. A. (1995). A random-effects regression model for meta-analysis. \emph{Statistics in Medicine}, \bold{14}, 395--411.
+   Berkey, C. S., Hoaglin, D. C., Mosteller, F., & Colditz, G. A. (1995). A random-effects regression model for meta-analysis. \emph{Statistics in Medicine}, \bold{14}(4), 395--411. \verb{https://doi.org/10.1002/sim.4780140406}
 
-   van Houwelingen, H. C., Arends, L. R., & Stijnen, T. (2002). Advanced methods in meta-analysis: Multivariate approach and meta-regression. \emph{Statistics in Medicine}, \bold{21}, 589--624.
+   van Houwelingen, H. C., Arends, L. R., & Stijnen, T. (2002). Advanced methods in meta-analysis: Multivariate approach and meta-regression. \emph{Statistics in Medicine}, \bold{21}(4), 589--624. \verb{https://doi.org/10.1002/sim.1040}
 
-   Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. \emph{Journal of Statistical Software}, \bold{36}(3), 1--48. \url{http://www.jstatsoft.org/v36/i03/}.
+   Viechtbauer, W. (2010). Conducting meta-analyses in R with the metafor package. \emph{Journal of Statistical Software}, \bold{36}(3), 1--48. \verb{https://doi.org/10.18637/jss.v036.i03}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.colditz1994
+dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### calculate log risk ratios and corresponding sampling variances
 dat <- escalc(measure="RR", ai=tpos, bi=tneg, ci=cpos, di=cneg, data=dat)
@@ -67,10 +74,11 @@ predict(res, newmods=cbind(seq(from=10, to=60, by=10), 1970), transf=exp)
 ### note: the interpretation of the results is difficult because absolute
 ### latitude and publication year are strongly correlated (the more recent
 ### studies were conducted closer to the equator)
-plot(dat$ablat, dat$year)
-cor(dat$ablat, dat$year)
+plot(dat$year, dat$ablat, pch=19, xlab="Publication Year", ylab="Absolute Lattitude")
+cor(dat$year, dat$ablat)
 
 }
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{risk ratios}

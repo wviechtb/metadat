@@ -1,0 +1,171 @@
+"article" "author" "year" "species" "amniotes" "environment" "ri" "ni"
+1 "Abell, A.J." "1999" "Sceloporus_virgatus" "yes" "wild" 0.1 21
+1 "Abell, A.J." "1999" "Sceloporus_virgatus" "yes" "wild" -0.17 14
+1 "Abell, A.J." "1999" "Sceloporus_virgatus" "yes" "wild" -0.07 21
+1 "Abell, A.J." "1999" "Sceloporus_virgatus" "yes" "wild" -0.14 14
+2 "Allaine, D., Graziani, L. & Coulon, J." "1998" "Marmota_marmota" "yes" "wild" -0.54 74
+3 "Baron, J.P., Tully, T. & Le Galliard, J.F." "2010" "Vipera_ursinii" "yes" "wild" 0.487 105
+4 "Blouin-Demers, G. & Weatherhead, P.J." "2007" "Pantherophis_obsoletus" "yes" "wild" -0.29 104
+5 "Bluhm, C.K. & Gowaty, P.A." "2004" "Anas_platyrhynchos" "yes" "captive" 0.395 49
+6 "Brown, G.P. & Shine, R." "2005" "Tropidonophis_mairii" "yes" "wild" -0.13 318
+10 "Dobson, F.S. & Michener, G.R." "1995" "Urocitellus_richardsonii" "yes" "wild" -0.67 51
+10 "Dobson, F.S. & Michener, G.R." "1995" "Urocitellus_richardsonii" "yes" "wild" -0.4 38
+11 "Dobson, F.S., Risch, T.S. & Murie, J.O." "1999" "Urocitellus_richardsonii" "yes" "wild" -0.53 134
+11 "Dobson, F.S., Risch, T.S. & Murie, J.O." "1999" "Urocitellus_richardsonii" "yes" "wild" -0.5 43
+15 "Ebert, D." "1993" "Daphnia_magna" "no" "captive" 0.03 215
+16 "Edwards, T.M., Miller, H.D. & Guillette Jr., L.J." "2006" "Gambusia_holbrooki" "no" "wild" -0.32 240
+17 "Ferreiro, R. & Galan, P." "2004" "Anguis_fragilis" "yes" "captive" 0.898 68
+20 "Galeotti, P., Rubolini, D., Fea, G., Ghia, D., Nardi, P.A., Gherardi, F. & Fasola, M." "2006" "Austropotamobius_italicus" "no" "wild" -0.17 68
+21 "Genoud, M. & Perrin, N." "1994" "Crocidura_russula" "yes" "captive" -0.64 62
+22 "Gignac, A. & Gregory, P.T." "2005" "Thamnophis_ordinoides" "yes" "captive" -0.22 24
+23 "Glazier, D.S." "1992" "Daphnia_magna" "no" "captive" 0.752 43
+23 "Glazier, D.S." "1992" "Daphnia_magna" "no" "captive" 0.168 43
+27 "Hassal, M., Walters, R.J., Telfer, M. & Hassall, M.R.J." "2006" "Chorthippus_brunneus" "no" "wild" -0.406 27
+27 "Hassal, M., Walters, R.J., Telfer, M. & Hassall, M.R.J." "2006" "Chorthippus_brunneus" "no" "captive" -0.433 131
+30 "Huber, S., Hoffmann, E., Millesi, E., Dittami, J. & Arnold, W." "2001" "Urocitellus_richardsonii" "yes" "wild" -0.86 27
+32 "Kasparian, K., Gei_ler, E. & Trillmich, F." "2005" "Cavia_aperea" "yes" "captive" -0.53 249
+36 "Luiselli, L., Capula, M. & Shine, R." "1996" "Coronella_austriaca" "yes" "wild" 0.4 28
+39 "Marsh-Matthews, E., Brooks, M., Deaton, R. & Tan, H." "2005" "Gambusia_affinis" "no" "captive" -0.393 23
+39 "Marsh-Matthews, E., Brooks, M., Deaton, R. & Tan, H." "2005" "Gambusia_geiseri" "no" "captive" 0.088 26
+40 "Michel, C.L. & Bonnet, X." "2012" "Cavia_aperea" "yes" "captive" -0.78 22
+41 "Michimae, H." "2007" "Hynobius_retardatus" "no" "captive" -0.658 154
+42 "Radder, R.S. & Shanbhag, B.A." "2004" "Calotes_versicolor" "yes" "wild" -0.57 25
+46 "Scantlebury, M., Butterwick, R. & Speakman, J.R." "2001" "Canis_lupus" "yes" "captive" -0.319 12
+46 "Scantlebury, M., Butterwick, R. & Speakman, J.R." "2001" "Canis_lupus" "yes" "captive" -0.418 7
+49 "Sikes, R.S." "1995" "Onychomys_leucogaster" "yes" "captive" 0.282 42
+51 "Skibiel, A.L., Dobson, F.S. & Murie, J.O." "2009" "Urocitellus_columbianus" "yes" "wild" -0.28 90
+53 "Stuart-Smith, J., Swain, R., Stuart-Smith, R.D. & Wapstra, E." "2007" "Rankinia_diemensis" "yes" "captive" 0.05 90
+54 "Taborsky, B., Skubic, E. & Bruintjes, R." "2007" "Neolamprologus_pulcher" "no" "captive" 0.26 10
+56 "Wagner, E.C. & Williams, T.D." "2007" "Taeniopygia_guttata" "yes" "captive" 0.56 52
+56 "Wagner, E.C. & Williams, T.D." "2007" "Taeniopygia_guttata" "yes" "captive" 0.39 22
+57 "Walker, S.E., Rypstra, A.L. & Marshall, S.D." "2003" "Hogna_helluo" "no" "wild" -0.118 17
+58 "Wilkinson, L.R. & Gibbons, J.W." "2005" "Kinosternon_subrubrum" "yes" "wild" 0.083 635
+58 "Wilkinson, L.R. & Gibbons, J.W." "2005" "Pseudemys_floridana" "yes" "wild" 0.158 79
+58 "Wilkinson, L.R. & Gibbons, J.W." "2005" "Sternotherus_odoratus" "yes" "wild" 0.193 46
+59 "Bonnet, X., Naulleau, G., Shine, R. & Lourdais, O." "2001" "Vipera_aspis" "yes" "wild" -0.14 132
+60 "Oksanen, T.A., Koskela,E. & Mappes, T." "2002" "Myodes_glareolus" "yes" "captive" -0.894 38
+61 "Rasanen, K., Fredrik, S., Laurila, A. & Merila, J." "2008" "Rana_arvalis" "no" "wild" -0.474 233
+62 "Rollison, N., Brooks, R.J." "2008" "Chrysemys_picta" "yes" "wild" -0.141 130
+63 "Weatherhead, P.J., Brown, G.P., Prosser, M.R. & Kissner, K.J." "1999" "Nerodia_sipedon" "yes" "wild" -0.22 75
+64 "Lim, J.N." NA "Gambusia_affinis" "no" "captive" 0.208 23
+65 "Arcos-Garcia, J. L., Martinez, G. D. M., Gama, R. B., Barros, O. V. E. & Morales, G. E. L." "2010" "Iguana_iguana" "yes" "captive" 0.26 137
+66 "Bauerfeind, S. S. & Fischer, K." "2007" "Bicyclus_anynana" "no" "captive" -0.27 86
+67 "Bauerfeind, S. S. & Fischer, K." "2008" "Araschnia_levana" "no" "captive" 0.37 142
+68 "Bradshaw, W. E., Holzapfel, C. M. & Oneill, T." "1993" "Wyeomyia_smithii" "no" "captive" -0.026 41
+69 "Brana, F., Bea, A. & Arrayago, M. J." "1991" "Zootoca_vivipara" "yes" "captive" 0.819 14
+70 "Brooks, R. J., Shilton, C. M., Brown, G. P. & Quinn, N. W. S." "1992" "Clemmys_insculpta" "yes" "wild" 0.5 21
+73 "Cabezas-Diaz, S., Virgos, E. & Villafuerte, R." "2005" "Alectoris_rufa" "yes" "captive" 0.54 23
+75 "Castilla, A. M. & Bauwens, D." "2000a" "Podarcis_atrata" "yes" "captive" -0.552 152
+76 "Castilla, A. M. & Bauwens, D." "2000b" "Podarcis_lilfordi" "yes" "captive" -0.476 27
+77 "Castro-Franco, R., Bustos-Zagal, M. G. & Mendez-De la Cruz, F. R." "2011" "Ctenosaura_pectinata" "yes" "captive" 0.408 25
+78 "Christians, J. K. & Williams, T. D." "2002" "Taeniopygia_guttata" "yes" "captive" 0.1 42
+79 "Clark, D. R., Bunck, C. M. & Hall, R. J." "1997" "Diadophis_punctatus" "yes" "captive" -0.23 47
+80 "Clark, P. J., Ewert, M. A. & Nelson, C. E." "2001" "Sternotherus_odoratus" "yes" "wild" -0.36 70
+81 "Congdon, J. D. & Sels, R. C. V." "1991" "Emydoidea_blandingii" "yes" "wild" 0.439 219
+82 "Conrad, K. F. & Robertson, R. J." "1992" "Sayornis_phoebe" "yes" "wild" -0.37 32
+83 "Costantini, D., Carello, L. & Dell'Omo, G." "2010" "Falco_tinnunculus" "yes" "wild" 0.128 1368
+85 "Doody, J. S., Georges, A. & Young, J. E." "2003" "Carettochelys_insculpta" "yes" "wild" -0.32 44
+85 "Doody, J. S., Georges, A. & Young, J. E." "2003" "Carettochelys_insculpta" "yes" "wild" -0.254 44
+85 "Doody, J. S., Georges, A. & Young, J. E." "2003" "Carettochelys_insculpta" "yes" "wild" 0.098 69
+86 "Du, Y., Lin, C. X., Lin, L. H., Qiu, Q. B. & Ji, X." "2011" "Leiolepis_reevesii" "yes" "captive" -0.26 200
+87 "Dufva, R." "1996" "Parus_major" "yes" "wild" 0.086 73
+88 "Formanowicz, D. R. & Shaffer, L. R." "1993" "Centruroides_vittatus" "no" "captive" 0.156 34
+92 "Galdino, C. A. B. & Van Sluys, M." "2011" "Eurolophosaurus_nanuzae" "yes" "wild" 0.19 12
+93 "Guntrip, J., Sibly, R. M. & Smith, R. H." "1997" "Prostephanus_truncatus" "no" "captive" -0.417 54
+96 "Herrmann, P. A. & Herrmann, H. W." "2005" "Chamaeleo_montium" "yes" "captive" 0.31 49
+97 "Horak, D., Klvana, P. & Albrecht, T." "2008" "Aythya_ferina" "yes" "wild" 0.01 25
+98 "Isaksson, C., Johansson, A. & Andersson, S." "2008" "Parus_major" "yes" "wild" 0.021 66
+99 "Iverson, J. B., Barthelmess, E. L., Smith, G. R. & Derivera, C. E." "1991" "Kinosternon_hirtipes" "yes" "wild" -0.36 11
+100 "Iverson, J. B. & Smith, G. R." "1993" "Chrysemys_picta" "yes" "wild" 0.03 202
+101 "Iverson, J. B. & Moler, P. E." "1997" "Apalone_ferox" "yes" "wild" -0.015 41
+103 "Iverson, J. B., Hines, K. N. & Valiulis, J. M." "2004" "Cyclura_cychlura" "yes" "wild" 0.06 78
+104 "Iverson, J. B., Young, C. A., Akre, T. S. B. & Griffiths, C. M." "2012" "Pituophis_catenifer" "yes" "wild" -0.34 39
+105 "Janzen, F. J." "1993" "Apalone_mutica" "yes" "wild" 0.365 6
+105 "Janzen, F. J." "1993" "Apalone_mutica" "yes" "wild" -0.141 14
+106 "Jarvinen, A." "1996" "Ficedula_hypoleuca" "yes" "wild" -0.033 567
+107 "Ji, X., Qiu, Q. B. & Diong, C. H." "2002" "Calotes_versicolor" "yes" "captive" -0.12 20
+110 "Kamosawa, M. & Ota, H." "1996" "Ramphotyphlops_braminus" "yes" "captive" -0.238 19
+111 "King, R. B." "1993" "Storeria_dekayi" "yes" "captive" -0.83 25
+115 "Luddecke, H." "2002" "Hyla_labialis" "no" "captive" -0.425 85
+115 "Luddecke, H." "2002" "Hyla_labialis" "no" "captive" -0.497 25
+115 "Luddecke, H." "2002" "Hyla_labialis" "no" "captive" -0.337 15
+116 "Luiselli, L., Capula, M. & Shine, R." "1997" "Natrix_natrix" "yes" "captive" -0.02 18
+119 "Czapulak, A." "2002" "Cygnus_olor" "yes" "wild" 0.108 390
+120 "Diaz, J. A., Perez-Tris, Bauwens, D., Perez-Aranda, D. Carbonell, R., Santos, T &  Telleria, J." "2007" "Psammodromus_algirus" "yes" "wild" -0.439 54
+120 "Diaz, J. A., Perez-Tris, Bauwens, D., Perez-Aranda, D. Carbonell, R., Santos, T &  Telleria, J." "2007" "Psammodromus_algirus" "yes" "wild" -0.411 22
+122 "Ji, X. & Brana, F." "2000" "Podarcis_muralis" "yes" "wild" 0.44 44
+123 "Macip-Ri_os, R. Cisneros, M.,  Aguilar-Miguel X., & Casas-Andreu, G." "2009" "Kinosternon_integrum" "yes" "wild" -0.787 20
+124 "Maddox, J. D. & Weatherhead, P. J." "2012" "Quiscalus_quiscula" "yes" "wild" 0.154 161
+125 "Mallory, M., McNicol, D. & Weatherhead, P." "1994" "Bucephala_clangula" "yes" "wild" -0.19 31
+126 "Marquez, R." "1996" "Alytes_obstetricans" "no" "wild" -0.04 67
+127 "Moreno, J., Merino, S., Vasquez, R. and Armesto, J." "2005" "Aphrastura_spinicauda" "yes" "wild" 0.414 30
+128 "Nelson, N., Thompson, M. Pledger, S. Keall, S. & Daugherty, C." "2004" "Sphenodon_punctatus" "yes" "wild" 0.102 50
+129 "Nieuwolt-Dacanay, P. M." "1997" "Terrapene_ornata" "yes" "wild" 0.107 203
+130 "Nilsson, J. & Svensson, E." "1993" "Parus_caeruleus" "yes" "wild" -0.034 108
+132 "Podlesak, D. & Blem, C." "2001" "Protonotaria_citrea" "yes" "wild" -0.575 211
+133 "Potti, J." "1993" "Ficedula_hypoleuca" "yes" "wild" -0.06 103
+134 "Radder, R. & Shanbhag, B." "2003" "Sitana_ponticeriana" "yes" "wild" 0.175 29
+135 "Randriamahazo, H & Mori, A" "2001" "Oplurus_cuvieri" "yes" "wild" -0.22 19
+136 "Roosenburg, W. & Dunham, A." "1997" "Malaclemys_terrapin" "yes" "wild" 0.045 92
+136 "Roosenburg, W. & Dunham, A." "1997" "Malaclemys_terrapin" "yes" "wild" 0.198 95
+137 "Rowe, J." "1992" "Emydoidea_blandingii" "yes" "wild" -0.6 17
+138 "Samraoui, F., Menai, R. & Samraoui, B." "2007" "Bubulcus_ibis" "yes" "wild" 0.24 61
+139 "Schwarzkopf, L." "1992" "Eulamprus_tympanum" "yes" "captive" -0.055 45
+139 "Schwarzkopf, L." "1992" "Eulamprus_tympanum" "yes" "captive" -0.302 48
+141 "Shanbhag, B. A.,Radder, R. S. & Saidapur, S. K." "2000" "Calotes_versicolor" "yes" "wild" -0.236 131
+143 "Sinervo, B. & Licht, P." "1991" "Uta_stansburiana" "yes" "captive" -0.67 13
+143 "Sinervo, B. & Licht, P." "1991" "Uta_stansburiana" "yes" "captive" -0.59 34
+143 "Sinervo, B. & Licht, P." "1991" "Uta_stansburiana" "yes" "captive" -0.7 37
+144 "Smith, G. R., Ballinger, R. E. & Rose, B. R." "1995" "Sceloporus_virgatus" "yes" "wild" 0.141 28
+145 "Smith, H. G., Ottosson, U. & Ohlsson, T." "1993" "Sturnus_vulgaris" "yes" "wild" 0.27 33
+145 "Smith, H. G., Ottosson, U. & Ohlsson, T." "1993" "Sturnus_vulgaris" "yes" "wild" 0.18 125
+145 "Smith, H. G., Ottosson, U. & Ohlsson, T." "1993" "Sturnus_vulgaris" "yes" "wild" 0.07 187
+146 "Tanaka, K. & Mori, A." "2011" "Elaphe_quadrivirgata" "yes" "captive" -0.69 43
+146 "Tanaka, K. & Mori, A." "2011" "Elaphe_quadrivirgata" "yes" "captive" -0.8 12
+147 "Tejedo, M." "1992" "Epidalea_calamita" "no" "captive" 0.409 94
+148 "Thorbjarnarson, J. B." "1994" "Caiman_crocodilus" "yes" "wild" 0.28 152
+150 "Timi, J. T., Lanfranchi, A. L. & Poulin, R." "2005" "Lernanthropus_cynoscicola" "no" "wild" 0.541 54
+153 "Uzun, A., Uzun, B. & Kopij, G." "2010" "Fulica_atra" "yes" "wild" -0.54 9
+154 "Wallace, B. P., Sotherland, P. R., Tomillo, P. S., Reina, R. D., Spotila, J. R. & Paladino, F. V." "2007" "Dermochelys_coriacea" "yes" "wild" 0.036 137
+155 "Wheelwright, N. T., Leary, J. & Fitzgerald, C." "1991" "Tachycineta_bicolor" "yes" "wild" -0.26 12
+155 "Wheelwright, N. T., Leary, J. & Fitzgerald, C." "1991" "Tachycineta_bicolor" "yes" "wild" -0.29 55
+155 "Wheelwright, N. T., Leary, J. & Fitzgerald, C." "1991" "Tachycineta_bicolor" "yes" "wild" -0.21 52
+155 "Wheelwright, N. T., Leary, J. & Fitzgerald, C." "1991" "Tachycineta_bicolor" "yes" "wild" 0.12 21
+156 "You, Y. Y., Feng, J., Wang, H. T., Wang, J. L., Dong, C., Su, X. R., Sun, H. M. & Gao, W." "2009" "Parus_major" "yes" "wild" -0.204 818
+157 "Van-Damme, R., Bauwens, D., Brana, F. & Verheyen, R." "1992" "Podarcis_muralis" "yes" "captive" -0.207 14
+158 "Murphy, M., Armbrecth, B., Vlamis, E. & Pierce, A." "2000" "Tachycineta_bicolor" "yes" "wild" -0.178 52
+159 "Naef-Daenzer, L., Nager, R., Keller, L. & Naef-Daenzer, B." "2004" "Parus_major" "yes" "wild" -0.685 57
+160 "Pettifor, R., Perrins, C. & McCleery" "2001" "Parus_major" "yes" "wild" 0.14 525
+161 "Rauter, C., Mcguire, M., Gwartney, M. & Space, J." "2010" "Nicrophorus_pustulatus" "no" "captive" -0.558 120
+162 "Saeki, Y., Crowley, P., Fox, C. & Potter, D." "2009" "Copidosoma_bakeri" "no" "captive" -0.758 25
+163 "Saino, N., Incagli, M., Martinelli, R., Ambrosini, R & Moller, A." "2001" "Hirundo_rustica" "yes" "wild" -0.47 32
+164 "Sanchez-Lafuente, A." "2004" "Porphyrio_porphyrio" "yes" "wild" 0.498 19
+164 "Sanchez-Lafuente, A." "2004" "Porphyrio_porphyrio" "yes" "wild" 0.7 16
+165 "Jarvinen, A." "1991" "Ficedula_hypoleuca" "yes" "wild" 0.32 262
+165 "Jarvinen, A." "1991" "Phoenicurus_phoenicurus" "yes" "wild" 0.32 94
+167 "Rua, M. & P., Galan" "2002" "Iberolacerta_monticola" "yes" "captive" -0.36 54
+168 "Bejakovic, D., Kalezic, M. Aleksic, I., Dzukic, G. & Crnobrnja-Isalovic, J." "1995" "Podarcis_melisellensis" "yes" "wild" -0.81 6
+168 "Bejakovic, D., Kalezic, M. Aleksic, I., Dzukic, G. & Crnobrnja-Isalovic, J." "1995" "Podarcis_melisellensis" "yes" "captive" -0.06 38
+169 "Adamopoulou, C. & Valakos, E." "2000" "Podarcis_milensis" "yes" "wild" -0.475 126
+173 "Sasvari, L., Hegyi, Z. & Hahn, I." "1999" "Ciconia_ciconia" "yes" "wild" 0.098 96
+173 "Sasvari, L., Hegyi, Z. & Hahn, I." "1999" "Ciconia_ciconia" "yes" "wild" 0.12 109
+174 "Ramirez-Bautista, A., Stephenson, B. P., Hernandez-Ibarra, X.,  Hernandez-Salinas, U.,  Cruz-Elizalde, R., Lozano, A. & Geoffrey, R.S." "2012" "Sceloporus_spinosus" "yes" "wild" 0.424 10
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Chen_canagica" "yes" "wild" -0.036 277
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Branta_canadensis" "yes" "wild" -0.056 82
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Branta_bernicla" "yes" "wild" -0.028 25
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Branta_bernicla" "yes" "wild" 0.314 57
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Cygnus_buccinator" "yes" "wild" -0.226 21
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Cygnus_buccinator" "yes" "wild" 0.334 29
+175 "Rohwer, F. C. & Eisenhaur, D. I." "1989" "Somateria_fischeri" "yes" "wild" -0.157 30
+177 "Milanovich, J. R., Trauth, S. E., Saugey, D. A. & Jordan, R. R." "2006" "Plethodon_albagula" "no" "wild" -0.609 91
+178 "Jones" "unpub" "Galaxias_anomalus" "no" "wild" -0.166 25
+178 "Jones" "unpub" "Galaxias_depressiceps" "no" "wild" 0.237 19
+178 "Jones" "unpub" "Galaxias_eldoni" "no" "wild" 0.395 22
+178 "Jones" "unpub" "Galaxias_pullus" "no" "wild" 0.284 17
+178 "Jones" "unpub" "Galaxias_gollumoides" "no" "wild" 0.096 18
+178 "Jones" "unpub" "Galaxias_southern" "no" "wild" 0.541 20
+178 "Jones" "unpub" "Galaxias_D." "no" "wild" 0.214 8
+178 "Jones" "unpub" "Galaxias_vulgaris" "no" "wild" -0.387 15
+179 "Ford, N. B. & Seigel, R. A." "2010" "Spalerosophis_diadema" "yes" "captive" -0.265 30
+180 "Uller, T. & Olsson, M." "2011" "Ctenophorus_fordi" "yes" "captive" 0.123 178
+181 "Boulton, R. L. Powlesland, R. G." "2008" "Petroica_australis" "yes" "wild" -0.104 133

@@ -21,17 +21,23 @@
    The dataset was used in the article by Stijnen et al. (2010) to illustrate various generalized linear mixed-effects models for the meta-analysis of proportions and odds ratios (see \sQuote{References}).
 }
 \source{
-   Niel-Weise, B. S., Stijnen, T., & van den Broek, P. J. (2007). Anti-infective-treated central venous catheters: A systematic review of randomized controlled trials. \emph{Intensive Care Medicine}, \bold{33}, 2058--2068.
+   Niel-Weise, B. S., Stijnen, T., & van den Broek, P. J. (2007). Anti-infective-treated central venous catheters: A systematic review of randomized controlled trials. \emph{Intensive Care Medicine}, \bold{33}(12), 2058--2068. \verb{https://doi.org/10.1007/s00134-007-0897-3}
 }
 \references{
-   Stijnen, T., Hamza, T. H., & Ozdemir, P. (2010). Random effects meta-analysis of event outcome in the framework of the generalized linear mixed model with applications in sparse data. \emph{Statistics in Medicine}, \bold{29}, 3046--3067.
+   Stijnen, T., Hamza, T. H., & Ozdemir, P. (2010). Random effects meta-analysis of event outcome in the framework of the generalized linear mixed model with applications in sparse data. \emph{Statistics in Medicine}, \bold{29}(29), 3046--3067. \verb{https://doi.org/10.1002/sim.4040}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.nielweise2007
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### standard (inverse-variance) random-effects model
 res <- rma(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, drop00=TRUE)
@@ -39,12 +45,13 @@ print(res, digits=3)
 predict(res, transf=exp, digits=2)
 
 ### random-effects conditional logistic model
-\dontrun{
 res <- rma.glmm(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, model="CM.EL")
 print(res, digits=3)
-predict(res, transf=exp, digits=2)}
+predict(res, transf=exp, digits=2)
 
 }
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{odds ratios}
+\concept{generalized linear models}
