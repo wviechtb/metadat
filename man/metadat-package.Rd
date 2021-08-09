@@ -30,7 +30,7 @@
    If you think you have found an error in an existing dataset or a bug in the package in general, please go to \url{https://github.com/wviechtb/metadat/issues} and open up a new issue.
 }
 \author{
-   Thomas White \email{thomas.white026@gmail.com} \cr
+   Thomas White \email{thomas.white@sydney.edu.au} \cr
    Daniel Noble \email{daniel.noble@anu.edu.au} \cr
    Alistair Senior \email{alistair.senior@sydney.edu.au} \cr
    Kyle Hamilton, \email{kyle.hamilton@gmail.com} \cr
