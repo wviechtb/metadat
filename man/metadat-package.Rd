@@ -33,6 +33,7 @@
    Thomas White \email{thomas.white026@gmail.com} \cr
    Daniel Noble \email{daniel.noble@anu.edu.au} \cr
    Alistair Senior \email{alistair.senior@sydney.edu.au} \cr
+   Kyle Hamilton, \email{kyle.hamilton@gmail.com} \cr
    Wolfgang Viechtbauer \email{wvb@metafor-project.org}
 }
 \keyword{package}
