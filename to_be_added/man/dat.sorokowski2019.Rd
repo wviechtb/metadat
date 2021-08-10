@@ -4,7 +4,7 @@
 \alias{dat.sorokowski2019.1}
 \alias{dat.sorokowski2019.2}
 \title{Sex differences in human olfaction: A meta-analysis.}
-\description{Sex Differences in Human Olfaction including discrimination, threshold, and identification.}
+\description{Sex Differences in human olfaction including discrimination, threshold, and identification.}
 \usage{dat.sorokowski2019}
 \format{
 The data frame dat.sorokowski2019.1 contains data for olfactory discrimination and the data frame dat.sorokowski2019.2 contains data for olfactory identification. Both consists of the following columns:
@@ -27,12 +27,18 @@ The data frame dat.sorokowski2019.1 contains data for olfactory discrimination a
 }
 }
 \details{
-   The three datasets included in this entry are used to determin differences in human olfaction based on sex including identification, discrimination, and threshold. 
+   The three datasets included in this entry are used to determine differences in human olfaction based on sex including identification, discrimination, and threshold. 
    
    Data and Jamovi analysis files can be found here https://osf.io/6tfuy.
 }
 \source{
-  Sorokowski, P., Karwowski, M., Misiak, M., Marczak, M. K., Dziekan, M., Hummel, T., & Sorokowska, A. (2019). Sex differences in human olfaction: A meta-analysis. \emph{Frontiers in Psychology}, 10, 242.
+Sorokowska, A. (2019, January 8). Sex differences in human olfaction: a meta-analysis. Retrieved from \verb{osf.io/6tfuy}
+}
+\references{
+  Sorokowski, P., Karwowski, M., Misiak, M., Marczak, M. K., Dziekan, M., Hummel, T., & Sorokowska, A. (2019). Sex differences in human olfaction: A meta-analysis. \emph{Frontiers in Psychology}, 10, 242. \verb{https://doi.org/10.3389/fpsyg.2019.00242}
+}
+\author{
+   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}
 }
 \examples{
   if (require(metafor)) {

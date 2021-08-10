@@ -34,14 +34,16 @@
    The dataset includes fifty-six effect sizes from studies which use spontaneous-response false belief tasks in infants up to 2 years old. Belief conditions using violation-of-expectation, anticipatory looking and interactive paradigms were included in this dataset, including 1469 infants. The data in this dataset were obtained from the authors reposatory on the Open Science Framework https://osf.io/re8uj/?view_only=d2605771dd664831a104318db9ff7aa9
 }
 \source{
-   Barone, P., Corradi, G., & Gomila, A. (2019, July 26). Infants’ performance in spontaneous-response false belief tasks: a review and meta-analysis. Retrieved from osf.io/re8uj
+   Barone, P., Corradi, G., & Gomila, A. (2019, July 26). Infants’ performance in spontaneous-response false belief tasks: a review and meta-analysis. Retrieved from \verb{osf.io/re8uj}
 }
 \references{
-   Barone, P., Corradi, G., & Gomila, A. (2019). Infants’ performance in spontaneous-response false belief tasks: A review and meta-analysis. \emph{Infant Behavior and Development}, \bold{57}, 101350.
+   Barone, P., Corradi, G., & Gomila, A. (2019). Infants’ performance in spontaneous-response false belief tasks: A review and meta-analysis. \emph{Infant Behavior and Development}, \bold{57}, 101350. \verb{https://doi.org/10.1016/j.infbeh.2019.101350.}
 }
-\author{W. Kyle Hamilton, \email{whamilton@ucmerced.edu}}
+\author{
+   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}
+}
 \examples{
-if (require(metafor)) {
+library(metafor)
 # This code example is a very slightly modified version of the one provided by the authors
 # which can be found here https://osf.io/s5ajt/?view_only=d2605771dd664831a104318db9ff7aa9
 
@@ -233,7 +235,7 @@ text(-11, 46.5, pos = 4, cex = 0.75, bquote(
 ))
 
 
-}
+
 }
 \keyword{datasets}
 \concept{infants}

@@ -20,7 +20,7 @@ The data frame dat.griffith2006 contains the following columns:
 \bold{r} \tab \code{numeric} \tab r value \cr
 }  
 }
-\details{The 53 effect sizes from 17 studies report the effects of experimental manipulations of diet, parasite load, rearing conditions, or brood size on the expression of carotenoid- or melanin-based sexual color signals across 11 species of bird. The intention being to examine whether carotenoid-based signals show heightened condition-dependence, as prediected by evolutionary models of 'honest' signalling. All data are extracted from Table 1 in Griffith et al. 2006.}
+\details{The 53 effect sizes from 17 studies report the effects of experimental manipulations of diet, parasite load, rearing conditions, or brood size on the expression of carotenoid- or melanin-based sexual color signals across 11 species of bird. The intention being to examine whether carotenoid-based signals show heightened condition-dependence, as predicted by evolutionary models of 'honest' signaling. All data are extracted from Table 1 in Griffith et al. 2006.}
 \source{Griffith, S. C., Parker, T. H., & Olson, V. A. (2006). Melanin-versus carotenoid-based sexual signals: is the difference really so black and red? \emph{Animal Behaviour}, \bold{71}, 749-763.}
 \author{Thomas E. White, \email{thomas.white026@gmail.com}}
 \examples{

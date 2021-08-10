@@ -16,11 +16,11 @@
       \bold{Journal} \tab \code{character}   \tab journal of publication \cr
       \bold{Species} \tab \code{character}   \tab experimental organism \cr
       \bold{Phylum} \tab \code{character}   \tab invertebrate or vertebrate \cr
-      \bold{ExptLifeStage} \tab \code{character}   \tab whether the treatment is intitated pre- or post-natally \cr
+      \bold{ExptLifeStage} \tab \code{character}   \tab whether the treatment is initiated pre- or post-natally \cr
       \bold{ManipType} \tab \code{character}   \tab was the quality or quantity of the diet restricted \cr
       \bold{CatchUp} \tab \code{character}   \tab did the experimental group experience catch-up growth \cr
       \bold{Sex} \tab \code{character}   \tab males, females or both were studied \cr
-      \bold{AdultDiet} \tab \code{character}   \tab was the restriction continuued post-maturity \cr
+      \bold{AdultDiet} \tab \code{character}   \tab was the restriction continued post-maturity \cr
       \bold{NStartControl} \tab \code{integer}   \tab size of control cohort \cr
       \bold{NStartExpt} \tab \code{integer}   \tab size of restricted cohort \cr
       \bold{yi} \tab \code{numeric}   \tab log hazard ratio; negative values suggest lower survival in restricted group \cr
@@ -35,11 +35,11 @@
       \bold{Journal} \tab \code{character}   \tab journal of publication \cr
       \bold{Species} \tab \code{character}   \tab experimental organism \cr
       \bold{Phylum} \tab \code{character}   \tab invertebrate or vertebrate \cr
-      \bold{ExptLifeStage} \tab \code{character}   \tab whether the treatment is intitated pre- or post-natally \cr
+      \bold{ExptLifeStage} \tab \code{character}   \tab whether the treatment is initiated pre- or post-natally \cr
       \bold{ManipType} \tab \code{character}   \tab was the quality or quantity of the diet restricted \cr
       \bold{CatchUp} \tab \code{character}   \tab did the experimental group experience catch-up growth \cr
       \bold{Sex} \tab \code{character}   \tab males, females or both were studied \cr
-      \bold{AdultDiet} \tab \code{character}   \tab was the restriction continuued post-maturity \cr
+      \bold{AdultDiet} \tab \code{character}   \tab was the restriction continued post-maturity \cr
       \bold{NStartControl} \tab \code{integer}   \tab size of control cohort \cr
       \bold{NStartExpt} \tab \code{integer}   \tab size of restricted cohort \cr
       \bold{MeanC} \tab \code{numeric}   \tab mean age at death in the control group \cr
