@@ -57,5 +57,6 @@ mtext("(standard dose better)", side=1, line=par("mgp")[1]-0.5, at=log(3/2), cex
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
 \concept{odds ratios}
 \concept{Mantel-Haenszel method}

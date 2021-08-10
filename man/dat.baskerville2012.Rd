@@ -70,5 +70,7 @@ rma(smd, sei=se, mods = ~ I(meetings * hours), data=dat, method="DL")
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{primary care}
 \concept{standardized mean differences}
 \concept{publication bias}
+\concept{meta-regression}

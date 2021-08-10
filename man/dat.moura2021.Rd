@@ -93,3 +93,4 @@ predict(res, newmods = rbind(c(0,0,0),c(1,0,0),c(0,1,0),c(1,1,1)), transf=transf
 \concept{correlation coefficients}
 \concept{multivariate models}
 \concept{phylogeny}
+\concept{meta-regression}

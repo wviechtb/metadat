@@ -79,5 +79,6 @@ funnel(res, refline=0, level=c(90, 95, 99), shade=c("white", "gray", "darkgray")
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
 \concept{Peto's method}
 \concept{publication bias}

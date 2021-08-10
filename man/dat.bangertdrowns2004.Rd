@@ -49,8 +49,17 @@ require(metafor)
 res <- rma(yi, vi, data=dat)
 res
 
+### some examples of mixed-effects meta-regression models
+res <- rma(yi, vi, mods = ~ factor(grade), data=dat)
+res
+res <- rma(yi, vi, mods = ~ length, data=dat)
+res
+res <- rma(yi, vi, mods = ~ info + pers + imag + meta, data=dat)
+res
+
 }
 }
 \keyword{datasets}
 \concept{education}
 \concept{standardized mean differences}
+\concept{meta-regression}

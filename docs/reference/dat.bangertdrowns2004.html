@@ -335,6 +335,88 @@
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 #&gt; </div><div class='input'>
+<span class='co'>### some examples of mixed-effects meta-regression models</span>
+<span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>grade</span><span class='op'>)</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+<span class='va'>res</span>
+</div><div class='output co'>#&gt; 
+#&gt; Mixed-Effects Model (k = 48; tau^2 estimator: REML)
+#&gt; 
+#&gt; tau^2 (estimated amount of residual heterogeneity):     0.0539 (SE = 0.0216)
+#&gt; tau (square root of estimated tau^2 value):             0.2322
+#&gt; I^2 (residual heterogeneity / unaccounted variability): 59.15%
+#&gt; H^2 (unaccounted variability / sampling variability):   2.45
+#&gt; R^2 (amount of heterogeneity accounted for):            0.00%
+#&gt; 
+#&gt; Test for Residual Heterogeneity:
+#&gt; QE(df = 44) = 102.0036, p-val &lt; .0001
+#&gt; 
+#&gt; Test of Moderators (coefficients 2:4):
+#&gt; QM(df = 3) = 5.9748, p-val = 0.1128
+#&gt; 
+#&gt; Model Results:
+#&gt; 
+#&gt;                 estimate      se     zval    pval    ci.lb    ci.ub 
+#&gt; intrcpt           0.2639  0.0898   2.9393  0.0033   0.0879   0.4399  ** 
+#&gt; factor(grade)2   -0.3727  0.1705  -2.1856  0.0288  -0.7069  -0.0385   * 
+#&gt; factor(grade)3    0.0248  0.1364   0.1821  0.8555  -0.2425   0.2922     
+#&gt; factor(grade)4   -0.0155  0.1160  -0.1338  0.8935  -0.2429   0.2118     
+#&gt; 
+#&gt; ---
+#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#&gt; </div><div class='input'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>length</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: Studies with NAs omitted from model fitting.</span></div><div class='input'><span class='va'>res</span>
+</div><div class='output co'>#&gt; 
+#&gt; Mixed-Effects Model (k = 46; tau^2 estimator: REML)
+#&gt; 
+#&gt; tau^2 (estimated amount of residual heterogeneity):     0.0441 (SE = 0.0188)
+#&gt; tau (square root of estimated tau^2 value):             0.2100
+#&gt; I^2 (residual heterogeneity / unaccounted variability): 55.26%
+#&gt; H^2 (unaccounted variability / sampling variability):   2.24
+#&gt; R^2 (amount of heterogeneity accounted for):            5.08%
+#&gt; 
+#&gt; Test for Residual Heterogeneity:
+#&gt; QE(df = 44) = 96.2810, p-val &lt; .0001
+#&gt; 
+#&gt; Test of Moderators (coefficient 2):
+#&gt; QM(df = 1) = 4.2266, p-val = 0.0398
+#&gt; 
+#&gt; Model Results:
+#&gt; 
+#&gt;          estimate      se    zval    pval    ci.lb   ci.ub 
+#&gt; intrcpt    0.0692  0.0825  0.8384  0.4018  -0.0925  0.2309    
+#&gt; length     0.0149  0.0073  2.0559  0.0398   0.0007  0.0292  * 
+#&gt; 
+#&gt; ---
+#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#&gt; </div><div class='input'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>info</span> <span class='op'>+</span> <span class='va'>pers</span> <span class='op'>+</span> <span class='va'>imag</span> <span class='op'>+</span> <span class='va'>meta</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; <span class='warning'>Warning: Studies with NAs omitted from model fitting.</span></div><div class='input'><span class='va'>res</span>
+</div><div class='output co'>#&gt; 
+#&gt; Mixed-Effects Model (k = 46; tau^2 estimator: REML)
+#&gt; 
+#&gt; tau^2 (estimated amount of residual heterogeneity):     0.0412 (SE = 0.0192)
+#&gt; tau (square root of estimated tau^2 value):             0.2030
+#&gt; I^2 (residual heterogeneity / unaccounted variability): 51.71%
+#&gt; H^2 (unaccounted variability / sampling variability):   2.07
+#&gt; R^2 (amount of heterogeneity accounted for):            18.34%
+#&gt; 
+#&gt; Test for Residual Heterogeneity:
+#&gt; QE(df = 41) = 82.7977, p-val = 0.0001
+#&gt; 
+#&gt; Test of Moderators (coefficients 2:5):
+#&gt; QM(df = 4) = 10.0061, p-val = 0.0403
+#&gt; 
+#&gt; Model Results:
+#&gt; 
+#&gt;          estimate      se     zval    pval    ci.lb   ci.ub 
+#&gt; intrcpt    0.3440  0.2179   1.5784  0.1145  -0.0831  0.7711     
+#&gt; info      -0.1988  0.2106  -0.9438  0.3453  -0.6115  0.2140     
+#&gt; pers      -0.3223  0.1782  -1.8094  0.0704  -0.6715  0.0268   . 
+#&gt; imag       0.2540  0.2023   1.2557  0.2092  -0.1424  0.6504     
+#&gt; meta       0.4817  0.1678   2.8708  0.0041   0.1528  0.8106  ** 
+#&gt; 
+#&gt; ---
+#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#&gt; </div><div class='input'>
 <span class='co'># }</span>
 </div></pre>
   </div>

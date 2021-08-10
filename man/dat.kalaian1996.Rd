@@ -99,3 +99,4 @@ res
 \concept{education}
 \concept{standardized mean differences}
 \concept{multivariate models}
+\concept{meta-regression}

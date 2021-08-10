@@ -82,3 +82,4 @@ cor(dat$year, dat$ablat)
 \keyword{datasets}
 \concept{medicine}
 \concept{risk ratios}
+\concept{meta-regression}

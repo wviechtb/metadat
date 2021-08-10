@@ -60,3 +60,4 @@ print(res, digits=3)
 \concept{medicine}
 \concept{proportions}
 \concept{single-arm studies}
+\concept{meta-regression}

@@ -74,4 +74,5 @@ funnel(res, atransf=exp, at=log(c(.1, .2, .5, 1, 2, 5, 10)),
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{alternative medicine}
 \concept{risk ratios}

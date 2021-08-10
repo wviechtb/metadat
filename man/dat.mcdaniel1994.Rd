@@ -76,3 +76,4 @@ res
 \keyword{datasets}
 \concept{psychology}
 \concept{correlation coefficients}
+\concept{meta-regression}

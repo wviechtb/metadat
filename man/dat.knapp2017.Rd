@@ -86,3 +86,5 @@ regplot(sav, xlab="Task Difficulty", ylab="Standardized Mean Difference", las=1,
 \concept{standardized mean differences}
 \concept{multilevel models}
 \concept{multivariate models}
+\concept{cluster-robust inference}
+\concept{meta-regression}

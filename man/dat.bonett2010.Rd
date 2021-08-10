@@ -68,3 +68,4 @@ predict(res, newmods=c(0,1), digits=2)
 \concept{psychology}
 \concept{Cronbach's alpha}
 \concept{reliability generalization}
+\concept{meta-regression}

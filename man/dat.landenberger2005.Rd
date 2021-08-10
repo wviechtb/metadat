@@ -87,3 +87,4 @@ predict(res, newmods=c(1,2,5,10), transf=exp, digits=2)
 \concept{psychology}
 \concept{criminology}
 \concept{odds ratios}
+\concept{meta-regression}

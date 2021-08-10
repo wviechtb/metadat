@@ -68,5 +68,7 @@ rma.mv(yi, vi, mods = ~ year + deltype, random = ~ 1 | study/esid, data=dat)
 }
 \keyword{datasets}
 \concept{psychology}
+\concept{criminology}
 \concept{standardized mean differences}
 \concept{multilevel models}
+\concept{cluster-robust inference}

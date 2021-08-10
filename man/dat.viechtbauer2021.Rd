@@ -238,3 +238,5 @@ rma(yi, vi, mods = ~ dose, data=dat, method="DL", subset=-c(3,6))
 \keyword{datasets}
 \concept{medicine}
 \concept{odds ratios}
+\concept{outliers}
+\concept{model checks}

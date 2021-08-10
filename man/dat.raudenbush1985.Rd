@@ -61,3 +61,4 @@ res
 \keyword{datasets}
 \concept{education}
 \concept{standardized mean differences}
+\concept{meta-regression}

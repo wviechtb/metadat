@@ -62,5 +62,6 @@ rma.peto(n1i=fup.nti, n2i=fup.nci, ai=ned.xti, ci=ned.xci, data=dat, digits=2)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{obstetrics}
 \concept{odds ratios}
 \concept{Peto's method}

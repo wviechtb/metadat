@@ -58,5 +58,6 @@ dat$vi <- ((log(dat$or.ub) - log(dat$or.lb)) / (2*qnorm(.975)))^2
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{oncology}
 \concept{epidemiology}
 \concept{odds ratios}

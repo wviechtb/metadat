@@ -14,6 +14,8 @@ fields:
 \concept{cardiology}
 \concept{oncology}
 \concept{dentistry}
+\concept{obstetrics}
+\concept{alternative medicine}
 \concept{primary care}
 \concept{epidemiology}
 
@@ -29,7 +31,6 @@ outcome measures:
 \concept{odds ratios}
 \concept{risk ratios}
 \concept{risk differences}
-\concept{means}
 \concept{proportions}
 \concept{incidence rates}
 \concept{Cronbach's alpha}
@@ -54,5 +55,9 @@ methods/concepts:
 \concept{reliability generalization}
 \concept{single-arm studies}
 \concept{publication bias}
+\concept{meta-regression}
+\concept{cluster-robust inference}
+\concept{outliers}
+\concept{model checks}
 
 ############################################################################
