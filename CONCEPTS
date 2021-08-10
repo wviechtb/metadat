@@ -1,0 +1,63 @@
+############################################################################
+
+fields:
+
+\concept{education}
+\concept{psychology}
+\concept{psychiatry}
+\concept{sociology}
+\concept{criminology}
+\concept{ecology}
+\concept{evolution}
+\concept{climate change}
+\concept{medicine}
+\concept{cardiology}
+\concept{oncology}
+\concept{dentistry}
+\concept{obstetrics}
+\concept{alternative medicine}
+\concept{primary care}
+\concept{epidemiology}
+
+############################################################################
+
+outcome measures:
+
+\concept{mean differences}
+\concept{standardized mean differences}
+\concept{ratios of means}
+\concept{standardized mean change}
+\concept{correlation coefficients}
+\concept{odds ratios}
+\concept{risk ratios}
+\concept{risk differences}
+\concept{proportions}
+\concept{incidence rates}
+\concept{Cronbach's alpha}
+\concept{hazard ratios}
+
+############################################################################
+
+methods/concepts:
+
+\concept{multilevel models}
+\concept{multivariate models}
+\concept{longitudinal models}
+\concept{network meta-analysis}
+\concept{dianostic accuracy studies}
+\concept{cumulative meta-analysis}
+\concept{spatial correlation}
+\concept{dose response models}
+\concept{Peto's method}
+\concept{Mantel-Haenszel method}
+\concept{generalized linear models}
+\concept{phylogeny}
+\concept{reliability generalization}
+\concept{single-arm studies}
+\concept{publication bias}
+\concept{meta-regression}
+\concept{cluster-robust inference}
+\concept{outliers}
+\concept{model checks}
+
+############################################################################

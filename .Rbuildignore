@@ -1,8 +1,11 @@
-.git
-^\.travis\.yml$
+^\.git$
+^\.github$
+^\.gitignore$
 ^_pkgdown\.yml$
 ^docs$
+^to_be_added$
 ^vignettes/pkgdown$
 ^data-raw$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^CONCEPTS$

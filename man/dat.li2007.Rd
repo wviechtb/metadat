@@ -21,17 +21,23 @@ dat.li2007
    The dataset includes the results from 22 randomized clinical trials that examined the effectiveness of intravenous magnesium in the prevention of death following acute myocardial infarction. It is similar to the dataset \code{\link{dat.egger2001}}, with some slight differences in the included trials and data used.
 }
 \source{
-   Li, J., Zhang, Q., Zhang, M., & Egger, M. (2007). Intravenous magnesium for acute myocardial infarction. \emph{Cochrane Database of Systematic Reviews}, \bold{2}, CD002755.
+   Li, J., Zhang, Q., Zhang, M., & Egger, M. (2007). Intravenous magnesium for acute myocardial infarction. \emph{Cochrane Database of Systematic Reviews}, \bold{2}, CD002755. \verb{https://doi.org/10.1002/14651858.CD002755.pub2}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \seealso{
    \code{\link{dat.egger2001}}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.li2007
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### meta-analysis of all trials except ISIS-4
 res <- rma(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, method="FE", subset=-14)
@@ -50,3 +56,6 @@ funnel(res, refline=0, level=c(90, 95, 99), shade=c("white", "gray", "darkgray")
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
+\concept{odds ratios}
+\concept{publication bias}

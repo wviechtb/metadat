@@ -1,4 +1,3 @@
-
 # Main function for generating docs
 rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 
@@ -109,7 +108,7 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 # Generate table start
 .tabular <- function(study.name, dat_type) {
   if(dat_type == 'primary'){
-    info <- paste0("The data frame ", study.name, " contains the following columns:")
+    info <- paste0("The data frame contains the following columns:")
     tabular <- "\\tabular{lll}{"
     out <- rbind(info, tabular)
     return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
@@ -138,14 +137,16 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   details <- "\\details{ADD_DETAILS}"
   source <- "\\source{ADD_REFERENCE}"
   author <- "\\author{ADD_CONTRIBUTOR_NAME, \\email{ADD_EMAIL}}"
-  examples1 <- "\\examples{"
-  examples2 <- "### copy data into 'dat' and examine data"
-  examples3 <- paste0("dat <- ", study.name)
-  examples4 <- "dat"
+  eg1 <- "\\examples{"
+  eg2 <- "### copy data into 'dat' and examine data"
+  eg3 <- paste0("dat <- ", study.name)
+  eg4 <- "dat"
+  eg5 <- "\\dontrun{"
+  eg6 <- "ADD_DETAILED_EXAMPLE"
   keyword <- "\\keyword{datasets}"
   concept <- "\\concept{ADD_CONCEPT}"
 
-  out <- rbind(closer, details, source, author, examples1, examples2, examples3, examples4, closer, keyword, concept)
+  out <- rbind(closer, details, source, author, eg1, eg2, eg3, eg4, eg5, eg6, closer, closer, keyword, concept)
   
   return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
 }

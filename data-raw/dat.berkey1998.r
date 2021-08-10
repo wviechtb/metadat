@@ -1,3 +1,7 @@
+# Berkey, C. S., Hoaglin, D. C., Antczak-Bouckoms, A., Mosteller, F., &
+# Colditz, G. A. (1998). Meta-analysis of multiple outcomes by regression with
+# random effects. Statistics in Medicine, 17, 2537-2550.
+
 dat.berkey1998 <- read.table("data-raw/dat.berkey1998.txt", header=TRUE, stringsAsFactors=FALSE)
 attr(dat.berkey1998, "digits") <- 4
 attr(dat.berkey1998, "yi.names") <- "yi"

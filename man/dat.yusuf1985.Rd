@@ -2,7 +2,7 @@
 \docType{data}
 \alias{dat.yusuf1985}
 \title{Studies of Beta Blockers During and After Myocardial Infarction}
-\description{Results from studies examining the effectiveness of beta blockers for reducing mortality and reinfarction.}
+\description{Results from studies examining the effectiveness of beta blockers for reducing mortality and reinfarction. \loadmathjax}
 \usage{dat.yusuf1985}
 \format{The data frame contains the following columns:
 \tabular{lll}{
@@ -18,16 +18,23 @@
 \details{
    The dataset contains table 6 (total mortality from short-term trials of oral beta blockers), 9 (total mortality at one week from trials with an initial IV dose of a beta blocker), 10 (total mortality from long-term trials with treatment starting late and mortality from day 8 onwards in long-term trials that began early and continued after discharge), 11 (nonfatal reinfarction from long-term trials of beta blockers), 12a (sudden death in long-term beta blocker trials), and 12b (nonsudden death in long-term beta blocker trials) from the meta-analysis by Yusuf et al. (1985) on the effectiveness of of beta blockers for reducing mortality and reinfarction.
 
-   The article also describes what is sometimes called Peto's one-step method for meta-analyzing \eqn{2 \times 2}{2x2} table data. This method is implemented in the \code{\link[metafor]{rma.peto}} function.
+   The article also describes what is sometimes called Peto's one-step method for meta-analyzing \mjeqn{2 \times 2}{2x2} table data. This method is implemented in the \code{\link[metafor]{rma.peto}} function.
 }
 \source{
-   Yusuf, S., Peto, R., Lewis, J., Collins, R., & Sleight, P. (1985). Beta blockade during and after myocardial infarction: An overview of the randomized trials. \emph{Progress in Cardiovascular Disease}, \bold{27}, 335--371.
+   Yusuf, S., Peto, R., Lewis, J., Collins, R., & Sleight, P. (1985). Beta blockade during and after myocardial infarction: An overview of the randomized trials. \emph{Progress in Cardiovascular Disease}, \bold{27}(5), 335--371. \verb{https://doi.org/10.1016/s0033-0620(85)80003-7}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat'
 dat <- dat.yusuf1985
+dat[dat$table == 6,]
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### to select a table for the analysis
 tab <- "6" ### either: 6, 9, 10, 11, 12a, 12b
@@ -45,4 +52,5 @@ predict(res, transf=exp, digits=2)
 \keyword{datasets}
 \concept{medicine}
 \concept{cardiology}
-
+\concept{odds ratios}
+\concept{Peto's method}

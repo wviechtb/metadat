@@ -1,0 +1,68 @@
+id                     study   year  n1i  n2i  outcome     yi     vi   hrs  ets  type  homework
+1     "Alderman & Powers (A)"  1980   28   22   verbal   0.22  0.082   7.0    1     1         1
+2     "Alderman & Powers (B)"  1980   39   40   verbal   0.09  0.051  10.0    1     1         1
+3     "Alderman & Powers (C)"  1980   22   17   verbal   0.14  0.105  10.5    1     1         1
+4     "Alderman & Powers (D)"  1980   48   43   verbal   0.14  0.044  10.0    1     1         1
+5     "Alderman & Powers (E)"  1980   25   74   verbal  -0.01  0.054   6.0    1     1         1
+6     "Alderman & Powers (F)"  1980   37   35   verbal   0.14  0.056   5.0    1     1         1
+7     "Alderman & Powers (G)"  1980   24   70   verbal   0.18  0.056  11.0    1     1         1
+8     "Alderman & Powers (H)"  1980   16   19   verbal   0.01  0.115  45.0    1     1         1
+9          "Evans & Pike (A)"  1973  145  129   verbal   0.13  0.015  21.0    1     1         1
+10         "Evans & Pike (A)"  1973  145  129     math   0.12  0.015  21.0    1     1         1
+11         "Evans & Pike (B)"  1973   72  129   verbal   0.25  0.022  21.0    1     1         1
+12         "Evans & Pike (B)"  1973   72  129     math   0.06  0.022  21.0    1     1         1
+13         "Evans & Pike (C)"  1973   71  129   verbal   0.31  0.022  21.0    1     1         1
+14         "Evans & Pike (C)"  1973   71  129     math   0.09  0.022  21.0    1     1         1
+15                "Laschewer"  1986   13   14   verbal   0.00  0.148   8.9    0     1         0
+16                "Laschewer"  1986   13   14     math   0.07  0.148   8.9    0     1         0
+17  "Roberts & Oppenheim (A)"  1966   43   37   verbal   0.01  0.050   7.5    1     1         0
+18  "Roberts & Oppenheim (B)"  1966   19   13   verbal   0.67  0.137   7.5    1     1         0
+19  "Roberts & Oppenheim (D)"  1966   16   11   verbal  -0.38  0.156   7.5    1     1         0
+20  "Roberts & Oppenheim (E)"  1966   20   12   verbal  -0.24  0.134   7.5    1     1         0
+21  "Roberts & Oppenheim (F)"  1966   39   28   verbal   0.29  0.062   7.5    1     1         0
+22  "Roberts & Oppenheim (G)"  1966   38   25     math   0.26  0.067   7.5    1     1         0
+23  "Roberts & Oppenheim (H)"  1966   18   13     math  -0.41  0.135   7.5    1     1         0
+24  "Roberts & Oppenheim (I)"  1966   19   13     math   0.08  0.130   7.5    1     1         0
+25  "Roberts & Oppenheim (J)"  1966   37   22     math   0.30  0.073   7.5    1     1         0
+26  "Roberts & Oppenheim (K)"  1966   19   11     math  -0.53  0.148   7.5    1     1         0
+27  "Roberts & Oppenheim (L)"  1966   17   13     math   0.13  0.136   7.5    1     1         0
+28  "Roberts & Oppenheim (M)"  1966   20   12     math   0.26  0.134   7.5    1     1         0
+29  "Roberts & Oppenheim (N)"  1966   20   13     math   0.47  0.130   7.5    1     1         0
+30                "Zuman (B)"  1988   16   17   verbal   0.13  0.122  24.0    0     1         1
+31                "Zuman (B)"  1988   16   17     math   0.48  0.125  24.0    0     1         1
+32                "Burke (A)"  1986   25   25   verbal   0.50  0.082  50.0    0     2         1
+33                "Burke (B)"  1986   25   25   verbal   0.74  0.085  50.0    0     2         1
+34                   "Coffin"  1987    8    8   verbal  -0.23  0.252  18.0    0     2         0
+35                   "Coffin"  1987    8    8     math   0.33  0.253  18.0    0     2         0
+36                    "Davis"  1985   22   21   verbal   0.13  0.093  15.0    0     2         0
+37                    "Davis"  1985   22   21     math   0.13  0.093  15.0    0     2         0
+38                  "Frankel"  1960   45   45   verbal   0.13  0.045  30.0    0     2         0
+39                  "Frankel"  1960   45   45     math   0.34  0.045  30.0    0     2         0
+40                 "Kintisch"  1979   38   38   verbal   0.06  0.053  20.0    0     2         1
+41                   "Whitla"  1962   52   52   verbal   0.09  0.039  10.0    1     2         1
+42                   "Whitla"  1962   52   52     math  -0.11  0.039  10.0    1     2         1
+43               "Curran (A)"  1988   21   17   verbal  -0.10  0.107   6.0    0     3         0
+44               "Curran (A)"  1988   21   17     math  -0.08  0.107   6.0    0     3         0
+45               "Curran (B)"  1988   24   17   verbal  -0.14  0.101   6.0    0     3         0
+46               "Curran (B)"  1988   24   17     math  -0.29  0.102   6.0    0     3         0
+47               "Curran (C)"  1988   20   17   verbal  -0.16  0.109   6.0    0     3         0
+48               "Curran (C)"  1988   20   17     math  -0.34  0.110   6.0    0     3         0
+49               "Curran (D)"  1988   20   17   verbal  -0.07  0.109   6.0    0     3         0
+50               "Curran (D)"  1988   20   17     math  -0.06  0.109   6.0    0     3         0
+51                     "Dear"  1958   60  526   verbal  -0.02  0.019  15.0    1     3         1
+52                     "Dear"  1958   60  526     math   0.21  0.019  15.0    1     3         1
+53                     "Dyer"  1953  225  193   verbal   0.06  0.010  15.0    1     3         1
+54                     "Dyer"  1953  225  193     math   0.17  0.010  15.0    1     3         1
+55               "French (B)"  1955  110  158   verbal   0.06  0.015   4.5    1     3         1
+56               "French (C)"  1955  161  158     math   0.20  0.013  15.0    1     3         1
+57                      "FTC"  1978  192  684   verbal   0.15  0.007  40.0    0     3         0
+58                      "FTC"  1978  192  684     math   0.03  0.007  40.0    0     3         0
+59                "Keefauver"  1976   16   25   verbal   0.17  0.103  14.0    0     3         0
+60                "Keefauver"  1976   16   25     math  -0.19  0.103  14.0    0     3         0
+61                     "Lass"  1961   38   82   verbal   0.02  0.039    NA    1     3         1
+62                     "Lass"  1961   38   82     math   0.10  0.039    NA    1     3         1
+63       "Reynolds & Oberman"  1987   93   47   verbal  -0.04  0.032  63.0    0     3         l
+64       "Reynolds & Oberman"  1987   93   47     math   0.60  0.033  63.0    0     3         l
+65                   "Teague"  1992   10   15   verbal   0.40  0.170  18.0    0     3         0
+66                "Zuman (A)"  1988   21   34   verbal   0.54  0.080  27.0    0     3         1
+67                "Zuman (A)"  1988   21   34     math   0.57  0.080  27.0    0     3         1

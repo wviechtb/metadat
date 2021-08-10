@@ -1,3 +1,10 @@
+# Curtis, P. S., & Wang, X. (1998). A meta-analysis of elevated CO2 effects on
+# woody plant mass, form, and physiology. Oecologia, 113(3), 299-313.
+
+# data from: Hedges, L. V., Gurevitch, J., & Curtis, P. S. (1999). The
+# meta-analysis of response ratios in experimental ecology. Ecology, 80(4),
+# 1150-1156.
+
 dat.curtis1998 <- read.table("data-raw/dat.curtis1998.txt", header=FALSE, stringsAsFactors=FALSE)
 dat.curtis1998[dat.curtis1998$V4 == "mg", "V19"] <- dat.curtis1998[dat.curtis1998$V4 == "mg", "V19"]/1000
 dat.curtis1998[dat.curtis1998$V4 == "mg", "V21"] <- dat.curtis1998[dat.curtis1998$V4 == "mg", "V21"]/1000

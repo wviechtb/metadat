@@ -19,14 +19,20 @@
    Postoperative nausea and vomiting are common complications following surgery and anaesthesia. As an alternative to drug therapy, acupuncture has been studied as a potential treatment in several trials. The dataset contains the results from 16 clinical trials examining the effectiveness of wrist acupuncture point P6 stimulation for preventing postoperative nausea.
 }
 \source{
-   Lee, A., & Done, M. L. (2004). Stimulation of the wrist acupuncture point P6 for preventing postoperative nausea and vomiting. \emph{Cochrane Database of Systematic Reviews}, \bold{3}, CD003281.
+   Lee, A., & Done, M. L. (2004). Stimulation of the wrist acupuncture point P6 for preventing postoperative nausea and vomiting. \emph{Cochrane Database of Systematic Reviews}, \bold{3}, CD003281. \verb{https://doi.org/10.1002/14651858.CD003281.pub2}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.lee2004
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### meta-analysis based on log risk ratios
 res <- rma(measure="RR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat)
@@ -37,3 +43,5 @@ predict(res, transf=exp, digits=2)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{alternative medicine}
+\concept{risk ratios}

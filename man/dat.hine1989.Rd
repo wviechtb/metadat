@@ -20,16 +20,23 @@
    The data in this dataset were obtained from Table I in Normand (1999, p. 322).
 }
 \source{
-   Normand, S. T. (1999). Meta-analysis: Formulating, evaluating, combining, and reporting. \emph{Statistics in Medicine}, \bold{18}, 321--359.
+   Normand, S. T. (1999). Meta-analysis: Formulating, evaluating, combining, and reporting. \emph{Statistics in Medicine}, \bold{18}(3), 321--359. \verb{https://doi.org/10.1002/(sici)1097-0258(19990215)18:3<321::aid-sim28>3.0.co;2-p}
 }
 \references{
-   Hine, L. K., Laird, N., Hewitt, P., & Chalmers, T. C. (1989). Meta-analytic evidence against prophylactic use of lidocaine in acute myocardial infarction. \emph{Archives of Internal Medicine}, \bold{149}, 2694--2698.
+   Hine, L. K., Laird, N., Hewitt, P., & Chalmers, T. C. (1989). Meta-analytic evidence against prophylactic use of lidocaine in acute myocardial infarction. \emph{Archives of Internal Medicine}, \bold{149}(12), 2694--2698. \verb{https://doi.org/10.1001/archinte.1989.00390120056011}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.hine1989
+dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### calculate risk differences and corresponding sampling variances
 dat <- escalc(measure="RD", n1i=n1i, n2i=n2i, ai=ai, ci=ci, data=dat)
@@ -43,3 +50,5 @@ res
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
+\concept{risk differences}

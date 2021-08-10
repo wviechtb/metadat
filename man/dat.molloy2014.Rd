@@ -24,16 +24,23 @@
    Variable \code{a_measure} indicates whether adherence was measured based on self-reports or a more \sQuote{objective} measure (e.g., electronic monitoring of pill bottle openings, pill counts). Variable \code{c_measure} indicates whether conscientiousness was measured with some version of the NEO personality inventory or some other scale. Methodological quality was scored by the authors on a 1 to 4 scale with higher scores indicating higher quality (see article for details on how this score was derived).
 }
 \source{
-   Molloy, G. J., O'Carroll, R. E., & Ferguson, E. (2014). Conscientiousness and medication adherence: A meta-analysis. \emph{Annals of Behavioral Medicine, 47,} 92--101.
+   Molloy, G. J., O'Carroll, R. E., & Ferguson, E. (2014). Conscientiousness and medication adherence: A meta-analysis. \emph{Annals of Behavioral Medicine}, \bold{47}(1), 92--101. \verb{https://doi.org/10.1007/s12160-013-9524-4}
 }
 \references{
    John, O. P., & Srivastava, S. (1999). The Big Five Trait taxonomy: History, measurement, and theoretical perspectives. In L. A. Pervin & O. P. John (Eds.), \emph{Handbook of personality: Theory and research} (2nd ed., pp. 102-138). New York: Guilford Press.
 }
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+}
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.molloy2014
+dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat, slab=paste(authors, year, sep=", "))
@@ -47,10 +54,9 @@ res
 predict(res, digits=3, transf=transf.ztor)
 
 ### forest plot
-forest(res, addcred=TRUE, xlim=c(-1.6,1.6), atransf=transf.ztor,
-       at=transf.rtoz(c(-.4,-.2,0,.2,.4,.6)), digits=c(2,1), cex=.8)
-text(-1.6, 18, "Author(s), Year", pos=4, cex=.8)
-text( 1.6, 18, "Correlation [95\% CI]", pos=2, cex=.8)
+forest(res, addpred=TRUE, xlim=c(-1.6,1.6), atransf=transf.ztor,
+       at=transf.rtoz(c(-.4,-.2,0,.2,.4,.6)), digits=c(2,1), cex=.8,
+       header="Author(s), Year")
 
 ### funnel plot
 funnel(res)
@@ -60,3 +66,4 @@ funnel(res)
 \keyword{datasets}
 \concept{psychology}
 \concept{medicine}
+\concept{correlation coefficients}

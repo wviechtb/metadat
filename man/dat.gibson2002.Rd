@@ -18,7 +18,7 @@
 \bold{bi}       \tab \code{numeric}   \tab number of participants who no days off work/school in the intervention group \cr
 \bold{ci}       \tab \code{numeric}   \tab number of participants who had one or more days off work/school in the control/comparison group \cr
 \bold{di}       \tab \code{numeric}   \tab number of participants who no days off work/school in the control/comparison group \cr
-\bold{type}     \tab \code{numeric}   \tab numeric code for the intervention type (see below)
+\bold{type}     \tab \code{numeric}   \tab numeric code for the intervention type (see \sQuote{Details})
 }
 }
 \details{
@@ -36,14 +36,20 @@
    }
 }
 \source{
-   Gibson, P. G., Powell, H., Wilson, A., Abramson, M. J., Haywood, P., Bauman, A., et al. (2002). Self-management education and regular practitioner review for adults with asthma. \emph{Cochrane Database of Systematic Reviews}, \bold{3}.
+   Gibson, P. G., Powell, H., Wilson, A., Abramson, M. J., Haywood, P., Bauman, A., Hensley, M. J., Walters, E. H., & Roberts, J. J. L. (2002). Self-management education and regular practitioner review for adults with asthma. \emph{Cochrane Database of Systematic Reviews}, \bold{3}, CD001117. \verb{https://doi.org/10.1002/14651858.CD001117}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.gibson2002
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### fixed-effects model analysis of the standardized mean differences
 dat <- escalc(measure="SMD", m1i=m1i, sd1i=sd1i, n1i=n1i, m2i=m2i, sd2i=sd2i, n2i=n2i, data=dat)
@@ -67,3 +73,7 @@ print(res, digits=2)
 }
 }
 \keyword{datasets}
+\concept{medicine}
+\concept{primary care}
+\concept{risk ratios}
+\concept{standardized mean differences}

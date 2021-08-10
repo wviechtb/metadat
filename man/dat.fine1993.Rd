@@ -25,19 +25,25 @@
    The data were reconstructed by Trikalinos and Olkin (2012) based on Table 2 in Fine et al. (1993) and Table 3 in Dear (1994). The data can be used to illustrate how a meta-analysis can be conducted of effect sizes reported at multiple time points using a multivariate model.
 }
 \source{
-   Dear, K. B. G. (1994). Iterative generalized least squares for meta-analysis of survival data at multiple times. \emph{Biometrics}, \bold{50}, 989--1002.
+   Dear, K. B. G. (1994). Iterative generalized least squares for meta-analysis of survival data at multiple times. \emph{Biometrics}, \bold{50}(4), 989--1002. \verb{https://doi.org/10.2307/2533438}
 
-   Trikalinos, T. A., & Olkin, I. (2012). Meta-analysis of effect sizes reported at multiple time points: A multivariate approach. \emph{Clinical Trials}, \bold{9}, 610--620.
+   Trikalinos, T. A., & Olkin, I. (2012). Meta-analysis of effect sizes reported at multiple time points: A multivariate approach. \emph{Clinical Trials}, \bold{9}(5), 610--620. \verb{https://doi.org/10.1177/1740774512453218}
 }
 \references{
-   Fine, H. A., Dear, K. B., Loeffler, J. S., Black, P. M., & Canellos, G. P. (1993). Meta-analysis of radiation therapy with and without adjuvant chemotherapy for malignant gliomas in adults. \emph{Cancer}, \bold{71}, 2585--2597.
+   Fine, H. A., Dear, K. B., Loeffler, J. S., Black, P. M., & Canellos, G. P. (1993). Meta-analysis of radiation therapy with and without adjuvant chemotherapy for malignant gliomas in adults. \emph{Cancer}, \bold{71}(8), 2585--2597. \verb{https://doi.org/10.1002/1097-0142(19930415)71:8<2585::aid-cncr2820710825>3.0.co;2-s}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.fine1993
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### calculate log(ORs) and sampling variances for each time point
 dat <- escalc(measure="OR", ai=e1i, n1i=nei, ci=c1i, n2i=nci, data=dat, var.names=c("y1i","v1i"))
@@ -55,8 +61,8 @@ dat$v34i <- with(dat, nei / (e3i * (nei - e4i)) + nci / (c3i * (nci - c4i)))
 
 ### create dataset in long format
 dat.long <- data.frame(study=rep(1:nrow(dat), each=4), time=1:4,
-                       yi=c(t(dat[,c("y1i","y2i","y3i","y4i")])),
-                       vi=c(t(dat[,c("v1i","v2i","v3i","v4i")])))
+                       yi=c(t(dat[c("y1i","y2i","y3i","y4i")])),
+                       vi=c(t(dat[c("v1i","v2i","v3i","v4i")])))
 
 ### var-cov matrices of the sudies
 V <- lapply(split(dat, dat$study),
@@ -100,20 +106,21 @@ res <- rma.mv(yi, Vc, mods = ~ factor(time) - 1, random = ~ time | study,
               struct="HAR", data=dat.long)
 print(res, digits=3)
 
-\dontrun{
 ### profile the variance components
 par(mfrow=c(2,2))
 profile(res, tau2=1, xlim=c( 0,.2))
 profile(res, tau2=2, xlim=c( 0,.2))
 profile(res, tau2=3, xlim=c( 0,.2))
-profile(res, tau2=4, xlim=c(.1,.3))}
+profile(res, tau2=4, xlim=c(.1,.3))
 
-\dontrun{
 ### profile the autocorrelation coefficient
 par(mfrow=c(1,1))
-profile(res, rho=1)}
+profile(res, rho=1)
 
 }
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{oncology}
+\concept{odds ratios}
+\concept{longitudinal models}

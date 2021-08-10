@@ -19,18 +19,25 @@
    The trials were also divided according to the timing of the chomotherapy: (1) adjuvant, after the locoregional treatment, (2) neoadjuvant, before the locoregional treatment, and (3) concomitant, chemotherapy given concomitantly or alternating with radiotherapy.
 }
 \source{
-   Pignon, J. P., Bourhis, J., Domenge, C., & Designe, L. (2000). Chemotherapy added to locoregional treatment for head and neck squamous-cell carcinoma: Three meta-analyses of updated individual data. \emph{Lancet}, \bold{355}(9208), 949--955.
+   Pignon, J. P., Bourhis, J., Domenge, C., & Designe, L. (2000). Chemotherapy added to locoregional treatment for head and neck squamous-cell carcinoma: Three meta-analyses of updated individual data. \emph{Lancet}, \bold{355}(9208), 949--955. \verb{https://doi.org/10.1016/S0140-6736(00)90011-4}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.pignon2000
+head(dat)
 
-### compute estimated log hazard ratios and sampling variances
+\dontrun{
+
+### load metafor package
+require(metafor)
+
+### calculate log hazard ratios and sampling variances
 dat$yi <- with(dat, OmE/V)
 dat$vi <- with(dat, 1/V)
-dat
+head(dat)
 
 ### meta-analysis based on all 65 trials
 res <- rma(yi, vi, data=dat, method="FE", digits=2)
@@ -56,3 +63,5 @@ predict(res, transf=exp)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{oncology}
+\concept{hazard ratios}

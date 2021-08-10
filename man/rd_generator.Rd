@@ -10,10 +10,10 @@ rd_generator(dir = getwd(), overwrite = FALSE)
    \item{overwrite}{boolean, specifying whether existing \code{.Rd} file(s) should be overwritten (if they already exist). The default is to never overwrite any existing \code{.Rd} files.}
 }
 \details{
-   The function ...
+   The function is used by the \code{\link{prep_dat}} function to create a boilerplate template for a help file corresponding to a (typically new) dataset included in the package.
 }
 \author{
-   Thomas White \email{thomas.white026@gmail.com} \cr
+   Thomas White \email{thomas.white@sydney.edu.au} \cr
    Daniel Noble \email{daniel.noble@anu.edu.au} \cr
 }
 \keyword{file}

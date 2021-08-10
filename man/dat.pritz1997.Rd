@@ -16,18 +16,23 @@
    As described in Zhou et al. (1999), "hyperdynamic therapy refers to induced hypertension and hypervolaemia (volume expansion) to treat ischaemic symptoms due to vasospasm, and the success of this therapy is defined as clinical improvement in terms of neurologic deficits." For each study that was included in the meta-analysis, the dataset includes information on the number of patients that improved under this form of therapy and the total number of patients that were treated. The goal of the meta-analysis is to estimate the true (average) success rate of hyperdynamic therapy.
 }
 \source{
-   Zhou, X.-H., Brizendine, E. J., & Pritz, M. B. (1999). Methods for combining rates from several studies. \emph{Statistics in Medicine}, \bold{18}, 557--566.
+   Zhou, X.-H., Brizendine, E. J., & Pritz, M. B. (1999). Methods for combining rates from several studies. \emph{Statistics in Medicine}, \bold{18}(5), 557--566. \verb{https://doi.org/10.1002/(SICI)1097-0258(19990315)18:5<557::AID-SIM53>3.0.CO;2-F}
 }
 \references{
-   Pritz, M. B. (1997). Treatment of cerebral vasospasm due to aneurysmal subarachnoid hemorrhage: Past, present, and future of hyperdynamic therapy. \emph{Neurosurgery Quarterly}, \bold{7}, 273--285.
+   Pritz, M. B. (1997). Treatment of cerebral vasospasm due to aneurysmal subarachnoid hemorrhage: Past, present, and future of hyperdynamic therapy. \emph{Neurosurgery Quarterly}, \bold{7}(4), 273--285.
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-\dontrun{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.pritz1997
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### computation of "weighted average" in Zhou et al. (1999), Table IV
 dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat, add=0)
@@ -54,7 +59,9 @@ predict(res, transf=transf.ilogit)
 res <- rma.glmm(measure="PLO", xi=xi, ni=ni, data=dat)
 predict(res, transf=transf.ilogit)
 
-}}
+}
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{single-arm studies}
+\concept{proportions}

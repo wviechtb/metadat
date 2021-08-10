@@ -1,0 +1,70 @@
+template:
+  package: preferably
+  params:
+    toggle: manual
+  #params:
+  #  bootswatch: cosmo
+  opengraph:
+    #image:
+    #  src: man/figures/card.png
+    #  alt: "Alternative text describing the image"
+    twitter:
+      creator: "@wviechtb"
+      card: summary_large_image
+
+home:
+  links:
+  # - text: GitHub Repo
+  #   href: https://github.com/wviechtb/metadat
+  # - text: Package Website
+  #   href: https://www.metafor-project.org
+  - text: Author Website
+    href: https://www.wvbauer.com
+
+figures:
+  dev: grDevices::png
+  dpi: 96
+  dev.args: []
+  fig.ext: png
+  fig.width: 9
+  fig.height: 8
+  fig.retina: 2
+  fig.asp: 1
+
+# figures:
+#   dev: ragg::agg_png
+#   dpi: 96
+#   dev.args: []
+#   fig.ext: png
+#   fig.width: 9
+#   fig.height: 8
+#   fig.retina: 2
+#   fig.asp: 1
+#   bg: NA
+
+navbar:
+  title: "metadat"
+  left:
+    - icon: fa-home fa-lg
+      href: index.html
+    - text: "Datasets / Functions"
+      href: reference/index.html
+    - text: "Changelog"
+      href: news/index.html
+  right:
+   - icon: fa-twitter
+     href: https://twitter.com/wviechtb
+   - icon: fa-github
+     href: https://github.com/wviechtb/metadat
+
+reference:
+  - title: "Datasets"
+    desc: >
+      Datasets included in the package:
+    contents:
+      - starts_with("dat")
+  - title: "Functions"
+    desc: >
+      Support functions:
+    contents:
+      - search_dat

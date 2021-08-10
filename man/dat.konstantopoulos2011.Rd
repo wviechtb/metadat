@@ -22,17 +22,23 @@
    The studies were conducted at various schools that were clustered within districts. The data therefore have a multilevel structure, with schools nested within districts. A multilevel meta-analysis of these data can be used to estimate and account for the amount of heterogeneity between districts and between schools within districts.
 }
 \source{
-   Konstantopoulos, S. (2011). Fixed effects and variance components estimation in three-level meta-analysis. \emph{Research Synthesis Methods}, \bold{2}, 61--76.
+   Konstantopoulos, S. (2011). Fixed effects and variance components estimation in three-level meta-analysis. \emph{Research Synthesis Methods}, \bold{2}(1), 61--76. \verb{https://doi.org/10.1002/jrsm.35}
 }
 \references{
-   Cooper, H., Valentine, J. C., Charlton, K., & Melson, A. (2003). The effects of modified school calendars on student achievement and on school and community attitudes. \emph{Review of Educational Research}, \bold{73}, 1--52.
+   Cooper, H., Valentine, J. C., Charlton, K., & Melson, A. (2003). The effects of modified school calendars on student achievement and on school and community attitudes. \emph{Review of Educational Research}, \bold{73}(1), 1--52. \verb{https://doi.org/10.3102/00346543073001001}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
 ### copy data into 'dat' and examine data
 dat <- dat.konstantopoulos2011
 dat
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### regular random-effects model
 res <- rma(yi, vi, data=dat)
@@ -50,7 +56,7 @@ print(res.ml, digits=3)
 profile(res.ml, progbar=FALSE)
 
 ### multivariate parameterization of the model
-res.mv <- rma.mv(yi, vi, random = ~ factor(school) | district, data=dat)
+res.mv <- rma.mv(yi, vi, random = ~ school | district, data=dat)
 print(res.mv, digits=3)
 
 ### tau^2 from multivariate model = sum of the two variance components from the multilevel model
@@ -63,3 +69,5 @@ round(res.ml$sigma2[1] / sum(res.ml$sigma2), 3)
 }
 \keyword{datasets}
 \concept{education}
+\concept{standardized mean differences}
+\concept{multilevel models}

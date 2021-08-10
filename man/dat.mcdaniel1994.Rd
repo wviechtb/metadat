@@ -26,17 +26,24 @@
    Rothstein, H. R., Sutton, A. J., & Borenstein, M. (Eds.). (2005). \emph{Publication bias in meta-analysis: Prevention, assessment, and adjustments}. Chichester, England: Wiley.
 }
 \references{
-   McDaniel, M. A., Whetzel, D. L., Schmidt, F. L., & Maurer, S. D. (1994). The validity of employment interviews: A comprehensive review and meta-analysis. \emph{Journal of Applied Psychology}, \bold{79}, 599--616.
+   McDaniel, M. A., Whetzel, D. L., Schmidt, F. L., & Maurer, S. D. (1994). The validity of employment interviews: A comprehensive review and meta-analysis. \emph{Journal of Applied Psychology}, \bold{79}(4), 599--616. \verb{https://doi.org/10.1037/0021-9010.79.4.599}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
 }
 \examples{
-if (require(metafor)) {
-
-### copy data into 'dat'
+### copy data into 'dat' and examine data
 dat <- dat.mcdaniel1994
+head(dat)
+
+\dontrun{
+
+### load metafor package
+require(metafor)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat)
-dat
+head(dat)
 
 ### meta-analysis of the transformed correlations using a random-effects model
 res <- rma(yi, vi, data=dat)
@@ -68,3 +75,5 @@ res
 }
 \keyword{datasets}
 \concept{psychology}
+\concept{correlation coefficients}
+\concept{meta-regression}

@@ -1,0 +1,34 @@
+study category non.pos non.neg cir.pos cir.neg
+"Bwayo 1" "high-risk group" 92 86 160 612
+"Bwayo 2" "high-risk group" 22 46 37 200
+"Kreiss" "high-risk group" 59 18 254 168
+"Hira" "high-risk group" 418 172 10 10
+"Cameron" "high-risk group" 18 61 6 208
+"Pepin" "high-risk group" 5 42 13 243
+"Greenblatt" "high-risk group" 11 28 8 68
+"Diallo" "high-risk group" 38 46 212 873
+"Simonsen" "high-risk group" 17 70 21 232
+"Tyndall" "high-risk group" 85 93 105 527
+"Nasio" "high-risk group" 86 78 137 580
+"Mehendal" "high-risk group" 837 3411 38 253
+"Bollinger" "high-risk group" 50 241 1 14
+"Chiasson" "high-risk group" 36 797 14 542
+"Sassan" "high-risk group" 75 18 415 221
+"Hunter" "partner study" 43 330 165 3765
+"Carael" "partner study" 90 105 34 45
+"Chao" "partner study" 442 4844 75 232
+"Moss" "partner study" 24 16 12 17
+"Allen" "partner study" 275 612 132 324
+"Sedlin" "partner study" 32 26 33 40
+"Konde-Luc" "partner study" 153 1516 6 127
+"Barongo" "population survey" 55 1356 42 642
+"Grosskurth" "population survey" 158 4604 61 1026
+"Van de Perre" "population survey" 46 224 6 26
+"Seed" "population survey" 171 422 51 192
+"Malamba" "population survey" 111 114 21 47
+"Quigley" "population survey" 101 272 48 121
+"Urassa 1" "population survey" 56 1301 42 600
+"Urassa 2" "population survey" 105 2040 32 426
+"Urassa 3" "population survey" 38 309 19 158
+"Urassa 4" "population survey" 112 716 54 692
+"Urassa 5" "population survey" 101 365 48 136

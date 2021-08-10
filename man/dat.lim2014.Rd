@@ -1,169 +1,87 @@
 \name{dat.lim2014}
 \docType{data}
-\alias{dat.lim2014.1}
-\alias{dat.lim2014.2}
-\alias{dat.lim2014.3}
-\alias{dat.lim2014.4}
-\alias{dat.lim2014.phy1}
-\alias{dat.lim2014.phy2}
-\alias{dat.lim2014.phy3}
-\alias{dat.lim2014.phy4}
 \alias{dat.lim2014}
-\title{Heterogeneity in individual quality and reproductive trade-offs within species}
-\description{Correlations between: 1) maternal size and offspring size (dat.lim2014.1), 2) maternal size and maternal fecundity (dat.lim2014.2), 3) offspring size and offspring number (dat.lim2014.3), 4) offspring size and offspring number, adjusted for maternal size (dat.lim2014.4)}
-\usage{dat.lim2014}
-\format{
-The data frame dat.lim2014.1 contains the following columns:
-\tabular{lll}{
-\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
-\bold{Datapoint} \tab \code{integer} \tab a unique numeric identifier for the specific correlation \cr
-\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
-\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
-\bold{Common.Name} \tab \code{character} \tab common name of the species \cr
-\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
-\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
-\bold{Offspring} \tab \code{character} \tab the trait used to quantify offspring size \cr
-\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
-\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
-\bold{Environment} \tab \code{character} \tab is the correlation quantified in the wild or in captivity \cr
-\bold{Author} \tab \code{character} \tab authors of the primary study \cr
-\bold{year} \tab \code{character} \tab year published \cr
-\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
-\bold{Class} \tab \code{character} \tab class of the species \cr
-\bold{Order} \tab \code{character} \tab order of the species \cr
-\bold{Family} \tab \code{character} \tab family of the species \cr
-\bold{Genus} \tab \code{character} \tab genus of the species \cr
-\bold{RU} \tab \code{character} \tab single of lifetime reproductive unit \cr
-\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
+\title{Studies on the association between maternal size, offspring size, and number of offsprings}
+\description{Results from studies examining the association between maternal size, offspring size, and number of offsprings.}
+\usage{
+dat.lim2014
 }
-The data frame dat.lim2014.2 contains the following columns:
+\format{The object is a list containing data frames \code{m_o_size}, \code{m_o_fecundity}, \code{o_o_unadj}, and \code{o_o_adj} that contain the following columns and the corresponding phylogenetic trees called \code{m_o_size_tree}, \code{m_o_fecundity_tree}, \code{o_o_unadj_tree}, and \code{o_o_adj_tree}:
 \tabular{lll}{
-\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
-\bold{Datapoint} \tab \code{integer} \tab a unique numeric identifier for the specific correlation \cr
-\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
-\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
-\bold{Common.Name} \tab \code{character} \tab common name of the species \cr
-\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
-\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
-\bold{Fecundity} \tab \code{character} \tab the trait used to quantify offspring numbers \cr
-\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
-\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
-\bold{Environment} \tab \code{character} \tab is the correlation quantified in the wild or in captivity \cr
-\bold{Author} \tab \code{character} \tab authors of the primary study \cr
-\bold{year} \tab \code{character} \tab year published \cr
-\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
-\bold{Class} \tab \code{character} \tab class of the species \cr
-\bold{Order} \tab \code{character} \tab order of the species \cr
-\bold{Family} \tab \code{character} \tab family of the species \cr
-\bold{Genus} \tab \code{character} \tab genus of the species \cr
-\bold{RU} \tab \code{character} \tab single of lifetime reproductive unit \cr
-\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
+\bold{article}     \tab \code{numeric}   \tab article id \cr
+\bold{author}      \tab \code{character} \tab study author(s) \cr
+\bold{year}        \tab \code{numeric}   \tab publication year \cr
+\bold{species}     \tab \code{character} \tab species \cr
+\bold{amniotes}    \tab \code{character} \tab whether the species was amniotic \cr
+\bold{environment} \tab \code{character} \tab whether the species were wild or captive \cr
+\bold{reprounit}   \tab \code{character} \tab whether the data were based on lifetime reproductive output or a single reproductive event (only in \code{m_o_size} and \code{m_o_fecundity}) \cr
+\bold{ri}          \tab \code{numeric}   \tab correlation coefficient \cr
+\bold{ni}          \tab \code{numeric}   \tab sample size
 }
-The data frame dat.lim2014.3 contains the following columns:
-\tabular{lll}{
-\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
-\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
-\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
-\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
-\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
-\bold{Offspring} \tab \code{character} \tab the trait used to quantify offspring size \cr
-\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
-\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
-\bold{Environment} \tab \code{character} \tab is the correlation quantified in the wild or in captivity \cr
-\bold{Author} \tab \code{character} \tab authors of the primary study \cr
-\bold{Date} \tab \code{character} \tab year published \cr
-\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
-\bold{Class} \tab \code{character} \tab class of the species \cr
-\bold{Order} \tab \code{character} \tab order of the species \cr
-\bold{Family} \tab \code{character} \tab family of the species \cr
-\bold{Genus} \tab \code{character} \tab genus of the species \cr
-\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
-\bold{Datapoint} \tab \code{integer} \tab a unique numeric identifier for the specific correlation \cr
-}
-The data frame dat.lim2014.4 contains the following columns:
-\tabular{lll}{
-\bold{Article} \tab \code{integer} \tab a numeric identifier denoting the primary article \cr
-\bold{Amniotes} \tab \code{character} \tab whether the species is amniotic or not \cr
-\bold{animal} \tab \code{character} \tab the species in which the correlation is made \cr
-\bold{N} \tab \code{integer} \tab the sample size of the correlation \cr
-\bold{Maternal} \tab \code{character} \tab the trait used to quantify maternal size \cr
-\bold{Offspring} \tab \code{character} \tab the trait used to quantify offspring size \cr
-\bold{Propagule} \tab \code{character} \tab the life stage of the offspring \cr
-\bold{Reproduction} \tab \code{character} \tab does the species reproduce semalparously or iteroparously \cr
-\bold{Environment} \tab \code{character} \tab is the correlation quantified in the wild or in captivity \cr
-\bold{Author} \tab \code{character} \tab authors of the primary study \cr
-\bold{Date} \tab \code{character} \tab year published \cr
-\bold{Phylum} \tab \code{character} \tab phylum of the species \cr
-\bold{Class} \tab \code{character} \tab class of the species \cr
-\bold{Order} \tab \code{character} \tab order of the species \cr
-\bold{Family} \tab \code{character} \tab family of the species \cr
-\bold{Genus} \tab \code{character} \tab genus of the species \cr
-\bold{yi} \tab \code{numeric} \tab effect size of correlation (zr) \cr
-\bold{Datapoint} \tab \code{integer} \tab a unique numeric identifier for the specific correlation \cr
-}
-The data dat.lim2014.phy1 contains a phylogeny for the species in dat.lim2014.1\cr
-The data dat.lim2014.phy2 contains a phylogeny for the species in dat.lim2014.2\cr
-The data dat.lim2014.phy3 contains a phylogeny for the species in dat.lim2014.3\cr
-The data dat.lim2014.phy4 contains a phylogeny for the species in dat.lim2014.4\cr
 }
 \details{
-	A meta-analysis on the strength of correlation between 1) maternal size and offspring size (dat.lim2014.1), 2) maternal size and maternal fecundity (dat.lim2014.2), 3) offspring size and offspring number (dat.lim2014.3), 4) offspring size and offspring number, adjusted for maternal size (dat.lim2014.4).
+   The object \code{dat.lim2014} includes 4 datasets:
+   \tabular{ll}{
+   \code{m_o_size}      \tab on the correlation between maternal size and offspring size \cr
+   \code{m_o_fecundity} \tab on the correlation between maternal size and number of offsprings \cr
+   \code{o_o_unadj}     \tab on the correlation between offspring size and number of offsprings \cr
+   \code{o_o_adj}       \tab on the correlation between offspring size and number of offsprings adjusted for maternal size
+   }
+   Objects \code{m_o_size_tree}, \code{m_o_fecundity_tree}, \code{o_o_unadj_tree}, and \code{o_o_adj_tree} are the corresponding phylogenetic trees for the species included in each of these datasets.
+}
+\source{
+   Lim, J. N., Senior, A. M., & Nakagawa, S. (2014). Heterogeneity in individual quality and reproductive trade-offs within species. \emph{Evolution}, \bold{68}(8), 2306--2318. \verb{https://doi.org/10.1111/evo.12446}
+}
+\references{
+   Hadfield, J. D., & Nakagawa, S. (2010). General quantitative genetic methods for comparative biology: Phylogenies, taxonomies and multi-trait models for continuous and categorical characters. \emph{Journal of Evolutionary Biology}, \bold{23}(3), 494--508. \verb{https://doi.org/10.1111/j.1420-9101.2009.01915.x}
 
-	In each case the correlation is given as the z-transformed correlation coefficient. In places these have been computed from other statistics in the primary literature. A number of predictors related to life-history traits of the species are given. Topologies for the phylogenetic relationship between the species included in each data set are included. The data exhibit phylogenetic signals.
-	}
-\source{Lim, J.N., Senior, A.M. & Nakagawa, S. (2014). Heterogeneity in individual quality and reproductive trade-offs within species. \emph{Evolution}, \bold{8}, 2306-2318.}
-\author{Alistair M Senior, \email{alistair.senior@sydney.edu.au}}
+   Nakagawa, S., & Santos, E. S. A. (2012). Methodological issues and advances in biological meta-analysis. \emph{Evolutionary Ecology}, \bold{26}(5), 1253--1274. \verb{https://doi.org/10.1007/s10682-012-9555-5}
+}
+\author{
+   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+}
 \examples{
-# exploring phylogeneitc effects - the metafor and ape packages are required
-if ((require(metafor) && require(ape))) {
-  # demonstrated with the maternal size, offspring size correlation
-  dat <- dat.lim2014.1
-  phy <- dat.lim2014.phy1
-  plot(phy, cex = 0.25)
-  
-  # calculate the sample variance for zr
-  dat$vi <- (1 / sqrt(dat$N - 1)) ^ 2
-  
-  # convert phy to ultrametric format (Grafen's method)
-  phy <- compute.brlen(phy)
-  
-  # convert to correlation matrix
-  CorMatrix <- vcv.phylo(phy, cor = TRUE)
-  Cov <- CorMatrix[match(dat$animal, rownames(CorMatrix)),
-                   match(dat$animal, colnames(CorMatrix))]
-  
-  # ensure the random effects are factors
-  dat$article <- as.factor(dat$Article)
-  dat$effect.id <- as.factor(dat$Datapoint)
-  dat$animal <- as.factor(dat$animal)
-  
-  # fit the phylogenetic multi-level meta-analysis and check the results
-  PMA <- rma.mv(
-    yi = yi ,
-    V = vi,
-    random = list( ~ 1 |
-                     animal, ~ 1 | article, ~ 1 | effect.id),
-    R = list(animal = Cov),
-    data = dat
-  )
-  summary(PMA)
-  
-  # phylogenetic signals are sometimes quantified as phylogenetic heritability, 
-  # or 'Pagel's lambda': sigma_phylo / sigma_total
-  PMA$sigma2[1] / sum(PMA$sigma2)
-  
-  # an alternative is to include the typical sampling variance in the 
-  # total variance, which becomes analagous to I2 for the phylogeny
-  
-  # calculate the typical sampling variance
-  tsv <-
-    ((sum(1 / dat$vi)) * (length(dat$vi) - 1)) / (((sum(1 / dat$vi)) ^ 2) - (sum((1 /
-                                                                                    dat$vi) ^ 2)))
-  PMA$sigma2[1] / (sum(PMA$sigma2) + tsv)
+### copy data into 'dat' and examine data
+dat <- dat.lim2014$o_o_unadj
+head(dat)
+
+\dontrun{
+
+### load metafor package
+require(metafor)
+
+### load ape package
+require(ape)
+
+### calculate r-to-z transformed correlations and corresponding sampling variances
+dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat)
+
+### copy tree to 'tree'
+tree <- dat.lim2014$o_o_unadj_tree
+
+### compute branch lengths
+tree <- compute.brlen(tree)
+
+### compute phylogenetic correlation matrix
+A <- vcv(tree, corr=TRUE)
+
+### make copy of the species variable
+dat$species.phy <- dat$species
+
+### create effect size id variable
+dat$esid <- 1:nrow(dat)
+
+### fit multilevel phylogenetic meta-analytic model
+res <- rma.mv(yi, vi,
+   random = list(~ 1 | article, ~ 1 | esid, ~ 1 | species, ~ 1 | species.phy),
+   R=list(species.phy=A), data=dat)
+res
+
 }
 }
 \keyword{datasets}
 \concept{ecology}
 \concept{evolution}
+\concept{correlation coefficients}
+\concept{multilevel models}
 \concept{phylogeny}
-\concept{correlation}

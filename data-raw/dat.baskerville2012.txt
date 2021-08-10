@@ -1,0 +1,24 @@
+author year score design alloconc blind itt fumonths retention country outcomes duration pperf meetings hours tailor smd se
+"Kottke et al."    1992  6 cct  0 1 1 19   83  US  2 18 5.5  30   1    1 1.01 0.52
+"McBride et al."   2000  6 rct  0 0 0 18  100  US  4 12  NA   5   1    1 0.82 0.46
+"Stange et al."    2000  6 rct  0 0 0 24   NA  US 35 12  20   4   1.5  1 0.59 0.23
+"Lobo et al."      2004  6 rct  1 0 0 21   57  NL 16 21   5  15   1    1 0.44 0.18
+"Roetzhiem et al." 2005  6 crct 0 1 0 24  100  US  3 24   4   4   1    0 0.84 0.29
+"Hogg et al."      2008  6 cct  0 0 1  6   87 Can 26 12  11  12   1.5  1 0.73 0.29
+"Aspy et al."      2008  6 cct  0 1 0 18   89  US  4 18   3   3   6    1 1.12 0.36
+"Jaen et al."      2010  6 rct  0 1 0 26   86  US 11 26   6   4.5 6    1 0.04 0.37
+"Cockburn et al."  1992  7 rct  0 0 0  3   79 Aus  2  2  40   2   0.25 0 0.24 0.15
+"Modell et al."    1998  7 rct  0 0 0 12  100  UK  1 12  13   3   1    0 0.32 0.40
+"Engels et al."    2006  7 rct  1 0 1 12   92  NL  7  5  NA   5   1    1 1.04 0.32
+"Aspy et al."      2008  7 rct  0 1 0  9  100  US  1  9   6  18   6    1 1.31 0.57
+"Deitrich et al."  1992 18 rct  0 1 0 12   96  NL 16 21  20  15   1    1 0.59 0.29
+"Lobo et al."      2002  8 rct  1 0 1 21  100  US 10  3   8   3   1    1 0.66 0.19
+"Bryce et al."     1995  9 rct  1 1 1 12 93.3  US  4 12  12   1  15    0 0.62 0.31
+"Kinsinger et al." 1998  9 rct  1 1 0 18   94  US  5 12  13  10   0.75 1 0.47 0.27
+"Solberg et al."   1998  9 rct  1 0 1 22  100  US 10 22  11   4   3    1 1.08 0.32
+"Lemelin et al."   2001  9 rct  1 1 0 18   98 Can 13 18   8  33   1.75 1 0.98 0.32
+"Frijling et al."  2002  9 crct 1 1 1 21   95  NL  7 21  20  15   1    0 0.26 0.18
+"Frijling et al."  2003  9 crct 1 1 1 21   95  NL 12 21  20  15   1    1 0.39 0.18
+"Margolis et al."  2004 10 rct  1 1 1 30  100  US  4 24  11   9   1    1 0.60 0.31
+"Mold et al."      2008 10 rct  1 1 1  6  100  US  6  6   8  18   4    1 0.94 0.53
+"Hogg et al."      2008 12 rct  1 1 1 13  100 Can 53 12  14   9   0.75 1 0.11 0.27
