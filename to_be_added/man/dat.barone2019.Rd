@@ -37,7 +37,7 @@
    Barone, P., Corradi, G., & Gomila, A. (2019, July 26). Infants’ performance in spontaneous-response false belief tasks: a review and meta-analysis. Retrieved from \verb{osf.io/re8uj}
 }
 \references{
-   Barone, P., Corradi, G., & Gomila, A. (2019). Infants’ performance in spontaneous-response false belief tasks: A review and meta-analysis. \emph{Infant Behavior and Development}, \bold{57}, 101350. \verb{https://doi.org/10.1016/j.infbeh.2019.101350.}
+   Barone, P., Corradi, G., & Gomila, A. (2019). Infants’ performance in spontaneous-response false belief tasks: A review and meta-analysis. \emph{Infant Behavior and Development}, \bold{57}, 101350. \verb{https://doi.org/10.1016/j.infbeh.2019.101350}
 }
 \author{
    W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}
