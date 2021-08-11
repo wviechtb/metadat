@@ -18,7 +18,7 @@ Second-Order Meta-Analysis and Validation Study}
    }
 }
 \details{
-   Each study included in this meta-analysis is itself a meta-analysis on the effects of technology on learning; a 'second-order meta-analysis'. Each effect size here is an overall effect size as estimated by that first-order meta-analysis. This individual studies quantified overall effects as Cohen's d, Hedges g, Glass's delta, which are all variations on the standardised mean difference. The authors assume that any heterogeneity arising due to differences between effect sizes are minimal. A number of the orginal studies also used correlation coefficients, although these have been converted to Cohen's d here.
+   Each study included in this meta-analysis is itself a meta-analysis on the effects of technology on learning; a 'second-order meta-analysis'. Each effect size here is an overall effect size as estimated by that first-order meta-analysis. This individual studies quantified overall effects as Cohen's d, Hedges g, Glass's delta, which are all variations on the standardised mean difference. The authors assume that any heterogeneity arising due to differences between effect sizes are minimal. A number of the original studies also used correlation coefficients, although these have been converted to Cohen's d here.
    
    The first order meta-analyses may have some overlap, in their primary literature, which is expressed in the data set as a number, and percentage of all studies, that are observed across meta-analyses.
 }

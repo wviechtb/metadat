@@ -7,7 +7,7 @@
 \alias{dat.nakagawa2015.phy1}
 \alias{dat.nakagawa2015.phy2}
 \title{Meta-analysis of variance: ecological and evolutionary applications and beyond.}
-\description{Data from Nakagawa et al. 2015, which is a methdological paper decribing effect sizes for studying the effects of a treatment/factor on variance. The study contains three different meta-analytic datasets and two phylogenys.}
+\description{Data from Nakagawa et al. 2015, which is a methodological paper describing effect sizes for studying the effects of a treatment/factor on variance. The study contains three different meta-analytic datasets and two phylogenys.}
 \usage{dat.nakagawa2015}
 \format{
 The data frame dat.nakagawa2015.1 contains the following columns:
@@ -67,7 +67,7 @@ The data dat.nakagawa2015.phy1 contains the topology for a phylogeny of the bird
 The data dat.nakagawa2015.phy2 contains the topology for a phylogeny of the bird species in dat.nakagawa2015.1\cr
 }
 \details{
-	Nakagawa et al. ()2015) is a methdological paper, which decribes effect sizes and models designed to study the effects of a treatment/factor on variance. The study contains three different meta-analytic datasets and two phylogenys. 
+	Nakagawa et al. ()2015) is a methodological paper, which decribes effect sizes and models designed to study the effects of a treatment/factor on variance. The study contains three different meta-analytic datasets and two phylogenys. 
 	
 	dat.nakagawa2015.1 and dat.nakagawa2015.2 contain data on the mean and standard deviation (sd) in morphological traits of males and females in birds (dat.nakagawa2015.1) and mammals (dat.nakagawa2015.2). dat.nakagawa2015.phy1 and dat.nakagawa2015.phy2 are corresponding phylogenetic topologies. The sex-chromosome hypothesis predicts that the heterogametic sex (females in birds and males in mammals) will have greater variability.
 	

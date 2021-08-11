@@ -2,7 +2,7 @@
 \docType{data}
 \alias{dat.reed2001}
 \title{How closely correlated are molecular and quantitative measures of genetic variation? A meta-analysis}
-\description{Meta-analaysis on the correlation between molecular measures of geentic variability, and more traditional measures from quantitative genetics}
+\description{Meta-analysis on the correlation between molecular measures of genetic variability, and more traditional measures from quantitative genetics}
 \usage{dat.reed2001}
 \format{
 The data frame dat.reed2001 contains the following columns:
@@ -15,7 +15,7 @@ The data frame dat.reed2001 contains the following columns:
 \bold{source} \tab \code{character} \tab original study authors and year \cr
 }  
 }
-\details{Each study in this meta-analysis correlates measures of genetic variation as made by molecular and quantitative genetic techniques. Correlations are made in different species, using different types of traits, and using different quantative genetic statistics. The effect size is currently expressed as r.}
+\details{Each study in this meta-analysis correlates measures of genetic variation as made by molecular and quantitative genetic techniques. Correlations are made in different species, using different types of traits, and using different quantitative genetic statistics. The effect size is currently expressed as r.}
 \source{Reed, D.H. & Frankham, R. (2001). How closely correlated are molecular and quantitative measures of genetic variation? A meta-analysis. \emph{Evolution}, \bold{55}: 1095-1103.}
 \author{Alistair M Senior, \email{alistair.senior@sydney.edu.au}}
 \examples{
