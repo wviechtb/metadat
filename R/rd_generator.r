@@ -1,5 +1,5 @@
 # Main function for generating docs
-rd_generator <- function(study_name, dir, overwrite) {
+.rd_generator <- function(study_name, dir, overwrite) {
 
   # Add any studies whose documentation is to be overwritten
   if (!missing(overwrite)) {
