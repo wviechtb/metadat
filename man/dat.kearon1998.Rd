@@ -119,6 +119,6 @@ predict(res, newmods = c(1,1), transf=exp, digits=2)
 \keyword{datasets}
 \concept{medicine}
 \concept{odds ratios}
-\concept{dianostic accuracy studies}
+\concept{diagnostic accuracy studies}
 \concept{multivariate models}
 \concept{publication bias}
