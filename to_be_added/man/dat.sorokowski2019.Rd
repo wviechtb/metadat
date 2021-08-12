@@ -3,27 +3,27 @@
 \alias{dat.sorokowski2019}
 \alias{dat.sorokowski2019.1}
 \alias{dat.sorokowski2019.2}
-\title{Sex differences in human olfaction: A meta-analysis.}
+\title{Sex differences in human olfaction: A meta-analysis}
 \description{Sex Differences in human olfaction including discrimination, threshold, and identification.}
 \usage{dat.sorokowski2019}
 \format{
 The data frame dat.sorokowski2019.1 contains data for olfactory discrimination and the data frame dat.sorokowski2019.2 contains data for olfactory identification. Both consists of the following columns:
 \tabular{lll}{
-\bold{ID}        \tab \code{numeric}   \tab Study ID number \cr
-\bold{Author}     \tab \code{character} \tab Author or authors of the paper \cr
-\bold{Year}        \tab \code{numeric}   \tab Year of publication \cr
-\bold{Paper Title}        \tab \code{character}   \tab Title of paper \cr
-\bold{Country}        \tab \code{character}   \tab Country where study was conducted \cr
-\bold{Nwomen}        \tab \code{numeric}   \tab Number of women \cr
-\bold{Nmen}        \tab \code{numeric}   \tab Number of men \cr
-\bold{meanWomen}        \tab \code{numeric}   \tab Mean score for women \cr
-\bold{sdWomen}        \tab \code{numeric}   \tab Standard deviation for women \cr
-\bold{ageMeanWomen}        \tab \code{numeric}   \tab Mean age for women \cr
-\bold{ageSDWomen}        \tab \code{numeric}   \tab Standard deviation of age for women \cr
-\bold{meanMen}        \tab \code{numeric}   \tab Mean score for men \cr
+\bold{ID}           \tab \code{numeric}   \tab Study ID number \cr
+\bold{Author}       \tab \code{character} \tab Author or authors of the paper \cr
+\bold{Year}         \tab \code{numeric}   \tab Year of publication \cr
+\bold{Paper Title}  \tab \code{character} \tab Title of paper \cr
+\bold{Country}      \tab \code{character} \tab Country where study was conducted \cr
+\bold{Nwomen}       \tab \code{numeric}   \tab Number of women \cr
+\bold{Nmen}         \tab \code{numeric}   \tab Number of men \cr
+\bold{meanWomen}    \tab \code{numeric}   \tab Mean score for women \cr
+\bold{sdWomen}      \tab \code{numeric}   \tab Standard deviation for women \cr
+\bold{ageMeanWomen} \tab \code{numeric}   \tab Mean age for women \cr
+\bold{ageSDWomen}   \tab \code{numeric}   \tab Standard deviation of age for women \cr
+\bold{meanMen}      \tab \code{numeric}   \tab Mean score for men \cr
 \bold{sdMen}        \tab \code{numeric}   \tab Standard deviation for men \cr
-\bold{ageMeanMen}        \tab \code{numeric}   \tab Mean age for men \cr
-\bold{ageSDMen}        \tab \code{numeric}   \tab Standard deviation of age for men \cr
+\bold{ageMeanMen}   \tab \code{numeric}   \tab Mean age for men \cr
+\bold{ageSDMen}     \tab \code{numeric}   \tab Standard deviation of age for men \cr
 }
 }
 \details{
@@ -32,10 +32,10 @@ The data frame dat.sorokowski2019.1 contains data for olfactory discrimination a
    Data and Jamovi analysis files can be found here https://osf.io/6tfuy.
 }
 \source{
-Sorokowska, A. (2019, January 8). Sex differences in human olfaction: a meta-analysis. Retrieved from \verb{osf.io/6tfuy}
+   Sorokowska, A. (2019, January 8). Sex differences in human olfaction: A meta-analysis. Retrieved from \url{osf.io/6tfuy}
 }
 \references{
-  Sorokowski, P., Karwowski, M., Misiak, M., Marczak, M. K., Dziekan, M., Hummel, T., & Sorokowska, A. (2019). Sex differences in human olfaction: A meta-analysis. \emph{Frontiers in Psychology}, 10, 242. \verb{https://doi.org/10.3389/fpsyg.2019.00242}
+  Sorokowski, P., Karwowski, M., Misiak, M., Marczak, M. K., Dziekan, M., Hummel, T., & Sorokowska, A. (2019). Sex differences in human olfaction: A meta-analysis. \emph{Frontiers in Psychology}, \bold{10}, 242. \verb{https://doi.org/10.3389/fpsyg.2019.00242}
 }
 \author{
    W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}

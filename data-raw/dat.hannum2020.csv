@@ -1,0 +1,36 @@
+authorName,DOI,ni,xi,percentOlfactoryLoss,comments,objectivity,measured,testType,country,patientType
+Vaira et al. 1,10.1002/hed.26204,72,44,61.11111111,In the abstact of the paper it says 60 cases with varying degree of hyposmia and 2 patients with anosmia -- Results showed 44,Objective,"Taste and Smell, Smell only",Connecticut Chemosensory Clinical Research Center orthonasal olfaction test ,Italy,"18+, nasal swab confirmed"
+Iravani et al.,10.1101/2020.05.07.20094516,16,13,81.25,"Preprint, only small part of whole paper",Objective,Smell only,5 odor smell panel - no indication of validation - used test-retest to measure reliability,Sweden,"18+, 16 COVID-Confirmed"
+Vaira et al. 2,10.1002/hed.26228,33,17,51.51515152,"Changed to 17 cases, peer reviewed",Objective,Smell only,"Connecticut Chemosensory Clinical Research Center orthonasal olfaction test, self administered olfactory test",Italy,"18+, nasal swab confirmed, home-quarantined"
+Merza et al.,10.1016/j.dsx.2020.04.047,15,2,13.33333333,"Changed cases to 2; 4 patients had ""smell and taste disorders"", of which 2 had both and 2 had only taste",Subjective,Smell only,"Unknown, Hospital Reported","Duhok, Iraqi Kurdistan","All ages, COVID-Confirmed"
+Menni et al. 1,10.1101/2020.04.05.20048421,579,344,59.41278066,looks good,Subjective,Taste and Smell,Self Reported,UK and US,"16-90, COVID-Confirmed"
+Levinson et al.,10.1101/2020.04.11.20055483,42,15,35.71428571,"Changed cases to 14, looks good",Subjective,Smell only,Self Reported,Israel,"15+, Hospitalized, nasal swab confirmed"
+Haehner et al.,10.1101/2020.04.27.20081356,34,22,64.70588235,Changes case numbers to 22 and total to 34,Subjective,Smell only,Self Reported,Germany,"Patient showing symptoms, only COVID positive patients used"
+Speth et al.,10.1177/0194599820929185,103,63,61.16504854,"Looks good, measured olfactory dysfunction over phone",Subjective,Smell only,Self Reported,Switzerland,"All ages, COVID-Confirmed, Hospitalized or Treated at hospital"
+De Maria et al.,10.1002/jmv.25995.,95,48,50.52631579,"Studied ""loss of smell or taste"", looks good",Subjective,Taste and Smell,Self Reported,Italy,"All ages, COVID-Confirmed, home-quarantined"
+Menni et al. 2,10.1038/s41591-020-0916-2,7178,4668,65.03204235,"Smartphone app tracking, Studied ""Loss of smell and taste""",Subjective,Taste and Smell,Self Reported,UK and US,"16-90, COVID-Confirmed,unspecified hospitalization/quarantine"
+Yan et al. 1,10.1111/alr.22579.,59,40,67.79661017,looks good,Subjective,Smell only,Self Reported,US,"COVID-Confirmed, home-quarantined"
+Luers et al.,10.1093/cid/ciaa525,72,53,73.61111111,looks good,Subjective,Smell only,Self Reported,Germany,"COVID-Confirmed, home-quarantined"
+Roland et al.,10.1111/alr.22602.,145,95,65.51724138,Changed cases to 95,Subjective,Taste or Smell,Self Reported,US/Online Global,"COVID-19 Confirmed, online presumably home-quarantined"
+Boscolo-Rizzo et al,10.1007/s00405-020-06066-9,54,34,62.96296296,"Of those who were tested, I found 34/54 had an altered sense of taste/smnell",Subjective,Taste or Smell,Self Reported,Italy,"Home-quarantined, COVID-positive included, Household contacts of patients from Spinato paper"
+Liu et al.,10.3390/ijerph17093311,321,42,13.08411215,"Studied ""loss of smell or taste""",Subjective,Taste or Smell,"Unknown, Hospital Reported",Taiwan,Unknown
+Paderno et al.,10.1111/alr.22610.,508,284,55.90551181,looks good,Subjective,Smell only,Self Reported,Italy,Hospitalized and home-quarantined
+Lee et al.,10.3346/jkms.2020.35.e174,3191,488,15.2930116,"studied ""anosmia or ageusia""",Subjective,Taste or Smell,Self Reported,Korea,Home-quarantined
+Lechien et al.,10.1007/s00405-020-05965-1,417,357,85.61151079,looks good,Subjective,Smell only,"Self Reported, Survey based on NHANES and sQOD-NS","Belgium, France, Spain, Italy","Home-quarantined, not specified"
+Gelardi et al.,10.23750/abm.v91i2.9524,72,42,58.33333333,I could not find this paper,Subjective,"smell only, taste and smell","Self Reported, Not specified",Italy,Not specified
+Giacomelli et al.,10.1093/cid/ciaa330,59,14,23.72881356,Changed to 14 cases,Subjective,"Taste and Smell, Smell only",Self Reported,Italy,Hospitalized
+Shoer et al.,10.1101/2020.05.18.20105569.this,498,136,27.30923695,Changed cases to 136,Subjective,Taste or smell,Self Reported Survey,Israel,"Home-quarantined, not specified"
+Vaira et al. 3,10.1002/hed.26269,345,241,69.85507246,"Looks good, Measures Mild-servere hyponosmia + Anosmia",Objective,Smell,"Connecticut Chemosensory Clinical Research Center orthonasal olfaction test, home discrimination test, validated test from previoud Vaira et al study",Italy,"Home-quarantined hospital staff, and hospitalized patients"
+Bocksberger et al.,10.1007/s00106-020-00891-4,63,26,41.26984127,Check on this; some english,Subjective,Taste and/or Smell,Sniffin Sticks Screening 12 Test and Taste Strips for some patients,Germany,hospitalized
+Mao,10.1101/2020.02.22.20026500,214,11,5.140186916,Good study; subjective,Subjective,Smell only,"Self Reported, EHR Records",China,Hospitalized
+Spinato,10.1001/jama.2020.6771,202,130,64.35643564,Subjective,Subjective,Taste or Smell,SNOT-22,Italy,Home-quarantined
+Beltran-Corbellini,10.1007/s00405-020-05999-5,79,25,31.64556962,Subjective,Subjective,Smell only,Self Reported,Spain,Hospitalized?
+Trubiano et al.,10.1093/cid/ciaa655,28,7,25,looks good,Subjective,"Taste and Smell, Smell only",Self Reported,Australia,"Unspecified, Clinically evaluated"
+Moein et al.,10.1111/alr.22587.,60,59,98.33333333,good,Objective,Smell,University of Pennsylvania Smell Identification Test,Iran,Hospitalized
+Hornuss et al.,10.1101/2020.04.28.20083311,45,38,84.44444444,Good,Objective,Smell,Sniffin Sticks,Germany,Hospitalized
+Yan et al. 2,10.1111/alr.22592.,128,75,58.59375,68 ambulatory + 7 admitted of all covid positive; are we sure this does not overlap with Yan 1?,Subjective,Smell,Self Reported,US,Hospitalized and home-quarantined
+Klopfenstein et al.,10.1016/j.medmal.2020.04.006,114,54,47.36842105,Good,Subjective,Smell,Self Reported,France,Hospitalized and home-quarantined
+Gudbjartsson,10.1056/NEJMoa2006100,1113,119,10.6918239,Good,Subjective,Taste or Smell,Self Reported,Iceland,Unknown
+Wee et al,10.1007/s00405-020-05999-5,154,35,22.72727273,NA,Subjective,Smell or Taste,"Self Reported, Unspecified",Singapore,Hospitalized
+Dawson et al,10.1101/2020.05.13.20101006.t,42,18,42.85714286,NA,Subjective,Smell,Self Reported,US,Home-quarantined
+Ji Yun Noh et al,10.1016/j.jinf.2020.05.035,199,52,26.13065327,NA,Subjective,Smell only,Self Reported,South Korea,"Unspecified, Likely Hospitalized and Home-quarantined"
