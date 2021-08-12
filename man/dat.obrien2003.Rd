@@ -90,4 +90,4 @@ regplot(res, xlab=expression("Within-Study Mean Centered BMI"~(kg/m^2)),
 \concept{risk ratios}
 \concept{proportions}
 \concept{multilevel models}
-\concept{dose response models}
+\concept{dose-response models}
