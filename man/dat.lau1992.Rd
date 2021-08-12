@@ -57,5 +57,6 @@ text(1.1, (res$k:1)[id], paste0("z = ", formatC(sav$zval[id], format="f", digits
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
 \concept{odds ratios}
 \concept{cumulative meta-analysis}

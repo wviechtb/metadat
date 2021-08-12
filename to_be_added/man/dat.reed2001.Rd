@@ -26,4 +26,4 @@ dat
 \keyword{datasets}
 \concept{ecology}
 \concept{evolution}
-\concept{correlation}
+\concept{correlation coefficients}
