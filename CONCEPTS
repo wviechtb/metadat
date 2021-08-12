@@ -10,6 +10,7 @@ fields/topics:
 
 # natural sciences / topics
 \concept{ecology}
+\concept{plant}
 \concept{evolution}
 \concept{climate change}
 \concept{phylogeny}
@@ -25,6 +26,12 @@ fields/topics:
 \concept{primary care}
 \concept{epidemiology}
 \concept{covid-19}
+
+############################################################################
+
+populations:
+
+\concept{infants}
 
 ############################################################################
 
@@ -45,6 +52,7 @@ outcome measures:
 \concept{incidence rates}
 \concept{Cronbach's alpha}
 \concept{hazard ratios}
+\concept{variance ratio}
 
 ############################################################################
 
@@ -68,5 +76,7 @@ methods/concepts:
 \concept{cluster-robust inference}
 \concept{outliers}
 \concept{model checks}
+\concept{non-independence}
+\concept{second order meta-analysis}
 
 ############################################################################
