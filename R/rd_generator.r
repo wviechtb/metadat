@@ -1,102 +1,44 @@
 # Main function for generating docs
-rd_generator <- function(dir = getwd(), overwrite = FALSE) {
+.rd_generator <- function(study_name, dir, overwrite) {
 
-  # List the study data
-  all_study_names <- .get_studies(dir, full = TRUE)
-  primary_study_names <- .get_studies(dir, full = FALSE)
-
-  if (!overwrite) {
-    # Check what documentation currently exists
-    doc_names <- .get_existing_rd(dir)
-
-    # Keep names of data files that do not have documentation
-    primary_study_names <- setdiff(primary_study_names, doc_names)
-    if(length(primary_study_names) == 0)
-      return(message('Documentation up to date'))
-    all_study_names <- unlist(apply(as.data.frame(primary_study_names), 1, function(x) grep(x, all_study_names, value = TRUE)))
+  # Add any studies whose documentation is to be overwritten
+  if (!missing(overwrite)) {
+    study_name <- c(study_name, overwrite)
+    study_name <- gsub(".Rd", "", study_name)  # remove file ext if need be
   }
 
-  # Loop through undocumented data and create template documentation
-  for (i in 1:length(primary_study_names)) {
-    full_study_names <- unlist(lapply(primary_study_names[i], function(x) grep(x, all_study_names, value = TRUE)))
+  # Loop through datasets and create template documentation
+  # Will only be > 1 if overwrite is specified
+  for (i in 1:length(study_name)) {
 
     # Open new file connection
-    con <- try(file(file.path(paste0(dir, "/man/"), paste0(primary_study_names[i], ".Rd")), "w"))
+    con <- try(file(file.path(paste0(dir, "/man/"), paste0(study_name[i], ".Rd")), "w"))
 
     # Write the single preamble
-    write.table(.preamble_table(primary_study_names[i], full_study_names), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(.preamble_table(study_name[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
-    for (j in 1:length(full_study_names)) {
+    # Write the meta-data table header
+    write.table(.tabular(study_name[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
-      # Load data
-      data <- get(load(paste0(dir, "/data/", as.character(full_study_names[[j]]), ".rda")))
+    # Load dataset
+    data <- get(load(paste0(dir, "/data/", as.character(study_name[[i]]), ".rda")))
 
-      # Check if the data are 'primary' based on whether the file ends in a numeric character, 
-      # and generate full metadata if so, otherwise produce minimal metadata (e.g. for .phylo, .corr, etc.)
-      dat_type <- ifelse(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))), 'other', 'primary')
-      
-      if(primary_study_names[i] == full_study_names[[j]])
-        dat_type <- 'primary'
-      else if(suppressWarnings(is.na(as.numeric(tools::file_ext(full_study_names[[j]])))))
-        dat_type <- 'other'
-      else
-        dat_type <- 'primary'
-
-      # Write the meta-data table header
-      write.table(.tabular(full_study_names[j], dat_type), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
-      
-      # Write main metadata, only if data are 'primary'
-      if(dat_type == 'primary')
-        write.table(.meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
-    }
+    # Write main metadata
+    write.table(.meta_dat_table(data), con, row.names = FALSE, col.names = FALSE, quote = FALSE, na = "")
 
     # Write the postamble
-    write.table(.postamble_table(primary_study_names[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
+    write.table(.postamble_table(study_name[i]), con, row.names = FALSE, col.names = FALSE, quote = FALSE)
 
     # Close the file connection
     close(con)
-    
-    # Output message
-    message(paste0("Built ", primary_study_names[i], ".Rd"))
   }
-}
-
-# List available .rda files
-.get_studies <- function(dir, full = TRUE) {
-
-  # List data files
-  files <- list.files(paste0(dir, "/data/"))
-
-  # Get unique studies
-  if (full) {
-    study.names <- unique(tools::file_path_sans_ext(files))
-  } else {
-    study.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
-  }
-
-  return(study.names)
-}
-
-# List existing documentation files
-.get_existing_rd <- function(dir) {
-
-  # List data files
-  files <- list.files(paste0(dir, "/man/"))
-
-  # Get unique documentation
-  doc.names <- unique(sub("(^[^.]+[.][^.]+)(.+$)", "\\1", files))
-
-  return(doc.names)
 }
 
 # Generate preamble
-.preamble_table <- function(study.name, full.study.names) {
+.preamble_table <- function(study.name) {
   name <- paste0("\\name{", study.name, "}")
   docType <- "\\docType{data}"
-  alias <- lapply(full.study.names, function(x) paste0("\\alias{", x, "}"))
-  alias <- do.call(rbind, alias)
-  if(length(full.study.names) > 1)
-    alias <- rbind(alias, paste0("\\alias{", study.name, "}"))
+  alias <- paste0("\\alias{", study.name, "}")
   title <- "\\title{ADD_TITLE}"
   descrp <- "\\description{ADD_DESCRIPTION}"
   use <- paste0("\\usage{", study.name, "}")
@@ -106,28 +48,21 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
 }
 
 # Generate table start
-.tabular <- function(study.name, dat_type) {
-  if(dat_type == 'primary'){
-    info <- paste0("The data frame contains the following columns:")
-    tabular <- "\\tabular{lll}{"
-    out <- rbind(info, tabular)
-    return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
-  }else if(dat_type == 'other'){
-    info <- paste0("The data ", study.name, " contains ADD_DETAILS", "\\cr")
-    return(data.frame(info, stringsAsFactors = FALSE))
-  }
+.tabular <- function(study.name) {
+  info <- paste0("The data frame contains the following columns:")
+  tabular <- "\\tabular{lll}{"
+  out <- rbind(info, tabular)
 }
 
 # Generate metadata table
 .meta_dat_table <- function(data) {
-  
   variables <- paste0("\\bold{", colnames(data), "}")
   type <- paste0("\\tab", " ", "\\code{", as.vector(sapply(data, class)), "}")
   descrp <- rep(paste0("\\tab", " ADD_DESCRIPTION ", "\\cr"), length = length(variables))
   closer <- c("}", NA, NA)
   meta_dat_table <- cbind(variables, type, descrp, deparse.level = 0)
   meta_dat_table <- rbind(meta_dat_table, closer)
-  
+
   return(data.frame(meta_dat_table, stringsAsFactors = FALSE, row.names = 1:nrow(meta_dat_table)))
 }
 
@@ -147,6 +82,6 @@ rd_generator <- function(dir = getwd(), overwrite = FALSE) {
   concept <- "\\concept{ADD_CONCEPT}"
 
   out <- rbind(closer, details, source, author, eg1, eg2, eg3, eg4, eg5, eg6, closer, closer, keyword, concept)
-  
+
   return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
 }

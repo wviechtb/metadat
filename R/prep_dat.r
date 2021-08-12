@@ -121,7 +121,7 @@ prep_dat <- function(rebuild=FALSE, overwrite, pkgdir) {
       # [create]: paste T/F if template <root>.Rd file is created
       if (!rd.exists || !missing(overwrite) && paste0(root, ".Rd") %in% overwrite) {
          cat("T      ")
-         #genrd(root, rda.files)
+         .rd_generator(root, pkgdir, overwrite)
       } else {
          cat("F      ")
       }

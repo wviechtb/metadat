@@ -67,4 +67,4 @@ reference:
     desc: >
       Support functions:
     contents:
-      - search_dat
+      - datsearch
