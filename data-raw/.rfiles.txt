@@ -26,6 +26,7 @@
 "dat.graves2010.r"
 "dat.hackshaw1998.r"
 "dat.hahn2001.r"
+"dat.hannum2020.r"
 "dat.hart1999.r"
 "dat.hasselblad1998.r"
 "dat.hine1989.r"
