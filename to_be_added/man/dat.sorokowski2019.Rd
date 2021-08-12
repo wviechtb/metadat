@@ -38,7 +38,7 @@ The data frame dat.sorokowski2019.1 contains data for olfactory discrimination a
   Sorokowski, P., Karwowski, M., Misiak, M., Marczak, M. K., Dziekan, M., Hummel, T., & Sorokowska, A. (2019). Sex differences in human olfaction: A meta-analysis. \emph{Frontiers in Psychology}, \bold{10}, 242. \verb{https://doi.org/10.3389/fpsyg.2019.00242}
 }
 \author{
-   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}
+   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://kylehamilton.com}
 }
 \examples{
   if (require(metafor)) {

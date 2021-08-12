@@ -36,7 +36,7 @@
    Sala, G., Aksayli, N. D., Tatlidil, K. S., Tatsumi, T., Gondo, Y., & Gobet, F. (2019). Near and Far Transfer in Cognitive Training: A Second-Order Meta-Analysis. \emph{Collabra: Psychology}, \bold{5}(1). \verb{https://doi.org/10.1525/collabra.203}
 }
 \author{
-   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}
+   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://kylehamilton.com}
 }
 }
 \keyword{datasets}

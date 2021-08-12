@@ -32,11 +32,11 @@
 }
 
 \author{
-   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://www.kylehamilton.com}
+   W. Kyle Hamilton \email{whamilton@ucmerced.edu} \url{https://kylehamilton.com}
 }
 
 \examples{
-### copy data into 'dat' and examine data
+# copy data into 'dat' and examine data
 dat <- dat.hannum2020
 dat
 
@@ -68,6 +68,6 @@ print(res_subjective, digits=2)
 }
 }
 \keyword{datasets}
-\keyword{covid-19}
 \concept{medicine}
+\concept{covid-19}
 \concept{proportions}
