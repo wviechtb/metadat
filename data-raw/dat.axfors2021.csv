@@ -1,0 +1,34 @@
+id,acronym,patient_setting,covid_status,blinding_exact,high_dose,Published,hcq_cq,hcq_arm_total,hcq_arm_event,control_arm_total,control_arm_event,Control
+NCT04353336,NCT04353336,Inpatient,Confirmed,None,no,Published,hcq,97,6,97,5,Standard of Care
+NCT04329923,PATCH,Inpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,15,0,15,0,Placebo
+NCT04338698,PROTECT C,Inpatient,Confirmed,Investigator,no,Not published,hcq,64,0,64,0,Standard of Care
+NCT04338698,PROTECT A,Inpatient,Confirmed,Investigator,no,Not published,hcq,62,0,63,1,Standard of Care
+NCT04338698,PROTECT B,Inpatient,Confirmed,Investigator,no,Not published,hcq,59,1,61,2,Standard of Care
+NCT04345289,CCAP-1,Inpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,1,0,1,0,Placebo
+NCT04308668,COVID-PEP,Outpatient,Confirmed and Suspected,"Participant, Caregiver",no,Published,hcq,244,1,247,1,Placebo
+NCT04384380,NCT04384380,Inpatient,Confirmed,None,no,Published,hcq,21,0,12,0,Standard of Care
+NCT04316377,NO COVID-19,Inpatient,Confirmed,None,no,Published,hcq,27,1,26,1,Standard of Care
+NCT04325893,NCT04325893,Inpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,124,6,123,11,Placebo
+NCT04342221,COV-HCQ,Inpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,13,1,14,0,Placebo
+NCT02735707,REMAP-CAP,ICU,Confirmed and Suspected,None,yes,Not published,hcq,61,17,81,22,Standard of Care
+ChiCTR2000029868,ChiCTR2000029868,Inpatient,Confirmed,None,no,Published,hcq,75,0,75,0,Standard of Care
+NCT04381936,RECOVERY,Inpatient,Confirmed and Suspected,None,yes,Published,hcq,1561,418,3155,788,Standard of Care
+NCT04342650,CloroCOVID19II B,Outpatient,Suspected,"Participant, Caregiver",no,Not published,cq,78,0,74,0,Placebo
+NCT04323527,CloroCOVID19II A,Inpatient,Suspected,"Participant, Caregiver",no,Not published,cq,41,17,41,12,Placebo
+NCT04261517,NCT04261517,Inpatient,Confirmed,None,no,Published,hcq,15,0,15,0,Standard of Care
+NCT04369742,TEACH,Inpatient,Confirmed,"Participant, Caregiver",no,Published,hcq,67,7,61,6,Placebo
+NCT04315896,HYDRA,Inpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,75,28,77,29,Placebo
+ChiCTR2000031204,ChiCTR2000031204,Inpatient,Confirmed,Participant,no,Not published,cq,18,0,17,0,Placebo
+NCT04333654,NCT04333654,Outpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,5,0,3,0,Placebo
+NCT04345692,OAHU-COVID19,Inpatient,Confirmed,None,no,Not published,hcq,10,2,6,0,Standard of Care
+NCT04335552,NCT04335552 A,Inpatient,Confirmed,None,no,Not published,hcq,4,1,2,0,Standard of Care
+NCT04335552,NCT04335552 B,Inpatient,Confirmed,None,no,Not published,hcq,2,1,3,2,Standard of Care
+NL8490,ARCHAIC,Inpatient,Confirmed,None,no,Not published,cq,5,1,3,0,Standard of Care
+NL8490,ARCHAIC,Inpatient,Confirmed,None,no,Not published,hcq,4,2,3,0,Standard of Care
+NCT04322123,Coalition I,Inpatient,Confirmed and Suspected,None,no,Published,hcq,221,7,227,6,Standard of Care
+ChiCTR2000030054,ChiCTR2000030054,Inpatient,Confirmed,None,no,Published,hcq,18,0,12,0,Standard of Care
+ChiCTR2000030054,ChiCTR2000030054,Inpatient,Confirmed,None,no,Published,cq,18,0,12,0,Standard of Care
+NCT04304053,BCN PEP CoV-2 Study,Outpatient,Confirmed,None,no,Published,hcq,136,0,157,0,Standard of Care
+ChiCTR2000029559,ChiCTR2000029559,Inpatient,Confirmed,"Participant, Caregiver",no,Published,hcq,31,0,31,0,Standard of Care
+NCT04340544,COMIHY,Outpatient,Confirmed,"Participant, Caregiver",no,Not published,hcq,8,0,8,0,Placebo
+NCT04491994,NCT04491994,Inpatient,Confirmed,none,no,Published,hcq,349,0,151,0,Standard of Care
