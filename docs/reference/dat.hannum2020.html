@@ -194,7 +194,7 @@
     <p>One of the symptoms of COVID-19 infection is olfactory loss (loss of smell) either recently acquired anosmia (complete loss of smell) or hyposmia (partial loss of smell). One challenge to reaching this symptom is the wide range of reported prevalence for this symptom ranging from 5 percent to 98 percent. In this dataset studies were grouped into one of two groups based on the type of method used to measure smell loss (either subjective measures, such as self-reported smell loss, or objective measures using rated stimuli).</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>Ramirez VA , Hannum ME, Lipson SJ, Herriman RD, Toskala AK, Lin C, Joseph PV, Reed DR. 2020. COVID-19 Smell Loss Prevalence Tracker. Available from: <a href='https://vicente-ramirez.shinyapps.io/COVID19_Olfactory_Dashboard/'>https://vicente-ramirez.shinyapps.io/COVID19_Olfactory_Dashboard/</a> and <a href='https://github.com/vramirez4/OlfactoryLoss'>https://github.com/vramirez4/OlfactoryLoss</a> (accessed August 11, 2021)</p>
+    <p>Ramirez VA , Hannum ME, Lipson SJ, Herriman RD, Toskala AK, Lin C, Joseph PV, Reed DR. 2020. COVID-19 Smell Loss Prevalence Tracker. Available from: <code>https://vicente-ramirez.shinyapps.io/COVID19_Olfactory_Dashboard/</code> and <code>https://github.com/vramirez4/OlfactoryLoss</code> (accessed August 11, 2021)</p>
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>Hannum, M. E., Ramirez, V. A., Lipson, S. J., Herriman, R. D., Toskala, A. K., Lin, C., Joseph, P. V., &amp; Reed, D. R. (2020). Objective sensory testing methods reveal a higher prevalence of olfactory loss in COVID-19 positive patients compared to subjective methods: A systematic review and meta-analysis. <em>Chemical Senses</em>, <b>45</b>(9), 865--874. <a href='https://doi.org/10.1093/chemse/bjaa064'>https://doi.org/10.1093/chemse/bjaa064</a></p>
@@ -206,79 +206,79 @@
     <pre class="examples"><div class='input'><span class='co'># copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.hannum2020</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;     X          authorName                              DOI   ni   xi
-#&gt; 1   1      Vaira et al. 1                10.1002/hed.26204   72   44
-#&gt; 2   2      Iravani et al.      10.1101/2020.05.07.20094516   16   13
-#&gt; 3   3      Vaira et al. 2                10.1002/hed.26228   33   17
-#&gt; 4   4        Merza et al.        10.1016/j.dsx.2020.04.047   15    2
-#&gt; 5   5      Menni et al. 1      10.1101/2020.04.05.20048421  579  344
-#&gt; 6   6     Levinson et al.      10.1101/2020.04.11.20055483   42   15
-#&gt; 7   7      Haehner et al.      10.1101/2020.04.27.20081356   34   22
-#&gt; 8   8        Speth et al.         10.1177/0194599820929185  103   63
-#&gt; 9   9     De Maria et al.               10.1002/jmv.25995.   95   48
-#&gt; 10 10      Menni et al. 2        10.1038/s41591-020-0916-2 7178 4668
-#&gt; 11 11        Yan et al. 1               10.1111/alr.22579.   59   40
-#&gt; 12 12        Luers et al.              10.1093/cid/ciaa525   72   53
-#&gt; 13 13       Roland et al.               10.1111/alr.22602.  145   95
-#&gt; 14 14 Boscolo-Rizzo et al       10.1007/s00405-020-06066-9   54   34
-#&gt; 15 15          Liu et al.           10.3390/ijerph17093311  321   42
-#&gt; 16 16      Paderno et al.               10.1111/alr.22610.  508  284
-#&gt; 17 17          Lee et al.        10.3346/jkms.2020.35.e174 3191  488
-#&gt; 18 18      Lechien et al.       10.1007/s00405-020-05965-1  417  357
-#&gt; 19 19      Gelardi et al.          10.23750/abm.v91i2.9524   72   42
-#&gt; 20 20   Giacomelli et al.              10.1093/cid/ciaa330   59   14
-#&gt; 21 21        Shoer et al. 10.1101/2020.05.18.20105569.this  498  136
-#&gt; 22 22      Vaira et al. 3                10.1002/hed.26269  345  241
-#&gt; 23 23  Bocksberger et al.       10.1007/s00106-020-00891-4   63   26
-#&gt; 24 24                 Mao      10.1101/2020.02.22.20026500  214   11
-#&gt; 25 25             Spinato           10.1001/jama.2020.6771  202  130
-#&gt; 26 26  Beltran-Corbellini       10.1007/s00405-020-05999-5   79   25
-#&gt; 27 27     Trubiano et al.              10.1093/cid/ciaa655   28    7
-#&gt; 28 28        Moein et al.               10.1111/alr.22587.   60   59
-#&gt; 29 29      Hornuss et al.      10.1101/2020.04.28.20083311   45   38
-#&gt; 30 30        Yan et al. 2               10.1111/alr.22592.  128   75
-#&gt; 31 31 Klopfenstein et al.     10.1016/j.medmal.2020.04.006  114   54
-#&gt; 32 32        Gudbjartsson            10.1056/NEJMoa2006100 1113  119
-#&gt; 33 33           Wee et al       10.1007/s00405-020-05999-5  154   35
-#&gt; 34 34        Dawson et al    10.1101/2020.05.13.20101006.t   42   18
-#&gt; 35 35    Ji Yun Noh et al       10.1016/j.jinf.2020.05.035  199   52
-#&gt;    percentOlfactoryLoss          p          SE     CI_0.25    CI_97.5
-#&gt; 1             61.111111 0.61111111 0.057452193  0.49850481 0.72371741
-#&gt; 2             81.250000 0.81250000 0.097578094  0.62124694 1.00375306
-#&gt; 3             51.515152 0.51515152 0.086998856  0.34463376 0.68566927
-#&gt; 4             13.333333 0.13333333 0.087770745 -0.03869733 0.30536399
-#&gt; 5             59.412781 0.59412781 0.020407759  0.55412860 0.63412701
-#&gt; 6             35.714286 0.35714286 0.073935596  0.21222909 0.50205663
-#&gt; 7             64.705882 0.64705882 0.081956535  0.48642401 0.80769363
-#&gt; 8             61.165049 0.61165048 0.048022463  0.51752646 0.70577451
-#&gt; 9             50.526316 0.50526316 0.051296075  0.40472285 0.60580347
-#&gt; 10            65.032042 0.65032042 0.005628557  0.63928845 0.66135240
-#&gt; 11            67.796610 0.67796610 0.060831535  0.55873629 0.79719591
-#&gt; 12            73.611111 0.73611111 0.051941680  0.63430542 0.83791680
-#&gt; 13            65.517241 0.65517241 0.039472515  0.57780628 0.73253854
-#&gt; 14            62.962963 0.62962963 0.065714895  0.50082844 0.75843082
-#&gt; 15            13.084112 0.13084112 0.018822149  0.09394971 0.16773253
-#&gt; 16            55.905512 0.55905512 0.022028636  0.51587899 0.60223125
-#&gt; 17            15.293012 0.15293012 0.006371515  0.14044195 0.16541829
-#&gt; 18            85.611511 0.85611511 0.017187221  0.82242816 0.88980206
-#&gt; 19            58.333333 0.58333333 0.058101391  0.46945461 0.69721206
-#&gt; 20            23.728814 0.23728814 0.055385012  0.12873351 0.34584276
-#&gt; 21            27.309237 0.27309237 0.019965479  0.23396003 0.31222471
-#&gt; 22            69.855072 0.69855073 0.024705665  0.65012762 0.74697383
-#&gt; 23            41.269841 0.41269841 0.062026419  0.29112663 0.53427019
-#&gt; 24             5.140187 0.05140187 0.015094673  0.02181631 0.08098743
-#&gt; 25            64.356436 0.64356436 0.033698523  0.57751525 0.70961346
-#&gt; 26            31.645570 0.31645570 0.052327049  0.21389468 0.41901671
-#&gt; 27            25.000000 0.25000000 0.081831709  0.08960985 0.41039015
-#&gt; 28            98.333333 0.98333333 0.016527194  0.95094003 1.01572663
-#&gt; 29            84.444444 0.84444444 0.054028393  0.73854880 0.95034009
-#&gt; 30            58.593750 0.58593750 0.043536510  0.50060594 0.67126906
-#&gt; 31            47.368421 0.47368421 0.046764385  0.38202602 0.56534240
-#&gt; 32            10.691824 0.10691824 0.009262408  0.08876392 0.12507256
-#&gt; 33            22.727273 0.22727273 0.033769639  0.16108423 0.29346122
-#&gt; 34            42.857143 0.42857143 0.076360355  0.27890513 0.57823772
-#&gt; 35            26.130653 0.26130653 0.031144454  0.20026340 0.32234966
-#&gt;                                                                                                                         Comments
+</div><div class='output co'>#&gt;             authorName                              DOI   ni   xi
+#&gt; 1       Vaira et al. 1                10.1002/hed.26204   72   44
+#&gt; 2       Iravani et al.      10.1101/2020.05.07.20094516   16   13
+#&gt; 3       Vaira et al. 2                10.1002/hed.26228   33   17
+#&gt; 4         Merza et al.        10.1016/j.dsx.2020.04.047   15    2
+#&gt; 5       Menni et al. 1      10.1101/2020.04.05.20048421  579  344
+#&gt; 6      Levinson et al.      10.1101/2020.04.11.20055483   42   15
+#&gt; 7       Haehner et al.      10.1101/2020.04.27.20081356   34   22
+#&gt; 8         Speth et al.         10.1177/0194599820929185  103   63
+#&gt; 9      De Maria et al.               10.1002/jmv.25995.   95   48
+#&gt; 10      Menni et al. 2        10.1038/s41591-020-0916-2 7178 4668
+#&gt; 11        Yan et al. 1               10.1111/alr.22579.   59   40
+#&gt; 12        Luers et al.              10.1093/cid/ciaa525   72   53
+#&gt; 13       Roland et al.               10.1111/alr.22602.  145   95
+#&gt; 14 Boscolo-Rizzo et al       10.1007/s00405-020-06066-9   54   34
+#&gt; 15          Liu et al.           10.3390/ijerph17093311  321   42
+#&gt; 16      Paderno et al.               10.1111/alr.22610.  508  284
+#&gt; 17          Lee et al.        10.3346/jkms.2020.35.e174 3191  488
+#&gt; 18      Lechien et al.       10.1007/s00405-020-05965-1  417  357
+#&gt; 19      Gelardi et al.          10.23750/abm.v91i2.9524   72   42
+#&gt; 20   Giacomelli et al.              10.1093/cid/ciaa330   59   14
+#&gt; 21        Shoer et al. 10.1101/2020.05.18.20105569.this  498  136
+#&gt; 22      Vaira et al. 3                10.1002/hed.26269  345  241
+#&gt; 23  Bocksberger et al.       10.1007/s00106-020-00891-4   63   26
+#&gt; 24                 Mao      10.1101/2020.02.22.20026500  214   11
+#&gt; 25             Spinato           10.1001/jama.2020.6771  202  130
+#&gt; 26  Beltran-Corbellini       10.1007/s00405-020-05999-5   79   25
+#&gt; 27     Trubiano et al.              10.1093/cid/ciaa655   28    7
+#&gt; 28        Moein et al.               10.1111/alr.22587.   60   59
+#&gt; 29      Hornuss et al.      10.1101/2020.04.28.20083311   45   38
+#&gt; 30        Yan et al. 2               10.1111/alr.22592.  128   75
+#&gt; 31 Klopfenstein et al.     10.1016/j.medmal.2020.04.006  114   54
+#&gt; 32        Gudbjartsson            10.1056/NEJMoa2006100 1113  119
+#&gt; 33           Wee et al       10.1007/s00405-020-05999-5  154   35
+#&gt; 34        Dawson et al    10.1101/2020.05.13.20101006.t   42   18
+#&gt; 35    Ji Yun Noh et al       10.1016/j.jinf.2020.05.035  199   52
+#&gt;    percentOlfactoryLoss
+#&gt; 1             61.111111
+#&gt; 2             81.250000
+#&gt; 3             51.515152
+#&gt; 4             13.333333
+#&gt; 5             59.412781
+#&gt; 6             35.714286
+#&gt; 7             64.705882
+#&gt; 8             61.165049
+#&gt; 9             50.526316
+#&gt; 10            65.032042
+#&gt; 11            67.796610
+#&gt; 12            73.611111
+#&gt; 13            65.517241
+#&gt; 14            62.962963
+#&gt; 15            13.084112
+#&gt; 16            55.905512
+#&gt; 17            15.293012
+#&gt; 18            85.611511
+#&gt; 19            58.333333
+#&gt; 20            23.728814
+#&gt; 21            27.309237
+#&gt; 22            69.855072
+#&gt; 23            41.269841
+#&gt; 24             5.140187
+#&gt; 25            64.356436
+#&gt; 26            31.645570
+#&gt; 27            25.000000
+#&gt; 28            98.333333
+#&gt; 29            84.444444
+#&gt; 30            58.593750
+#&gt; 31            47.368421
+#&gt; 32            10.691824
+#&gt; 33            22.727273
+#&gt; 34            42.857143
+#&gt; 35            26.130653
+#&gt;                                                                                                                         comments
 #&gt; 1  In the abstact of the paper it says 60 cases with varying degree of hyposmia and 2 patients with anosmia -- Results showed 44
 #&gt; 2                                                                                       Preprint, only small part of whole paper
 #&gt; 3                                                                                             Changed to 17 cases, peer reviewed
@@ -314,7 +314,7 @@
 #&gt; 33                                                                                                                          &lt;NA&gt;
 #&gt; 34                                                                                                                          &lt;NA&gt;
 #&gt; 35                                                                                                                          &lt;NA&gt;
-#&gt;    Objectivity                    Measured
+#&gt;    objectivity                    measured
 #&gt; 1    Objective Taste and Smell, Smell only
 #&gt; 2    Objective                  Smell only
 #&gt; 3    Objective                  Smell only
@@ -350,7 +350,7 @@
 #&gt; 33  Subjective              Smell or Taste
 #&gt; 34  Subjective                       Smell
 #&gt; 35  Subjective                  Smell only
-#&gt;                                                                                                                                    Specific.type.of.test
+#&gt;                                                                                                                                                 testType
 #&gt; 1                                                                           Connecticut Chemosensory Clinical Research Center orthonasal olfaction test 
 #&gt; 2                                                             5 odor smell panel - no indication of validation - used test-retest to measure reliability
 #&gt; 3                                          Connecticut Chemosensory Clinical Research Center orthonasal olfaction test, self administered olfactory test
@@ -386,7 +386,7 @@
 #&gt; 33                                                                                                                            Self Reported, Unspecified
 #&gt; 34                                                                                                                                         Self Reported
 #&gt; 35                                                                                                                                         Self Reported
-#&gt;                          Country
+#&gt;                          country
 #&gt; 1                          Italy
 #&gt; 2                         Sweden
 #&gt; 3                          Italy
@@ -422,7 +422,7 @@
 #&gt; 33                     Singapore
 #&gt; 34                            US
 #&gt; 35                   South Korea
-#&gt;                                                                                 Type.of.patient
+#&gt;                                                                                     patientType
 #&gt; 1                                                                     18+, nasal swab confirmed
 #&gt; 2                                                                       18+, 16 COVID-Confirmed
 #&gt; 3                                                   18+, nasal swab confirmed, home-quarantined
@@ -467,7 +467,7 @@
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"PR"</span>, xi<span class='op'>=</span><span class='va'>xi</span>, ni<span class='op'>=</span><span class='va'>ni</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 
 <span class='co'># split data into objective and subjective datasets</span>
-<span class='va'>dat_split</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/split.html'>split</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>Objectivity</span><span class='op'>)</span>
+<span class='va'>dat_split</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/split.html'>split</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>objectivity</span><span class='op'>)</span>
 <span class='va'>dat_objective</span> <span class='op'>&lt;-</span> <span class='va'>dat_split</span><span class='op'>[[</span><span class='st'>"Objective"</span><span class='op'>]</span><span class='op'>]</span>
 <span class='va'>dat_subjective</span> <span class='op'>&lt;-</span> <span class='va'>dat_split</span><span class='op'>[[</span><span class='st'>"Subjective"</span><span class='op'>]</span><span class='op'>]</span>
 

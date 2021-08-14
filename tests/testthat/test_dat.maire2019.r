@@ -7,5 +7,5 @@ test_that("md5 hash matches for the data", {
 })
 
 test_that("md5 hash matches for the distance matrix", {
-   expect_match(digest(metadat::dat.maire2019$dmat, algo="md5"), "f26524cedc9a398c9b89b77791233624")
+   expect_match(digest(metadat::dat.maire2019$dmat, algo="md5"), "bc75d00397a71dc2c7a7e1c5f88f7e79")
 })

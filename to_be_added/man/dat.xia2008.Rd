@@ -45,6 +45,6 @@ dat
 }
 \keyword{datasets}
 \concept{ecology}
-\concept{plant}
+\concept{plants}
 \concept{standardized mean difference}
 \concept{non-independence}

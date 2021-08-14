@@ -238,5 +238,5 @@ text(-11, 46.5, pos = 4, cex = 0.75, bquote(
 
 }
 \keyword{datasets}
-\concept{infants}
 \concept{psychology}
+\concept{infants}
