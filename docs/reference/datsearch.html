@@ -170,7 +170,7 @@
     <p>Function to search among the existing datasets.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>datsearch</span><span class='op'>(</span><span class='va'>pattern</span>, concept<span class='op'>=</span><span class='cn'>TRUE</span>, matchall<span class='op'>=</span><span class='cn'>TRUE</span>, fixed<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>datsearch</span><span class='op'>(</span><span class='va'>pattern</span>, concept<span class='op'>=</span><span class='cn'>TRUE</span>, matchall<span class='op'>=</span><span class='cn'>TRUE</span>, fixed<span class='op'>=</span><span class='cn'>TRUE</span>, pkgdown<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -190,6 +190,10 @@
     <tr>
       <th>fixed</th>
       <td><p>logical indicating whether a pattern is a string to be matched as is (<code>TRUE</code> by default). If <code>FALSE</code>, a pattern is a regular expression that <code><a href='https://rdrr.io/r/base/grep.html'>grep</a></code> will search for. Only relevant when <code>concept=FALSE</code> (i.e., when doing a full-text search).</p></td>
+    </tr>
+    <tr>
+      <th>pkgdown</th>
+      <td><p>logical indicating whether the local help file or the pkgdown docs (at <a href='https://wviechtb.github.io/metadat/index.html'>https://wviechtb.github.io/metadat/index.html</a>) should be shown for the chosen dataset (<code>FALSE</code> by default).</p></td>
     </tr>
     </table>
 

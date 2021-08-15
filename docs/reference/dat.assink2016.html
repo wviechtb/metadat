@@ -190,7 +190,7 @@
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The studies included in this dataset (which is a subset of the data used in Assink et al., 2015) compared the difference in recidivism between delinquent juveniles with a mental health disorder and a comparison group of juveniles without a mental health disorder. Since studies differed in the way recidivism was defined and assessed, results are given in terms of standardized mean differences, with positive values indicating a higher prevalence of recidivism in the group of juveniles with a mental health disorder.</p>
-<p>Multiple effect size estimates could be extracted from most studies (e.g., for different delinquent behaviors in which juveniles could have recidivated), necessitating the use of appropriate models/methods for the analysis. Assink and Wibbelink (2016) illustrate the use of multilevel meta-analytic models for this purpose.</p>
+<p>Multiple effect size estimates could be extracted from most studies (e.g., for different delinquent behaviors in which juveniles could have recidivated), necessitating the use of appropriate models/methods for the analysis. Assink and Wibbelink (2016) illustrate the use of multilevel meta-analysis models for this purpose.</p>
     <h2 class="hasAnchor" id="note"><a class="anchor" href="#note"></a>Note</h2>
 
     <p>The <code>year</code> variable is not constant within study 3, as this study refers to two different publications using the same data.</p>
@@ -356,15 +356,15 @@
 <span class='va'>res0</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>esid</span>, data<span class='op'>=</span><span class='va'>dat</span>, sigma2<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='cn'>NA</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/anova.rma.html'>anova</a></span><span class='op'>(</span><span class='va'>res0</span>, <span class='va'>res</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
-#&gt;         df      AIC      BIC     AICc    logLik     LRT   pval       QE tau^2 
-#&gt; Full     3 153.2654 161.0508 153.5180  -73.6327                809.4611    NA 
-#&gt; Reduced  2 214.0678 219.2581 214.1928 -105.0339 62.8024 &lt;.0001 809.4611    NA 
+#&gt;         df      AIC      BIC     AICc    logLik     LRT   pval       QE 
+#&gt; Full     3 153.2654 161.0508 153.5180  -73.6327                809.4611 
+#&gt; Reduced  2 214.0678 219.2581 214.1928 -105.0339 62.8024 &lt;.0001 809.4611 
 #&gt; </div><div class='input'><span class='va'>res0</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>esid</span>, data<span class='op'>=</span><span class='va'>dat</span>, sigma2<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='cn'>NA</span>,<span class='fl'>0</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/anova.rma.html'>anova</a></span><span class='op'>(</span><span class='va'>res0</span>, <span class='va'>res</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
-#&gt;         df      AIC      BIC     AICc    logLik     LRT   pval       QE tau^2 
-#&gt; Full     3 153.2654 161.0508 153.5180  -73.6327                809.4611    NA 
-#&gt; Reduced  2 233.1313 238.3215 233.2563 -114.5656 81.8658 &lt;.0001 809.4611    NA 
+#&gt;         df      AIC      BIC     AICc    logLik     LRT   pval       QE 
+#&gt; Full     3 153.2654 161.0508 153.5180  -73.6327                809.4611 
+#&gt; Reduced  2 233.1313 238.3215 233.2563 -114.5656 81.8658 &lt;.0001 809.4611 
 #&gt; </div><div class='input'>
 <span class='co'>### examine some potential moderators via meta-regression</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>pubstatus</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>esid</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>

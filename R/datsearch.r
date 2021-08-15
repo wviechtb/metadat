@@ -1,4 +1,4 @@
-datsearch <- function(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE) {
+datsearch <- function(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown=FALSE) {
 
    # number of patterns specified
    n <- length(pattern)
@@ -96,7 +96,12 @@ datsearch <- function(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE) {
       return(invisible())
 
    # show the help file
-   help(names[sel], package="metadat")
+   if (pkgdown) {
+      url <- paste0("https://wviechtb.github.io/metadat/reference/", names[sel], ".html")
+      browseURL(url)
+   } else {
+      help(names[sel], package="metadat")
+   }
 
 }
 
