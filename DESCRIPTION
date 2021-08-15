@@ -6,7 +6,7 @@ Authors@R: c(person(given = "Thomas", family="White", role="aut", email = "thoma
 Depends: R (>= 4.0.0)
 Imports: utils, tools, mathjaxr
 Suggests: metafor, numDeriv, BiasedUrn, igraph, ape, multcomp, testthat, digest, lme4
-Description: A collection of meta-analytic datasets for teaching purposes, illustrating/testing meta-analytic methods, and validating published analyses.
+Description: A collection of meta-analysis datasets for teaching purposes, illustrating/testing meta-analytic methods, and validating published analyses.
 License: GPL (>=2)
 ByteCompile: TRUE
 LazyData: TRUE

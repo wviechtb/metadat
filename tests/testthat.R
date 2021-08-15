@@ -3,4 +3,4 @@
 
 library(testthat)
 library(metadat)
-test_check("metadat", reporter="summary")
+#test_check("metadat", reporter="summary")

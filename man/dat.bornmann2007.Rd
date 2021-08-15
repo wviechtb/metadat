@@ -22,7 +22,7 @@
 }
 }
 \details{
-   The studies in this dataset examine whether the chances of receiving a grant or fellowship award differs for men and women. Note that many studies provide multiple comparisons (e.g., for different years / cohorts / disciplines). A multilevel meta-analytic model can be used to account for the multilevel structure in these data.
+   The studies in this dataset examine whether the chances of receiving a grant or fellowship award differs for men and women. Note that many studies provide multiple comparisons (e.g., for different years / cohorts / disciplines). A multilevel meta-analysis model can be used to account for the multilevel structure in these data.
 }
 \source{
    Bornmann, L., Mutz, R., & Daniel, H. (2007). Gender differences in grant peer review: A meta-analysis. \emph{Journal of Informetrics}, \bold{1}(3), 226--238. \verb{https://doi.org/10.1016/j.joi.2007.03.001}
@@ -46,7 +46,7 @@ require(metafor)
 ### calculate log odds ratios and corresponding sampling variances
 dat <- escalc(measure="OR", ai=waward, n1i=wtotal, ci=maward, n2i=mtotal, data=dat)
 
-### fit multilevel meta-analytic model
+### fit multilevel meta-analysis model
 res <- rma.mv(yi, vi, random = ~ 1 | study/obs, data=dat)
 res
 

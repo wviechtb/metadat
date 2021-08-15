@@ -19,7 +19,7 @@
 \details{
    The studies included in this dataset (which is a subset of the data used in Assink et al., 2015) compared the difference in recidivism between delinquent juveniles with a mental health disorder and a comparison group of juveniles without a mental health disorder. Since studies differed in the way recidivism was defined and assessed, results are given in terms of standardized mean differences, with positive values indicating a higher prevalence of recidivism in the group of juveniles with a mental health disorder.
 
-   Multiple effect size estimates could be extracted from most studies (e.g., for different delinquent behaviors in which juveniles could have recidivated), necessitating the use of appropriate models/methods for the analysis. Assink and Wibbelink (2016) illustrate the use of multilevel meta-analytic models for this purpose.
+   Multiple effect size estimates could be extracted from most studies (e.g., for different delinquent behaviors in which juveniles could have recidivated), necessitating the use of appropriate models/methods for the analysis. Assink and Wibbelink (2016) illustrate the use of multilevel meta-analysis models for this purpose.
 }
 \note{
    The \code{year} variable is not constant within study 3, as this study refers to two different publications using the same data.
