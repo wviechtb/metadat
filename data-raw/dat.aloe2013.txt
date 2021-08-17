@@ -1,0 +1,6 @@
+study                        R2  tval   n preds
+"Abu-Bader (2000)"         .240  4.61 218     4
+"Cole et al. (2004)"       .455  6.19 232     7
+"Wallach & Mueller (2006)" .500  4.07 156     6
+"Weaver et al. (2007)"     .327 -0.77 382    19
+"Acker (2004)"             .117  1.16 259    15

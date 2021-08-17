@@ -49,7 +49,7 @@ res <- rma(measure="SMD", m1i=m1i, sd1i=sd1i, n1i=n1i, m2i=m2i, sd2i=sd2i, n2i=n
 res
 
 ### draw forest plot
-forest(res, xlim=c(-7,5), alim=c(-3,1), cex=.8, header="Study/Source")
+forest(res, xlim=c(-7,5), alim=c(-3,1), header="Study/Source")
 
 }
 }

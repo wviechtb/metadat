@@ -41,7 +41,7 @@
   alias <- paste0("\\alias{", study.name, "}")
   title <- "\\title{ADD_TITLE}"
   descrp <- "\\description{ADD_DESCRIPTION}"
-  use <- paste0("\\usage{", study.name, "}")
+  use <- paste0("\\usage{\n", study.name, "\n}")
   format <- paste0("\\format{")
   out <- rbind(name, docType, alias, title, descrp, use, format)
   return(data.frame(out, stringsAsFactors = FALSE, row.names = 1:nrow(out)))
@@ -75,9 +75,9 @@
   eg1 <- "\\examples{"
   eg2 <- "### copy data into 'dat' and examine data"
   eg3 <- paste0("dat <- ", study.name)
-  eg4 <- "dat"
-  eg5 <- "\\dontrun{"
-  eg6 <- "ADD_DETAILED_EXAMPLE"
+  eg4 <- "dat\n"
+  eg5 <- "\\dontrun{\n"
+  eg6 <- "ADD_DETAILED_EXAMPLE\n"
   keyword <- "\\keyword{datasets}"
   concept <- "\\concept{ADD_CONCEPT}"
 

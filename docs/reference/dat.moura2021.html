@@ -225,27 +225,27 @@
 #&gt; 4       Trapezia_bidentata_ott787242 Crustacea Arthropoda  cheliped length
 #&gt; 5        Asellus_aquaticus_ott335971 Crustacea Arthropoda           weight
 #&gt; 6        Asellus_aquaticus_ott335971 Crustacea Arthropoda           weight
-#&gt;   trait.dimensions field.collection publication.year pooled.data.
-#&gt; 1              uni              yes             1983           no
-#&gt; 2              uni              yes             1985          yes
-#&gt; 3              uni              yes             1985          yes
-#&gt; 4              uni              yes             1985          yes
-#&gt; 5              uni              yes             1985           no
-#&gt; 6              uni              yes             1985           no
-#&gt;   spatially.pooled.data. temporally.pooled.data. study.id   ri ni
-#&gt; 1                     no                      no     &lt;NA&gt; 0.23 53
-#&gt; 2                    yes                      no     &lt;NA&gt; 0.57 23
-#&gt; 3                    yes                      no     &lt;NA&gt; 0.54 23
-#&gt; 4                    yes                      no     &lt;NA&gt; 0.53 23
-#&gt; 5                     no                      no     &lt;NA&gt; 0.85 12
-#&gt; 6                     no                      no     &lt;NA&gt; 0.82 15</div><div class='input'>
+#&gt;   trait.dimensions field.collection publication.year pooled.data
+#&gt; 1              uni              yes             1983          no
+#&gt; 2              uni              yes             1985         yes
+#&gt; 3              uni              yes             1985         yes
+#&gt; 4              uni              yes             1985         yes
+#&gt; 5              uni              yes             1985          no
+#&gt; 6              uni              yes             1985          no
+#&gt;   spatially.pooled.data temporally.pooled.data   ri ni
+#&gt; 1                    no                     no 0.23 53
+#&gt; 2                   yes                     no 0.57 23
+#&gt; 3                   yes                     no 0.54 23
+#&gt; 4                   yes                     no 0.53 23
+#&gt; 5                    no                     no 0.85 12
+#&gt; 6                    no                     no 0.82 15</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='https://www.metafor-project.org'>metafor</a></span><span class='op'>)</span>
 
 <span class='co'>### load ape package</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='http://ape-package.ird.fr/'>ape</a></span><span class='op'>)</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='http://ape-package.ird.fr/'>ape</a></span>, warn.conflicts<span class='op'>=</span><span class='cn'>FALSE</span>, quietly<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>
 
 <span class='co'>### calculate r-to-z transformed correlations and corresponding sampling variances</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"ZCOR"</span>, ri<span class='op'>=</span><span class='va'>ri</span>, ni<span class='op'>=</span><span class='va'>ni</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
@@ -294,25 +294,36 @@
    mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>spatially.pooled.data</span> <span class='op'>*</span> <span class='va'>temporally.pooled.data</span>,
    random <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study.id</span>, <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>effect.size.id</span>, <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>species.id</span>, <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>species.id.phy</span><span class='op'>)</span>,
    R<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>species.id.phy<span class='op'>=</span><span class='va'>A</span><span class='op'>)</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error in eval(predvars, data, env): object 'spatially.pooled.data' not found</span></div><div class='input'><span class='va'>res</span>
+<span class='va'>res</span>
 </div><div class='output co'>#&gt; 
 #&gt; Multivariate Meta-Analysis Model (k = 1828; method: REML)
 #&gt; 
 #&gt; Variance Components:
 #&gt; 
 #&gt;             estim    sqrt  nlvls  fixed          factor    R 
-#&gt; sigma^2.1  0.0192  0.1384    457     no        study.id   no 
-#&gt; sigma^2.2  0.0145  0.1202   1828     no  effect.size.id   no 
-#&gt; sigma^2.3  0.0557  0.2359    341     no      species.id   no 
-#&gt; sigma^2.4  0.0512  0.2263    341     no  species.id.phy  yes 
+#&gt; sigma^2.1  0.0198  0.1406    457     no        study.id   no 
+#&gt; sigma^2.2  0.0144  0.1202   1828     no  effect.size.id   no 
+#&gt; sigma^2.3  0.0525  0.2292    341     no      species.id   no 
+#&gt; sigma^2.4  0.0532  0.2307    341     no  species.id.phy  yes 
 #&gt; 
-#&gt; Test for Heterogeneity:
-#&gt; Q(df = 1827) = 10743.8076, p-val &lt; .0001
+#&gt; Test for Residual Heterogeneity:
+#&gt; QE(df = 1824) = 10618.9794, p-val &lt; .0001
+#&gt; 
+#&gt; Test of Moderators (coefficients 2:4):
+#&gt; QM(df = 3) = 7.6097, p-val = 0.0548
 #&gt; 
 #&gt; Model Results:
 #&gt; 
-#&gt; estimate      se    zval    pval   ci.lb   ci.ub 
-#&gt;   0.3682  0.1300  2.8311  0.0046  0.1133  0.6230  ** 
+#&gt;                                                     estimate      se     zval 
+#&gt; intrcpt                                               0.3457  0.1327   2.6047 
+#&gt; spatially.pooled.datayes                              0.0810  0.0390   2.0780 
+#&gt; temporally.pooled.datayes                             0.0599  0.0269   2.2272 
+#&gt; spatially.pooled.datayes:temporally.pooled.datayes   -0.0729  0.0452  -1.6107 
+#&gt;                                                       pval    ci.lb   ci.ub 
+#&gt; intrcpt                                             0.0092   0.0856  0.6059  ** 
+#&gt; spatially.pooled.datayes                            0.0377   0.0046  0.1574   * 
+#&gt; temporally.pooled.datayes                           0.0259   0.0072  0.1126   * 
+#&gt; spatially.pooled.datayes:temporally.pooled.datayes  0.1073  -0.1615  0.0158     
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
@@ -320,7 +331,13 @@
 <span class='co'>### estimated average correlation without pooling, when pooling spatially,</span>
 <span class='co'>### when pooling temporally, and when pooling spatially and temporally</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/predict.rma.html'>predict</a></span><span class='op'>(</span><span class='va'>res</span>, newmods <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>rbind</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>0</span>,<span class='fl'>0</span><span class='op'>)</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>0</span>,<span class='fl'>0</span><span class='op'>)</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fl'>1</span>,<span class='fl'>0</span><span class='op'>)</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>1</span>,<span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>, transf<span class='op'>=</span><span class='va'>transf.ztor</span>, digits<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='error'>Error in predict.rma(res, newmods = rbind(c(0, 0, 0), c(1, 0, 0), c(0,     1, 0), c(1, 1, 1)), transf = transf.ztor, digits = 2): Cannot specify new moderator values for models without moderators.</span></div><div class='input'>
+</div><div class='output co'>#&gt; 
+#&gt;   pred ci.lb ci.ub pi.lb pi.ub 
+#&gt; 1 0.33  0.09  0.54 -0.41  0.81 
+#&gt; 2 0.40  0.16  0.60 -0.34  0.84 
+#&gt; 3 0.38  0.14  0.58 -0.36  0.83 
+#&gt; 4 0.39  0.15  0.59 -0.35  0.83 
+#&gt; </div><div class='input'>
 <span class='co'># }</span>
 </div></pre>
   </div>

@@ -103,7 +103,7 @@ print(res, digits=3)
 
 ### multivariate random-effects model with heteroscedastic AR(1) structure for the true effects
 res <- rma.mv(yi, Vc, mods = ~ factor(time) - 1, random = ~ time | study,
-              struct="HAR", data=dat.long)
+              struct="HAR", data=dat.long, control=list(optimizer="hjk"))
 print(res, digits=3)
 
 ### profile the variance components

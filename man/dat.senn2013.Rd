@@ -38,7 +38,7 @@ dat
 require(metafor)
 
 ### create network graph ('igraph' package must be installed)
-require(igraph)
+require(igraph, warn.conflicts=FALSE, quietly=TRUE)
 pairs <- data.frame(do.call(rbind,
    sapply(split(dat$treatment, dat$study), function(x) t(combn(x,2)))), stringsAsFactors=FALSE)
 pairs$X1 <- factor(pairs$X1, levels=sort(unique(dat$treatment)))
@@ -146,7 +146,7 @@ res <- rma.mv(yi, V, mods = ~ acarbose + benfluorex + metformin + miglitol + pio
 res
 
 ### estimate all pairwise differences between treatments (using the 'multcomp' package)
-require(multcomp)
+require(multcomp, warn.conflicts=FALSE, quietly=TRUE)
 contr <- contrMat(setNames(rep(1,res$p), colnames(res$X)), type="Tukey")
 sav <- predict(res, newmods=contr)
 sav[["slab"]] <- rownames(contr)

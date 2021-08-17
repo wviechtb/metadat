@@ -341,14 +341,14 @@
 <span class='co'>### likelihood ratio tests comparing the models</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/anova.rma.html'>anova</a></span><span class='op'>(</span><span class='va'>res1</span>, <span class='va'>res2</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
-#&gt;         df      AIC      BIC     AICc    logLik     LRT   pval       QE 
-#&gt; Full     3 402.3380 406.9171 403.1380 -198.1690                191.4837 
-#&gt; Reduced  2 423.8050 426.8577 424.1921 -209.9025 23.4670 &lt;.0001 191.4837 
+#&gt;         df      AIC      BIC     AICc    logLik     LRT   pval       QE tau^2 
+#&gt; Full     3 402.3380 406.9171 403.1380 -198.1690                191.4837    NA 
+#&gt; Reduced  2 423.8050 426.8577 424.1921 -209.9025 23.4670 &lt;.0001 191.4837    NA 
 #&gt; </div><div class='input'><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/anova.rma.html'>anova</a></span><span class='op'>(</span><span class='va'>res2</span>, <span class='va'>res3</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
-#&gt;         df      AIC      BIC     AICc    logLik    LRT   pval       QE 
-#&gt; Full     5 403.7355 411.3673 405.8783 -196.8677               191.4837 
-#&gt; Reduced  3 402.3380 406.9171 403.1380 -198.1690 2.6025 0.2722 191.4837 
+#&gt;         df      AIC      BIC     AICc    logLik    LRT   pval       QE tau^2 
+#&gt; Full     5 403.7355 411.3673 405.8783 -196.8677               191.4837    NA 
+#&gt; Reduced  3 402.3380 406.9171 403.1380 -198.1690 2.6025 0.2722 191.4837    NA 
 #&gt; </div><div class='input'>
 <span class='co'>### profile likelihood plots for model res2</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res2</span>, cline<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>

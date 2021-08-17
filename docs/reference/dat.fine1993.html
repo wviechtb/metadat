@@ -311,7 +311,7 @@
 #&gt; </div><div class='input'>
 <span class='co'>### multivariate random-effects model with heteroscedastic AR(1) structure for the true effects</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>Vc</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>time</span><span class='op'>)</span> <span class='op'>-</span> <span class='fl'>1</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='va'>time</span> <span class='op'>|</span> <span class='va'>study</span>,
-              struct<span class='op'>=</span><span class='st'>"HAR"</span>, data<span class='op'>=</span><span class='va'>dat.long</span><span class='op'>)</span>
+              struct<span class='op'>=</span><span class='st'>"HAR"</span>, data<span class='op'>=</span><span class='va'>dat.long</span>, control<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span>optimizer<span class='op'>=</span><span class='st'>"hjk"</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>res</span>, digits<span class='op'>=</span><span class='fl'>3</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; Multivariate Meta-Analysis Model (k = 66; method: REML)
@@ -323,24 +323,24 @@
 #&gt; 
 #&gt;            estim   sqrt  k.lvl  fixed  level 
 #&gt; tau^2.1    0.000  0.000     16     no      1 
-#&gt; tau^2.2    0.000  0.000     17     no      2 
-#&gt; tau^2.3    0.028  0.166     16     no      3 
-#&gt; tau^2.4    0.194  0.441     17     no      4 
+#&gt; tau^2.2    0.000  0.015     17     no      2 
+#&gt; tau^2.3    0.029  0.172     16     no      3 
+#&gt; tau^2.4    0.197  0.443     17     no      4 
 #&gt; rho        1.000                   no        
 #&gt; 
 #&gt; Test for Residual Heterogeneity:
 #&gt; QE(df = 62) = 62.447, p-val = 0.460
 #&gt; 
 #&gt; Test of Moderators (coefficients 1:4):
-#&gt; QM(df = 4) = 14.695, p-val = 0.005
+#&gt; QM(df = 4) = 14.555, p-val = 0.006
 #&gt; 
 #&gt; Model Results:
 #&gt; 
 #&gt;                estimate     se   zval   pval   ci.lb  ci.ub 
-#&gt; factor(time)1     0.253  0.143  1.769  0.077  -0.027  0.534    . 
-#&gt; factor(time)2     0.408  0.115  3.539  &lt;.001   0.182  0.634  *** 
-#&gt; factor(time)3     0.366  0.144  2.532  0.011   0.083  0.649    * 
-#&gt; factor(time)4     0.352  0.187  1.886  0.059  -0.014  0.718    . 
+#&gt; factor(time)1     0.254  0.143  1.772  0.076  -0.027  0.534    . 
+#&gt; factor(time)2     0.408  0.115  3.536  &lt;.001   0.182  0.634  *** 
+#&gt; factor(time)3     0.365  0.145  2.521  0.012   0.081  0.650    * 
+#&gt; factor(time)4     0.351  0.187  1.878  0.060  -0.015  0.718    . 
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
@@ -348,14 +348,14 @@
 <span class='co'>### profile the variance components</span>
 <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span><span class='op'>(</span>mfrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span>,<span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res</span>, tau2<span class='op'>=</span><span class='fl'>1</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span> <span class='fl'>0</span>,<span class='fl'>.2</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='warning'>Warning: At least one profiled log-likelihood value is larger than the log-likelihood of the fitted model.</span></div><div class='input'><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res</span>, tau2<span class='op'>=</span><span class='fl'>2</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span> <span class='fl'>0</span>,<span class='fl'>.2</span><span class='op'>)</span><span class='op'>)</span>
+<span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res</span>, tau2<span class='op'>=</span><span class='fl'>2</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span> <span class='fl'>0</span>,<span class='fl'>.2</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res</span>, tau2<span class='op'>=</span><span class='fl'>3</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span> <span class='fl'>0</span>,<span class='fl'>.2</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res</span>, tau2<span class='op'>=</span><span class='fl'>4</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>.1</span>,<span class='fl'>.3</span><span class='op'>)</span><span class='op'>)</span>
 </div><div class='img'><img src='dat.fine1993-1.png' alt='' width='864' height='768' /></div><div class='input'>
 <span class='co'>### profile the autocorrelation coefficient</span>
 <span class='fu'><a href='https://rdrr.io/r/graphics/par.html'>par</a></span><span class='op'>(</span>mfrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>1</span><span class='op'>)</span><span class='op'>)</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/profile.rma.html'>profile</a></span><span class='op'>(</span><span class='va'>res</span>, rho<span class='op'>=</span><span class='fl'>1</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='warning'>Warning: At least one profiled log-likelihood value is larger than the log-likelihood of the fitted model.</span></div><div class='img'><img src='dat.fine1993-2.png' alt='' width='864' height='768' /></div><div class='input'>
+</div><div class='img'><img src='dat.fine1993-2.png' alt='' width='864' height='768' /></div><div class='input'>
 <span class='co'># }</span>
 </div></pre>
   </div>

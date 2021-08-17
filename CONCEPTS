@@ -7,6 +7,7 @@ fields/topics:
 \concept{psychology}
 \concept{sociology}
 \concept{criminology}
+\concept{social work}
 
 # natural sciences / topics
 \concept{ecology}
@@ -43,6 +44,7 @@ outcome measures:
 \concept{standardized mean change}
 
 \concept{correlation coefficients}
+\concept{(semi-)partial correlations}
 
 \concept{odds ratios}
 \concept{risk ratios}

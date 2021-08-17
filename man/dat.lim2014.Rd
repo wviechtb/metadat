@@ -51,7 +51,7 @@ head(dat)
 require(metafor)
 
 ### load ape package
-require(ape)
+require(ape, warn.conflicts=FALSE, quietly=TRUE)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat)
