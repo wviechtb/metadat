@@ -191,8 +191,11 @@
 <p>The data can be used for a network meta-analysis, either using an arm-based or a contrast-based model. See &#8216;Examples&#8217; below.</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
+    <p>Senn, S., Gavini, F., Magrez, D., &amp; Scheen, A. (2013). Issues in performing a network meta-analysis. <em>Statistical Methods in Medical Research</em>, <b>22</b>(2), 169--189. <a href='https://doi.org/10.1177/0962280211432220'>https://doi.org/10.1177/0962280211432220</a></p>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
     <p>Law, M., Jackson, D., Turner, R., Rhodes, K., &amp; Viechtbauer, W. (2016). Two new methods to fit models for network meta-analysis with random inconsistency effects. <em>BMC Medical Research Methodology</em>, <b>16</b>, 87. <a href='https://doi.org/10.1186/s12874-016-0184-5'>https://doi.org/10.1186/s12874-016-0184-5</a></p>
-<p>Senn, S., Gavini, F., Magrez, D., &amp; Scheen, A. (2013). Issues in performing a network meta-analysis. <em>Statistical Methods in Medical Research</em>, <b>22</b>(2), 169--189. <a href='https://doi.org/10.1177/0962280211432220'>https://doi.org/10.1177/0962280211432220</a></p>
+<p>Rücker, G., &amp; Schwarzer, G. (2015). Ranking treatments in frequentist network meta-analysis works without resampling methods. <em>BMC Medical Research Methodology</em>, <b>15</b>, 58. <a href='https://doi.org/10.1186/s12874-015-0060-8'>https://doi.org/10.1186/s12874-015-0060-8</a></p>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
     <p>Wolfgang Viechtbauer <a href='mailto:wvb@metafor-project.org'>wvb@metafor-project.org</a> <a href='https://www.metafor-project.org'>https://www.metafor-project.org</a></p>
@@ -943,59 +946,62 @@
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 #&gt; </div><div class='input'>
-<span class='co'>### estimate all pairwise differences between treatments (using the 'multcomp' package)</span>
-<span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='http://multcomp.R-forge.R-project.org'>multcomp</a></span>, warn.conflicts<span class='op'>=</span><span class='cn'>FALSE</span>, quietly<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; <span class='message'></span>
-#&gt; <span class='message'>Attaching package: ‘TH.data’</span></div><div class='output co'>#&gt; <span class='message'>The following object is masked from ‘package:MASS’:</span>
-#&gt; <span class='message'></span>
-#&gt; <span class='message'>    geyser</span></div><div class='input'><span class='va'>contr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/multcomp/man/contrMat.html'>contrMat</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/setNames.html'>setNames</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='va'>res</span><span class='op'>$</span><span class='va'>p</span><span class='op'>)</span>, <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>$</span><span class='va'>X</span><span class='op'>)</span><span class='op'>)</span>, type<span class='op'>=</span><span class='st'>"Tukey"</span><span class='op'>)</span>
+<span class='co'>### forest plot of the contrast estimates (treatments versus placebos)</span>
+<span class='fu'><a href='https://wviechtb.github.io/metafor/reference/forest.html'>forest</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/coef.rma.html'>coef</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span>, <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/vcov.rma.html'>vcov</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span><span class='op'>)</span>, slab<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/coef.rma.html'>coef</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span><span class='op'>)</span>, order<span class='op'>=</span><span class='st'>"obs"</span>,
+       xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>3.0</span>, <span class='fl'>2.5</span><span class='op'>)</span>, alim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>1.5</span>, <span class='fl'>0.5</span><span class='op'>)</span>, psize<span class='op'>=</span><span class='fl'>1</span>, xlab<span class='op'>=</span><span class='st'>"Estimate"</span>, header<span class='op'>=</span><span class='st'>"Treatment"</span><span class='op'>)</span>
+</div><div class='img'><img src='dat.senn2013-6.png' alt='' width='864' height='768' /></div><div class='input'>
+<span class='co'>### estimate all pairwise differences between treatments</span>
+<span class='va'>contr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/t.html'>t</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/utils/combn.html'>combn</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/coef.rma.html'>coef</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
+<span class='va'>contr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/contrmat.html'>contrmat</a></span><span class='op'>(</span><span class='va'>contr</span>, <span class='st'>"X1"</span>, <span class='st'>"X2"</span>, last<span class='op'>=</span><span class='st'>"vildagliptin"</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span><span class='op'>(</span><span class='va'>contr</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>contr</span><span class='op'>$</span><span class='va'>X1</span>, <span class='st'>"-"</span>, <span class='va'>contr</span><span class='op'>$</span><span class='va'>X2</span><span class='op'>)</span>
+<span class='va'>contr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>as.matrix</a></span><span class='op'>(</span><span class='va'>contr</span><span class='op'>[</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span><span class='op'>)</span><span class='op'>]</span><span class='op'>)</span>
 <span class='va'>sav</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/predict.rma.html'>predict</a></span><span class='op'>(</span><span class='va'>res</span>, newmods<span class='op'>=</span><span class='va'>contr</span><span class='op'>)</span>
 <span class='va'>sav</span><span class='op'>[[</span><span class='st'>"slab"</span><span class='op'>]</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span><span class='op'>(</span><span class='va'>contr</span><span class='op'>)</span>
 <span class='va'>sav</span>
 </div><div class='output co'>#&gt; 
-#&gt;                                 pred     se   ci.lb  ci.ub   pi.lb  pi.ub 
-#&gt; benfluorex - acarbose         0.1045 0.3659 -0.6128 0.8217 -0.8433 1.0522 
-#&gt; metformin - acarbose         -0.2870 0.2504 -0.7778 0.2037 -1.0774 0.5033 
-#&gt; miglitol - acarbose          -0.1085 0.3280 -0.7514 0.5344 -1.0013 0.7843 
-#&gt; pioglitazone - acarbose      -0.2880 0.3054 -0.8866 0.3105 -1.1495 0.5734 
-#&gt; rosiglitazone - acarbose     -0.3924 0.2526 -0.8874 0.1026 -1.1854 0.4006 
-#&gt; sitagliptin - acarbose        0.2714 0.4165 -0.5449 1.0876 -0.7534 1.2961 
-#&gt; sulfonylurea - acarbose       0.4238 0.2568 -0.0796 0.9273 -0.3744 1.2221 
-#&gt; vildagliptin - acarbose       0.1414 0.4159 -0.6738 0.9565 -0.8825 1.1652 
-#&gt; metformin - benfluorex       -0.3915 0.3153 -1.0094 0.2264 -1.2665 0.4835 
-#&gt; miglitol - benfluorex        -0.2130 0.3575 -0.9137 0.4877 -1.1483 0.7223 
-#&gt; pioglitazone - benfluorex    -0.3925 0.3492 -1.0770 0.2920 -1.3157 0.5307 
-#&gt; rosiglitazone - benfluorex   -0.4968 0.3038 -1.0923 0.0986 -1.3561 0.3625 
-#&gt; sitagliptin - benfluorex      0.1669 0.4401 -0.6956 1.0294 -0.8950 1.2288 
-#&gt; sulfonylurea - benfluorex     0.3194 0.3622 -0.3905 1.0292 -0.6228 1.2616 
-#&gt; vildagliptin - benfluorex     0.0369 0.4395 -0.8245 0.8983 -1.0242 1.0980 
-#&gt; miglitol - metformin          0.1785 0.2703 -0.3513 0.7083 -0.6366 0.9937 
-#&gt; pioglitazone - metformin     -0.0010 0.2176 -0.4274 0.4254 -0.7531 0.7511 
-#&gt; rosiglitazone - metformin    -0.1053 0.1600 -0.4189 0.2082 -0.7997 0.5890 
-#&gt; sitagliptin - metformin       0.5584 0.3727 -0.1721 1.2889 -0.3994 1.5162 
-#&gt; sulfonylurea - metformin      0.7109 0.2272  0.2656 1.1561 -0.0521 1.4738 
-#&gt; vildagliptin - metformin      0.4284 0.3721 -0.3008 1.1576 -0.5285 1.3853 
-#&gt; pioglitazone - miglitol      -0.1795 0.3093 -0.7857 0.4266 -1.0463 0.6872 
-#&gt; rosiglitazone - miglitol     -0.2839 0.2569 -0.7873 0.2196 -1.0822 0.5144 
-#&gt; sitagliptin - miglitol        0.3799 0.4091 -0.4218 1.1816 -0.6333 1.3931 
-#&gt; sulfonylurea - miglitol       0.5324 0.3238 -0.1023 1.1670 -0.3545 1.4193 
-#&gt; vildagliptin - miglitol       0.2499 0.4085 -0.5507 1.0505 -0.7624 1.2622 
-#&gt; rosiglitazone - pioglitazone -0.1043 0.2163 -0.5283 0.3196 -0.8550 0.6464 
-#&gt; sitagliptin - pioglitazone    0.5594 0.4019 -0.2282 1.3470 -0.4427 1.5615 
-#&gt; sulfonylurea - pioglitazone   0.7119 0.2914  0.1407 1.2831 -0.1308 1.5545 
-#&gt; vildagliptin - pioglitazone   0.4294 0.4013 -0.3571 1.2159 -0.5718 1.4306 
-#&gt; sitagliptin - rosiglitazone   0.6637 0.3631 -0.0479 1.3754 -0.2798 1.6073 
-#&gt; sulfonylurea - rosiglitazone  0.8162 0.2290  0.3674 1.2651  0.0512 1.5813 
-#&gt; vildagliptin - rosiglitazone  0.5337 0.3624 -0.1766 1.2441 -0.4088 1.4763 
-#&gt; sulfonylurea - sitagliptin    0.1525 0.4132 -0.6573 0.9622 -0.8671 1.1720 
-#&gt; vildagliptin - sitagliptin   -0.1300 0.4824 -1.0755 0.8155 -1.2604 1.0004 
-#&gt; vildagliptin - sulfonylurea  -0.2825 0.4126 -1.0911 0.5262 -1.3012 0.7362 
+#&gt;                                 pred     se   ci.lb   ci.ub   pi.lb   pi.ub 
+#&gt; acarbose - benfluorex        -0.1045 0.3659 -0.8217  0.6128 -1.0522  0.8433 
+#&gt; acarbose - metformin          0.2870 0.2504 -0.2037  0.7778 -0.5033  1.0774 
+#&gt; acarbose - miglitol           0.1085 0.3280 -0.5344  0.7514 -0.7843  1.0013 
+#&gt; acarbose - pioglitazone       0.2880 0.3054 -0.3105  0.8866 -0.5734  1.1495 
+#&gt; acarbose - rosiglitazone      0.3924 0.2526 -0.1026  0.8874 -0.4006  1.1854 
+#&gt; acarbose - sitagliptin       -0.2714 0.4165 -1.0876  0.5449 -1.2961  0.7534 
+#&gt; acarbose - sulfonylurea      -0.4238 0.2568 -0.9273  0.0796 -1.2221  0.3744 
+#&gt; acarbose - vildagliptin      -0.1414 0.4159 -0.9565  0.6738 -1.1652  0.8825 
+#&gt; benfluorex - metformin        0.3915 0.3153 -0.2264  1.0094 -0.4835  1.2665 
+#&gt; benfluorex - miglitol         0.2130 0.3575 -0.4877  0.9137 -0.7223  1.1483 
+#&gt; benfluorex - pioglitazone     0.3925 0.3492 -0.2920  1.0770 -0.5307  1.3157 
+#&gt; benfluorex - rosiglitazone    0.4968 0.3038 -0.0986  1.0923 -0.3625  1.3561 
+#&gt; benfluorex - sitagliptin     -0.1669 0.4401 -1.0294  0.6956 -1.2288  0.8950 
+#&gt; benfluorex - sulfonylurea    -0.3194 0.3622 -1.0292  0.3905 -1.2616  0.6228 
+#&gt; benfluorex - vildagliptin    -0.0369 0.4395 -0.8983  0.8245 -1.0980  1.0242 
+#&gt; metformin - miglitol         -0.1785 0.2703 -0.7083  0.3513 -0.9937  0.6366 
+#&gt; metformin - pioglitazone      0.0010 0.2176 -0.4254  0.4274 -0.7511  0.7531 
+#&gt; metformin - rosiglitazone     0.1053 0.1600 -0.2082  0.4189 -0.5890  0.7997 
+#&gt; metformin - sitagliptin      -0.5584 0.3727 -1.2889  0.1721 -1.5162  0.3994 
+#&gt; metformin - sulfonylurea     -0.7109 0.2272 -1.1561 -0.2656 -1.4738  0.0521 
+#&gt; metformin - vildagliptin     -0.4284 0.3721 -1.1576  0.3008 -1.3853  0.5285 
+#&gt; miglitol - pioglitazone       0.1795 0.3093 -0.4266  0.7857 -0.6872  1.0463 
+#&gt; miglitol - rosiglitazone      0.2839 0.2569 -0.2196  0.7873 -0.5144  1.0822 
+#&gt; miglitol - sitagliptin       -0.3799 0.4091 -1.1816  0.4218 -1.3931  0.6333 
+#&gt; miglitol - sulfonylurea      -0.5324 0.3238 -1.1670  0.1023 -1.4193  0.3545 
+#&gt; miglitol - vildagliptin      -0.2499 0.4085 -1.0505  0.5507 -1.2622  0.7624 
+#&gt; pioglitazone - rosiglitazone  0.1043 0.2163 -0.3196  0.5283 -0.6464  0.8550 
+#&gt; pioglitazone - sitagliptin   -0.5594 0.4019 -1.3470  0.2282 -1.5615  0.4427 
+#&gt; pioglitazone - sulfonylurea  -0.7119 0.2914 -1.2831 -0.1407 -1.5545  0.1308 
+#&gt; pioglitazone - vildagliptin  -0.4294 0.4013 -1.2159  0.3571 -1.4306  0.5718 
+#&gt; rosiglitazone - sitagliptin  -0.6637 0.3631 -1.3754  0.0479 -1.6073  0.2798 
+#&gt; rosiglitazone - sulfonylurea -0.8162 0.2290 -1.2651 -0.3674 -1.5813 -0.0512 
+#&gt; rosiglitazone - vildagliptin -0.5337 0.3624 -1.2441  0.1766 -1.4763  0.4088 
+#&gt; sitagliptin - sulfonylurea   -0.1525 0.4132 -0.9622  0.6573 -1.1720  0.8671 
+#&gt; sitagliptin - vildagliptin    0.1300 0.4824 -0.8155  1.0755 -1.0004  1.2604 
+#&gt; sulfonylurea - vildagliptin   0.2825 0.4126 -0.5262  1.0911 -0.7362  1.3012 
 #&gt; </div><div class='input'>
 <span class='co'>### fit random inconsistency effects model (see Law et al., 2016)</span>
-<span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>V</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>acarbose</span> <span class='op'>+</span> <span class='va'>benfluorex</span> <span class='op'>+</span> <span class='va'>metformin</span> <span class='op'>+</span> <span class='va'>miglitol</span> <span class='op'>+</span> <span class='va'>pioglitazone</span> <span class='op'>+</span>
+<span class='va'>inc</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>V</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>acarbose</span> <span class='op'>+</span> <span class='va'>benfluorex</span> <span class='op'>+</span> <span class='va'>metformin</span> <span class='op'>+</span> <span class='va'>miglitol</span> <span class='op'>+</span> <span class='va'>pioglitazone</span> <span class='op'>+</span>
                               <span class='va'>rosiglitazone</span> <span class='op'>+</span> <span class='va'>sitagliptin</span> <span class='op'>+</span> <span class='va'>sulfonylurea</span> <span class='op'>+</span> <span class='va'>vildagliptin</span> <span class='op'>-</span> <span class='fl'>1</span>,
               random <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>~</span> <span class='va'>comp</span> <span class='op'>|</span> <span class='va'>study</span>, <span class='op'>~</span> <span class='va'>comp</span> <span class='op'>|</span> <span class='va'>design</span><span class='op'>)</span>, rho<span class='op'>=</span><span class='fl'>1</span><span class='op'>/</span><span class='fl'>2</span>, phi<span class='op'>=</span><span class='fl'>1</span><span class='op'>/</span><span class='fl'>2</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
-<span class='va'>res</span>
+<span class='va'>inc</span>
 </div><div class='output co'>#&gt; 
 #&gt; Multivariate Meta-Analysis Model (k = 27; method: REML)
 #&gt; 
@@ -1037,6 +1043,58 @@
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 #&gt; </div><div class='input'>
+<span class='co'>############################################################################</span>
+
+<span class='co'>### compute P-scores (see Rücker &amp; Schwarzer, 2015)</span>
+<span class='va'>contr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/t.html'>t</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/utils/combn.html'>combn</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/coef.rma.html'>coef</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span><span class='op'>)</span>,<span class='st'>"placebo"</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='co'># add 'placebo' to contrast matrix</span>
+<span class='va'>contr</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/contrmat.html'>contrmat</a></span><span class='op'>(</span><span class='va'>contr</span>, <span class='st'>"X1"</span>, <span class='st'>"X2"</span>, last<span class='op'>=</span><span class='st'>"placebo"</span>, append<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span>
+<span class='va'>b</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/coef.rma.html'>coef</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span>,<span class='fl'>0</span><span class='op'>)</span> <span class='co'># add 0 for 'placebo' (the reference treatment)</span>
+<span class='va'>vb</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/bldiag.html'>bldiag</a></span><span class='op'>(</span><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/vcov.rma.html'>vcov</a></span><span class='op'>(</span><span class='va'>res</span><span class='op'>)</span>,<span class='fl'>0</span><span class='op'>)</span> <span class='co'># add 0 row/column for 'placebo' (the reference treatment)</span>
+<span class='va'>pvals</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>contr</span>, <span class='fl'>1</span>, <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='fu'><a href='https://rdrr.io/r/stats/Normal.html'>pnorm</a></span><span class='op'>(</span><span class='op'>(</span><span class='va'>x</span><span class='op'>%*%</span><span class='va'>b</span><span class='op'>)</span> <span class='op'>/</span> <span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/t.html'>t</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span><span class='op'>%*%</span><span class='va'>vb</span><span class='op'>%*%</span><span class='va'>x</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span>
+<span class='va'>tab</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/vec2mat.html'>vec2mat</a></span><span class='op'>(</span><span class='va'>pvals</span>, corr<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span>
+<span class='va'>tab</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/lower.tri.html'>upper.tri</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/t.html'>t</a></span><span class='op'>(</span><span class='op'>(</span><span class='fl'>1</span> <span class='op'>-</span> <span class='va'>tab</span><span class='op'>)</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/lower.tri.html'>upper.tri</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span><span class='op'>]</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>tab</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>contr</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='va'>tab</span>, <span class='fl'>2</span><span class='op'>)</span> <span class='co'># like Table 2 in the article</span>
+</div><div class='output co'>#&gt;               acarbose benfluorex metformin miglitol pioglitazone rosiglitazone
+#&gt; acarbose            NA       0.61      0.13     0.37         0.17          0.06
+#&gt; benfluorex        0.39         NA      0.11     0.28         0.13          0.05
+#&gt; metformin         0.87       0.89        NA     0.75         0.50          0.26
+#&gt; miglitol          0.63       0.72      0.25       NA         0.28          0.13
+#&gt; pioglitazone      0.83       0.87      0.50     0.72           NA          0.31
+#&gt; rosiglitazone     0.94       0.95      0.74     0.87         0.69            NA
+#&gt; sitagliptin       0.26       0.35      0.07     0.18         0.08          0.03
+#&gt; sulfonylurea      0.05       0.19      0.00     0.05         0.01          0.00
+#&gt; vildagliptin      0.37       0.47      0.12     0.27         0.14          0.07
+#&gt; placebo           0.00       0.00      0.00     0.00         0.00          0.00
+#&gt;               sitagliptin sulfonylurea vildagliptin placebo
+#&gt; acarbose             0.74         0.95         0.63    1.00
+#&gt; benfluorex           0.65         0.81         0.53    1.00
+#&gt; metformin            0.93         1.00         0.88    1.00
+#&gt; miglitol             0.82         0.95         0.73    1.00
+#&gt; pioglitazone         0.92         0.99         0.86    1.00
+#&gt; rosiglitazone        0.97         1.00         0.93    1.00
+#&gt; sitagliptin            NA         0.64         0.39    0.95
+#&gt; sulfonylurea         0.36           NA         0.25    0.96
+#&gt; vildagliptin         0.61         0.75           NA    0.98
+#&gt; placebo              0.05         0.04         0.02      NA</div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='op'>(</span>pscore<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/sort.html'>sort</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/apply.html'>apply</a></span><span class='op'>(</span><span class='va'>tab</span>, <span class='fl'>1</span>, <span class='va'>mean</span>, na.rm<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>, decreasing<span class='op'>=</span><span class='cn'>TRUE</span><span class='op'>)</span>, <span class='fl'>3</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;               pscore
+#&gt; rosiglitazone  0.898
+#&gt; metformin      0.786
+#&gt; pioglitazone   0.778
+#&gt; miglitol       0.614
+#&gt; acarbose       0.519
+#&gt; benfluorex     0.438
+#&gt; vildagliptin   0.420
+#&gt; sitagliptin    0.329
+#&gt; sulfonylurea   0.207
+#&gt; placebo        0.012</div><div class='input'>
+<span class='co'># note: the values are slightly different from the ones given in Table 3 of Rücker and</span>
+<span class='co'># Schwarzer (2015) since model 'res' above is fitted using REML estimation while the</span>
+<span class='co'># results shown in the article are based on the 'netmeta' package, which uses a DL-type</span>
+<span class='co'># estimator for the amount of heterogeneity by default</span>
+
+<span class='co'>############################################################################</span>
+
 <span class='co'># }</span>
 </div></pre>
   </div>

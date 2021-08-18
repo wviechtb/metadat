@@ -20,9 +20,12 @@
    The data can be used for a network meta-analysis, either using an arm-based or a contrast-based model. See \sQuote{Examples} below.
 }
 \source{
+   Senn, S., Gavini, F., Magrez, D., & Scheen, A. (2013). Issues in performing a network meta-analysis. \emph{Statistical Methods in Medical Research}, \bold{22}(2), 169--189. \verb{https://doi.org/10.1177/0962280211432220}
+}
+\references{
    Law, M., Jackson, D., Turner, R., Rhodes, K., & Viechtbauer, W. (2016). Two new methods to fit models for network meta-analysis with random inconsistency effects. \emph{BMC Medical Research Methodology}, \bold{16}, 87. \verb{https://doi.org/10.1186/s12874-016-0184-5}
 
-   Senn, S., Gavini, F., Magrez, D., & Scheen, A. (2013). Issues in performing a network meta-analysis. \emph{Statistical Methods in Medical Research}, \bold{22}(2), 169--189. \verb{https://doi.org/10.1177/0962280211432220}
+   \enc{Rücker}{Ruecker}, G., & Schwarzer, G. (2015). Ranking treatments in frequentist network meta-analysis works without resampling methods. \emph{BMC Medical Research Methodology}, \bold{15}, 58. \verb{https://doi.org/10.1186/s12874-015-0060-8}
 }
 \author{
    Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
@@ -145,18 +148,45 @@ res <- rma.mv(yi, V, mods = ~ acarbose + benfluorex + metformin + miglitol + pio
               random = ~ comp | study, rho=1/2, data=dat)
 res
 
-### estimate all pairwise differences between treatments (using the 'multcomp' package)
-require(multcomp, warn.conflicts=FALSE, quietly=TRUE)
-contr <- contrMat(setNames(rep(1,res$p), colnames(res$X)), type="Tukey")
+### forest plot of the contrast estimates (treatments versus placebos)
+forest(coef(res), diag(vcov(res)), slab=names(coef(res)), order="obs",
+       xlim=c(-3.0, 2.5), alim=c(-1.5, 0.5), psize=1, xlab="Estimate", header="Treatment")
+
+### estimate all pairwise differences between treatments
+contr <- data.frame(t(combn(names(coef(res)), 2)))
+contr <- contrmat(contr, "X1", "X2", last="vildagliptin")
+rownames(contr) <- paste(contr$X1, "-", contr$X2)
+contr <- as.matrix(contr[-c(1:2)])
 sav <- predict(res, newmods=contr)
 sav[["slab"]] <- rownames(contr)
 sav
 
 ### fit random inconsistency effects model (see Law et al., 2016)
-res <- rma.mv(yi, V, mods = ~ acarbose + benfluorex + metformin + miglitol + pioglitazone +
+inc <- rma.mv(yi, V, mods = ~ acarbose + benfluorex + metformin + miglitol + pioglitazone +
                               rosiglitazone + sitagliptin + sulfonylurea + vildagliptin - 1,
               random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2, data=dat)
-res
+inc
+
+############################################################################
+
+### compute P-scores (see Rücker & Schwarzer, 2015)
+contr <- data.frame(t(combn(c(names(coef(res)),"placebo"), 2))) # add 'placebo' to contrast matrix
+contr <- contrmat(contr, "X1", "X2", last="placebo", append=FALSE)
+b <- c(coef(res),0) # add 0 for 'placebo' (the reference treatment)
+vb <- bldiag(vcov(res),0) # add 0 row/column for 'placebo' (the reference treatment)
+pvals <- apply(contr, 1, function(x) pnorm((x\%*\%b) / sqrt(t(x)\%*\%vb\%*\%x)))
+tab <- vec2mat(pvals, corr=FALSE)
+tab[upper.tri(tab)] <- t((1 - tab)[upper.tri(tab)])
+rownames(tab) <- colnames(tab) <- colnames(contr)
+round(tab, 2) # like Table 2 in the article
+cbind(pscore=round(sort(apply(tab, 1, mean, na.rm=TRUE), decreasing=TRUE), 3))
+
+# note: the values are slightly different from the ones given in Table 3 of Rücker and
+# Schwarzer (2015) since model 'res' above is fitted using REML estimation while the
+# results shown in the article are based on the 'netmeta' package, which uses a DL-type
+# estimator for the amount of heterogeneity by default
+
+############################################################################
 
 }
 }
