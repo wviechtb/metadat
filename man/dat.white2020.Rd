@@ -1,11 +1,11 @@
 \name{dat.white2020}
 \docType{data}
 \alias{dat.white2020}
-\title{Structural colours reflect individual quality: a meta-analysis}
-\description{Results from studies examining the relationship between measures of individual quality and the expression of structurally coloured sexual signals}
+\title{Structural Colours Reflect Individual Quality: a Meta-analysis}
+\description{Results from 41 studies examining the relationship between measures of individual quality and the expression of structurally coloured sexual signals}
 \usage{dat.white2020}
 \format{
-The data frame dat.white2020 contains the following columns:
+The object is a data frame which contains the following columns:
 \tabular{lll}{
 \bold{study_id} \tab \code{character} \tab study-level ID \cr
 \bold{obs} \tab \code{character} \tab observation-level ID \cr
@@ -24,14 +24,28 @@ The data frame dat.white2020 contains the following columns:
 \bold{r} \tab \code{numeric} \tab Pearson's correlation coefficient \cr
 }  
 }
-\details{The 186 outcomes measures from 41 experimental and observational studies report the correlation between measures of individual quality (age, body condition, immune function, parasite resistance) and the expression of structurally colours sexual signals across 28 species. The intention being to test whether structural colour signal show heightened condition-dependent expression, as prediected by evolutionary models of 'honest' signalling.}
+\details{The 186 outcome measures from 41 experimental and observational studies report the correlation between measures of individual quality (age, body condition, immune function, parasite resistance) and the expression of structurally colours sexual signals across 28 species. The intention being to test whether structural colour signal show heightened condition-dependent expression, as prediected by evolutionary models of 'honest' signalling.}
 \source{White, T. E. (2020). Structural colours reflect individual quality \emph{Biology Letters}, \bold{16}, 20200001.}
-\author{Thomas E. White, \email{thomas.white026@gmail.com}}
+\author{Thomas E. White, \email{thomas.white@sydney.edu.au}}
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.white2020
 dat
+\dontrun{
+
+### load metafor package
+require(metafor)
+
+### calculate r-to-z transformed correlations and corresponding sampling variances
+dat <- escalc(measure="ZCOR", ri=r, ni=n, data=dat)
+
+### fit multilevel meta-analytic model
+res <- rma.mv(yi, vi, random = list(~ 1 | study_id, ~ 1 | obs), data=dat)
+res
+
+}
 }
 \keyword{datasets}
 \concept{ecology}
 \concept{evolution}
+\concept{correlation coefficients}

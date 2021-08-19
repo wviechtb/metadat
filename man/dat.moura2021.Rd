@@ -24,7 +24,6 @@ dat.moura2021
 \bold{ri}                     \tab \code{numeric}   \tab correlation coefficient \cr
 \bold{ni}                     \tab \code{numeric}   \tab sample size
 }
-Blah.
 }
 \details{
    The 457 studies included in this dataset provide 1828 correlation coefficients describing the similarity in some measure of body size in mating couples in 341 different species.
