@@ -9,7 +9,7 @@
 
   # Loop through datasets and create template documentation
   # Will only be > 1 if overwrite is specified
-  for (i in 1:length(study_name)) {
+  for (i in seq_along(study_name)) {
 
     # Open new file connection
     con <- try(file(file.path(paste0(dir, "/man/"), paste0(study_name[i], ".Rd")), "w"))
