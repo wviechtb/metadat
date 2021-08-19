@@ -88,7 +88,20 @@ dat
 
 \dontrun{
 
-ADD_DETAILED_EXAMPLE
+### load metafor
+library(metafor)
+
+### compute SD from SE
+dat$sd_c <- with(dat, con_se * sqrt(con_n))
+dat$sd_e <- with(dat, exp_se * sqrt(exp_n))
+
+### compute standardized mean differences and corresponding sampling variances
+dat <- escalc(measure="SMD", m1i=exp_mean, m2i=con_mean, sd1i=sd_e, sd2i=sd_c, n1i=exp_n, n2i=con_n, data=dat, add.measure=TRUE)
+
+### fit model
+mod1 <- rma.mv(yi ~ 1, V = vi, random = list(~1|study_ID, ~1|comp_ID), data = dat)
+
+
 
 }
 }
