@@ -27,7 +27,7 @@
    Hart, R. G., Benavente, O., McBride, R., & Pearce, L. A. (1999). Antithrombotic therapy to prevent stroke in patients with atrial fibrillation: A meta-analysis. \emph{Annals of Internal Medicine}, \bold{131}(7), 492--501. \verb{https://doi.org/10.7326/0003-4819-131-7-199910050-00003}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

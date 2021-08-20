@@ -38,7 +38,7 @@
    D'Agostino, R. B., Sr., Weintraub, M., Russell, H. K., Stepanians, M., D'Agostino, R. B., Jr., Cantilena, L. R., Jr., Graumlich, J. F., Maldonado, S., Honig, P., & Anello, C. (1998). The effectiveness of antihistamines in reducing the severity of runny nose and sneezing: A meta-analysis. \emph{Clinical Pharmacology & Therapeutics}, \bold{64}(6), 579--596. \verb{https://doi.org/10.1016/S0009-9236(98)90049-2}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

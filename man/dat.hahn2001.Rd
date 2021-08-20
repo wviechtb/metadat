@@ -22,7 +22,7 @@ dat.hahn2001
    Hahn, S., Kim, Y., & Garner, P. (2001). Reduced osmolarity oral rehydration solution for treating dehydration due to diarrhoea in children: Systematic review. \emph{British Medical Journal}, \bold{323}(7304), 81--85. \verb{https://doi.org/10.1136/bmj.323.7304.81}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

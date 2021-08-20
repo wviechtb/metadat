@@ -39,7 +39,7 @@
    Gibson, P. G., Powell, H., Wilson, A., Abramson, M. J., Haywood, P., Bauman, A., Hensley, M. J., Walters, E. H., & Roberts, J. J. L. (2002). Self-management education and regular practitioner review for adults with asthma. \emph{Cochrane Database of Systematic Reviews}, \bold{3}, CD001117. \verb{https://doi.org/10.1002/14651858.CD001117}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

@@ -31,7 +31,7 @@
    Collins, R., Yusuf, S., & Peto, R. (1985). Overview of randomised trials of diuretics in pregnancy. \emph{British Medical Journal}, \bold{290}(6461), 17--23. \verb{https://doi.org/10.1136/bmj.290.6461.17}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

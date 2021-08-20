@@ -19,7 +19,7 @@
    Pagliaro, L., D'Amico, G., \enc{Sörensen}{Soerensen}, T. I. A., Lebrec, D., Burroughs, A. K., Morabito, A., \enc{Tiné}{Tine}, F., Politi, F., & Traina, M. (1992). Prevention of first bleeding in cirrhosis: A meta-analysis of randomized trials of nonsurgical treatment. \emph{Annals of Internal Medicine}, \bold{117}(1), 59--70. \verb{https://doi.org/10.7326/0003-4819-117-1-59}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

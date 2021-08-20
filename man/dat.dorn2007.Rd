@@ -32,7 +32,7 @@ dat.dorn2007
    Dorn, S. D., Kaptchuk, T. J., Park, J. B., Nguyen, L. T., Canenguez, K., Nam, B. H., Woods, K. B., Conboy, L. A., Stason, W. B., & Lembo, A. J. (2007). A meta-analysis of the placebo response in complementary and alternative medicine trials of irritable bowel syndrome. \emph{Neurogastroenterology & Motility}, \bold{19}(8), 630--637. \verb{https://doi.org/10.1111/j.1365-2982.2007.00937.x}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

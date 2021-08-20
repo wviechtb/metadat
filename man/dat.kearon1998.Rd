@@ -30,7 +30,7 @@ dat.kearon1998
    Deeks, J. J., Macaskill, P., & Irwig, L. (2005). The performance of tests of publication bias and other sample size effects in systematic reviews of diagnostic test accuracy was assessed. \emph{Journal of Clinical Epidemiology}, \bold{58}(9), 882--893. \verb{https://doi.org/10.1016/j.jclinepi.2005.01.016}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

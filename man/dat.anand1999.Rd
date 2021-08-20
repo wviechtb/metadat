@@ -31,7 +31,7 @@ dat.anand1999
    Anand, S. S., & Yusuf, S. (1999). Oral anticoagulant therapy in patients with coronary artery disease: A meta-analysis. \emph{Journal of the American Medical Association}, \bold{282}(21), 2058--2067. \verb{https://doi.org/10.1001/jama.282.21.2058}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

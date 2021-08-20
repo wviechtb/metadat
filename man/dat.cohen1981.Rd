@@ -25,7 +25,7 @@
    Cohen, P. A. (1981). Student ratings of instruction and student achievement: A meta-analysis of multisection validity studies. \emph{Review of Educational Research}, \bold{51}(3), 281--309. \verb{https://doi.org/10.3102/00346543051003281}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data
