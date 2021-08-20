@@ -79,7 +79,7 @@ The data frame contains the following columns:
 }  
 }
 \details{
-   Data from experiments where dams were subject to caloric or protein restriction or were overfed around gestation where included. Offspring activity, exploration or anxiety were measured outcomes variables from maternal experimental treatments. Multilevel meta-analysis and meta-regression models were used to analyze the meta-analytic data.
+   Data from experiments where dams were subject to caloric or protein restriction or were overfed around gestation were included. Offspring activity, exploration, or anxiety were measured outcomes variables from maternal experimental treatments. Multilevel meta-analysis and meta-regression models were used to analyze the meta-analytic data.
 }
 \source{
    Besson, A. A., Lagisz, M., Senior, A. M., Hector, K. L., & Nakagawa, S. (2016). Effect of maternal diet on offspring coping styles in rodents: A systematic review and meta-analysis. \emph{Biological Reviews}, \bold{91}(4), 1065--1080. \verb{https://doi.org/10.1111/brv.12210}
@@ -114,4 +114,4 @@ mod1
 \keyword{datasets}
 \concept{ecology}
 \concept{evolution}
-\concept{standardised mean differences}
+\concept{standardized mean differences}
