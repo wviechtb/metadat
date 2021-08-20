@@ -28,7 +28,7 @@ dat.laopaiboon2015
    Laopaiboon, M., Panpanich, R., & Swa Mya, K. (2015). Azithromycin for acute lower respiratory tract infections. \emph{Cochrane Database of Systematic Reviews}, \bold{3}, CD001954. \verb{https://doi.org/10.1002/14651858.CD001954.pub4}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

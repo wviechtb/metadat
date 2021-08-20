@@ -24,7 +24,7 @@ dat.li2007
    Li, J., Zhang, Q., Zhang, M., & Egger, M. (2007). Intravenous magnesium for acute myocardial infarction. \emph{Cochrane Database of Systematic Reviews}, \bold{2}, CD002755. \verb{https://doi.org/10.1002/14651858.CD002755.pub2}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \seealso{
    \code{\link{dat.egger2001}}

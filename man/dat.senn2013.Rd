@@ -28,7 +28,7 @@
    \enc{Rücker}{Ruecker}, G., & Schwarzer, G. (2015). Ranking treatments in frequentist network meta-analysis works without resampling methods. \emph{BMC Medical Research Methodology}, \bold{15}, 58. \verb{https://doi.org/10.1186/s12874-015-0060-8}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

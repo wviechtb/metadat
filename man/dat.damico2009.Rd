@@ -25,7 +25,7 @@ dat.damico2009
    D'Amico, R., Pifferi, S., Torri, V., Brazzi, L., Parmelli, E., & Liberati, A. (2009). Antibiotic prophylaxis to reduce respiratory tract infections and mortality in adults receiving intensive care. \emph{Cochrane Database of Systematic Reviews}, \bold{4}, CD000022. \verb{https://doi.org/10.1002/14651858.CD000022.pub3}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

@@ -22,7 +22,7 @@
   }
 </script>
 
-<title>Studies on Topical plus Systemic Antibiotics to Prevent Respiratory Tract Infections — dat.damico2009 • metadat</title>
+<title>Studies on the Relationship between Sexual Signal Expression and Individual Quality — dat.white2020 • metadat</title>
 
 
 <!-- jquery -->
@@ -66,8 +66,8 @@
 
 
 
-<meta property="og:title" content="Studies on Topical plus Systemic Antibiotics to Prevent Respiratory Tract Infections — dat.damico2009" />
-<meta property="og:description" content="Results from 16 studies examining the effectiveness of topical plus systemic antibiotics to prevent respiratory tract infections (RTIs)." />
+<meta property="og:title" content="Studies on the Relationship between Sexual Signal Expression and Individual Quality — dat.white2020" />
+<meta property="og:description" content="Results from 41 studies examining the relationship between measures of individual quality and the expression of structurally coloured sexual signals." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:creator" content="@wviechtb" />
 <meta name="twitter:site" content="@wviechtb" />
@@ -161,120 +161,116 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Studies on Topical plus Systemic Antibiotics to Prevent Respiratory Tract Infections</h1>
+    <h1>Studies on the Relationship between Sexual Signal Expression and Individual Quality</h1>
     
-    <div class="hidden name"><code>dat.damico2009.Rd</code></div>
+    <div class="hidden name"><code>dat.white2020.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Results from 16 studies examining the effectiveness of topical plus systemic antibiotics to prevent respiratory tract infections (RTIs).</p>
+    <p>Results from 41 studies examining the relationship between measures of individual quality and the expression of structurally coloured sexual signals.</p>
     </div>
 
-    <pre class="usage"><span class='va'>dat.damico2009</span></pre>
+    <pre class="usage"><span class='va'>dat.white2020</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>The data frame contains the following columns:</p><table class='table'>
-<tr><td><b>study</b></td><td><code>character</code></td><td>first author</td></tr>
-<tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr>
-<tr><td><b>xt</b></td><td><code>numeric</code></td><td>number of RTIs in the treatment group</td></tr>
-<tr><td><b>nt</b></td><td><code>numeric</code></td><td>number of patients in the treatment group</td></tr>
-<tr><td><b>xc</b></td><td><code>numeric</code></td><td>number of RTIs in the control group</td></tr>
-<tr><td><b>nc</b></td><td><code>numeric</code></td><td>number of patients in the control group</td></tr>
-<tr><td><b>conceal</b></td><td><code>numeric</code></td><td>allocation concealment (0 = not adequate, 1 = adequate)</td></tr>
-<tr><td><b>blind</b></td><td><code>numeric</code></td><td>blinding (0 = open, 1 = double-blind)</td></tr>
+    <p>The object is a data frame which contains the following columns:</p><table class='table'>
+<tr><td><b>study_id</b></td><td><code>character</code></td><td>study-level ID</td></tr>
+<tr><td><b>obs</b></td><td><code>character</code></td><td>observation-level ID</td></tr>
+<tr><td><b>exp_obs</b></td><td><code>character</code></td><td>whether the study is observational or experimental</td></tr>
+<tr><td><b>control</b></td><td><code>numeric</code></td><td>whether the study did (1) or did not (0) include a non-sexual control trait</td></tr>
+<tr><td><b>class</b></td><td><code>character</code></td><td>class of the study organisms</td></tr>
+<tr><td><b>genus</b></td><td><code>character</code></td><td>class of the study organisms</td></tr>
+<tr><td><b>species</b></td><td><code>character</code></td><td>species of the study organisms</td></tr>
+<tr><td><b>sex</b></td><td><code>character</code></td><td>sex of the study organisms</td></tr>
+<tr><td><b>iridescent</b></td><td><code>numeric</code></td><td>whether the colour signals were iridescent (1) or not (0)</td></tr>
+<tr><td><b>col_var</b></td><td><code>character</code></td><td>the colour variable quantified</td></tr>
+<tr><td><b>col_component</b></td><td><code>character</code></td><td>whether the colour variable is chromatic or achromatic</td></tr>
+<tr><td><b>quality_measure</b></td><td><code>character</code></td><td>the measure of individual quality used</td></tr>
+<tr><td><b>region</b></td><td><code>character</code></td><td>the body region from which colour was sampled</td></tr>
+<tr><td><b>n</b></td><td><code>numeric</code></td><td>study sample size</td></tr>
+<tr><td><b>r</b></td><td><code>numeric</code></td><td>Pearson's correlation coefficient</td></tr>
 </table>
 
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>The dataset includes the results from 16 studies that examined the effectiveness of topical plus systemic antibiotics versus no prophylaxis to prevent respiratory tract infections (RTIs).</p>
+    <p>The 186 rows in this dataset come from 41 experimental and observational studies reporting on the correlation between measures of individual quality (age, body condition, immune function, parasite resistance) and the expression of structurally coloured sexual signals across 28 species. The purpose of this meta-analysis was to test whether structural colour signals show heightened condition-dependent expression, as predicted by evolutionary models of 'honest' signalling.</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>D'Amico, R., Pifferi, S., Torri, V., Brazzi, L., Parmelli, E., &amp; Liberati, A. (2009). Antibiotic prophylaxis to reduce respiratory tract infections and mortality in adults receiving intensive care. <em>Cochrane Database of Systematic Reviews</em>, <b>4</b>, CD000022. <a href='https://doi.org/10.1002/14651858.CD000022.pub3'>https://doi.org/10.1002/14651858.CD000022.pub3</a></p>
+    <p>White, T. E. (2020). Structural colours reflect individual quality: A meta-analysis. <em>Biology Letters</em>, <b>16</b>(4), 20200001. <a href='https://doi.org/10.1098/rsbl.2020.0001'>https://doi.org/10.1098/rsbl.2020.0001</a></p>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
-    <p>Wolfgang Viechtbauer, <a href='mailto:wvb@metafor-project.org'>wvb@metafor-project.org</a>, <a href='https://www.metafor-project.org'>https://www.metafor-project.org</a></p>
+    <p>Thomas E. White, <a href='mailto:thomas.white@sydney.edu.au'>thomas.white@sydney.edu.au</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
-<span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.damico2009</span>
-<span class='va'>dat</span>
-</div><div class='output co'>#&gt;             study year xt  nt  xc  nc conceal blind
-#&gt; 1      Abele-Horn 1997 13  58  23  30       0     0
-#&gt; 2          Aerdts 1991  1  28  29  60       1     0
-#&gt; 3           Blair 1991 12 161  38 170       1     0
-#&gt; 4          Boland 1991 14  32  17  32       0     1
-#&gt; 5       Cockerill 1992  4  75  12  75       0     0
-#&gt; 6           Finch 1991  4  20   7  24       1     0
-#&gt; 7          Jacobs 1992  0  45   4  46       0     0
-#&gt; 8          Kerver 1988  5  49  31  47       0     0
-#&gt; 9         Palomar 1997 10  50  25  49       0     0
-#&gt; 10          Rocha 1992  7  47  25  54       0     1
-#&gt; 11 Sanchez-Garcia 1992 32 131  60 140       1     1
-#&gt; 12    Stoutenbeek 2007 62 201 100 200       1     0
-#&gt; 13         Ulrich 1989  7  55  26  57       1     0
-#&gt; 14       Verwaest 1997 22 193  40 185       1     0
-#&gt; 15         Winter 1992  3  91  17  92       1     0
-#&gt; 16        Krueger 2002 91 265 149 262       1     1</div><div class='input'>
+<span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.white2020</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>10</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;    study_id  obs exp_obs control   class        genus
+#&gt; 1      p105 e210     exp       0 insecta pseudomantis
+#&gt; 2       p11 e149     obs       0    aves   Cyanocitta
+#&gt; 3       p11 e150     obs       0    aves   Cyanocitta
+#&gt; 4       p11 e151     obs       0    aves   Cyanocitta
+#&gt; 5       p11 e152     obs       0    aves   Cyanocitta
+#&gt; 6       p11 e153     obs       0    aves   Cyanocitta
+#&gt; 7       p11 e154     obs       0    aves   Cyanocitta
+#&gt; 8       p11 e155     exp       0    aves   Cyanocitta
+#&gt; 9       p11 e156     exp       0    aves   Cyanocitta
+#&gt; 10      p11 e157     exp       0    aves   Cyanocitta
+#&gt;                       species    sex iridescent    col_var col_component
+#&gt; 1  Pseudomantis_albofimbriata female          0 brightness    achromatic
+#&gt; 2         Cyanocitta_stelleri   male          0        hue     chromatic
+#&gt; 3         Cyanocitta_stelleri   male          0     chroma     chromatic
+#&gt; 4         Cyanocitta_stelleri   male          0 brightness    achromatic
+#&gt; 5         Cyanocitta_stelleri   male          0        hue     chromatic
+#&gt; 6         Cyanocitta_stelleri   male          0     chroma     chromatic
+#&gt; 7         Cyanocitta_stelleri   male          0 brightness    achromatic
+#&gt; 8         Cyanocitta_stelleri   male          0        hue     chromatic
+#&gt; 9         Cyanocitta_stelleri   male          0     chroma     chromatic
+#&gt; 10        Cyanocitta_stelleri   male          0 brightness    achromatic
+#&gt;    quality_measure  region  n      r
+#&gt; 1        condition abdomen 50  0.437
+#&gt; 2        condition    wing 22  0.410
+#&gt; 3        condition    wing 22 -0.330
+#&gt; 4        condition    wing 22 -0.130
+#&gt; 5         parasite    wing 59 -0.080
+#&gt; 6         parasite    wing 59 -0.310
+#&gt; 7         parasite    wing 59 -0.120
+#&gt; 8         parasite    wing  9  0.150
+#&gt; 9         parasite    wing  9 -0.090
+#&gt; 10        parasite    wing 18  0.270</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='https://www.metafor-project.org'>metafor</a></span><span class='op'>)</span>
 
-<span class='co'>### meta-analysis of the (log) odds ratios using the Mantel-Haenszel method</span>
-<span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mh.html'>rma.mh</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"OR"</span>, ai<span class='op'>=</span><span class='va'>xt</span>, n1i<span class='op'>=</span><span class='va'>nt</span>, ci<span class='op'>=</span><span class='va'>xc</span>, n2i<span class='op'>=</span><span class='va'>nc</span>, data<span class='op'>=</span><span class='va'>dat</span>, digits<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; 
-#&gt; Fixed-Effects Model (k = 16)
-#&gt; 
-#&gt; I^2 (total heterogeneity / total variability):  55.61%
-#&gt; H^2 (total variability / sampling variability): 2.25
-#&gt; 
-#&gt; Test for Heterogeneity: 
-#&gt; Q(df = 15) = 33.79, p-val &lt; .01
-#&gt; 
-#&gt; Model Results (log scale):
-#&gt; 
-#&gt; estimate    se    zval  pval  ci.lb  ci.ub 
-#&gt;    -1.14  0.09  -12.74  &lt;.01  -1.31  -0.96 
-#&gt; 
-#&gt; Model Results (OR scale):
-#&gt; 
-#&gt; estimate  ci.lb  ci.ub 
-#&gt;     0.32   0.27   0.38 
-#&gt; 
-#&gt; Cochran-Mantel-Haenszel Test:    CMH = 169.58, df = 1,  p-val &lt; 0.01
-#&gt; Tarone's Test for Heterogeneity: X^2 =  37.24, df = 15, p-val &lt; 0.01
-#&gt; </div><div class='input'>
-<span class='co'>### calculate log odds ratios and corresponding sampling variances</span>
-<span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"OR"</span>, ai<span class='op'>=</span><span class='va'>xt</span>, n1i<span class='op'>=</span><span class='va'>nt</span>, ci<span class='op'>=</span><span class='va'>xc</span>, n2i<span class='op'>=</span><span class='va'>nc</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+<span class='co'>### calculate r-to-z transformed correlations and corresponding sampling variances</span>
+<span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"ZCOR"</span>, ri<span class='op'>=</span><span class='va'>r</span>, ni<span class='op'>=</span><span class='va'>n</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 
-<span class='co'>### meta-analysis using a random-effects model</span>
-<span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span>, method<span class='op'>=</span><span class='st'>"DL"</span><span class='op'>)</span>
+<span class='co'>### fit multilevel meta-analytic model</span>
+<span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, random <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span><span class='op'>(</span><span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study_id</span>, <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>obs</span><span class='op'>)</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>res</span>
 </div><div class='output co'>#&gt; 
-#&gt; Random-Effects Model (k = 16; tau^2 estimator: DL)
+#&gt; Multivariate Meta-Analysis Model (k = 186; method: REML)
 #&gt; 
-#&gt; tau^2 (estimated amount of total heterogeneity): 0.1784 (SE = 0.1362)
-#&gt; tau (square root of estimated tau^2 value):      0.4224
-#&gt; I^2 (total heterogeneity / total variability):   55.27%
-#&gt; H^2 (total variability / sampling variability):  2.24
+#&gt; Variance Components:
+#&gt; 
+#&gt;             estim    sqrt  nlvls  fixed    factor 
+#&gt; sigma^2.1  0.0154  0.1240     41     no  study_id 
+#&gt; sigma^2.2  0.0616  0.2482    178     no       obs 
 #&gt; 
 #&gt; Test for Heterogeneity:
-#&gt; Q(df = 15) = 33.5329, p-val = 0.0040
+#&gt; Q(df = 185) = 759.2939, p-val &lt; .0001
 #&gt; 
 #&gt; Model Results:
 #&gt; 
-#&gt; estimate      se     zval    pval    ci.lb    ci.ub 
-#&gt;  -1.2782  0.1572  -8.1295  &lt;.0001  -1.5864  -0.9700  *** 
+#&gt; estimate      se    zval    pval   ci.lb   ci.ub 
+#&gt;   0.1546  0.0328  4.7075  &lt;.0001  0.0902  0.2189  *** 
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-#&gt; </div><div class='input'><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/predict.rma.html'>predict</a></span><span class='op'>(</span><span class='va'>res</span>, transf<span class='op'>=</span><span class='va'>exp</span>, digits<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
-</div><div class='output co'>#&gt; 
-#&gt;  pred ci.lb ci.ub pi.lb pi.ub 
-#&gt;  0.28  0.20  0.38  0.12  0.67 
 #&gt; </div><div class='input'>
 <span class='co'># }</span>
 </div></pre>

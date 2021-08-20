@@ -39,7 +39,7 @@ dat.egger2001
    Yusuf, S., Teo, K., & Woods, K. (1993). Intravenous magnesium in acute myocardial infarction: An effective, safe, simple, and inexpensive treatment. \emph{Circulation}, \bold{87}(6), 2043--2046. \verb{https://doi.org/10.1161/01.cir.87.6.2043}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \seealso{
    \code{\link{dat.li2007}}

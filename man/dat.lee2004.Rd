@@ -22,7 +22,7 @@
    Lee, A., & Done, M. L. (2004). Stimulation of the wrist acupuncture point P6 for preventing postoperative nausea and vomiting. \emph{Cochrane Database of Systematic Reviews}, \bold{3}, CD003281. \verb{https://doi.org/10.1002/14651858.CD003281.pub2}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

@@ -33,7 +33,7 @@ dat.vanhowe1999
    O'Farrell, N., & Egger, M. (2000). Circumcision in men and the prevention of HIV infection: A 'meta-analysis' revisited. \emph{International Journal of STD & AIDS}, \bold{11}(3), 137--142. \verb{https://doi.org/10.1258/0956462001915480}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

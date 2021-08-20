@@ -30,7 +30,7 @@
    Hackshaw, A. K. (1998). Lung cancer and passive smoking. \emph{Statistical Methods in Medical Research}, \bold{7}(2), 119--136. \verb{https://doi.org/10.1177/096228029800700203}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

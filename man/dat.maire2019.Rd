@@ -34,7 +34,7 @@ dat.maire2019
    Hamed, K. H., & Rao, A. R. (1998). A modified Mann-Kendall trend test for autocorrelated data. \emph{Journal of Hydrology}, \bold{204}(1-4), 182--196. \verb{https://doi.org/10.1016/S0022-1694(97)00125-X}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

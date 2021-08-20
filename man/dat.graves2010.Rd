@@ -22,7 +22,7 @@ dat.graves2010
    Graves, P. M., Deeks, J. J., Demicheli, V., & Jefferson, T. (2010). Vaccines for preventing cholera: Killed whole cell or other subunit vaccines (injected). \emph{Cochrane Database of Systematic Reviews}, \bold{8}, CD000974. \verb{https://doi.org/10.1002/14651858.CD000974.pub2}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

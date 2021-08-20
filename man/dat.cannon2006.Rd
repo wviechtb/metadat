@@ -31,7 +31,7 @@
    Cannon, C. P., Steinberg, B. A., Murphy, S. A., Mega, J. L., & Braunwald, E. (2006). Meta-analysis of cardiovascular outcomes trials comparing intensive versus moderate statin therapy. \emph{Journal of the American College of Cardiology}, \bold{48}(3), 438--445. \verb{https://doi.org/10.1016/j.jacc.2006.04.070}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data

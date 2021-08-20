@@ -28,7 +28,7 @@ The data frame contains the following columns:
    Mor Barak, M. E., Travis, D. J., Pyun, H., & Xie, B. (2009). The impact of supervision on worker outcomes: A meta-analysis. \emph{Social Service Review}, \bold{83}(1), 3--32. \verb{https://doi.org/10.1086/599028}
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org} \url{https://www.metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}
 }
 \examples{
 ### copy data into 'dat' and examine data
