@@ -14,7 +14,7 @@ prep_dat(rebuild=FALSE, overwrite, pkgdir)
    The function is only for used for processing new datasets for inclusion in the package. It should be used as described on the \pkg{\link{metadat-package}} help page.
 }
 \author{
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}
 }
 \keyword{file}
 \keyword{internal}

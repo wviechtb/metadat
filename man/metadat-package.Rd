@@ -32,10 +32,10 @@
    If you think you have found an error in an existing dataset or a bug in the package in general, please go to \url{https://github.com/wviechtb/metadat/issues} and open up a new issue.
 }
 \author{
-   Thomas White \email{thomas.white@sydney.edu.au} \cr
-   Daniel Noble \email{daniel.noble@anu.edu.au} \cr
-   Alistair Senior \email{alistair.senior@sydney.edu.au} \cr
+   Thomas White, \email{thomas.white@sydney.edu.au} \cr
+   Daniel Noble, \email{daniel.noble@anu.edu.au} \cr
+   Alistair Senior, \email{alistair.senior@sydney.edu.au} \cr
    W. Kyle Hamilton, \email{whamilton@ucmerced.edu} \cr
-   Wolfgang Viechtbauer \email{wvb@metafor-project.org}
+   Wolfgang Viechtbauer, \email{wvb@metafor-project.org}
 }
 \keyword{package}

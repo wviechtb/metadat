@@ -62,7 +62,7 @@ reference:
     desc: >
       Datasets included in the package:
     contents:
-      - starts_with("dat")
+      - has_keyword("datasets")
   - title: "Functions"
     desc: >
       Support functions:

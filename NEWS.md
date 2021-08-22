@@ -1,3 +1,7 @@
+# metadat 1.1-0 (2021-08-22)
+
+- update to devel version 1.1-0
+
 # metadat 1.0-0 (2021-08-20)
 
 - first CRAN release

@@ -1,6 +1,6 @@
 Package: metadat
-Version: 1.0-0
-Date: 2021-08-20
+Version: 1.1-0
+Date: 2021-08-22
 Title: Meta-Analysis Datasets
 Authors@R: c(person(given = "Thomas", family="White", role="aut", email = "thomas.white@sydney.edu.au"), person(given = "Daniel", family="Noble", role="aut", email = "daniel.noble@anu.edu.au"), person(given = "Alistair", family="Senior", role="aut", email = "alistair.senior@sydney.edu.au"), person(given = "W. Kyle", family="Hamilton", role="aut", email = "whamilton@ucmerced.edu", comment = c(ORCID = "0000-0002-8642-7990")), person(given = "Wolfgang", family = "Viechtbauer", role = c("aut","cre"), email = "wvb@metafor-project.org", comment = c(ORCID = "0000-0003-3463-4063")))
 Depends: R (>= 4.0.0)
