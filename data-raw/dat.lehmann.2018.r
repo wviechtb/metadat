@@ -1,3 +1,3 @@
-dat.lehmann2018 <- read.csv("data-raw/dat.lehmann.2018.csv")
+dat.lehmann2018 <- read.csv("data-raw/dat.lehmann2018.csv")
 
-save(dat.lehmann2018, file="data/dat.lehmann.rda", ascii=FALSE)
+save(dat.lehmann2018, file="data/dat.lehmann2018.rda", ascii=FALSE)

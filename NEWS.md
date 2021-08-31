@@ -1,6 +1,6 @@
 # metadat 1.1-0 (2021-08-22)
 
-- update to devel version 1.1-0
+- added dat.lehmann2018
 
 # metadat 1.0-0 (2021-08-20)
 
