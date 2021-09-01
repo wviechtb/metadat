@@ -277,6 +277,45 @@
 <span class='co'>### draw forest plot</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/forest.html'>forest</a></span><span class='op'>(</span><span class='va'>res</span>, xlim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>7</span>,<span class='fl'>5</span><span class='op'>)</span>, alim<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>3</span>,<span class='fl'>1</span><span class='op'>)</span>, header<span class='op'>=</span><span class='st'>"Study/Source"</span><span class='op'>)</span>
 </div><div class='img'><img src='dat.normand1999-1.png' alt='' width='864' height='768' /></div><div class='input'>
+<span class='co'>### calculate (log transformed) ratios of means and corresponding sampling variances</span>
+<span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"ROM"</span>, m1i<span class='op'>=</span><span class='va'>m1i</span>, sd1i<span class='op'>=</span><span class='va'>sd1i</span>, n1i<span class='op'>=</span><span class='va'>n1i</span>, m2i<span class='op'>=</span><span class='va'>m2i</span>, sd2i<span class='op'>=</span><span class='va'>sd2i</span>, n2i<span class='op'>=</span><span class='va'>n2i</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+<span class='va'>dat</span>
+</div><div class='output co'>#&gt;   study             source n1i m1i sd1i n2i m2i sd2i      yi     vi 
+#&gt; 1     1          Edinburgh 155  55   47 156  75   64 -0.3102 0.0094 
+#&gt; 2     2     Orpington-Mild  31  27    7  32  29    4 -0.0715 0.0028 
+#&gt; 3     3 Orpington-Moderate  75  64   17  71 119   29 -0.6202 0.0018 
+#&gt; 4     4   Orpington-Severe  18  66   20  18 137   48 -0.7303 0.0119 
+#&gt; 5     5      Montreal-Home   8  14    8  13  18   11 -0.2513 0.0695 
+#&gt; 6     6  Montreal-Transfer  57  19    7  52  18    4  0.0541 0.0033 
+#&gt; 7     7          Newcastle  34  52   45  33  41   34  0.2377 0.0429 
+#&gt; 8     8               Umea 110  21   16 183  31   27 -0.3895 0.0094 
+#&gt; 9     9            Uppsala  60  30   27  52  23   20  0.2657 0.0280 </div><div class='input'>
+<span class='co'>### meta-analysis of the (log transformed) ratios of means using a random-effects model</span>
+<span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+<span class='va'>res</span>
+</div><div class='output co'>#&gt; 
+#&gt; Random-Effects Model (k = 9; tau^2 estimator: REML)
+#&gt; 
+#&gt; tau^2 (estimated amount of total heterogeneity): 0.1080 (SE = 0.0620)
+#&gt; tau (square root of estimated tau^2 value):      0.3287
+#&gt; I^2 (total heterogeneity / total variability):   94.35%
+#&gt; H^2 (total variability / sampling variability):  17.71
+#&gt; 
+#&gt; Test for Heterogeneity:
+#&gt; Q(df = 8) = 148.8186, p-val &lt; .0001
+#&gt; 
+#&gt; Model Results:
+#&gt; 
+#&gt; estimate      se     zval    pval    ci.lb   ci.ub 
+#&gt;  -0.2184  0.1178  -1.8541  0.0637  -0.4492  0.0125  . 
+#&gt; 
+#&gt; ---
+#&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#&gt; </div><div class='input'><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/predict.rma.html'>predict</a></span><span class='op'>(</span><span class='va'>res</span>, transf<span class='op'>=</span><span class='va'>exp</span>, digits<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; 
+#&gt;  pred ci.lb ci.ub pi.lb pi.ub 
+#&gt;  0.80  0.64  1.01  0.41  1.59 
+#&gt; </div><div class='input'>
 <span class='co'># }</span>
 </div></pre>
   </div>

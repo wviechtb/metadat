@@ -63,5 +63,5 @@ print(res, digits=3)
 \keyword{datasets}
 \concept{medicine}
 \concept{dentistry}
-\concept{mean differences}
+\concept{raw mean differences}
 \concept{multivariate models}

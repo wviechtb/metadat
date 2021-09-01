@@ -10,7 +10,7 @@
 \bold{ni}        \tab \code{numeric}   \tab sample size of the study arm \cr
 \bold{treatment} \tab \code{character} \tab treatment given \cr
 \bold{comment}   \tab \code{character} \tab whether figures given are based on raw values at outcome or on change from baseline \cr
-\bold{mi}        \tab \code{numeric}   \tab mean score \cr
+\bold{mi}        \tab \code{numeric}   \tab raw mean or mean change \cr
 \bold{sdi}       \tab \code{numeric}   \tab standard deviation
 }
 }
@@ -192,5 +192,5 @@ cbind(pscore=round(sort(apply(tab, 1, mean, na.rm=TRUE), decreasing=TRUE), 3))
 }
 \keyword{datasets}
 \concept{medicine}
-\concept{mean differences}
+\concept{raw mean differences}
 \concept{network meta-analysis}

@@ -23,7 +23,7 @@ datsearch(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown=FALSE)
 
    \itemize{
       \item In terms of \sQuote{fields/topics}, the following tags have been used at least once: alternative medicine, attraction, cardiology, climate change, covid-19, criminology, dentistry, ecology, education, epidemiology, evolution, medicine, obstetrics, oncology, primary care, psychiatry, psychology, social work, sociology.
-      \item In terms of \sQuote{outcome measures}, the following tags have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, mean differences, odds ratios, proportions, ratios of means, risk differences, risk ratios, (semi-)partial correlations, standardized mean change, standardized mean differences.
+      \item In terms of \sQuote{outcome measures}, the following tags have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, raw mean differences, odds ratios, proportions, ratios of means, risk differences, risk ratios, (semi-)partial correlations, standardized mean change, standardized mean differences.
       \item In terms of \sQuote{methods/concepts}, the following tags have been used at least once: cluster-robust inference, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation.
    }
 }
