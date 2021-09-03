@@ -9,55 +9,55 @@ dat.lehmann2018
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-{Short_Title}                 \tab    \code{character}    \tab  Shortened citation formatted Author name(s), year of publication - Experiment number. All cells in the column are unique for use as labels in the meta-analysis. \cr
-{Full_Citation}               \tab    \code{character}    \tab  Full citation in APA format. \cr
-{Short_Citation}              \tab    \code{character}    \tab  Shortened citation of different format, exactly as it would appear in an in-text citation. \cr
-{Year}                        \tab    \code{numeric}      \tab  Year study published (whether in journal or published online). \cr
-{Study}                       \tab    \code{character}    \tab  Experiment number. If only one experiment presented in a paper, then \sQuote{Exp 1}, otherwise numbered according to numbering within paper. \cr
-{Peer_Reviewed}               \tab    \code{character}    \tab  Whether the experiment was published in a peer-reviewed journal or not. \sQuote{Yes} = peer-reviewed journal, \sQuote{No} can mean in press, online publication, or other. Column for moderator analysis. \cr
-{Source_Type}                 \tab    \code{character}    \tab  Location where experiment is available, including journal articles, conference proceedings, online-only, and other options. More specific than whether peer-reviewed or not. \cr
-{Preregistered}               \tab    \code{character}    \tab  Whether experiment was pre-registered or not.  \cr
-{Moderator_Group}             \tab    \code{character}    \tab  In some studies, a moderator was intentionally investigated that was meant to reduce the red-romance effect. Data for studies where the red-romance effect is expected to be moderated are marked \sQuote{Yes} in this column. All others are blank. \cr
-{Gender}                      \tab    \code{character}    \tab  Gender of rater (male or female). In all cases, gender of stimuli will be opposite. \cr
-{Color_Contrast}              \tab    \code{character}    \tab  The color used as the contrast against red. In some cases, not every contrast color was listed. We chose to examine only contrasts that were present in the original studies, when possible. This column contains only the contrasts we examined in this meta-analysis.  \cr
-{Color_Form}                  \tab    \code{character}    \tab  Location of color in photo. Background = background or border color manipulated; Face = facial redness manipulated; Shirt, Dress, Item = color of specified object manipulated; Dot = a dot of color on shirt manipulated. \cr
-{Photo_Type}                  \tab    \code{character}    \tab  Amount of body visible in photo. Head Shot = head only; Bust = head, shoulders, sometimes torso; Full Body = entire body visible. \cr
-{DV_Type}                     \tab    \code{character}    \tab  Scale used for DV. \sQuote{Perceived attractiveness} = the perceived attractiveness scale used in the original studies; alternate scales are differentiated. \cr
-{DV_Items}                    \tab    \code{numeric}      \tab  Number of items in DV scale. \cr
-{DV_Scale}                    \tab    \code{character}    \tab  Full length of DV scale, if clear. \cr
-{DV_ScaleBottom}              \tab    \code{numeric}      \tab  Lower anchor of DV scale. \cr
-{DV_ScaleTop}                 \tab    \code{numeric}      \tab  Upper anchor of DV scale. \cr
-{Location}                    \tab    \code{character}    \tab  Country where study took place, if clear. \sQuote{Worldwide} in some cases of online participation without IP filtering of participants. \cr
-{Continent}                   \tab    \code{character}    \tab  Continent where study took place, for the sake of creating larger categories for analysis. \cr
-{Participants}                \tab    \code{character}    \tab  Basic notes about participants. Students = high school, undergraduate, or graduate students; online = participants were gathered online; adult = no other common identifying factor given. Put into fewer categories for ease of analysis. \cr
-{Participant_Notes}           \tab    \code{character}    \tab  A finer grained description of participant characteristics. \cr
-{Design}                      \tab    \code{character}    \tab  Whether study was a between- or within-subjects design. \cr
-{Eth_Majority}                \tab    \code{character}    \tab  Basic notes about participant ethnicity for ease of analysis. This represents the ethnic majority within the sample. \cr
-{Eth_Majority_Detail}         \tab    \code{character}    \tab  A finer grained description of participant characteristics, including in some cases participant counts when the ethnic majority was close to another category. \cr
-{Eth_Stim}                    \tab    \code{character}    \tab  Ethnicity of the people pictured in the stimulus materials. \cr
-{Eth_Match}                   \tab    \code{character}    \tab  Whether the ethnic majority of the participant pool matched the ethnicity of stimulus photos. \cr
-{Red_Age}                     \tab    \code{numeric}      \tab  Mean age of participants in red group. If not given for specific group, then mean age overall. \cr
-{Control_Age}                 \tab    \code{numeric}      \tab  Mean age of participants in control group. If not given for specific group, then mean age overall. \cr
-{Color_Red}                   \tab    \code{character}    \tab  Specific values of red color, if given. \sQuote{No data} if not given or unclear. \cr
-{Color_Control}               \tab    \code{character}    \tab  Specific values of control color, if given. \sQuote{No data} if not given or unclear. \cr
-{Red_Original}                \tab    \code{character}    \tab  Whether the red color used in the study is within 5 units of the LCh values for red used in the original study. \cr
-{Color_Match}                 \tab    \code{character}    \tab  Whether the control color used in the study is within 5 units of the red color on the L and C parameters. In cases where the control color used was white, it was not possible for the L and C parameters to match. \cr
-{Presentation_Control}        \tab    \code{character}    \tab  Whether the color of the stimulus viewed by each participant was consistent, as in participants viewing everything on paper or the same computer, versus uncontrolled presentation of the stimulus, as in viewing stimulus on different computers. \cr
-{Stimuli_Presentation}        \tab    \code{character}    \tab  Method for presenting stimuli. \sQuote{Paper} = stimuli printed on paper, shown in-person; \sQuote{Screen} = stimuli shown on-screen, not carefully controlled; \sQuote{Screen Control} = stimuli shown on-screen, but screen carefully color-matched. \cr
-{Red_N}                       \tab    \code{numeric}      \tab  Number of participants in red group. \cr
-{Red_M}                       \tab    \code{numeric}      \tab  Mean rating of DV in red group. \cr
-{Red_SD}                      \tab    \code{numeric}      \tab  Standard deviation of DV in red group. \cr
-{Control_N}                   \tab    \code{numeric}      \tab  Number of participants in control group. \cr
-{Control_M}                   \tab    \code{numeric}      \tab  Mean rating of DV in control group. \cr
-{Control_SD}                  \tab    \code{numeric}      \tab  Standard deviation of DV in control group. \cr
-{SD_diff}                     \tab    \code{numeric}      \tab  Calculated for within-subjects studies, standard deviation of difference scores. \cr
-{RM_r}                        \tab    \code{numeric}      \tab  Calculated for within-subjects studies, correlation between participant ratings of red and control attractiveness. \cr
-{Control_Attractiveness}      \tab    \code{numeric}      \tab  Attractiveness of stimuli in control condition, calculated as \code{(Control_M - DV_ScaleBottom) / DV_ScaleTop}, in order to compare attractiveness ratings across different scales. \cr
-{Notes}                       \tab    \code{character}    \tab  Any additional notes on the study. \cr
-{Total.SampleSize}            \tab    \code{numeric}      \tab  Total unique participants in the study. \cr
-{pooled}                      \tab    \code{numeric}      \tab  Pooled standard deviation for within-subjects studies. \cr
-{yi}                          \tab    \code{numeric}      \tab  Standardized mean difference. \cr
-{vi}                          \tab    \code{numeric}      \tab  Corresponding sampling variance. \cr
+\bold{Short_Title}            \tab \code{character} \tab Shortened citation formatted Author name(s), year of publication - Experiment number. All cells in the column are unique for use as labels in the meta-analysis. \cr
+\bold{Full_Citation}          \tab \code{character} \tab Full citation in APA format. \cr
+\bold{Short_Citation}         \tab \code{character} \tab Shortened citation of different format, exactly as it would appear in an in-text citation. \cr
+\bold{Year}                   \tab \code{numeric}   \tab Year study published (whether in journal or published online). \cr
+\bold{Study}                  \tab \code{character} \tab Experiment number. If only one experiment presented in a paper, then \sQuote{Exp 1}, otherwise numbered according to numbering within paper. \cr
+\bold{Peer_Reviewed}          \tab \code{character} \tab Whether the experiment was published in a peer-reviewed journal or not. \sQuote{Yes} = peer-reviewed journal, \sQuote{No} can mean in press, online publication, or other. Column for moderator analysis. \cr
+\bold{Source_Type}            \tab \code{character} \tab Location where experiment is available, including journal articles, conference proceedings, online-only, and other options. More specific than whether peer-reviewed or not. \cr
+\bold{Preregistered}          \tab \code{character} \tab Whether experiment was pre-registered or not.  \cr
+\bold{Moderator_Group}        \tab \code{character} \tab In some studies, a moderator was intentionally investigated that was meant to reduce the red-romance effect. Data for studies where the red-romance effect is expected to be moderated are marked \sQuote{Yes} in this column. All others are blank. \cr
+\bold{Gender}                 \tab \code{character} \tab Gender of rater (male or female). In all cases, gender of stimuli will be opposite. \cr
+\bold{Color_Contrast}         \tab \code{character} \tab The color used as the contrast against red. In some cases, not every contrast color was listed. We chose to examine only contrasts that were present in the original studies, when possible. This column contains only the contrasts we examined in this meta-analysis.  \cr
+\bold{Color_Form}             \tab \code{character} \tab Location of color in photo. Background = background or border color manipulated; Face = facial redness manipulated; Shirt, Dress, Item = color of specified object manipulated; Dot = a dot of color on shirt manipulated. \cr
+\bold{Photo_Type}             \tab \code{character} \tab Amount of body visible in photo. Head Shot = head only; Bust = head, shoulders, sometimes torso; Full Body = entire body visible. \cr
+\bold{DV_Type}                \tab \code{character} \tab Scale used for DV. \sQuote{Perceived attractiveness} = the perceived attractiveness scale used in the original studies; alternate scales are differentiated. \cr
+\bold{DV_Items}               \tab \code{numeric}   \tab Number of items in DV scale. \cr
+\bold{DV_Scale}               \tab \code{character} \tab Full length of DV scale, if clear. \cr
+\bold{DV_ScaleBottom}         \tab \code{numeric}   \tab Lower anchor of DV scale. \cr
+\bold{DV_ScaleTop}            \tab \code{numeric}   \tab Upper anchor of DV scale. \cr
+\bold{Location}               \tab \code{character} \tab Country where study took place, if clear. \sQuote{Worldwide} in some cases of online participation without IP filtering of participants. \cr
+\bold{Continent}              \tab \code{character} \tab Continent where study took place, for the sake of creating larger categories for analysis. \cr
+\bold{Participants}           \tab \code{character} \tab Basic notes about participants. Students = high school, undergraduate, or graduate students; online = participants were gathered online; adult = no other common identifying factor given. Put into fewer categories for ease of analysis. \cr
+\bold{Participant_Notes}      \tab \code{character} \tab A finer grained description of participant characteristics. \cr
+\bold{Design}                 \tab \code{character} \tab Whether study was a between- or within-subjects design. \cr
+\bold{Eth_Majority}           \tab \code{character} \tab Basic notes about participant ethnicity for ease of analysis. This represents the ethnic majority within the sample. \cr
+\bold{Eth_Majority_Detail}    \tab \code{character} \tab A finer grained description of participant characteristics, including in some cases participant counts when the ethnic majority was close to another category. \cr
+\bold{Eth_Stim}               \tab \code{character} \tab Ethnicity of the people pictured in the stimulus materials. \cr
+\bold{Eth_Match}              \tab \code{character} \tab Whether the ethnic majority of the participant pool matched the ethnicity of stimulus photos. \cr
+\bold{Red_Age}                \tab \code{numeric}   \tab Mean age of participants in red group. If not given for specific group, then mean age overall. \cr
+\bold{Control_Age}            \tab \code{numeric}   \tab Mean age of participants in control group. If not given for specific group, then mean age overall. \cr
+\bold{Color_Red}              \tab \code{character} \tab Specific values of red color, if given. \sQuote{No data} if not given or unclear. \cr
+\bold{Color_Control}          \tab \code{character} \tab Specific values of control color, if given. \sQuote{No data} if not given or unclear. \cr
+\bold{Red_Original}           \tab \code{character} \tab Whether the red color used in the study is within 5 units of the LCh values for red used in the original study. \cr
+\bold{Color_Match}            \tab \code{character} \tab Whether the control color used in the study is within 5 units of the red color on the L and C parameters. In cases where the control color used was white, it was not possible for the L and C parameters to match. \cr
+\bold{Presentation_Control}   \tab \code{character} \tab Whether the color of the stimulus viewed by each participant was consistent, as in participants viewing everything on paper or the same computer, versus uncontrolled presentation of the stimulus, as in viewing stimulus on different computers. \cr
+\bold{Stimuli_Presentation}   \tab \code{character} \tab Method for presenting stimuli. \sQuote{Paper} = stimuli printed on paper, shown in-person; \sQuote{Screen} = stimuli shown on-screen, not carefully controlled; \sQuote{Screen Control} = stimuli shown on-screen, but screen carefully color-matched. \cr
+\bold{Red_N}                  \tab \code{numeric}   \tab Number of participants in red group. \cr
+\bold{Red_M}                  \tab \code{numeric}   \tab Mean rating of DV in red group. \cr
+\bold{Red_SD}                 \tab \code{numeric}   \tab Standard deviation of DV in red group. \cr
+\bold{Control_N}              \tab \code{numeric}   \tab Number of participants in control group. \cr
+\bold{Control_M}              \tab \code{numeric}   \tab Mean rating of DV in control group. \cr
+\bold{Control_SD}             \tab \code{numeric}   \tab Standard deviation of DV in control group. \cr
+\bold{SD_diff}                \tab \code{numeric}   \tab Calculated for within-subjects studies, standard deviation of difference scores. \cr
+\bold{RM_r}                   \tab \code{numeric}   \tab Calculated for within-subjects studies, correlation between participant ratings of red and control attractiveness. \cr
+\bold{Control_Attractiveness} \tab \code{numeric}   \tab Attractiveness of stimuli in control condition, calculated as \code{(Control_M - DV_ScaleBottom) / DV_ScaleTop}, in order to compare attractiveness ratings across different scales. \cr
+\bold{Notes}                  \tab \code{character} \tab Any additional notes on the study. \cr
+\bold{Total.SampleSize}       \tab \code{numeric}   \tab Total unique participants in the study. \cr
+\bold{pooled}                 \tab \code{numeric}   \tab Pooled standard deviation for within-subjects studies. \cr
+\bold{yi}                     \tab \code{numeric}   \tab Standardized mean difference. \cr
+\bold{vi}                     \tab \code{numeric}   \tab Corresponding sampling variance. \cr
 }
 }
 \details{

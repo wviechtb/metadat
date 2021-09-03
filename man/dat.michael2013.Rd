@@ -9,19 +9,19 @@ dat.michael2013
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-{Study}             \tab \code{character} \tab name of the study: Citation - Experiment - Subgroup \cr
-{No_brain_n}        \tab \code{numeric}   \tab sample size for no-brain-image condition \cr
-{No_brain_m}        \tab \code{numeric}   \tab mean agreement rating for no-brain-image condition \cr
-{No_brain_s}        \tab \code{numeric}   \tab standard deviation for no-brain-image condition \cr
-{Brain_n}           \tab \code{numeric}   \tab sample size for brain-image condition \cr
-{Brain_m}           \tab \code{numeric}   \tab mean agreement rating for brain-image condition \cr
-{Brain_s}           \tab \code{numeric}   \tab standard deviation for brain-image condition \cr
-{Included_Critique} \tab \code{character} \tab \sQuote{Critique} if article included critical commentary on conclusions, otherwise \sQuote{No_critique} \cr
-{Medium}            \tab \code{character} \tab \sQuote{Paper} if conducted in person; \sQuote{Online} if conducted online \cr
-{Compensation}      \tab \code{character} \tab notes on compensation provided to participants \cr
-{Participant_Pool}  \tab \code{character} \tab notes on where participants were recruited \cr
-{yi}                \tab \code{numeric}   \tab raw mean difference, calculated as \code{Brain_m - No_brain_m} \cr
-{vi}                \tab \code{numeric}   \tab corresponding sampling variance \cr
+\bold{Study}             \tab \code{character} \tab name of the study: Citation - Experiment - Subgroup \cr
+\bold{No_brain_n}        \tab \code{numeric}   \tab sample size for no-brain-image condition \cr
+\bold{No_brain_m}        \tab \code{numeric}   \tab mean agreement rating for no-brain-image condition \cr
+\bold{No_brain_s}        \tab \code{numeric}   \tab standard deviation for no-brain-image condition \cr
+\bold{Brain_n}           \tab \code{numeric}   \tab sample size for brain-image condition \cr
+\bold{Brain_m}           \tab \code{numeric}   \tab mean agreement rating for brain-image condition \cr
+\bold{Brain_s}           \tab \code{numeric}   \tab standard deviation for brain-image condition \cr
+\bold{Included_Critique} \tab \code{character} \tab \sQuote{Critique} if article included critical commentary on conclusions, otherwise \sQuote{No_critique} \cr
+\bold{Medium}            \tab \code{character} \tab \sQuote{Paper} if conducted in person; \sQuote{Online} if conducted online \cr
+\bold{Compensation}      \tab \code{character} \tab notes on compensation provided to participants \cr
+\bold{Participant_Pool}  \tab \code{character} \tab notes on where participants were recruited \cr
+\bold{yi}                \tab \code{numeric}   \tab raw mean difference, calculated as \code{Brain_m - No_brain_m} \cr
+\bold{vi}                \tab \code{numeric}   \tab corresponding sampling variance \cr
 }
 }
 \details{
