@@ -1,6 +1,6 @@
 # metadat 1.1-0 (2021-08-22)
 
-- added dat.lehmann2018
+- added `dat.lehmann2018` and `dat.michael2013`
 - changed concept term 'mean differences' to 'raw mean differences' (to better distinguish it from the concept 'standardized mean differences')
 
 # metadat 1.0-0 (2021-08-20)
