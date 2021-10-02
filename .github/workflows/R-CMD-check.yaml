@@ -35,6 +35,7 @@ jobs:
         run: |
           install.packages(c("remotes", "rcmdcheck"))
           remotes::install_deps(dependencies = TRUE)
+          remotes::install_github("wviechtb/metafor")
         shell: Rscript {0}
       - name: Check
         run: rcmdcheck::rcmdcheck(args = c("--no-manual", "--as-cran", "--run-dontrun"), error_on = "warning")
