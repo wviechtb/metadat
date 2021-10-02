@@ -1,8 +1,8 @@
 \name{dat.kearon1998}
 \docType{data}
 \alias{dat.kearon1998}
-\title{Studies on the Accuracy of Venous Ultrasonography for the Diagonosis of Deep Venous Thrombosis}
-\description{Results from diagnostic accuracy studies examining the accuracy of venous ultrasonography for the diagonosis of deep venous thrombosis.}
+\title{Studies on the Accuracy of Venous Ultrasonography for the Diagnosis of Deep Venous Thrombosis}
+\description{Results from diagnostic accuracy studies examining the accuracy of venous ultrasonography for the diagnosis of deep venous thrombosis.}
 \usage{
 dat.kearon1998
 }

@@ -103,7 +103,7 @@ dat
 ### calculate the variance-covariance matrix of the log odds ratios for multitreatment studies
 ### see Gleser & Olkin (2009), equation (19.11), for the covariance equation
 calc.v <- function(x) {
-   v <- matrix(1/(x$xi.2[1]+1/2) + 1/(x$ni.2[1] - x$xi.2[1] + 1/2), nrow=nrow(x), ncol=nrow(x))
+   v <- matrix(1/(x$xi.2[1] + 1/2) + 1/(x$ni.2[1] - x$xi.2[1] + 1/2), nrow=nrow(x), ncol=nrow(x))
    diag(v) <- x$vi
    v
 }
