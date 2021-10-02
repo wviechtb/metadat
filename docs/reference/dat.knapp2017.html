@@ -179,12 +179,15 @@
 <tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr>
 <tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr>
 <tr><td><b>study</b></td><td><code>numeric</code></td><td>study id number</td></tr>
+<tr><td><b>task</b></td><td><code>character</code></td><td>type of task</td></tr>
+<tr><td><b>difficulty</b></td><td><code>numeric</code></td><td>task difficulty</td></tr>
+<tr><td><b>group1</b></td><td><code>character</code></td><td>identifier for patient group within studies</td></tr>
+<tr><td><b>group2</b></td><td><code>character</code></td><td>identifier for control group within studies</td></tr>
+<tr><td><b>comp</b></td><td><code>numeric</code></td><td>identifier for comparisons within studies</td></tr>
 <tr><td><b>yi</b></td><td><code>numeric</code></td><td>standardized mean difference for planning performance</td></tr>
 <tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr>
-<tr><td><b>difficulty</b></td><td><code>numeric</code></td><td>task difficulty</td></tr>
 <tr><td><b>n_sz</b></td><td><code>numeric</code></td><td>number of schizophrenic patients</td></tr>
 <tr><td><b>n_hc</b></td><td><code>numeric</code></td><td>number of healthy controls</td></tr>
-<tr><td><b>comp</b></td><td><code>numeric</code></td><td>id for comparisons within studies</td></tr>
 <tr><td><b>yi</b></td><td><code>numeric</code></td><td>standardized mean difference for IQ</td></tr>
 <tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr>
 </table>
@@ -193,10 +196,12 @@
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>The studies included in this dataset examined differences between schizophrenia patients and healthy controls with respect to their performance on the tower of London test (<a href='https://en.wikipedia.org/wiki/Tower_of_London_test'>https://en.wikipedia.org/wiki/Tower_of_London_test</a>) or a similar cognitive tasks measuring planning ability. The outcome measure for this meta-analysis was the standardized mean difference (with positive values indicating better performance in the healthy controls compared to the schizophrenia patients).</p>
-<p>The dataset has a more complex structure for two reasons:</p><ol>
-<li><p>Studies 2, 3, 9, and 20 included more than schizophrenia patient group and the standardized mean differences were computed by comparing these groups against a single healthy control group.</p></li>
+<p>The dataset has a more complex structure for several reasons:</p><ol>
+<li><p>Studies 2, 3, 9, and 20 included more than one schizophrenia patient group and the standardized mean differences were computed by comparing these groups against a single healthy control group.</p></li>
 <li><p>Studies 6, 12, 14, 15, 18, 19, 22, and 26 had the patients and controls complete different tasks of varying complexity (essentially the average number of moves required to complete a task).</p></li>
-</ol><p>Both of these issues lead to correlated sampling errors, which should be taken into consideration in the analysis.</p>
+<li><p>Study 24 provides two standardized mean differences, one for men and the other for women.</p></li>
+<li><p>Study 29 provides three standardized mean differences, corresponding to the three different COMT Val158Met genotypes (val/val, val/met, and met/met).</p></li>
+</ol><p>All 4 issues described above lead to a multilevel structure in the dataset, with multiple standardized mean differences nested within some of the studies. Issues 1. and 2. also lead to correlated sampling errors.</p>
     <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
     <p>Knapp, F., Viechtbauer, W., Leonhart, R., Nitschke, K., &amp; Kaller, C. P. (2017). Planning performance in schizophrenia patients: A meta-analysis of the influence of task difficulty and clinical and sociodemographic variables. <em>Psychological Medicine</em>, <b>47</b>(11), 2002--2016. <a href='https://doi.org/10.1017/S0033291717000459'>https://doi.org/10.1017/S0033291717000459</a></p>
@@ -208,146 +213,146 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.knapp2017</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;                 authors year study    yi    vi difficulty n_sz n_hc comp yi_iq
-#&gt; 1        Badcock et al. 2005     1  0.62 0.075       3.83   24   33    1  0.72
-#&gt; 2           Braw et al. 2008     2  0.46 0.047       3.83   44   44    1    NA
-#&gt; 3           Braw et al. 2008     2  0.73 0.052       3.83   38   44    2    NA
-#&gt; 4           Braw et al. 2012     3  1.18 0.062       3.83   39   37    1    NA
-#&gt; 5           Braw et al. 2012     3  1.09 0.073       3.83   27   37    2    NA
-#&gt; 6           Braw et al. 2012     3  0.91 0.102       3.83   15   37    3    NA
-#&gt; 7           Braw et al. 2012     3  0.91 0.084       3.83   20   37    4    NA
-#&gt; 8        Bustini et al. 1999     4  0.57 0.074         NA   28   28    1    NA
-#&gt; 9        Dichter et al. 2006     5  0.40 0.180         NA   13   10    1    NA
-#&gt; 10       Elliott et al. 1998     6  0.43 0.170       2.00   12   12    1  0.12
-#&gt; 11       Elliott et al. 1998     6  1.37 0.206       3.00   12   12    2  0.12
-#&gt; 12       Elliott et al. 1998     6  0.23 0.168       4.00   12   12    3  0.12
-#&gt; 13       Elliott et al. 1998     6  0.97 0.186       5.00   12   12    4  0.12
-#&gt; 14       Elliott et al. 1998     6  0.56 0.173       2.00   12   12    5  0.12
-#&gt; 15       Elliott et al. 1998     6  0.79 0.180       3.00   12   12    6  0.12
-#&gt; 16       Elliott et al. 1998     6  1.19 0.196       4.00   12   12    7  0.12
-#&gt; 17       Elliott et al. 1998     6  0.92 0.184       5.00   12   12    8  0.12
-#&gt; 18      Feldmann et al. 2006     7  0.20 0.096       3.50   22   20    1  0.62
-#&gt; 19      Goldberg et al. 1990     8  1.42 0.180         NA   13   15    1    NA
-#&gt; 20     Greenwood et al. 2011     9  0.35 0.074       4.00   27   28    1  1.21
-#&gt; 21     Greenwood et al. 2011     9  0.88 0.078       4.00   28   28    2  1.26
-#&gt; 22         Hilti et al. 2010    10  1.08 0.079       3.83   26   33    1  0.76
-#&gt; 23         Huddy et al. 2007    11  0.94 0.111       3.83   20   20    1  0.42
-#&gt; 24         Joyce et al. 2002    12  0.44 0.020       2.00  135   81    1  0.49
-#&gt; 25         Joyce et al. 2002    12  0.63 0.021       3.00  135   81    2  0.49
-#&gt; 26         Joyce et al. 2002    12  0.38 0.020       4.00  135   81    3  0.49
-#&gt; 27         Joyce et al. 2002    12  0.93 0.022       5.00  135   81    4  0.49
-#&gt; 28    Krabbendam et al. 1999    13  0.33 0.102         NA   24   17    1    NA
-#&gt; 29       Langdon et al. 2001    14  0.00 0.073       2.00   32   24    1    NA
-#&gt; 30       Langdon et al. 2001    14 -0.06 0.073       3.00   32   24    2    NA
-#&gt; 31       Langdon et al. 2001    14  0.73 0.078       4.00   32   24    3    NA
-#&gt; 32       Langdon et al. 2001    14  0.48 0.075       5.00   32   24    4    NA
-#&gt; 33       Langdon et al. 2002    15  0.43 0.092       2.00   25   20    1    NA
-#&gt; 34       Langdon et al. 2002    15  0.72 0.096       3.00   25   20    2    NA
-#&gt; 35       Langdon et al. 2002    15  0.80 0.097       4.00   25   20    3    NA
-#&gt; 36       Langdon et al. 2002    15  1.30 0.109       5.00   25   20    4    NA
-#&gt; 37    Marczewski et al. 2001    16  1.84 0.190       4.67   15   15    1    NA
-#&gt; 38        Morice et al. 1996    17  2.58 0.216       3.50   17   17    1  0.58
-#&gt; 39        Morris et al. 1995    18  0.25 0.071       3.00   30   27    1  0.18
-#&gt; 40        Morris et al. 1995    18  0.86 0.077       4.00   30   27    2  0.18
-#&gt; 41        Morris et al. 1995    18  0.68 0.074       5.00   30   27    3  0.18
-#&gt; 42      Pantelis et al. 1997    19  0.21 0.060       2.00   36   31    1  0.48
-#&gt; 43      Pantelis et al. 1997    19  0.65 0.063       3.00   36   31    2  0.48
-#&gt; 44      Pantelis et al. 1997    19  0.30 0.061       4.00   36   31    3  0.48
-#&gt; 45      Pantelis et al. 1997    19  0.45 0.062       5.00   36   31    4  0.48
-#&gt; 46        Tenjin et al. 2012    20  1.03 0.054         NA   20  340    1    NA
-#&gt; 47        Tenjin et al. 2012    20  0.92 0.104         NA   10  340    2    NA
-#&gt; 48         Tyson et al. 2004    21  1.12 0.108       3.83   28   17    1    NA
-#&gt; 49           Zhu et al. 2010    22  0.52 0.052       2.00   40   40    1    NA
-#&gt; 50           Zhu et al. 2010    22  0.50 0.052       3.00   40   40    2    NA
-#&gt; 51           Zhu et al. 2010    22  0.49 0.051       4.00   40   40    3    NA
-#&gt; 52             Andersen 2013    23  0.30 0.042       3.83   48   48    1    NA
-#&gt; 53 Ayesa-Arriola et al. 2013    24  0.36 0.022       5.50   86   97    1  0.47
-#&gt; 54 Ayesa-Arriola et al. 2013    24  0.41 0.030       5.50   75   62    2  0.10
-#&gt; 55            Fagerlund 2004    25  0.79 0.086       3.83   25   25    1    NA
-#&gt; 56        Kontis et al. 2013    26  0.23 0.031       2.00   77   55    1    NA
-#&gt; 57        Kontis et al. 2013    26  0.58 0.032       3.00   77   55    2    NA
-#&gt; 58        Kontis et al. 2013    26  0.57 0.032       4.00   77   55    3    NA
-#&gt; 59        Kontis et al. 2013    26  0.79 0.034       5.00   77   55    4    NA
-#&gt; 60      Okruszek et al. 2013    27  0.70 0.071       5.50   30   30    1    NA
-#&gt; 61        Saleem et al. 2013    28  1.16 0.136       3.83   20   15    1  0.23
-#&gt; 62    Tsuchimine et al. 2013    29  1.29 0.039         NA   56   68    1  0.37
-#&gt; 63    Tsuchimine et al. 2013    29  0.63 0.039         NA   47   62    2  0.43
-#&gt; 64    Tsuchimine et al. 2013    29  0.31 0.121         NA   15   19    3  1.00
-#&gt; 65       Asevedo et al. 2013    30  0.11 0.070       3.83   30   27    1    NA
-#&gt; 66          Shum et al. 2004    31  0.87 0.036       5.60   60   60    1    NA
-#&gt;    vi_iq
-#&gt; 1  0.076
-#&gt; 2     NA
-#&gt; 3     NA
-#&gt; 4     NA
-#&gt; 5     NA
-#&gt; 6     NA
-#&gt; 7     NA
-#&gt; 8     NA
-#&gt; 9     NA
-#&gt; 10 0.167
-#&gt; 11 0.167
-#&gt; 12 0.167
-#&gt; 13 0.167
-#&gt; 14 0.167
-#&gt; 15 0.167
-#&gt; 16 0.167
-#&gt; 17 0.167
-#&gt; 18 0.100
-#&gt; 19    NA
-#&gt; 20 0.086
-#&gt; 21 0.086
-#&gt; 22 0.074
-#&gt; 23 0.102
-#&gt; 24 0.020
-#&gt; 25 0.020
-#&gt; 26 0.020
-#&gt; 27 0.020
-#&gt; 28    NA
-#&gt; 29    NA
-#&gt; 30    NA
-#&gt; 31    NA
-#&gt; 32    NA
-#&gt; 33    NA
-#&gt; 34    NA
-#&gt; 35    NA
-#&gt; 36    NA
-#&gt; 37    NA
-#&gt; 38 0.123
-#&gt; 39 0.071
-#&gt; 40 0.071
-#&gt; 41 0.071
-#&gt; 42 0.062
-#&gt; 43 0.062
-#&gt; 44 0.062
-#&gt; 45 0.062
-#&gt; 46    NA
-#&gt; 47    NA
-#&gt; 48    NA
-#&gt; 49    NA
-#&gt; 50    NA
-#&gt; 51    NA
-#&gt; 52    NA
-#&gt; 53 0.023
-#&gt; 54 0.030
-#&gt; 55    NA
-#&gt; 56    NA
-#&gt; 57    NA
-#&gt; 58    NA
-#&gt; 59    NA
-#&gt; 60    NA
-#&gt; 61 0.117
-#&gt; 62 0.033
-#&gt; 63 0.038
-#&gt; 64 0.134
-#&gt; 65    NA
-#&gt; 66    NA</div><div class='input'>
+</div><div class='output co'>#&gt;                 authors year study            task difficulty group1 group2
+#&gt; 1        Badcock et al. 2005     1    SOC (CANTAB)       3.83     SZ     HC
+#&gt; 2           Braw et al. 2008     2    SOC (CANTAB)       3.83    SZ1     HC
+#&gt; 3           Braw et al. 2008     2    SOC (CANTAB)       3.83    SZ2     HC
+#&gt; 4           Braw et al. 2012     3    SOC (CANTAB)       3.83    SZ1     HC
+#&gt; 5           Braw et al. 2012     3    SOC (CANTAB)       3.83    SZ2     HC
+#&gt; 6           Braw et al. 2012     3    SOC (CANTAB)       3.83    SZ3     HC
+#&gt; 7           Braw et al. 2012     3    SOC (CANTAB)       3.83    SZ4     HC
+#&gt; 8        Bustini et al. 1999     4             TOH         NA     SZ     HC
+#&gt; 9        Dichter et al. 2006     5             TOL         NA     SZ     HC
+#&gt; 10       Elliott et al. 1998     6    SOC (CANTAB)       2.00     SZ     HC
+#&gt; 11       Elliott et al. 1998     6    SOC (CANTAB)       3.00     SZ     HC
+#&gt; 12       Elliott et al. 1998     6    SOC (CANTAB)       4.00     SZ     HC
+#&gt; 13       Elliott et al. 1998     6    SOC (CANTAB)       5.00     SZ     HC
+#&gt; 14       Elliott et al. 1998     6 SOC (one-touch)       2.00     SZ     HC
+#&gt; 15       Elliott et al. 1998     6 SOC (one-touch)       3.00     SZ     HC
+#&gt; 16       Elliott et al. 1998     6 SOC (one-touch)       4.00     SZ     HC
+#&gt; 17       Elliott et al. 1998     6 SOC (one-touch)       5.00     SZ     HC
+#&gt; 18      Feldmann et al. 2006     7             SOC       3.50     SZ     HC
+#&gt; 19      Goldberg et al. 1990     8             TOH         NA     SZ     HC
+#&gt; 20     Greenwood et al. 2011     9             TOL       4.00    SZ1     HC
+#&gt; 21     Greenwood et al. 2011     9             TOL       4.00    SZ2     HC
+#&gt; 22         Hilti et al. 2010    10    SOC (CANTAB)       3.83     SZ     HC
+#&gt; 23         Huddy et al. 2007    11    SOC (CANTAB)       3.83     SZ     HC
+#&gt; 24         Joyce et al. 2002    12    SOC (CANTAB)       2.00     SZ     HC
+#&gt; 25         Joyce et al. 2002    12    SOC (CANTAB)       3.00     SZ     HC
+#&gt; 26         Joyce et al. 2002    12    SOC (CANTAB)       4.00     SZ     HC
+#&gt; 27         Joyce et al. 2002    12    SOC (CANTAB)       5.00     SZ     HC
+#&gt; 28    Krabbendam et al. 1999    13             TOL         NA     SZ     HC
+#&gt; 29       Langdon et al. 2001    14             TOL       2.00     SZ     HC
+#&gt; 30       Langdon et al. 2001    14             TOL       3.00     SZ     HC
+#&gt; 31       Langdon et al. 2001    14             TOL       4.00     SZ     HC
+#&gt; 32       Langdon et al. 2001    14             TOL       5.00     SZ     HC
+#&gt; 33       Langdon et al. 2002    15             TOL       2.00     SZ     HC
+#&gt; 34       Langdon et al. 2002    15             TOL       3.00     SZ     HC
+#&gt; 35       Langdon et al. 2002    15             TOL       4.00     SZ     HC
+#&gt; 36       Langdon et al. 2002    15             TOL       5.00     SZ     HC
+#&gt; 37    Marczewski et al. 2001    16             TOL       4.67     SZ     HC
+#&gt; 38        Morice et al. 1996    17             TOL       3.50     SZ     HC
+#&gt; 39        Morris et al. 1995    18             TOL       3.00     SZ     HC
+#&gt; 40        Morris et al. 1995    18             TOL       4.00     SZ     HC
+#&gt; 41        Morris et al. 1995    18             TOL       5.00     SZ     HC
+#&gt; 42      Pantelis et al. 1997    19    SOC (CANTAB)       2.00     SZ     HC
+#&gt; 43      Pantelis et al. 1997    19    SOC (CANTAB)       3.00     SZ     HC
+#&gt; 44      Pantelis et al. 1997    19    SOC (CANTAB)       4.00     SZ     HC
+#&gt; 45      Pantelis et al. 1997    19    SOC (CANTAB)       5.00     SZ     HC
+#&gt; 46        Tenjin et al. 2012    20          BACS-J         NA    SZ1     HC
+#&gt; 47        Tenjin et al. 2012    20          BACS-J         NA    SZ2     HC
+#&gt; 48         Tyson et al. 2004    21    SOC (CANTAB)       3.83     SZ     HC
+#&gt; 49           Zhu et al. 2010    22             TOL       2.00     SZ     HC
+#&gt; 50           Zhu et al. 2010    22             TOL       3.00     SZ     HC
+#&gt; 51           Zhu et al. 2010    22             TOL       4.00     SZ     HC
+#&gt; 52             Andersen 2013    23             SOC       3.83     SZ     HC
+#&gt; 53 Ayesa-Arriola et al. 2013    24      TOL-Drexel       5.50    SZ1    HC1
+#&gt; 54 Ayesa-Arriola et al. 2013    24      TOL-Drexel       5.50    SZ2    HC2
+#&gt; 55            Fagerlund 2004    25             SOC       3.83     SZ     HC
+#&gt; 56        Kontis et al. 2013    26             SOC       2.00     SZ     HC
+#&gt; 57        Kontis et al. 2013    26             SOC       3.00     SZ     HC
+#&gt; 58        Kontis et al. 2013    26             SOC       4.00     SZ     HC
+#&gt; 59        Kontis et al. 2013    26             SOC       5.00     SZ     HC
+#&gt; 60      Okruszek et al. 2013    27      TOL-Drexel       5.50     SZ     HC
+#&gt; 61        Saleem et al. 2013    28             SOC       3.83     SZ     HC
+#&gt; 62    Tsuchimine et al. 2013    29          BACS-J         NA    SZ1    HC1
+#&gt; 63    Tsuchimine et al. 2013    29          BACS-J         NA    SZ2    HC2
+#&gt; 64    Tsuchimine et al. 2013    29          BACS-J         NA    SZ3    HC3
+#&gt; 65       Asevedo et al. 2013    30             TOL       3.83     SZ     HC
+#&gt; 66          Shum et al. 2004    31 TOL (four-disk)       5.60     SZ     HC
+#&gt;    comp    yi    vi n_sz n_hc yi_iq vi_iq
+#&gt; 1     1  0.62 0.075   24   33  0.72 0.076
+#&gt; 2     1  0.46 0.047   44   44    NA    NA
+#&gt; 3     2  0.73 0.052   38   44    NA    NA
+#&gt; 4     1  1.18 0.062   39   37    NA    NA
+#&gt; 5     2  1.09 0.073   27   37    NA    NA
+#&gt; 6     3  0.91 0.102   15   37    NA    NA
+#&gt; 7     4  0.91 0.084   20   37    NA    NA
+#&gt; 8     1  0.57 0.074   28   28    NA    NA
+#&gt; 9     1  0.40 0.180   13   10    NA    NA
+#&gt; 10    1  0.43 0.170   12   12  0.12 0.167
+#&gt; 11    2  1.37 0.206   12   12  0.12 0.167
+#&gt; 12    3  0.23 0.168   12   12  0.12 0.167
+#&gt; 13    4  0.97 0.186   12   12  0.12 0.167
+#&gt; 14    5  0.56 0.173   12   12  0.12 0.167
+#&gt; 15    6  0.79 0.180   12   12  0.12 0.167
+#&gt; 16    7  1.19 0.196   12   12  0.12 0.167
+#&gt; 17    8  0.92 0.184   12   12  0.12 0.167
+#&gt; 18    1  0.20 0.096   22   20  0.62 0.100
+#&gt; 19    1  1.42 0.180   13   15    NA    NA
+#&gt; 20    1  0.35 0.074   27   28  1.21 0.086
+#&gt; 21    2  0.88 0.078   28   28  1.26 0.086
+#&gt; 22    1  1.08 0.079   26   33  0.76 0.074
+#&gt; 23    1  0.94 0.111   20   20  0.42 0.102
+#&gt; 24    1  0.44 0.020  135   81  0.49 0.020
+#&gt; 25    2  0.63 0.021  135   81  0.49 0.020
+#&gt; 26    3  0.38 0.020  135   81  0.49 0.020
+#&gt; 27    4  0.93 0.022  135   81  0.49 0.020
+#&gt; 28    1  0.33 0.102   24   17    NA    NA
+#&gt; 29    1  0.00 0.073   32   24    NA    NA
+#&gt; 30    2 -0.06 0.073   32   24    NA    NA
+#&gt; 31    3  0.73 0.078   32   24    NA    NA
+#&gt; 32    4  0.48 0.075   32   24    NA    NA
+#&gt; 33    1  0.43 0.092   25   20    NA    NA
+#&gt; 34    2  0.72 0.096   25   20    NA    NA
+#&gt; 35    3  0.80 0.097   25   20    NA    NA
+#&gt; 36    4  1.30 0.109   25   20    NA    NA
+#&gt; 37    1  1.84 0.190   15   15    NA    NA
+#&gt; 38    1  2.58 0.216   17   17  0.58 0.123
+#&gt; 39    1  0.25 0.071   30   27  0.18 0.071
+#&gt; 40    2  0.86 0.077   30   27  0.18 0.071
+#&gt; 41    3  0.68 0.074   30   27  0.18 0.071
+#&gt; 42    1  0.21 0.060   36   31  0.48 0.062
+#&gt; 43    2  0.65 0.063   36   31  0.48 0.062
+#&gt; 44    3  0.30 0.061   36   31  0.48 0.062
+#&gt; 45    4  0.45 0.062   36   31  0.48 0.062
+#&gt; 46    1  1.03 0.054   20  340    NA    NA
+#&gt; 47    2  0.92 0.104   10  340    NA    NA
+#&gt; 48    1  1.12 0.108   28   17    NA    NA
+#&gt; 49    1  0.52 0.052   40   40    NA    NA
+#&gt; 50    2  0.50 0.052   40   40    NA    NA
+#&gt; 51    3  0.49 0.051   40   40    NA    NA
+#&gt; 52    1  0.30 0.042   48   48    NA    NA
+#&gt; 53    1  0.36 0.022   86   97  0.47 0.023
+#&gt; 54    2  0.41 0.030   75   62  0.10 0.030
+#&gt; 55    1  0.79 0.086   25   25    NA    NA
+#&gt; 56    1  0.23 0.031   77   55    NA    NA
+#&gt; 57    2  0.58 0.032   77   55    NA    NA
+#&gt; 58    3  0.57 0.032   77   55    NA    NA
+#&gt; 59    4  0.79 0.034   77   55    NA    NA
+#&gt; 60    1  0.70 0.071   30   30    NA    NA
+#&gt; 61    1  1.16 0.136   20   15  0.23 0.117
+#&gt; 62    1  1.29 0.039   56   68  0.37 0.033
+#&gt; 63    2  0.63 0.039   47   62  0.43 0.038
+#&gt; 64    3  0.31 0.121   15   19  1.00 0.134
+#&gt; 65    1  0.11 0.070   30   27    NA    NA
+#&gt; 66    1  0.87 0.036   60   60    NA    NA</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
 <span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='https://www.metafor-project.org'>metafor</a></span><span class='op'>)</span>
 
-<span class='co'>### fit a standard random-effects model ignoring correlated sampling errors</span>
+<span class='co'>### fit a standard random-effects model ignoring the issues described above</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>res</span>
 </div><div class='output co'>#&gt; 
@@ -370,6 +375,7 @@
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 #&gt; </div><div class='input'>
 <span class='co'>### fit a multilevel model with random effects for studies and comparisons within studies</span>
+<span class='co'>### (but this ignored the correlation in the sampling errors)</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>comp</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>res</span>
 </div><div class='output co'>#&gt; 
@@ -392,17 +398,67 @@
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 #&gt; </div><div class='input'>
-<span class='co'>### construct an approximate V matrix assuming a correlation of 0.4 for the sampling errors</span>
-<span class='co'>### of different comparisons within the same study</span>
-<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/split.html'>split</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>vi</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>, <span class='kw'>function</span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span> <span class='op'>{</span>
-   <span class='va'>S</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, nrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, ncol<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span><span class='op'>)</span>
-   <span class='va'>R</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='fl'>0.4</span>, nrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, ncol<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span><span class='op'>)</span>
-   <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
-   <span class='va'>S</span> <span class='op'>%*%</span> <span class='va'>R</span> <span class='op'>%*%</span> <span class='va'>S</span>
-<span class='op'>}</span><span class='op'>)</span>
-<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/bldiag.html'>bldiag</a></span><span class='op'>(</span><span class='va'>V</span>, order<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+<span class='co'>### create variable that indicates the task and difficulty combination as increasing integers</span>
+<span class='va'>dat</span><span class='op'>$</span><span class='va'>task.diff</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/unlist.html'>unlist</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/split.html'>split</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>, <span class='kw'>function</span><span class='op'>(</span><span class='va'>x</span><span class='op'>)</span> <span class='op'>{</span>
+   <span class='va'>task.int</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>$</span><span class='va'>task</span><span class='op'>)</span><span class='op'>)</span>
+   <span class='va'>diff.int</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/integer.html'>as.integer</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/factor.html'>factor</a></span><span class='op'>(</span><span class='va'>x</span><span class='op'>$</span><span class='va'>difficulty</span><span class='op'>)</span><span class='op'>)</span>
+   <span class='va'>diff.int</span><span class='op'>[</span><span class='fu'><a href='https://rdrr.io/r/base/NA.html'>is.na</a></span><span class='op'>(</span><span class='va'>diff.int</span><span class='op'>)</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
+   <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='va'>task.int</span>, <span class='st'>"."</span>, <span class='va'>diff.int</span><span class='op'>)</span><span class='op'>}</span><span class='op'>)</span><span class='op'>)</span>
 
-<span class='co'>### fit the same multilevel model, but now use this V matrix in the model</span>
+<span class='co'>### construct correlation matrix for two tasks with four different difficulties where the</span>
+<span class='co'>### correlation is 0.4 for different difficulties of the same task, 0.7 for the same</span>
+<span class='co'>### difficulty of different tasks, and 0.28 for different difficulties of different tasks</span>
+<span class='va'>R</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='fl'>0.4</span>, nrow<span class='op'>=</span><span class='fl'>8</span>, ncol<span class='op'>=</span><span class='fl'>8</span><span class='op'>)</span>
+<span class='va'>R</span><span class='op'>[</span><span class='fl'>5</span><span class='op'>:</span><span class='fl'>8</span>,<span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='va'>R</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span>,<span class='fl'>5</span><span class='op'>:</span><span class='fl'>8</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='fl'>0.28</span>
+<span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span>,<span class='fl'>5</span><span class='op'>:</span><span class='fl'>8</span><span class='op'>]</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>0.7</span>
+<span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>[</span><span class='fl'>5</span><span class='op'>:</span><span class='fl'>8</span>,<span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span><span class='op'>]</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>0.7</span>
+<span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
+<span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>rownames</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/colnames.html'>colnames</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span><span class='op'>(</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>2</span>, each<span class='op'>=</span><span class='fl'>4</span><span class='op'>)</span>, <span class='st'>"."</span>, <span class='fl'>1</span><span class='op'>:</span><span class='fl'>4</span><span class='op'>)</span>
+<span class='va'>R</span>
+</div><div class='output co'>#&gt;      1.1  1.2  1.3  1.4  2.1  2.2  2.3  2.4
+#&gt; 1.1 1.00 0.40 0.40 0.40 0.70 0.28 0.28 0.28
+#&gt; 1.2 0.40 1.00 0.40 0.40 0.28 0.70 0.28 0.28
+#&gt; 1.3 0.40 0.40 1.00 0.40 0.28 0.28 0.70 0.28
+#&gt; 1.4 0.40 0.40 0.40 1.00 0.28 0.28 0.28 0.70
+#&gt; 2.1 0.70 0.28 0.28 0.28 1.00 0.40 0.40 0.40
+#&gt; 2.2 0.28 0.70 0.28 0.28 0.40 1.00 0.40 0.40
+#&gt; 2.3 0.28 0.28 0.70 0.28 0.40 0.40 1.00 0.40
+#&gt; 2.4 0.28 0.28 0.28 0.70 0.40 0.40 0.40 1.00</div><div class='input'>
+<span class='co'>### construct an approximate V matrix accounting for the use of shared groups and</span>
+<span class='co'>### for correlations among tasks/difficulties as specified in the R matrix above</span>
+<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/vcalc.html'>vcalc</a></span><span class='op'>(</span><span class='va'>vi</span>, cluster<span class='op'>=</span><span class='va'>study</span>, grp1<span class='op'>=</span><span class='va'>group1</span>, grp2<span class='op'>=</span><span class='va'>group2</span>, w1<span class='op'>=</span><span class='va'>n_sz</span>, w2<span class='op'>=</span><span class='va'>n_hc</span>,
+           obs<span class='op'>=</span><span class='va'>task.diff</span>, rho<span class='op'>=</span><span class='va'>R</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
+
+<span class='co'>### correlation matrix for study 3 with four patient groups and a single control group</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>3</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>3</span><span class='op'>]</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;           [,1]      [,2]      [,3]      [,4]
+#&gt; [1,] 1.0000000 0.4652832 0.3847419 0.4243294
+#&gt; [2,] 0.4652832 1.0000000 0.3488477 0.3847419
+#&gt; [3,] 0.3847419 0.3488477 1.0000000 0.3181424
+#&gt; [4,] 0.4243294 0.3847419 0.3181424 1.0000000</div><div class='input'>
+<span class='co'>### correlation matrix for study 6 with two tasks with four difficulties</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>6</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>6</span><span class='op'>]</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+#&gt; [1,] 1.00 0.40 0.40 0.40 0.70 0.28 0.28 0.28
+#&gt; [2,] 0.40 1.00 0.40 0.40 0.28 0.70 0.28 0.28
+#&gt; [3,] 0.40 0.40 1.00 0.40 0.28 0.28 0.70 0.28
+#&gt; [4,] 0.40 0.40 0.40 1.00 0.28 0.28 0.28 0.70
+#&gt; [5,] 0.70 0.28 0.28 0.28 1.00 0.40 0.40 0.40
+#&gt; [6,] 0.28 0.70 0.28 0.28 0.40 1.00 0.40 0.40
+#&gt; [7,] 0.28 0.28 0.70 0.28 0.40 0.40 1.00 0.40
+#&gt; [8,] 0.28 0.28 0.28 0.70 0.40 0.40 0.40 1.00</div><div class='input'>
+<span class='co'>### correlation matrix for study 24 with two independent groups</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>24</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>24</span><span class='op'>]</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;      [,1] [,2]
+#&gt; [1,]    1    0
+#&gt; [2,]    0    1</div><div class='input'>
+<span class='co'>### correlation matrix for study 29 with three independent groups</span>
+<span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>29</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>29</span><span class='op'>]</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;      [,1] [,2] [,3]
+#&gt; [1,]    1    0    0
+#&gt; [2,]    0    1    0
+#&gt; [3,]    0    0    1</div><div class='input'>
+<span class='co'>### fit multilevel model as above, but now use this V matrix in the model</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>V</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>comp</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>res</span>
 </div><div class='output co'>#&gt; 
@@ -411,19 +467,23 @@
 #&gt; Variance Components:
 #&gt; 
 #&gt;             estim    sqrt  nlvls  fixed      factor 
-#&gt; sigma^2.1  0.0143  0.1197     31     no       study 
-#&gt; sigma^2.2  0.0483  0.2197     66     no  study/comp 
+#&gt; sigma^2.1  0.0102  0.1009     31     no       study 
+#&gt; sigma^2.2  0.0557  0.2360     66     no  study/comp 
 #&gt; 
 #&gt; Test for Heterogeneity:
-#&gt; Q(df = 65) = 145.0131, p-val &lt; .0001
+#&gt; Q(df = 65) = 152.4935, p-val &lt; .0001
 #&gt; 
 #&gt; Model Results:
 #&gt; 
 #&gt; estimate      se     zval    pval   ci.lb   ci.ub 
-#&gt;   0.6716  0.0556  12.0874  &lt;.0001  0.5627  0.7805  *** 
+#&gt;   0.6696  0.0546  12.2735  &lt;.0001  0.5626  0.7765  *** 
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+#&gt; </div><div class='input'><span class='fu'><a href='https://wviechtb.github.io/metafor/reference/predict.rma.html'>predict</a></span><span class='op'>(</span><span class='va'>res</span>, digits<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
+</div><div class='output co'>#&gt; 
+#&gt;  pred   se ci.lb ci.ub pi.lb pi.ub 
+#&gt;  0.67 0.05  0.56  0.78  0.16  1.18 
 #&gt; </div><div class='input'>
 <span class='co'>### use cluster-robust inference methods based on this model</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/robust.html'>robust</a></span><span class='op'>(</span><span class='va'>res</span>, cluster<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
@@ -435,11 +495,20 @@
 #&gt; Model Results:
 #&gt; 
 #&gt; estimate      se     tval  df    pval   ci.lb   ci.ub 
-#&gt;   0.6716  0.0553  12.1451  30  &lt;.0001  0.5587  0.7845  *** 
+#&gt;   0.6696  0.0543  12.3418  30  &lt;.0001  0.5588  0.7804  *** 
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 #&gt; </div><div class='input'>
+<span class='co'>### illustrate use of the clubSandwich package together with metafor</span>
+<span class='kw'>if</span> <span class='op'>(</span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jepusto/clubSandwich'>clubSandwich</a></span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+<span class='fu'><a href='https://rdrr.io/pkg/clubSandwich/man/coef_test.html'>coef_test</a></span><span class='op'>(</span><span class='va'>res</span>, vcov<span class='op'>=</span><span class='st'>"CR2"</span>, cluster<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/pkg/clubSandwich/man/conf_int.html'>conf_int</a></span><span class='op'>(</span><span class='va'>res</span>, vcov<span class='op'>=</span><span class='st'>"CR2"</span>, cluster<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='output co'>#&gt; <span class='message'>Loading required package: clubSandwich</span></div><div class='output co'>#&gt; <span class='message'>Registered S3 method overwritten by 'clubSandwich':</span>
+#&gt; <span class='message'>  method    from    </span>
+#&gt; <span class='message'>  bread.mlm sandwich</span></div><div class='output co'>#&gt;      Coef Estimate     SE d.f. Lower 95% CI Upper 95% CI
+#&gt; 1 intrcpt     0.67 0.0543 22.3        0.557        0.782</div><div class='input'>
 <span class='co'>### examine if task difficulty is a potential moderator of the effect</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>V</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>difficulty</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>comp</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; <span class='warning'>Warning: Rows with NAs omitted from model fitting.</span></div><div class='input'><span class='va'>res</span>
@@ -449,20 +518,20 @@
 #&gt; Variance Components:
 #&gt; 
 #&gt;             estim    sqrt  nlvls  fixed      factor 
-#&gt; sigma^2.1  0.0587  0.2423     25     no       study 
-#&gt; sigma^2.2  0.0115  0.1075     57     no  study/comp 
+#&gt; sigma^2.1  0.0465  0.2156     25     no       study 
+#&gt; sigma^2.2  0.0275  0.1659     57     no  study/comp 
 #&gt; 
 #&gt; Test for Residual Heterogeneity:
-#&gt; QE(df = 55) = 101.1979, p-val = 0.0001
+#&gt; QE(df = 55) = 115.9211, p-val &lt; .0001
 #&gt; 
 #&gt; Test of Moderators (coefficient 2):
-#&gt; QM(df = 1) = 14.4849, p-val = 0.0001
+#&gt; QM(df = 1) = 10.0201, p-val = 0.0015
 #&gt; 
 #&gt; Model Results:
 #&gt; 
 #&gt;             estimate      se    zval    pval    ci.lb   ci.ub 
-#&gt; intrcpt       0.1756  0.1483  1.1842  0.2363  -0.1151  0.4663      
-#&gt; difficulty    0.1268  0.0333  3.8059  0.0001   0.0615  0.1921  *** 
+#&gt; intrcpt       0.1803  0.1682  1.0717  0.2838  -0.1494  0.5100     
+#&gt; difficulty    0.1241  0.0392  3.1655  0.0015   0.0472  0.2009  ** 
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
@@ -474,17 +543,22 @@
 #&gt; Outcomes per cluster: 1-8 (mean: 2.28, median: 1)
 #&gt; 
 #&gt; Test of Moderators (coefficient 2):
-#&gt; F(df1 = 1, df2 = 23) = 25.7916, p-val &lt; .0001
+#&gt; F(df1 = 1, df2 = 23) = 17.7635, p-val = 0.0003
 #&gt; 
 #&gt; Model Results:
 #&gt; 
 #&gt;             estimate      se    tval  df    pval    ci.lb   ci.ub 
-#&gt; intrcpt       0.1756  0.1146  1.5329  23  0.1389  -0.0614  0.4126      
-#&gt; difficulty    0.1268  0.0250  5.0785  23  &lt;.0001   0.0752  0.1785  *** 
+#&gt; intrcpt       0.1803  0.1239  1.4547  23  0.1593  -0.0761  0.4367      
+#&gt; difficulty    0.1241  0.0294  4.2147  23  0.0003   0.0632  0.1850  *** 
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-#&gt; </div><div class='input'>
+#&gt; </div><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'><a href='https://github.com/jepusto/clubSandwich'>clubSandwich</a></span><span class='op'>)</span><span class='op'>)</span> <span class='op'>{</span>
+<span class='fu'><a href='https://rdrr.io/pkg/clubSandwich/man/coef_test.html'>coef_test</a></span><span class='op'>(</span><span class='va'>res</span>, vcov<span class='op'>=</span><span class='st'>"CR2"</span>, cluster<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div><div class='output co'>#&gt;        Coef. Estimate     SE t-stat d.f. p-val (Satt) Sig.
+#&gt; 1    intrcpt    0.180 0.1244   1.45 7.77       0.1862     
+#&gt; 2 difficulty    0.124 0.0299   4.15 7.39       0.0038   **</div><div class='input'>
 <span class='co'>### draw bubble plot</span>
 <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/regplot.html'>regplot</a></span><span class='op'>(</span><span class='va'>sav</span>, xlab<span class='op'>=</span><span class='st'>"Task Difficulty"</span>, ylab<span class='op'>=</span><span class='st'>"Standardized Mean Difference"</span>, las<span class='op'>=</span><span class='fl'>1</span>, digits<span class='op'>=</span><span class='fl'>1</span>, bty<span class='op'>=</span><span class='st'>"l"</span><span class='op'>)</span>
 </div><div class='img'><img src='dat.knapp2017-1.png' alt='' width='864' height='768' /></div><div class='input'>
