@@ -430,12 +430,12 @@
            obs<span class='op'>=</span><span class='va'>task.diff</span>, rho<span class='op'>=</span><span class='va'>R</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 
 <span class='co'>### correlation matrix for study 3 with four patient groups and a single control group</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>3</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>3</span><span class='op'>]</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;           [,1]      [,2]      [,3]      [,4]
-#&gt; [1,] 1.0000000 0.4652832 0.3847419 0.4243294
-#&gt; [2,] 0.4652832 1.0000000 0.3488477 0.3847419
-#&gt; [3,] 0.3847419 0.3488477 1.0000000 0.3181424
-#&gt; [4,] 0.4243294 0.3847419 0.3181424 1.0000000</div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/base/Round.html'>round</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>3</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>3</span><span class='op'>]</span><span class='op'>)</span>, <span class='fl'>2</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;      [,1] [,2] [,3] [,4]
+#&gt; [1,] 1.00 0.47 0.38 0.42
+#&gt; [2,] 0.47 1.00 0.35 0.38
+#&gt; [3,] 0.38 0.35 1.00 0.32
+#&gt; [4,] 0.42 0.38 0.32 1.00</div><div class='input'>
 <span class='co'>### correlation matrix for study 6 with two tasks with four difficulties</span>
 <span class='fu'><a href='https://rdrr.io/r/stats/cor.html'>cov2cor</a></span><span class='op'>(</span><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>6</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>6</span><span class='op'>]</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]

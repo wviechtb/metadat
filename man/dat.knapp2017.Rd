@@ -83,7 +83,7 @@ V <- vcalc(vi, cluster=study, grp1=group1, grp2=group2, w1=n_sz, w2=n_hc,
            obs=task.diff, rho=R, data=dat)
 
 ### correlation matrix for study 3 with four patient groups and a single control group
-cov2cor(V[dat$study == 3, dat$study == 3])
+round(cov2cor(V[dat$study == 3, dat$study == 3]), 2)
 
 ### correlation matrix for study 6 with two tasks with four difficulties
 cov2cor(V[dat$study == 6, dat$study == 6])
