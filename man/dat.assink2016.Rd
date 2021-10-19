@@ -36,7 +36,7 @@
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.assink2016
-dat
+head(dat, 9)
 
 \dontrun{
 
@@ -59,10 +59,20 @@ anova(res0, res)
 ### examine some potential moderators via meta-regression
 rma.mv(yi, vi, mods = ~ pubstatus, random = ~ 1 | study/esid, data=dat)
 rma.mv(yi, vi, mods = ~ year, random = ~ 1 | study/esid, data=dat)
-dat$deltype <- factor(dat$deltype)
-dat$deltype <- relevel(dat$deltype, ref="general")
+dat$deltype <- relevel(factor(dat$deltype), ref="general")
 rma.mv(yi, vi, mods = ~ deltype, random = ~ 1 | study/esid, data=dat)
 rma.mv(yi, vi, mods = ~ year + deltype, random = ~ 1 | study/esid, data=dat)
+
+### assume that the effect sizes within studies are correlated with rho=0.6
+V <- vcalc(vi, cluster=study, obs=esid, data=dat, rho=0.6)
+V[dat$study \%in\% c(1,2), dat$study \%in\% c(1,2)]
+
+### fit multilevel model using this approximate V matrix
+res <- rma.mv(yi, V, random = ~ 1 | study/esid, data=dat)
+res
+
+### use cluster-robust inference methods
+robust(res, cluster=dat$study)
 
 }
 }

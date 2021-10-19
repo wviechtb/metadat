@@ -32,7 +32,7 @@ This builds the package from source based on the current version on [GitHub](htt
 
 A listing of all datasets in the package can be obtained with `help(package=metadat)`. Each dataset is also tagged with one or multiple concept terms. These concept terms refer to various aspects of a dataset, such as the field/topic of research, the outcome measure used for the analysis, the model(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset. The [`datsearch()`](https://wviechtb.github.io/metadat/reference/datsearch.html) function can be used to search among the existing datasets in the package based on their concept terms or based on a full-text search of their corresponding help files.
 
-You can also read the documentation online at [https://wviechtb.github.io/metadat/index.html](https://wviechtb.github.io/metadat/index.html) (where the output from the example analyses corresponding to each dataset is provided).
+You can also read the documentation online at [https://wviechtb.github.io/metadat/](https://wviechtb.github.io/metadat/) (where the output from the example analyses corresponding to each dataset is provided).
 
 ## Contributing New Datasets
 

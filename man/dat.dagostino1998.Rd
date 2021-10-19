@@ -71,13 +71,8 @@ res
 predict(res, transf=exp)
 
 ### construct approximate V matrix assuming a correlation of 0.7 for sampling errors within studies
-V <- lapply(split(dat$vi, dat$study), function(v) {
-   S <- diag(sqrt(v), nrow=length(v), ncol=length(v))
-   R <- matrix(0.7, nrow=length(v), ncol=length(v))
-   diag(R) <- 1
-   S \%*\% R \%*\% S
-})
-V <- bldiag(V, order=dat$study)
+dat$esid <- ave(dat$study, dat$study, FUN=seq)
+V <- vcalc(vi, cluster=study, obs=esid, rho=0.7, data=dat)
 
 ### fit a model for incremental change in runny nose severity at day 1 and at day 2, allowing for
 ### correlated sampling errors (no random effects added, since there does not appear to be any

@@ -40,11 +40,8 @@ dat
 ### load metafor package
 require(metafor)
 
-### construct list with the variance-covariance matrices of the observed outcomes for the studies
-V <- lapply(split(dat[c("v1i", "v2i")], dat$trial), as.matrix)
-
-### construct block diagonal matrix
-V <- bldiag(V)
+### construct block diagonal var-cov matrix of the observed outcomes based on variables v1i and v2i
+V <- vcalc(vi=1, cluster=author, rvars=c(v1i, v2i), data=dat)
 
 ### fit multiple outcomes (meta-regression) model (with REML estimation)
 res <- rma.mv(yi, V, mods = ~ outcome - 1, random = ~ outcome | trial, struct="UN", data=dat)

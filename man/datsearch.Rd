@@ -10,7 +10,7 @@ datsearch(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown=FALSE)
    \item{concept}{logical indicating whether the search should be confined to the concept terms (\code{TRUE} by default) or whether a full-text search should be conducted.}
    \item{matchall}{logical indicating whether only the datasets matching all patterns (if multiple are specified) are returned (\code{TRUE} by default) or whether datasets matching any one of the patterns are returned.}
    \item{fixed}{logical indicating whether a pattern is a string to be matched as is (\code{TRUE} by default). If \code{FALSE}, a pattern is a regular expression that \code{\link{grep}} will search for. Only relevant when \code{concept=FALSE} (i.e., when doing a full-text search).}
-   \item{pkgdown}{logical indicating whether the local help file or the pkgdown docs (at \url{https://wviechtb.github.io/metadat/index.html}) should be shown for the chosen dataset (\code{FALSE} by default).}
+   \item{pkgdown}{logical indicating whether the local help file or the pkgdown docs (at \url{https://wviechtb.github.io/metadat/}) should be shown for the chosen dataset (\code{FALSE} by default).}
 }
 \details{
    The function can be used to search all existing datasets in the \pkg{metadat} package based on their concept terms (see below) or based on a full-text search of their corresponding help files. One can also specify multiple search patterns (by using a string vector as the \code{pattern}). If \code{matchall=TRUE} (the default), only the datasets matching all patterns are returned. If \code{matchall=FALSE}, the datasets matching any one of the patterns are returned.

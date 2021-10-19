@@ -59,15 +59,9 @@ plot(log(dat$hrs[dat$outcome == "math"]), dat$yi[dat$outcome == "math"],
 abline(h=c(-0.5,0,0.5), lty="dotted")
 abline(v=log(c(5,18)),  lty="dotted")
 
-### construct variance-covariance matrices assuming rho = 0.66
-vcalc <- function(v, rho) {
-   S <- diag(sqrt(v), nrow=length(v), ncol=length(v))
-   R <- matrix(rho, nrow=length(v), ncol=length(v))
-   diag(R) <- 1
-   S \%*\% R \%*\% S
-}
-V <- lapply(split(dat$v, dat$study), vcalc, rho=0.66)
-V <- bldiag(V, order=dat$study)
+### construct variance-covariance matrix assuming rho = 0.66 for effect sizes
+### corresponding to the 'verbal' and 'math' outcome types
+V <- vcalc(vi, cluster=dat$study, type=outcome, data=dat, rho=0.66)
 
 ### fit multivariate random-effects model
 res <- rma.mv(yi, V, mods = ~ outcome - 1,

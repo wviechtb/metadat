@@ -28,7 +28,7 @@
    The dataset has a more complex structure for several reasons:
    \enumerate{
    \item Studies 2, 3, 9, and 20 included more than one schizophrenia patient group and the standardized mean differences were computed by comparing these groups against a single healthy control group.
-   \item Studies 6, 12, 14, 15, 18, 19, 22, and 26 had the patients and controls complete different tasks of varying complexity (essentially the average number of moves required to complete a task).
+   \item Studies 6, 12, 14, 15, 18, 19, 22, and 26 had the patients and controls complete different tasks of varying complexity (essentially the average number of moves required to complete a task). Study 6 also included two different task types.
    \item Study 24 provides two standardized mean differences, one for men and the other for women.
    \item Study 29 provides three standardized mean differences, corresponding to the three different COMT Val158Met genotypes (val/val, val/met, and met/met).
    }
