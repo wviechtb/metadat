@@ -287,38 +287,22 @@
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"SMD"</span>, m1i<span class='op'>=</span><span class='va'>m1i</span>, sd1i<span class='op'>=</span><span class='va'>sd1i</span>, n1i<span class='op'>=</span><span class='va'>n1i</span>, m2i<span class='op'>=</span><span class='va'>m2i</span>, sd2i<span class='op'>=</span><span class='va'>sd2i</span>, n2i<span class='op'>=</span><span class='va'>n2i</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"PBIT"</span>, ai<span class='op'>=</span><span class='va'>ai</span>, bi<span class='op'>=</span><span class='va'>bi</span>, ci<span class='op'>=</span><span class='va'>ci</span>, di<span class='op'>=</span><span class='va'>di</span>, data<span class='op'>=</span><span class='va'>dat</span>, replace<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;            author year n1i   m1i  sd1i n2i   m2i  sd2i ai bi ci di type      yi 
-#&gt; 1            Cote 1997  50  2.20 12.73  54  5.20 12.50 NA NA NA NA    1 -0.2361 
-#&gt; 2           Ghosh 1998 140 17.60 24.20 136 34.10 38.80 NA NA NA NA    1 -0.5105 
-#&gt; 3         Hayward 1996  23  0.38  0.56  19  0.23  0.29 NA NA NA NA    1  0.3209 
-#&gt; 4           Heard 1999  97  2.09  5.93  94  2.66  4.95 34 63 36 58    1 -0.1038 
-#&gt; 5  Ignacio-Garcia 1995  35  4.92  6.05  35 20.00 26.34 24 11 29  6    1 -0.7804 
-#&gt; 6          Knoell 1998  45  0.85  4.75  55  2.31  9.16 NA NA NA NA    1 -0.1930 
-#&gt; 7       Lahdensuo 1996  56  2.80  9.00  59  4.80  7.20 13 43 25 34    1 -0.2445 
-#&gt; 8       Sommaruga 1995  20 24.10 11.80  20 31.80 17.90 NA NA NA NA    1 -0.4978 
-#&gt; 9          Zeiger 1991 128  1.40  3.30 143  2.30  7.60 NA NA NA NA    1 -0.1504 
-#&gt; 10         Garret 1994 119  6.23 12.20 100  5.71  8.57 58 42 57 33    2  0.0484 
-#&gt; 11           Neri 1996  32  2.10  8.00  33  5.10 14.00  7 25 13 20    3 -0.2589 
-#&gt; 12         Hilton 1986  86  0.73  1.48 100  0.47  1.20 NA NA NA NA    4  0.1937 
-#&gt; 13      Gallefoss 1999  25  8.00 32.00  24 26.00 70.00 NA NA NA NA    5 -0.3277 
-#&gt; 14           Yoon 1993  28    NA    NA  28    NA    NA  5 23  4 24    1  0.1467 
-#&gt; 15         Brewin 1995  12    NA    NA  33    NA    NA  0 12 16 17    3 -1.7320 
-#&gt;        vi 
-#&gt; 1  0.0388 
-#&gt; 2  0.0150 
-#&gt; 3  0.0973 
-#&gt; 4  0.0210 
-#&gt; 5  0.0615 
-#&gt; 6  0.0406 
-#&gt; 7  0.0351 
-#&gt; 8  0.1031 
-#&gt; 9  0.0148 
-#&gt; 10 0.0184 
-#&gt; 11 0.0621 
-#&gt; 12 0.0217 
-#&gt; 13 0.0828 
-#&gt; 14 0.1627 
-#&gt; 15 0.4546 </div><div class='input'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span>, method<span class='op'>=</span><span class='st'>"FE"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;            author year n1i   m1i  sd1i n2i   m2i  sd2i ai bi ci di type      yi     vi 
+#&gt; 1            Cote 1997  50  2.20 12.73  54  5.20 12.50 NA NA NA NA    1 -0.2361 0.0388 
+#&gt; 2           Ghosh 1998 140 17.60 24.20 136 34.10 38.80 NA NA NA NA    1 -0.5105 0.0150 
+#&gt; 3         Hayward 1996  23  0.38  0.56  19  0.23  0.29 NA NA NA NA    1  0.3209 0.0973 
+#&gt; 4           Heard 1999  97  2.09  5.93  94  2.66  4.95 34 63 36 58    1 -0.1038 0.0210 
+#&gt; 5  Ignacio-Garcia 1995  35  4.92  6.05  35 20.00 26.34 24 11 29  6    1 -0.7804 0.0615 
+#&gt; 6          Knoell 1998  45  0.85  4.75  55  2.31  9.16 NA NA NA NA    1 -0.1930 0.0406 
+#&gt; 7       Lahdensuo 1996  56  2.80  9.00  59  4.80  7.20 13 43 25 34    1 -0.2445 0.0351 
+#&gt; 8       Sommaruga 1995  20 24.10 11.80  20 31.80 17.90 NA NA NA NA    1 -0.4978 0.1031 
+#&gt; 9          Zeiger 1991 128  1.40  3.30 143  2.30  7.60 NA NA NA NA    1 -0.1504 0.0148 
+#&gt; 10         Garret 1994 119  6.23 12.20 100  5.71  8.57 58 42 57 33    2  0.0484 0.0184 
+#&gt; 11           Neri 1996  32  2.10  8.00  33  5.10 14.00  7 25 13 20    3 -0.2589 0.0621 
+#&gt; 12         Hilton 1986  86  0.73  1.48 100  0.47  1.20 NA NA NA NA    4  0.1937 0.0217 
+#&gt; 13      Gallefoss 1999  25  8.00 32.00  24 26.00 70.00 NA NA NA NA    5 -0.3277 0.0828 
+#&gt; 14           Yoon 1993  28    NA    NA  28    NA    NA  5 23  4 24    1  0.1467 0.1627 
+#&gt; 15         Brewin 1995  12    NA    NA  33    NA    NA  0 12 16 17    3 -1.7320 0.4546 </div><div class='input'><span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span>, method<span class='op'>=</span><span class='st'>"FE"</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>res</span>, digits<span class='op'>=</span><span class='fl'>2</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; 
 #&gt; Fixed-Effects Model (k = 15)

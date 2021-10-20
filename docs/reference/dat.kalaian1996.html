@@ -207,143 +207,20 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.kalaian1996</span>
-<span class='va'>dat</span>
-</div><div class='output co'>#&gt;    id                   study year n1i n2i outcome    yi     vi  hrs ets
-#&gt; 1   1   Alderman &amp; Powers (A) 1980  28  22  verbal  0.22 0.0817  7.0   1
-#&gt; 2   2   Alderman &amp; Powers (B) 1980  39  40  verbal  0.09 0.0507 10.0   1
-#&gt; 3   3   Alderman &amp; Powers (C) 1980  22  17  verbal  0.14 0.1045 10.5   1
-#&gt; 4   4   Alderman &amp; Powers (D) 1980  48  43  verbal  0.14 0.0442 10.0   1
-#&gt; 5   5   Alderman &amp; Powers (E) 1980  25  74  verbal -0.01 0.0535  6.0   1
-#&gt; 6   6   Alderman &amp; Powers (F) 1980  37  35  verbal  0.14 0.0557  5.0   1
-#&gt; 7   7   Alderman &amp; Powers (G) 1980  24  70  verbal  0.18 0.0561 11.0   1
-#&gt; 8   8   Alderman &amp; Powers (H) 1980  16  19  verbal  0.01 0.1151 45.0   1
-#&gt; 9   9        Evans &amp; Pike (A) 1973 145 129  verbal  0.13 0.0147 21.0   1
-#&gt; 10 10        Evans &amp; Pike (A) 1973 145 129    math  0.12 0.0147 21.0   1
-#&gt; 11 11        Evans &amp; Pike (B) 1973  72 129  verbal  0.25 0.0218 21.0   1
-#&gt; 12 12        Evans &amp; Pike (B) 1973  72 129    math  0.06 0.0216 21.0   1
-#&gt; 13 13        Evans &amp; Pike (C) 1973  71 129  verbal  0.31 0.0221 21.0   1
-#&gt; 14 14        Evans &amp; Pike (C) 1973  71 129    math  0.09 0.0219 21.0   1
-#&gt; 15 15               Laschewer 1986  13  14  verbal  0.00 0.1484  8.9   0
-#&gt; 16 16               Laschewer 1986  13  14    math  0.07 0.1484  8.9   0
-#&gt; 17 17 Roberts &amp; Oppenheim (A) 1966  43  37  verbal  0.01 0.0503  7.5   1
-#&gt; 18 18 Roberts &amp; Oppenheim (B) 1966  19  13  verbal  0.67 0.1366  7.5   1
-#&gt; 19 19 Roberts &amp; Oppenheim (D) 1966  16  11  verbal -0.38 0.1561  7.5   1
-#&gt; 20 20 Roberts &amp; Oppenheim (E) 1966  20  12  verbal -0.24 0.1342  7.5   1
-#&gt; 21 21 Roberts &amp; Oppenheim (F) 1966  39  28  verbal  0.29 0.0620  7.5   1
-#&gt; 22 22 Roberts &amp; Oppenheim (G) 1966  38  25    math  0.26 0.0669  7.5   1
-#&gt; 23 23 Roberts &amp; Oppenheim (H) 1966  18  13    math -0.41 0.1352  7.5   1
-#&gt; 24 24 Roberts &amp; Oppenheim (I) 1966  19  13    math  0.08 0.1297  7.5   1
-#&gt; 25 25 Roberts &amp; Oppenheim (J) 1966  37  22    math  0.30 0.0732  7.5   1
-#&gt; 26 26 Roberts &amp; Oppenheim (K) 1966  19  11    math -0.53 0.1482  7.5   1
-#&gt; 27 27 Roberts &amp; Oppenheim (L) 1966  17  13    math  0.13 0.1360  7.5   1
-#&gt; 28 28 Roberts &amp; Oppenheim (M) 1966  20  12    math  0.26 0.1344  7.5   1
-#&gt; 29 29 Roberts &amp; Oppenheim (N) 1966  20  13    math  0.47 0.1303  7.5   1
-#&gt; 30 30               Zuman (B) 1988  16  17  verbal  0.13 0.1216 24.0   0
-#&gt; 31 31               Zuman (B) 1988  16  17    math  0.48 0.1248 24.0   0
-#&gt; 32 32               Burke (A) 1986  25  25  verbal  0.50 0.0825 50.0   0
-#&gt; 33 33               Burke (B) 1986  25  25  verbal  0.74 0.0855 50.0   0
-#&gt; 34 34                  Coffin 1987   8   8  verbal -0.23 0.2517 18.0   0
-#&gt; 35 35                  Coffin 1987   8   8    math  0.33 0.2534 18.0   0
-#&gt; 36 36                   Davis 1985  22  21  verbal  0.13 0.0933 15.0   0
-#&gt; 37 37                   Davis 1985  22  21    math  0.13 0.0933 15.0   0
-#&gt; 38 38                 Frankel 1960  45  45  verbal  0.13 0.0445 30.0   0
-#&gt; 39 39                 Frankel 1960  45  45    math  0.34 0.0451 30.0   0
-#&gt; 40 40                Kintisch 1979  38  38  verbal  0.06 0.0527 20.0   0
-#&gt; 41 41                  Whitla 1962  52  52  verbal  0.09 0.0385 10.0   1
-#&gt; 42 42                  Whitla 1962  52  52    math -0.11 0.0385 10.0   1
-#&gt; 43 43              Curran (A) 1988  21  17  verbal -0.10 0.1066  6.0   0
-#&gt; 44 44              Curran (A) 1988  21  17    math -0.08 0.1065  6.0   0
-#&gt; 45 45              Curran (B) 1988  24  17  verbal -0.14 0.1007  6.0   0
-#&gt; 46 46              Curran (B) 1988  24  17    math -0.29 0.1015  6.0   0
-#&gt; 47 47              Curran (C) 1988  20  17  verbal -0.16 0.1092  6.0   0
-#&gt; 48 48              Curran (C) 1988  20  17    math -0.34 0.1104  6.0   0
-#&gt; 49 49              Curran (D) 1988  20  17  verbal -0.07 0.1089  6.0   0
-#&gt; 50 50              Curran (D) 1988  20  17    math -0.06 0.1089  6.0   0
-#&gt; 51 51                    Dear 1958  60 526  verbal -0.02 0.0186 15.0   1
-#&gt; 52 52                    Dear 1958  60 526    math  0.21 0.0186 15.0   1
-#&gt; 53 53                    Dyer 1953 225 193  verbal  0.06 0.0096 15.0   1
-#&gt; 54 54                    Dyer 1953 225 193    math  0.17 0.0097 15.0   1
-#&gt; 55 55              French (B) 1955 110 158  verbal  0.06 0.0154  4.5   1
-#&gt; 56 56              French (C) 1955 161 158    math  0.20 0.0126 15.0   1
-#&gt; 57 57                     FTC 1978 192 684  verbal  0.15 0.0067 40.0   0
-#&gt; 58 58                     FTC 1978 192 684    math  0.03 0.0067 40.0   0
-#&gt; 59 59               Keefauver 1976  16  25  verbal  0.17 0.1029 14.0   0
-#&gt; 60 60               Keefauver 1976  16  25    math -0.19 0.1029 14.0   0
-#&gt; 61 61                    Lass 1961  38  82  verbal  0.02 0.0385   NA   1
-#&gt; 62 62                    Lass 1961  38  82    math  0.10 0.0386   NA   1
-#&gt; 63 63      Reynolds &amp; Oberman 1987  93  47  verbal -0.04 0.0320 63.0   0
-#&gt; 64 64      Reynolds &amp; Oberman 1987  93  47    math  0.60 0.0333 63.0   0
-#&gt; 65 65                  Teague 1992  10  15  verbal  0.40 0.1699 18.0   0
-#&gt; 66 66               Zuman (A) 1988  21  34  verbal  0.54 0.0797 27.0   0
-#&gt; 67 67               Zuman (A) 1988  21  34    math  0.57 0.0800 27.0   0
-#&gt;    homework type
-#&gt; 1         1    1
-#&gt; 2         1    1
-#&gt; 3         1    1
-#&gt; 4         1    1
-#&gt; 5         1    1
-#&gt; 6         1    1
-#&gt; 7         1    1
-#&gt; 8         1    1
-#&gt; 9         1    1
-#&gt; 10        1    1
-#&gt; 11        1    1
-#&gt; 12        1    1
-#&gt; 13        1    1
-#&gt; 14        1    1
-#&gt; 15        0    1
-#&gt; 16        0    1
-#&gt; 17        0    1
-#&gt; 18        0    1
-#&gt; 19        0    1
-#&gt; 20        0    1
-#&gt; 21        0    1
-#&gt; 22        0    1
-#&gt; 23        0    1
-#&gt; 24        0    1
-#&gt; 25        0    1
-#&gt; 26        0    1
-#&gt; 27        0    1
-#&gt; 28        0    1
-#&gt; 29        0    1
-#&gt; 30        1    1
-#&gt; 31        1    1
-#&gt; 32        1    2
-#&gt; 33        1    2
-#&gt; 34        0    2
-#&gt; 35        0    2
-#&gt; 36        0    2
-#&gt; 37        0    2
-#&gt; 38        0    2
-#&gt; 39        0    2
-#&gt; 40        1    2
-#&gt; 41        1    2
-#&gt; 42        1    2
-#&gt; 43        0    3
-#&gt; 44        0    3
-#&gt; 45        0    3
-#&gt; 46        0    3
-#&gt; 47        0    3
-#&gt; 48        0    3
-#&gt; 49        0    3
-#&gt; 50        0    3
-#&gt; 51        1    3
-#&gt; 52        1    3
-#&gt; 53        1    3
-#&gt; 54        1    3
-#&gt; 55        1    3
-#&gt; 56        1    3
-#&gt; 57        0    3
-#&gt; 58        0    3
-#&gt; 59        0    3
-#&gt; 60        0    3
-#&gt; 61        1    3
-#&gt; 62        1    3
-#&gt; 63        l    3
-#&gt; 64        l    3
-#&gt; 65        0    3
-#&gt; 66        1    3
-#&gt; 67        1    3</div><div class='input'>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>12</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;    id                 study year n1i n2i outcome    yi     vi  hrs ets homework type
+#&gt; 1   1 Alderman &amp; Powers (A) 1980  28  22  verbal  0.22 0.0817  7.0   1        1    1
+#&gt; 2   2 Alderman &amp; Powers (B) 1980  39  40  verbal  0.09 0.0507 10.0   1        1    1
+#&gt; 3   3 Alderman &amp; Powers (C) 1980  22  17  verbal  0.14 0.1045 10.5   1        1    1
+#&gt; 4   4 Alderman &amp; Powers (D) 1980  48  43  verbal  0.14 0.0442 10.0   1        1    1
+#&gt; 5   5 Alderman &amp; Powers (E) 1980  25  74  verbal -0.01 0.0535  6.0   1        1    1
+#&gt; 6   6 Alderman &amp; Powers (F) 1980  37  35  verbal  0.14 0.0557  5.0   1        1    1
+#&gt; 7   7 Alderman &amp; Powers (G) 1980  24  70  verbal  0.18 0.0561 11.0   1        1    1
+#&gt; 8   8 Alderman &amp; Powers (H) 1980  16  19  verbal  0.01 0.1151 45.0   1        1    1
+#&gt; 9   9      Evans &amp; Pike (A) 1973 145 129  verbal  0.13 0.0147 21.0   1        1    1
+#&gt; 10 10      Evans &amp; Pike (A) 1973 145 129    math  0.12 0.0147 21.0   1        1    1
+#&gt; 11 11      Evans &amp; Pike (B) 1973  72 129  verbal  0.25 0.0218 21.0   1        1    1
+#&gt; 12 12      Evans &amp; Pike (B) 1973  72 129    math  0.06 0.0216 21.0   1        1    1</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -366,15 +243,9 @@
 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>h<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='op'>-</span><span class='fl'>0.5</span>,<span class='fl'>0</span>,<span class='fl'>0.5</span><span class='op'>)</span>, lty<span class='op'>=</span><span class='st'>"dotted"</span><span class='op'>)</span>
 </div><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/abline.html'>abline</a></span><span class='op'>(</span>v<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/Log.html'>log</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span>,<span class='fl'>18</span><span class='op'>)</span><span class='op'>)</span>,  lty<span class='op'>=</span><span class='st'>"dotted"</span><span class='op'>)</span>
 </div><div class='img'><img src='dat.kalaian1996-1.png' alt='' width='864' height='768' /></div><div class='input'>
-<span class='co'>### construct variance-covariance matrices assuming rho = 0.66</span>
-<span class='va'>vcalc</span> <span class='op'>&lt;-</span> <span class='kw'>function</span><span class='op'>(</span><span class='va'>v</span>, <span class='va'>rho</span><span class='op'>)</span> <span class='op'>{</span>
-   <span class='va'>S</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, nrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, ncol<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span><span class='op'>)</span>
-   <span class='va'>R</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='va'>rho</span>, nrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, ncol<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span><span class='op'>)</span>
-   <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
-   <span class='va'>S</span> <span class='op'>%*%</span> <span class='va'>R</span> <span class='op'>%*%</span> <span class='va'>S</span>
-<span class='op'>}</span>
-<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/split.html'>split</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>v</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>, <span class='va'>vcalc</span>, rho<span class='op'>=</span><span class='fl'>0.66</span><span class='op'>)</span>
-<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/bldiag.html'>bldiag</a></span><span class='op'>(</span><span class='va'>V</span>, order<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+<span class='co'>### construct variance-covariance matrix assuming rho = 0.66 for effect sizes</span>
+<span class='co'>### corresponding to the 'verbal' and 'math' outcome types</span>
+<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/vcalc.html'>vcalc</a></span><span class='op'>(</span><span class='va'>vi</span>, cluster<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span>, type<span class='op'>=</span><span class='va'>outcome</span>, data<span class='op'>=</span><span class='va'>dat</span>, rho<span class='op'>=</span><span class='fl'>0.66</span><span class='op'>)</span>
 
 <span class='co'>### fit multivariate random-effects model</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>V</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>outcome</span> <span class='op'>-</span> <span class='fl'>1</span>,

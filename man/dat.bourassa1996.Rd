@@ -47,7 +47,7 @@ require(metafor)
 
 ### calculate log(OR) and corresponding sampling variance with 1/2 correction
 dat <- escalc(measure="OR", ai=lh.le, bi=lh.re, ci=rh.le, di=rh.re, data=dat, add=1/2, to="all")
-dat
+head(dat, 10)
 
 ### overall association between handedness and eyedness
 res <- rma(yi, vi, data=dat, subset=sex=="combined")

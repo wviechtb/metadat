@@ -212,34 +212,27 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.moura2021</span><span class='op'>$</span><span class='va'>dat</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;                   study.id effect.size.id             species
-#&gt; 1 Adams and Greenwood 1983              1      Gammarus pulex
-#&gt; 2       Adams et al. 1985a              2 Trapezia ferruginea
-#&gt; 3       Adams et al. 1985a              3 Trapezia ferruginea
-#&gt; 4       Adams et al. 1985a              4 Trapezia ferruginea
-#&gt; 5       Adams et al. 1985b              5   Asellus aquaticus
-#&gt; 6       Adams et al. 1985b              6   Asellus aquaticus
-#&gt;                           species.id subphylum     phylum assortment.trait
-#&gt; 1 Gammarus_pulex_gallicus_ott1024016 Crustacea Arthropoda      body length
-#&gt; 2       Trapezia_bidentata_ott787242 Crustacea Arthropoda  carapace length
-#&gt; 3       Trapezia_bidentata_ott787242 Crustacea Arthropoda   carapace width
-#&gt; 4       Trapezia_bidentata_ott787242 Crustacea Arthropoda  cheliped length
-#&gt; 5        Asellus_aquaticus_ott335971 Crustacea Arthropoda           weight
-#&gt; 6        Asellus_aquaticus_ott335971 Crustacea Arthropoda           weight
-#&gt;   trait.dimensions field.collection publication.year pooled.data
-#&gt; 1              uni              yes             1983          no
-#&gt; 2              uni              yes             1985         yes
-#&gt; 3              uni              yes             1985         yes
-#&gt; 4              uni              yes             1985         yes
-#&gt; 5              uni              yes             1985          no
-#&gt; 6              uni              yes             1985          no
-#&gt;   spatially.pooled.data temporally.pooled.data   ri ni
-#&gt; 1                    no                     no 0.23 53
-#&gt; 2                   yes                     no 0.57 23
-#&gt; 3                   yes                     no 0.54 23
-#&gt; 4                   yes                     no 0.53 23
-#&gt; 5                    no                     no 0.85 12
-#&gt; 6                    no                     no 0.82 15</div><div class='input'>
+</div><div class='output co'>#&gt;                   study.id effect.size.id             species                         species.id
+#&gt; 1 Adams and Greenwood 1983              1      Gammarus pulex Gammarus_pulex_gallicus_ott1024016
+#&gt; 2       Adams et al. 1985a              2 Trapezia ferruginea       Trapezia_bidentata_ott787242
+#&gt; 3       Adams et al. 1985a              3 Trapezia ferruginea       Trapezia_bidentata_ott787242
+#&gt; 4       Adams et al. 1985a              4 Trapezia ferruginea       Trapezia_bidentata_ott787242
+#&gt; 5       Adams et al. 1985b              5   Asellus aquaticus        Asellus_aquaticus_ott335971
+#&gt; 6       Adams et al. 1985b              6   Asellus aquaticus        Asellus_aquaticus_ott335971
+#&gt;   subphylum     phylum assortment.trait trait.dimensions field.collection publication.year
+#&gt; 1 Crustacea Arthropoda      body length              uni              yes             1983
+#&gt; 2 Crustacea Arthropoda  carapace length              uni              yes             1985
+#&gt; 3 Crustacea Arthropoda   carapace width              uni              yes             1985
+#&gt; 4 Crustacea Arthropoda  cheliped length              uni              yes             1985
+#&gt; 5 Crustacea Arthropoda           weight              uni              yes             1985
+#&gt; 6 Crustacea Arthropoda           weight              uni              yes             1985
+#&gt;   pooled.data spatially.pooled.data temporally.pooled.data   ri ni
+#&gt; 1          no                    no                     no 0.23 53
+#&gt; 2         yes                   yes                     no 0.57 23
+#&gt; 3         yes                   yes                     no 0.54 23
+#&gt; 4         yes                   yes                     no 0.53 23
+#&gt; 5          no                    no                     no 0.85 12
+#&gt; 6          no                    no                     no 0.82 15</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -315,16 +308,16 @@
 #&gt; 
 #&gt; Model Results:
 #&gt; 
-#&gt;                                                     estimate      se     zval 
-#&gt; intrcpt                                               0.3457  0.1327   2.6047 
-#&gt; spatially.pooled.datayes                              0.0810  0.0390   2.0780 
-#&gt; temporally.pooled.datayes                             0.0599  0.0269   2.2272 
-#&gt; spatially.pooled.datayes:temporally.pooled.datayes   -0.0729  0.0452  -1.6107 
-#&gt;                                                       pval    ci.lb   ci.ub 
-#&gt; intrcpt                                             0.0092   0.0856  0.6059  ** 
-#&gt; spatially.pooled.datayes                            0.0377   0.0046  0.1574   * 
-#&gt; temporally.pooled.datayes                           0.0259   0.0072  0.1126   * 
-#&gt; spatially.pooled.datayes:temporally.pooled.datayes  0.1073  -0.1615  0.0158     
+#&gt;                                                     estimate      se     zval    pval    ci.lb 
+#&gt; intrcpt                                               0.3457  0.1327   2.6047  0.0092   0.0856 
+#&gt; spatially.pooled.datayes                              0.0810  0.0390   2.0780  0.0377   0.0046 
+#&gt; temporally.pooled.datayes                             0.0599  0.0269   2.2272  0.0259   0.0072 
+#&gt; spatially.pooled.datayes:temporally.pooled.datayes   -0.0729  0.0452  -1.6107  0.1073  -0.1615 
+#&gt;                                                      ci.ub 
+#&gt; intrcpt                                             0.6059  ** 
+#&gt; spatially.pooled.datayes                            0.1574   * 
+#&gt; temporally.pooled.datayes                           0.1126   * 
+#&gt; spatially.pooled.datayes:temporally.pooled.datayes  0.0158     
 #&gt; 
 #&gt; ---
 #&gt; Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

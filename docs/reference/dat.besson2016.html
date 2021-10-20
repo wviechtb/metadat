@@ -260,62 +260,48 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.besson2016</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;   comp_ID study_ID dam_ID animal_ID                   Reference species strain
-#&gt; 1 comp_01     s_01   D_01      A_01 Reyes-Castro et al. (2012a)    rats Wistar
-#&gt; 2 comp_02     s_01   D_02      A_02 Reyes-Castro et al. (2012a)    rats Wistar
-#&gt; 3 comp_03     s_01   D_03      A_03 Reyes-Castro et al. (2012a)    rats Wistar
-#&gt; 4 comp_04     s_01   D_01      A_01 Reyes-Castro et al. (2012a)    rats Wistar
-#&gt; 5 comp_05     s_01   D_02      A_02 Reyes-Castro et al. (2012a)    rats Wistar
-#&gt; 6 comp_06     s_01   D_03      A_03 Reyes-Castro et al. (2012a)    rats Wistar
-#&gt;   manip_type manip_direction nom_manip_val exp control manip_parameter
-#&gt; 1    protein               -           50% 10%     20% protein content
-#&gt; 2    protein               -           50% 10%     20% protein content
-#&gt; 3    protein               -           50% 10%     20% protein content
-#&gt; 4    protein               -           50% 10%     20% protein content
-#&gt; 5    protein               -           50% 10%     20% protein content
-#&gt; 6    protein               -           50% 10%     20% protein content
-#&gt;   vitmin_eql adlib_con adlib_exp              diet_con
-#&gt; 1        yes       yes       yes  Zeiger_Rodent_RQ22-5
-#&gt; 2        yes       yes       yes  Zeiger_Rodent_RQ22-6
-#&gt; 3        yes       yes       yes  Zeiger_Rodent_RQ22-7
-#&gt; 4        yes       yes       yes  Zeiger_Rodent_RQ22-8
-#&gt; 5        yes       yes       yes  Zeiger_Rodent_RQ22-9
-#&gt; 6        yes       yes       yes Zeiger_Rodent_RQ22-10
-#&gt;                       diet_exp dam_diet_start_dPC dam_diet_end_dPC diet_label
-#&gt; 1 Zeiger_Rodent_RQ22-5_LP_isoc                  1               22        pre
-#&gt; 2 Zeiger_Rodent_RQ22-5_LP_isoc                 22               43       lact
-#&gt; 3 Zeiger_Rodent_RQ22-5_LP_isoc                  1               43   pre+lact
-#&gt; 4 Zeiger_Rodent_RQ22-5_LP_isoc                  1               22        pre
-#&gt; 5 Zeiger_Rodent_RQ22-5_LP_isoc                 22               43       lact
-#&gt; 6 Zeiger_Rodent_RQ22-5_LP_isoc                  1               43   pre+lact
-#&gt;   age_mating n_con_dam n_exp_dam multi_use_con dam_housing temperature
-#&gt; 1        122        20        20           yes      single          22
-#&gt; 2        122        20        20           yes      single          22
-#&gt; 3        122        20        20           yes      single          22
-#&gt; 4        122        20        20           yes      single          22
-#&gt; 5        122        20        20           yes      single          22
-#&gt; 6        122        20        20           yes      single          22
-#&gt;   photoperiod litter_size litter_size_equalized crossfostered sex housing
-#&gt; 1          12          10                   yes            no   f   group
-#&gt; 2          12          10                   yes            no   f   group
-#&gt; 3          12          10                   yes            no   f   group
-#&gt; 4          12          10                   yes            no   f   group
-#&gt; 5          12          10                   yes            no   f   group
-#&gt; 6          12          10                   yes            no   f   group
-#&gt;   bodymass_mean_contr bodymass_SE_contr bodymass_mean_exp bodymass_SE_exp
-#&gt; 1                 209                 4               200               7
-#&gt; 2                 209                 4               190               6
-#&gt; 3                 209                 4               199              10
-#&gt; 4                 209                 4               200               7
-#&gt; 5                 209                 4               190               6
-#&gt; 6                 209                 4               199              10
-#&gt;   bm_N_contr bm_N_exp bm_dPP     offspring_diet offspring_con_adlib
-#&gt; 1         10       10     90 20% casein control                 yes
-#&gt; 2         10       10     90 20% casein control                 yes
-#&gt; 3         10       10     90 20% casein control                 yes
-#&gt; 4         10       10     90 20% casein control                 yes
-#&gt; 5         10       10     90 20% casein control                 yes
-#&gt; 6         10       10     90 20% casein control                 yes
+</div><div class='output co'>#&gt;   comp_ID study_ID dam_ID animal_ID                   Reference species strain manip_type
+#&gt; 1 comp_01     s_01   D_01      A_01 Reyes-Castro et al. (2012a)    rats Wistar    protein
+#&gt; 2 comp_02     s_01   D_02      A_02 Reyes-Castro et al. (2012a)    rats Wistar    protein
+#&gt; 3 comp_03     s_01   D_03      A_03 Reyes-Castro et al. (2012a)    rats Wistar    protein
+#&gt; 4 comp_04     s_01   D_01      A_01 Reyes-Castro et al. (2012a)    rats Wistar    protein
+#&gt; 5 comp_05     s_01   D_02      A_02 Reyes-Castro et al. (2012a)    rats Wistar    protein
+#&gt; 6 comp_06     s_01   D_03      A_03 Reyes-Castro et al. (2012a)    rats Wistar    protein
+#&gt;   manip_direction nom_manip_val exp control manip_parameter vitmin_eql adlib_con adlib_exp
+#&gt; 1               -           50% 10%     20% protein content        yes       yes       yes
+#&gt; 2               -           50% 10%     20% protein content        yes       yes       yes
+#&gt; 3               -           50% 10%     20% protein content        yes       yes       yes
+#&gt; 4               -           50% 10%     20% protein content        yes       yes       yes
+#&gt; 5               -           50% 10%     20% protein content        yes       yes       yes
+#&gt; 6               -           50% 10%     20% protein content        yes       yes       yes
+#&gt;                diet_con                     diet_exp dam_diet_start_dPC dam_diet_end_dPC diet_label
+#&gt; 1  Zeiger_Rodent_RQ22-5 Zeiger_Rodent_RQ22-5_LP_isoc                  1               22        pre
+#&gt; 2  Zeiger_Rodent_RQ22-6 Zeiger_Rodent_RQ22-5_LP_isoc                 22               43       lact
+#&gt; 3  Zeiger_Rodent_RQ22-7 Zeiger_Rodent_RQ22-5_LP_isoc                  1               43   pre+lact
+#&gt; 4  Zeiger_Rodent_RQ22-8 Zeiger_Rodent_RQ22-5_LP_isoc                  1               22        pre
+#&gt; 5  Zeiger_Rodent_RQ22-9 Zeiger_Rodent_RQ22-5_LP_isoc                 22               43       lact
+#&gt; 6 Zeiger_Rodent_RQ22-10 Zeiger_Rodent_RQ22-5_LP_isoc                  1               43   pre+lact
+#&gt;   age_mating n_con_dam n_exp_dam multi_use_con dam_housing temperature photoperiod litter_size
+#&gt; 1        122        20        20           yes      single          22          12          10
+#&gt; 2        122        20        20           yes      single          22          12          10
+#&gt; 3        122        20        20           yes      single          22          12          10
+#&gt; 4        122        20        20           yes      single          22          12          10
+#&gt; 5        122        20        20           yes      single          22          12          10
+#&gt; 6        122        20        20           yes      single          22          12          10
+#&gt;   litter_size_equalized crossfostered sex housing bodymass_mean_contr bodymass_SE_contr
+#&gt; 1                   yes            no   f   group                 209                 4
+#&gt; 2                   yes            no   f   group                 209                 4
+#&gt; 3                   yes            no   f   group                 209                 4
+#&gt; 4                   yes            no   f   group                 209                 4
+#&gt; 5                   yes            no   f   group                 209                 4
+#&gt; 6                   yes            no   f   group                 209                 4
+#&gt;   bodymass_mean_exp bodymass_SE_exp bm_N_contr bm_N_exp bm_dPP     offspring_diet offspring_con_adlib
+#&gt; 1               200               7         10       10     90 20% casein control                 yes
+#&gt; 2               190               6         10       10     90 20% casein control                 yes
+#&gt; 3               199              10         10       10     90 20% casein control                 yes
+#&gt; 4               200               7         10       10     90 20% casein control                 yes
+#&gt; 5               190               6         10       10     90 20% casein control                 yes
+#&gt; 6               199              10         10       10     90 20% casein control                 yes
 #&gt;    offspring_diet_level offspring_diet_end_dPP post_diet_adlib response_age_dPP
 #&gt; 1  Zeiger_Rodent_RQ22-5                      1             yes               90
 #&gt; 2  Zeiger_Rodent_RQ22-6                     21             yes               90
@@ -323,34 +309,27 @@
 #&gt; 4  Zeiger_Rodent_RQ22-8                      1             yes               90
 #&gt; 5  Zeiger_Rodent_RQ22-9                     21             yes               90
 #&gt; 6 Zeiger_Rodent_RQ22-10                     21             yes               90
-#&gt;   authors_behaviour_classification our_behaviour_classification response_test
-#&gt; 1                          ANXIETY                     ACTIVITY           EPM
-#&gt; 2                          ANXIETY                     ACTIVITY           EPM
-#&gt; 3                          ANXIETY                     ACTIVITY           EPM
-#&gt; 4                          ANXIETY                      ANXIETY           EPM
-#&gt; 5                          ANXIETY                      ANXIETY           EPM
-#&gt; 6                          ANXIETY                      ANXIETY           EPM
-#&gt;   time_trial          measure unit high_better night.day comparison exp_mean
-#&gt; 1          5     T_dist_moved    m         yes     night      cc-rc    13.90
-#&gt; 2          5     T_dist_moved    m         yes     night      cc-cr    13.90
-#&gt; 3          5     T_dist_moved    m         yes     night      cc-rr    10.69
-#&gt; 4          5 Open_arm_entries    #         yes     night      cc-rc     3.59
-#&gt; 5          5 Open_arm_entries    #         yes     night      cc-cr     4.29
-#&gt; 6          5 Open_arm_entries    #         yes     night      cc-rr     3.20
-#&gt;   exp_se exp_n con_mean con_se con_n con_ID percentage Data_source
-#&gt; 1   1.28     8    11.97   1.28     8 con_01         no      Fig. 1
-#&gt; 2   0.96     8    11.97   1.28     8 con_01         no      Fig. 1
-#&gt; 3   0.32     8    11.97   1.28     8 con_01         no      Fig. 1
-#&gt; 4   0.70     8     5.00   0.89     8 con_02         no      Fig. 1
-#&gt; 5   0.70     8     5.00   0.89     8 con_02         no      Fig. 1
-#&gt; 6   0.48     8     5.00   0.89     8 con_02         no      Fig. 1
-#&gt;   measure_comments SE_imputed
-#&gt; 1             &lt;NA&gt;         no
-#&gt; 2             &lt;NA&gt;         no
-#&gt; 3             &lt;NA&gt;         no
-#&gt; 4             &lt;NA&gt;         no
-#&gt; 5             &lt;NA&gt;         no
-#&gt; 6             &lt;NA&gt;         no
+#&gt;   authors_behaviour_classification our_behaviour_classification response_test time_trial
+#&gt; 1                          ANXIETY                     ACTIVITY           EPM          5
+#&gt; 2                          ANXIETY                     ACTIVITY           EPM          5
+#&gt; 3                          ANXIETY                     ACTIVITY           EPM          5
+#&gt; 4                          ANXIETY                      ANXIETY           EPM          5
+#&gt; 5                          ANXIETY                      ANXIETY           EPM          5
+#&gt; 6                          ANXIETY                      ANXIETY           EPM          5
+#&gt;            measure unit high_better night.day comparison exp_mean exp_se exp_n con_mean con_se con_n
+#&gt; 1     T_dist_moved    m         yes     night      cc-rc    13.90   1.28     8    11.97   1.28     8
+#&gt; 2     T_dist_moved    m         yes     night      cc-cr    13.90   0.96     8    11.97   1.28     8
+#&gt; 3     T_dist_moved    m         yes     night      cc-rr    10.69   0.32     8    11.97   1.28     8
+#&gt; 4 Open_arm_entries    #         yes     night      cc-rc     3.59   0.70     8     5.00   0.89     8
+#&gt; 5 Open_arm_entries    #         yes     night      cc-cr     4.29   0.70     8     5.00   0.89     8
+#&gt; 6 Open_arm_entries    #         yes     night      cc-rr     3.20   0.48     8     5.00   0.89     8
+#&gt;   con_ID percentage Data_source measure_comments SE_imputed
+#&gt; 1 con_01         no      Fig. 1             &lt;NA&gt;         no
+#&gt; 2 con_01         no      Fig. 1             &lt;NA&gt;         no
+#&gt; 3 con_01         no      Fig. 1             &lt;NA&gt;         no
+#&gt; 4 con_02         no      Fig. 1             &lt;NA&gt;         no
+#&gt; 5 con_02         no      Fig. 1             &lt;NA&gt;         no
+#&gt; 6 con_02         no      Fig. 1             &lt;NA&gt;         no
 #&gt;                                                   Comments
 #&gt; 1 details of diet can be found in Zambrano et al. (2005). 
 #&gt; 2 details of diet can be found in Zambrano et al. (2005). 

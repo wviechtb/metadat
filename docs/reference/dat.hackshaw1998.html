@@ -206,28 +206,17 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.hackshaw1998</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>10</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;    study       author year   country       design cases   or or.lb or.ub 
-#&gt; 1      1    Garfinkel 1981       USA       cohort   153 1.18  0.90  1.54 
-#&gt; 2      2     Hirayama 1984     Japan       cohort   200 1.45  1.02  2.08 
-#&gt; 3      3       Butler 1988       USA       cohort     8 2.02  0.48  8.56 
-#&gt; 4      4     Cardenas 1997       USA       cohort   150 1.20  0.80  1.60 
-#&gt; 5      5         Chan 1982 Hong Kong case-control    84 0.75  0.43  1.30 
-#&gt; 6      6       Correa 1983       USA case-control    22 2.07  0.81  5.25 
-#&gt; 7      7 Trichopolous 1983    Greece case-control    62 2.13  1.19  3.83 
-#&gt; 8      8      Buffler 1984       USA case-control    41 0.80  0.34  1.90 
-#&gt; 9      9        Kabat 1984       USA case-control    24 0.79  0.25  2.45 
-#&gt; 10    10          Lam 1985 Hong Kong case-control    60 2.01  1.09  3.72 
-#&gt;         yi     vi 
-#&gt; 1   0.1655 0.0188 
-#&gt; 2   0.3716 0.0330 
-#&gt; 3   0.7031 0.5402 
-#&gt; 4   0.1823 0.0313 
-#&gt; 5  -0.2877 0.0797 
-#&gt; 6   0.7275 0.2273 
-#&gt; 7   0.7561 0.0889 
-#&gt; 8  -0.2231 0.1927 
-#&gt; 9  -0.2357 0.3390 
-#&gt; 10  0.6981 0.0981 </div><div class='input'>
+</div><div class='output co'>#&gt;    study       author year   country       design cases   or or.lb or.ub      yi     vi 
+#&gt; 1      1    Garfinkel 1981       USA       cohort   153 1.18  0.90  1.54  0.1655 0.0188 
+#&gt; 2      2     Hirayama 1984     Japan       cohort   200 1.45  1.02  2.08  0.3716 0.0330 
+#&gt; 3      3       Butler 1988       USA       cohort     8 2.02  0.48  8.56  0.7031 0.5402 
+#&gt; 4      4     Cardenas 1997       USA       cohort   150 1.20  0.80  1.60  0.1823 0.0313 
+#&gt; 5      5         Chan 1982 Hong Kong case-control    84 0.75  0.43  1.30 -0.2877 0.0797 
+#&gt; 6      6       Correa 1983       USA case-control    22 2.07  0.81  5.25  0.7275 0.2273 
+#&gt; 7      7 Trichopolous 1983    Greece case-control    62 2.13  1.19  3.83  0.7561 0.0889 
+#&gt; 8      8      Buffler 1984       USA case-control    41 0.80  0.34  1.90 -0.2231 0.1927 
+#&gt; 9      9        Kabat 1984       USA case-control    24 0.79  0.25  2.45 -0.2357 0.3390 
+#&gt; 10    10          Lam 1985 Hong Kong case-control    60 2.01  1.09  3.72  0.6981 0.0981 </div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>

@@ -271,74 +271,40 @@
 <span class='co'>### calculate log odds ratios and corresponding sampling variances</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"OR"</span>, ai<span class='op'>=</span><span class='va'>non.pos</span>, bi<span class='op'>=</span><span class='va'>non.neg</span>, ci<span class='op'>=</span><span class='va'>cir.pos</span>, di<span class='op'>=</span><span class='va'>cir.neg</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;           study          category non.pos non.neg cir.pos cir.neg      yi 
-#&gt; 1       Bwayo 1   high-risk group      92      86     160     612  1.4090 
-#&gt; 2       Bwayo 2   high-risk group      22      46      37     200  0.9498 
-#&gt; 3        Kreiss   high-risk group      59      18     254     168  0.7738 
-#&gt; 4          Hira   high-risk group     418     172      10      10  0.8880 
-#&gt; 5       Cameron   high-risk group      18      61       6     208  2.3253 
-#&gt; 6         Pepin   high-risk group       5      42      13     243  0.7999 
-#&gt; 7    Greenblatt   high-risk group      11      28       8      68  1.2058 
-#&gt; 8        Diallo   high-risk group      38      46     212     873  1.2243 
-#&gt; 9      Simonsen   high-risk group      17      70      21     232  0.9869 
-#&gt; 10      Tyndall   high-risk group      85      93     105     527  1.5233 
-#&gt; 11        Nasio   high-risk group      86      78     137     580  1.5407 
-#&gt; 12     Mehendal   high-risk group     837    3411      38     253  0.4909 
-#&gt; 13    Bollinger   high-risk group      50     241       1      14  1.0663 
-#&gt; 14     Chiasson   high-risk group      36     797      14     542  0.5589 
-#&gt; 15       Sassan   high-risk group      75      18     415     221  0.7970 
-#&gt; 16       Hunter     partner study      43     330     165    3765  1.0897 
-#&gt; 17       Carael     partner study      90     105      34      45  0.1262 
-#&gt; 18         Chao     partner study     442    4844      75     232 -1.2649 
-#&gt; 19         Moss     partner study      24      16      12      17  0.7538 
-#&gt; 20        Allen     partner study     275     612     132     324  0.0980 
-#&gt; 21       Sedlin     partner study      32      26      33      40  0.4000 
-#&gt; 22    Konde-Luc     partner study     153    1516       6     127  0.7590 
-#&gt; 23      Barongo population survey      55    1356      42     642 -0.4780 
-#&gt; 24   Grosskurth population survey     158    4604      61    1026 -0.5495 
-#&gt; 25 Van de Perre population survey      46     224       6      26 -0.1167 
-#&gt; 26         Seed population survey     171     422      51     192  0.4223 
-#&gt; 27      Malamba population survey     111     114      21      47  0.7790 
-#&gt; 28      Quigley population survey     101     272      48     121 -0.0661 
-#&gt; 29     Urassa 1 population survey      56    1301      42     600 -0.4863 
-#&gt; 30     Urassa 2 population survey     105    2040      32     426 -0.3780 
-#&gt; 31     Urassa 3 population survey      38     309      19     158  0.0224 
-#&gt; 32     Urassa 4 population survey     112     716      54     692  0.6954 
-#&gt; 33     Urassa 5 population survey     101     365      48     136 -0.2433 
-#&gt;        vi 
-#&gt; 1  0.0304 
-#&gt; 2  0.0992 
-#&gt; 3  0.0824 
-#&gt; 4  0.2082 
-#&gt; 5  0.2434 
-#&gt; 6  0.3048 
-#&gt; 7  0.2663 
-#&gt; 8  0.0539 
-#&gt; 9  0.1250 
-#&gt; 10 0.0339 
-#&gt; 11 0.0335 
-#&gt; 12 0.0318 
-#&gt; 13 1.0956 
-#&gt; 14 0.1023 
-#&gt; 15 0.0758 
-#&gt; 16 0.0326 
-#&gt; 17 0.0723 
-#&gt; 18 0.0201 
-#&gt; 19 0.2463 
-#&gt; 20 0.0159 
-#&gt; 21 0.1250 
-#&gt; 22 0.1817 
-#&gt; 23 0.0443 
-#&gt; 24 0.0239 
-#&gt; 25 0.2313 
-#&gt; 26 0.0330 
-#&gt; 27 0.0867 
-#&gt; 28 0.0427 
-#&gt; 29 0.0441 
-#&gt; 30 0.0436 
-#&gt; 31 0.0885 
-#&gt; 32 0.0303 
-#&gt; 33 0.0408 </div><div class='input'>
+</div><div class='output co'>#&gt;           study          category non.pos non.neg cir.pos cir.neg      yi     vi 
+#&gt; 1       Bwayo 1   high-risk group      92      86     160     612  1.4090 0.0304 
+#&gt; 2       Bwayo 2   high-risk group      22      46      37     200  0.9498 0.0992 
+#&gt; 3        Kreiss   high-risk group      59      18     254     168  0.7738 0.0824 
+#&gt; 4          Hira   high-risk group     418     172      10      10  0.8880 0.2082 
+#&gt; 5       Cameron   high-risk group      18      61       6     208  2.3253 0.2434 
+#&gt; 6         Pepin   high-risk group       5      42      13     243  0.7999 0.3048 
+#&gt; 7    Greenblatt   high-risk group      11      28       8      68  1.2058 0.2663 
+#&gt; 8        Diallo   high-risk group      38      46     212     873  1.2243 0.0539 
+#&gt; 9      Simonsen   high-risk group      17      70      21     232  0.9869 0.1250 
+#&gt; 10      Tyndall   high-risk group      85      93     105     527  1.5233 0.0339 
+#&gt; 11        Nasio   high-risk group      86      78     137     580  1.5407 0.0335 
+#&gt; 12     Mehendal   high-risk group     837    3411      38     253  0.4909 0.0318 
+#&gt; 13    Bollinger   high-risk group      50     241       1      14  1.0663 1.0956 
+#&gt; 14     Chiasson   high-risk group      36     797      14     542  0.5589 0.1023 
+#&gt; 15       Sassan   high-risk group      75      18     415     221  0.7970 0.0758 
+#&gt; 16       Hunter     partner study      43     330     165    3765  1.0897 0.0326 
+#&gt; 17       Carael     partner study      90     105      34      45  0.1262 0.0723 
+#&gt; 18         Chao     partner study     442    4844      75     232 -1.2649 0.0201 
+#&gt; 19         Moss     partner study      24      16      12      17  0.7538 0.2463 
+#&gt; 20        Allen     partner study     275     612     132     324  0.0980 0.0159 
+#&gt; 21       Sedlin     partner study      32      26      33      40  0.4000 0.1250 
+#&gt; 22    Konde-Luc     partner study     153    1516       6     127  0.7590 0.1817 
+#&gt; 23      Barongo population survey      55    1356      42     642 -0.4780 0.0443 
+#&gt; 24   Grosskurth population survey     158    4604      61    1026 -0.5495 0.0239 
+#&gt; 25 Van de Perre population survey      46     224       6      26 -0.1167 0.2313 
+#&gt; 26         Seed population survey     171     422      51     192  0.4223 0.0330 
+#&gt; 27      Malamba population survey     111     114      21      47  0.7790 0.0867 
+#&gt; 28      Quigley population survey     101     272      48     121 -0.0661 0.0427 
+#&gt; 29     Urassa 1 population survey      56    1301      42     600 -0.4863 0.0441 
+#&gt; 30     Urassa 2 population survey     105    2040      32     426 -0.3780 0.0436 
+#&gt; 31     Urassa 3 population survey      38     309      19     158  0.0224 0.0885 
+#&gt; 32     Urassa 4 population survey     112     716      54     692  0.6954 0.0303 
+#&gt; 33     Urassa 5 population survey     101     365      48     136 -0.2433 0.0408 </div><div class='input'>
 <span class='co'>### random-effects model</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span>, method<span class='op'>=</span><span class='st'>"DL"</span><span class='op'>)</span>
 <span class='va'>res</span>

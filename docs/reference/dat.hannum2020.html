@@ -206,78 +206,42 @@
     <pre class="examples"><div class='input'><span class='co'># copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.hannum2020</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;             authorName                              DOI   ni   xi
-#&gt; 1       Vaira et al. 1                10.1002/hed.26204   72   44
-#&gt; 2       Iravani et al.      10.1101/2020.05.07.20094516   16   13
-#&gt; 3       Vaira et al. 2                10.1002/hed.26228   33   17
-#&gt; 4         Merza et al.        10.1016/j.dsx.2020.04.047   15    2
-#&gt; 5       Menni et al. 1      10.1101/2020.04.05.20048421  579  344
-#&gt; 6      Levinson et al.      10.1101/2020.04.11.20055483   42   15
-#&gt; 7       Haehner et al.      10.1101/2020.04.27.20081356   34   22
-#&gt; 8         Speth et al.         10.1177/0194599820929185  103   63
-#&gt; 9      De Maria et al.               10.1002/jmv.25995.   95   48
-#&gt; 10      Menni et al. 2        10.1038/s41591-020-0916-2 7178 4668
-#&gt; 11        Yan et al. 1               10.1111/alr.22579.   59   40
-#&gt; 12        Luers et al.              10.1093/cid/ciaa525   72   53
-#&gt; 13       Roland et al.               10.1111/alr.22602.  145   95
-#&gt; 14 Boscolo-Rizzo et al       10.1007/s00405-020-06066-9   54   34
-#&gt; 15          Liu et al.           10.3390/ijerph17093311  321   42
-#&gt; 16      Paderno et al.               10.1111/alr.22610.  508  284
-#&gt; 17          Lee et al.        10.3346/jkms.2020.35.e174 3191  488
-#&gt; 18      Lechien et al.       10.1007/s00405-020-05965-1  417  357
-#&gt; 19      Gelardi et al.          10.23750/abm.v91i2.9524   72   42
-#&gt; 20   Giacomelli et al.              10.1093/cid/ciaa330   59   14
-#&gt; 21        Shoer et al. 10.1101/2020.05.18.20105569.this  498  136
-#&gt; 22      Vaira et al. 3                10.1002/hed.26269  345  241
-#&gt; 23  Bocksberger et al.       10.1007/s00106-020-00891-4   63   26
-#&gt; 24                 Mao      10.1101/2020.02.22.20026500  214   11
-#&gt; 25             Spinato           10.1001/jama.2020.6771  202  130
-#&gt; 26  Beltran-Corbellini       10.1007/s00405-020-05999-5   79   25
-#&gt; 27     Trubiano et al.              10.1093/cid/ciaa655   28    7
-#&gt; 28        Moein et al.               10.1111/alr.22587.   60   59
-#&gt; 29      Hornuss et al.      10.1101/2020.04.28.20083311   45   38
-#&gt; 30        Yan et al. 2               10.1111/alr.22592.  128   75
-#&gt; 31 Klopfenstein et al.     10.1016/j.medmal.2020.04.006  114   54
-#&gt; 32        Gudbjartsson            10.1056/NEJMoa2006100 1113  119
-#&gt; 33           Wee et al       10.1007/s00405-020-05999-5  154   35
-#&gt; 34        Dawson et al    10.1101/2020.05.13.20101006.t   42   18
-#&gt; 35    Ji Yun Noh et al       10.1016/j.jinf.2020.05.035  199   52
-#&gt;    percentOlfactoryLoss
-#&gt; 1             61.111111
-#&gt; 2             81.250000
-#&gt; 3             51.515152
-#&gt; 4             13.333333
-#&gt; 5             59.412781
-#&gt; 6             35.714286
-#&gt; 7             64.705882
-#&gt; 8             61.165049
-#&gt; 9             50.526316
-#&gt; 10            65.032042
-#&gt; 11            67.796610
-#&gt; 12            73.611111
-#&gt; 13            65.517241
-#&gt; 14            62.962963
-#&gt; 15            13.084112
-#&gt; 16            55.905512
-#&gt; 17            15.293012
-#&gt; 18            85.611511
-#&gt; 19            58.333333
-#&gt; 20            23.728814
-#&gt; 21            27.309237
-#&gt; 22            69.855072
-#&gt; 23            41.269841
-#&gt; 24             5.140187
-#&gt; 25            64.356436
-#&gt; 26            31.645570
-#&gt; 27            25.000000
-#&gt; 28            98.333333
-#&gt; 29            84.444444
-#&gt; 30            58.593750
-#&gt; 31            47.368421
-#&gt; 32            10.691824
-#&gt; 33            22.727273
-#&gt; 34            42.857143
-#&gt; 35            26.130653
+</div><div class='output co'>#&gt;             authorName                              DOI   ni   xi percentOlfactoryLoss
+#&gt; 1       Vaira et al. 1                10.1002/hed.26204   72   44            61.111111
+#&gt; 2       Iravani et al.      10.1101/2020.05.07.20094516   16   13            81.250000
+#&gt; 3       Vaira et al. 2                10.1002/hed.26228   33   17            51.515152
+#&gt; 4         Merza et al.        10.1016/j.dsx.2020.04.047   15    2            13.333333
+#&gt; 5       Menni et al. 1      10.1101/2020.04.05.20048421  579  344            59.412781
+#&gt; 6      Levinson et al.      10.1101/2020.04.11.20055483   42   15            35.714286
+#&gt; 7       Haehner et al.      10.1101/2020.04.27.20081356   34   22            64.705882
+#&gt; 8         Speth et al.         10.1177/0194599820929185  103   63            61.165049
+#&gt; 9      De Maria et al.               10.1002/jmv.25995.   95   48            50.526316
+#&gt; 10      Menni et al. 2        10.1038/s41591-020-0916-2 7178 4668            65.032042
+#&gt; 11        Yan et al. 1               10.1111/alr.22579.   59   40            67.796610
+#&gt; 12        Luers et al.              10.1093/cid/ciaa525   72   53            73.611111
+#&gt; 13       Roland et al.               10.1111/alr.22602.  145   95            65.517241
+#&gt; 14 Boscolo-Rizzo et al       10.1007/s00405-020-06066-9   54   34            62.962963
+#&gt; 15          Liu et al.           10.3390/ijerph17093311  321   42            13.084112
+#&gt; 16      Paderno et al.               10.1111/alr.22610.  508  284            55.905512
+#&gt; 17          Lee et al.        10.3346/jkms.2020.35.e174 3191  488            15.293012
+#&gt; 18      Lechien et al.       10.1007/s00405-020-05965-1  417  357            85.611511
+#&gt; 19      Gelardi et al.          10.23750/abm.v91i2.9524   72   42            58.333333
+#&gt; 20   Giacomelli et al.              10.1093/cid/ciaa330   59   14            23.728814
+#&gt; 21        Shoer et al. 10.1101/2020.05.18.20105569.this  498  136            27.309237
+#&gt; 22      Vaira et al. 3                10.1002/hed.26269  345  241            69.855072
+#&gt; 23  Bocksberger et al.       10.1007/s00106-020-00891-4   63   26            41.269841
+#&gt; 24                 Mao      10.1101/2020.02.22.20026500  214   11             5.140187
+#&gt; 25             Spinato           10.1001/jama.2020.6771  202  130            64.356436
+#&gt; 26  Beltran-Corbellini       10.1007/s00405-020-05999-5   79   25            31.645570
+#&gt; 27     Trubiano et al.              10.1093/cid/ciaa655   28    7            25.000000
+#&gt; 28        Moein et al.               10.1111/alr.22587.   60   59            98.333333
+#&gt; 29      Hornuss et al.      10.1101/2020.04.28.20083311   45   38            84.444444
+#&gt; 30        Yan et al. 2               10.1111/alr.22592.  128   75            58.593750
+#&gt; 31 Klopfenstein et al.     10.1016/j.medmal.2020.04.006  114   54            47.368421
+#&gt; 32        Gudbjartsson            10.1056/NEJMoa2006100 1113  119            10.691824
+#&gt; 33           Wee et al       10.1007/s00405-020-05999-5  154   35            22.727273
+#&gt; 34        Dawson et al    10.1101/2020.05.13.20101006.t   42   18            42.857143
+#&gt; 35    Ji Yun Noh et al       10.1016/j.jinf.2020.05.035  199   52            26.130653
 #&gt;                                                                                                                         comments
 #&gt; 1  In the abstact of the paper it says 60 cases with varying degree of hyposmia and 2 patients with anosmia -- Results showed 44
 #&gt; 2                                                                                       Preprint, only small part of whole paper

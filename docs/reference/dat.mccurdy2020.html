@@ -226,34 +226,27 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.mccurdy2020</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;   article experiment sample id pairing     yi      vi ni stimuli condition 
-#&gt; 1      12          1      1  1       1 0.8790 0.00068 12      20  generate 
-#&gt; 2      12          1      2  2       1 0.7130 0.00140 12      20      read 
-#&gt; 3      12          1      1  3       2 0.9060 0.00058 12      20  generate 
-#&gt; 4      12          1      2  4       2 0.6840 0.00151 12      20      read 
-#&gt; 5      12          1      1  5       3 0.8420 0.00084 12      20  generate 
-#&gt; 6      12          1      2  6       3 0.7530 0.00124 12      20      read 
-#&gt;   gen_difficulty manip_type present_style word_status memory_test memory_type 
-#&gt; 1           &lt;NA&gt;    between          pure       words recognition        item 
-#&gt; 2           &lt;NA&gt;    between          pure       words recognition        item 
-#&gt; 3           &lt;NA&gt;    between          pure       words recognition        item 
-#&gt; 4           &lt;NA&gt;    between          pure       words recognition        item 
-#&gt; 5           &lt;NA&gt;    between          pure       words recognition        item 
-#&gt; 6           &lt;NA&gt;    between          pure       words recognition        item 
-#&gt;   gen_constraint learning_type stimuli_relation        gen_mode  gen_task 
-#&gt; 1         medium   intentional         semantic verbal/speaking word stem 
-#&gt; 2           &lt;NA&gt;   intentional         semantic verbal/speaking word stem 
-#&gt; 3           high   intentional         category verbal/speaking word stem 
-#&gt; 4           &lt;NA&gt;   intentional         category verbal/speaking word stem 
-#&gt; 5           high   intentional          antonym verbal/speaking word stem 
-#&gt; 6           &lt;NA&gt;   intentional          antonym verbal/speaking word stem 
-#&gt;   attention pacing filler_task age_grp retention_delay 
-#&gt; 1      full   &lt;NA&gt;          no younger       immediate 
-#&gt; 2      full   &lt;NA&gt;          no younger       immediate 
-#&gt; 3      full   &lt;NA&gt;          no younger       immediate 
-#&gt; 4      full   &lt;NA&gt;          no younger       immediate 
-#&gt; 5      full   &lt;NA&gt;          no younger       immediate 
-#&gt; 6      full   &lt;NA&gt;          no younger       immediate </div><div class='input'>
+</div><div class='output co'>#&gt;   article experiment sample id pairing     yi      vi ni stimuli condition gen_difficulty manip_type 
+#&gt; 1      12          1      1  1       1 0.8790 0.00068 12      20  generate           &lt;NA&gt;    between 
+#&gt; 2      12          1      2  2       1 0.7130 0.00140 12      20      read           &lt;NA&gt;    between 
+#&gt; 3      12          1      1  3       2 0.9060 0.00058 12      20  generate           &lt;NA&gt;    between 
+#&gt; 4      12          1      2  4       2 0.6840 0.00151 12      20      read           &lt;NA&gt;    between 
+#&gt; 5      12          1      1  5       3 0.8420 0.00084 12      20  generate           &lt;NA&gt;    between 
+#&gt; 6      12          1      2  6       3 0.7530 0.00124 12      20      read           &lt;NA&gt;    between 
+#&gt;   present_style word_status memory_test memory_type gen_constraint learning_type stimuli_relation 
+#&gt; 1          pure       words recognition        item         medium   intentional         semantic 
+#&gt; 2          pure       words recognition        item           &lt;NA&gt;   intentional         semantic 
+#&gt; 3          pure       words recognition        item           high   intentional         category 
+#&gt; 4          pure       words recognition        item           &lt;NA&gt;   intentional         category 
+#&gt; 5          pure       words recognition        item           high   intentional          antonym 
+#&gt; 6          pure       words recognition        item           &lt;NA&gt;   intentional          antonym 
+#&gt;          gen_mode  gen_task attention pacing filler_task age_grp retention_delay 
+#&gt; 1 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate 
+#&gt; 2 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate 
+#&gt; 3 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate 
+#&gt; 4 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate 
+#&gt; 5 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate 
+#&gt; 6 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate </div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>

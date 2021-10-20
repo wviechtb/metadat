@@ -202,7 +202,7 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.craft2003</span>
-<span class='va'>dat</span>
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>18</span><span class='op'>)</span>
 </div><div class='output co'>#&gt;    study  ni sport    ri var1 var2
 #&gt; 1      1 142     I -0.55 acog perf
 #&gt; 2      1 142     I -0.48 asom perf
@@ -221,49 +221,7 @@
 #&gt; 15     6  16     T    NA conf perf
 #&gt; 16     6  16     T  0.67 acog asom
 #&gt; 17     6  16     T    NA acog conf
-#&gt; 18     6  16     T    NA asom conf
-#&gt; 19    10  14     I -0.39 acog perf
-#&gt; 20    10  14     I -0.17 asom perf
-#&gt; 21    10  14     I  0.19 conf perf
-#&gt; 22    10  14     I  0.21 acog asom
-#&gt; 23    10  14     I -0.54 acog conf
-#&gt; 24    10  14     I -0.43 asom conf
-#&gt; 25    17  45     I  0.10 acog perf
-#&gt; 26    17  45     I  0.31 asom perf
-#&gt; 27    17  45     I -0.17 conf perf
-#&gt; 28    17  45     I    NA acog asom
-#&gt; 29    17  45     I    NA acog conf
-#&gt; 30    17  45     I    NA asom conf
-#&gt; 31    22 100     I  0.23 acog perf
-#&gt; 32    22 100     I  0.08 asom perf
-#&gt; 33    22 100     I  0.51 conf perf
-#&gt; 34    22 100     I  0.45 acog asom
-#&gt; 35    22 100     I -0.29 acog conf
-#&gt; 36    22 100     I -0.44 asom conf
-#&gt; 37    26  51     T -0.52 acog perf
-#&gt; 38    26  51     T -0.43 asom perf
-#&gt; 39    26  51     T  0.16 conf perf
-#&gt; 40    26  51     T  0.57 acog asom
-#&gt; 41    26  51     T -0.18 acog conf
-#&gt; 42    26  51     T -0.26 asom conf
-#&gt; 43    28 128     T  0.14 acog perf
-#&gt; 44    28 128     T  0.02 asom perf
-#&gt; 45    28 128     T  0.13 conf perf
-#&gt; 46    28 128     T  0.56 acog asom
-#&gt; 47    28 128     T -0.53 acog conf
-#&gt; 48    28 128     T -0.27 asom conf
-#&gt; 49    36  70     T -0.01 acog perf
-#&gt; 50    36  70     T -0.16 asom perf
-#&gt; 51    36  70     T  0.42 conf perf
-#&gt; 52    36  70     T  0.62 acog asom
-#&gt; 53    36  70     T -0.46 acog conf
-#&gt; 54    36  70     T -0.54 asom conf
-#&gt; 55    38  30     I -0.27 acog perf
-#&gt; 56    38  30     I -0.13 asom perf
-#&gt; 57    38  30     I  0.15 conf perf
-#&gt; 58    38  30     I  0.63 acog asom
-#&gt; 59    38  30     I -0.68 acog conf
-#&gt; 60    38  30     I -0.71 asom conf</div><div class='input'>
+#&gt; 18     6  16     T    NA asom conf</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -283,20 +241,13 @@
 #&gt; 4     1 acog asom acog.asom  0.47 142
 #&gt; 5     1 acog conf acog.conf -0.38 142
 #&gt; 6     1 asom conf asom.conf -0.46 142</div><div class='input'><span class='va'>V</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>1</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>1</span><span class='op'>]</span>
-</div><div class='output co'>#&gt;               acog.perf     asom.perf     conf.perf     acog.asom    acog.conf
-#&gt; acog.perf  0.0034503989  0.0013265149 -0.0005545798 -0.0013967848  0.002501895
-#&gt; asom.perf  0.0013265149  0.0042005969 -0.0009521407 -0.0019433591  0.001264856
-#&gt; conf.perf -0.0005545798 -0.0009521407  0.0022592011  0.0005791091 -0.001533798
-#&gt; acog.asom -0.0013967848 -0.0019433591  0.0005791091  0.0043049419 -0.001802689
-#&gt; acog.conf  0.0025018954  0.0012648562 -0.0015337979 -0.0018026891  0.005191854
-#&gt; asom.conf  0.0009322372  0.0025160783 -0.0010692460 -0.0012050560  0.001884405
-#&gt;               asom.conf
-#&gt; acog.perf  0.0009322372
-#&gt; asom.perf  0.0025160783
-#&gt; conf.perf -0.0010692460
-#&gt; acog.asom -0.0012050560
-#&gt; acog.conf  0.0018844047
-#&gt; asom.conf  0.0044083302</div><div class='input'>
+</div><div class='output co'>#&gt;               acog.perf     asom.perf     conf.perf     acog.asom    acog.conf     asom.conf
+#&gt; acog.perf  0.0034503989  0.0013265149 -0.0005545798 -0.0013967848  0.002501895  0.0009322372
+#&gt; asom.perf  0.0013265149  0.0042005969 -0.0009521407 -0.0019433591  0.001264856  0.0025160783
+#&gt; conf.perf -0.0005545798 -0.0009521407  0.0022592011  0.0005791091 -0.001533798 -0.0010692460
+#&gt; acog.asom -0.0013967848 -0.0019433591  0.0005791091  0.0043049419 -0.001802689 -0.0012050560
+#&gt; acog.conf  0.0025018954  0.0012648562 -0.0015337979 -0.0018026891  0.005191854  0.0018844047
+#&gt; asom.conf  0.0009322372  0.0025160783 -0.0010692460 -0.0012050560  0.001884405  0.0044083302</div><div class='input'>
 <span class='co'>### examine data for study 6</span>
 <span class='va'>dat</span><span class='op'>[</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span> <span class='op'>==</span> <span class='fl'>6</span>,<span class='op'>]</span>
 </div><div class='output co'>#&gt;    study var1 var2 var1.var2   yi ni
@@ -348,20 +299,20 @@
 #&gt; tau^2.5    0.0604  0.2459      9     no  asom.perf 
 #&gt; tau^2.6    0.0468  0.2163      8     no  conf.perf 
 #&gt; 
-#&gt;            rho.acg.s  rho.acg.c  rho.acg.p  rho.asm.c  rho.asm.p  rho.cnf. 
-#&gt; acog.asom          1                                                         
-#&gt; acog.conf    -0.6961          1                                              
-#&gt; acog.perf     0.5491     0.0432          1                                   
-#&gt; asom.conf    -0.0891     0.4193     0.3532          1                        
-#&gt; asom.perf     0.4604    -0.0495     0.9497     0.2688          1             
-#&gt; conf.perf    -0.9345     0.7023    -0.6178    -0.1311    -0.5969         1   
-#&gt;            acg.s  acg.c  acg.p  asm.c  asm.p  cnf. 
-#&gt; acog.asom      -      8      9      8      9     8 
-#&gt; acog.conf     no      -      8      8      8     8 
-#&gt; acog.perf     no     no      -      8      9     8 
-#&gt; asom.conf     no     no     no      -      8     8 
-#&gt; asom.perf     no     no     no     no      -     8 
-#&gt; conf.perf     no     no     no     no     no     - 
+#&gt;            rho.acg.s  rho.acg.c  rho.acg.p  rho.asm.c  rho.asm.p  rho.cnf.    acg.s  acg.c  acg.p 
+#&gt; acog.asom          1                                                              -      8      9 
+#&gt; acog.conf    -0.6961          1                                                  no      -      8 
+#&gt; acog.perf     0.5491     0.0432          1                                       no     no      - 
+#&gt; asom.conf    -0.0891     0.4193     0.3532          1                            no     no     no 
+#&gt; asom.perf     0.4604    -0.0495     0.9497     0.2688          1                 no     no     no 
+#&gt; conf.perf    -0.9345     0.7023    -0.6178    -0.1311    -0.5969         1       no     no     no 
+#&gt;            asm.c  asm.p  cnf. 
+#&gt; acog.asom      8      9     8 
+#&gt; acog.conf      8      8     8 
+#&gt; acog.perf      8      9     8 
+#&gt; asom.conf      -      8     8 
+#&gt; asom.perf     no      -     8 
+#&gt; conf.perf     no     no     - 
 #&gt; 
 #&gt; Test for Residual Heterogeneity:
 #&gt; QE(df = 45) = 334.8358, p-val &lt; .0001

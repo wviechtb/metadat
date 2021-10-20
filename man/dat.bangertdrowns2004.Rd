@@ -38,7 +38,7 @@
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.bangertdrowns2004
-dat
+dat[1:10,-13]
 
 \dontrun{
 

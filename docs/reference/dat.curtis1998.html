@@ -225,20 +225,20 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.curtis1998</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;   id paper   genus     species fungrp co2.ambi co2.elev units time pot method
-#&gt; 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC
-#&gt; 2 22    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC
-#&gt; 3 27   121    ACER      RUBRUM  ANGIO      350      700   ppm   59 2.6     GH
-#&gt; 4 32   121 QUERCUS      PRINUS  ANGIO      350      700   ppm   70 2.6     GH
-#&gt; 5 35   121   MALUS   DOMESTICA  ANGIO      350      700   ppm   64 2.6     GH
-#&gt; 6 38   121    ACER SACCHARINUM  ANGIO      350      700   ppm   50 2.6     GH
-#&gt;   stock xtrt   level     m1i      sd1i n1i    m2i      sd2i n2i
-#&gt; 1  SEED FERT    HIGH  6.8169 1.7699820   3 3.9450 1.1157970   5
-#&gt; 2  SEED FERT CONTROL  2.5961 0.6674662   5 2.2512 0.3275839   5
-#&gt; 3  SEED NONE       .  2.9900 0.8560000   5 1.9300 0.5520000   5
-#&gt; 4  SEED NONE       .  5.9100 1.7420000   5 6.6200 1.6310000   5
-#&gt; 5  SEED NONE       .  4.6100 1.4070000   4 4.1000 1.2570000   4
-#&gt; 6  SEED NONE       . 10.7800 1.1630000   5 6.4200 2.0260000   3</div><div class='input'>
+</div><div class='output co'>#&gt;   id paper   genus     species fungrp co2.ambi co2.elev units time pot method stock xtrt   level
+#&gt; 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT    HIGH
+#&gt; 2 22    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT CONTROL
+#&gt; 3 27   121    ACER      RUBRUM  ANGIO      350      700   ppm   59 2.6     GH  SEED NONE       .
+#&gt; 4 32   121 QUERCUS      PRINUS  ANGIO      350      700   ppm   70 2.6     GH  SEED NONE       .
+#&gt; 5 35   121   MALUS   DOMESTICA  ANGIO      350      700   ppm   64 2.6     GH  SEED NONE       .
+#&gt; 6 38   121    ACER SACCHARINUM  ANGIO      350      700   ppm   50 2.6     GH  SEED NONE       .
+#&gt;       m1i      sd1i n1i    m2i      sd2i n2i
+#&gt; 1  6.8169 1.7699820   3 3.9450 1.1157970   5
+#&gt; 2  2.5961 0.6674662   5 2.2512 0.3275839   5
+#&gt; 3  2.9900 0.8560000   5 1.9300 0.5520000   5
+#&gt; 4  5.9100 1.7420000   5 6.6200 1.6310000   5
+#&gt; 5  4.6100 1.4070000   4 4.1000 1.2570000   4
+#&gt; 6 10.7800 1.1630000   5 6.4200 2.0260000   3</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -248,20 +248,20 @@
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"ROM"</span>, m1i<span class='op'>=</span><span class='va'>m1i</span>, sd1i<span class='op'>=</span><span class='va'>sd1i</span>, n1i<span class='op'>=</span><span class='va'>n1i</span>,
                              m2i<span class='op'>=</span><span class='va'>m2i</span>, sd2i<span class='op'>=</span><span class='va'>sd2i</span>, n2i<span class='op'>=</span><span class='va'>n2i</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;   id paper   genus     species fungrp co2.ambi co2.elev units time pot method 
-#&gt; 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC 
-#&gt; 2 22    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC 
-#&gt; 3 27   121    ACER      RUBRUM  ANGIO      350      700   ppm   59 2.6     GH 
-#&gt; 4 32   121 QUERCUS      PRINUS  ANGIO      350      700   ppm   70 2.6     GH 
-#&gt; 5 35   121   MALUS   DOMESTICA  ANGIO      350      700   ppm   64 2.6     GH 
-#&gt; 6 38   121    ACER SACCHARINUM  ANGIO      350      700   ppm   50 2.6     GH 
-#&gt;   stock xtrt   level     m1i      sd1i n1i    m2i      sd2i n2i      yi     vi 
-#&gt; 1  SEED FERT    HIGH  6.8169 1.7699820   3 3.9450 1.1157970   5  0.5470 0.0385 
-#&gt; 2  SEED FERT CONTROL  2.5961 0.6674662   5 2.2512 0.3275839   5  0.1425 0.0175 
-#&gt; 3  SEED NONE       .  2.9900 0.8560000   5 1.9300 0.5520000   5  0.4378 0.0328 
-#&gt; 4  SEED NONE       .  5.9100 1.7420000   5 6.6200 1.6310000   5 -0.1134 0.0295 
-#&gt; 5  SEED NONE       .  4.6100 1.4070000   4 4.1000 1.2570000   4  0.1172 0.0468 
-#&gt; 6  SEED NONE       . 10.7800 1.1630000   5 6.4200 2.0260000   3  0.5183 0.0355 </div><div class='input'>
+</div><div class='output co'>#&gt;   id paper   genus     species fungrp co2.ambi co2.elev units time pot method stock xtrt   level 
+#&gt; 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT    HIGH 
+#&gt; 2 22    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT CONTROL 
+#&gt; 3 27   121    ACER      RUBRUM  ANGIO      350      700   ppm   59 2.6     GH  SEED NONE       . 
+#&gt; 4 32   121 QUERCUS      PRINUS  ANGIO      350      700   ppm   70 2.6     GH  SEED NONE       . 
+#&gt; 5 35   121   MALUS   DOMESTICA  ANGIO      350      700   ppm   64 2.6     GH  SEED NONE       . 
+#&gt; 6 38   121    ACER SACCHARINUM  ANGIO      350      700   ppm   50 2.6     GH  SEED NONE       . 
+#&gt;       m1i      sd1i n1i    m2i      sd2i n2i      yi     vi 
+#&gt; 1  6.8169 1.7699820   3 3.9450 1.1157970   5  0.5470 0.0385 
+#&gt; 2  2.5961 0.6674662   5 2.2512 0.3275839   5  0.1425 0.0175 
+#&gt; 3  2.9900 0.8560000   5 1.9300 0.5520000   5  0.4378 0.0328 
+#&gt; 4  5.9100 1.7420000   5 6.6200 1.6310000   5 -0.1134 0.0295 
+#&gt; 5  4.6100 1.4070000   4 4.1000 1.2570000   4  0.1172 0.0468 
+#&gt; 6 10.7800 1.1630000   5 6.4200 2.0260000   3  0.5183 0.0355 </div><div class='input'>
 <span class='co'>### meta-analysis using a random-effects model</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, method<span class='op'>=</span><span class='st'>"DL"</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>res</span>

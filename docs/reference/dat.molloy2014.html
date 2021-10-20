@@ -206,41 +206,24 @@
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.molloy2014</span>
-<span class='va'>dat</span>
-</div><div class='output co'>#&gt;                authors year  ni     ri controls          design   a_measure
-#&gt; 1      Axelsson et al. 2009 109  0.187     none cross-sectional self-report
-#&gt; 2      Axelsson et al. 2011 749  0.162     none cross-sectional self-report
-#&gt; 3         Bruce et al. 2010  55  0.340     none     prospective       other
-#&gt; 4   Christensen et al. 1999 107  0.320     none cross-sectional self-report
-#&gt; 5  Christensen &amp; Smith 1995  72  0.270     none     prospective       other
-#&gt; 6         Cohen et al. 2004  65  0.000     none     prospective       other
-#&gt; 7       Dobbels et al. 2005 174  0.175     none cross-sectional self-report
-#&gt; 8        Ediger et al. 2007 326  0.050 multiple     prospective self-report
-#&gt; 9         Insel et al. 2006  58  0.260     none     prospective       other
-#&gt; 10       Jerant et al. 2011 771  0.010 multiple     prospective       other
-#&gt; 11        Moran et al. 1997  56 -0.090 multiple     prospective       other
-#&gt; 12   O'Cleirigh et al. 2007  91  0.370     none     prospective self-report
-#&gt; 13       Penedo et al. 2003 116  0.000     none cross-sectional self-report
-#&gt; 14        Quine et al. 2012 537  0.150     none     prospective self-report
-#&gt; 15      Stilley et al. 2004 158  0.240     none     prospective       other
-#&gt; 16 Wiebe &amp; Christensen 1997  65  0.040     none     prospective       other
-#&gt;    c_measure meanage quality
-#&gt; 1      other   22.00       1
-#&gt; 2        NEO   53.59       1
-#&gt; 3        NEO   43.36       2
-#&gt; 4      other   41.70       1
-#&gt; 5        NEO   46.39       2
-#&gt; 6        NEO   41.20       2
-#&gt; 7        NEO   52.30       1
-#&gt; 8        NEO   41.00       3
-#&gt; 9      other   77.00       2
-#&gt; 10       NEO   78.60       3
-#&gt; 11       NEO   57.20       2
-#&gt; 12       NEO   37.90       2
-#&gt; 13       NEO   39.20       1
-#&gt; 14     other   69.00       2
-#&gt; 15       NEO   46.20       3
-#&gt; 16       NEO   56.00       1</div><div class='input'>
+<span class='va'>dat</span><span class='op'>[</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>)</span><span class='op'>]</span>
+</div><div class='output co'>#&gt;                authors year  ni     ri   a_measure c_measure meanage quality
+#&gt; 1      Axelsson et al. 2009 109  0.187 self-report     other   22.00       1
+#&gt; 2      Axelsson et al. 2011 749  0.162 self-report       NEO   53.59       1
+#&gt; 3         Bruce et al. 2010  55  0.340       other       NEO   43.36       2
+#&gt; 4   Christensen et al. 1999 107  0.320 self-report     other   41.70       1
+#&gt; 5  Christensen &amp; Smith 1995  72  0.270       other       NEO   46.39       2
+#&gt; 6         Cohen et al. 2004  65  0.000       other       NEO   41.20       2
+#&gt; 7       Dobbels et al. 2005 174  0.175 self-report       NEO   52.30       1
+#&gt; 8        Ediger et al. 2007 326  0.050 self-report       NEO   41.00       3
+#&gt; 9         Insel et al. 2006  58  0.260       other     other   77.00       2
+#&gt; 10       Jerant et al. 2011 771  0.010       other       NEO   78.60       3
+#&gt; 11        Moran et al. 1997  56 -0.090       other       NEO   57.20       2
+#&gt; 12   O'Cleirigh et al. 2007  91  0.370 self-report       NEO   37.90       2
+#&gt; 13       Penedo et al. 2003 116  0.000 self-report       NEO   39.20       1
+#&gt; 14        Quine et al. 2012 537  0.150 self-report     other   69.00       2
+#&gt; 15      Stilley et al. 2004 158  0.240       other       NEO   46.20       3
+#&gt; 16 Wiebe &amp; Christensen 1997  65  0.040       other       NEO   56.00       1</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -248,41 +231,24 @@
 
 <span class='co'>### calculate r-to-z transformed correlations and corresponding sampling variances</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"ZCOR"</span>, ri<span class='op'>=</span><span class='va'>ri</span>, ni<span class='op'>=</span><span class='va'>ni</span>, data<span class='op'>=</span><span class='va'>dat</span>, slab<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste</a></span><span class='op'>(</span><span class='va'>authors</span>, <span class='va'>year</span>, sep<span class='op'>=</span><span class='st'>", "</span><span class='op'>)</span><span class='op'>)</span>
-<span class='va'>dat</span>
-</div><div class='output co'>#&gt;                authors year  ni     ri controls          design   a_measure 
-#&gt; 1      Axelsson et al. 2009 109  0.187     none cross-sectional self-report 
-#&gt; 2      Axelsson et al. 2011 749  0.162     none cross-sectional self-report 
-#&gt; 3         Bruce et al. 2010  55  0.340     none     prospective       other 
-#&gt; 4   Christensen et al. 1999 107  0.320     none cross-sectional self-report 
-#&gt; 5  Christensen &amp; Smith 1995  72  0.270     none     prospective       other 
-#&gt; 6         Cohen et al. 2004  65  0.000     none     prospective       other 
-#&gt; 7       Dobbels et al. 2005 174  0.175     none cross-sectional self-report 
-#&gt; 8        Ediger et al. 2007 326  0.050 multiple     prospective self-report 
-#&gt; 9         Insel et al. 2006  58  0.260     none     prospective       other 
-#&gt; 10       Jerant et al. 2011 771  0.010 multiple     prospective       other 
-#&gt; 11        Moran et al. 1997  56 -0.090 multiple     prospective       other 
-#&gt; 12   O'Cleirigh et al. 2007  91  0.370     none     prospective self-report 
-#&gt; 13       Penedo et al. 2003 116  0.000     none cross-sectional self-report 
-#&gt; 14        Quine et al. 2012 537  0.150     none     prospective self-report 
-#&gt; 15      Stilley et al. 2004 158  0.240     none     prospective       other 
-#&gt; 16 Wiebe &amp; Christensen 1997  65  0.040     none     prospective       other 
-#&gt;    c_measure meanage quality      yi     vi 
-#&gt; 1      other   22.00       1  0.1892 0.0094 
-#&gt; 2        NEO   53.59       1  0.1634 0.0013 
-#&gt; 3        NEO   43.36       2  0.3541 0.0192 
-#&gt; 4      other   41.70       1  0.3316 0.0096 
-#&gt; 5        NEO   46.39       2  0.2769 0.0145 
-#&gt; 6        NEO   41.20       2  0.0000 0.0161 
-#&gt; 7        NEO   52.30       1  0.1768 0.0058 
-#&gt; 8        NEO   41.00       3  0.0500 0.0031 
-#&gt; 9      other   77.00       2  0.2661 0.0182 
-#&gt; 10       NEO   78.60       3  0.0100 0.0013 
-#&gt; 11       NEO   57.20       2 -0.0902 0.0189 
-#&gt; 12       NEO   37.90       2  0.3884 0.0114 
-#&gt; 13       NEO   39.20       1  0.0000 0.0088 
-#&gt; 14     other   69.00       2  0.1511 0.0019 
-#&gt; 15       NEO   46.20       3  0.2448 0.0065 
-#&gt; 16       NEO   56.00       1  0.0400 0.0161 </div><div class='input'>
+<span class='va'>dat</span><span class='op'>[</span><span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>5</span><span class='op'>:</span><span class='fl'>6</span><span class='op'>)</span><span class='op'>]</span>
+</div><div class='output co'>#&gt;                authors year  ni     ri   a_measure c_measure meanage quality      yi     vi 
+#&gt; 1      Axelsson et al. 2009 109  0.187 self-report     other   22.00       1  0.1892 0.0094 
+#&gt; 2      Axelsson et al. 2011 749  0.162 self-report       NEO   53.59       1  0.1634 0.0013 
+#&gt; 3         Bruce et al. 2010  55  0.340       other       NEO   43.36       2  0.3541 0.0192 
+#&gt; 4   Christensen et al. 1999 107  0.320 self-report     other   41.70       1  0.3316 0.0096 
+#&gt; 5  Christensen &amp; Smith 1995  72  0.270       other       NEO   46.39       2  0.2769 0.0145 
+#&gt; 6         Cohen et al. 2004  65  0.000       other       NEO   41.20       2  0.0000 0.0161 
+#&gt; 7       Dobbels et al. 2005 174  0.175 self-report       NEO   52.30       1  0.1768 0.0058 
+#&gt; 8        Ediger et al. 2007 326  0.050 self-report       NEO   41.00       3  0.0500 0.0031 
+#&gt; 9         Insel et al. 2006  58  0.260       other     other   77.00       2  0.2661 0.0182 
+#&gt; 10       Jerant et al. 2011 771  0.010       other       NEO   78.60       3  0.0100 0.0013 
+#&gt; 11        Moran et al. 1997  56 -0.090       other       NEO   57.20       2 -0.0902 0.0189 
+#&gt; 12   O'Cleirigh et al. 2007  91  0.370 self-report       NEO   37.90       2  0.3884 0.0114 
+#&gt; 13       Penedo et al. 2003 116  0.000 self-report       NEO   39.20       1  0.0000 0.0088 
+#&gt; 14        Quine et al. 2012 537  0.150 self-report     other   69.00       2  0.1511 0.0019 
+#&gt; 15      Stilley et al. 2004 158  0.240       other       NEO   46.20       3  0.2448 0.0065 
+#&gt; 16 Wiebe &amp; Christensen 1997  65  0.040       other       NEO   56.00       1  0.0400 0.0161 </div><div class='input'>
 <span class='co'>### meta-analysis of the transformed correlations using a random-effects model</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 <span class='va'>res</span>

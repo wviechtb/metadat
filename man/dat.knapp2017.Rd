@@ -43,7 +43,7 @@
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.knapp2017
-dat
+dat[-c(1:2)]
 
 \dontrun{
 

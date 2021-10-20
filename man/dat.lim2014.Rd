@@ -43,7 +43,7 @@ dat.lim2014
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.lim2014$o_o_unadj
-head(dat)
+dat[1:14, -c(2:3)]
 
 \dontrun{
 

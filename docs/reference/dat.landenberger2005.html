@@ -229,41 +229,34 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.landenberger2005</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;              study pubtype country design  program   setting designprob
-#&gt; 1    Guerra (1990) journal     USA    rct research    prison         no
-#&gt; 2    Leeman (1993) journal     USA    rct     demo    prison         no
-#&gt; 3  Kownacki (1995) chapter     USA    rct research community         no
-#&gt; 4    Larson (1989) chapter     USA    rct research community         no
-#&gt; 5      Finn (1998)  report     USA    rct practice    prison         no
-#&gt; 6 Goldstein (1989) chapter     USA    rct     demo community         no
-#&gt;   n.ctrl.rec n.ctrl.non n.cbt.rec n.cbt.non interval     group age male
-#&gt; 1         23         29        10        19       12 juveniles  17   50
-#&gt; 2         15         22         3        17       12 juveniles  16  100
-#&gt; 3          4          6         2         9        6    adults  28  100
-#&gt; 4         11          2         8         5       15    adults  19  100
-#&gt; 5         22         60        16        66       12    adults  30  100
-#&gt; 6         14         18         5        28        6 juveniles  NA   NA
-#&gt;   minority length sessions hrs_week hrs_total cbt.cogskills cbt.cogrestruct
-#&gt; 1       60     12        1      1.0        12           yes             yes
-#&gt; 2       34     26        1      6.0       169           yes             yes
-#&gt; 3       NA      7        1      2.0        14           yes              no
-#&gt; 4       94     63        1      1.0        63           yes              no
-#&gt; 5       74     17        5     15.0       240           yes             yes
-#&gt; 6       NA     13        2      1.5        44           yes              no
-#&gt;   cbt.intpprbsolv cbt.socskills cbt.angerctrl cbt.victimimpact cbt.subabuse
-#&gt; 1             yes            no            no               no           no
-#&gt; 2              no           yes           yes               no           no
-#&gt; 3             yes           yes            no               no           no
-#&gt; 4             yes           yes            no               no           no
-#&gt; 5             yes            no           yes              yes           no
-#&gt; 6              no           yes           yes               no           no
-#&gt;   cbt.behavmod cbt.relapseprev cbt.moralrsng cbt.roletaking cbt.other
-#&gt; 1           no              no            no            yes        no
-#&gt; 2           no              no           yes            yes        no
-#&gt; 3           no              no            no            yes        no
-#&gt; 4           no              no            no            yes       yes
-#&gt; 5           no              no           yes             no       yes
-#&gt; 6           no              no           yes            yes       yes</div><div class='input'>
+</div><div class='output co'>#&gt;              study pubtype country design  program   setting designprob n.ctrl.rec n.ctrl.non
+#&gt; 1    Guerra (1990) journal     USA    rct research    prison         no         23         29
+#&gt; 2    Leeman (1993) journal     USA    rct     demo    prison         no         15         22
+#&gt; 3  Kownacki (1995) chapter     USA    rct research community         no          4          6
+#&gt; 4    Larson (1989) chapter     USA    rct research community         no         11          2
+#&gt; 5      Finn (1998)  report     USA    rct practice    prison         no         22         60
+#&gt; 6 Goldstein (1989) chapter     USA    rct     demo community         no         14         18
+#&gt;   n.cbt.rec n.cbt.non interval     group age male minority length sessions hrs_week hrs_total
+#&gt; 1        10        19       12 juveniles  17   50       60     12        1      1.0        12
+#&gt; 2         3        17       12 juveniles  16  100       34     26        1      6.0       169
+#&gt; 3         2         9        6    adults  28  100       NA      7        1      2.0        14
+#&gt; 4         8         5       15    adults  19  100       94     63        1      1.0        63
+#&gt; 5        16        66       12    adults  30  100       74     17        5     15.0       240
+#&gt; 6         5        28        6 juveniles  NA   NA       NA     13        2      1.5        44
+#&gt;   cbt.cogskills cbt.cogrestruct cbt.intpprbsolv cbt.socskills cbt.angerctrl cbt.victimimpact
+#&gt; 1           yes             yes             yes            no            no               no
+#&gt; 2           yes             yes              no           yes           yes               no
+#&gt; 3           yes              no             yes           yes            no               no
+#&gt; 4           yes              no             yes           yes            no               no
+#&gt; 5           yes             yes             yes            no           yes              yes
+#&gt; 6           yes              no              no           yes           yes               no
+#&gt;   cbt.subabuse cbt.behavmod cbt.relapseprev cbt.moralrsng cbt.roletaking cbt.other
+#&gt; 1           no           no              no            no            yes        no
+#&gt; 2           no           no              no           yes            yes        no
+#&gt; 3           no           no              no            no            yes        no
+#&gt; 4           no           no              no            no            yes       yes
+#&gt; 5           no           no              no           yes             no       yes
+#&gt; 6           no           no              no           yes            yes       yes</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>

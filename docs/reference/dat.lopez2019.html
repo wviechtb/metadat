@@ -253,23 +253,14 @@
 <span class='va'>tab</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/table.html'>table</a></span><span class='op'>(</span><span class='va'>pairs</span><span class='op'>[</span>,<span class='fl'>1</span><span class='op'>]</span>, <span class='va'>pairs</span><span class='op'>[</span>,<span class='fl'>2</span><span class='op'>]</span><span class='op'>)</span>
 <span class='va'>tab</span> <span class='co'># adjacency matrix</span>
 </div><div class='output co'>#&gt;                 
-#&gt;                  F2F CBT Hybrid CBT Multimedia CBT No treatment Placebo TAU
-#&gt;   F2F CBT             17          3              5            0       0   0
-#&gt;   Hybrid CBT           0          0              0            0       0   0
-#&gt;   Multimedia CBT       0          0              5            0       0   0
-#&gt;   No treatment         6          0              0            0       0   0
-#&gt;   Placebo             10          1              1            0       0   0
-#&gt;   TAU                 16          3             11            0       1   0
-#&gt;   Wait list           31          1             10            0       0   0
-#&gt;                 
-#&gt;                  Wait list
-#&gt;   F2F CBT                0
-#&gt;   Hybrid CBT             0
-#&gt;   Multimedia CBT         0
-#&gt;   No treatment           0
-#&gt;   Placebo                0
-#&gt;   TAU                    0
-#&gt;   Wait list              0</div><div class='input'><span class='va'>g</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/igraph/man/graph_from_adjacency_matrix.html'>graph_from_adjacency_matrix</a></span><span class='op'>(</span><span class='va'>tab</span>, mode <span class='op'>=</span> <span class='st'>"plus"</span>, weighted<span class='op'>=</span><span class='cn'>TRUE</span>, diag<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span>
+#&gt;                  F2F CBT Hybrid CBT Multimedia CBT No treatment Placebo TAU Wait list
+#&gt;   F2F CBT             17          3              5            0       0   0         0
+#&gt;   Hybrid CBT           0          0              0            0       0   0         0
+#&gt;   Multimedia CBT       0          0              5            0       0   0         0
+#&gt;   No treatment         6          0              0            0       0   0         0
+#&gt;   Placebo             10          1              1            0       0   0         0
+#&gt;   TAU                 16          3             11            0       1   0         0
+#&gt;   Wait list           31          1             10            0       0   0         0</div><div class='input'><span class='va'>g</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/pkg/igraph/man/graph_from_adjacency_matrix.html'>graph_from_adjacency_matrix</a></span><span class='op'>(</span><span class='va'>tab</span>, mode <span class='op'>=</span> <span class='st'>"plus"</span>, weighted<span class='op'>=</span><span class='cn'>TRUE</span>, diag<span class='op'>=</span><span class='cn'>FALSE</span><span class='op'>)</span>
 <span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='va'>g</span>, edge.curved<span class='op'>=</span><span class='cn'>FALSE</span>, edge.width<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/pkg/igraph/man/E.html'>E</a></span><span class='op'>(</span><span class='va'>g</span><span class='op'>)</span><span class='op'>$</span><span class='va'>weight</span><span class='op'>/</span><span class='fl'>2</span>,
      layout<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/pkg/igraph/man/layout_in_circle.html'>layout_in_circle</a></span><span class='op'>(</span><span class='va'>g</span>, order<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Wait list"</span>, <span class='st'>"No treatment"</span>, <span class='st'>"TAU"</span>, <span class='st'>"Multimedia CBT"</span>,
                                         <span class='st'>"Hybrid CBT"</span>, <span class='st'>"F2F CBT"</span>, <span class='st'>"Placebo"</span><span class='op'>)</span><span class='op'>)</span>,

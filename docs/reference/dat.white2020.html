@@ -208,39 +208,28 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.white2020</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>10</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;    study_id  obs exp_obs control   class        genus
-#&gt; 1      p105 e001     exp       0 insecta pseudomantis
-#&gt; 2       p11 e002     obs       0    aves   Cyanocitta
-#&gt; 3       p11 e003     obs       0    aves   Cyanocitta
-#&gt; 4       p11 e004     obs       0    aves   Cyanocitta
-#&gt; 5       p11 e005     obs       0    aves   Cyanocitta
-#&gt; 6       p11 e006     obs       0    aves   Cyanocitta
-#&gt; 7       p11 e007     obs       0    aves   Cyanocitta
-#&gt; 8       p11 e008     exp       0    aves   Cyanocitta
-#&gt; 9       p11 e009     exp       0    aves   Cyanocitta
-#&gt; 10      p11 e010     exp       0    aves   Cyanocitta
-#&gt;                       species    sex iridescent    col_var col_component
-#&gt; 1  Pseudomantis_albofimbriata female          0 brightness    achromatic
-#&gt; 2         Cyanocitta_stelleri   male          0        hue     chromatic
-#&gt; 3         Cyanocitta_stelleri   male          0     chroma     chromatic
-#&gt; 4         Cyanocitta_stelleri   male          0 brightness    achromatic
-#&gt; 5         Cyanocitta_stelleri   male          0        hue     chromatic
-#&gt; 6         Cyanocitta_stelleri   male          0     chroma     chromatic
-#&gt; 7         Cyanocitta_stelleri   male          0 brightness    achromatic
-#&gt; 8         Cyanocitta_stelleri   male          0        hue     chromatic
-#&gt; 9         Cyanocitta_stelleri   male          0     chroma     chromatic
-#&gt; 10        Cyanocitta_stelleri   male          0 brightness    achromatic
-#&gt;    quality_measure  region  n      r
-#&gt; 1        condition abdomen 50  0.437
-#&gt; 2        condition    wing 22  0.410
-#&gt; 3        condition    wing 22 -0.330
-#&gt; 4        condition    wing 22 -0.130
-#&gt; 5         parasite    wing 59 -0.080
-#&gt; 6         parasite    wing 59 -0.310
-#&gt; 7         parasite    wing 59 -0.120
-#&gt; 8         parasite    wing  9  0.150
-#&gt; 9         parasite    wing  9 -0.090
-#&gt; 10        parasite    wing 18  0.270</div><div class='input'>
+</div><div class='output co'>#&gt;    study_id  obs exp_obs control   class        genus                    species    sex iridescent
+#&gt; 1      p105 e001     exp       0 insecta pseudomantis Pseudomantis_albofimbriata female          0
+#&gt; 2       p11 e002     obs       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 3       p11 e003     obs       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 4       p11 e004     obs       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 5       p11 e005     obs       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 6       p11 e006     obs       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 7       p11 e007     obs       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 8       p11 e008     exp       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 9       p11 e009     exp       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt; 10      p11 e010     exp       0    aves   Cyanocitta        Cyanocitta_stelleri   male          0
+#&gt;       col_var col_component quality_measure  region  n      r
+#&gt; 1  brightness    achromatic       condition abdomen 50  0.437
+#&gt; 2         hue     chromatic       condition    wing 22  0.410
+#&gt; 3      chroma     chromatic       condition    wing 22 -0.330
+#&gt; 4  brightness    achromatic       condition    wing 22 -0.130
+#&gt; 5         hue     chromatic        parasite    wing 59 -0.080
+#&gt; 6      chroma     chromatic        parasite    wing 59 -0.310
+#&gt; 7  brightness    achromatic        parasite    wing 59 -0.120
+#&gt; 8         hue     chromatic        parasite    wing  9  0.150
+#&gt; 9      chroma     chromatic        parasite    wing  9 -0.090
+#&gt; 10 brightness    achromatic        parasite    wing 18  0.270</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>

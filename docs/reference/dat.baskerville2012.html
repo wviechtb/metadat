@@ -211,54 +211,54 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.baskerville2012</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;              author year score design alloconc blind itt fumonths retention
-#&gt; 1     Kottke et al. 1992     6    cct        0     1   1       19      83.0
-#&gt; 2    McBride et al. 2000     6    rct        0     0   0       18     100.0
-#&gt; 3     Stange et al. 2000     6    rct        0     0   0       24        NA
-#&gt; 4       Lobo et al. 2004     6    rct        1     0   0       21      57.0
-#&gt; 5  Roetzhiem et al. 2005     6   crct        0     1   0       24     100.0
-#&gt; 6       Hogg et al. 2008     6    cct        0     0   1        6      87.0
-#&gt; 7       Aspy et al. 2008     6    cct        0     1   0       18      89.0
-#&gt; 8       Jaen et al. 2010     6    rct        0     1   0       26      86.0
-#&gt; 9   Cockburn et al. 1992     7    rct        0     0   0        3      79.0
-#&gt; 10    Modell et al. 1998     7    rct        0     0   0       12     100.0
-#&gt; 11    Engels et al. 2006     7    rct        1     0   1       12      92.0
-#&gt; 12      Aspy et al. 2008     7    rct        0     1   0        9     100.0
-#&gt; 13  Deitrich et al. 1992    18    rct        0     1   0       12      96.0
-#&gt; 14      Lobo et al. 2002     8    rct        1     0   1       21     100.0
-#&gt; 15     Bryce et al. 1995     9    rct        1     1   1       12      93.3
-#&gt; 16 Kinsinger et al. 1998     9    rct        1     1   0       18      94.0
-#&gt; 17   Solberg et al. 1998     9    rct        1     0   1       22     100.0
-#&gt; 18   Lemelin et al. 2001     9    rct        1     1   0       18      98.0
-#&gt; 19  Frijling et al. 2002     9   crct        1     1   1       21      95.0
-#&gt; 20  Frijling et al. 2003     9   crct        1     1   1       21      95.0
-#&gt; 21  Margolis et al. 2004    10    rct        1     1   1       30     100.0
-#&gt; 22      Mold et al. 2008    10    rct        1     1   1        6     100.0
-#&gt; 23      Hogg et al. 2008    12    rct        1     1   1       13     100.0
-#&gt;    country outcomes duration pperf meetings hours tailor  smd   se
-#&gt; 1       US        2       18   5.5     30.0  1.00      1 1.01 0.52
-#&gt; 2       US        4       12    NA      5.0  1.00      1 0.82 0.46
-#&gt; 3       US       35       12  20.0      4.0  1.50      1 0.59 0.23
-#&gt; 4       NL       16       21   5.0     15.0  1.00      1 0.44 0.18
-#&gt; 5       US        3       24   4.0      4.0  1.00      0 0.84 0.29
-#&gt; 6      Can       26       12  11.0     12.0  1.50      1 0.73 0.29
-#&gt; 7       US        4       18   3.0      3.0  6.00      1 1.12 0.36
-#&gt; 8       US       11       26   6.0      4.5  6.00      1 0.04 0.37
-#&gt; 9      Aus        2        2  40.0      2.0  0.25      0 0.24 0.15
-#&gt; 10      UK        1       12  13.0      3.0  1.00      0 0.32 0.40
-#&gt; 11      NL        7        5    NA      5.0  1.00      1 1.04 0.32
-#&gt; 12      US        1        9   6.0     18.0  6.00      1 1.31 0.57
-#&gt; 13      NL       16       21  20.0     15.0  1.00      1 0.59 0.29
-#&gt; 14      US       10        3   8.0      3.0  1.00      1 0.66 0.19
-#&gt; 15      US        4       12  12.0      1.0 15.00      0 0.62 0.31
-#&gt; 16      US        5       12  13.0     10.0  0.75      1 0.47 0.27
-#&gt; 17      US       10       22  11.0      4.0  3.00      1 1.08 0.32
-#&gt; 18     Can       13       18   8.0     33.0  1.75      1 0.98 0.32
-#&gt; 19      NL        7       21  20.0     15.0  1.00      0 0.26 0.18
-#&gt; 20      NL       12       21  20.0     15.0  1.00      1 0.39 0.18
-#&gt; 21      US        4       24  11.0      9.0  1.00      1 0.60 0.31
-#&gt; 22      US        6        6   8.0     18.0  4.00      1 0.94 0.53
-#&gt; 23     Can       53       12  14.0      9.0  0.75      1 0.11 0.27</div><div class='input'>
+</div><div class='output co'>#&gt;              author year score design alloconc blind itt fumonths retention country outcomes duration
+#&gt; 1     Kottke et al. 1992     6    cct        0     1   1       19      83.0      US        2       18
+#&gt; 2    McBride et al. 2000     6    rct        0     0   0       18     100.0      US        4       12
+#&gt; 3     Stange et al. 2000     6    rct        0     0   0       24        NA      US       35       12
+#&gt; 4       Lobo et al. 2004     6    rct        1     0   0       21      57.0      NL       16       21
+#&gt; 5  Roetzhiem et al. 2005     6   crct        0     1   0       24     100.0      US        3       24
+#&gt; 6       Hogg et al. 2008     6    cct        0     0   1        6      87.0     Can       26       12
+#&gt; 7       Aspy et al. 2008     6    cct        0     1   0       18      89.0      US        4       18
+#&gt; 8       Jaen et al. 2010     6    rct        0     1   0       26      86.0      US       11       26
+#&gt; 9   Cockburn et al. 1992     7    rct        0     0   0        3      79.0     Aus        2        2
+#&gt; 10    Modell et al. 1998     7    rct        0     0   0       12     100.0      UK        1       12
+#&gt; 11    Engels et al. 2006     7    rct        1     0   1       12      92.0      NL        7        5
+#&gt; 12      Aspy et al. 2008     7    rct        0     1   0        9     100.0      US        1        9
+#&gt; 13  Deitrich et al. 1992    18    rct        0     1   0       12      96.0      NL       16       21
+#&gt; 14      Lobo et al. 2002     8    rct        1     0   1       21     100.0      US       10        3
+#&gt; 15     Bryce et al. 1995     9    rct        1     1   1       12      93.3      US        4       12
+#&gt; 16 Kinsinger et al. 1998     9    rct        1     1   0       18      94.0      US        5       12
+#&gt; 17   Solberg et al. 1998     9    rct        1     0   1       22     100.0      US       10       22
+#&gt; 18   Lemelin et al. 2001     9    rct        1     1   0       18      98.0     Can       13       18
+#&gt; 19  Frijling et al. 2002     9   crct        1     1   1       21      95.0      NL        7       21
+#&gt; 20  Frijling et al. 2003     9   crct        1     1   1       21      95.0      NL       12       21
+#&gt; 21  Margolis et al. 2004    10    rct        1     1   1       30     100.0      US        4       24
+#&gt; 22      Mold et al. 2008    10    rct        1     1   1        6     100.0      US        6        6
+#&gt; 23      Hogg et al. 2008    12    rct        1     1   1       13     100.0     Can       53       12
+#&gt;    pperf meetings hours tailor  smd   se
+#&gt; 1    5.5     30.0  1.00      1 1.01 0.52
+#&gt; 2     NA      5.0  1.00      1 0.82 0.46
+#&gt; 3   20.0      4.0  1.50      1 0.59 0.23
+#&gt; 4    5.0     15.0  1.00      1 0.44 0.18
+#&gt; 5    4.0      4.0  1.00      0 0.84 0.29
+#&gt; 6   11.0     12.0  1.50      1 0.73 0.29
+#&gt; 7    3.0      3.0  6.00      1 1.12 0.36
+#&gt; 8    6.0      4.5  6.00      1 0.04 0.37
+#&gt; 9   40.0      2.0  0.25      0 0.24 0.15
+#&gt; 10  13.0      3.0  1.00      0 0.32 0.40
+#&gt; 11    NA      5.0  1.00      1 1.04 0.32
+#&gt; 12   6.0     18.0  6.00      1 1.31 0.57
+#&gt; 13  20.0     15.0  1.00      1 0.59 0.29
+#&gt; 14   8.0      3.0  1.00      1 0.66 0.19
+#&gt; 15  12.0      1.0 15.00      0 0.62 0.31
+#&gt; 16  13.0     10.0  0.75      1 0.47 0.27
+#&gt; 17  11.0      4.0  3.00      1 1.08 0.32
+#&gt; 18   8.0     33.0  1.75      1 0.98 0.32
+#&gt; 19  20.0     15.0  1.00      0 0.26 0.18
+#&gt; 20  20.0     15.0  1.00      1 0.39 0.18
+#&gt; 21  11.0      9.0  1.00      1 0.60 0.31
+#&gt; 22   8.0     18.0  4.00      1 0.94 0.53
+#&gt; 23  14.0      9.0  0.75      1 0.11 0.27</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>

@@ -65,7 +65,7 @@ rma.mv(yi, vi, mods = ~ year + deltype, random = ~ 1 | study/esid, data=dat)
 
 ### assume that the effect sizes within studies are correlated with rho=0.6
 V <- vcalc(vi, cluster=study, obs=esid, data=dat, rho=0.6)
-V[dat$study \%in\% c(1,2), dat$study \%in\% c(1,2)]
+round(V[dat$study \%in\% c(1,2), dat$study \%in\% c(1,2)], 4)
 
 ### fit multilevel model using this approximate V matrix
 res <- rma.mv(yi, V, random = ~ 1 | study/esid, data=dat)

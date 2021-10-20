@@ -35,7 +35,7 @@
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.kalaian1996
-dat
+head(dat, 12)
 
 \dontrun{
 

@@ -214,40 +214,40 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.dagostino1998</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>16</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;    study    cold scale.rn scale.sn             drug tnt tnc outcome    mt   sdt
-#&gt; 1      1 natural      0-3      0-3 chlorpheniramine 128 136   rnic1 0.932 0.593
-#&gt; 2      1 natural      0-3      0-3 chlorpheniramine 128 136   rnic2 1.433 0.648
-#&gt; 3      1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal1    NA    NA
-#&gt; 4      1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal2    NA    NA
-#&gt; 5      1 natural      0-3      0-3 chlorpheniramine 128 136   snic1 0.927 0.488
-#&gt; 6      1 natural      0-3      0-3 chlorpheniramine 128 136   snic2 1.298 0.538
-#&gt; 7      1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal1    NA    NA
-#&gt; 8      1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal2    NA    NA
-#&gt; 9      2 natural      0-3      0-3 chlorpheniramine  63  64   rnic1 0.730 0.745
-#&gt; 10     2 natural      0-3      0-3 chlorpheniramine  63  64   rnic2 1.145 0.903
-#&gt; 11     2 natural      0-3      0-3 chlorpheniramine  63  64 rngoal1    NA    NA
-#&gt; 12     2 natural      0-3      0-3 chlorpheniramine  63  64 rngoal2    NA    NA
-#&gt; 13     2 natural      0-3      0-3 chlorpheniramine  63  64   snic1 0.540 0.800
-#&gt; 14     2 natural      0-3      0-3 chlorpheniramine  63  64   snic2 0.710 0.876
-#&gt; 15     2 natural      0-3      0-3 chlorpheniramine  63  64 sngoal1    NA    NA
-#&gt; 16     2 natural      0-3      0-3 chlorpheniramine  63  64 sngoal2    NA    NA
-#&gt;       mc   sdc  xt  xc  nt  nc
-#&gt; 1  0.810 0.556  NA  NA 128 136
-#&gt; 2  1.182 0.629  NA  NA 128 133
-#&gt; 3     NA    NA  54  45 128 136
-#&gt; 4     NA    NA  99  94 128 136
-#&gt; 5  0.937 0.467  NA  NA 118 116
-#&gt; 6  1.104 0.561  NA  NA 118 118
-#&gt; 7     NA    NA  87  91 118 118
-#&gt; 8     NA    NA 112 104 118 118
-#&gt; 9  0.578 0.773  NA  NA  63  64
-#&gt; 10 0.891 1.041  NA  NA  62  64
-#&gt; 11    NA    NA  10   9  63  64
-#&gt; 12    NA    NA  19  19  62  64
-#&gt; 13 0.297 0.634  NA  NA  63  64
-#&gt; 14 0.469 0.712  NA  NA  62  64
-#&gt; 15    NA    NA  16  12  50  49
-#&gt; 16    NA    NA  25  20  49  49</div><div class='input'>
+</div><div class='output co'>#&gt;    study    cold scale.rn scale.sn             drug tnt tnc outcome    mt   sdt    mc   sdc  xt  xc
+#&gt; 1      1 natural      0-3      0-3 chlorpheniramine 128 136   rnic1 0.932 0.593 0.810 0.556  NA  NA
+#&gt; 2      1 natural      0-3      0-3 chlorpheniramine 128 136   rnic2 1.433 0.648 1.182 0.629  NA  NA
+#&gt; 3      1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal1    NA    NA    NA    NA  54  45
+#&gt; 4      1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal2    NA    NA    NA    NA  99  94
+#&gt; 5      1 natural      0-3      0-3 chlorpheniramine 128 136   snic1 0.927 0.488 0.937 0.467  NA  NA
+#&gt; 6      1 natural      0-3      0-3 chlorpheniramine 128 136   snic2 1.298 0.538 1.104 0.561  NA  NA
+#&gt; 7      1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal1    NA    NA    NA    NA  87  91
+#&gt; 8      1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal2    NA    NA    NA    NA 112 104
+#&gt; 9      2 natural      0-3      0-3 chlorpheniramine  63  64   rnic1 0.730 0.745 0.578 0.773  NA  NA
+#&gt; 10     2 natural      0-3      0-3 chlorpheniramine  63  64   rnic2 1.145 0.903 0.891 1.041  NA  NA
+#&gt; 11     2 natural      0-3      0-3 chlorpheniramine  63  64 rngoal1    NA    NA    NA    NA  10   9
+#&gt; 12     2 natural      0-3      0-3 chlorpheniramine  63  64 rngoal2    NA    NA    NA    NA  19  19
+#&gt; 13     2 natural      0-3      0-3 chlorpheniramine  63  64   snic1 0.540 0.800 0.297 0.634  NA  NA
+#&gt; 14     2 natural      0-3      0-3 chlorpheniramine  63  64   snic2 0.710 0.876 0.469 0.712  NA  NA
+#&gt; 15     2 natural      0-3      0-3 chlorpheniramine  63  64 sngoal1    NA    NA    NA    NA  16  12
+#&gt; 16     2 natural      0-3      0-3 chlorpheniramine  63  64 sngoal2    NA    NA    NA    NA  25  20
+#&gt;     nt  nc
+#&gt; 1  128 136
+#&gt; 2  128 133
+#&gt; 3  128 136
+#&gt; 4  128 136
+#&gt; 5  118 116
+#&gt; 6  118 118
+#&gt; 7  118 118
+#&gt; 8  118 118
+#&gt; 9   63  64
+#&gt; 10  62  64
+#&gt; 11  63  64
+#&gt; 12  62  64
+#&gt; 13  63  64
+#&gt; 14  62  64
+#&gt; 15  50  49
+#&gt; 16  49  49</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -263,24 +263,24 @@
 
 <span class='co'>### inspect data for the first study</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>8</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;   study    cold scale.rn scale.sn             drug tnt tnc outcome    mt   sdt 
-#&gt; 1     1 natural      0-3      0-3 chlorpheniramine 128 136   rnic1 0.932 0.593 
-#&gt; 2     1 natural      0-3      0-3 chlorpheniramine 128 136   rnic2 1.433 0.648 
-#&gt; 3     1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal1    NA    NA 
-#&gt; 4     1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal2    NA    NA 
-#&gt; 5     1 natural      0-3      0-3 chlorpheniramine 128 136   snic1 0.927 0.488 
-#&gt; 6     1 natural      0-3      0-3 chlorpheniramine 128 136   snic2 1.298 0.538 
-#&gt; 7     1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal1    NA    NA 
-#&gt; 8     1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal2    NA    NA 
-#&gt;      mc   sdc  xt  xc  nt  nc      yi     vi measure 
-#&gt; 1 0.810 0.556  NA  NA 128 136  0.2118 0.0153     SMD 
-#&gt; 2 1.182 0.629  NA  NA 128 133  0.3920 0.0156     SMD 
-#&gt; 3    NA    NA  54  45 128 136  0.3860 0.0647      OR 
-#&gt; 4    NA    NA  99  94 128 136  0.4167 0.0781      OR 
-#&gt; 5 0.937 0.467  NA  NA 118 116 -0.0209 0.0171     SMD 
-#&gt; 6 1.104 0.561  NA  NA 118 118  0.3518 0.0172     SMD 
-#&gt; 7    NA    NA  87  91 118 118 -0.1805 0.0905      OR 
-#&gt; 8    NA    NA 112 104 118 118  0.8761 0.2413      OR </div><div class='input'>
+</div><div class='output co'>#&gt;   study    cold scale.rn scale.sn             drug tnt tnc outcome    mt   sdt    mc   sdc  xt  xc 
+#&gt; 1     1 natural      0-3      0-3 chlorpheniramine 128 136   rnic1 0.932 0.593 0.810 0.556  NA  NA 
+#&gt; 2     1 natural      0-3      0-3 chlorpheniramine 128 136   rnic2 1.433 0.648 1.182 0.629  NA  NA 
+#&gt; 3     1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal1    NA    NA    NA    NA  54  45 
+#&gt; 4     1 natural      0-3      0-3 chlorpheniramine 128 136 rngoal2    NA    NA    NA    NA  99  94 
+#&gt; 5     1 natural      0-3      0-3 chlorpheniramine 128 136   snic1 0.927 0.488 0.937 0.467  NA  NA 
+#&gt; 6     1 natural      0-3      0-3 chlorpheniramine 128 136   snic2 1.298 0.538 1.104 0.561  NA  NA 
+#&gt; 7     1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal1    NA    NA    NA    NA  87  91 
+#&gt; 8     1 natural      0-3      0-3 chlorpheniramine 128 136 sngoal2    NA    NA    NA    NA 112 104 
+#&gt;    nt  nc      yi     vi measure 
+#&gt; 1 128 136  0.2118 0.0153     SMD 
+#&gt; 2 128 133  0.3920 0.0156     SMD 
+#&gt; 3 128 136  0.3860 0.0647      OR 
+#&gt; 4 128 136  0.4167 0.0781      OR 
+#&gt; 5 118 116 -0.0209 0.0171     SMD 
+#&gt; 6 118 118  0.3518 0.0172     SMD 
+#&gt; 7 118 118 -0.1805 0.0905      OR 
+#&gt; 8 118 118  0.8761 0.2413      OR </div><div class='input'>
 <span class='co'>### fit a random-effects model for incremental change in runny nose severity at day 1</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.uni.html'>rma</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, data<span class='op'>=</span><span class='va'>dat</span>, subset<span class='op'>=</span><span class='va'>outcome</span><span class='op'>==</span><span class='st'>"rnic1"</span><span class='op'>)</span>
 <span class='va'>res</span>
@@ -330,13 +330,8 @@
 #&gt;  1.7012 1.2604 2.2961 1.2604 2.2961 
 #&gt; </div><div class='input'>
 <span class='co'>### construct approximate V matrix assuming a correlation of 0.7 for sampling errors within studies</span>
-<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/lapply.html'>lapply</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/split.html'>split</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>vi</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>, <span class='kw'>function</span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span> <span class='op'>{</span>
-   <span class='va'>S</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/MathFun.html'>sqrt</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, nrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, ncol<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span><span class='op'>)</span>
-   <span class='va'>R</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/matrix.html'>matrix</a></span><span class='op'>(</span><span class='fl'>0.7</span>, nrow<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span>, ncol<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/length.html'>length</a></span><span class='op'>(</span><span class='va'>v</span><span class='op'>)</span><span class='op'>)</span>
-   <span class='fu'><a href='https://rdrr.io/r/base/diag.html'>diag</a></span><span class='op'>(</span><span class='va'>R</span><span class='op'>)</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
-   <span class='va'>S</span> <span class='op'>%*%</span> <span class='va'>R</span> <span class='op'>%*%</span> <span class='va'>S</span>
-<span class='op'>}</span><span class='op'>)</span>
-<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/bldiag.html'>bldiag</a></span><span class='op'>(</span><span class='va'>V</span>, order<span class='op'>=</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span>
+<span class='va'>dat</span><span class='op'>$</span><span class='va'>esid</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/stats/ave.html'>ave</a></span><span class='op'>(</span><span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span>, <span class='va'>dat</span><span class='op'>$</span><span class='va'>study</span>, FUN<span class='op'>=</span><span class='va'>seq</span><span class='op'>)</span>
+<span class='va'>V</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/vcalc.html'>vcalc</a></span><span class='op'>(</span><span class='va'>vi</span>, cluster<span class='op'>=</span><span class='va'>study</span>, obs<span class='op'>=</span><span class='va'>esid</span>, rho<span class='op'>=</span><span class='fl'>0.7</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
 
 <span class='co'>### fit a model for incremental change in runny nose severity at day 1 and at day 2, allowing for</span>
 <span class='co'>### correlated sampling errors (no random effects added, since there does not appear to be any</span>

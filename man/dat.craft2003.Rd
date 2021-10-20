@@ -31,7 +31,7 @@
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.craft2003
-dat
+head(dat, 18)
 
 \dontrun{
 

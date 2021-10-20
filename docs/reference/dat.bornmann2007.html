@@ -209,40 +209,40 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.bornmann2007</span>
 <span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>dat</span>, <span class='fl'>16</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;                  study obs doctype gender   year  org   country       type
-#&gt; 1        Ackers (2000)   1    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 2        Ackers (2000)   2    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 3        Ackers (2000)   3    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 4        Ackers (2000)   4    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 5        Ackers (2000)   5    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 6        Ackers (2000)   6    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 7        Ackers (2000)   7    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship
-#&gt; 8  Allmendinger (2002)   1 Article    M&amp;F 1993.0  DFG    Europe      Grant
-#&gt; 9  Allmendinger (2002)   2 Article    M&amp;F 1994.0  DFG    Europe      Grant
-#&gt; 10 Allmendinger (2002)   3 Article    M&amp;F 1995.0  DFG    Europe      Grant
-#&gt; 11 Allmendinger (2002)   4 Article    M&amp;F 1996.0  DFG    Europe      Grant
-#&gt; 12 Allmendinger (2002)   5 Article    M&amp;F 1997.0  DFG    Europe      Grant
-#&gt; 13 Allmendinger (2002)   6 Article    M&amp;F 1998.0  DFG    Europe      Grant
-#&gt; 14 Allmendinger (2002)   7 Article    M&amp;F 1999.0  DFG    Europe      Grant
-#&gt; 15      Bazeley (1998)   1 Article      F 1995.0  ARC Australia      Grant
-#&gt; 16     Bornmann (2005)   1 Article      M 1992.5  BIF    Europe Fellowship
-#&gt;                   discipline waward wtotal maward mtotal
-#&gt; 1          Physical Sciences    139    711    274   1029
-#&gt; 2          Physical Sciences     45    258    166    908
-#&gt; 3          Physical Sciences     44    236    219    928
-#&gt; 4          Physical Sciences     63    251     96    507
-#&gt; 5  Social Sciences / Biology    157    910    252   1118
-#&gt; 6          Physical Sciences    114    589    460   2244
-#&gt; 7    Life Sciences / Biology    381   2027    489   2275
-#&gt; 8  Social Sciences / Biology      8     13     53     72
-#&gt; 9  Social Sciences / Biology      5      8     53     82
-#&gt; 10 Social Sciences / Biology      6      8     63     97
-#&gt; 11 Social Sciences / Biology      8     16     53     94
-#&gt; 12 Social Sciences / Biology      4     11     43     92
-#&gt; 13 Social Sciences / Biology     20     44     55     93
-#&gt; 14 Social Sciences / Biology      5     15     70    116
-#&gt; 15         Multidisciplinary     11     56     82    344
-#&gt; 16   Life Sciences / Biology    204   1085    430   1612</div><div class='input'>
+</div><div class='output co'>#&gt;                  study obs doctype gender   year  org   country       type                discipline
+#&gt; 1        Ackers (2000)   1    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship         Physical Sciences
+#&gt; 2        Ackers (2000)   2    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship         Physical Sciences
+#&gt; 3        Ackers (2000)   3    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship         Physical Sciences
+#&gt; 4        Ackers (2000)   4    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship         Physical Sciences
+#&gt; 5        Ackers (2000)   5    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship Social Sciences / Biology
+#&gt; 6        Ackers (2000)   6    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship         Physical Sciences
+#&gt; 7        Ackers (2000)   7    Grey    M&amp;F 1996.0 MSCA    Europe Fellowship   Life Sciences / Biology
+#&gt; 8  Allmendinger (2002)   1 Article    M&amp;F 1993.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 9  Allmendinger (2002)   2 Article    M&amp;F 1994.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 10 Allmendinger (2002)   3 Article    M&amp;F 1995.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 11 Allmendinger (2002)   4 Article    M&amp;F 1996.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 12 Allmendinger (2002)   5 Article    M&amp;F 1997.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 13 Allmendinger (2002)   6 Article    M&amp;F 1998.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 14 Allmendinger (2002)   7 Article    M&amp;F 1999.0  DFG    Europe      Grant Social Sciences / Biology
+#&gt; 15      Bazeley (1998)   1 Article      F 1995.0  ARC Australia      Grant         Multidisciplinary
+#&gt; 16     Bornmann (2005)   1 Article      M 1992.5  BIF    Europe Fellowship   Life Sciences / Biology
+#&gt;    waward wtotal maward mtotal
+#&gt; 1     139    711    274   1029
+#&gt; 2      45    258    166    908
+#&gt; 3      44    236    219    928
+#&gt; 4      63    251     96    507
+#&gt; 5     157    910    252   1118
+#&gt; 6     114    589    460   2244
+#&gt; 7     381   2027    489   2275
+#&gt; 8       8     13     53     72
+#&gt; 9       5      8     53     82
+#&gt; 10      6      8     63     97
+#&gt; 11      8     16     53     94
+#&gt; 12      4     11     43     92
+#&gt; 13     20     44     55     93
+#&gt; 14      5     15     70    116
+#&gt; 15     11     56     82    344
+#&gt; 16    204   1085    430   1612</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>

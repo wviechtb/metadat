@@ -42,11 +42,11 @@ require(metafor)
 ### restructure the data into a wide format
 dat2 <- to.wide(dat, study="study", grp="grp", ref=1, grpvars=c("bmi","cases","total"),
                 addid=FALSE, adddesign=FALSE, postfix=c(1,2))
-dat2
+dat2[1:10, -c(2:3)]
 
 ### calculate log risk ratios and corresponding sampling variances
 dat2 <- escalc(measure="RR", ai=cases1, n1i=total1, ci=cases2, n2i=total2, data=dat2)
-dat2
+dat2[1:10, -c(2:7)]
 
 ### forest plot of the risk ratios
 dd <- c(0,diff(dat2$study))
@@ -69,6 +69,7 @@ dat <- escalc(measure="PR", xi=cases, ni=total, data=dat)
 ### convert the proportions to percentages (and convert the variances accordingly)
 dat$yi <- dat$yi*100
 dat$vi <- dat$vi*100^2
+dat[1:10, -c(2:3)]
 
 ### fit multilevel meta-regression model to examine the relationship between the
 ### (centered) BMI variable and the risk of preeclampsia

@@ -35,7 +35,7 @@
 \examples{
 ### copy data into 'dat' and examine data
 dat <- dat.molloy2014
-dat
+dat[-c(5:6)]
 
 \dontrun{
 
@@ -44,7 +44,7 @@ require(metafor)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat, slab=paste(authors, year, sep=", "))
-dat
+dat[-c(5:6)]
 
 ### meta-analysis of the transformed correlations using a random-effects model
 res <- rma(yi, vi, data=dat)

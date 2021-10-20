@@ -205,94 +205,50 @@
     <pre class="examples"><div class='input'><span class='co'>### copy data into 'dat' and examine data</span>
 <span class='va'>dat</span> <span class='op'>&lt;-</span> <span class='va'>dat.obrien2003</span>
 <span class='va'>dat</span>
-</div><div class='output co'>#&gt;    study        author year ref  ch  dm  mg grp bmi.lb bmi.ub   bmi cases
-#&gt; 1      1       Edwards 1996   8  no  no yes   1   19.8   26.0 22.90    28
-#&gt; 2      1       Edwards 1996   8  no  no yes   2   29.0     NA 29.10    68
-#&gt; 3      2         Sibai 1997   9 yes yes yes   1     NA   19.8 19.70    18
-#&gt; 4      2         Sibai 1997   9 yes yes yes   2   19.8   25.9 22.85   142
-#&gt; 5      2         Sibai 1997   9 yes yes yes   3   26.0   34.9 30.45   118
-#&gt; 6      2         Sibai 1997   9 yes yes yes   4   35.0     NA 35.10    48
-#&gt; 7      3      Ogunyemi 1998  10  no  no yes   1     NA   19.8 19.70     3
-#&gt; 8      3      Ogunyemi 1998  10  no  no yes   2   19.8   26.0 22.90     5
-#&gt; 9      3      Ogunyemi 1998  10  no  no yes   3   26.1   29.0 27.55    13
-#&gt; 10     3      Ogunyemi 1998  10  no  no yes   4   29.0     NA 29.10    25
-#&gt; 11     4           Ros 1998  16  no  no  no   1     NA   19.8 19.70    11
-#&gt; 12     4           Ros 1998  16  no  no  no   2   19.8   26.0 22.90    78
-#&gt; 13     4           Ros 1998  16  no  no  no   3   26.1   29.0 27.55    19
-#&gt; 14     4           Ros 1998  16  no  no  no   4   29.0     NA 29.10    18
-#&gt; 15     5        Bianco 1998  11  no  no yes   1   19.0   27.0 23.00   357
-#&gt; 16     5        Bianco 1998  11  no  no yes   2   35.0     NA 35.10    85
-#&gt; 17     6        Knuist 1998  17 yes yes yes   1     NA   19.8 19.70     7
-#&gt; 18     6        Knuist 1998  17 yes yes yes   2   19.8   26.0 22.90    16
-#&gt; 19     6        Knuist 1998  17 yes yes yes   3   26.0     NA 26.10     5
-#&gt; 20     7      Thadhani 1999  13 yes  no  no   1     NA   21.0 20.90    22
-#&gt; 21     7      Thadhani 1999  13 yes  no  no   2   21.0   22.9 21.95    22
-#&gt; 22     7      Thadhani 1999  13 yes  no  no   3   23.0   24.9 23.95    17
-#&gt; 23     7      Thadhani 1999  13 yes  no  no   4   25.0   29.9 27.45    12
-#&gt; 24     7      Thadhani 1999  13 yes  no  no   5   30.0     NA 30.10    10
-#&gt; 25     8        Bowers 1999  12 yes yes yes   1     NA   26.0 25.90     7
-#&gt; 26     8        Bowers 1999  12 yes yes yes   2   26.0   29.0 27.50     2
-#&gt; 27     8        Bowers 1999  12 yes yes yes   3   29.0     NA 29.10     5
-#&gt; 28     9           Lee 2000  19 yes yes  no   1     NA   19.8 19.70    80
-#&gt; 29     9           Lee 2000  19 yes yes  no   2   19.8   24.2 22.00   261
-#&gt; 30     9           Lee 2000  19 yes yes  no   3   24.2     NA 24.30    74
-#&gt; 31    10 Conde-Agudelo 2000  18  no  no  no   1     NA   19.8 19.70  2901
-#&gt; 32    10 Conde-Agudelo 2000  18  no  no  no   2   19.8   26.0 22.90 16885
-#&gt; 33    10 Conde-Agudelo 2000  18  no  no  no   3   26.1   29.0 27.55  4264
-#&gt; 34    10 Conde-Agudelo 2000  18  no  no  no   4   29.0     NA 29.10  4749
-#&gt; 35    11     Steinfeld 2000  14  no  no yes   1     NA   29.0 28.90   114
-#&gt; 36    11     Steinfeld 2000  14  no  no yes   2   29.0     NA 29.10    15
-#&gt; 37    12        Sebire 2001  20  no  no yes   1   20.0   24.9 22.45  1238
-#&gt; 38    12        Sebire 2001  20  no  no yes   2   25.0   29.9 27.45   766
-#&gt; 39    12        Sebire 2001  20  no  no yes   3   30.0     NA 30.10   447
-#&gt; 40    13        Baeten 2001  15  no  no yes   1     NA   20.0 19.90   731
-#&gt; 41    13        Baeten 2001  15  no  no yes   2   20.0   24.9 22.45  2866
-#&gt; 42    13        Baeten 2001  15  no  no yes   3   25.0   29.9 27.45  1594
-#&gt; 43    13        Baeten 2001  15  no  no yes   4   30.0     NA 30.10  1321
-#&gt;     total
-#&gt; 1     660
-#&gt; 2     683
-#&gt; 3     414
-#&gt; 4    2253
-#&gt; 5    1283
-#&gt; 6     360
-#&gt; 7      78
-#&gt; 8     334
-#&gt; 9      78
-#&gt; 10    203
-#&gt; 11    350
-#&gt; 12   1720
-#&gt; 13    208
-#&gt; 14    140
-#&gt; 15  11313
-#&gt; 16    613
-#&gt; 17    422
-#&gt; 18   1406
-#&gt; 19    252
-#&gt; 20   5605
-#&gt; 21   4463
-#&gt; 22   3182
-#&gt; 23   2906
-#&gt; 24   1055
-#&gt; 25    135
-#&gt; 26     63
-#&gt; 27     85
-#&gt; 28   9879
-#&gt; 29  17750
-#&gt; 30   2106
-#&gt; 31  86924
-#&gt; 32 362073
-#&gt; 33  61601
-#&gt; 34  51172
-#&gt; 35   2256
-#&gt; 36    168
-#&gt; 37 176923
-#&gt; 38  79014
-#&gt; 39  31276
-#&gt; 40  18893
-#&gt; 41  50212
-#&gt; 42  17501
-#&gt; 43   9778</div><div class='input'>
+</div><div class='output co'>#&gt;    study        author year ref  ch  dm  mg grp bmi.lb bmi.ub   bmi cases  total
+#&gt; 1      1       Edwards 1996   8  no  no yes   1   19.8   26.0 22.90    28    660
+#&gt; 2      1       Edwards 1996   8  no  no yes   2   29.0     NA 29.10    68    683
+#&gt; 3      2         Sibai 1997   9 yes yes yes   1     NA   19.8 19.70    18    414
+#&gt; 4      2         Sibai 1997   9 yes yes yes   2   19.8   25.9 22.85   142   2253
+#&gt; 5      2         Sibai 1997   9 yes yes yes   3   26.0   34.9 30.45   118   1283
+#&gt; 6      2         Sibai 1997   9 yes yes yes   4   35.0     NA 35.10    48    360
+#&gt; 7      3      Ogunyemi 1998  10  no  no yes   1     NA   19.8 19.70     3     78
+#&gt; 8      3      Ogunyemi 1998  10  no  no yes   2   19.8   26.0 22.90     5    334
+#&gt; 9      3      Ogunyemi 1998  10  no  no yes   3   26.1   29.0 27.55    13     78
+#&gt; 10     3      Ogunyemi 1998  10  no  no yes   4   29.0     NA 29.10    25    203
+#&gt; 11     4           Ros 1998  16  no  no  no   1     NA   19.8 19.70    11    350
+#&gt; 12     4           Ros 1998  16  no  no  no   2   19.8   26.0 22.90    78   1720
+#&gt; 13     4           Ros 1998  16  no  no  no   3   26.1   29.0 27.55    19    208
+#&gt; 14     4           Ros 1998  16  no  no  no   4   29.0     NA 29.10    18    140
+#&gt; 15     5        Bianco 1998  11  no  no yes   1   19.0   27.0 23.00   357  11313
+#&gt; 16     5        Bianco 1998  11  no  no yes   2   35.0     NA 35.10    85    613
+#&gt; 17     6        Knuist 1998  17 yes yes yes   1     NA   19.8 19.70     7    422
+#&gt; 18     6        Knuist 1998  17 yes yes yes   2   19.8   26.0 22.90    16   1406
+#&gt; 19     6        Knuist 1998  17 yes yes yes   3   26.0     NA 26.10     5    252
+#&gt; 20     7      Thadhani 1999  13 yes  no  no   1     NA   21.0 20.90    22   5605
+#&gt; 21     7      Thadhani 1999  13 yes  no  no   2   21.0   22.9 21.95    22   4463
+#&gt; 22     7      Thadhani 1999  13 yes  no  no   3   23.0   24.9 23.95    17   3182
+#&gt; 23     7      Thadhani 1999  13 yes  no  no   4   25.0   29.9 27.45    12   2906
+#&gt; 24     7      Thadhani 1999  13 yes  no  no   5   30.0     NA 30.10    10   1055
+#&gt; 25     8        Bowers 1999  12 yes yes yes   1     NA   26.0 25.90     7    135
+#&gt; 26     8        Bowers 1999  12 yes yes yes   2   26.0   29.0 27.50     2     63
+#&gt; 27     8        Bowers 1999  12 yes yes yes   3   29.0     NA 29.10     5     85
+#&gt; 28     9           Lee 2000  19 yes yes  no   1     NA   19.8 19.70    80   9879
+#&gt; 29     9           Lee 2000  19 yes yes  no   2   19.8   24.2 22.00   261  17750
+#&gt; 30     9           Lee 2000  19 yes yes  no   3   24.2     NA 24.30    74   2106
+#&gt; 31    10 Conde-Agudelo 2000  18  no  no  no   1     NA   19.8 19.70  2901  86924
+#&gt; 32    10 Conde-Agudelo 2000  18  no  no  no   2   19.8   26.0 22.90 16885 362073
+#&gt; 33    10 Conde-Agudelo 2000  18  no  no  no   3   26.1   29.0 27.55  4264  61601
+#&gt; 34    10 Conde-Agudelo 2000  18  no  no  no   4   29.0     NA 29.10  4749  51172
+#&gt; 35    11     Steinfeld 2000  14  no  no yes   1     NA   29.0 28.90   114   2256
+#&gt; 36    11     Steinfeld 2000  14  no  no yes   2   29.0     NA 29.10    15    168
+#&gt; 37    12        Sebire 2001  20  no  no yes   1   20.0   24.9 22.45  1238 176923
+#&gt; 38    12        Sebire 2001  20  no  no yes   2   25.0   29.9 27.45   766  79014
+#&gt; 39    12        Sebire 2001  20  no  no yes   3   30.0     NA 30.10   447  31276
+#&gt; 40    13        Baeten 2001  15  no  no yes   1     NA   20.0 19.90   731  18893
+#&gt; 41    13        Baeten 2001  15  no  no yes   2   20.0   24.9 22.45  2866  50212
+#&gt; 42    13        Baeten 2001  15  no  no yes   3   25.0   29.9 27.45  1594  17501
+#&gt; 43    13        Baeten 2001  15  no  no yes   4   30.0     NA 30.10  1321   9778</div><div class='input'>
 <span class='co'># \dontrun{</span>
 
 <span class='co'>### load metafor package</span>
@@ -301,134 +257,32 @@
 <span class='co'>### restructure the data into a wide format</span>
 <span class='va'>dat2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/to.wide.html'>to.wide</a></span><span class='op'>(</span><span class='va'>dat</span>, study<span class='op'>=</span><span class='st'>"study"</span>, grp<span class='op'>=</span><span class='st'>"grp"</span>, ref<span class='op'>=</span><span class='fl'>1</span>, grpvars<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"bmi"</span>,<span class='st'>"cases"</span>,<span class='st'>"total"</span><span class='op'>)</span>,
                 addid<span class='op'>=</span><span class='cn'>FALSE</span>, adddesign<span class='op'>=</span><span class='cn'>FALSE</span>, postfix<span class='op'>=</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>1</span>,<span class='fl'>2</span><span class='op'>)</span><span class='op'>)</span>
-<span class='va'>dat2</span>
-</div><div class='output co'>#&gt;    study        author year ref  ch  dm  mg grp1 bmi.lb bmi.ub  bmi1 cases1
-#&gt; 1      1       Edwards 1996   8  no  no yes    2   29.0     NA 29.10     68
-#&gt; 2      2         Sibai 1997   9 yes yes yes    2   19.8   25.9 22.85    142
-#&gt; 3      2         Sibai 1997   9 yes yes yes    3   26.0   34.9 30.45    118
-#&gt; 4      2         Sibai 1997   9 yes yes yes    4   35.0     NA 35.10     48
-#&gt; 5      3      Ogunyemi 1998  10  no  no yes    2   19.8   26.0 22.90      5
-#&gt; 6      3      Ogunyemi 1998  10  no  no yes    3   26.1   29.0 27.55     13
-#&gt; 7      3      Ogunyemi 1998  10  no  no yes    4   29.0     NA 29.10     25
-#&gt; 8      4           Ros 1998  16  no  no  no    2   19.8   26.0 22.90     78
-#&gt; 9      4           Ros 1998  16  no  no  no    3   26.1   29.0 27.55     19
-#&gt; 10     4           Ros 1998  16  no  no  no    4   29.0     NA 29.10     18
-#&gt; 11     5        Bianco 1998  11  no  no yes    2   35.0     NA 35.10     85
-#&gt; 12     6        Knuist 1998  17 yes yes yes    2   19.8   26.0 22.90     16
-#&gt; 13     6        Knuist 1998  17 yes yes yes    3   26.0     NA 26.10      5
-#&gt; 14     7      Thadhani 1999  13 yes  no  no    2   21.0   22.9 21.95     22
-#&gt; 15     7      Thadhani 1999  13 yes  no  no    3   23.0   24.9 23.95     17
-#&gt; 16     7      Thadhani 1999  13 yes  no  no    4   25.0   29.9 27.45     12
-#&gt; 17     7      Thadhani 1999  13 yes  no  no    5   30.0     NA 30.10     10
-#&gt; 18     8        Bowers 1999  12 yes yes yes    2   26.0   29.0 27.50      2
-#&gt; 19     8        Bowers 1999  12 yes yes yes    3   29.0     NA 29.10      5
-#&gt; 20     9           Lee 2000  19 yes yes  no    2   19.8   24.2 22.00    261
-#&gt; 21     9           Lee 2000  19 yes yes  no    3   24.2     NA 24.30     74
-#&gt; 22    10 Conde-Agudelo 2000  18  no  no  no    2   19.8   26.0 22.90  16885
-#&gt; 23    10 Conde-Agudelo 2000  18  no  no  no    3   26.1   29.0 27.55   4264
-#&gt; 24    10 Conde-Agudelo 2000  18  no  no  no    4   29.0     NA 29.10   4749
-#&gt; 25    11     Steinfeld 2000  14  no  no yes    2   29.0     NA 29.10     15
-#&gt; 26    12        Sebire 2001  20  no  no yes    2   25.0   29.9 27.45    766
-#&gt; 27    12        Sebire 2001  20  no  no yes    3   30.0     NA 30.10    447
-#&gt; 28    13        Baeten 2001  15  no  no yes    2   20.0   24.9 22.45   2866
-#&gt; 29    13        Baeten 2001  15  no  no yes    3   25.0   29.9 27.45   1594
-#&gt; 30    13        Baeten 2001  15  no  no yes    4   30.0     NA 30.10   1321
-#&gt;    total1 grp2  bmi2 cases2 total2 comp
-#&gt; 1     683    1 22.90     28    660  2-1
-#&gt; 2    2253    1 19.70     18    414  2-1
-#&gt; 3    1283    1 19.70     18    414  3-1
-#&gt; 4     360    1 19.70     18    414  4-1
-#&gt; 5     334    1 19.70      3     78  2-1
-#&gt; 6      78    1 19.70      3     78  3-1
-#&gt; 7     203    1 19.70      3     78  4-1
-#&gt; 8    1720    1 19.70     11    350  2-1
-#&gt; 9     208    1 19.70     11    350  3-1
-#&gt; 10    140    1 19.70     11    350  4-1
-#&gt; 11    613    1 23.00    357  11313  2-1
-#&gt; 12   1406    1 19.70      7    422  2-1
-#&gt; 13    252    1 19.70      7    422  3-1
-#&gt; 14   4463    1 20.90     22   5605  2-1
-#&gt; 15   3182    1 20.90     22   5605  3-1
-#&gt; 16   2906    1 20.90     22   5605  4-1
-#&gt; 17   1055    1 20.90     22   5605  5-1
-#&gt; 18     63    1 25.90      7    135  2-1
-#&gt; 19     85    1 25.90      7    135  3-1
-#&gt; 20  17750    1 19.70     80   9879  2-1
-#&gt; 21   2106    1 19.70     80   9879  3-1
-#&gt; 22 362073    1 19.70   2901  86924  2-1
-#&gt; 23  61601    1 19.70   2901  86924  3-1
-#&gt; 24  51172    1 19.70   2901  86924  4-1
-#&gt; 25    168    1 28.90    114   2256  2-1
-#&gt; 26  79014    1 22.45   1238 176923  2-1
-#&gt; 27  31276    1 22.45   1238 176923  3-1
-#&gt; 28  50212    1 19.90    731  18893  2-1
-#&gt; 29  17501    1 19.90    731  18893  3-1
-#&gt; 30   9778    1 19.90    731  18893  4-1</div><div class='input'>
+<span class='va'>dat2</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span>, <span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>3</span><span class='op'>)</span><span class='op'>]</span>
+</div><div class='output co'>#&gt;    study ref  ch  dm  mg grp1 bmi.lb bmi.ub  bmi1 cases1 total1 grp2 bmi2 cases2 total2 comp
+#&gt; 1      1   8  no  no yes    2   29.0     NA 29.10     68    683    1 22.9     28    660  2-1
+#&gt; 2      2   9 yes yes yes    2   19.8   25.9 22.85    142   2253    1 19.7     18    414  2-1
+#&gt; 3      2   9 yes yes yes    3   26.0   34.9 30.45    118   1283    1 19.7     18    414  3-1
+#&gt; 4      2   9 yes yes yes    4   35.0     NA 35.10     48    360    1 19.7     18    414  4-1
+#&gt; 5      3  10  no  no yes    2   19.8   26.0 22.90      5    334    1 19.7      3     78  2-1
+#&gt; 6      3  10  no  no yes    3   26.1   29.0 27.55     13     78    1 19.7      3     78  3-1
+#&gt; 7      3  10  no  no yes    4   29.0     NA 29.10     25    203    1 19.7      3     78  4-1
+#&gt; 8      4  16  no  no  no    2   19.8   26.0 22.90     78   1720    1 19.7     11    350  2-1
+#&gt; 9      4  16  no  no  no    3   26.1   29.0 27.55     19    208    1 19.7     11    350  3-1
+#&gt; 10     4  16  no  no  no    4   29.0     NA 29.10     18    140    1 19.7     11    350  4-1</div><div class='input'>
 <span class='co'>### calculate log risk ratios and corresponding sampling variances</span>
 <span class='va'>dat2</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/escalc.html'>escalc</a></span><span class='op'>(</span>measure<span class='op'>=</span><span class='st'>"RR"</span>, ai<span class='op'>=</span><span class='va'>cases1</span>, n1i<span class='op'>=</span><span class='va'>total1</span>, ci<span class='op'>=</span><span class='va'>cases2</span>, n2i<span class='op'>=</span><span class='va'>total2</span>, data<span class='op'>=</span><span class='va'>dat2</span><span class='op'>)</span>
-<span class='va'>dat2</span>
-</div><div class='output co'>#&gt;    study        author year ref  ch  dm  mg grp1 bmi.lb bmi.ub  bmi1 cases1 
-#&gt; 1      1       Edwards 1996   8  no  no yes    2   29.0     NA 29.10     68 
-#&gt; 2      2         Sibai 1997   9 yes yes yes    2   19.8   25.9 22.85    142 
-#&gt; 3      2         Sibai 1997   9 yes yes yes    3   26.0   34.9 30.45    118 
-#&gt; 4      2         Sibai 1997   9 yes yes yes    4   35.0     NA 35.10     48 
-#&gt; 5      3      Ogunyemi 1998  10  no  no yes    2   19.8   26.0 22.90      5 
-#&gt; 6      3      Ogunyemi 1998  10  no  no yes    3   26.1   29.0 27.55     13 
-#&gt; 7      3      Ogunyemi 1998  10  no  no yes    4   29.0     NA 29.10     25 
-#&gt; 8      4           Ros 1998  16  no  no  no    2   19.8   26.0 22.90     78 
-#&gt; 9      4           Ros 1998  16  no  no  no    3   26.1   29.0 27.55     19 
-#&gt; 10     4           Ros 1998  16  no  no  no    4   29.0     NA 29.10     18 
-#&gt; 11     5        Bianco 1998  11  no  no yes    2   35.0     NA 35.10     85 
-#&gt; 12     6        Knuist 1998  17 yes yes yes    2   19.8   26.0 22.90     16 
-#&gt; 13     6        Knuist 1998  17 yes yes yes    3   26.0     NA 26.10      5 
-#&gt; 14     7      Thadhani 1999  13 yes  no  no    2   21.0   22.9 21.95     22 
-#&gt; 15     7      Thadhani 1999  13 yes  no  no    3   23.0   24.9 23.95     17 
-#&gt; 16     7      Thadhani 1999  13 yes  no  no    4   25.0   29.9 27.45     12 
-#&gt; 17     7      Thadhani 1999  13 yes  no  no    5   30.0     NA 30.10     10 
-#&gt; 18     8        Bowers 1999  12 yes yes yes    2   26.0   29.0 27.50      2 
-#&gt; 19     8        Bowers 1999  12 yes yes yes    3   29.0     NA 29.10      5 
-#&gt; 20     9           Lee 2000  19 yes yes  no    2   19.8   24.2 22.00    261 
-#&gt; 21     9           Lee 2000  19 yes yes  no    3   24.2     NA 24.30     74 
-#&gt; 22    10 Conde-Agudelo 2000  18  no  no  no    2   19.8   26.0 22.90  16885 
-#&gt; 23    10 Conde-Agudelo 2000  18  no  no  no    3   26.1   29.0 27.55   4264 
-#&gt; 24    10 Conde-Agudelo 2000  18  no  no  no    4   29.0     NA 29.10   4749 
-#&gt; 25    11     Steinfeld 2000  14  no  no yes    2   29.0     NA 29.10     15 
-#&gt; 26    12        Sebire 2001  20  no  no yes    2   25.0   29.9 27.45    766 
-#&gt; 27    12        Sebire 2001  20  no  no yes    3   30.0     NA 30.10    447 
-#&gt; 28    13        Baeten 2001  15  no  no yes    2   20.0   24.9 22.45   2866 
-#&gt; 29    13        Baeten 2001  15  no  no yes    3   25.0   29.9 27.45   1594 
-#&gt; 30    13        Baeten 2001  15  no  no yes    4   30.0     NA 30.10   1321 
-#&gt;    total1 grp2  bmi2 cases2 total2 comp      yi     vi 
-#&gt; 1     683    1 22.90     28    660  2-1  0.8530 0.0474 
-#&gt; 2    2253    1 19.70     18    414  2-1  0.3713 0.0597 
-#&gt; 3    1283    1 19.70     18    414  3-1  0.7492 0.0608 
-#&gt; 4     360    1 19.70     18    414  4-1  1.1206 0.0712 
-#&gt; 5     334    1 19.70      3     78  2-1 -0.9436 0.5175 
-#&gt; 6      78    1 19.70      3     78  3-1  1.4663 0.3846 
-#&gt; 7     203    1 19.70      3     78  4-1  1.1638 0.3556 
-#&gt; 8    1720    1 19.70     11    350  2-1  0.3667 0.1003 
-#&gt; 9     208    1 19.70     11    350  3-1  1.0669 0.1359 
-#&gt; 10    140    1 19.70     11    350  4-1  1.4088 0.1365 
-#&gt; 11    613    1 23.00    357  11313  2-1  1.4803 0.0128 
-#&gt; 12   1406    1 19.70      7    422  2-1 -0.3768 0.2023 
-#&gt; 13    252    1 19.70      7    422  3-1  0.1791 0.3365 
-#&gt; 14   4463    1 20.90     22   5605  2-1  0.2278 0.0905 
-#&gt; 15   3182    1 20.90     22   5605  3-1  0.3083 0.1038 
-#&gt; 16   2906    1 20.90     22   5605  4-1  0.0507 0.1283 
-#&gt; 17   1055    1 20.90     22   5605  5-1  0.8817 0.1443 
-#&gt; 18     63    1 25.90      7    135  2-1 -0.4906 0.6196 
-#&gt; 19     85    1 25.90      7    135  3-1  0.1262 0.3237 
-#&gt; 20  17750    1 19.70     80   9879  2-1  0.5965 0.0162 
-#&gt; 21   2106    1 19.70     80   9879  3-1  1.4677 0.0254 
-#&gt; 22 362073    1 19.70   2901  86924  2-1  0.3346 0.0004 
-#&gt; 23  61601    1 19.70   2901  86924  3-1  0.7295 0.0006 
-#&gt; 24  51172    1 19.70   2901  86924  4-1  1.0227 0.0005 
-#&gt; 25    168    1 28.90    114   2256  2-1  0.5692 0.0690 
-#&gt; 26  79014    1 22.45   1238 176923  2-1  0.3260 0.0021 
-#&gt; 27  31276    1 22.45   1238 176923  3-1  0.7142 0.0030 
-#&gt; 28  50212    1 19.90    731  18893  2-1  0.3888 0.0016 
-#&gt; 29  17501    1 19.90    731  18893  3-1  0.8561 0.0019 
-#&gt; 30   9778    1 19.90    731  18893  4-1  1.2504 0.0020 </div><div class='input'>
+<span class='va'>dat2</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span>, <span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>7</span><span class='op'>)</span><span class='op'>]</span>
+</div><div class='output co'>#&gt;    study grp1 bmi.lb bmi.ub  bmi1 cases1 total1 grp2 bmi2 cases2 total2 comp      yi     vi 
+#&gt; 1      1    2   29.0     NA 29.10     68    683    1 22.9     28    660  2-1  0.8530 0.0474 
+#&gt; 2      2    2   19.8   25.9 22.85    142   2253    1 19.7     18    414  2-1  0.3713 0.0597 
+#&gt; 3      2    3   26.0   34.9 30.45    118   1283    1 19.7     18    414  3-1  0.7492 0.0608 
+#&gt; 4      2    4   35.0     NA 35.10     48    360    1 19.7     18    414  4-1  1.1206 0.0712 
+#&gt; 5      3    2   19.8   26.0 22.90      5    334    1 19.7      3     78  2-1 -0.9436 0.5175 
+#&gt; 6      3    3   26.1   29.0 27.55     13     78    1 19.7      3     78  3-1  1.4663 0.3846 
+#&gt; 7      3    4   29.0     NA 29.10     25    203    1 19.7      3     78  4-1  1.1638 0.3556 
+#&gt; 8      4    2   19.8   26.0 22.90     78   1720    1 19.7     11    350  2-1  0.3667 0.1003 
+#&gt; 9      4    3   26.1   29.0 27.55     19    208    1 19.7     11    350  3-1  1.0669 0.1359 
+#&gt; 10     4    4   29.0     NA 29.10     18    140    1 19.7     11    350  4-1  1.4088 0.1365 </div><div class='input'>
 <span class='co'>### forest plot of the risk ratios</span>
 <span class='va'>dd</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>0</span>,<span class='fu'><a href='https://rdrr.io/r/base/diff.html'>diff</a></span><span class='op'>(</span><span class='va'>dat2</span><span class='op'>$</span><span class='va'>study</span><span class='op'>)</span><span class='op'>)</span>
 <span class='va'>dd</span><span class='op'>[</span><span class='va'>dd</span> <span class='op'>&gt;</span> <span class='fl'>0</span><span class='op'>]</span> <span class='op'>&lt;-</span> <span class='fl'>1</span>
@@ -450,7 +304,18 @@
 <span class='co'>### convert the proportions to percentages (and convert the variances accordingly)</span>
 <span class='va'>dat</span><span class='op'>$</span><span class='va'>yi</span> <span class='op'>&lt;-</span> <span class='va'>dat</span><span class='op'>$</span><span class='va'>yi</span><span class='op'>*</span><span class='fl'>100</span>
 <span class='va'>dat</span><span class='op'>$</span><span class='va'>vi</span> <span class='op'>&lt;-</span> <span class='va'>dat</span><span class='op'>$</span><span class='va'>vi</span><span class='op'>*</span><span class='fl'>100</span><span class='op'>^</span><span class='fl'>2</span>
-
+<span class='va'>dat</span><span class='op'>[</span><span class='fl'>1</span><span class='op'>:</span><span class='fl'>10</span>, <span class='op'>-</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>2</span><span class='op'>:</span><span class='fl'>3</span><span class='op'>)</span><span class='op'>]</span>
+</div><div class='output co'>#&gt;    study ref  ch  dm  mg grp bmi.lb bmi.ub   bmi cases total bmicent      yi      vi 
+#&gt; 1      1   8  no  no yes   1   19.8   26.0 22.90    28   660 -3.1000  4.2424  0.6155 
+#&gt; 2      1   8  no  no yes   2   29.0     NA 29.10    68   683  3.1000  9.9561  1.3126 
+#&gt; 3      2   9 yes yes yes   1     NA   19.8 19.70    18   414 -7.3250  4.3478  1.0045 
+#&gt; 4      2   9 yes yes yes   2   19.8   25.9 22.85   142  2253 -4.1750  6.3027  0.2621 
+#&gt; 5      2   9 yes yes yes   3   26.0   34.9 30.45   118  1283  3.4250  9.1972  0.6509 
+#&gt; 6      2   9 yes yes yes   4   35.0     NA 35.10    48   360  8.0750 13.3333  3.2099 
+#&gt; 7      3  10  no  no yes   1     NA   19.8 19.70     3    78 -5.1125  3.8462  4.7413 
+#&gt; 8      3  10  no  no yes   2   19.8   26.0 22.90     5   334 -1.9125  1.4970  0.4415 
+#&gt; 9      3  10  no  no yes   3   26.1   29.0 27.55    13    78  2.7375 16.6667 17.8063 
+#&gt; 10     3  10  no  no yes   4   29.0     NA 29.10    25   203  4.2875 12.3153  5.3195 </div><div class='input'>
 <span class='co'>### fit multilevel meta-regression model to examine the relationship between the</span>
 <span class='co'>### (centered) BMI variable and the risk of preeclampsia</span>
 <span class='va'>res</span> <span class='op'>&lt;-</span> <span class='fu'><a href='https://wviechtb.github.io/metafor/reference/rma.mv.html'>rma.mv</a></span><span class='op'>(</span><span class='va'>yi</span>, <span class='va'>vi</span>, mods <span class='op'>=</span> <span class='op'>~</span> <span class='va'>bmicent</span>, random <span class='op'>=</span> <span class='op'>~</span> <span class='fl'>1</span> <span class='op'>|</span> <span class='va'>study</span><span class='op'>/</span><span class='va'>grp</span>, data<span class='op'>=</span><span class='va'>dat</span><span class='op'>)</span>
