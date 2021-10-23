@@ -83,6 +83,10 @@ regplot(res, xlab=expression("Within-Study Mean Centered BMI"~(kg/m^2)),
         at=seq(0,18,by=2), olim=c(0,100), psize=2, bg="gray90",
         label=TRUE, offset=0, labsize=0.6)
 
+### fit model using a random slope for bmicent
+res <- rma.mv(yi, vi, mods = ~ bmicent, random = ~ bmicent | study, struct="GEN", data=dat)
+res
+
 }
 }
 \keyword{datasets}
