@@ -66,8 +66,8 @@ require(metafor)
 
 ### fit multilevel mixed-effects meta-regression model
 res <- rma.mv(yi, vi, mods = ~ condition,
-   random = list(~ 1 | article/experiment/sample/id, ~ 1 | pairing),
-   data=dat, sparse=TRUE, digits=3)
+              random = list(~ 1 | article/experiment/sample/id, ~ 1 | pairing),
+              data=dat, sparse=TRUE, digits=3)
 res
 
 ### proportion of total amount of heterogeneity due to each component
@@ -81,9 +81,9 @@ sav
 ### estimated average recall rate in read and generate conditions
 predict(sav, newmods = c(0,1), digits=3)
 
-### illustrate use of the clubSandwich package together with metafor
-if (require(clubSandwich))
-   coef_test(res, vcov="CR2")
+### use methods from clubSandwich package
+sav <- robust(res, cluster=dat$article, clubSandwich=TRUE)
+sav
 
 }
 }

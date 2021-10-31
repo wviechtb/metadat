@@ -102,20 +102,16 @@ predict(res, digits=2)
 ### use cluster-robust inference methods based on this model
 robust(res, cluster=dat$study)
 
-### illustrate use of the clubSandwich package together with metafor
-if (require(clubSandwich)) {
-coef_test(res, vcov="CR2", cluster=dat$study)
-conf_int(res, vcov="CR2", cluster=dat$study)
-}
+### use methods from clubSandwich package
+robust(res, cluster=dat$study, clubSandwich=TRUE)
 
 ### examine if task difficulty is a potential moderator of the effect
 res <- rma.mv(yi, V, mods = ~ difficulty, random = ~ 1 | study/comp, data=dat)
 res
 sav <- robust(res, cluster=dat$study)
 sav
-if (require(clubSandwich)) {
-coef_test(res, vcov="CR2", cluster=dat$study)
-}
+sav <- robust(res, cluster=dat$study, clubSandwich=TRUE)
+sav
 
 ### draw bubble plot
 regplot(sav, xlab="Task Difficulty", ylab="Standardized Mean Difference", las=1, digits=1, bty="l")
