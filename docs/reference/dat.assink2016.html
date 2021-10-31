@@ -163,17 +163,31 @@
 <span class="r-in"><span class="co">### use cluster-robust inference methods</span></span>
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Number of outcomes:   100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Number of clusters:   17</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Outcomes per cluster: 1-22 (mean: 5.88, median: 5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 100; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             estim    sqrt  nlvls  fixed      factor </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1  0.1879  0.4334     17     no       study </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2  0.1120  0.3347    100     no  study/esid </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 99) = 809.4611, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of estimates:   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of clusters:    17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Estimates per cluster: 1-22 (mean: 5.88, median: 5)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    tval  df    pval   ci.lb   ci.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   0.4268  0.1183  3.6076  16  0.0024  0.1760  0.6776  ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹   tval¹  df¹   pval¹  ci.lb¹  ci.ub¹ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   0.4268  0.1183  3.6076   16  0.0024  0.1760  0.6776  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR1,</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t-test and confidence interval, dfs = residual method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### LRTs for the variance components</span></span>
@@ -339,17 +353,31 @@
 <span class="r-in"><span class="co">### use cluster-robust inference methods</span></span>
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Number of outcomes:   100</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Number of clusters:   17</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Outcomes per cluster: 1-22 (mean: 5.88, median: 5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 100; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             estim    sqrt  nlvls  fixed      factor </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1  0.0807  0.2841     17     no       study </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2  0.1545  0.3931    100     no  study/esid </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 99) = 745.4385, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of estimates:   100</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of clusters:    17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Estimates per cluster: 1-22 (mean: 5.88, median: 5)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    tval  df    pval   ci.lb   ci.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   0.3678  0.0962  3.8210  16  0.0015  0.1637  0.5718  ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹   tval¹  df¹   pval¹  ci.lb¹  ci.ub¹ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   0.3678  0.0962  3.8210   16  0.0015  0.1637  0.5718  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR1,</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t-test and confidence interval, dfs = residual method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># }</span></span>
