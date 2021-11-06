@@ -269,9 +269,9 @@
 <span class="r-in"><span class="co">### profile likelihood plots for model res2</span></span>
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/profile.rma.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res2</span>, cline<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Profiling tau2 = 1 </span>
-<span class="r-plt"><img src="dat.maire2019-1.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.maire2019-1.png" alt="" width="864" height="768"></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Profiling rho = 1 </span>
-<span class="r-plt"><img src="dat.maire2019-2.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.maire2019-2.png" alt="" width="864" height="768"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### effective range (river-km for which the spatial correlation is &gt;= .05)</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">*</span> <span class="va">res2</span><span class="op">$</span><span class="va">rho</span></span>
@@ -280,7 +280,7 @@
 <span class="r-in"><span class="co">### note: it was necessary to adjust the starting value for rho in models</span></span>
 <span class="r-in"><span class="co">### res2 and res3 so that the optimizer does not get stuck in a local maximum</span></span>
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/profile.rma.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res2</span>, rho<span class="op">=</span><span class="fl">1</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">200</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span class="r-plt"><img src="dat.maire2019-3.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.maire2019-3.png" alt="" width="864" height="768"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># }</span></span>
 </code></pre></div>

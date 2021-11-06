@@ -1,6 +1,6 @@
 \name{datsearch}
 \alias{datsearch}
-\title{Search function for the datasets}
+\title{Search Function for the Datasets}
 \description{Function to search among the existing datasets.}
 \usage{
 datsearch(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown=FALSE)

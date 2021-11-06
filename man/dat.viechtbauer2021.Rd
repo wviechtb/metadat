@@ -46,7 +46,7 @@ k <- nrow(dat)
 
 ### fit models
 
-res.CE <- rma(yi, vi, data=dat, method="FE")
+res.CE <- rma(yi, vi, data=dat, method="CE") # same as method="EE"
 res.CE
 
 res.RE <- rma(yi, vi, data=dat, method="DL")

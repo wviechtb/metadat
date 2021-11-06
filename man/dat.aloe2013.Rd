@@ -1,7 +1,7 @@
 \name{dat.aloe2013}
 \docType{data}
 \alias{dat.aloe2013}
-\title{Studies on the association between supervision quality and various outcomes in social, mental health, and child welfare workers}
+\title{Studies on the Association Between Supervision Quality and Various Outcomes in Social, Mental Health, and Child Welfare Workers}
 \description{Results from 5 studies examining the association between various measures of supervision quality and various work-related outcomes in social, mental health, and child welfare workers.}
 \usage{
 dat.aloe2013

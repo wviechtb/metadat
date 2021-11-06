@@ -42,8 +42,8 @@ ci.lb        <- theta.hat - 1.96 * se.theta.hat
 ci.ub        <- theta.hat + 1.96 * se.theta.hat
 round(c(estimate = theta.hat, se = se.theta.hat, ci.lb = ci.lb, ci.ub = ci.ub), 4)
 
-### this is identical to a FE model with sample size weights
-rma(yi, vi, weights=ni, method="FE", data=dat)
+### this is identical to an equal-effects model with sample size weights
+rma(yi, vi, weights=ni, method="EE", data=dat)
 
 ### random-effects model with raw proportions
 dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat)

@@ -1,7 +1,7 @@
 \name{dat.michael2013}
 \docType{data}
 \alias{dat.michael2013}
-\title{The non-persuasive power of a brain image}
+\title{The Non-Persuasive Power of a Brain Image}
 \description{Results from studies exploring how a superfluous fMRI brain image influences the persuasiveness of a scientific claim.}
 \usage{
 dat.michael2013

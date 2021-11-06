@@ -1,7 +1,7 @@
 \name{dat.lim2014}
 \docType{data}
 \alias{dat.lim2014}
-\title{Studies on the association between maternal size, offspring size, and number of offsprings}
+\title{Studies on the Association Between Maternal Size, Offspring Size, and Number of Offsprings}
 \description{Results from studies examining the association between maternal size, offspring size, and number of offsprings.}
 \usage{
 dat.lim2014

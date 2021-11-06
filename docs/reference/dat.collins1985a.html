@@ -155,7 +155,7 @@
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Fixed-Effects Model (k = 25)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Equal-Effects Model (k = 25)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):  39.33%</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability): 1.65</span>
@@ -188,13 +188,13 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> -53.6789   40.3423  109.3579  110.5359  109.5397   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tests for Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Wld(df = 23) = 32.5383, p-val = 0.0895</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Wld(df = 23) = 32.5527, p-val = 0.0892</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> LRT(df = 23) = 40.3423, p-val = 0.0141</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1216  0.0993  -1.2242  0.2209  -0.3163  0.0731    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1216  0.0996  -1.2211  0.2220  -0.3167  0.0736    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
@@ -209,7 +209,7 @@
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/llplot.html" class="external-link">llplot</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">b.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">b.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span>,</span>
 <span class="r-in">       lwd<span class="op">=</span><span class="fl">1</span>, refline<span class="op">=</span><span class="cn">NA</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">4</span>,<span class="fl">4</span><span class="op">)</span>, drop00<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from plotting.</span>
-<span class="r-plt"><img src="dat.collins1985a-1.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.collins1985a-1.png" alt="" width="864" height="768"></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### meta-analysis of log odds ratios using a conditional logistic regression model (RE model)</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.glmm.html" class="external-link">rma.glmm</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">b.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">b.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span>,</span>
@@ -224,19 +224,19 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>   logLik  deviance       AIC       BIC      AICc </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -52.9901   38.9647  109.9802  112.3363  110.5516   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 (estimated amount of total heterogeneity): 0.1192 (SE = 0.1395)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tau (square root of estimated tau^2 value):      0.3452</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):   30.8511%</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability):  1.4462</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 (estimated amount of total heterogeneity): 0.1192 (SE = 0.1396)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau (square root of estimated tau^2 value):      0.3453</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):   30.8590%</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability):  1.4463</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tests for Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Wld(df = 23) = 32.5383, p-val = 0.0895</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Wld(df = 23) = 32.5527, p-val = 0.0892</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> LRT(df = 23) = 40.3423, p-val = 0.0141</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1743  0.1364  -1.2785  0.2011  -0.4416  0.0929    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1744  0.1364  -1.2786  0.2010  -0.4418  0.0929    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
@@ -253,7 +253,7 @@
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Fixed-Effects Model (k = 22)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Equal-Effects Model (k = 22)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):  25.38%</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability): 1.34</span>
@@ -278,7 +278,7 @@
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Fixed-Effects Model (k = 24)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Equal-Effects Model (k = 24)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):  23.17%</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability): 1.30</span>
