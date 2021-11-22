@@ -15,7 +15,7 @@ The data frame contains the following columns:
 \bold{year}      \tab \code{numeric}   \tab year of publication \cr
 \bold{id}        \tab \code{numeric}   \tab study ID \cr
 \bold{treatment} \tab \code{character} \tab treatment \cr
-\bold{exac}      \tab \code{numeric}   \tab one or more episodes of COPD exacerbations (yes / no) \cr
+\bold{exac}      \tab \code{numeric}   \tab number of individuals with one or more episodes of COPD exacerbations \cr
 \bold{total}     \tab \code{numeric}   \tab number of individuals in treatment arm
 }
 }

@@ -11,6 +11,7 @@ fields/topics:
 \concept{attraction}
 \concept{persuasion}
 \concept{memory}
+\concept{human factors}
 
 # natural sciences / topics
 \concept{ecology}
@@ -30,6 +31,9 @@ fields/topics:
 \concept{primary care}
 \concept{epidemiology}
 \concept{covid-19}
+
+# other field / topics
+\concept{engineering}
 
 ############################################################################
 
