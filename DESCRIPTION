@@ -14,4 +14,3 @@ Encoding: UTF-8
 RdMacros: mathjaxr
 URL: https://github.com/wviechtb/metadat
 BugReports: https://github.com/wviechtb/metadat/issues
-RoxygenNote: 7.1.2
