@@ -36,7 +36,7 @@ head(dat, 18)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### construct dataset and var-cov matrix of the correlations
 tmp <- rcalc(ri ~ var1 + var2 | study, ni=ni, data=dat)

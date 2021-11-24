@@ -41,7 +41,7 @@ head(dat, 9)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### fit multilevel model
 res <- rma.mv(yi, vi, random = ~ 1 | study/esid, data=dat)

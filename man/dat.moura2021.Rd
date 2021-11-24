@@ -47,10 +47,10 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### load ape package
-require(ape, warn.conflicts=FALSE, quietly=TRUE)
+library(ape, warn.conflicts=FALSE)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat)

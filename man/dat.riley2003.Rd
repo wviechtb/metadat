@@ -39,7 +39,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### random-effects model analysis for outcome DFS
 res <- rma(yi, sei=sei, data=dat, subset=(outcome == "DFS"), method="DL")

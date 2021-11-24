@@ -36,7 +36,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### turn trt and arms into factors and set reference levels
 dat$trt  <- relevel(factor(dat$trt), ref="CMO")

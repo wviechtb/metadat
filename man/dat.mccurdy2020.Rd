@@ -62,7 +62,7 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### fit multilevel mixed-effects meta-regression model
 res <- rma.mv(yi, vi, mods = ~ condition,

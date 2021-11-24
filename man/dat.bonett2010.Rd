@@ -36,7 +36,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### meta-analysis using the raw alpha values
 res <- rma(measure="ARAW", ai=ai, mi=mi, ni=ni, data=dat)

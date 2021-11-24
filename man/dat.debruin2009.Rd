@@ -35,7 +35,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### calculate proportions and corresponding sampling variances
 dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat)

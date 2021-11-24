@@ -64,7 +64,7 @@ head(dat[c(1,2,6,8:12)])
 #start.time <- Sys.time()
 
 ### load metafor
-require(metafor)
+library(metafor)
 
 ### multilevel meta-analytic model to get the overall pooled effect
 res.overall <- rma.mv(es.z, vi.z, mods = ~ 1,

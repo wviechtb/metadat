@@ -48,7 +48,7 @@ head(dat, 16)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### compute standardized mean differences and corresponding sampling variances
 dat <- escalc(measure="SMD", m1i=mt, m2i=mc, sd1i=sdt, sd2i=sdc, n1i=nt, n2i=nc, data=dat,

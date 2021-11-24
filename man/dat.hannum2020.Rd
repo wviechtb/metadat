@@ -38,7 +38,7 @@ dat
 \dontrun{
    
 # load metafor package
-require(metafor)
+library(metafor)
 
 # compute effect size
 dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat)

@@ -77,7 +77,7 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### meta-analyses for male and female participants
 red_romance_malep   <- dat[dat$Gender == "Males", ]

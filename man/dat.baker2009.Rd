@@ -30,8 +30,9 @@ The data frame contains the following columns:
 head(dat.baker2009)
 
 \dontrun{
+
 ### load netmeta package
-suppressPackageStartupMessages(require(netmeta, warn.conflicts=FALSE))
+suppressPackageStartupMessages(library(netmeta))
 
 ### print odds ratios and confidence limits with two digits
 settings.meta(digits = 2)
@@ -50,6 +51,7 @@ net1
 ### conduct component network meta-analysis
 cnet1 <- netcomb(net1)
 cnet1
+
 }
 }
 \seealso{

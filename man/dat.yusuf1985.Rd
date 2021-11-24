@@ -34,7 +34,7 @@ dat[dat$table == 6,]
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### to select a table for the analysis
 tab <- "6" ### either: 6, 9, 10, 11, 12a, 12b

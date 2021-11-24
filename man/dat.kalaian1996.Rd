@@ -40,7 +40,7 @@ head(dat, 12)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### check ranges
 range(dat$yi[dat$outcome == "verbal"]) # -0.35 to 0.74 according to page 230
