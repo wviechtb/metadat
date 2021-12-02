@@ -19,6 +19,8 @@ jobs:
       - uses: r-lib/actions/setup-r@v1
       - name: Install libcurl4-openssl-dev
         run: sudo apt-get install -y libcurl4-openssl-dev
+      - name: Install textlive
+        run: sudo apt-get install -y texlive
       - name: Query dependencies
         run: |
           install.packages('remotes')
