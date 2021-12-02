@@ -86,9 +86,8 @@
     <p>Results from 6 clinical trials examining the effectiveness of adjusted-dose warfarin for preventing strokes in patients with atrial fibrillation.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.hart1999</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.hart1999</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>trial</b></td><td><code>numeric</code></td><td>trial number</td></tr><tr><td><b>study</b></td><td><code>character</code></td><td>study name (abbreviated)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>x1i</b></td><td><code>numeric</code></td><td>number of strokes in the warfarin group</td></tr><tr><td><b>n1i</b></td><td><code>numeric</code></td><td>number of patients in the warfarin group</td></tr><tr><td><b>t1i</b></td><td><code>numeric</code></td><td>total person-time (in years) in the warfarin group</td></tr><tr><td><b>x2i</b></td><td><code>numeric</code></td><td>number of strokes in the placebo/control group</td></tr><tr><td><b>n2i</b></td><td><code>numeric</code></td><td>number of patients in the placebo/control group</td></tr><tr><td><b>t2i</b></td><td><code>numeric</code></td><td>total person-time (in years) in the placebo/control group</td></tr><tr><td><b>compgrp</b></td><td><code>character</code></td><td>type of comparison group (placebo or control)</td></tr><tr><td><b>prevtype</b></td><td><code>character</code></td><td>type of prevention (primary or secondary)</td></tr><tr><td><b>trinr</b></td><td><code>character</code></td><td>target range for the international normalized ratio (INR)</td></tr></table></div>
@@ -104,11 +103,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.hart1999</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   trial  study year x1i n1i t1i x2i n2i t2i compgrp  prevtype   trinr</span>
@@ -127,6 +125,7 @@
 <span class="r-in"><span class="co">### calculate log incidence rate ratios and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"IRR"</span>, x1i<span class="op">=</span><span class="va">x1i</span>, x2i<span class="op">=</span><span class="va">x2i</span>, t1i<span class="op">=</span><span class="va">t1i</span>, t2i<span class="op">=</span><span class="va">t2i</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   trial  study year x1i n1i t1i x2i n2i t2i compgrp  prevtype   trinr      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     1 AFASAK 1989   9 335 413  19 336 398 placebo   primary 2.8-4.2 -0.7842 0.1637 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     2   SPAF 1991   8 210 263  19 211 245 placebo   primary 2.0-4.5 -0.9359 0.1776 </span>
@@ -134,6 +133,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4     4   CAFA 1991   6 187 237   9 191 241 placebo   primary 2.0-3.0 -0.3887 0.2778 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5     5 SPINAF 1992   7 281 489  23 290 483 placebo   primary 1.4-2.8 -1.2019 0.1863 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6     6   EAFT 1993  20 225 507  50 214 405 placebo secondary 2.5-4.0 -1.1409 0.0700 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### meta-analysis of log incidence rate ratios using a random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -151,7 +151,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -1.0168  0.1635  -6.2206  &lt;.0001  -1.3372  -0.6964  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -195,7 +195,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.0339  0.0081  -4.1546  &lt;.0001  -0.0498  -0.0179  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -213,11 +213,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

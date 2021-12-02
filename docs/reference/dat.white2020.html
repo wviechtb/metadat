@@ -86,9 +86,8 @@
     <p>Results from 41 studies examining the relationship between measures of individual quality and the expression of structurally coloured sexual signals.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.white2020</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.white2020</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The object is a data frame which contains the following columns:</p><table class="table table"><tr><td><b>study_id</b></td><td><code>character</code></td><td>study-level ID</td></tr><tr><td><b>obs</b></td><td><code>character</code></td><td>observation-level ID</td></tr><tr><td><b>exp_obs</b></td><td><code>character</code></td><td>whether the study is observational or experimental</td></tr><tr><td><b>control</b></td><td><code>numeric</code></td><td>whether the study did (1) or did not (0) include a non-sexual control trait</td></tr><tr><td><b>class</b></td><td><code>character</code></td><td>class of the study organisms</td></tr><tr><td><b>genus</b></td><td><code>character</code></td><td>class of the study organisms</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species of the study organisms</td></tr><tr><td><b>sex</b></td><td><code>character</code></td><td>sex of the study organisms</td></tr><tr><td><b>iridescent</b></td><td><code>numeric</code></td><td>whether the colour signals were iridescent (1) or not (0)</td></tr><tr><td><b>col_var</b></td><td><code>character</code></td><td>the colour variable quantified</td></tr><tr><td><b>col_component</b></td><td><code>character</code></td><td>whether the colour variable is chromatic or achromatic</td></tr><tr><td><b>quality_measure</b></td><td><code>character</code></td><td>the measure of individual quality used</td></tr><tr><td><b>region</b></td><td><code>character</code></td><td>the body region from which colour was sampled</td></tr><tr><td><b>n</b></td><td><code>numeric</code></td><td>study sample size</td></tr><tr><td><b>r</b></td><td><code>numeric</code></td><td>Pearson's correlation coefficient</td></tr></table></div>
@@ -104,11 +103,10 @@
     <h2>Author</h2>
     <p>Thomas E. White, <a href="mailto:thomas.white@sydney.edu.au">thomas.white@sydney.edu.au</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.white2020</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">10</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study_id  obs exp_obs control   class        genus                    species    sex iridescent</span>
@@ -159,7 +157,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.1573  0.0329  4.7742  &lt;.0001  0.0927  0.2218  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -177,11 +175,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

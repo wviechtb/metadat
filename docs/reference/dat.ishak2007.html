@@ -86,9 +86,8 @@
     <p>Results from 46 studies examining the effects of deep-brain stimulation on motor skills of patients with Parkinson's disease.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.ishak2007</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.ishak2007</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>(first) author and year</td></tr><tr><td><b>y1i</b></td><td><code>numeric</code></td><td>observed mean difference at 3 months</td></tr><tr><td><b>v1i</b></td><td><code>numeric</code></td><td>sampling variance of the mean difference at 3 months</td></tr><tr><td><b>y2i</b></td><td><code>numeric</code></td><td>observed mean difference at 6 months</td></tr><tr><td><b>v2i</b></td><td><code>numeric</code></td><td>sampling variance of the mean difference at 6 months</td></tr><tr><td><b>y3i</b></td><td><code>numeric</code></td><td>observed mean difference at 12 months</td></tr><tr><td><b>v3i</b></td><td><code>numeric</code></td><td>sampling variance of the mean difference at 12 months</td></tr><tr><td><b>y4i</b></td><td><code>numeric</code></td><td>observed mean difference at the long-term follow-up</td></tr><tr><td><b>v4i</b></td><td><code>numeric</code></td><td>sampling variance of the mean difference at the long-term follow-up</td></tr><tr><td><b>mdur</b></td><td><code>numeric</code></td><td>mean disease duration (in years)</td></tr><tr><td><b>mbase</b></td><td><code>numeric</code></td><td>mean baseline UPDRS score</td></tr></table></div>
@@ -105,19 +104,20 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.ishak2007</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">5</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               study   y1i  v1i   y2i   v2i   y3i v3i  y4i  v4i mdur mbase </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1    Alegret (2001) -33.4 14.3    NA    NA    NA  NA &lt;NA&gt; &lt;NA&gt; 16.1  53.6 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Barichella (2003) -20.0  7.3    NA    NA -30.0 5.7 &lt;NA&gt; &lt;NA&gt; 13.5  45.3 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3     Berney (2002) -21.1  7.3    NA    NA    NA  NA &lt;NA&gt; &lt;NA&gt; 13.6  45.6 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4   Burchiel (1999) -20.0  8.0 -20.0   8.0 -18.0 5.0 &lt;NA&gt; &lt;NA&gt; 13.6  48.0 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5       Chen (2003)    NA   NA -32.9 125.0    NA  NA &lt;NA&gt; &lt;NA&gt; 12.1  65.7 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
@@ -133,6 +133,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">)</span>,<span class="op">]</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">8</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               study mdur mbase time    yi    vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1    Alegret (2001) 16.1  53.6    1 -33.4  14.3 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Barichella (2003) 13.5  45.3    1 -20.0   7.3 </span>
@@ -142,6 +143,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6   Burchiel (1999) 13.6  48.0    2 -20.0   8.0 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 7   Burchiel (1999) 13.6  48.0    3 -18.0   5.0 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8       Chen (2003) 12.1  65.7    2 -32.9 125.0 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### construct the full (block diagonal) V matrix with an AR(1) structure</span></span>
 <span class="r-in"><span class="co">### assuming an autocorrelation of 0.97 as estimated by Ishak et al. (2007)</span></span>
@@ -180,7 +182,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate    se    zval  pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate    se    zval  pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)1    -25.90  1.01  -25.60  &lt;.01  -27.89  -23.92  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)2    -27.46  1.14  -24.08  &lt;.01  -29.70  -25.23  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)3    -28.66  1.03  -27.76  &lt;.01  -30.68  -26.63  *** </span>
@@ -201,11 +203,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

@@ -86,9 +86,8 @@
     <p>Results from 19 studies examining how teachers' expectations about their pupils can influence actual IQ levels.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.raudenbush1985</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.raudenbush1985</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>weeks</b></td><td><code>numeric</code></td><td>weeks of contact prior to expectancy induction</td></tr><tr><td><b>setting</b></td><td><code>character</code></td><td>whether tests were group or individually administered</td></tr><tr><td><b>tester</b></td><td><code>character</code></td><td>whether test administrator was aware or blind</td></tr><tr><td><b>n1i</b></td><td><code>numeric</code></td><td>sample size of experimental group</td></tr><tr><td><b>n2i</b></td><td><code>numeric</code></td><td>sample size of control group</td></tr><tr><td><b>yi</b></td><td><code>numeric</code></td><td>standardized mean difference</td></tr><tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr></table></div>
@@ -108,13 +107,13 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.raudenbush1985</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study               author year weeks setting tester n1i n2i      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1     Rosenthal et al. 1974     2   group  aware  77 339  0.0300 0.0156 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      2          Conn et al. 1968    21   group  aware  60 198  0.1200 0.0216 </span>
@@ -135,6 +134,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 17    17 Rosenthal &amp; Jacobson 1968     1   group  aware  65 255  0.3000 0.0193 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 18    18   Fleming &amp; Anttonen 1971     2   group  blind 233 224  0.0700 0.0088 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 19    19             Ginsburg 1970     7   group  aware  65  67 -0.0700 0.0303 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
@@ -157,7 +157,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval    ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.0837  0.0516  1.6208  0.1051  -0.0175  0.1849    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -187,7 +187,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate     se    zval   pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt     0.407  0.087   4.678  &lt;.001   0.237   0.578  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> weeks.c    -0.157  0.036  -4.388  &lt;.001  -0.227  -0.087  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -206,11 +206,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

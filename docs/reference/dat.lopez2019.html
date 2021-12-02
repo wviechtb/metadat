@@ -86,9 +86,8 @@
     <p>Results from 76 studies examining the effectiveness of cognitive behavioral therapy (CBT) for depression in adults.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.lopez2019</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.lopez2019</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>(first) author and year of study</td></tr><tr><td><b>treatment</b></td><td><code>character</code></td><td>treatment provided (see ‘Details’)</td></tr><tr><td><b>scale</b></td><td><code>character</code></td><td>scale used to measure depression symptoms</td></tr><tr><td><b>n</b></td><td><code>numeric</code></td><td>group size</td></tr><tr><td><b>diff</b></td><td><code>numeric</code></td><td>standardized mean change</td></tr><tr><td><b>se</b></td><td><code>numeric</code></td><td>corresponding standard error</td></tr><tr><td><b>group</b></td><td><code>numeric</code></td><td>type of therapy (0 = individual, 1 = group therapy)</td></tr><tr><td><b>tailored</b></td><td><code>numeric</code></td><td>whether the intervention was tailored to each patient (0 = no, 1 = yes)</td></tr><tr><td><b>sessions</b></td><td><code>numeric</code></td><td>number of sessions</td></tr><tr><td><b>length</b></td><td><code>numeric</code></td><td>average session length (in minutes)</td></tr><tr><td><b>intensity</b></td><td><code>numeric</code></td><td>product of sessions and length</td></tr><tr><td><b>multi</b></td><td><code>numeric</code></td><td>intervention included multimedia elements (0 = no, 1 = yes)</td></tr><tr><td><b>cog</b></td><td><code>numeric</code></td><td>intervention included cognitive techniques (0 = no, 1 = yes)</td></tr><tr><td><b>ba</b></td><td><code>numeric</code></td><td>intervention included behavioral activation (0 = no, 1 = yes)</td></tr><tr><td><b>psed</b></td><td><code>numeric</code></td><td>intervention included psychoeducation (0 = no, 1 = yes)</td></tr><tr><td><b>home</b></td><td><code>numeric</code></td><td>intervention included homework (0 = no, 1 = yes)</td></tr><tr><td><b>prob</b></td><td><code>numeric</code></td><td>intervention included problem solving (0 = no, 1 = yes)</td></tr><tr><td><b>soc</b></td><td><code>numeric</code></td><td>intervention included social skills training (0 = no, 1 = yes)</td></tr><tr><td><b>relax</b></td><td><code>numeric</code></td><td>intervention included relaxation (0 = no, 1 = yes)</td></tr><tr><td><b>goal</b></td><td><code>numeric</code></td><td>intervention included goal setting (0 = no, 1 = yes)</td></tr><tr><td><b>final</b></td><td><code>numeric</code></td><td>intervention included a final session (0 = no, 1 = yes)</td></tr><tr><td><b>mind</b></td><td><code>numeric</code></td><td>intervention included mindfulness (0 = no, 1 = yes)</td></tr><tr><td><b>act</b></td><td><code>numeric</code></td><td>intervention included acceptance and commitment therapy (0 = no, 1 = yes)</td></tr></table></div>
@@ -116,11 +115,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.lopez2019</span></span>
 <span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">6</span><span class="op">]</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                 study      treatment scale  n    diff     se</span>
@@ -210,7 +208,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> No.treatment      0.1975  0.5905   0.3344  0.7381  -0.9599   1.3548      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Wait.list         0.7030  0.3471   2.0253  0.0428   0.0227   1.3834    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo          -0.3699  0.4623  -0.8002  0.4236  -1.2760   0.5362      </span>
@@ -260,7 +258,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> No.treatment      0.1975  0.5905   0.3344  0.7381  -0.9599   1.3548      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Wait.list         0.7030  0.3471   2.0253  0.0428   0.0227   1.3834    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo          -0.3699  0.4623  -0.8002  0.4236  -1.2760   0.5362      </span>
@@ -283,11 +281,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

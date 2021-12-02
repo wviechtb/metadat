@@ -86,9 +86,8 @@
     <p>Results from 37 studies on the risk of lung cancer in women exposed to environmental tobacco smoke (ETS) from their smoking spouse.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.hackshaw1998</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.hackshaw1998</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>first author of study</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>country</b></td><td><code>character</code></td><td>country where study was conducted</td></tr><tr><td><b>design</b></td><td><code>character</code></td><td>study design (either cohort or case-control)</td></tr><tr><td><b>cases</b></td><td><code>numeric</code></td><td>number of lung cancer cases</td></tr><tr><td><b>or</b></td><td><code>numeric</code></td><td>odds ratio</td></tr><tr><td><b>or.lb</b></td><td><code>numeric</code></td><td>lower bound of 95% CI for the odds ratio</td></tr><tr><td><b>or.ub</b></td><td><code>numeric</code></td><td>upper bound of 95% CI for the odds ratio</td></tr><tr><td><b>yi</b></td><td><code>numeric</code></td><td>log odds ratio</td></tr><tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr></table></div>
@@ -106,13 +105,13 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.hackshaw1998</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">10</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study       author year   country       design cases   or or.lb or.ub      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1    Garfinkel 1981       USA       cohort   153 1.18  0.90  1.54  0.1655 0.0188 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      2     Hirayama 1984     Japan       cohort   200 1.45  1.02  2.08  0.3716 0.0330 </span>
@@ -124,6 +123,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8      8      Buffler 1984       USA case-control    41 0.80  0.34  1.90 -0.2231 0.1927 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9      9        Kabat 1984       USA case-control    24 0.79  0.25  2.45 -0.2357 0.3390 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10    10          Lam 1985 Hong Kong case-control    60 2.01  1.09  3.72  0.6981 0.0981 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
@@ -146,7 +146,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2139  0.0471  4.5390  &lt;.0001  0.1215  0.3062  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -176,11 +176,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

@@ -86,9 +86,8 @@
     <p>Results from 5 studies examining the association between various measures of supervision quality and various work-related outcomes in social, mental health, and child welfare workers.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.aloe2013</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.aloe2013</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>study author(s) and year</td></tr><tr><td><b>n</b></td><td><code>integer</code></td><td>sample size</td></tr><tr><td><b>tval</b></td><td><code>numeric</code></td><td>t-statistic for the test of the association/predictor</td></tr><tr><td><b>preds</b></td><td><code>integer</code></td><td>number of predictors included in the regression model</td></tr><tr><td><b>R2</b></td><td><code>numeric</code></td><td>the coefficient of determination (i.e., R-squared value) of the regression model</td></tr></table></div>
@@ -109,11 +108,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.aloe2013</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                      study   n  tval preds    R2</span>
@@ -131,12 +129,14 @@
 <span class="r-in"><span class="co">### compute the partial correlation coefficients and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PCOR"</span>, ti<span class="op">=</span><span class="va">tval</span>, ni<span class="op">=</span><span class="va">n</span>, mi<span class="op">=</span><span class="va">preds</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                      study   n  tval preds    R2      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1         Abu-Bader (2000) 218  4.61     4 0.240  0.3012 0.0039 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2       Cole et al. (2004) 232  6.19     7 0.455  0.3822 0.0033 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3 Wallach &amp; Mueller (2006) 156  4.07     6 0.500  0.3163 0.0054 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4     Weaver et al. (2007) 382 -0.77    19 0.327 -0.0404 0.0028 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5             Acker (2004) 259  1.16    15 0.117  0.0742 0.0041 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -154,7 +154,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2048  0.0820  2.4987  0.0125  0.0442  0.3655  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -182,7 +182,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.4832  0.0659   7.3360  &lt;.0001   0.3541   0.6123  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> preds     -0.0269  0.0054  -5.0188  &lt;.0001  -0.0374  -0.0164  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -193,12 +193,14 @@
 <span class="r-in"><span class="co">### compute the r-to-z transformed partial correlation coefficients and their variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"ZPCOR"</span>, ti<span class="op">=</span><span class="va">tval</span>, ni<span class="op">=</span><span class="va">n</span>, mi<span class="op">=</span><span class="va">preds</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                      study   n  tval preds    R2      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1         Abu-Bader (2000) 218  4.61     4 0.240  0.3108 0.0047 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2       Cole et al. (2004) 232  6.19     7 0.455  0.4026 0.0045 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3 Wallach &amp; Mueller (2006) 156  4.07     6 0.500  0.3275 0.0067 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4     Weaver et al. (2007) 382 -0.77    19 0.327 -0.0405 0.0028 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5             Acker (2004) 259  1.16    15 0.117  0.0743 0.0041 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -216,7 +218,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2108  0.0859  2.4545  0.0141  0.0425  0.3792  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -233,12 +235,14 @@
 <span class="r-in"><span class="co">### compute the semi-partial correlation coefficients and their variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SPCOR"</span>, ti<span class="op">=</span><span class="va">tval</span>, ni<span class="op">=</span><span class="va">n</span>, mi<span class="op">=</span><span class="va">preds</span>, r2i<span class="op">=</span><span class="va">R2</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                      study   n  tval preds    R2      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1         Abu-Bader (2000) 218  4.61     4 0.240  0.2754 0.0033 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2       Cole et al. (2004) 232  6.19     7 0.455  0.3053 0.0023 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3 Wallach &amp; Mueller (2006) 156  4.07     6 0.500  0.2358 0.0032 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4     Weaver et al. (2007) 382 -0.77    19 0.327 -0.0332 0.0018 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5             Acker (2004) 259  1.16    15 0.117  0.0699 0.0034 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -256,7 +260,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.1692  0.0666  2.5406  0.0111  0.0387  0.2996  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -274,11 +278,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

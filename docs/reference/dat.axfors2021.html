@@ -86,9 +86,8 @@
     <p>Results from 33 trials examining the effectiveness of hydroxychloroquine or chloroquine in patients with COVID-19.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.axfors2021</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.axfors2021</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>character</code></td><td>registry number</td></tr><tr><td><b>acronym</b></td><td><code>character</code></td><td>shortened registry number</td></tr><tr><td><b>patient_setting</b></td><td><code>character</code></td><td>patient setting</td></tr><tr><td><b>blinding_exact</b></td><td><code>character</code></td><td>study blinding</td></tr><tr><td><b>high_dose</b></td><td><code>character</code></td><td>high or low dose of medication</td></tr><tr><td><b>Published</b></td><td><code>character</code></td><td>publication status</td></tr><tr><td><b>hcq_cq</b></td><td><code>character</code></td><td>medication type (hcq = hydroxychloroquine or cq = chloroquine)</td></tr><tr><td><b>hcq_arm_event</b></td><td><code>numeric</code></td><td>number of deaths in the treatment group</td></tr><tr><td><b>hcq_arm_total</b></td><td><code>numeric</code></td><td>number of patients in the treatment group</td></tr><tr><td><b>control_arm_event</b></td><td><code>numeric</code></td><td>number of deaths in the control group</td></tr><tr><td><b>control_arm_total</b></td><td><code>numeric</code></td><td>number of patients in the control group</td></tr><tr><td><b>Control</b></td><td><code>character</code></td><td>control group type (Standard of Care or Placebo)</td></tr></table></div>
@@ -108,11 +107,10 @@
     <h2>Author</h2>
     <p>W. Kyle Hamilton <a href="mailto:whamilton@ucmerced.edu">whamilton@ucmerced.edu</a> <a href="https://kylehamilton.com" class="external-link">https://kylehamilton.com</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.axfors2021</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                  id             acronym patient_setting            covid_status</span>
@@ -243,7 +241,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.08  0.07  1.18  0.24  -0.05   0.20    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -266,7 +264,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.46  0.42  1.10  0.27  -0.36   1.29    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -284,11 +282,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

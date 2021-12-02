@@ -86,9 +86,8 @@
     <p>Results from 13 trials providing information about standard care quality and HAART-adherence in control groups.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.debruin2009</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.debruin2009</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>author</b></td><td><code>character</code></td><td>(first) author of study</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>scq</b></td><td><code>numeric</code></td><td>standard care quality</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>number of patients in the standard care group</td></tr><tr><td><b>xi</b></td><td><code>numeric</code></td><td>number of patients with an undetectable viral load in standard care group</td></tr><tr><td><b>mi</b></td><td><code>numeric</code></td><td>number of patients with a detectable viral load in standard care group</td></tr><tr><td><b>ethnicity</b></td><td><code>character</code></td><td>dominant ethnicity of the patients in the standard care group</td></tr><tr><td><b>patients</b></td><td><code>character</code></td><td>inclusion of patients continuing or starting (a new) treatment</td></tr><tr><td><b>select</b></td><td><code>character</code></td><td>baseline selection of patients with adherence problems or no selection</td></tr><tr><td><b>sens</b></td><td><code>character</code></td><td>sensitivity of viral load assessments (&lt;400 vs. &gt;=400 copies/ml)</td></tr></table></div>
@@ -104,11 +103,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.debruin2009</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             author year   scq  ni  xi  mi ethnicity   patients select sens</span>
@@ -134,6 +132,7 @@
 <span class="r-in"><span class="co">### calculate proportions and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PR"</span>, xi<span class="op">=</span><span class="va">xi</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             author year   scq  ni  xi  mi ethnicity   patients select sens     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   Andrade et al. 2005 21.00  29  11  18     other   starting     no &lt;400 0.3793 0.0081 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2   Fairley et al. 2003 22.67  33  24   9 caucasian continuing    yes &lt;400 0.7273 0.0060 </span>
@@ -148,6 +147,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11   van Servellen 2005  7.80 138  26 112     other continuing    yes  400 0.1884 0.0011 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12   Wagner et al. 2006 10.47  55  23  32     other   starting    yes  400 0.4182 0.0044 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13     Wohl et al. 2006 22.80  54  40  14     other   starting     no  400 0.7407 0.0036 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -165,7 +165,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se   zval  pval  ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se   zval  pval  ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.48  0.05  10.45  &lt;.01   0.39   0.57  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -192,7 +192,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate     se    zval   pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt              0.458  0.087   5.243  &lt;.001   0.287   0.629  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> scq                  0.014  0.005   3.168  0.002   0.005   0.023   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ethnicityother      -0.231  0.084  -2.759  0.006  -0.395  -0.067   ** </span>
@@ -224,7 +224,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate     se    zval   pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt            0.430  0.075   5.698  &lt;.001   0.282   0.577  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> scq                0.011  0.005   2.324  0.020   0.002   0.020    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ethnicityother    -0.196  0.072  -2.725  0.006  -0.337  -0.055   ** </span>
@@ -244,11 +244,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

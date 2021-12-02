@@ -86,9 +86,8 @@
     <p>Results from studies examining the effectiveness of coaching on the performance on the Scholastic Aptitude Test (SAT).</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.kalaian1996</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.kalaian1996</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>numeric</code></td><td>row (effect) id</td></tr><tr><td><b>study</b></td><td><code>character</code></td><td>study identifier</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>n1i</b></td><td><code>numeric</code></td><td>number of participants in the coached group</td></tr><tr><td><b>n2i</b></td><td><code>numeric</code></td><td>number of participants in the uncoached group</td></tr><tr><td><b>outcome</b></td><td><code>character</code></td><td>subtest (verbal or math)</td></tr><tr><td><b>yi</b></td><td><code>numeric</code></td><td>standardized mean difference</td></tr><tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr><tr><td><b>hrs</b></td><td><code>numeric</code></td><td>hours of coaching</td></tr><tr><td><b>ets</b></td><td><code>numeric</code></td><td>study conducted by the Educational Testing Service (ETS) (0 = no, 1 = yes)</td></tr><tr><td><b>homework</b></td><td><code>numeric</code></td><td>assignment of homework outside of the coaching course (0 = no, 1 = yes)</td></tr><tr><td><b>type</b></td><td><code>numeric</code></td><td>study type (1 = randomized study, 2 = matched study, 3 = nonequivalent comparison study)</td></tr></table></div>
@@ -108,11 +107,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.kalaian1996</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">12</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    id                 study year n1i n2i outcome    yi     vi  hrs ets homework type</span>
@@ -187,7 +185,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval  ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval  ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath       0.138  0.043  3.171  0.002  0.053  0.223   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal     0.117  0.034  3.459  &lt;.001  0.051  0.183  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -242,7 +240,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub    ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.101  0.049  2.085  0.037   0.006  0.197   * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.110  0.035  3.164  0.002   0.042  0.178  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.170  0.073  2.339  0.019   0.028  0.312   * </span>
@@ -282,7 +280,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.107  0.051  2.100  0.036   0.007  0.206    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.114  0.034  3.395  &lt;.001   0.048  0.180  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.188  0.076  2.466  0.014   0.039  0.337    * </span>
@@ -303,11 +301,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

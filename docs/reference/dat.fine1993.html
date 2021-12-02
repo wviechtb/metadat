@@ -86,9 +86,8 @@
     <p>Results from 17 trials comparing post-operative radiation therapy with and without adjuvant chemotherapy in patients with malignant gliomas.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.fine1993</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.fine1993</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>nei</b></td><td><code>numeric</code></td><td>sample size in the experimental group receiving radiotherapy plus adjuvant chemotherapy</td></tr><tr><td><b>nci</b></td><td><code>numeric</code></td><td>sample size in the control group receiving radiotherapy alone</td></tr><tr><td><b>e1i</b></td><td><code>numeric</code></td><td>number of survivors at 6 months in the experimental group</td></tr><tr><td><b>c1i</b></td><td><code>numeric</code></td><td>number of survivors at 6 months in the control group</td></tr><tr><td><b>e2i</b></td><td><code>numeric</code></td><td>number of survivors at 12 months in the experimental group</td></tr><tr><td><b>c2i</b></td><td><code>numeric</code></td><td>number of survivors at 12 months in the control group</td></tr><tr><td><b>e3i</b></td><td><code>numeric</code></td><td>number of survivors at 18 months in the experimental group</td></tr><tr><td><b>c3i</b></td><td><code>numeric</code></td><td>number of survivors at 18 months in the control group</td></tr><tr><td><b>e4i</b></td><td><code>numeric</code></td><td>number of survivors at 24 months in the experimental group</td></tr><tr><td><b>c4i</b></td><td><code>numeric</code></td><td>number of survivors at 24 months in the control group</td></tr></table></div>
@@ -110,11 +109,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.fine1993</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study nei nci e1i c1i e2i c2i e3i c3i e4i c4i</span>
@@ -209,7 +207,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval   ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval   ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)1     0.251  0.143  1.755  0.079  -0.029  0.532    . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)2     0.428  0.114  3.742  &lt;.001   0.204  0.652  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)3     0.343  0.134  2.560  0.010   0.080  0.606    * </span>
@@ -246,7 +244,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval   ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval   ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)1     0.254  0.143  1.772  0.076  -0.027  0.534    . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)2     0.408  0.115  3.536  &lt;.001   0.182  0.634  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)3     0.365  0.145  2.521  0.012   0.081  0.650    * </span>
@@ -285,11 +283,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

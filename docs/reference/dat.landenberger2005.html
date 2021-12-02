@@ -86,9 +86,8 @@
     <p>Results from 58 studies on the effectiveness of cognitive-behavioral therapy (CBT) for reducing recidivism in juvenile and adult offenders.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.landenberger2005</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.landenberger2005</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>(first) author and year</td></tr><tr><td><b>pubtype</b></td><td><code>character</code></td><td>publication type (book chapter, journal article, report, or thesis)</td></tr><tr><td><b>country</b></td><td><code>character</code></td><td>country where study was carried out (Canada, New Zealand, UK, or USA)</td></tr><tr><td><b>design</b></td><td><code>character</code></td><td>study design (matched groups, nonequivalent groups, or randomized trial)</td></tr><tr><td><b>program</b></td><td><code>character</code></td><td>purpose of setting up the CBT program (for demonstration, practice, or research purposes)</td></tr><tr><td><b>setting</b></td><td><code>character</code></td><td>treatment setting (community or prison)</td></tr><tr><td><b>designprob</b></td><td><code>character</code></td><td>indication of study design problems (no, favors the control group, or favors the treatment group)</td></tr><tr><td><b>n.ctrl.rec</b></td><td><code>numeric</code></td><td>number of recidivists in the control group</td></tr><tr><td><b>n.ctrl.non</b></td><td><code>numeric</code></td><td>number of non-recidivists in the control group</td></tr><tr><td><b>n.cbt.rec</b></td><td><code>numeric</code></td><td>number of recidivists in the CBT group</td></tr><tr><td><b>n.cbt.non</b></td><td><code>numeric</code></td><td>number of non-recidivists in the CBT group</td></tr><tr><td><b>interval</b></td><td><code>numeric</code></td><td>recidivism interval (in months)</td></tr><tr><td><b>group</b></td><td><code>numeric</code></td><td>study group (adults or juveniles)</td></tr><tr><td><b>age</b></td><td><code>numeric</code></td><td>mean age of the study group</td></tr><tr><td><b>male</b></td><td><code>numeric</code></td><td>percentage of males in the study group</td></tr><tr><td><b>minority</b></td><td><code>numeric</code></td><td>percentage of minorities in the study group</td></tr><tr><td><b>length</b></td><td><code>numeric</code></td><td>treatment length (in weeks)</td></tr><tr><td><b>sessions</b></td><td><code>numeric</code></td><td>number of CBT sessions per week</td></tr><tr><td><b>hrs_week</b></td><td><code>numeric</code></td><td>treatment hours per week</td></tr><tr><td><b>hrs_total</b></td><td><code>numeric</code></td><td>total hours of treatment</td></tr><tr><td><b>cbt.cogskills</b></td><td><code>character</code></td><td>CBT component: cognitive skills (yes, no)</td></tr><tr><td><b>cbt.cogrestruct</b></td><td><code>character</code></td><td>CBT component: cognitive restructuring (yes, no)</td></tr><tr><td><b>cbt.intpprbsolv</b></td><td><code>character</code></td><td>CBT component: interpersonal problem solving (yes, no)</td></tr><tr><td><b>cbt.socskills</b></td><td><code>character</code></td><td>CBT component: social skills (yes, no)</td></tr><tr><td><b>cbt.angerctrl</b></td><td><code>character</code></td><td>CBT component: anger control (yes, no)</td></tr><tr><td><b>cbt.victimimpact</b></td><td><code>character</code></td><td>CBT component: victim impact (yes, no)</td></tr><tr><td><b>cbt.subabuse</b></td><td><code>character</code></td><td>CBT component: substance abuse (yes, no)</td></tr><tr><td><b>cbt.behavmod</b></td><td><code>character</code></td><td>CBT component: behavior modification (yes, no)</td></tr><tr><td><b>cbt.relapseprev</b></td><td><code>character</code></td><td>CBT component: relapse prevention (yes, no)</td></tr><tr><td><b>cbt.moralrsng</b></td><td><code>character</code></td><td>CBT component: moral reasoning (yes, no)</td></tr><tr><td><b>cbt.roletaking</b></td><td><code>character</code></td><td>CBT component: role taking (yes, no)</td></tr><tr><td><b>cbt.other</b></td><td><code>character</code></td><td>CBT component: other (yes, no)</td></tr></table></div>
@@ -109,11 +108,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.landenberger2005</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>              study pubtype country design  program   setting designprob n.ctrl.rec n.ctrl.non</span>
@@ -169,7 +167,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.4226  0.0605  6.9880  &lt;.0001  0.3041  0.5411  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -203,7 +201,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se    zval    pval   ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt     0.2022  0.1015  1.9931  0.0463  0.0034  0.4010  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> sessions    0.0695  0.0282  2.4636  0.0138  0.0142  0.1248  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -232,11 +230,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

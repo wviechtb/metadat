@@ -86,9 +86,8 @@
     <p>Results from 68 studies on the relationship between class attendence and class performance and/or grade point average in college students.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.crede2010</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.crede2010</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>studyid</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>source</b></td><td><code>character</code></td><td>study source (journal, dissertation, other)</td></tr><tr><td><b>sampleid</b></td><td><code>numeric</code></td><td>sample within study number</td></tr><tr><td><b>criterion</b></td><td><code>character</code></td><td>criterion variable (grade, gpa)</td></tr><tr><td><b>class</b></td><td><code>character</code></td><td>class type (science, nonscience)</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>sample size</td></tr><tr><td><b>ri</b></td><td><code>numeric</code></td><td>observed correlation</td></tr></table></div>
@@ -109,11 +108,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.crede2010</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">18</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    studyid year       source sampleid criterion      class  ni      ri</span>
@@ -162,7 +160,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.4547  0.0300  15.1343  &lt;.0001  0.3958  0.5136  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -196,7 +194,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>               estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt         0.4441  0.0330  13.4603  &lt;.0001   0.3794  0.5087  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> classscience    0.0640  0.0810   0.7895  0.4298  -0.0948  0.2228      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -232,7 +230,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval     ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval     ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt   -7.0137  6.3432  -1.1057  0.2689  -19.4462  5.4188    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> year       0.0037  0.0032   1.1774  0.2390   -0.0025  0.0100    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -258,7 +256,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.3724  0.0459  8.1071  &lt;.0001  0.2824  0.4624  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -292,7 +290,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    2.5890  3.5979   0.7196  0.4718  -4.4627  9.6407    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> year      -0.0011  0.0018  -0.6161  0.5378  -0.0047  0.0024    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -319,7 +317,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.4798  0.0331  14.5167  &lt;.0001  0.4151  0.5446  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -348,7 +346,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.3611  0.0538  6.7103  &lt;.0001  0.2556  0.4665  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -371,11 +369,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

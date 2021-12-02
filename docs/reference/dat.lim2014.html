@@ -86,9 +86,8 @@
     <p>Results from studies examining the association between maternal size, offspring size, and number of offsprings.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.lim2014</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.lim2014</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The object is a list containing data frames <code>m_o_size</code>, <code>m_o_fecundity</code>, <code>o_o_unadj</code>, and <code>o_o_adj</code> that contain the following columns and the corresponding phylogenetic trees called <code>m_o_size_tree</code>, <code>m_o_fecundity_tree</code>, <code>o_o_unadj_tree</code>, and <code>o_o_adj_tree</code>:</p><table class="table table"><tr><td><b>article</b></td><td><code>numeric</code></td><td>article id</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species</td></tr><tr><td><b>amniotes</b></td><td><code>character</code></td><td>whether the species was amniotic</td></tr><tr><td><b>environment</b></td><td><code>character</code></td><td>whether the species were wild or captive</td></tr><tr><td><b>reprounit</b></td><td><code>character</code></td><td>whether the data were based on lifetime reproductive output or a single reproductive event (only in <code>m_o_size</code> and <code>m_o_fecundity</code>)</td></tr><tr><td><b>ri</b></td><td><code>numeric</code></td><td>correlation coefficient</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>sample size</td></tr></table></div>
@@ -102,18 +101,18 @@
     </div>
     <div id="references">
     <h2>References</h2>
-    <p>Hadfield, J. D., &amp; Nakagawa, S. (2010). General quantitative genetic methods for comparative biology: Phylogenies, taxonomies and multi-trait models for continuous and categorical characters. <em>Journal of Evolutionary Biology</em>, <b>23</b>(3), 494--508. <a href="https://doi.org/10.1111/j.1420-9101.2009.01915.x" class="external-link">https://doi.org/10.1111/j.1420-9101.2009.01915.x</a></p>
+    <p>Cinar, O., Nakagawa, S., &amp; Viechtbauer, W. (in press). Phylogenetic multilevel meta-analysis: A simulation study on the importance of modelling the phylogeny. <em>Methods in Ecology and Evolution</em>. <a href="https://doi.org/10.1111/2041-210X.13760" class="external-link">https://doi.org/10.1111/2041-210X.13760</a></p>
+<p>Hadfield, J. D., &amp; Nakagawa, S. (2010). General quantitative genetic methods for comparative biology: Phylogenies, taxonomies and multi-trait models for continuous and categorical characters. <em>Journal of Evolutionary Biology</em>, <b>23</b>(3), 494--508. <a href="https://doi.org/10.1111/j.1420-9101.2009.01915.x" class="external-link">https://doi.org/10.1111/j.1420-9101.2009.01915.x</a></p>
 <p>Nakagawa, S., &amp; Santos, E. S. A. (2012). Methodological issues and advances in biological meta-analysis. <em>Evolutionary Ecology</em>, <b>26</b>(5), 1253--1274. <a href="https://doi.org/10.1007/s10682-012-9555-5" class="external-link">https://doi.org/10.1007/s10682-012-9555-5</a></p>
     </div>
     <div id="author">
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.lim2014</span><span class="op">$</span><span class="va">o_o_unadj</span></span>
 <span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">14</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span><span class="op">]</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    article                  species amniotes environment     ri  ni</span>
@@ -179,7 +178,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1564  0.1277  -1.2242  0.2209  -0.4067  0.0940    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -197,11 +196,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

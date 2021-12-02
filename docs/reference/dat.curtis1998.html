@@ -86,9 +86,8 @@
     <p>Results from studies examining the effects of elevated CO2 levels on woody plant mass.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.curtis1998</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.curtis1998</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>numeric</code></td><td>observation number</td></tr><tr><td><b>paper</b></td><td><code>numeric</code></td><td>paper number</td></tr><tr><td><b>genus</b></td><td><code>character</code></td><td>genus name</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species name</td></tr><tr><td><b>fungrp</b></td><td><code>character</code></td><td>plant functional group</td></tr><tr><td><b>co2.ambi</b></td><td><code>numeric</code></td><td>ambient CO2 level (control group)</td></tr><tr><td><b>co2.elev</b></td><td><code>numeric</code></td><td>elevated CO2 level (treatment group)</td></tr><tr><td><b>units</b></td><td><code>character</code></td><td>units for CO2 exposure levels</td></tr><tr><td><b>time</b></td><td><code>numeric</code></td><td>maximum length of time (days) of CO2 exposure</td></tr><tr><td><b>pot</b></td><td><code>character</code></td><td>growing method (see ‘Details’)</td></tr><tr><td><b>method</b></td><td><code>character</code></td><td>CO2 exposure facility (see ‘Details’)</td></tr><tr><td><b>stock</b></td><td><code>character</code></td><td>planting stock code</td></tr><tr><td><b>xtrt</b></td><td><code>character</code></td><td>interacting treatment code (see ‘Details’)</td></tr><tr><td><b>level</b></td><td><code>character</code></td><td>interacting treatment level codes (see ‘Details’)</td></tr><tr><td><b>m1i</b></td><td><code>numeric</code></td><td>mean plant mass under elevated CO2 level (treatment group)</td></tr><tr><td><b>sd1i</b></td><td><code>numeric</code></td><td>standard deviation of plant mass underelevated CO2 level (treatment group)</td></tr><tr><td><b>n1i</b></td><td><code>numeric</code></td><td>number of observations under elevated CO2 level (treatment group)</td></tr><tr><td><b>m2i</b></td><td><code>numeric</code></td><td>mean plant mass under ambient CO2 level (control group)</td></tr><tr><td><b>sd2i</b></td><td><code>numeric</code></td><td>standard deviation of plant mass under ambient CO2 level (control group)</td></tr><tr><td><b>n2i</b></td><td><code>numeric</code></td><td>number of observations under ambient CO2 level (control group)</td></tr></table></div>
@@ -116,11 +115,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.curtis1998</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id paper   genus     species fungrp co2.ambi co2.elev units time pot method stock xtrt   level</span>
@@ -147,6 +145,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"ROM"</span>, m1i<span class="op">=</span><span class="va">m1i</span>, sd1i<span class="op">=</span><span class="va">sd1i</span>, n1i<span class="op">=</span><span class="va">n1i</span>,</span>
 <span class="r-in">                             m2i<span class="op">=</span><span class="va">m2i</span>, sd2i<span class="op">=</span><span class="va">sd2i</span>, n2i<span class="op">=</span><span class="va">n2i</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id paper   genus     species fungrp co2.ambi co2.elev units time pot method stock xtrt   level </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT    HIGH </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 22    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT CONTROL </span>
@@ -161,6 +160,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4  5.9100 1.7420000   5 6.6200 1.6310000   5 -0.1134 0.0295 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5  4.6100 1.4070000   4 4.1000 1.2570000   4  0.1172 0.0468 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6 10.7800 1.1630000   5 6.4200 2.0260000   3  0.5183 0.0355 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### meta-analysis using a random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -178,7 +178,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2531  0.0185  13.6965  &lt;.0001  0.2168  0.2893  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -219,11 +219,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

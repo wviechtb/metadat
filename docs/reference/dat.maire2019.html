@@ -86,9 +86,8 @@
     <p>Results from studies examining changes in the abundance of fish species in French rivers.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.maire2019</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.maire2019</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The object is a list containing a data frame called <code>dat</code> that contains the following columns and distance matrix called <code>dmat</code>:</p><table class="table table"><tr><td><b>site</b></td><td><code>character</code></td><td>study site</td></tr><tr><td><b>station</b></td><td><code>character</code></td><td>sampling station at site</td></tr><tr><td><b>site_station</b></td><td><code>character</code></td><td>site and station combined</td></tr><tr><td><b>s1</b></td><td><code>numeric</code></td><td>Mann-Kendal trend statistic for relative abundance of non-local species</td></tr><tr><td><b>vars1</b></td><td><code>numeric</code></td><td>corresponding sampling variance (corrected for temporal autocorrelation)</td></tr><tr><td><b>s2</b></td><td><code>numeric</code></td><td>Mann-Kendal trend statistic for relative abundance of northern species</td></tr><tr><td><b>vars2</b></td><td><code>numeric</code></td><td>corresponding sampling variance (corrected for temporal autocorrelation)</td></tr><tr><td><b>s3</b></td><td><code>numeric</code></td><td>Mann-Kendal trend statistic for relative abundance of non-native species</td></tr><tr><td><b>vars3</b></td><td><code>numeric</code></td><td>corresponding sampling variance (corrected for temporal autocorrelation)</td></tr><tr><td><b>const</b></td><td><code>numeric</code></td><td>constant value of 1</td></tr></table></div>
@@ -110,11 +109,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.maire2019</span><span class="op">$</span><span class="va">dat</span></span>
 <span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="op">-</span><span class="fl">10</span><span class="op">]</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      site station site_station  s1      vars1   s2      vars2   s3      vars3</span>
@@ -185,7 +183,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 187.5809  20.0424  9.3592  &lt;.0001  148.2984  226.8633  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -213,7 +211,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 176.5775  26.3986  6.6889  &lt;.0001  124.8372  228.3178  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -245,7 +243,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 182.1199  31.2808  5.8221  &lt;.0001  120.8107  243.4291  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -293,11 +291,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

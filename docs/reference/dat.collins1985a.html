@@ -86,9 +86,8 @@
     <p>Results from studies examining the effectiveness of histamine H2 antagonists (cimetidine or ranitidine) in treating patients with acute upper gastrointestinal hemorrhage.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.collins1985a</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.collins1985a</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>trial</b></td><td><code>character</code></td><td>first author of trial</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>year of publication</td></tr><tr><td><b>ref</b></td><td><code>numeric</code></td><td>reference number</td></tr><tr><td><b>trt</b></td><td><code>character</code></td><td>C = cimetidine, R = ranitidine</td></tr><tr><td><b>ctrl</b></td><td><code>character</code></td><td>P = placebo, AA = antacids, UT = usual treatment</td></tr><tr><td><b>nti</b></td><td><code>numeric</code></td><td>number of patients in treatment group</td></tr><tr><td><b>b.xti</b></td><td><code>numeric</code></td><td>number of patients in treatment group with persistent or recurrent bleedings</td></tr><tr><td><b>o.xti</b></td><td><code>numeric</code></td><td>number of patients in treatment group in need of operation</td></tr><tr><td><b>d.xti</b></td><td><code>numeric</code></td><td>number of patients in treatment group that died</td></tr><tr><td><b>nci</b></td><td><code>numeric</code></td><td>number of patients in control group</td></tr><tr><td><b>b.xci</b></td><td><code>numeric</code></td><td>number of patients in control group with persistent or recurrent bleedings</td></tr><tr><td><b>o.xci</b></td><td><code>numeric</code></td><td>number of patients in control group in need of operation</td></tr><tr><td><b>d.xci</b></td><td><code>numeric</code></td><td>number of patients in control group that died</td></tr></table></div>
@@ -108,11 +107,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.collins1985a</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    id       trial year ref trt ctrl nti b.xti o.xti d.xti nci b.xci o.xci d.xci</span>
@@ -184,7 +182,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Fixed-Effects Model (k = 24)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Type: Conditional Model with Exact Likelihood</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   logLik  deviance       AIC       BIC      AICc </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   logLik  deviance       AIC       BIC      AICc  ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -53.6789   40.3423  109.3579  110.5359  109.5397   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tests for Heterogeneity:</span>
@@ -193,7 +191,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1216  0.0996  -1.2211  0.2220  -0.3167  0.0736    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -221,7 +219,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 24; tau^2 estimator: ML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Type: Conditional Model with Exact Likelihood</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   logLik  deviance       AIC       BIC      AICc </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   logLik  deviance       AIC       BIC      AICc  ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -52.9901   38.9647  109.9802  112.3363  110.5516   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 (estimated amount of total heterogeneity): 0.1192 (SE = 0.1396)</span>
@@ -235,7 +233,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.1744  0.1364  -1.2786  0.2010  -0.4418  0.0929    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -308,11 +306,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>
