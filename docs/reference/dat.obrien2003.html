@@ -86,9 +86,8 @@
     <p>Results from 13 studies on the relationship between maternal body mass index (BMI) and the risk of preeclampsia.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.obrien2003</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.obrien2003</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>numeric</code></td><td>study id</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>(first) author of the study</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>ref</b></td><td><code>numeric</code></td><td>reference number</td></tr><tr><td><b>ch</b></td><td><code>character</code></td><td>exclusion due to chronic hypertension (yes/no)</td></tr><tr><td><b>dm</b></td><td><code>character</code></td><td>exclusion due to diabetes mellitus (yes/no)</td></tr><tr><td><b>mg</b></td><td><code>character</code></td><td>exclusion due to multiple gestation (yes/no)</td></tr><tr><td><b>bmi.lb</b></td><td><code>numeric</code></td><td>lower bound of the BMI interval</td></tr><tr><td><b>bmi.ub</b></td><td><code>numeric</code></td><td>upper bound of the BMI interval</td></tr><tr><td><b>bmi</b></td><td><code>numeric</code></td><td>midpoint of the BMI interval</td></tr><tr><td><b>cases</b></td><td><code>numeric</code></td><td>number of preeclampsia cases in the BMI group</td></tr><tr><td><b>total</b></td><td><code>numeric</code></td><td>number of individuals in the BMI group</td></tr></table></div>
@@ -104,11 +103,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.obrien2003</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study        author year ref  ch  dm  mg grp bmi.lb bmi.ub   bmi cases  total</span>
@@ -159,7 +157,7 @@
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### restructure the data into a wide format</span></span>
 <span class="r-in"><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/to.wide.html" class="external-link">to.wide</a></span><span class="op">(</span><span class="va">dat</span>, study<span class="op">=</span><span class="st">"study"</span>, grp<span class="op">=</span><span class="st">"grp"</span>, ref<span class="op">=</span><span class="fl">1</span>, grpvars<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"bmi"</span>,<span class="st">"cases"</span>,<span class="st">"total"</span><span class="op">)</span>,</span>
@@ -180,6 +178,7 @@
 <span class="r-in"><span class="co">### calculate log risk ratios and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"RR"</span>, ai<span class="op">=</span><span class="va">cases1</span>, n1i<span class="op">=</span><span class="va">total1</span>, ci<span class="op">=</span><span class="va">cases2</span>, n2i<span class="op">=</span><span class="va">total2</span>, data<span class="op">=</span><span class="va">dat2</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat2</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span><span class="op">:</span><span class="fl">7</span><span class="op">)</span><span class="op">]</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study grp1 bmi.lb bmi.ub  bmi1 cases1 total1 grp2 bmi2 cases2 total2 comp      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1    2   29.0     NA 29.10     68    683    1 22.9     28    660  2-1  0.8530 0.0474 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      2    2   19.8   25.9 22.85    142   2253    1 19.7     18    414  2-1  0.3713 0.0597 </span>
@@ -191,6 +190,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8      4    2   19.8   26.0 22.90     78   1720    1 19.7     11    350  2-1  0.3667 0.1003 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9      4    3   26.1   29.0 27.55     19    208    1 19.7     11    350  3-1  1.0669 0.1359 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10     4    4   29.0     NA 29.10     18    140    1 19.7     11    350  4-1  1.4088 0.1365 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### forest plot of the risk ratios</span></span>
 <span class="r-in"><span class="va">dd</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fu"><a href="https://rdrr.io/r/base/diff.html" class="external-link">diff</a></span><span class="op">(</span><span class="va">dat2</span><span class="op">$</span><span class="va">study</span><span class="op">)</span><span class="op">)</span></span>
@@ -215,6 +215,7 @@
 <span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">yi</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">*</span><span class="fl">100</span></span>
 <span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">vi</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">$</span><span class="va">vi</span><span class="op">*</span><span class="fl">100</span><span class="op">^</span><span class="fl">2</span></span>
 <span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span><span class="op">]</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study ref  ch  dm  mg grp bmi.lb bmi.ub   bmi cases total bmicent      yi      vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1   8  no  no yes   1   19.8   26.0 22.90    28   660 -3.1000  4.2424  0.6155 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      1   8  no  no yes   2   29.0     NA 29.10    68   683  3.1000  9.9561  1.3126 </span>
@@ -226,6 +227,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8      3  10  no  no yes   2   19.8   26.0 22.90     5   334 -1.9125  1.4970  0.4415 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9      3  10  no  no yes   3   26.1   29.0 27.55    13    78  2.7375 16.6667 17.8063 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10     3  10  no  no yes   4   29.0     NA 29.10    25   203  4.2875 12.3153  5.3195 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### fit multilevel meta-regression model to examine the relationship between the</span></span>
 <span class="r-in"><span class="co">### (centered) BMI variable and the risk of preeclampsia</span></span>
@@ -248,7 +250,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    5.0125  0.8068  6.2129  &lt;.0001  3.4312  6.5938  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> bmicent    0.5749  0.0761  7.5522  &lt;.0001  0.4257  0.7241  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -287,7 +289,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    4.7340  0.8085  5.8553  &lt;.0001  3.1494  6.3186  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> bmicent    0.4887  0.0913  5.3511  &lt;.0001  0.3097  0.6677  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -306,11 +308,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

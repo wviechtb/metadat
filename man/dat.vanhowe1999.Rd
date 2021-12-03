@@ -43,7 +43,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### naive pooling by summing up the counts within categories and then
 ### computing the odds ratios and corresponding confidence intervals

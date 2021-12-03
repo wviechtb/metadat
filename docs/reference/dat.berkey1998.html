@@ -86,16 +86,15 @@
     <p>Results from 5 trials comparing surgical and non-surgical treatments for medium-severity periodontal disease one year after treatment. <script id="MathJax-script" async src="../../mathjaxr/doc/mathjax/es5/tex-chtml-full.js"></script></p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.berkey1998</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.berkey1998</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>trial</b></td><td><code>numeric</code></td><td>trial number</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>number of patients</td></tr><tr><td><b>outcome</b></td><td><code>character</code></td><td>outcome (PD = probing depth; AL = attachment level)</td></tr><tr><td><b>yi</b></td><td><code>numeric</code></td><td>observed mean difference in outcome (surgical versus non-surgical)</td></tr><tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr><tr><td><b>v1i</b></td><td><code>numeric</code></td><td>variances and covariances of the observed effects</td></tr><tr><td><b>v2i</b></td><td><code>numeric</code></td><td>variances and covariances of the observed effects</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>The dataset includes the results from 5 trials that compared surgical and non-surgical methods for the treatment of medium-severity periodontal disease. Reported outcomes include the change in probing depth (PD) and attachment level (AL) one year after the treatment. The outcome measure used for this meta-analysis was the (raw) mean difference, calculated in such a way that positive values indicate that surgery was more effective than non-surgical treatment in decreasing the probing depth and increasing the attachment level (so, the results from the various trials indicate that surgery is preferable for reducing the probing depth, while non-surgical treatment is preferable for increasing the attachment level). Since each trial provides effect size estimates for both outcomes, the estimates are correlated. A multivariate model can be used to meta-analyze the two outcomes simultaneously.</p>
-<p>The <code>v1i</code> and <code>v2i</code> values are the variances and covariances of the observed effects. In particular, for each study, variables <code>v1i</code> and <code>v2i</code> form a \(2 \times 2\) variance-covariance matrix of the observed effects, with the diagonal elements corresponding to the sampling variances of the mean differences (the first for probing depth, the second for attachment level) and the off-diagonal value corresponding to the covariance of the two mean differences. Below, the full (block diagonal) variance-covariance for all studies is constructed from these two variables.</p>
+<p>The <code>v1i</code> and <code>v2i</code> values are the variances and covariances of the observed effects. In particular, for each study, variables <code>v1i</code> and <code>v2i</code> form a <em></em>\(2 \times 2\) variance-covariance matrix of the observed effects, with the diagonal elements corresponding to the sampling variances of the mean differences (the first for probing depth, the second for attachment level) and the off-diagonal value corresponding to the covariance of the two mean differences. Below, the full (block diagonal) variance-covariance for all studies is constructed from these two variables.</p>
     </div>
     <div id="source">
     <h2>Source</h2>
@@ -106,13 +105,13 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.berkey1998</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    trial           author year ni outcome      yi     vi    v1i    v2i </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 Pihlstrom et al. 1983 14      PD  0.4700 0.0075 0.0075 0.0030 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      1 Pihlstrom et al. 1983 14      AL -0.3200 0.0077 0.0030 0.0077 </span>
@@ -124,11 +123,12 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8      4  Ramfjord et al. 1987 89      AL -0.3100 0.0015 0.0009 0.0015 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9      5    Becker et al. 1988 16      PD  0.5600 0.0148 0.0148 0.0072 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10     5    Becker et al. 1988 16      AL -0.3900 0.0304 0.0072 0.0304 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### construct block diagonal var-cov matrix of the observed outcomes based on variables v1i and v2i</span></span>
 <span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span>vi<span class="op">=</span><span class="fl">1</span>, cluster<span class="op">=</span><span class="va">author</span>, rvars<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">v1i</span>, <span class="va">v2i</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -160,7 +160,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            estimate     se    zval   pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeAL    -0.339  0.088  -3.859  &lt;.001  -0.512  -0.167  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomePD     0.353  0.059   6.006  &lt;.001   0.238   0.469  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -210,7 +210,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                           estimate     se    zval   pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                           estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeAL                   -0.335  0.079  -4.261  &lt;.001  -0.489  -0.181  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomePD                    0.348  0.052   6.694  &lt;.001   0.246   0.450  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeAL:I(year - 1983)    -0.011  0.024  -0.445  0.656  -0.059   0.037      </span>
@@ -231,11 +231,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

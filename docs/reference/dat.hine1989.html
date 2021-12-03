@@ -86,9 +86,8 @@
     <p>Results from 6 studies evaluating mortality from prophylactic use of lidocaine in acute myocardial infarction.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.hine1989</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.hine1989</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>source</b></td><td><code>character</code></td><td>source of data</td></tr><tr><td><b>n1i</b></td><td><code>numeric</code></td><td>number of patients in lidocaine group</td></tr><tr><td><b>n2i</b></td><td><code>numeric</code></td><td>number of patients in control group</td></tr><tr><td><b>ai</b></td><td><code>numeric</code></td><td>number of deaths in lidocaine group</td></tr><tr><td><b>ci</b></td><td><code>numeric</code></td><td>number of deaths in control group</td></tr></table></div>
@@ -109,11 +108,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.hine1989</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   study         source n1i n2i ai ci</span>
@@ -127,11 +125,12 @@
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### calculate risk differences and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"RD"</span>, n1i<span class="op">=</span><span class="va">n1i</span>, n2i<span class="op">=</span><span class="va">n2i</span>, ai<span class="op">=</span><span class="va">ai</span>, ci<span class="op">=</span><span class="va">ci</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   study         source n1i n2i ai ci     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     1  Chopra et al.  39  43  2  1 0.0280 0.0018 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     2       Mogensen  44  44  4  4 0.0000 0.0038 </span>
@@ -139,6 +138,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4     4   Darby et al. 103 100  7  5 0.0180 0.0011 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5     5 Bennett et al. 110 106  7  3 0.0353 0.0008 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6     6 O'Brien et al. 154 146 11  4 0.0440 0.0006 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### meta-analysis of risk differences using a random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -156,7 +156,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.0294  0.0131  2.2531  0.0243  0.0038  0.0551  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -174,11 +174,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

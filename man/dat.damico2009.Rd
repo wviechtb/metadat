@@ -35,7 +35,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### meta-analysis of the (log) odds ratios using the Mantel-Haenszel method
 rma.mh(measure="OR", ai=xt, n1i=nt, ci=xc, n2i=nc, data=dat, digits=2)

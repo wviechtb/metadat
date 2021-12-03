@@ -64,7 +64,7 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### remove studies with no response information and study with no responses in either group
 dat <- dat[-c(5,6,26),]

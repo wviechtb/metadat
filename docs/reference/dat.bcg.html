@@ -86,15 +86,14 @@
     <p>Results from 13 studies examining the effectiveness of the Bacillus Calmette-Guerin (BCG) vaccine against tuberculosis. <script id="MathJax-script" async src="../../mathjaxr/doc/mathjax/es5/tex-chtml-full.js"></script></p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.bcg</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.bcg</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>trial</b></td><td><code>numeric</code></td><td>trial number</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>tpos</b></td><td><code>numeric</code></td><td>number of TB positive cases in the treated (vaccinated) group</td></tr><tr><td><b>tneg</b></td><td><code>numeric</code></td><td>number of TB negative cases in the treated (vaccinated) group</td></tr><tr><td><b>cpos</b></td><td><code>numeric</code></td><td>number of TB positive cases in the control (non-vaccinated) group</td></tr><tr><td><b>cneg</b></td><td><code>numeric</code></td><td>number of TB negative cases in the control (non-vaccinated) group</td></tr><tr><td><b>ablat</b></td><td><code>numeric</code></td><td>absolute latitude of the study location (in degrees)</td></tr><tr><td><b>alloc</b></td><td><code>character</code></td><td>method of treatment allocation (random, alternate, or systematic assignment)</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
-    <p>The 13 studies provide data in terms of \(2 \times 2\) tables in the form:</p><table class="table table"><tr><td></td><td>TB positive</td><td>TB negative</td></tr><tr><td>vaccinated group</td><td><code>tpos</code></td><td><code>tneg</code></td></tr><tr><td>control group</td><td><code>cpos</code></td><td><code>cneg</code></td></tr></table><p>The goal of the meta-analysis was to examine the overall effectiveness of the BCG vaccine for preventing tuberculosis and to examine moderators that may potentially influence the size of the effect.</p>
+    <p>The 13 studies provide data in terms of <em></em>\(2 \times 2\) tables in the form:</p><table class="table table"><tr><td></td><td>TB positive</td><td>TB negative</td></tr><tr><td>vaccinated group</td><td><code>tpos</code></td><td><code>tneg</code></td></tr><tr><td>control group</td><td><code>cpos</code></td><td><code>cneg</code></td></tr></table><p>The goal of the meta-analysis was to examine the overall effectiveness of the BCG vaccine for preventing tuberculosis and to examine moderators that may potentially influence the size of the effect.</p>
 <p>The dataset has been used in several publications to illustrate meta-analytic methods (see ‘References’).</p>
     </div>
     <div id="source">
@@ -111,11 +110,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.bcg</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    trial               author year tpos  tneg cpos  cneg ablat      alloc</span>
@@ -136,11 +134,12 @@
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### calculate log risk ratios and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"RR"</span>, ai<span class="op">=</span><span class="va">tpos</span>, bi<span class="op">=</span><span class="va">tneg</span>, ci<span class="op">=</span><span class="va">cpos</span>, di<span class="op">=</span><span class="va">cneg</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    trial               author year tpos  tneg cpos  cneg ablat      alloc      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1              Aronson 1948    4   119   11   128    44     random -0.8893 0.3256 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      2     Ferguson &amp; Simes 1949    6   300   29   274    55     random -1.5854 0.1946 </span>
@@ -155,6 +154,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11    11       Comstock et al 1974  186 50448  141 27197    18 systematic -0.3394 0.0124 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12    12   Comstock &amp; Webster 1969    5  2493    3  2338    33 systematic  0.4459 0.5325 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13    13       Comstock et al 1976   27 16886   29 17825    33 systematic -0.0173 0.0714 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -172,7 +172,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.7145  0.1798  -3.9744  &lt;.0001  -1.0669  -0.3622  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -206,7 +206,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate       se     zval    pval     ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate       se     zval    pval     ci.lb    ci.ub    ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt   -3.5455  29.0959  -0.1219  0.9030  -60.5724  53.4814     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ablat     -0.0280   0.0102  -2.7371  0.0062   -0.0481  -0.0080  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> year       0.0019   0.0147   0.1299  0.8966   -0.0269   0.0307     </span>
@@ -247,11 +247,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

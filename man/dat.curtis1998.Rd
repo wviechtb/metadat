@@ -58,7 +58,7 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### calculate (log transformed) ratios of means and corresponding sampling variances
 dat <- escalc(measure="ROM", m1i=m1i, sd1i=sd1i, n1i=n1i,

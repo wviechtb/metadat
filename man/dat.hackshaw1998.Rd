@@ -40,7 +40,7 @@ head(dat, 10)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### random-effects model using the log odds ratios
 res <- rma(yi, vi, data=dat, method="DL")

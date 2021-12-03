@@ -29,7 +29,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### restructure dataset to a contrast-based format
 dat.c <- to.wide(dat, study="study", grp="trt", grpvars=3:4)

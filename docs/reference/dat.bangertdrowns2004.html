@@ -86,16 +86,15 @@
     <p>Results from 48 studies on the effectiveness of school-based writing-to-learn interventions on academic achievement. <script id="MathJax-script" async src="../../mathjaxr/doc/mathjax/es5/tex-chtml-full.js"></script></p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.bangertdrowns2004</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.bangertdrowns2004</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>grade</b></td><td><code>numeric</code></td><td>grade level (1 = elementary; 2 = middle; 3 = high-school; 4 = college)</td></tr><tr><td><b>length</b></td><td><code>numeric</code></td><td>treatment length (in weeks)</td></tr><tr><td><b>minutes</b></td><td><code>numeric</code></td><td>minutes per assignment</td></tr><tr><td><b>wic</b></td><td><code>numeric</code></td><td>writing tasks were completed in class (0 = no; 1 = yes)</td></tr><tr><td><b>feedback</b></td><td><code>numeric</code></td><td>feedback on writing was provided (0 = no; 1 = yes)</td></tr><tr><td><b>info</b></td><td><code>numeric</code></td><td>writing contained informational components (0 = no; 1 = yes)</td></tr><tr><td><b>pers</b></td><td><code>numeric</code></td><td>writing contained personal components (0 = no; 1 = yes)</td></tr><tr><td><b>imag</b></td><td><code>numeric</code></td><td>writing contained imaginative components (0 = no; 1 = yes)</td></tr><tr><td><b>meta</b></td><td><code>numeric</code></td><td>prompts for metacognitive reflection (0 = no; 1 = yes)</td></tr><tr><td><b>subject</b></td><td><code>character</code></td><td>subject matter</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>total sample size of the study</td></tr><tr><td><b>yi</b></td><td><code>numeric</code></td><td>standardized mean difference</td></tr><tr><td><b>vi</b></td><td><code>numeric</code></td><td>corresponding sampling variance</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>In each of the studies included in this meta-analysis, an experimental group (i.e., a group of students that received instruction with increased emphasis on writing tasks) was compared against a control group (i.e., a group of students that received conventional instruction) with respect to some content-related measure of academic achievement (e.g., final grade, an exam/quiz/test score). The outcome measure for this meta-analysis was the standardized mean difference (with positive values indicating a higher mean level of academic achievement in the intervention group).</p>
-<p>The standardized mean differences given here are bias-corrected and therefore differ slightly from the values reported in the article. Also, since only the total sample size is given in the article, the sampling variances were computed under the assumption that \(n_{i1} = n_{i2} = n_i / 2\).</p>
+<p>The standardized mean differences given here are bias-corrected and therefore differ slightly from the values reported in the article. Also, since only the total sample size is given in the article, the sampling variances were computed under the assumption that <em></em>\(n_{i1} = n_{i2} = n_i / 2\).</p>
     </div>
     <div id="source">
     <h2>Source</h2>
@@ -105,13 +104,13 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.bangertdrowns2004</span></span>
 <span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>,<span class="op">-</span><span class="fl">13</span><span class="op">]</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    id      author year grade length minutes wic feedback info pers imag meta  ni     yi    vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   1    Ashworth 1992     4     15      NA   1        1    1    1    0    1  60  0.650 0.070 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2   2       Ayers 1993     2     10      NA   1       NA    1    1    1    0  34 -0.750 0.126 </span>
@@ -123,11 +122,12 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8   8     Brodney 1994     1     15      NA   1        1    1    1    0    1 542  0.060 0.007 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9   9      Burton 1986     4      4      NA   0        1    1    0    0    0  99  0.060 0.040 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10 10   Davis, BH 1990     1      9      10   1        0    1    1    0    0  77  0.120 0.052 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### fit random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -145,7 +145,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2219  0.0460  4.8209  &lt;.0001  0.1317  0.3122  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -172,7 +172,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate      se     zval    pval    ci.lb    ci.ub    ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt           0.2639  0.0898   2.9393  0.0033   0.0879   0.4399  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(grade)2   -0.3727  0.1705  -2.1856  0.0288  -0.7069  -0.0385   * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(grade)3    0.0248  0.1364   0.1821  0.8555  -0.2425   0.2922     </span>
@@ -201,7 +201,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub   ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.0692  0.0825  0.8384  0.4018  -0.0925  0.2309    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> length     0.0149  0.0073  2.0559  0.0398   0.0007  0.0292  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -228,7 +228,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub    ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.3440  0.2179   1.5784  0.1145  -0.0831  0.7711     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> info      -0.1988  0.2106  -0.9438  0.3453  -0.6115  0.2140     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> pers      -0.3223  0.1782  -1.8094  0.0704  -0.6715  0.0268   . </span>
@@ -250,11 +250,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

@@ -38,7 +38,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### construct block diagonal var-cov matrix of the observed outcomes based on variables v1i and v2i
 V <- vcalc(vi=1, cluster=author, rvars=c(v1i, v2i), data=dat)

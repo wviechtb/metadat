@@ -4,6 +4,5 @@
 # Pharmacotherapy: The Journal of Human Pharmacology and Drug
 # Therapy, 29, 891-905.
 
-
-dat.baker2009 <- read.csv("dat.baker2009.txt")
+dat.baker2009 <- read.csv("data-raw/dat.baker2009.txt")
 save(dat.baker2009, file="data/dat.baker2009.rda")
