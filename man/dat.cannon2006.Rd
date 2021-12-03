@@ -41,7 +41,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### meta-analysis of log odds ratios using the MH method for endpoint 1
 res <- rma.mh(measure="OR", ai=ep1t, n1i=nt, ci=ep1c, n2i=nc, data=dat, slab=trial)

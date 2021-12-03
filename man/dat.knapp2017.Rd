@@ -48,7 +48,7 @@ dat[-c(1:2)]
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### fit a standard random-effects model ignoring the issues described above
 res <- rma(yi, vi, data=dat)

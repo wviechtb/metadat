@@ -86,9 +86,8 @@
     <p>Results from diagnostic accuracy studies examining the accuracy of venous ultrasonography for the diagnosis of deep venous thrombosis.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.kearon1998</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.kearon1998</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>numeric</code></td><td>study id</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>patients</b></td><td><code>character</code></td><td>patient group (either symptomatic or asymptomatic patients)</td></tr><tr><td><b>tp</b></td><td><code>numeric</code></td><td>number of true positives</td></tr><tr><td><b>np</b></td><td><code>numeric</code></td><td>number of positive patients (cases)</td></tr><tr><td><b>tn</b></td><td><code>numeric</code></td><td>number of true negatives</td></tr><tr><td><b>nn</b></td><td><code>numeric</code></td><td>number of negative patients (non-cases)</td></tr></table></div>
@@ -109,11 +108,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.kearon1998</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id           study year    patients  tp  np  tn  nn</span>
@@ -127,11 +125,12 @@
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### calculate diagnostic log odds ratios and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">tp</span>, n1i<span class="op">=</span><span class="va">np</span>, ci<span class="op">=</span><span class="va">nn</span><span class="op">-</span><span class="va">tn</span>, n2i<span class="op">=</span><span class="va">nn</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span><span class="op">)</span></span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id           study year    patients  tp  np  tn  nn     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1  1    Elias et al. 1987 symptomatic 325 333 483 505 6.7128 0.1672 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2  2 Appleman et al. 1987 symptomatic  NA  NA  47  49     NA     NA </span>
@@ -139,6 +138,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4  4   Cronan et al. 1987 symptomatic  25  28  23  23 5.8361 2.3675 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5  5  O'Leary et al. 1988 symptomatic  22  25  24  25 4.6540 1.0376 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6  6  Lensing et al. 1989 symptomatic  70  77 142 143 6.7946 0.8212 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### fit random-effects model for the symptomatic patients</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"symptomatic"</span><span class="op">)</span></span>
@@ -157,7 +157,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   5.1733  0.3747  13.8057  &lt;.0001  4.4388  5.9077  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -181,7 +181,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   3.0039  0.2682  11.2017  &lt;.0001  2.4783  3.5295  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -296,6 +296,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">out1</span>, mi<span class="op">=</span><span class="va">out2</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span>,</span>
 <span class="r-in">              include<span class="op">=</span><span class="va">group</span><span class="op">==</span><span class="st">"sensitivity"</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study       group out1 out2     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     19 specificity   10   15     NA     NA </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     19 sensitivity   47    6 1.9889 0.1749 </span>
@@ -325,11 +326,13 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 26    32 sensitivity  104    0 5.3423 2.0096 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27    33 specificity   26   29     NA     NA </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    33 sensitivity   81    8 2.2605 0.1299 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### calculate logit-transformed specificities</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">out1</span>, mi<span class="op">=</span><span class="va">out2</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span>,</span>
 <span class="r-in">              include<span class="op">=</span><span class="va">group</span><span class="op">==</span><span class="st">"specificity"</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">dat</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study       group out1 out2      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     19 specificity   10   15 -0.3895 0.1598 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     19 sensitivity   47    6  1.9889 0.1749 </span>
@@ -359,6 +362,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 26    32 sensitivity  104    0  5.3423 2.0096 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27    33 specificity   26   29 -0.1072 0.0716 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    33 sensitivity   81    8  2.2605 0.1299 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### bivariate random-effects model for logit sensitivity and specificity</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">group</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">group</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -387,7 +391,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> groupsensitivity    3.0092  0.2582  11.6531  &lt;.0001   2.5031  3.5154  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> groupspecificity   -0.0498  0.2027  -0.2457  0.8059  -0.4472  0.3475      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -421,11 +425,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

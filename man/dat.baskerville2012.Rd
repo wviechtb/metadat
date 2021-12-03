@@ -43,7 +43,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### random-effects model
 res <- rma(smd, sei=se, data=dat, method="DL")

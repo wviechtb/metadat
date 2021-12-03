@@ -38,7 +38,7 @@ head(dat, 5)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### create long format dataset
 dat <- reshape(dat, direction="long", idvar="study", v.names=c("yi","vi"),

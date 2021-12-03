@@ -86,9 +86,8 @@
     <p>Results from 23 studies on the effectiveness of practice facilitation interventions within the primary care practice setting.</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.baskerville2012</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.baskerville2012</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>author</b></td><td><code>character</code></td><td>study author(s)</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>score</b></td><td><code>numeric</code></td><td>quality score (0 to 12 scale)</td></tr><tr><td><b>design</b></td><td><code>character</code></td><td>study design (cct = controlled clinical trial, rct = randomized clinical trial, crct = cluster randomized clinical trial)</td></tr><tr><td><b>alloconc</b></td><td><code>numeric</code></td><td>allocation concealed (0 = no, 1 = yes)</td></tr><tr><td><b>blind</b></td><td><code>numeric</code></td><td>single- or double-blind study (0 = no, 1 = yes)</td></tr><tr><td><b>itt</b></td><td><code>numeric</code></td><td>intention to treat analysis (0 = no, 1 = yes)</td></tr><tr><td><b>fumonths</b></td><td><code>numeric</code></td><td>follow-up months</td></tr><tr><td><b>retention</b></td><td><code>numeric</code></td><td>retention (in percent)</td></tr><tr><td><b>country</b></td><td><code>character</code></td><td>country where study was conducted</td></tr><tr><td><b>outcomes</b></td><td><code>numeric</code></td><td>number of outcomes assessed</td></tr><tr><td><b>duration</b></td><td><code>numeric</code></td><td>duration of intervention</td></tr><tr><td><b>pperf</b></td><td><code>numeric</code></td><td>practices per facilitator</td></tr><tr><td><b>meetings</b></td><td><code>numeric</code></td><td>(average) number of meetings</td></tr><tr><td><b>hours</b></td><td><code>numeric</code></td><td>(average) hours per meeting</td></tr><tr><td><b>tailor</b></td><td><code>numeric</code></td><td>intervention tailored to the context and needs of the practice (0 = no, 1 = yes)</td></tr><tr><td><b>smd</b></td><td><code>numeric</code></td><td>standardized mean difference</td></tr><tr><td><b>se</b></td><td><code>numeric</code></td><td>corresponding standard error</td></tr></table></div>
@@ -104,11 +103,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.baskerville2012</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>              author year score design alloconc blind itt fumonths retention country outcomes duration</span>
@@ -163,7 +161,7 @@
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### random-effects model</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
@@ -181,7 +179,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.56  0.06  8.70  &lt;.01   0.43   0.68  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -230,7 +228,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub    ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.6830  0.2183   3.1286  0.0018   0.2551  1.1109  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> score     -0.0149  0.0253  -0.5877  0.5567  -0.0646  0.0348     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -255,7 +253,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt     0.5786  0.1041   5.5588  &lt;.0001   0.3746  0.7827  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> alloconc   -0.0275  0.1348  -0.2041  0.8383  -0.2917  0.2366      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -280,7 +278,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.5809  0.0972   5.9752  &lt;.0001   0.3903  0.7714  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> blind     -0.0349  0.1325  -0.2635  0.7921  -0.2946  0.2248      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -305,7 +303,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.5496  0.0926  5.9355  &lt;.0001   0.3681  0.7310  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> itt        0.0250  0.1319  0.1897  0.8496  -0.2336  0.2836      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -330,7 +328,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se    zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se    zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt     0.5601  0.1451  3.8605  0.0001   0.2757  0.8444  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> duration    0.0002  0.0088  0.0190  0.9849  -0.0171  0.0174      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -355,7 +353,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.3717  0.1084  3.4281  0.0006   0.1592  0.5843  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> tailor     0.2434  0.1292  1.8835  0.0596  -0.0099  0.4967    . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -381,7 +379,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb    ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.7318  0.0997   7.3429  &lt;.0001   0.5365   0.9272  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> pperf     -0.0137  0.0051  -2.7021  0.0069  -0.0236  -0.0038   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -406,7 +404,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                      estimate      se    zval    pval   ci.lb   ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                0.4453  0.0773  5.7644  &lt;.0001  0.2939  0.5968  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> I(meetings * hours)    0.0073  0.0037  1.9640  0.0495  0.0000  0.0146    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -425,11 +423,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

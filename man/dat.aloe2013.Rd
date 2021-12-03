@@ -38,7 +38,7 @@ dat
 \dontrun{
 
 ### load metafor package
-suppressPackageStartupMessages(require(metafor, warn.conflicts=FALSE))
+suppressPackageStartupMessages(library(metafor))
 
 ### compute the partial correlation coefficients and corresponding sampling variances
 dat <- escalc(measure="PCOR", ti=tval, ni=n, mi=preds, data=dat)

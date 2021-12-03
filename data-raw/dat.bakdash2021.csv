@@ -1,0 +1,777 @@
+Author,Year,Title,DOI,DTIC.link,SA.measure.type,Sample.size,Sample.size.stats,es.z,vi.z,SampleID,Outcome,Comments
+Cummings and Guerlain,2007,Developing Operator Capacity Estimates for Supervisory Control of Autonomous Vehicles,10.1518/001872007779598109,NA,SPAM,42,42,0.462352964,0.025641026,Cummings and Guerlain2007,1,"p. 12, Online measure of SA, similar to SA probes"
+Cummings and Guerlain,2007,Developing Operator Capacity Estimates for Supervisory Control of Autonomous Vehicles,10.1518/001872007779598109,NA,SAGAT,42,42,0.149894307,0.025641026,Cummings and Guerlain2007,2,"p.12, Generic null"
+Durso,1998,Situation Awareness As a Predictor of Performance in En Route Air Traffic Controllers.,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a360807.pdf,SPAM,12,12,0.377523832,0.111111111,Durso1998,3,Ditto
+Durso,1998,Situation Awareness As a Predictor of Performance in En Route Air Traffic Controllers.,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a360807.pdf,SAGAT,12,12,0.393258256,0.111111111,Durso1998,4,SME evaluation~SAGAT in regression
+Durso ,2006,Does Situation Awareness Add to the Validity of Cognitive Tests?,10.1518/001872006779166316,NA,SPAM,88,77,0.142375643,0.013513514,Durso 2006,5,Error df = 72 and k = 4
+Durso ,2006,Does Situation Awareness Add to the Validity of Cognitive Tests?,10.1518/001872006779166316,NA,SPAM,88,80,0.305840071,0.012987013,Durso 2006,6,"89 total participants, one excluded. Incremental validity of SA for performance (unique contribution above other measures). Multiple regression df = N - k - 1.  Error df = 76 and k = 3 (SPAM errors, SPAM past latency, Gf)"
+Durso ,2006,Does Situation Awareness Add to the Validity of Cognitive Tests?,10.1518/001872006779166316,NA,SPAM,88,72,0.416171689,0.014492754,Durso 2006,7,Error df = 66 and k = 6 
+Durso ,2006,Does Situation Awareness Add to the Validity of Cognitive Tests?,10.1518/001872006779166316,NA,SPAM,88,88,0.104965426,0.011764706,Durso 2006,8,NA
+Durso ,2006,Does Situation Awareness Add to the Validity of Cognitive Tests?,10.1518/001872006779166316,NA,SPAM,88,88,0.007836386,0.011764706,Durso 2006,9,NA
+Durso ,2006,Does Situation Awareness Add to the Validity of Cognitive Tests?,10.1518/001872006779166316,NA,SPAM,88,88,0.200145605,0.011764706,Durso 2006,10,NA
+Fracker,1991,Measures of situation awareness: An experimental evaluation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a262732.pdf,Other,32,32,0.298566264,0.034482759,Fracker1991,11,Table 2
+Fracker,1991,Measures of situation awareness: An experimental evaluation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a262732.pdf,Other,32,32,0.110446916,0.034482759,Fracker1991,12,Table 3
+Fracker,1991,Measures of situation awareness: An experimental evaluation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a262732.pdf,Other,32,32,-0.020002667,0.034482759,Fracker1991,13,"Pooled sample size across three experiments, Table 2"
+Fracker,1991,Measures of situation awareness: An experimental evaluation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a262732.pdf,Other,32,32,0.100335348,0.034482759,Fracker1991,14,Table 2
+Fracker,1991,Measures of situation awareness: An experimental evaluation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a262732.pdf,Other,32,32,0.100335348,0.034482759,Fracker1991,15,Table 3
+Fracker,1991,Measures of situation awareness: An experimental evaluation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a262732.pdf,Other,32,32,0.202732554,0.034482759,Fracker1991,16,Table 3
+Gatsoulis et al.,2010,On the measurement of situation awareness for effective human-robot interaction in teleoperated systems,10.1518/155534310X495591,NA,Other,30,30,0.447692024,0.037037037,Gatsoulis et al.2010,17,"Part of the performance equation is subjective, Crew Awareness Rating Scale. Similar to SAGAT, but can be used in any task without modification."
+Gatsoulis et al.,2010,On the measurement of situation awareness for effective human-robot interaction in teleoperated systems,10.1518/155534310X495591,NA,Other,30,30,0.472230804,0.037037037,Gatsoulis et al.2010,18,"Part of the performance equation is subjective, Variant of QUASA, QASAGAT"
+Gatsoulis et al.,2010,On the measurement of situation awareness for effective human-robot interaction in teleoperated systems,10.1518/155534310X495591,NA,SAGAT,30,30,0.497311288,0.037037037,Gatsoulis et al.2010,19,"Part of the performance equation is subjective. Table 8, p. 22. Variant of the SAGAT, ASAGAT"
+Gatsoulis et al.,2010,On the measurement of situation awareness for effective human-robot interaction in teleoperated systems,10.1518/155534310X495591,NA,Other,30,30,0.549306144,0.037037037,Gatsoulis et al.2010,20,"Part of the performance equation is subjective, Short-Post Assessment of Situation Awareness"
+Gatsoulis et al.,2010,On the measurement of situation awareness for effective human-robot interaction in teleoperated systems,10.1518/155534310X495591,NA,Other,30,30,0.576339755,0.037037037,Gatsoulis et al.2010,21,"Part of the performance equation is subjective, Post Assessment of Situation Awareness"
+Hogan ,2006,Use of Human Patient Simulation and the Situation Awareness Global Assessment Technique in Practical Trauma Skills Assessment,10.1097/01.ta.0000238687.23622.89,NA,SAGAT,16,16,1.115505787,0.076923077,Hogan 2006,22,traditional “checklist” style assessment with each task performed equal to one point
+Jipp,2016,The impact of higher levels of automation on performance and situation awareness: A function of information-processing ability and working-memory capacity.,10.1177/1555343416637517,NA,SAGAT,57,57,0.202732554,0.018518519,Jipp2016,23,NA
+Jipp,2016,The impact of higher levels of automation on performance and situation awareness: A function of information-processing ability and working-memory capacity.,10.1177/1555343416637517,NA,SAGAT,57,57,0.309519604,0.018518519,Jipp2016,24,NA
+Jipp,2016,The impact of higher levels of automation on performance and situation awareness: A function of information-processing ability and working-memory capacity.,10.1177/1555343416637517,NA,SAGAT,57,57,0.342828254,0.018518519,Jipp2016,25,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.487210954,0.047619048,Kaber2004,26,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.302606478,0.047619048,Kaber2004,27,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,-0.078211812,0.047619048,Kaber2004,28,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.26423604,0.047619048,Kaber2004,29,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.071164116,0.047619048,Kaber2004,30,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.187979323,0.047619048,Kaber2004,31,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,-0.230481415,0.047619048,Kaber2004,32,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.081506084,0.047619048,Kaber2004,33,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.368206835,0.047619048,Kaber2004,34,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.164345483,0.047619048,Kaber2004,35,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,-0.141139294,0.047619048,Kaber2004,36,NA
+Kaber,2004,"The effects of level of automation and adaptive automation on human performance, situation awareness and workload in a dynamic control task.",10.1080/1463922021000054335,NA,SAGAT,24,24,0.261782094,0.047619048,Kaber2004,37,NA
+Kass et al.,2011,Effects of mindfulness training on simulated driving: Preliminary results,10.1007/s12671-011-0066-1,NA,SAGAT,16,16,0.775298706,0.076923077,Kass et al.2011,38,NA
+Kass et al.,2011,Effects of mindfulness training on simulated driving: Preliminary results,10.1007/s12671-011-0066-1,NA,SAGAT,16,16,0.140925576,0.076923077,Kass et al.2011,39,NA
+Kass et al.,2011,Effects of mindfulness training on simulated driving: Preliminary results,10.1007/s12671-011-0066-1,NA,SAGAT,16,16,0.110446916,0.076923077,Kass et al.2011,40,NA
+Kass et al.,2011,Effects of mindfulness training on simulated driving: Preliminary results,10.1007/s12671-011-0066-1,NA,SAGAT,16,16,0.010000333,0.076923077,Kass et al.2011,41,NA
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-1.098612289,0.058823529,Lo et al. 2016b,42,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.829114038,0.058823529,Lo et al. 2016b,43,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,0.758173745,0.058823529,Lo et al. 2016b,44,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.741416144,0.058823529,Lo et al. 2016b,45,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,-0.647522845,0.166666667,Lo et al. 2016a,46,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.536060337,0.058823529,Lo et al. 2016b,47,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.536060337,0.058823529,Lo et al. 2016b,48,Main study: High platform consistency (few trains deviated from planned platform) is good perf
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,0.447692024,0.166666667,Lo et al. 2016a,49,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.42364893,0.058823529,Lo et al. 2016b,50,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,9,9,0.331647109,0.166666667,Lo et al. 2016a,51,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,0.3884231,0.166666667,Lo et al. 2016a,52,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.42364893,0.058823529,Lo et al. 2016b,53,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-0.472230804,0.058823529,Lo et al. 2016b,54,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,9,9,0.758173745,0.166666667,Lo et al. 2016a,55,Pilot. Need to code experiments separately
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,-0.792813632,0.166666667,Lo et al. 2016a,56,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,-0.829114038,0.166666667,Lo et al. 2016a,57,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,-1.098612289,0.058823529,Lo et al. 2016b,58,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,9,9,0.129999665,0.166666667,Lo et al. 2016a,59,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,9,9,0.726904199,0.166666667,Lo et al. 2016a,60,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,-0.396194151,0.166666667,Lo et al. 2016a,61,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,0.507990155,0.166666667,Lo et al. 2016a,62,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,MARS,9,9,-0.16713243,0.166666667,Lo et al. 2016a,63,Pilot
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,0.145618712,0.058823529,Lo et al. 2016b,64,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,0.358596718,0.058823529,Lo et al. 2016b,65,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,0.209309628,0.058823529,Lo et al. 2016b,66,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,0.063669033,0.058823529,Lo et al. 2016b,67,Main study
+Lo et al. ,2016,Explicit or implicit situation awareness? Measuring the situation awareness of train traffic controllers,10.1016/j.trf.2016.09.006,NA,SAGAT,20,20,0.379237543,0.058823529,Lo et al. 2016b,68,Main study
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.223656109,0.021276596,Loft 2016,69,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.223656109,0.021276596,Loft 2016,70,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.202732554,0.021276596,Loft 2016,71,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,-0.161386696,0.021276596,Loft 2016,72,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.151140436,0.021276596,Loft 2016,73,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.140925576,0.021276596,Loft 2016,74,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.110446916,0.021276596,Loft 2016,75,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,-0.100335348,0.021276596,Loft 2016,76,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.090244188,0.021276596,Loft 2016,77,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.020002667,0.021276596,Loft 2016,78,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.020002667,0.021276596,Loft 2016,79,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,-0.100335348,0.021276596,Loft 2016,80,"Table 2, Only coded Experiment 1 b/c Experiment 2 is teams"
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.120581028,0.021276596,Loft 2016,81,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.120581028,0.021276596,Loft 2016,82,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.140925576,0.021276596,Loft 2016,83,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.181982689,0.021276596,Loft 2016,84,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.298566264,0.021276596,Loft 2016,85,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.376885901,0.021276596,Loft 2016,86,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.741416144,0.021276596,Loft 2016,87,Table 2
+Loft ,2016,The Impact of Uncertain Contact Location on Situation Awareness and Performance in Simulated Submarine Track Management,10.1177/0018720816652754,NA,SPAM,50,50,0.758173745,0.021276596,Loft 2016,88,Table 2
+Lukosch,2016,The role of awareness for complex planning task performance: A microgaming study.,10.4018/IJGBL.2016040102,NA,SART,142,107,0.332761588,0.009615385,Lukosch2016,89,"Missing data, sample size w/complete data N = 107 (p. 8)"
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,MARS,16,16,0.050041729,0.076923077,Matthews2002,90,Table 4
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,MARS,16,16,0.202732554,0.076923077,Matthews2002,91,Table 4
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,MARS,16,16,0.213171347,0.076923077,Matthews2002,92,Table 4
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,MARS,16,16,0.234189467,0.076923077,Matthews2002,93,Table 4
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,SABARS,15,15,0.244774113,0.083333333,Matthews2002,94,Table 5
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,SABARS,15,15,0.276863823,0.083333333,Matthews2002,95,Table 5
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,SABARS,15,15,0.549306144,0.083333333,Matthews2002,96,Table 5
+Matthews,2002,Assessing Situation Awareness in Field Training Exercises,NA,http://www.dtic.mil/dtic/tr/fulltext/u2/a408560.pdf,SABARS,15,15,0.907644983,0.083333333,Matthews2002,97,Table 5
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.545314107,0.066666667,O'Brien2007,98,Mean errors for separation conflict (low number of conflicts is good perf)
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.50750636,0.066666667,O'Brien2007,99,hand-off errors; missed approaches; and separation conflicts + minutes delayed
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.574970116,0.066666667,O'Brien2007,100,"Terminal Radar Approach Control simulation. Pearson df = N - 2. Reported df is 16. So N = 18 (diff N than num of participants, 28). WOMBAT (SA ability) is also a measure of working memory, not included "
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.739759773,0.066666667,O'Brien2007,101,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,-0.2596117,0.066666667,O'Brien2007,102,Added
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.222492073,0.066666667,O'Brien2007,103,Added
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.062968779,0.066666667,O'Brien2007,104,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,-0.108912099,0.066666667,O'Brien2007,105,Added
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,-0.207467906,0.066666667,O'Brien2007,106,Added
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,-0.018400681,0.066666667,O'Brien2007,107,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.054906665,0.066666667,O'Brien2007,108,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.13455597,0.066666667,O'Brien2007,109,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,-0.166309568,0.066666667,O'Brien2007,110,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.340247448,0.066666667,O'Brien2007,111,NA
+O'Brien,2007,Situational awareness ability and cognitive skills training in a complex real-world task.,10.1080/00140130701276640,NA,SAGAT,28,18,0.228931984,0.066666667,O'Brien2007,112,NA
+Riley,2004,Situation awareness and attention allocation measures for quantifying telepresence experiences in teleoperation,10.1002/hfm.10050,NA,SAGAT,24,24,0.243872194,0.047619048,Riley2004,113,NA
+Riley,2004,Situation awareness and attention allocation measures for quantifying telepresence experiences in teleoperation,10.1002/hfm.10050,NA,SAGAT,24,24,0.179466442,0.047619048,Riley2004,114,"Added. Inferred generic null, added. L1, L2, and L3 are listed as response measures (p. 7-8 pdf)"
+Riley,2004,Situation awareness and attention allocation measures for quantifying telepresence experiences in teleoperation,10.1002/hfm.10050,NA,SAGAT,24,24,0.22709988,0.047619048,Riley2004,115,Added
+Riley,2004,Situation awareness and attention allocation measures for quantifying telepresence experiences in teleoperation,10.1002/hfm.10050,NA,SAGAT,24,24,0.235518515,0.047619048,Riley2004,116,Added
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SART,20,20,-0.120581028,0.058823529,Salmon2009,117,Overall stat; Table 2
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SART,20,20,-0.120581028,0.058823529,Salmon2009,118,Table 2
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SART,20,20,0.120581028,0.058823529,Salmon2009,119,Table 2. High SART demand is bad SA
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SART,20,20,-0.120581028,0.058823529,Salmon2009,120,Table 2
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SAGAT,20,20,0.306226146,0.058823529,Salmon2009,121,Table 2
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SAGAT,20,20,0.405916575,0.058823529,Salmon2009,122,Table 2
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SAGAT,20,20,0.79636554,0.058823529,Salmon2009,123,"Overall stat; Table 2, Spearman's Rho"
+Salmon,2009,Measuring Situation Awareness in complex systems: Comparison of measures study,10.1016/j.ergon.2008.10.010,NA,SAGAT,20,20,0.849867036,0.058823529,Salmon2009,124,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.100335348,0.027027027,Saus2006,125,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.110446916,0.027027027,Saus2006,126,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.140925576,0.027027027,Saus2006,127,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.161386696,0.027027027,Saus2006,128,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.161386696,0.027027027,Saus2006,129,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.171666664,0.027027027,Saus2006,130,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.192337169,0.027027027,Saus2006,131,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.213171347,0.027027027,Saus2006,132,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.234189467,0.027027027,Saus2006,133,Overall stat; Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.234189467,0.027027027,Saus2006,134,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.266108407,0.027027027,Saus2006,135,Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.276863823,0.027027027,Saus2006,136,Overall stat; Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.287682072,0.027027027,Saus2006,137,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.320545409,0.027027027,Saus2006,138,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.342828254,0.027027027,Saus2006,139,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.342828254,0.027027027,Saus2006,140,Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.354092529,0.027027027,Saus2006,141,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.354092529,0.027027027,Saus2006,142,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.354092529,0.027027027,Saus2006,143,Overall stat; Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.376885901,0.027027027,Saus2006,144,Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.3884231,0.027027027,Saus2006,145,Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.40005965,0.027027027,Saus2006,146,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.411800034,0.027027027,Saus2006,147,Overall stat; Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.484700279,0.027027027,Saus2006,148,Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.497311288,0.027027027,Saus2006,149,Overall stat; Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.497311288,0.027027027,Saus2006,150,Overall stat; Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SABARS,40,40,0.497311288,0.027027027,Saus2006,151,Table 3
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.522984278,0.027027027,Saus2006,152,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.549306144,0.027027027,Saus2006,153,"Overall stat; Table 3, observer did not rate non-SA General trait items"
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.576339755,0.027027027,Saus2006,154,Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.662462707,0.027027027,Saus2006,155,Overall stat; Table 2
+Saus,2006,The Effect of Brief Situational Awareness Training in a Police Shooting Simulator: An Experimental Study,10.1207/s15327876mp1803s_2,NA,SARS,40,40,0.693147181,0.027027027,Saus2006,156,Table 2
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SABARS,14,14,-0.229970121,0.090909091,Strater2001,157,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,-0.21735959,0.090909091,Strater2001,158,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,-0.213171347,0.090909091,Strater2001,159,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,-0.146029224,0.090909091,Strater2001,160,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,-0.13990573,0.090909091,Strater2001,161,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,-0.132774772,0.090909091,Strater2001,162,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,-0.125657214,0.090909091,Strater2001,163,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SABARS,14,14,-0.0852056,0.090909091,Strater2001,164,Table H-35. High big pic focus (good SA) 
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.017001638,0.090909091,Strater2001,165,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SABARS,14,14,0.097305953,0.090909091,Strater2001,166,"Table H-35, Pearson?"
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.111459277,0.090909091,Strater2001,167,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.156259498,0.090909091,Strater2001,168,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SABARS,14,14,0.162413138,0.090909091,Strater2001,169,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.167550482,0.090909091,Strater2001,170,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.168578995,0.090909091,Strater2001,171,Table H-35. All coded as +1. High value for SAGAT (accuracy)  is good SA 
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.207946366,0.090909091,Strater2001,172,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.213171347,0.090909091,Strater2001,173,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,Other,14,14,0.266108407,0.090909091,Strater2001,174,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.267181208,0.090909091,Strater2001,175,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.308421065,0.090909091,Strater2001,176,Table H-35
+Strater,2001,Measures of platoon leader situation awareness in virtual decision-making exercises,10.1037/e500592012-001,http://www.dtic.mil/dtic/tr/fulltext/u2/a390238.pdf,SAGAT,14,14,0.387264981,0.090909091,Strater2001,177,Table H-35
+Sulistyawati,2011,Prediction in Situation Awareness: Confidence Bias and Underlying Cognitive Abilities,10.1080/10508414.2011.556492,NA,SAGAT,16,16,0.587367992,0.076923077,Sulistyawati,178,"*Use same Sample for both papers, same dataset"
+Sulistyawati,2011,Prediction in Situation Awareness: Confidence Bias and Underlying Cognitive Abilities,10.1080/10508414.2011.556492,NA,SAGAT,16,16,0.411800034,0.076923077,Sulistyawati,179,"High SA is good SA , high num times shot is bad perf (-1  coding)"
+Sulistyawati,2011,Prediction in Situation Awareness: Confidence Bias and Underlying Cognitive Abilities,10.1080/10508414.2011.556492,NA,SAGAT,16,16,0.200650085,0.076923077,Sulistyawati,180,NA
+Sulistyawati,2011,Prediction in Situation Awareness: Confidence Bias and Underlying Cognitive Abilities,10.1080/10508414.2011.556492,NA,Other,16,16,0.733168534,0.076923077,Sulistyawati,181,"Multiple linear regression, zero order correlations (Table 5) coded as Pearson. Partial correlation control for flight hours, using unadjusted zero-order correlations. 
+High overconfidence is bad SA, high num times shot is bad perf (+1 coding)"
+Sulistyawati and Chui,2009,Confidence Bias in Situation Awareness,10.1007/978-3-642-02728-4_34,NA,Other,16,16,0.741416144,0.076923077,Sulistyawati,182,"Second experiment, individual performance only. Note one-tailed p-value"
+Venturino,1990,Performance-based measures of merit for tactical situation awareness,NA,NA,Direct-SR,16,16,0.618381314,0.076923077,Venturino1990,183,Overall stat; 
+Venturino,1990,Performance-based measures of merit for tactical situation awareness,NA,NA,Direct-SR,16,16,0.693147181,0.076923077,Venturino1990,184,Overall stat; 
+Venturino,1990,Performance-based measures of merit for tactical situation awareness,NA,NA,Other,16,16,0.829114038,0.076923077,Venturino1990,185,Overall stat; 
+Venturino,1990,Performance-based measures of merit for tactical situation awareness,NA,NA,Other,16,16,1.256152812,0.076923077,Venturino1990,186,Overall stat; 
+Yang et al. ,2011,Operators’ signal-detection performance in video display unit monitoring tasks of the main control room,10.1016/j.ssci.2011.04.010,NA,SART,13,13,-0.030009005,0.1,Yang et al. 2011,187,Added measure
+Yang et al. ,2011,Operators’ signal-detection performance in video display unit monitoring tasks of the main control room,10.1016/j.ssci.2011.04.010,NA,SART,13,13,-0.140925576,0.1,Yang et al. 2011,188,NA
+Yang et al. ,2011,Operators’ signal-detection performance in video display unit monitoring tasks of the main control room,10.1016/j.ssci.2011.04.010,NA,SART,13,13,-0.171666664,0.1,Yang et al. 2011,189,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.435611223,0.047619048,Entin2000,190,"Detailed measure was ""modeled on the SAGAT"""
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.234189467,0.047619048,Entin2000,191,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,-0.01119668,0.047619048,Entin2000,192,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.359725916,0.047619048,Entin2000,193,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.117557616,0.047619048,Entin2000,194,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,-0.01119668,0.047619048,Entin2000,195,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.1815121,0.047619048,Entin2000,196,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.618381314,0.047619048,Entin2000,197,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.632833187,0.047619048,Entin2000,198,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.13073985,0.047619048,Entin2000,199,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.236012327,0.047619048,Entin2000,200,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.237752582,0.047619048,Entin2000,201,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.40005965,0.047619048,Entin2000,202,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.632833187,0.047619048,Entin2000,203,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,-0.023078832,0.047619048,Entin2000,204,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,0.243872194,0.047619048,Entin2000,205,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,SAGAT,24,24,0.376885901,0.047619048,Entin2000,206,NA
+Entin,2000,AN EXPLORATORY INVESTIGATION OF RELATIONSHIPS BETWEEN SITUATION AWARENESS AND PERFORMANCE IN AN ATTACK HELICOPTER DOMAIN ,10.1518/155534308X284345,NA,General Know.,24,24,-0.192337169,0.047619048,Entin2000,207,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,34,34,0.497311288,0.032258065,Gugerty1997Exp1,208,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,34,34,0.662462707,0.032258065,Gugerty1997Exp1,209,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,34,34,0.847955755,0.032258065,Gugerty1997Exp1,210,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Other,34,34,0.741416144,0.032258065,Gugerty1997Exp1,211,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Other,34,34,1.071431684,0.032258065,Gugerty1997Exp1,212,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,79,79,0.320545409,0.013157895,Gugerty1997Exp2,213,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,79,79,0.287682072,0.013157895,Gugerty1997Exp2,214,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,79,79,0.447692024,0.013157895,Gugerty1997Exp2,215,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Other,79,79,0.549306144,0.013157895,Gugerty1997Exp2,216,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Other,79,79,0.677666068,0.013157895,Gugerty1997Exp2,217,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,77,77,0.376885901,0.013513514,Gugerty1997Exp3,218,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,77,77,0.287682072,0.013513514,Gugerty1997Exp3,219,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Explicit Recall,77,77,0.411800034,0.013513514,Gugerty1997Exp3,220,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Other,77,77,0.472230804,0.013513514,Gugerty1997Exp3,221,NA
+Gugerty,1997,Situation Awareness During Driving: Explicit and Implicit Knowledge in Dynamic Spatial Memory,10.1037/1076-898X.3.1.42,NA,Other,77,77,0.847955755,0.013513514,Gugerty1997Exp3,222,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.202732554,0.010416667,Gutzwiller2013,223,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.775298706,0.010416667,Gutzwiller2013,224,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.234189467,0.010416667,Gutzwiller2013,225,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.244774113,0.010416667,Gutzwiller2013,226,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0,0.010416667,Gutzwiller2013,227,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.522984278,0.010416667,Gutzwiller2013,228,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.331647109,0.010416667,Gutzwiller2013,229,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.276863823,0.010416667,Gutzwiller2013,230,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.13073985,0.010416667,Gutzwiller2013,231,NA
+Gutzwiller,2013,The Role of Working Memory in Levels of Situation Awareness,10.1177/1555343412451749,NA,Other,99,99,0.693147181,0.010416667,Gutzwiller2013,232,NA
+Stanners,2005,An Empirical Study of the Relationship between Situation Awareness and Decision Making,NA,https://apps.dtic.mil/docs/citations/ADA434593,SAGAT,24,24,0.510070337,0.047619048,Stanners2005,233,"SAGAT like measure, DQT is modified from SAGAT"
+Stanners,2005,An Empirical Study of the Relationship between Situation Awareness and Decision Making,NA,https://apps.dtic.mil/docs/citations/ADA434593,SAGAT,24,24,0.459896681,0.047619048,Stanners2005,234,NA
+McDermott,2013,METHODOLOGIES FOR ASSESSING SITUATION AWARENESS OF UNMANNED SYSTEM OPERATORS,NA,https://apps.dtic.mil/docs/citations/ADA434593,Other,39,39,0.237404274,0.027777778,McDermott2013,235,NA
+McDermott,2013,METHODOLOGIES FOR ASSESSING SITUATION AWARENESS OF UNMANNED SYSTEM OPERATORS,NA,https://apps.dtic.mil/docs/citations/ADA434593,Other,39,39,0.102967191,0.027777778,McDermott2013,236,NA
+McDermott,2013,METHODOLOGIES FOR ASSESSING SITUATION AWARENESS OF UNMANNED SYSTEM OPERATORS,NA,https://apps.dtic.mil/docs/citations/ADA434593,Other,39,39,0.097987998,0.027777778,McDermott2013,237,NA
+McDermott,2013,METHODOLOGIES FOR ASSESSING SITUATION AWARENESS OF UNMANNED SYSTEM OPERATORS,NA,https://apps.dtic.mil/docs/citations/ADA434593,Other,39,39,0.430812377,0.027777778,McDermott2013,238,NA
+McDermott,2013,METHODOLOGIES FOR ASSESSING SITUATION AWARENESS OF UNMANNED SYSTEM OPERATORS,NA,https://apps.dtic.mil/docs/citations/ADA434593,Other,39,39,0.450122871,0.027777778,McDermott2013,239,NA
+McDermott,2013,METHODOLOGIES FOR ASSESSING SITUATION AWARENESS OF UNMANNED SYSTEM OPERATORS,NA,https://apps.dtic.mil/docs/citations/ADA434593,Other,39,39,0.364304607,0.027777778,McDermott2013,240,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.435611223,0.019230769,Loft2013,241,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.411800034,0.019230769,Loft2013,242,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.120581028,0.019230769,Loft2013,243,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.020002667,0.019230769,Loft2013,244,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.080171325,0.019230769,Loft2013,245,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.010000333,0.019230769,Loft2013,246,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SART,55,55,-0.171666664,0.019230769,Loft2013,247,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.010000333,0.019230769,Loft2013,248,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.213171347,0.019230769,Loft2013,249,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.090244188,0.019230769,Loft2013,250,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.030009005,0.019230769,Loft2013,251,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.120581028,0.019230769,Loft2013,252,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.040021354,0.019230769,Loft2013,253,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SART,55,55,-0.010000333,0.019230769,Loft2013,254,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.030009005,0.019230769,Loft2013,255,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.060072156,0.019230769,Loft2013,256,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.010000333,0.019230769,Loft2013,257,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,0.411800034,0.019230769,Loft2013,258,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.090244188,0.019230769,Loft2013,259,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SPAM,55,55,-0.050041729,0.019230769,Loft2013,260,NA
+Loft,2013,Using the situation present assessment method to measure situation awareness in simulated submarine track management,10.1504/IJHFE.2013.055975,NA,SART,55,55,0.120581028,0.019230769,Loft2013,261,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.233315591,0.055555556,Pierce2008,262,"7 SA measures (4 SART [Supply, Demand, Understanding, and Combined], 1 SAGAT, and 2 SPAM [Accuracy and Latency]) x 7 performance measures "
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.123144159,0.055555556,Pierce2008,263,"Moreover,  only  SPAM  latency  predicted  collisions…."
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.193543695,0.055555556,Pierce2008,264,Only  SPAM  latencies  significantly predicted  the  number  of  correct  exits 
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.244774113,0.055555556,Pierce2008,265,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.192337169,0.055555556,Pierce2008,266,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.227583866,0.055555556,Pierce2008,267,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.407016082,0.055555556,Pierce2008,268,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.263094049,0.055555556,Pierce2008,269,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.022615828,0.055555556,Pierce2008,270,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.160955782,0.055555556,Pierce2008,271,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.219450072,0.055555556,Pierce2008,272,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.368627899,0.055555556,Pierce2008,273,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.293151115,0.055555556,Pierce2008,274,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.43528418,0.055555556,Pierce2008,275,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.438391849,0.055555556,Pierce2008,276,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.214490679,0.055555556,Pierce2008,277,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.508840879,0.055555556,Pierce2008,278,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.481211825,0.055555556,Pierce2008,279,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.467145308,0.055555556,Pierce2008,280,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.123144159,0.055555556,Pierce2008,281,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,-0.022615828,0.055555556,Pierce2008,282,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.53592605,0.055555556,Pierce2008,283,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.067183189,0.055555556,Pierce2008,284,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.022615828,0.055555556,Pierce2008,285,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.152185828,0.055555556,Pierce2008,286,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.361358597,0.055555556,Pierce2008,287,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.135164421,0.055555556,Pierce2008,288,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.706180685,0.055555556,Pierce2008,289,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.171282014,0.055555556,Pierce2008,290,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.016844009,0.055555556,Pierce2008,291,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.189811092,0.055555556,Pierce2008,292,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.209423225,0.055555556,Pierce2008,293,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.203539697,0.055555556,Pierce2008,294,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.27464303,0.055555556,Pierce2008,295,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.467145308,0.055555556,Pierce2008,296,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.331691322,0.055555556,Pierce2008,297,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.217913277,0.055555556,Pierce2008,298,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.129246659,0.055555556,Pierce2008,299,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.173446912,0.055555556,Pierce2008,300,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.06192457,0.055555556,Pierce2008,301,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,-0.185068046,0.055555556,Pierce2008,302,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.166460765,0.055555556,Pierce2008,303,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.244974852,0.055555556,Pierce2008,304,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.016844009,0.055555556,Pierce2008,305,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,-0.203539697,0.055555556,Pierce2008,306,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SART,21,21,0.157386078,0.055555556,Pierce2008,307,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SAGAT,21,21,0.432138732,0.055555556,Pierce2008,308,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.117798302,0.055555556,Pierce2008,309,NA
+Pierce,2008,COMPARING SITUATION AWARENESS MEASUREMENT TECHNIQUES IN A LOW FIDELITY AIR TRAFFIC CONTROL SIMULATION,http://icas.org/ICAS_ARCHIVE/ICAS2008/PAPERS/579.PDF,NA,SPAM,21,21,0.562597262,0.055555556,Pierce2008,310,NA
+Selcon,1990,Evaluation of the Situational Awareness Rating Technique (SART) As a Tool for Aircrew Systems Design,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a223939.pdf,SART,12,12,0.168047425,0.111111111,Selcon1990,311,Experiment 3
+Selcon,1990,Evaluation of the Situational Awareness Rating Technique (SART) As a Tool for Aircrew Systems Design,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a223939.pdf,SART,12,12,-0.239282002,0.111111111,Selcon1990,312,NA
+Selcon,1990,Evaluation of the Situational Awareness Rating Technique (SART) As a Tool for Aircrew Systems Design,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a223939.pdf,SART,12,12,0.40005965,0.111111111,Selcon1990,313,NA
+Cooper,2010,"Managing the deteriorating patient in a simulated environment: Nursing students knowledge, skill and situation awareness.",10.1111/j.1365-2702.2009.03164.x,NA,SAGAT,51,51,0.203774438,0.020833333,Cooper 2010,314,"Reported as one-tailed, p = 0.079 "
+Strybel,2008,Assessing the Situation Awareness of Pilots Engaged in Self Spacing,https://doi.org/10.1177/154193120805200104,NA,SPAM,13,13,0.758173745,0.1,Strybel 2008,315,NA
+Strybel,2008,Assessing the Situation Awareness of Pilots Engaged in Self Spacing,https://doi.org/10.1177/154193120805200104,NA,SPAM,13,13,0.68382435,0.1,Strybel 2008,316,NA
+Jannat,2018,The role of driver’s situational awareness on right-hook bicycle-motor vehicle crashes,https://doi.org/10.1016/j.ssci.2018.07.025,NA,SAGAT,51,51,0.309519604,0.020833333,Jannat2018,317,"Point biserial correlation coding as 3 (for Spearman). Change sign to - 1 because: performance = 0 is crash, performance = 0 is crash avoidance"
+Jannat,2018,The role of driver’s situational awareness on right-hook bicycle-motor vehicle crashes,https://doi.org/10.1016/j.ssci.2018.07.028,NA,SAGAT,51,51,0.140925576,0.020833333,Jannat2018,318,NA
+Kraemer,2015,Real time validation of online situation awareness questionnaires in simulated approach air traffic control,https://doi.org/10.1016/j.promfg.2015.07.864,NA,SAGAT,57,57,0.185660697,0.018518519,Kraemer2015,319,"High ATC performance is bad: ""… total duration of all conflicts and speed/height violations occurring throughout a scenario in relation to total scenario time."" 
+
+Assuming Pearson correlation, not stated in the paper
+
+In the paper, offline probe is used. Coded as SAGAT and corresponds to SA accuracy."
+Kraemer,2015,Real time validation of online situation awareness questionnaires in simulated approach air traffic control,https://doi.org/10.1016/j.promfg.2015.07.865,NA,SAGAT,57,57,0.251386481,0.018518519,Kraemer2015,320,Explicit generic n.s.
+Kraemer,2015,Real time validation of online situation awareness questionnaires in simulated approach air traffic control,https://doi.org/10.1016/j.promfg.2015.07.866,NA,SAGAT,57,57,0.116206833,0.018518519,Kraemer2015,321,NA
+Kraemer,2015,Real time validation of online situation awareness questionnaires in simulated approach air traffic control,https://doi.org/10.1016/j.promfg.2015.07.867,NA,SPAM,57,57,0.42364893,0.018518519,Kraemer2015,322,"In the paper, online probe is used. Coded as SPAM and corresponds to SA mean response time."
+Kraemer,2015,Real time validation of online situation awareness questionnaires in simulated approach air traffic control,https://doi.org/10.1016/j.promfg.2015.07.868,NA,SPAM,57,57,0.342828254,0.018518519,Kraemer2015,323,NA
+Kraemer,2015,Real time validation of online situation awareness questionnaires in simulated approach air traffic control,https://doi.org/10.1016/j.promfg.2015.07.869,NA,SPAM,57,57,0.080171325,0.018518519,Kraemer2015,324,NA
+Loft,2018,Using Situation Awareness and Workload to Predict Performance in Submarine Track Management: A Multilevel Approach,https://doi.org/10.1177/0018720818784803,NA,SAGAT,59,59,0.320545409,0.017857143,Loft2018,325,"Assuming Pearson correlations in Table 2. Correlations are for entire scenario between-participants, appears to be using averages. High accuracy is good perf
+
+*Uses multilevel modeling for full analysis"
+Loft,2018,Using Situation Awareness and Workload to Predict Performance in Submarine Track Management: A Multilevel Approach,https://doi.org/10.1177/0018720818784803,NA,SAGAT,59,59,0.320545409,0.017857143,Loft2018,326,Low RT is good perf code as -1
+Loft,2018,Using Situation Awareness and Workload to Predict Performance in Submarine Track Management: A Multilevel Approach,https://doi.org/10.1177/0018720818784803,NA,SAGAT,59,59,0.510070337,0.017857143,Loft2018,327,High hit-FA rate is good perf
+Loft,2018,Using Situation Awareness and Workload to Predict Performance in Submarine Track Management: A Multilevel Approach,https://doi.org/10.1177/0018720818784803,NA,SAGAT,59,59,0.090244188,0.017857143,Loft2018,328,Low RT is good perf code as -1
+Loft,2018,Using Situation Awareness and Workload to Predict Performance in Submarine Track Management: A Multilevel Approach,https://doi.org/10.1177/0018720818784803,NA,SAGAT,59,59,0.298566264,0.017857143,Loft2018,329,High hit rate is good perf
+Loft,2018,Using Situation Awareness and Workload to Predict Performance in Submarine Track Management: A Multilevel Approach,https://doi.org/10.1177/0018720818784803,NA,SAGAT,59,59,0.255412812,0.017857143,Loft2018,330,Low RT is good perf code as -1
+Paletta,2017,Towards Real-time Probabilistic Evaluation of Situation Awareness from Human Gaze in Human-Robot Interaction,http://dx.doi.org/10.1145/3029798.3038322,NA,SAGAT,12,12,0.070114671,0.111111111,Paletta2017,331,Table 1 correlation matrix using averages for each phase (SAGAT and gripper hit rate)
+Paletta,2017,Towards Real-time Probabilistic Evaluation of Situation Awareness from Human Gaze in Human-Robot Interaction,http://dx.doi.org/10.1145/3029798.3038322,NA,SAGAT,12,12,0.198569333,0.111111111,Paletta2017,332,NA
+Paletta,2017,Towards Real-time Probabilistic Evaluation of Situation Awareness from Human Gaze in Human-Robot Interaction,http://dx.doi.org/10.1145/3029798.3038323,NA,SAGAT,12,12,0.705742305,0.111111111,Paletta2017,333,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.012,NA,SAGAT,13,13,-0.110446916,0.1,Puuska2018,334,Iteration 2. Table 6. Non-interactive interface
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.013,NA,SAGAT,13,13,0.010000333,0.1,Puuska2018,335,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.014,NA,SAGAT,13,13,-0.198569333,0.1,Puuska2018,336,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.015,NA,SAGAT,13,13,0.10943478,0.1,Puuska2018,337,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.016,NA,SART,13,13,0.468516629,0.1,Puuska2018,338,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.017,NA,SART,13,13,-0.316126175,0.1,Puuska2018,339,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.018,NA,SART,13,13,0.680739596,0.1,Puuska2018,340,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.019,NA,SART,13,13,0.540015897,0.1,Puuska2018,341,"SART high demand is bad SA, code as -1"
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.020,NA,SAGAT,13,13,0.832843729,0.1,Puuska2018,342,Iteration 2. Table 6. Interactive interface
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.021,NA,SAGAT,13,13,0.670030583,0.1,Puuska2018,343,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.022,NA,SAGAT,13,13,0.381489138,0.1,Puuska2018,344,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.023,NA,SAGAT,13,13,-0.033011987,0.1,Puuska2018,345,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.024,NA,SART,13,13,0.225758808,0.1,Puuska2018,346,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.025,NA,SART,13,13,0.082184534,0.1,Puuska2018,347,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.026,NA,SART,13,13,-0.030009005,0.1,Puuska2018,348,NA
+Puuska,2018,Nationwide critical infrastructure monitoring using a common operating picture framework,https://doi.org/10.1016/j.ijcip.2017.11.027,NA,SART,13,13,0.292027659,0.1,Puuska2018,349,"SART high demand is bad SA, code as -1"
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.065091774,0.005952381,Bowden2013,350,"Same data as Loft et al. 2015, should drop Loft2015 effects (hierarchical regressions) and include correlations from this paper instead. SPAM condition, Table 2 p. 17 "
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.153187103,0.005952381,Bowden2013,351,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,-0.053049709,0.005952381,Bowden2013,352,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.03401311,0.005952381,Bowden2013,353,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.105388448,0.005952381,Bowden2013,354,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.20690272,0.005952381,Bowden2013,355,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.177851799,0.005952381,Bowden2013,356,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.10943478,0.005952381,Bowden2013,357,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.0852056,0.005952381,Bowden2013,358,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.233133868,0.005952381,Bowden2013,359,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.310618868,0.005952381,Bowden2013,360,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SPAM,171,171,0.181982689,0.005952381,Bowden2013,361,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,0.006000072,0.005952381,Bowden2013,362,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,0.064087597,0.005952381,Bowden2013,363,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,-0.045030412,0.005952381,Bowden2013,364,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,-0.026005861,0.005952381,Bowden2013,365,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.160360592,0.005952381,Bowden2013,366,"SAGAT condition, Table 3 p. 18"
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.284429817,0.005952381,Bowden2013,367,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.477202013,0.005952381,Bowden2013,368,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.263964597,0.005952381,Bowden2013,369,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,-0.021003088,0.005952381,Bowden2013,370,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.107411176,0.005952381,Bowden2013,371,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.055055559,0.005952381,Bowden2013,372,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SAGAT,171,171,0.121595763,0.005952381,Bowden2013,373,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,0.077152721,0.005952381,Bowden2013,374,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,-0.033011987,0.005952381,Bowden2013,375,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,0.075141102,0.005952381,Bowden2013,376,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,0.102355961,0.005952381,Bowden2013,377,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,-0.027006564,0.005952381,Bowden2013,378,"Control condition, Table 4 p. 19"
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,-0.004000021,0.005952381,Bowden2013,379,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,-0.004000021,0.005952381,Bowden2013,380,""""""
+Bowden,2013,Situation Awareness Measurement Techniques for Simulated Submarine Track Management,NA,https://apps.dtic.mil/docs/citations/ADA580215,SART,171,171,0.101345551,0.005952381,Bowden2013,381,""""".  Note coding predictive validity (3.2 on p. 20 or using Loft 2015) is problematic regression coefficients can be in the ""wrong"" direction (Good SA ~ Bad perf or vice-versa) yet will contribute to incremental validity "
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.775298706,0.03125,Pleban2009,382,"Table 5. Sample size in stats varies, no details. We'll just use N = 35"
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.435611223,0.03125,Pleban2009,383,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.13073985,0.03125,Pleban2009,384,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.510070337,0.03125,Pleban2009,385,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.276863823,0.03125,Pleban2009,386,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.070114671,0.03125,Pleban2009,387,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.887183863,0.03125,Pleban2009,388,Table 6
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.662462707,0.03125,Pleban2009,389,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.758173745,0.03125,Pleban2009,390,""""""
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.867300528,0.03125,Pleban2009,391,"All possible correlations appear to have been analyzed, Table 6 shows some patterns and the paper states ""Workload ratings were not correlated to either SA or goal achievement"" (p. 14)."
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a494799.pdf,MARS,35,35,0.549306144,0.03125,Pleban2009,392,"However, no correlations are reported for SA~goal achievement. Inferred generic n.s."
+Pleban,2009,Training Situation Awareness and Adaptive Decision-Making Skills Using a Desktop Computer Simulation,NA,https://apps.dtic.mil/docs/citations/ADA522537,MARS,35,35,0.59014516,0.03125,Pleban2009,393,"LM: ""Goal Achievement"" is part of the MARS they analyzed separately (see p. 8). So it's an SA measure, not a performance measure. JB: Agreed"
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522538,Explicit Recall,16,16,-0.304236592,0.076923077,Sollenberger1995,394,"Conference paper (Proceedings of Experimental Analysis and Measurement of SA, 1995), same sample and exp as below tech report but diffrerent analyses.
+No df or stat sig reported. Chance the results could be overfit, but probably not given Sollenberger 1995b does not report overfit results w/the same data"
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522539,Explicit Recall,16,16,0.165091379,0.076923077,Sollenberger1995,395,"Generic n.s. had clear pattern of omission, but was not stated"
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.357343263,0.076923077,Sollenberger1995,396,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,-0.029119737,0.076923077,Sollenberger1995,397,"High recall is good SA and low error is good perf, reverse code"
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.365443754,0.076923077,Sollenberger1995,398,"***Remember to MERGE Sollengerberger1995a and 1995b into a single ""paper"" using SampleID at the data cleaning stage*****"
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.354092529,0.076923077,Sollenberger1995,399,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.320545409,0.076923077,Sollenberger1995,400,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.365443754,0.076923077,Sollenberger1995,401,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.257219121,0.076923077,Sollenberger1995,402,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.255412812,0.076923077,Sollenberger1995,403,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.365443754,0.076923077,Sollenberger1995,404,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,-0.216831235,0.076923077,Sollenberger1995,405,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.191853147,0.076923077,Sollenberger1995,406,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.213171347,0.076923077,Sollenberger1995,407,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,-0.255412812,0.076923077,Sollenberger1995,408,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.257219121,0.076923077,Sollenberger1995,409,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.320545409,0.076923077,Sollenberger1995,410,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.118204137,0.076923077,Sollenberger1995,411,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.046980709,0.076923077,Sollenberger1995,412,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.486889006,0.076923077,Sollenberger1995,413,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.298566264,0.076923077,Sollenberger1995,414,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.226782945,0.076923077,Sollenberger1995,415,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.090244188,0.076923077,Sollenberger1995,416,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.18494866,0.076923077,Sollenberger1995,417,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.322166494,0.076923077,Sollenberger1995,418,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,-0.122535853,0.076923077,Sollenberger1995,419,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,-0.02956184,0.076923077,Sollenberger1995,420,NA
+Sollenberger-a,1995,A Simulation Study of Air Traffic Controller Situational Awareness,NA,https://apps.dtic.mil/docs/citations/ADA522540,Explicit Recall,16,16,0.298566264,0.076923077,Sollenberger1995,421,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.226782945,0.076923077,Sollenberger1995,422,Objective performance (Table 2). Number of conflicts. SGITR measure of SA is the percentage of points obtained in the info recall phase.  Could be freeze probe or explicit recall. Going with the latter because it's a modified SAGAT 
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.390009166,0.076923077,Sollenberger1995,423,Number of handoff misses
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.015693766,0.076923077,Sollenberger1995,424,Number of altitude assignments
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.266781141,0.076923077,Sollenberger1995,425,Number of heading assignments
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.477477354,0.076923077,Sollenberger1995,426,Number of speed assignment
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.169506095,0.076923077,Sollenberger1995,427,Number of ground-to-air transmission
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.13073985,0.076923077,Sollenberger1995,428,Cumulative average of system activity or aircraft density
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,-0.278375546,0.076923077,Sollenberger1995,429,Number of flight completed
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.090244188,0.076923077,Sollenberger1995,430,Subjective performance: Post scenario questionnaire controller's performance rating
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.13073985,0.076923077,Sollenberger1995,431,"Subjective performance: Expert observer's performance rating LM: why are these two negative signs? JB: Yeah, should be positive. Fixed"
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,-0.188534236,0.076923077,Sollenberger1995,432,SGTSL = Percentage of points obtained in spatial location phase
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,-0.09740565,0.076923077,Sollenberger1995,433,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.424701763,0.076923077,Sollenberger1995,434,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.467509119,0.076923077,Sollenberger1995,435,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.262163329,0.076923077,Sollenberger1995,436,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.512250363,0.076923077,Sollenberger1995,437,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.477158006,0.076923077,Sollenberger1995,438,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.527710232,0.076923077,Sollenberger1995,439,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.244774113,0.076923077,Sollenberger1995,440,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Explicit Recall,16,16,0.213171347,0.076923077,Sollenberger1995,441,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.226782945,0.076923077,Sollenberger1995,442,PSQSAW = Post scenario subjective controller's overall SA rating
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.376076516,0.076923077,Sollenberger1995,443,"I didn't include PSQCAL, PSQPAL, PSQPSV- they are measures of awareness for Current Aircraft Location (CAL), Projected Aircraft Location (PAL) and Potential Safety Violations (PSV). It's not 100% clear that they are ""SA"""
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.226782945,0.076923077,Sollenberger1995,444,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.1028704,0.076923077,Sollenberger1995,445,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.202732554,0.076923077,Sollenberger1995,446,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.357343263,0.076923077,Sollenberger1995,447,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,-0.026470908,0.076923077,Sollenberger1995,448,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.269903957,0.076923077,Sollenberger1995,449,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,1.071431684,0.076923077,Sollenberger1995,450,NA
+Sollenberger-b,1995,The Effects of Structured Arrival and Departure Procedures on TRACON Air Traffic Controller Memory and Situational Awareness,NA,https://apps.dtic.mil/dtic/tr/fulltext/u2/a303800.pdf,Direct-SR,16,16,0.604155603,0.076923077,Sollenberger1995,451,NA
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,SAGAT,16,14,0.244774113,0.090909091,Valentine2007,452,Table 7
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,SAGAT,16,14,0.354092529,0.090909091,Valentine2007,453,Table 7
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,SAGAT,16,14,0.497311288,0.090909091,Valentine2007,454,Table 7
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,SAGAT,16,14,0.320545409,0.090909091,Valentine2007,455,Table 10
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,SAGAT,16,14,0.950479381,0.090909091,Valentine2007,456,Table 10
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,SAGAT,16,14,0.972955075,0.090909091,Valentine2007,457,Table 10
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,Other,16,15,-0.060072156,0.083333333,Valentine2007,458,Table 11
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,Other,16,15,-0.040021354,0.083333333,Valentine2007,459,Table 11
+Valentine,2007,Resource Utilisation and Situational Awareness in a Computer Simulated Decision Task: A Pilot Study,NA,https://apps.dtic.mil/docs/citations/ADA473106,Other,16,15,0.070114671,0.083333333,Valentine2007,460,Table 11. Does not include the Global SAGAT ~ Attention to scenario (p. 35-26). Attention to scenario is not performance. 
+Adams-White,2018,Measuring decision accuracy and confidence of mock air defence operators,https://doi.org/10.1016/j.jarmac.2018.01.005,NA,SART,60,60,-0.086226599,0.01754386,AdamsWhite2018,461,"""However, no significant relationships were found between SA, WL, and W-S C-A, or between SA and accuracy or WL and accuracy in decisions; all comparisons, p > .05."" Perf (accuracy) scored by SMEs"
+Albina,2019,Assessing the impact of a GIS for improving novice crisis decision-making,http://doi.org/10.1007/s13398-014-0173-7.2,NA,SART,28,28,0.282250289,0.04,Albina2019,462,"""A two-tailed bi-variate Pearson Correlation (using an alpha level of 0.05) for the dependent variables for all hypotheses..."" 
+Not clear if correlations were run for just the SART composite or composite + all SART subscales. Probably just the composite. 
+Correlations appear to be across both conditions combined (EMGIS and non-EMGIS)
+SART comp ~ decision time"
+Albina,2019,Assessing the impact of a GIS for improving novice crisis decision-making,http://doi.org/10.1007/s13398-014-0173-7.2,NA,SART,28,28,0.036416183,0.04,Albina2019,463,SART comp ~ decision acc
+Barros,2011,Enhancing robot teleoperator situation awareness and performance using vibro-tactile and graphical feedback,10.1109/3DUI.2011.5759216,NA,General Know.,27,27,0.435611223,0.041666667,Barros2011,464,"Figure 11a: Map Goodness  (local SA) ~ Spheres Found
+"
+Barros,2011,Enhancing robot teleoperator situation awareness and performance using vibro-tactile and graphical feedback,10.1109/3DUI.2011.5759216,NA,General Know.,27,27,0.472230804,0.041666667,Barros2011,465,"Figure 11b: Map Goodness (local SA) ~ Collisions (authors code as local SA, we code as perf because it is an outcome measure)"
+Barros,2011,Enhancing robot teleoperator situation awareness and performance using vibro-tactile and graphical feedback,10.1109/3DUI.2011.5759216,NA,General Know.,27,27,-0.206855013,0.041666667,Barros2011,466,"A comparison of task time among CPF interface groups led to no SSD, that is, these interfaces have little to no impact on task time.  "
+Clark,2017,Situational Awareness and Time to Takeover: Exploring an Alternative Method to Measure Engagement with High-Level Automation,https://doi.org/10.1177/1541931213601848,NA,SAGAT,50,32,0.331647109,0.034482759,Clark2017,467,"Analysis dropped participants that did not click on the red button in time (unsuccessful takeover), so the correlation has 32 participants even though it is N = 50. One-tailed test"
+Cooper,2011,Managing deteriorating patients: registered nurses' performance in a simulated setting,10/fzchfz,NA,General Know.,35,35,-0.153362739,0.03125,Cooper2011,468,"""OSCE  and  situation awareness  scores  were  investigated  using  applicable 
+statistics  e.g.  Pearson  product-moment  correlation 
+coefficients  for  scale  variables""
+
+Cardiac scenario"
+Cooper,2011,Managing deteriorating patients: registered nurses' performance in a simulated setting,10/fzchfz,NA,General Know.,35,35,-0.136480086,0.03125,Cooper2011,469,Respiratory scenario
+Crooks ,2001,Cue Utilization and Situation Awareness during a Simulated Experience,https://doi.org/10.1177/154193120104502206,NA,SAGAT,165,165,0.123207746,0.00617284,Crooks2001,470,"""In addition, correlational analyses were conducted between measurements of cognitive style, situation awareness level measurements, and judgment accuracy."" (abstract)
+""Correlations were calculated to investigate the relationships among the ... for each cue type as measured by the SART, and judgment accuracy percentages."" 
+Cue types:  blinking vs non-blinking. Should Matched vs. non-matched be included too? Only for SAGAT???
+
+Mention of ""mean supply"" suggest different subscales for SART may have been assessed in correlations, but not other indicators in the paper
+
+Blinking"
+Crooks ,2001,Cue Utilization and Situation Awareness during a Simulated Experience,https://doi.org/10.1177/154193120104502206,NA,SART,165,165,0.102074188,0.00617284,Crooks2001,471,Blinking
+Crooks ,2001,Cue Utilization and Situation Awareness during a Simulated Experience,https://doi.org/10.1177/154193120104502206,NA,SAGAT,165,165,0.120510086,0.00617284,Crooks2001,472,No blinking
+Crooks ,2001,Cue Utilization and Situation Awareness during a Simulated Experience,https://doi.org/10.1177/154193120104502206,NA,SART,165,165,0.01081456,0.00617284,Crooks2001,473,No blinking
+de Winter,2018,Situation awareness based on eye movements in relation to the task environment,10.1007/s10111-018-0527-6,NA,General Know.,86,86,0.202732554,0.012048193,deWinter2019,474,"Performance score was pressing the space within 0.5 seconds of a dial crossing a threshold: This was counted as a hit, accuracy
+Freeze score was memory"
+Gatsoulis,2007,Performance metrics for improving human robot interaction,10/d3t67r,NA,General Know.,16,16,0.647522845,0.076923077,Gatsoulis2007,475,"Judgment call: Did not include correlation from filtered dataset, drops a single participant b/c they were an outlier. Correlation is 0.71 for N =15 w/filtered data. Should either include that or the unfiltered data.
+Went with the unfiltered data"
+Gregoriades,2018,Simulation-based evaluation of an in-vehicle smart situation awareness enhancement system,10/ggqgt4,NA,SAGAT,17,17,-0.132488674,0.071428571,Gregoriades2018,476,"In addition to SAGAT, SA was also assessed using an aggregate measure (p. 12-13; eq on p 10 - aggregate measure calculated difference between perceived and actual 'situation' with scores of 0 indicating 'low correspondence; bad SA' and 1 indicating high correspondence, good SA). This might have been analyzed with the three performance measures, it's unclear"
+Gregoriades,2018,Simulation-based evaluation of an in-vehicle smart situation awareness enhancement system,10/ggqgt4,NA,SAGAT,17,17,0.195581646,0.071428571,Gregoriades2018,477,"Same data as Gregoriades (2018a; 2018b): 
+Evaluating a custom-made agent-based driving simulator
+Design and validation of an agent-based driving simulator. 
+Both of these papers overfits the correlations (note N = 50 or 51)
+Can't determine if there was overfitting in this paper, insufficient information "
+Gregoriades,2018,Simulation-based evaluation of an in-vehicle smart situation awareness enhancement system,10/ggqgt4,NA,SAGAT,17,17,0.494085619,0.071428571,Gregoriades2018,478,NA
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.697054485,0.125,Grigoleit2017,479,"Eight performance variables defined in Table 1, p. 6. SA measures: SAGAT acc, SPAM acc and RT. HIgh and low workload conditions evaluated in separate regressions. 
+So there are 8 perf x 3 types of SA x 2 types of workload = 48 regression total 
+
+High workload"
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.312177727,0.125,Grigoleit2017,480,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.194963925,0.125,Grigoleit2017,481,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.72579118,0.125,Grigoleit2017,482,"High workload. Reverse code, authors note higher SAGAT acc ~ worse performance (also see sign of the regression coefficient)"
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.237002951,0.125,Grigoleit2017,483,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.154453985,0.125,Grigoleit2017,484,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.251077404,0.125,Grigoleit2017,485,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.28077424,0.125,Grigoleit2017,486,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.689325195,0.125,Grigoleit2017,487,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.560889223,0.125,Grigoleit2017,488,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.30123151,0.125,Grigoleit2017,489,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.341108092,0.125,Grigoleit2017,490,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,-0.0728245,0.125,Grigoleit2017,491,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.48606298,0.125,Grigoleit2017,492,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.462585609,0.125,Grigoleit2017,493,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SAGAT,11,11,0.211154088,0.125,Grigoleit2017,494,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.209177144,0.125,Grigoleit2017,495,"High workload, SPAM acc starts"
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.341108092,0.125,Grigoleit2017,496,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.286333317,0.125,Grigoleit2017,497,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.284536165,0.125,Grigoleit2017,498,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.253209233,0.125,Grigoleit2017,499,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.452908485,0.125,Grigoleit2017,500,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,-0.033343895,0.125,Grigoleit2017,501,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.209177144,0.125,Grigoleit2017,502,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.337443079,0.125,Grigoleit2017,503,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.779965241,0.125,Grigoleit2017,504,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.652717808,0.125,Grigoleit2017,505,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.758703097,0.125,Grigoleit2017,506,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,-0.317571883,0.125,Grigoleit2017,507,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.845053723,0.125,Grigoleit2017,508,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.594615031,0.125,Grigoleit2017,509,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.295730608,0.125,Grigoleit2017,510,"Low Workload, SPAM acc ends"
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,-0.200936935,0.125,Grigoleit2017,511,"High workload, SPAM RT starts"
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.30123151,0.125,Grigoleit2017,512,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,-0.307044331,0.125,Grigoleit2017,513,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.550203136,0.125,Grigoleit2017,514,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,-0.28077424,0.125,Grigoleit2017,515,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.377608122,0.125,Grigoleit2017,516,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,-0.224850526,0.125,Grigoleit2017,517,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.454999602,0.125,Grigoleit2017,518,High workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.486202922,0.125,Grigoleit2017,519,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.248167024,0.125,Grigoleit2017,520,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.593098113,0.125,Grigoleit2017,521,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.151574906,0.125,Grigoleit2017,522,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.138214885,0.125,Grigoleit2017,523,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.074545549,0.125,Grigoleit2017,524,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.376807631,0.125,Grigoleit2017,525,Low Workload
+Grigoleit,2017,Toward a descriptive measure of situation awareness in petrochemical refining,10/ggqrxp,NA,SPAM,11,11,0.377608122,0.125,Grigoleit2017,526,"Low Workload, SPAM RT ends"
+Gugliotta,2017,Are situation awareness and decision-making in driving totally conscious processes? Results of a hazard prediction task,NA,NA,General Know.,121,121,0.309519604,0.008474576,Gugliotta2017,527,NA
+Gugliotta,2017,Are situation awareness and decision-making in driving totally conscious processes? Results of a hazard prediction task,NA,NA,General Know.,121,121,0.365443754,0.008474576,Gugliotta2017,528,"
+"
+Gugliotta,2017,Are situation awareness and decision-making in driving totally conscious processes? Results of a hazard prediction task,NA,NA,General Know.,121,121,0.192337169,0.008474576,Gugliotta2017,529,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.224838816,0.037037037,Jeon2014,530,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.273906407,0.037037037,Jeon2014,531,"Excluded implicit driver SA (coping level with hazard events) because it includes performance, this to some degree correlates SA with itself (agreed)
+Scoring for implicit SA (0 - smooth management, 1 = near accident w/brake screech, 2 = crash)
+
+Generic ns implied by selective reporting pattern, ""SA scores were positively correlated with some of the driving performance measures as hypothesized.(p84)"" 
+
+p. 78 lists all the DVs for driving performance (manual and system log) "
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,-0.111551809,0.037037037,Jeon2014,532,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,-0.151670306,0.037037037,Jeon2014,533,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.185421177,0.037037037,Jeon2014,534,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,-0.085823884,0.037037037,Jeon2014,535,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.208489649,0.037037037,Jeon2014,536,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.245753391,0.037037037,Jeon2014,537,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.322322976,0.037037037,Jeon2014,538,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,-0.026989008,0.037037037,Jeon2014,539,NA
+Jeon,2014,Anger effects on driver situation awareness and driving performance,10/f55d8x,NA,General Know.,35,30,0.338051418,0.037037037,Jeon2014,540,NA
+Johnson,2009,Investigating the Effects of Desktop Computer Simulation Training on Situation Awareness (SA) and Adaptive Decision-Making Skills,10/fzr872,NA,MARS,35,35,0.775298706,0.03125,Johnson2009,541,p. 3: Correlations among Study Variables
+Johnson,2009,Investigating the Effects of Desktop Computer Simulation Training on Situation Awareness (SA) and Adaptive Decision-Making Skills,10/fzr872,NA,MARS,35,35,0.435611223,0.03125,Johnson2009,542,NA
+Johnson,2009,Investigating the Effects of Desktop Computer Simulation Training on Situation Awareness (SA) and Adaptive Decision-Making Skills,10/fzr872,NA,MARS,35,35,0.13073985,0.03125,Johnson2009,543,authors list n.s. result # (not sure if you're using them or not but I'll list just in case): .13
+Johnson,2009,Investigating the Effects of Desktop Computer Simulation Training on Situation Awareness (SA) and Adaptive Decision-Making Skills,10/fzr872,NA,MARS,35,35,0.510070337,0.03125,Johnson2009,544,NA
+Johnson,2009,Investigating the Effects of Desktop Computer Simulation Training on Situation Awareness (SA) and Adaptive Decision-Making Skills,10/fzr872,NA,MARS,35,35,0.276863823,0.03125,Johnson2009,545,0.27
+Johnson,2009,Investigating the Effects of Desktop Computer Simulation Training on Situation Awareness (SA) and Adaptive Decision-Making Skills,10/fzr872,NA,MARS,35,35,0.070114671,0.03125,Johnson2009,546,0.07
+Jung,2008,A Study of Relationships between Situation Awareness and Presence that Affect Performance on a Handheld Game Console,NA,NA,SAGAT,30,30,1.045370548,0.037037037,Jung2008,547,NA
+Kaber ,2012,Effects of hazard exposure and roadway complexity on young and older driver situation awareness and performance,http://dx.doi.org/10.1016/j.trf.2012.06.002,NA,SPAM,20,20,0.174652437,0.058823529,Kaber2012,548,"""However, no significant correlation was found for lane deviations with Level 2 SA."" Suggests there could have been other generic ns for other combos SA (levels 1-3) x perf (lane deviations and speed ratio)"
+Lafond,2012,Support requirements for cognitive readiness in complex operations,10/ggqf7p,NA,General Know.,10,10,-0.33834603,0.142857143,Lafond2012a,549,"Exp 1, group 2 (note group 1 did not get the L3 SA measure). Total N = 30, but there were 3 groups in Exp 1. Assuming it was n = 10 in each group, this matches the reported p-values"
+Lafond,2012,Support requirements for cognitive readiness in complex operations,10/ggqf7p,NA,General Know.,10,10,0.178883953,0.142857143,Lafond2012a,550,"Exp 1, group 3"
+Lafond,2012,Support requirements for cognitive readiness in complex operations,10/ggqf7p,NA,General Know.,40,40,0.383796543,0.027027027,Lafond2012b,551,"Exp 2: L3 and goal attainment (Table D1), technically the probe was just prior to submitting an answer, but it wasn't presented during any action"
+Laptaned,2006,Situation awareness in virtual environments: A theoretical model and investigation with different interface designs,http://eprints.utcc.ac.th/962/,NA,SAGAT,60,60,0.144947344,0.01754386,Laptaned2006,552,"""However, there was no significant correlation between presence and performance or SA and performance. It was therefore concluded that presence does not lead to enhance performance, and the relation between SA and performance is not apparent. ""
+
+VRSARM includes workload, presence, and other non-SA measures
+
+Only including VRSAGAT and VRSART
+
+I'm having trouble determining what performance was, the intro gives an example of spatial perception. [Yeah, I have no idea what the task was]"
+Laptaned,2006,Situation awareness in virtual environments: A theoretical model and investigation with different interface designs,http://eprints.utcc.ac.th/962/,NA,SART,60,60,-0.006847345,0.01754386,Laptaned2006,553,NA
+Lehtonen,2017,Learning game for training child bicyclists situation awareness,10/gbm285,NA,Explicit Recall,80,80,0.459896681,0.012987013,Lehtonen2017,554,"Game has two measures: Hit rate and time margin 
+SA test: d' (sensitivity), c (criterion), and answer latency
+
+Good SA: High d' and high c and low answer latency
+Good perf: High hit rate and low time margin"
+Lehtonen,2017,Learning game for training child bicyclists situation awareness,10/gbm286,NA,Explicit Recall,80,80,-0.090244188,0.012987013,Lehtonen2017,555,"For correlations (Table 4, p. 9), both samples were combined (49 children and 31 adults); N = 80"
+Lehtonen,2017,Learning game for training child bicyclists situation awareness,10/gbm287,NA,Explicit Recall,80,80,0.376885901,0.012987013,Lehtonen2017,556,NA
+Lehtonen,2017,Learning game for training child bicyclists situation awareness,10/gbm288,NA,Explicit Recall,80,80,-0.181982689,0.012987013,Lehtonen2017,557,NA
+Lehtonen,2017,Learning game for training child bicyclists situation awareness,10/gbm289,NA,Explicit Recall,80,80,0.331647109,0.012987013,Lehtonen2017,558,NA
+Lehtonen,2017,Learning game for training child bicyclists situation awareness,10/gbm289,NA,Explicit Recall,80,80,-0.192337169,0.012987013,Lehtonen2017,559,NA
+Lin ,2013,Development of staffing evaluation principle for advanced main control room and the effect on situation awareness and mental workload,10/f5qd2w,NA,SART,60,60,0.435611223,0.01754386,Lin2013,560,"Table 1, p. 6"
+Lin ,2013,Development of staffing evaluation principle for advanced main control room and the effect on situation awareness and mental workload,10/f5qd2w,NA,SART,60,60,0.562729769,0.01754386,Lin2013,561,NA
+Lin ,2013,Development of staffing evaluation principle for advanced main control room and the effect on situation awareness and mental workload,10/f5qd2w,NA,SART,60,60,0.223656109,0.01754386,Lin2013,562,NA
+Lin ,2013,Development of staffing evaluation principle for advanced main control room and the effect on situation awareness and mental workload,10/f5qd2w,NA,SART,60,60,0.693147181,0.01754386,Lin2013,563,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf100,NA,SPAM,84,84,0.331647109,0.012345679,Miles2017,564,"I added the latent correlations for SA probes and performance from the structural equation model, Table 7"
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf101,NA,SPAM,84,84,0.298566264,0.012345679,Miles2017,565,Judgment call: Should only Table 7 be included rather than the complete correlation matrix? I went with that for now [That seems ok. I wouldn't do both.]
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf102,NA,SPAM,84,84,0.298566264,0.012345679,Miles2017,566,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf103,NA,SPAM,84,84,0.376885901,0.012345679,Miles2017,567,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf104,NA,SPAM,84,84,0.120581028,0.012345679,Miles2017,568,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf105,NA,SPAM,84,84,0.050041729,0.012345679,Miles2017,569,[I'm having trouble determining sign for handoffs accepted/given. It seems like lower is better??]
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf106,NA,SPAM,84,84,0.120581028,0.012345679,Miles2017,570," I coded higher vals for handoffs accepted and given as good perf. I think this is more aircraft entering
+the sector (accepted) and more leaving the sector (given). That's my reasoning for higher values
+being good perf- more actions are occurring, thus performance is higher"
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf107,NA,SPAM,84,84,0.309519604,0.012345679,Miles2017,571,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf108,NA,SPAM,84,84,0.171666664,0.012345679,Miles2017,572,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf109,NA,SPAM,84,84,0.010000333,0.012345679,Miles2017,573,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf110,NA,SPAM,84,84,0.255412812,0.012345679,Miles2017,574,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf111,NA,SPAM,84,84,0.298566264,0.012345679,Miles2017,575,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf112,NA,SPAM,84,84,-0.090244188,0.012345679,Miles2017,576,NA
+Miles,2017,Measuring Situation Awareness of Student Air Traffic Controllers with Online Probe Queries: Are We Asking the Right Questions?,10/ggqf113,NA,SPAM,84,84,-0.090244188,0.012345679,Miles2017,577,NA
+Mogford,1997,Mental models and situation awareness in air traffic control,10/bcpnmv,NA,General Know.,37,34,0.266108407,0.032258065,Mogford1997,578,"""Picture assessment of SA"" 
+[I'm not sure what to make of ""One participant dropped out of the study. Two of the remaining 36 cases were excluded from
+the data set after regression diagnostics identified them as outliers."" Does that mean the correlations are for 20+17-1 participants?]
+
+Jon: I'm not sure either, but interpreted it as N = 34 in the stats rather than N = 36"
+Mogford,1997,Mental models and situation awareness in air traffic control,10/bcpnmv,NA,General Know.,37,34,0.090244188,0.032258065,Mogford1997,579,"Table 1, p. 9 "
+Mogford,1997,Mental models and situation awareness in air traffic control,10/bcpnmv,NA,General Know.,37,34,0.309519604,0.032258065,Mogford1997,580,NA
+Mogford,1997,Mental models and situation awareness in air traffic control,10/bcpnmv,NA,General Know.,37,34,0.309519604,0.032258065,Mogford1997,581,NA
+Mogford,1997,Mental models and situation awareness in air traffic control,10/bcpnmv,NA,General Know.,37,34,0.161386696,0.032258065,Mogford1997,582,NA
+Mogford,1997,Mental models and situation awareness in air traffic control,10/bcpnmv,NA,General Know.,37,34,0.120581028,0.032258065,Mogford1997,583,"Detailed regression model only includes sig weights (heading, alt, and speed). Papers states ""All six variables [SA] were entered and those without significant beta weights were removed."" 
+Ignoring this for generic ns because we don't know if the regression models were non-sig or sig. 
+Also, we don't know how many regressions were run because sig of weights could change as diff variables were removed."
+Nickel ,2019,How much practice is required to reduce performance variability in a virtual reality mining simulator?,10/ggqf3m,NA,General Know.,22,18,-0.183484444,0.066666667,Nickel2019,584,"Only usable data from 18 participants, recruited 22
+
+""Furthermore, there was no apparent correlation between the
+number of correct situation awareness questions and either collisions or perception response time. "" (p. 9)
+SA ~ collisions and SA ~ perception RT. 
+
+Also add SA ~ missed pedestrians? Not stated it was run
+
+Only including Spearman correlations, it's somewhat more robust than Pearson. Diverging results for Pearson and Spearman suggest data were very non-normal
+"
+Nickel ,2019,How much practice is required to reduce performance variability in a virtual reality mining simulator?,10/ggqf3m,NA,General Know.,18,18,0.228315643,0.066666667,Nickel2019,585,"Sim paused after each 5 minute session, coding that as post-trial"
+OHagan,2019,"""Flying on empty"" - effects of sleep deprivation on pilot performance",10/ggqk52,NA,General Know.,7,7,-0.510070337,0.25,OHagan2019,586,"""mid-flight situational awareness questions.... shown for a 5-s period at specific times during the flight profile."" Coded as real-time probe, because there is no mention of a freeze.
+Within-subject correlations (Table 2) are overfit
+KM - agree. This one looks good
+"
+Onal,2014,Decision-making in abstract trust games: A user interface perspective,10/ggqrx7,NA,SAGAT,95,95,0.725005088,0.010869565,Onal2014,587,"I don't think the cooperation rate is performance? It's part of the decision, but cooperation could be good or bad perf depending on the trial
+
+I think it's a freeze probe for the assessment technique?? 
+
+I recognize this work, best paper award at CogSIMA!
+KM - Agree it's a freeze probe; similar to post-trial probe but they did more trials afterwards, and participants weren't warned when the probes would come. Also agree cooperation =/= performance.
+"
+Riley ,2006,Effects of Robot Control Mode on Situation Awareness and Performance in a Navigation Task,10/fzs7kv,NA,SAGAT,20,20,0.417473666,0.058823529,Riley2006,588,"Effect size as reported is sig at p < 0.05 (one-tailed [not stated in the paper]). Doesn't look overfit.
+
+Might be a generic ns for navigation performance (time to task completion), but it's iffy. Not adding one
+KM - agree
+"
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.220575637,0.058823529,Rogers2011,589,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.290505491,0.058823529,Rogers2011,590,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.165506826,0.058823529,Rogers2011,591,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.31331165,0.058823529,Rogers2011,592,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.399628615,0.058823529,Rogers2011,593,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.113383068,0.058823529,Rogers2011,594,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.26371859,0.058823529,Rogers2011,595,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.18620513,0.058823529,Rogers2011,596,V1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.592651619,0.058823529,Rogers2011,597,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.310346463,0.058823529,Rogers2011,598,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.261298534,0.058823529,Rogers2011,599,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.663367341,0.058823529,Rogers2011,600,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.23677895,0.058823529,Rogers2011,601,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.26371859,0.058823529,Rogers2011,602,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.079912501,0.058823529,Rogers2011,603,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.069076008,0.058823529,Rogers2011,604,V1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.314735604,0.058823529,Rogers2011,605,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.079912501,0.058823529,Rogers2011,606,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.298706291,0.058823529,Rogers2011,607,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.03295062,0.058823529,Rogers2011,608,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.123984005,0.058823529,Rogers2011,609,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.261847504,0.058823529,Rogers2011,610,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.199400998,0.058823529,Rogers2011,611,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.301521827,0.058823529,Rogers2011,612,V2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.177953051,0.058823529,Rogers2011,613,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.360602786,0.058823529,Rogers2011,614,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.105607571,0.058823529,Rogers2011,615,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.261847504,0.058823529,Rogers2011,616,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.224096836,0.058823529,Rogers2011,617,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.0439562,0.058823529,Rogers2011,618,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.37187771,0.058823529,Rogers2011,619,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.199026664,0.058823529,Rogers2011,620,V2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.261847504,0.058823529,Rogers2011,621,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.370968691,0.058823529,Rogers2011,622,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.080718372,0.058823529,Rogers2011,623,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.03295062,0.058823529,Rogers2011,624,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.536455202,0.058823529,Rogers2011,625,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.120581028,0.058823529,Rogers2011,626,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.261847504,0.058823529,Rogers2011,627,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.017318234,0.058823529,Rogers2011,628,C1P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.220575637,0.058823529,Rogers2011,629,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.251734039,0.058823529,Rogers2011,630,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.312761446,0.058823529,Rogers2011,631,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.259198089,0.058823529,Rogers2011,632,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.494777456,0.058823529,Rogers2011,633,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.18620513,0.058823529,Rogers2011,634,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.240363981,0.058823529,Rogers2011,635,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.313182905,0.058823529,Rogers2011,636,C1P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.270586228,0.058823529,Rogers2011,637,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.476575299,0.058823529,Rogers2011,638,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.138981345,0.058823529,Rogers2011,639,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.213318839,0.058823529,Rogers2011,640,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.05077592,0.058823529,Rogers2011,641,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.24506721,0.058823529,Rogers2011,642,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.017318234,0.058823529,Rogers2011,643,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.00878459,0.058823529,Rogers2011,644,C2P1
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.095569142,0.058823529,Rogers2011,645,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.104090504,0.058823529,Rogers2011,646,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.041267653,0.058823529,Rogers2011,647,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.018614911,0.058823529,Rogers2011,648,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.079912501,0.058823529,Rogers2011,649,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.233632612,0.058823529,Rogers2011,650,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,-0.023252576,0.058823529,Rogers2011,651,C2P2
+Rogers,2011,The effects of visual and cognitive distraction on driver situation awareness,10/d6wmjb,NA,General Know.,20,20,0.310346463,0.058823529,Rogers2011,652,C2P2
+Rose ,2013,An evaluation of the low-event task subjective situation awareness (LETSSA) technique,NA,NA ,SAGAT,23,23,0.21631183,0.05,Rose2013,653,"Coded SAGAT as freeze probe using description of methods (3.1.4) in 2018 paper. Different sample than 2018 paper which uses train engineers, the 2013 one has volunteer (probably students)
+ISBN for book with published conference proceedings: 978-1-4398-7124-9; 978-1-4398-7123-2
+Diff scores
+Good catch, fixed"
+Rose ,2013,An evaluation of the low-event task subjective situation awareness (LETSSA) technique,NA,NA ,SAGAT,23,23,0.019002287,0.05,Rose2013,654,NA
+Rose ,2013,An evaluation of the low-event task subjective situation awareness (LETSSA) technique,NA,NA ,Other,23,23,-0.221555354,0.05,Rose2013,655,"Might have to label LETSSA as ""other"" for convergence"
+Rose ,2013,An evaluation of the low-event task subjective situation awareness (LETSSA) technique,NA,NA ,Other,23,23,0.307323247,0.05,Rose2013,656,NA
+Rose ,2018,The Low-Event Task Subjective Situation Awareness (LETSSA) technique: Development and evaluation of a new subjective measure of situation awareness,10/ggqhkw,NA ,Other,49,49,0.887183863,0.02173913,Rose2018,657,"No p-value reported, taking the effect size as reported. Can't check for model overfitting"
+Saus,2012,Who benefits from simulator training: Personality and heart rate variability in relation to situation awareness during navigation training,10/gf36g7,NA ,SARS,36,36,0.435611223,0.03030303,Saus2012,658,"I think the df in the correlation is accidently reported as the sample size. Sample size is N =36 and df is reported as 36 (it should be 34)
+LM: This is pretty confusing, because the captions on a lot of the tables say N = 34. I'm wondering if they had 2 subjects not fill out their personality inventory? Anyway, I agree that N = 36 is the best guess for these correlations."
+Saus,2012,Who benefits from simulator training: Personality and heart rate variability in relation to situation awareness during navigation training,10/gf36g7,NA ,SARS,36,36,0.005601508,0.03030303,Saus2012,659,"I didn't include perceived learning outcome as perf, don't think it is perf. Agree"
+Schuster,2012,Individual differences in SA measurement and performance in human-robot teaming,10/ggqrzs,NA ,SPAM,53,53,0.047034654,0.02,Schuster2012,660,"Another paper uses the same data but with stepwise multiple regressions: Comparison of SA Measurement Techniques in a Human-Robot Team Task (2012), also HFES conference proceedings"
+Schuster,2012,Individual differences in SA measurement and performance in human-robot teaming,10/ggqrzs,NA ,SART,53,53,0.458670484,0.02,Schuster2012,661,"Can't include models because they used predicted SA values (based on measurement technique, map order, and info order plus covariates) in regression with performance, among many other things
+Only mission 3 is reported in Table 1. The other paper reported results with missions 2 and 3 using stepwise regressions. Iffy if there should be 2 x generic ns for mission 2. Leaving out for now.
+LM: I say leave out the generic n.s. Based on the info in THIS paper, we don't have evidence to include them. 
+Jon: Agreed"
+Taylor,1995,MEASUREMENT OF SITUATIONAL AWARENESS AND PERFORMANCE - A UNITARY SART INDEX PREDICTS PERFORMANCE ON A SIMULATED ATC TASK,NA,NA ,SART,12,12,0.663970959,0.111111111,Taylor1995,662,"Table 1, p. 7 (p. 278 in the proceedings book)"
+Taylor,1995,MEASUREMENT OF SITUATIONAL AWARENESS AND PERFORMANCE - A UNITARY SART INDEX PREDICTS PERFORMANCE ON A SIMULATED ATC TASK,NA,NA ,SART,12,12,0.758173745,0.111111111,Taylor1995,663,NA
+Taylor,1995,MEASUREMENT OF SITUATIONAL AWARENESS AND PERFORMANCE - A UNITARY SART INDEX PREDICTS PERFORMANCE ON A SIMULATED ATC TASK,NA,NA ,SART,12,12,0.584598945,0.111111111,Taylor1995,664,NA
+Taylor,1995,MEASUREMENT OF SITUATIONAL AWARENESS AND PERFORMANCE - A UNITARY SART INDEX PREDICTS PERFORMANCE ON A SIMULATED ATC TASK,NA,NA ,SART,12,12,0.360892579,0.111111111,Taylor1995,665,Good perf: Low conflicts --> flip sign
+Taylor,1995,MEASUREMENT OF SITUATIONAL AWARENESS AND PERFORMANCE - A UNITARY SART INDEX PREDICTS PERFORMANCE ON A SIMULATED ATC TASK,NA,NA ,SART,12,12,0.50750636,0.111111111,Taylor1995,666,""""""
+Taylor,1995,MEASUREMENT OF SITUATIONAL AWARENESS AND PERFORMANCE - A UNITARY SART INDEX PREDICTS PERFORMANCE ON A SIMULATED ATC TASK,NA,NA ,SART,12,12,0.615518437,0.111111111,Taylor1995,667,""""""
+Visser,2019,Individual differences in higher-level cognitive abilities do not predict overconfidence in complex task performance,10/ggqhk9,NA ,SPAM,180,180,0.213171347,0.005649718,Visser2019,668,"Good SA = low SPAM RT, Good performance = high conflict detection: Reverse coded"
+Visser,2019,Individual differences in higher-level cognitive abilities do not predict overconfidence in complex task performance,10/ggqhk9,NA ,SPAM,180,180,0.418896043,0.005649718,Visser2019,669,"Good SA = low SPAM RT, good performance = high accuracy handoffs: Reverse coded"
+Visser,2019,Individual differences in higher-level cognitive abilities do not predict overconfidence in complex task performance,10/ggqhk9,NA ,SART,180,180,0.115511019,0.005649718,Visser2019,670,SART was only reverse coded for the overconfidence measure? 
+Visser,2019,Individual differences in higher-level cognitive abilities do not predict overconfidence in complex task performance,10/ggqhk9,NA,SART,180,180,0.106399703,0.005649718,Visser2019,671,"This is incredibly confusing, but I think the two ATC measures are latencies too. 
+Yep, you're right. Both ATC perf measures are RT. Low RT = good perf
+"
+Wijayanto,2016,Effects of morning-night differences and sleep deprivation on situation awareness and driving performance,10/ggqr2f,NA,SAGAT,12,12,0.423686091,0.111111111,Wijayanto2016,672,"""No correlations between SA in any levels and 
+risky  driving  behavior  was  observed  from  correlation 
+analysis (P>0.05)."" (p. 4) "
+Wijayanto,2016,Effects of morning-night differences and sleep deprivation on situation awareness and driving performance,10/ggqr2f,NA,SAGAT,12,12,0.168368058,0.111111111,Wijayanto2016,673,NA
+Wijayanto,2016,Effects of morning-night differences and sleep deprivation on situation awareness and driving performance,10/ggqr2f,NA,SAGAT,12,12,0.507782688,0.111111111,Wijayanto2016,674,NA
+Wojtusch,2019,Evaluation of Human Factors for Assessing Human-Robot Interaction in Delayed Teleoperation,NA,NA,SART,28,28,-0.202732554,0.04,Wojtusch2019,675,"SART scoring: SA = Understanding - (Demand - Supply). 
+Link: https://ext.eurocontrol.int/ehp/?q=node/1608
+Perm link: https://web.archive.org/web/20181108071327/https://ext.eurocontrol.int/ehp/?q=node/1608
+Low (attentional) demand is good SA. High demand is bad SA
+KM - To me this looks like the number is right but the labels are wrong. Pulling from Figure 3, where 
+UW4 = performance, the correlations should be SA 1 ~ UW4 = 0.2, SA2 ~ UW4 = 0.12, and SA3 ~ UW4 = 0.46. 
+Only the correlation between SA3 and UW4 is significant.
+Jon: Yep, you're right. Good catch"
+Wojtusch,2019,Evaluation of Human Factors for Assessing Human-Robot Interaction in Delayed Teleoperation,NA,NA,SART,28,28,0.120581028,0.04,Wojtusch2019,676,High (attentional) supply is good SA
+Wojtusch,2019,Evaluation of Human Factors for Assessing Human-Robot Interaction in Delayed Teleoperation,NA,NA,SART,28,28,0.497311288,0.04,Wojtusch2019,677,High understanding is good SA
+Cha,2019,Use of non-technical skills can predict medical student performance in acute care simulated scenarios,10/ggqr3j,NA,General Know.,41,41,0.646042831,0.026315789,Cha2019,678,"Added from citation tracing.
+Thought the authors refer to clinical performance as team performance, it's not actually a team. It's a participant 
+and a nurse confederate. So clinical performance is for the participant, the individual, which includes communication with the confederate. So the
+participant's performance is more or less independent of the confederate. Real-time probe is closest assessment method, it appears to be observer rated SA (in real-time)"

@@ -32,6 +32,8 @@ dat.moura2021
    Rios Moura, R., Oliveira Gonzaga, M., Silva Pinto, N., Vasconcellos-Neto, J., & Requena, G. S. (2021). Assortative mating in space and time: Patterns and biases. \emph{Ecology Letters}, \bold{24}(5), 1089--1102. \verb{https://doi.org/10.1111/ele.13690}
 }
 \references{
+   Cinar, O., Nakagawa, S., & Viechtbauer, W. (in press). Phylogenetic multilevel meta-analysis: A simulation study on the importance of modelling the phylogeny. \emph{Methods in Ecology and Evolution}. \verb{https://doi.org/10.1111/2041-210X.13760}
+
    Hadfield, J. D., & Nakagawa, S. (2010). General quantitative genetic methods for comparative biology: Phylogenies, taxonomies and multi-trait models for continuous and categorical characters. \emph{Journal of Evolutionary Biology}, \bold{23}(3), 494--508. \verb{https://doi.org/10.1111/j.1420-9101.2009.01915.x}
 
    Nakagawa, S., & Santos, E. S. A. (2012). Methodological issues and advances in biological meta-analysis. \emph{Evolutionary Ecology}, \bold{26}(5), 1253--1274. \verb{https://doi.org/10.1007/s10682-012-9555-5}
@@ -47,10 +49,10 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### load ape package
-require(ape, warn.conflicts=FALSE, quietly=TRUE)
+library(ape, warn.conflicts=FALSE)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat)

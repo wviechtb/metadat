@@ -43,7 +43,7 @@ dat
 \dontrun{
 
 # load metafor package
-require(metafor)
+library(metafor)
 
 # calculate log odds ratios and corresponding sampling variances
 dat <- escalc(measure="OR", ai=hcq_arm_event, n1i=hcq_arm_total,

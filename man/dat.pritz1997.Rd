@@ -32,7 +32,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### computation of "weighted average" in Zhou et al. (1999), Table IV
 dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat, add=0)

@@ -41,10 +41,10 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### create network graph ('igraph' package must be installed)
-require(igraph, warn.conflicts=FALSE, quietly=TRUE)
+library(igraph, warn.conflicts=FALSE)
 pairs <- data.frame(do.call(rbind,
    sapply(split(dat$trt, dat$study), function(x) t(combn(x,2)))), stringsAsFactors=FALSE)
 lvls <- c("no_contact", "self_help", "ind_counseling", "grp_counseling")

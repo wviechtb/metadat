@@ -86,9 +86,8 @@
     <p>Results from 19 trials examining complementary and alternative medicine (CAM) for irritable bowel syndrome (IBS).</p>
     </div>
 
-    <div class="ref-usage sourceCode"><pre class="sourceCode r"><code><span class="va">dat.dorn2007</span></code></pre></div>
+    <div id="ref-usage"><div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.dorn2007</span></code></pre></div></div>
 
-    <div id="ref-sections">
     <div id="format">
     <h2>Format</h2>
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>id</b></td><td><code>numeric</code></td><td>trial id number</td></tr><tr><td><b>study</b></td><td><code>character</code></td><td>(first) author</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>country</b></td><td><code>character</code></td><td>country where trial was conducted</td></tr><tr><td><b>ibs.crit</b></td><td><code>character</code></td><td>IBS diagnostic criteria (Manning, Rome I, Rome II, or Other)</td></tr><tr><td><b>days</b></td><td><code>numeric</code></td><td>number of treatment days</td></tr><tr><td><b>visits</b></td><td><code>numeric</code></td><td>number of practitioner visits</td></tr><tr><td><b>jada</b></td><td><code>numeric</code></td><td>Jadad score</td></tr><tr><td><b>x.a</b></td><td><code>numeric</code></td><td>number of responders in the active treatment group</td></tr><tr><td><b>n.a</b></td><td><code>numeric</code></td><td>number of participants in the active treatment group</td></tr><tr><td><b>x.p</b></td><td><code>numeric</code></td><td>number of responders in the placebo group</td></tr><tr><td><b>n.p</b></td><td><code>numeric</code></td><td>number of participants in the placebo group</td></tr></table></div>
@@ -108,11 +107,10 @@
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
-    </div>
 
-    <div id="examples">
+    <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.dorn2007</span></span>
 <span class="r-in"><span class="va">dat</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    id      study year   country ibs.crit days visits jadad x.a n.a x.p n.p</span>
@@ -139,7 +137,7 @@
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### calculate log risk ratios and corresponding sampling variances</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"RR"</span>, ai<span class="op">=</span><span class="va">x.a</span>, n1i<span class="op">=</span><span class="va">n.a</span>, ci<span class="op">=</span><span class="va">x.p</span>, n2i<span class="op">=</span><span class="va">n.p</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
@@ -160,7 +158,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub     ​ </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.41  0.11  3.85  &lt;.01   0.20   0.63  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -207,11 +205,11 @@
 
 
       <footer><div class="copyright">
-  <p>Developed by .</p>
+  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Made with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> , using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.0.</p> using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.
 </div>
 
       </footer></div>

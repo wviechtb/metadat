@@ -32,7 +32,7 @@ head(dat)
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### calculate log hazard ratios and sampling variances
 dat$yi <- with(dat, OmE/V)

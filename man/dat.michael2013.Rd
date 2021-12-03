@@ -50,7 +50,7 @@ dat
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### Data prep
 # yi and vi are already provided, but here's how you would use escalc() to obtain

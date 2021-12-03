@@ -35,7 +35,7 @@ dat[c(1,4,5)]
 \dontrun{
 
 ### load metafor package
-require(metafor)
+library(metafor)
 
 ### calculate r-to-z transformed correlations and corresponding sampling variances
 dat <- escalc(measure="ZCOR", ri=ri, ni=ni, data=dat[c(1,4,5)])
