@@ -26,7 +26,7 @@ The data frame contains the following columns:
    Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
-### instead first 6 rows of the dataset
+### Show first 6 rows of the dataset
 head(dat.baker2009)
 
 \dontrun{
@@ -44,16 +44,31 @@ settings.meta(digits = 2)
 p1 <- pairwise(treatment, exac, total, studlab = paste(study, year),
   data = dat.baker2009, sm = "OR")
 
-### conduct network meta-analysis
-net1 <- netmeta(p1, ref = "plac")
-net1
+### Conduct random effects network meta-analysis (NMA)
+### with placebo as reference
+net1 <- netmeta(p1, fixed = FALSE, ref = "plac")
 
-### conduct component network meta-analysis
+### Show network graph
+netgraph(net1, seq = "optimal", start = "prcomp",
+  labels = gsub("+", " +\n", trts, fixed = TRUE),
+  plastic = TRUE, thickness = "se.fixed", number = TRUE,
+  points = TRUE, cex.points = 5, col.points = "red",
+  offset = 0.025)
+
+### Print and plot results for network meta-analysis
+net1
+forest(net1)
+ 
+### Conduct component network meta-analysis (CNMA)
 cnet1 <- netcomb(net1)
 cnet1
 
+### Compare results of NMA and additive CNMA
+nb1 <- netbind(net1, cnet1, name = c("Standard NMA", "Additive CNMA"))
+forest(nb1)
 }
 }
+
 \seealso{
 \code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmeta}}, \code{\link[netmeta]{netcomb}}, \code{\link[netmeta]{netmetabin}}
 }
