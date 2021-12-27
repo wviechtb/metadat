@@ -1,0 +1,8 @@
+"Study","Treatment1","y1","sd1","n1","Treatment2","y2","sd2","n2","Treatment3","y3","sd3","n3"
+"Lieberman 1998","Placebo",-1.22,3.7,54,"Ropinirole",-1.53,4.28,95,NA,NA,NA,NA
+"Lieberman 1997","Placebo",-0.7,3.7,172,"Pramipexole",-2.4,3.4,173,NA,NA,NA,NA
+"Guttman 1997","Placebo",-0.3,4.4,76,"Pramipexole",-2.6,4.3,71,"Bromocriptine",-1.2,4.3,81
+"Brunt 2002, Group A","Ropinirole",-0.24,3,128,"Bromocriptine",-0.59,3,72,NA,NA,NA,NA
+"Brunt 2002, Group B","Ropinirole",-0.73,3,80,"Bromocriptine",-0.18,3,46,NA,NA,NA,NA
+"Gershanik 1994b","Bromocriptine",-2.2,2.31,137,"Cabergoline",-2.5,2.18,131,NA,NA,NA,NA
+"Gershanik 1994a","Bromocriptine",-1.8,2.48,154,"Cabergoline",-2.1,2.99,143,NA,NA,NA,NA

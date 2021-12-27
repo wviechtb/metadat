@@ -1,16 +1,11 @@
 \name{dat.dogliotti2014}
 \docType{data}
 \alias{dat.dogliotti2014}
-\title{Network meta-analysis of antithrombotic treatments in patients with
- non-valvular atrial fibrillation}
+\title{Studies on Antithrombotic Treatments to Prevent Strokes}
 \description{
-This data set comes from a systematic review aiming to estimate the
-effects of eight antithrombotic treatments in reducing the incidence of
-major thrombotic events in patients with non-valvular atrial
-fibrillation (Dogliotti et al., 2014).
-
-The review included 20 studies with 79808 participants, four studies are
-three-arm studies. The primary outcome is stroke reduction (yes / no).
+Results from 20 trials examining the effectiveness of antithrombotic
+treatments to prevent strokes in patients with non-valvular atrial
+fibrillation.
 }
 \usage{
 dat.dogliotti2014
@@ -25,6 +20,15 @@ The data frame contains the following columns:
 \bold{total}     \tab \code{numeric}   \tab number of individuals
 }
 }
+\details{
+This data set comes from a systematic review aiming to estimate the
+effects of eight antithrombotic treatments including placebo in reducing
+the incidence of major thrombotic events in patients with non-valvular
+atrial fibrillation (Dogliotti et al., 2014).
+
+The review included 20 studies with 79 808 participants, four studies are
+three-arm studies. The primary outcome is stroke reduction (yes / no).
+}
 \source{
 Dogliotti A, Paolasso E, Giugliano RP (2014).
 Current and new oral antithrombotics in non-valvular atrial
@@ -38,17 +42,17 @@ Guido Schwarzer, \email{sc@imbi.uni-freiburg.de},
 }
 }
 \examples{
-### Show first 7 rows of the dataset
+### Show first 7 rows / 3 studies of the dataset
 head(dat.dogliotti2014, 7)
 
 \dontrun{
-### load netmeta package
+### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
-### print odds ratios and confidence limits with two digits
+### Print odds ratios and confidence limits with two digits
 settings.meta(digits = 2)
 
-### change appearance of confidence intervals
+### Change appearance of confidence intervals
 cilayout("(", "-")
 
 ### Transform data from long arm-based format to contrast-based

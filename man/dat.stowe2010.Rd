@@ -1,23 +1,12 @@
 \name{dat.stowe2010}
 \docType{data}
 \alias{dat.stowe2010}
-\title{Network meta-analysis of adjuvant treatments to levodopa therapy
- for Parkinson's disease}
+\title{Studies on Adjuvant Treatments to Levodopa Therapy for Parkinson
+  disease}
 \description{
-This data set contains data from a Cochrane review assessing efficacy
-and safety of three drug classes as adjuvant treatment to levodopa
-therapy in patients with Parkinson's disease and motor complications
-(Stowe et al., 2010).
-
-The authors conducted three pairwise meta-analyses comparing dopamine
-agonists, catechol-O-methyl transferase inhibitors (COMTI), and
-monoamine oxidase type B inhibitors (MAOBI) with placebo. The primary
-outcome was the mean reduction of the time spent in a relatively
-immobile 'off' phase (mean off-time), calculated in hours per
-day. Relative treatment effects were expressed as mean difference. Data
-on this outcome were available for 5 331 patients from 28 studies
-comparing an active treatment with placebo and one three-arm study
-comparing two active treatments with placebo.
+Results from 29 trials assessing efficacy of three drug classes as
+adjuvant treatment to levodopa therapy in patients with Parkinson
+disease and motor complications.
 }
 \usage{
 dat.stowe2010
@@ -40,6 +29,22 @@ The data frame contains the following columns:
 \bold{sd3}   \tab \code{numeric}   \tab standard deviation arm 3 \cr
 \bold{n3}    \tab \code{integer}   \tab sample size arm 3 \cr
 }
+}
+\details{
+This data set contains data from a Cochrane review assessing efficacy
+and safety of three drug classes as adjuvant treatment to levodopa
+therapy in patients with Parkinson disease and motor complications
+(Stowe et al., 2010).
+
+The authors conducted three pairwise meta-analyses comparing dopamine
+agonists, catechol-O-methyl transferase inhibitors (COMTI), and
+monoamine oxidase type B inhibitors (MAOBI) with placebo. The primary
+outcome was the mean reduction of the time spent in a relatively
+immobile 'off' phase (mean off-time), calculated in hours per
+day. Relative treatment effects were expressed as mean difference. Data
+on this outcome were available for 5 331 patients from 28 studies
+comparing an active treatment with placebo and one three-arm study
+comparing two active treatments with placebo.
 }
 \source{
 Stowe R, Ives N, Clarke CE, Deane K, Hilten V, Wheatley K, et

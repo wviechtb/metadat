@@ -1,9 +1,25 @@
 \name{dat.baker2009}
 \docType{data}
 \alias{dat.baker2009}
-\title{Network Meta-Analysis of Pharmacologic Treatments for Chronic
- Obstructive Pulmonary Disease}
-\description{
+\title{Studies on Pharmacologic Treatments for Chronic Obstructive
+  Pulmonary Disease}
+\description{  
+Results from 39 trials examining pharmacologic treatments for chronic
+obstructive pulmonary disease (COPD).
+}
+\usage{dat.baker2009}
+\format{
+The data frame contains the following columns:
+\tabular{lll}{
+\bold{study}     \tab \code{character} \tab study label \cr
+\bold{year}      \tab \code{numeric}   \tab year of publication \cr
+\bold{id}        \tab \code{numeric}   \tab study ID \cr
+\bold{treatment} \tab \code{character} \tab treatment \cr
+\bold{exac}      \tab \code{numeric}   \tab number of individuals with one or more COPD exacerbations \cr
+\bold{total}     \tab \code{numeric}   \tab number of individuals
+}
+}
+\details{
 This data set comes from a systematic review of randomized controlled
 trials on pharmacologic treatments for chronic obstructive pulmonary
 disease (COPD) (Baker et al., 2009).
@@ -14,18 +30,6 @@ treatments (fluticasone, budesonide, salmeterol, formoterol, tiotropium)
 and two combinations (fluticasone + salmeterol, budesonide + formoterol)
 were compared to placebo. The authors considered the two combinations as
 separate treatments instead of evaluating the individual components.
-}
-\usage{dat.baker2009}
-\format{
-The data frame contains the following columns:
-\tabular{lll}{
-\bold{study}     \tab \code{character} \tab study label \cr
-\bold{year}      \tab \code{numeric}   \tab year of publication \cr
-\bold{id}        \tab \code{numeric}   \tab study ID \cr
-\bold{treatment} \tab \code{character} \tab treatment \cr
-\bold{exac}      \tab \code{numeric}   \tab number of individuals with one or more episodes of COPD exacerbations \cr
-\bold{total}     \tab \code{numeric}   \tab number of individuals in treatment arm
-}
 }
 \source{  
 Baker, W. L., Baker, E. L., & Coleman, C. I. (2009).
