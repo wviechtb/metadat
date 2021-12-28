@@ -132,7 +132,6 @@ nr1 <- netrank(net1)
 nr2 <- netrank(net2)
 nr1
 nr2
-plot(nr1, nr2)
 
 ### Partial order of treatment rankings (two outcomes)
 outcomes <- c("Early response", "Early remission")
