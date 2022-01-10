@@ -25,7 +25,7 @@
 \references{
    Law, M., Jackson, D., Turner, R., Rhodes, K., & Viechtbauer, W. (2016). Two new methods to fit models for network meta-analysis with random inconsistency effects. \emph{BMC Medical Research Methodology}, \bold{16}, 87. \verb{https://doi.org/10.1186/s12874-016-0184-5}
 
-   \enc{Rücker}{Ruecker}, G., & Schwarzer, G. (2015). Ranking treatments in frequentist network meta-analysis works without resampling methods. \emph{BMC Medical Research Methodology}, \bold{15}, 58. \verb{https://doi.org/10.1186/s12874-015-0060-8}
+   Rücker, G., & Schwarzer, G. (2015). Ranking treatments in frequentist network meta-analysis works without resampling methods. \emph{BMC Medical Research Methodology}, \bold{15}, 58. \verb{https://doi.org/10.1186/s12874-015-0060-8}
 }
 \author{
    Wolfgang Viechtbauer, \email{wvb@metafor-project.org}, \url{https://www.metafor-project.org}

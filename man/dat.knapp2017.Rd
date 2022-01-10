@@ -100,17 +100,17 @@ res
 predict(res, digits=2)
 
 ### use cluster-robust inference methods based on this model
-robust(res, cluster=dat$study)
+robust(res, cluster=study)
 
 ### use methods from clubSandwich package
-robust(res, cluster=dat$study, clubSandwich=TRUE)
+robust(res, cluster=study, clubSandwich=TRUE)
 
 ### examine if task difficulty is a potential moderator of the effect
 res <- rma.mv(yi, V, mods = ~ difficulty, random = ~ 1 | study/comp, data=dat)
 res
-sav <- robust(res, cluster=dat$study)
+sav <- robust(res, cluster=study)
 sav
-sav <- robust(res, cluster=dat$study, clubSandwich=TRUE)
+sav <- robust(res, cluster=study, clubSandwich=TRUE)
 sav
 
 ### draw bubble plot

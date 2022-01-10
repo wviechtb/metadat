@@ -61,7 +61,7 @@ with(dat2, forest(yi, vi, header=TRUE, slab=slabs, xlim=c(-7,5.5), fonts="mono",
 text(-4.4, max(rows)+2, "Comparison", font=2, cex=0.8, pos=4)
 
 ### within-study mean center the BMI variable
-dat$bmicent <- dat$bmi - ave(dat$bmi, dat$study)
+dat$bmicent <- with(dat, bmi - ave(bmi, study))
 
 ### compute the proportion of preeclampsia cases and corresponding sampling variances
 dat <- escalc(measure="PR", xi=cases, ni=total, data=dat)

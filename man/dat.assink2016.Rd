@@ -48,7 +48,7 @@ res <- rma.mv(yi, vi, random = ~ 1 | study/esid, data=dat)
 res
 
 ### use cluster-robust inference methods
-robust(res, cluster=dat$study)
+robust(res, cluster=study)
 
 ### LRTs for the variance components
 res0 <- rma.mv(yi, vi, random = ~ 1 | study/esid, data=dat, sigma2=c(0,NA))
@@ -72,7 +72,7 @@ res <- rma.mv(yi, V, random = ~ 1 | study/esid, data=dat)
 res
 
 ### use cluster-robust inference methods
-robust(res, cluster=dat$study)
+robust(res, cluster=study)
 
 }
 }

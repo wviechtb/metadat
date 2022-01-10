@@ -64,8 +64,8 @@ par(mar=c(5,4,1,2))
 
 forest(dat$yi, dat$vi, psize=0.8, efac=0, xlim=c(-4,6), ylim=c(-3,23),
        cex=1, width=c(5,5,5), xlab="Log Odds Ratio (LnOR)")
-addpoly(res.CE, row=-1.5, cex=1, width=c(5,5,5), mlab="CE Model")
-addpoly(res.RE, row=-2.5, cex=1, width=c(5,5,5), mlab="RE Model")
+addpoly(res.CE, row=-1.5, mlab="CE Model")
+addpoly(res.RE, row=-2.5, mlab="RE Model")
 text(-4, 22, "Trial",         pos=4, font=2)
 text( 6, 22, "LnOR [95\% CI]", pos=2, font=2)
 abline(h=0)

@@ -37,7 +37,7 @@ dat[dat$table == 6,]
 library(metafor)
 
 ### to select a table for the analysis
-tab <- "6" ### either: 6, 9, 10, 11, 12a, 12b
+tab <- "6" # either: 6, 9, 10, 11, 12a, 12b
 
 ### to double-check total counts as reported in article
 apply(dat[dat$table==tab,4:7], 2, sum, na.rm=TRUE)

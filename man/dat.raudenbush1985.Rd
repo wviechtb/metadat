@@ -50,7 +50,7 @@ res <- rma(yi, vi, data = dat)
 res
 
 ### create weeks variable where values larger than 3 are set to 3
-dat$weeks.c <- ifelse(dat$week > 3, 3, dat$week)
+dat$weeks.c <- ifelse(dat$weeks > 3, 3, dat$weeks)
 
 ### mixed-effects model with weeks.c variable as moderator
 res <- rma(yi, vi, mods = ~ weeks.c, data = dat, digits = 3)

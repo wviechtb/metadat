@@ -77,7 +77,7 @@ res.overall
 predict(res.overall)
 
 ### cluster robust variance estimation (CRVE) / cluster-robust inference
-res.overall.crve <- robust(res.overall, cluster = dat$SampleID)
+res.overall.crve <- robust(res.overall, cluster = SampleID)
 res.overall.crve
 
 ### get prediction interval
@@ -92,7 +92,7 @@ res.sa <-  rma.mv(es.z, vi.z, mods = ~ SA.measure.type - 1,
 res.sa
 
 ### cluster robust variance estimation (CRVE) / cluster-robust inference
-res.sa.crve <- robust(res.sa, cluster = dat$SampleID)
+res.sa.crve <- robust(res.sa, cluster = SampleID)
 res.sa.crve
 
 ### profile likelihood plots

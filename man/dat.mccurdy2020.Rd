@@ -75,14 +75,14 @@ data.frame(source=res$s.names, sigma2=round(res$sigma2, 3),
    prop=round(res$sigma2 / sum(res$sigma2), 2))
 
 ### apply cluster-robust inference
-sav <- robust(res, cluster=dat$article)
+sav <- robust(res, cluster=article)
 sav
 
 ### estimated average recall rate in read and generate conditions
 predict(sav, newmods = c(0,1), digits=3)
 
 ### use methods from clubSandwich package
-sav <- robust(res, cluster=dat$article, clubSandwich=TRUE)
+sav <- robust(res, cluster=article, clubSandwich=TRUE)
 sav
 
 }

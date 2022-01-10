@@ -1,68 +1,47 @@
 \name{dat.dong2013}
 \docType{data}
 \alias{dat.dong2013}
-\title{Studies on Safety of Inhaled Medications for Chronic Obstructive
-  Pulmonary Disease}
-\description{
-Results from 41 trials examining the safety of inhaled medications in
-patients with chronic obstructive pulmonary disease.
-}
-\usage{
-dat.dong2013
-}
+\title{Studies on Safety of Inhaled Medications for Chronic Obstructive Pulmonary Disease}
+\description{Results from 41 trials examining the safety of inhaled medications in patients with chronic obstructive pulmonary disease.}
+\usage{dat.dong2013}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{id} \tab \code{integer} \tab study ID \cr
-\bold{treatment} \tab \code{character} \tab treatment \cr
-\bold{death} \tab \code{integer} \tab mortality \cr
-\bold{randomized} \tab \code{integer} \tab number of individuals \cr
-}  
+\bold{id}         \tab \code{integer}   \tab study ID \cr
+\bold{treatment}  \tab \code{character} \tab treatment \cr
+\bold{death}      \tab \code{integer}   \tab mortality \cr
+\bold{randomized} \tab \code{integer}   \tab number of individuals
+}
 }
 \details{
-This network meta-analysis compared the safety of inhaled medications in
-patients with chronic obstructive pulmonary disease (Dong et al., 2013).
+   This network meta-analysis compared the safety of inhaled medications in patients with chronic obstructive pulmonary disease (Dong et al., 2013).
 
-Mortality was reported in 41 randomized trials, with a total of 52 462
-patients. Mortality was low, with 2 408 deaths (4.6\%) reported across
-all studies. There were nine studies that reported zero events in at
-least one of the treatment arms and three additional studies had zero
-events in all treatment arms.
+   Mortality was reported in 41 randomized trials, with a total of 52 462 patients. Mortality was low, with 2 408 deaths (4.6\%) reported across all studies. There were nine studies that reported zero events in at least one of the treatment arms and three additional studies had zero events in all treatment arms.
 
-This data set was used in Efthimiou et al. (2019) to illustrate the
-Mantel-Haenszel method for network meta-analysis.
+   This data set was used in Efthimiou et al. (2019) to illustrate the Mantel-Haenszel method for network meta-analysis.
 }
 \source{
-Dong Y-H, Lin H-H, Shau W-Y, Wu Y-C, Chang C-H, Lai M-S (2013).
-Comparative safety of inhaled medications in patients with chronic
-obstructive pulmonary disease: systematic review and mixed
-treatment comparison meta-analysis of randomised controlled trials.
-\emph{Thorax}, \bold{68}, 48--56.
-\verb{http://dx.doi.org/10.1136/thoraxjnl-2012-201926}
+   Dong, Y.-H., Lin, H.-H., Shau, W.-Y., Wu, Y.-C., Chang, C.-H., & Lai, M.-S. (2013). Comparative safety of inhaled medications in patients with chronic obstructive pulmonary disease: Systematic review and mixed treatment comparison meta-analysis of randomised controlled trials. \emph{Thorax}, \bold{68}(1), 48--56. \verb{https://doi.org/10.1136/thoraxjnl-2012-201926}
 }
 \references{
-Efthimiou O, Rücker G, Schwarzer G, Higgins J, Egger M, Salanti G
-(2019).
-A Mantel-Haenszel model for network meta-analysis of rare events.
-\emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. 
-\verb{https://doi.org/10.1002/sim.8158}
+   Efthimiou, O., Rücker, G., Schwarzer, G., Higgins, J., Egger, M., & Salanti, G. (2019). A Mantel-Haenszel model for network meta-analysis of rare events. \emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. \verb{https://doi.org/10.1002/sim.8158}
 }
 \author{
-Guido Schwarzer, \email{sc@imbi.uni-freiburg.de},
-\url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first 6 rows / 3 studies of the dataset
 head(dat.dong2013)
 
 \dontrun{
-### load netmeta package
+
+### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
-### print odds ratios and confidence limits with two digits
+### Print odds ratios and confidence limits with two digits
 settings.meta(digits = 2)
 
-### change appearance of confidence intervals
+### Change appearance of confidence intervals
 cilayout("(", "-")
 
 ### Transform data from long arm-based format to contrast-based
@@ -95,14 +74,14 @@ netleague(net)
 ### Assess inconsistency
 print(netsplit(net), show = "both", ci = TRUE, overall = FALSE,
   nchar.trts = 6)
+
 }
 }
-\seealso{  
-\code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}},
-\code{\link[netmeta]{netmetabin}}
+\seealso{
+   \code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmetabin}}
 }
 \keyword{datasets}
 \concept{medicine}
-\concept{odds ratio}
+\concept{odds ratios}
 \concept{network meta-analysis}
 \concept{Mantel-Haenszel method}

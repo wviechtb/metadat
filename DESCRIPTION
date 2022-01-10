@@ -1,6 +1,6 @@
 Package: metadat
 Version: 1.1-0
-Date: 2021-12-28
+Date: 2022-01-10
 Title: Meta-Analysis Datasets
 Authors@R: c(
   person(given = "Thomas", family="White",
@@ -19,7 +19,7 @@ Authors@R: c(
   role = c("aut","cre"), email = "wvb@metafor-project.org",
   comment = c(ORCID = "0000-0003-3463-4063")),
   person(given = "Guido", family = "Schwarzer",
-  role = "ctb", email = "sc@imbi.uni-freiburg.de",
+  role = "dtc", email = "sc@imbi.uni-freiburg.de",
   comment = c(ORCID = "0000-0001-6214-9087")))
 Depends: R (>= 4.0.0)
 Imports: utils, tools, mathjaxr

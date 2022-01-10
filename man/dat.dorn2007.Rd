@@ -56,7 +56,7 @@ predict(res, transf=exp)
 
 ### funnel plot with study 5 highlighted in red
 funnel(res, atransf=exp, at=log(c(.1, .2, .5, 1, 2, 5, 10)),
-       ylim=c(0,1), steps=6, las=1, col=ifelse(dat$id == 5, "red", "black"))
+       ylim=c(0,1), steps=6, las=1, col=ifelse(id == 5, "red", "black"))
 
 ### change log risk ratio for study 5
 dat$yi[5] <- -0.44
@@ -68,7 +68,7 @@ predict(res, transf=exp)
 
 ### funnel plot with study 5 highlighted in red
 funnel(res, atransf=exp, at=log(c(.1, .2, .5, 1, 2, 5, 10)),
-       ylim=c(0,1), steps=6, las=1, col=ifelse(dat$id == 5, "red", "black"))
+       ylim=c(0,1), steps=6, las=1, col=ifelse(id == 5, "red", "black"))
 
 }
 }

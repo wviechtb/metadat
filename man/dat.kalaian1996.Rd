@@ -61,7 +61,7 @@ abline(v=log(c(5,18)),  lty="dotted")
 
 ### construct variance-covariance matrix assuming rho = 0.66 for effect sizes
 ### corresponding to the 'verbal' and 'math' outcome types
-V <- vcalc(vi, cluster=dat$study, type=outcome, data=dat, rho=0.66)
+V <- vcalc(vi, cluster=study, type=outcome, data=dat, rho=0.66)
 
 ### fit multivariate random-effects model
 res <- rma.mv(yi, V, mods = ~ outcome - 1,

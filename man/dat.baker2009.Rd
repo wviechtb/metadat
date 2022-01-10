@@ -93,6 +93,6 @@ forest(nb)
 }
 \keyword{datasets}
 \concept{medicine}
-\concept{odds ratio}
+\concept{odds ratios}
 \concept{network meta-analysis}
 \concept{component network meta-analysis}

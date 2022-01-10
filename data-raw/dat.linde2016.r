@@ -3,6 +3,5 @@
 # meta-analysis of primary care depression treatments.
 # Journal of Clinical Epidemiology, 71, 86-96.
 
-
 dat.linde2016 <- read.csv("data-raw/dat.linde2016.txt")
 save(dat.linde2016, file="data/dat.linde2016.rda")

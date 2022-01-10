@@ -45,7 +45,7 @@ populations:
 
 outcome measures:
 
-\concept{mean differences}
+\concept{raw mean differences}
 \concept{standardized mean differences}
 \concept{ratios of means}
 \concept{standardized mean change}
@@ -62,7 +62,7 @@ outcome measures:
 \concept{incidence rates}
 \concept{Cronbach's alpha}
 \concept{hazard ratios}
-\concept{variance ratio}
+\concept{variance ratios}
 
 ############################################################################
 
@@ -87,7 +87,6 @@ methods/concepts:
 \concept{cluster-robust inference}
 \concept{outliers}
 \concept{model checks}
-\concept{non-independence}
 \concept{second order meta-analysis}
 
 ############################################################################

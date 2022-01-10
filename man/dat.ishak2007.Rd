@@ -43,10 +43,10 @@ library(metafor)
 ### create long format dataset
 dat <- reshape(dat, direction="long", idvar="study", v.names=c("yi","vi"),
                varying=list(c(2,4,6,8), c(3,5,7,9)))
-dat <- dat[order(dat$study, dat$time),]
+dat <- dat[order(study, time),]
 
 ### remove missing measurement occasions from dat.long
-dat <- dat[!is.na(dat$yi),]
+dat <- dat[!is.na(yi),]
 rownames(dat) <- NULL
 head(dat, 8)
 

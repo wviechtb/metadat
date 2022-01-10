@@ -2,62 +2,34 @@
 \docType{data}
 \alias{dat.gurusamy2011}
 \title{Studies on Interventions to Reduce Mortality after Liver Transplantation}
-\description{  
-Results from 14 trials examining the mortality risk of interventions for
-decreasing blood loss and blood transfusion requirements during liver
-transplantation.
-}
-\usage{
-dat.gurusamy2011
-}
-\details{
-This network meta-analysis compared the effectiveness of seven
-interventions for decreasing blood loss and blood transfusion
-requirements during liver transplantation (Gurusamy et al., 2011).
-
-Fourteen studies reported mortality at 60 days, in 1 002
-patients. Forty-five deaths were reported across all studies
-(4.5\%). Six studies observed deaths in all treatment arms while three
-studies did not observe any deaths.
-
-This data set was used in Efthimiou et al. (2019) to introduce the
-Mantel-Haenszel method for network meta-analysis.
-
-One of the treatments (solvent detergent plasma) was only included in
-one study with zero events in both treatment arms; this study was
-excluded from all network meta-analyses. In addition, no death was
-observed in the antithrombin III arm of the only study evaluating this
-treatment which was excluded from the Mantel-Haenszel network
-meta-analysis.
-}
+\description{Results from 14 trials examining the mortality risk of interventions for decreasing blood loss and blood transfusion requirements during liver transplantation.}
+\usage{dat.gurusamy2011}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{study} \tab \code{character} \tab study information \cr
+\bold{study}     \tab \code{character} \tab study information \cr
 \bold{treatment} \tab \code{character} \tab treatment \cr
-\bold{death} \tab \code{integer} \tab mortality at 60 days
-  post-transplantation \cr
-\bold{n} \tab \code{integer} \tab number of individuals \cr
-}  
+\bold{death}     \tab \code{integer}   \tab mortality at 60 days post-transplantation \cr
+\bold{n}         \tab \code{integer}   \tab number of individuals
+}
+}
+\details{
+   This network meta-analysis compared the effectiveness of seven interventions for decreasing blood loss and blood transfusion requirements during liver transplantation (Gurusamy et al., 2011).
+
+   Fourteen studies reported mortality at 60 days, in 1,002 patients. Forty-five deaths were reported across all studies (4.5\%). Six studies observed deaths in all treatment arms while three studies did not observe any deaths.
+
+   This data set was used in Efthimiou et al. (2019) to introduce the Mantel-Haenszel method for network meta-analysis.
+
+   One of the treatments (solvent detergent plasma) was only included in one study with zero events in both treatment arms; this study was excluded from all network meta-analyses. In addition, no death was observed in the antithrombin III arm of the only study evaluating this treatment which was excluded from the Mantel-Haenszel network meta-analysis.
 }
 \source{
-Gurusamy KS, Pissanou T, Pikhart H, Vaughan J, Burroughs AK,
-Davidson BR (2011).
-Methods to decrease blood loss and transfusion requirements for
-liver transplantation.
-\emph{Cochrane Database of Systematic Reviews}.
-\verb{https://doi.org/10.1002/14651858.CD009052.pub2}
+   Gurusamy, K. S., Pissanou, T., Pikhart, H., Vaughan, J., Burroughs, A. K., & Davidson, B. R. (2011). Methods to decrease blood loss and transfusion requirements for liver transplantation. \emph{Cochrane Database of Systematic Reviews}, \bold{12}, CD009052. \verb{https://doi.org/10.1002/14651858.CD009052.pub2}
 }
 \references{
-Efthimiou O, Rücker G, Schwarzer G, Higgins J, Egger M, Salanti G
-(2019).
-A Mantel-Haenszel model for network meta-analysis of rare events.
-\emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. 
-\verb{https://doi.org/10.1002/sim.8158}
+   Efthimiou, O., Rücker, G., Schwarzer, G., Higgins, J., Egger, M., & Salanti, G. (2019). A Mantel-Haenszel model for network meta-analysis of rare events. \emph{Statistics in Medicine}, \bold{38}(16), 2992--3012. \verb{https://doi.org/10.1002/sim.8158}
 }
 \author{
-Guido Schwarzer, \email{sc@imbi.uni-freiburg.de},
-\url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first 6 rows of the dataset
@@ -70,13 +42,14 @@ subset(dat.gurusamy2011, study == "Williamson 1999")
 subset(dat.gurusamy2011, study == "Baudo 1992")
 
 \dontrun{
-### load netmeta package
+
+### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
-### print odds ratios and confidence limits with two digits
+### Print odds ratios and confidence limits with two digits
 settings.meta(digits = 2)
 
-### change appearance of confidence intervals
+### Change appearance of confidence intervals
 cilayout("(", "-")
 
 ### Transform data from long arm-based format to contrast-based
@@ -121,14 +94,14 @@ netleague(net.MH)
 ### Assess inconsistency
 print(netsplit(net.MH), show = "both", ci = TRUE, overall = FALSE,
   nchar.trts = 6)
+
 }
 }
-\seealso{  
-\code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}},
-\code{\link[netmeta]{netmetabin}}
+\seealso{
+\code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmetabin}}
 }
 \keyword{datasets}
 \concept{medicine}
-\concept{odds ratio}
+\concept{odds ratios}
 \concept{network meta-analysis}
 \concept{Mantel-Haenszel method}
