@@ -1,0 +1,45 @@
+"study","id","treatment","stroke","total"
+"AFASAK-I 1989",1,"VKAs",9,335
+"AFASAK-I 1989",1,"Aspirin",16,336
+"AFASAK-I 1989",1,"Placebo/Control",19,336
+"BAATAF 1990",2,"VKAs",3,212
+"BAATAF 1990",2,"Placebo/Control",13,208
+"CAFA 1991",3,"VKAs",6,187
+"CAFA 1991",3,"Placebo/Control",9,191
+"SPAF-I 1991",4,"VKAs",8,210
+"SPAF-I 1991",4,"Aspirin",24,552
+"SPAF-I 1991",4,"Placebo/Control",42,568
+"SPINAF 1992",5,"VKAs",7,260
+"SPINAF 1992",5,"Placebo/Control",23,265
+"EAFT 1993",6,"VKAs",20,225
+"EAFT 1993",6,"Aspirin",88,404
+"EAFT 1993",6,"Placebo/Control",90,378
+"SPAF-II 1994",7,"VKAs",39,555
+"SPAF-II 1994",7,"Aspirin",42,545
+"AFASAK-II 1998",8,"VKAs",10,170
+"AFASAK-II 1998",8,"Aspirin",9,169
+"PATAF 1999",9,"VKAs",3,131
+"PATAF 1999",9,"Aspirin",22,319
+"LASAF 1999",10,"Aspirin",5,194
+"LASAF 1999",10,"Placebo/Control",3,91
+"ACTIVE (W) 2006",11,"VKAs",59,3371
+"ACTIVE (W) 2006",11,"Aspirin+Clopidogtrel",100,3335
+"JAST 2006",12,"Aspirin",17,426
+"JAST 2006",12,"Placebo/Control",18,445
+"ACTIVE (A) 2006",13,"Aspirin+Clopidogtrel",296,3772
+"ACTIVE (A) 2006",13,"Aspirin",408,3782
+"Chinese/ATAFS 2006",14,"VKAs",9,335
+"Chinese/ATAFS 2006",14,"Aspirin",17,369
+"BAFTA 2007",15,"VKAs",21,488
+"BAFTA 2007",15,"Aspirin",44,485
+"RE-LY 2009",16,"Dabigatran 110mg",171,6015
+"RE-LY 2009",16,"Dabigatran 150mg",122,6076
+"RE-LY 2009",16,"VKAs",185,6022
+"ROCKET 2011",17,"Rivaroxaban",188,7081
+"ROCKET 2011",17,"VKAs",240,7090
+"ARISTOTLE 2011",18,"Apixaban",197,9120
+"ARISTOTLE 2011",18,"VKAs",248,9081
+"AVERROES 2011",19,"Apixaban",49,2808
+"AVERROES 2011",19,"Aspirin",105,2791
+"WASPO, 2007",20,"VKAs",0,36
+"WASPO, 2007",20,"Aspirin",0,39
