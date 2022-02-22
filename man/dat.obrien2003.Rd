@@ -96,6 +96,6 @@ res
 \concept{proportions}
 \concept{multilevel models}
 \concept{dose-response models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, obstetrics, risk ratios, proportions, multilevel models, dose-response models
 }

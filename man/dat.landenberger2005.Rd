@@ -88,6 +88,6 @@ predict(res, newmods=c(1,2,5,10), transf=exp, digits=2)
 \concept{criminology}
 \concept{odds ratios}
 \concept{meta-regression}
-\section{Concept Terms}{
+\section{Concepts}{
    psychology, criminology, odds ratios, meta-regression
 }

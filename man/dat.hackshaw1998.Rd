@@ -61,6 +61,6 @@ dat$vi <- ((log(dat$or.ub) - log(dat$or.lb)) / (2*qnorm(.975)))^2
 \concept{oncology}
 \concept{epidemiology}
 \concept{odds ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, oncology, epidemiology, odds ratios
 }

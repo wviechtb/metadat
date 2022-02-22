@@ -54,6 +54,6 @@ predict(res, transf=exp, digits=2)
 \concept{cardiology}
 \concept{odds ratios}
 \concept{Peto's method}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, cardiology, odds ratios, Peto's method
 }

@@ -53,6 +53,6 @@ predict(res, transf=transf.ztor)
 \keyword{datasets}
 \concept{education}
 \concept{correlation coefficients}
-\section{Concept Terms}{
+\section{Concepts}{
    education, correlation coefficients
 }

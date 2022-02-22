@@ -66,6 +66,6 @@ predict(res, transf=exp, digits=2)
 \concept{medicine}
 \concept{raw mean differences}
 \concept{standardized mean differences}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, raw mean differences, standardized mean differences
 }

@@ -49,6 +49,6 @@ options(na.action="na.omit")
 \concept{medicine}
 \concept{odds ratios}
 \concept{Mantel-Haenszel method}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, odds ratios, Mantel-Haenszel method
 }

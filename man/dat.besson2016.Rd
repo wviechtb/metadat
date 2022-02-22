@@ -115,6 +115,6 @@ mod1
 \concept{ecology}
 \concept{evolution}
 \concept{standardized mean differences}
-\section{Concept Terms}{
+\section{Concepts}{
    ecology, evolution, standardized mean differences
 }

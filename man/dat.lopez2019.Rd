@@ -123,6 +123,6 @@ res
 \concept{psychiatry}
 \concept{standardized mean changes}
 \concept{network meta-analysis}
-\section{Concept Terms}{
+\section{Concepts}{
    psychiatry, standardized mean changes, network meta-analysis
 }

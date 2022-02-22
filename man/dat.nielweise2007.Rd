@@ -55,6 +55,6 @@ predict(res, transf=exp, digits=2)
 \concept{medicine}
 \concept{odds ratios}
 \concept{generalized linear models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, odds ratios, generalized linear models
 }

@@ -76,6 +76,6 @@ funnel(res, atransf=exp, at=log(c(.1, .2, .5, 1, 2, 5, 10)),
 \concept{medicine}
 \concept{alternative medicine}
 \concept{risk ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, alternative medicine, risk ratios
 }

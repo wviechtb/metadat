@@ -82,6 +82,6 @@ funnel(res, refline=0, level=c(90, 95, 99), shade=c("white", "gray", "darkgray")
 \concept{cardiology}
 \concept{Peto's method}
 \concept{publication bias}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, cardiology, Peto's method, publication bias
 }

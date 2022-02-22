@@ -55,6 +55,6 @@ predict(res, transf=exp, digits=2)
 \concept{medicine}
 \concept{incidence rates}
 \concept{generalized linear models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, incidence rates, generalized linear models
 }

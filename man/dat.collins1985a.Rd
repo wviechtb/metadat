@@ -79,6 +79,6 @@ print(res, digits=2)
 \concept{odds ratios}
 \concept{Peto's method}
 \concept{generalized linear models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, odds ratios, Peto's method, generalized linear models
 }

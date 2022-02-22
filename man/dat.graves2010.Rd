@@ -43,6 +43,6 @@ rma.mh(measure="RR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, digits=2)
 \concept{medicine}
 \concept{risk ratios}
 \concept{Mantel-Haenszel method}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, risk ratios, Mantel-Haenszel method
 }

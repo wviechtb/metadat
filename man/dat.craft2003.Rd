@@ -65,6 +65,6 @@ res
 \concept{psychology}
 \concept{correlation coefficients}
 \concept{multivariate models}
-\section{Concept Terms}{
+\section{Concepts}{
    psychology, correlation coefficients, multivariate models
 }

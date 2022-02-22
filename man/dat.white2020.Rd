@@ -56,6 +56,6 @@ res
 \concept{ecology}
 \concept{evolution}
 \concept{correlation coefficients}
-\section{Concept Terms}{
+\section{Concepts}{
    ecology, evolution, correlation coefficients
 }

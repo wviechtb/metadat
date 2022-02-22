@@ -52,6 +52,6 @@ res
 \concept{medicine}
 \concept{cardiology}
 \concept{risk differences}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, cardiology, risk differences
 }

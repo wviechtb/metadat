@@ -101,6 +101,6 @@ netleague(net, seq = netrank(net), ci = FALSE)
 \concept{medicine}
 \concept{raw mean differences}
 \concept{network meta-analysis}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, raw mean differences, network meta-analysis
 }

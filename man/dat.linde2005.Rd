@@ -90,6 +90,6 @@ predict(res, newmods=diag(4), transf=exp, digits=2)
 \concept{medicine}
 \concept{psychiatry}
 \concept{risk ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, psychiatry, risk ratios
 }

@@ -73,6 +73,6 @@ res
 \concept{medicine}
 \concept{cardiology}
 \concept{incidence rates}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, cardiology, incidence rates
 }

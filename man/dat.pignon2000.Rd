@@ -65,6 +65,6 @@ predict(res, transf=exp)
 \concept{medicine}
 \concept{oncology}
 \concept{hazard ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, oncology, hazard ratios
 }

@@ -71,6 +71,6 @@ round(res.ml$sigma2[1] / sum(res.ml$sigma2), 3)
 \concept{education}
 \concept{standardized mean differences}
 \concept{multilevel models}
-\section{Concept Terms}{
+\section{Concepts}{
    education, standardized mean differences, multilevel models
 }

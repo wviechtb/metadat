@@ -235,6 +235,6 @@ round(table.heterogeneity, 2)
 \concept{multilevel models}
 \concept{multivariate models}
 \concept{cluster-robust inference}
-\section{Concept Terms}{
+\section{Concepts}{
    psychology, human factors, engineering, correlation coefficients, multilevel models, multivariate models, cluster-robust inference
 }

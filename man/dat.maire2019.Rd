@@ -84,6 +84,6 @@ profile(res2, rho=1, xlim=c(0,200), steps=100)
 \concept{ecology}
 \concept{climate change}
 \concept{spatial correlation}
-\section{Concept Terms}{
+\section{Concepts}{
    ecology, climate change, spatial correlation
 }

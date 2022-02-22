@@ -70,6 +70,6 @@ rma.mh(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat,
 \concept{cardiology}
 \concept{odds ratios}
 \concept{Mantel-Haenszel method}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, cardiology, odds ratios, Mantel-Haenszel method
 }

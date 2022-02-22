@@ -90,6 +90,6 @@ anova(res, X=c(1,-1))
 \concept{standardized mean differences}
 \concept{odds ratios}
 \concept{multivariate models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, standardized mean differences, odds ratios, multivariate models
 }

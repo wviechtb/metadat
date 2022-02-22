@@ -59,6 +59,6 @@ predict(res, transf=exp, digits=2)
 \keyword{datasets}
 \concept{psychology}
 \concept{odds ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    psychology, odds ratios
 }

@@ -74,6 +74,6 @@ rma(smd, sei=se, mods = ~ I(meetings * hours), data=dat, method="DL")
 \concept{standardized mean differences}
 \concept{publication bias}
 \concept{meta-regression}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, primary care, standardized mean differences, publication bias, meta-regression
 }

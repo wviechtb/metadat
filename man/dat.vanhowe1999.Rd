@@ -85,6 +85,6 @@ predict(res, transf=exp, digits=2)
 \concept{medicine}
 \concept{epidemiology}
 \concept{odds ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, epidemiology, odds ratios
 }

@@ -58,6 +58,6 @@ predict(res, transf=exp)
 \keyword{datasets}
 \concept{medicine}
 \concept{risk ratios}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, risk ratios
 }

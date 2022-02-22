@@ -87,6 +87,6 @@ res
 \concept{correlation coefficients}
 \concept{multilevel models}
 \concept{phylogeny}
-\section{Concept Terms}{
+\section{Concepts}{
    ecology, evolution, correlation coefficients, multilevel models, phylogeny
 }

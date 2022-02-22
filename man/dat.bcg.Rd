@@ -83,6 +83,6 @@ cor(dat$ablat, dat$year)
 \concept{medicine}
 \concept{risk ratios}
 \concept{meta-regression}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, risk ratios, meta-regression
 }

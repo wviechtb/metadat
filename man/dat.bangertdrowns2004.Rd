@@ -63,6 +63,6 @@ res
 \concept{education}
 \concept{standardized mean differences}
 \concept{meta-regression}
-\section{Concept Terms}{
+\section{Concepts}{
    education, standardized mean differences, meta-regression
 }

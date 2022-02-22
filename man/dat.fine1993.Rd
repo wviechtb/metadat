@@ -124,6 +124,6 @@ profile(res, rho=1)
 \concept{oncology}
 \concept{odds ratios}
 \concept{longitudinal models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, oncology, odds ratios, longitudinal models
 }

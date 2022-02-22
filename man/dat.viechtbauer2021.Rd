@@ -240,6 +240,6 @@ rma(yi, vi, mods = ~ dose, data=dat, method="DL", subset=-c(3,6))
 \concept{odds ratios}
 \concept{outliers}
 \concept{model checks}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, odds ratios, outliers, model checks
 }

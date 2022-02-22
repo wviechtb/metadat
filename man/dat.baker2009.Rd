@@ -96,6 +96,6 @@ forest(nb)
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{component network meta-analysis}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, odds ratios, network meta-analysis, component network meta-analysis
 }

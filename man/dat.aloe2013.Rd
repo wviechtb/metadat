@@ -78,6 +78,6 @@ res
 \concept{social work}
 \concept{(semi-)partial correlations}
 \concept{meta-regression}
-\section{Concept Terms}{
+\section{Concepts}{
    social work, (semi-)partial correlations, meta-regression
 }

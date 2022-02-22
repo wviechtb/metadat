@@ -115,6 +115,6 @@ plot(po12)
 \concept{psychiatry}
 \concept{odds ratios}
 \concept{network meta-analysis}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, psychiatry, odds ratios, network meta-analysis
 }

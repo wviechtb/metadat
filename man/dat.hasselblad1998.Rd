@@ -134,6 +134,6 @@ res
 \concept{psychology}
 \concept{odds ratios}
 \concept{network meta-analysis}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, psychology, odds ratios, network meta-analysis
 }

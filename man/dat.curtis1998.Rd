@@ -85,6 +85,6 @@ predict(res, transf=exp, digits=2)
 \keyword{datasets}
 \concept{ecology}
 \concept{ratios of means}
-\section{Concept Terms}{
+\section{Concepts}{
    ecology, ratios of means
 }

@@ -94,6 +94,6 @@ predict(res, transf=transf.ztor, digits=2)
 \concept{education}
 \concept{correlation coefficients}
 \concept{multilevel models}
-\section{Concept Terms}{
+\section{Concepts}{
    education, correlation coefficients, multilevel models
 }

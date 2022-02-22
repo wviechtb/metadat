@@ -78,6 +78,6 @@ res
 \concept{oncology}
 \concept{single-arm studies}
 \concept{multilevel models}
-\section{Concept Terms}{
+\section{Concepts}{
    medicine, oncology, single-arm studies, multilevel models
 }

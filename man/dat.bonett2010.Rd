@@ -69,6 +69,6 @@ predict(res, newmods=c(0,1), digits=2)
 \concept{Cronbach's alpha}
 \concept{reliability generalization}
 \concept{meta-regression}
-\section{Concept Terms}{
+\section{Concepts}{
    psychology, Cronbach's alpha, reliability generalization, meta-regression
 }

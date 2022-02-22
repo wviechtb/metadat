@@ -46,6 +46,6 @@ res
 \keyword{datasets}
 \concept{ecology}
 \concept{correlation coefficients}
-\section{Concept Terms}{
+\section{Concepts}{
    ecology, correlation coefficients
 }
