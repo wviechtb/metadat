@@ -19,6 +19,8 @@
    Zhou, X.-H., Brizendine, E. J., & Pritz, M. B. (1999). Methods for combining rates from several studies. \emph{Statistics in Medicine}, \bold{18}(5), 557--566. \verb{https://doi.org/10.1002/(SICI)1097-0258(19990315)18:5<557::AID-SIM53>3.0.CO;2-F}
 }
 \references{
+   Pritz M. B., Zhou, X.-H., & Brizendine, E. J. (1996). Hyperdynamic therapy for cerebral vasospasm: A meta-analysis of 14 studies. \emph{Journal of Neurovascular Disease}, \bold{1}, 6--8.
+
    Pritz, M. B. (1997). Treatment of cerebral vasospasm due to aneurysmal subarachnoid hemorrhage: Past, present, and future of hyperdynamic therapy. \emph{Neurosurgery Quarterly}, \bold{7}(4), 273--285.
 }
 \author{

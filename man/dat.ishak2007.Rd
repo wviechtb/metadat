@@ -68,5 +68,5 @@ print(res, digits=2)
 }
 \keyword{datasets}
 \concept{medicine}
-\concept{raw  mean differences}
+\concept{raw mean differences}
 \concept{longitudinal models}

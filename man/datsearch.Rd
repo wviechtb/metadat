@@ -13,9 +13,9 @@ datsearch(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown=FALSE)
    \item{pkgdown}{logical indicating whether the local help file or the pkgdown docs (at \url{https://wviechtb.github.io/metadat/}) should be shown for the chosen dataset (\code{FALSE} by default).}
 }
 \details{
-   The function can be used to search all existing datasets in the \pkg{metadat} package based on their concept terms (see below) or based on a full-text search of their corresponding help files. One can also specify multiple search patterns (by using a string vector as the \code{pattern}). If \code{matchall=TRUE} (the default), only the datasets matching all patterns are returned. If \code{matchall=FALSE}, the datasets matching any one of the patterns are returned.
+   The function can be used to search all existing datasets in the \pkg{metadat} package based on their concept terms (see below) or based on a full-text search of their corresponding help files. One can also specify multiple search patterns by using a string vector as the \code{pattern} or by separating multiple patterns in a single search string with \sQuote{,}, \sQuote{;}, or \sQuote{and}. If \code{matchall=TRUE} (the default), only datasets matching all patterns are returned. If \code{matchall=FALSE}, datasets matching any one of the patterns are returned.
 
-   If one or multiple datasets are found, the user is prompted to choose one of the matching datasets of interest and the corresponding help file is then shown.
+   If a single match is found, the corresponding help file is shown. If multiple matches are found, the user is prompted to choose one of the matching datasets of interest and the corresponding help file is then shown.
 
    \bold{Concept Terms}
 
@@ -23,8 +23,8 @@ datsearch(pattern, concept=TRUE, matchall=TRUE, fixed=TRUE, pkgdown=FALSE)
 
    \itemize{
       \item In terms of \sQuote{fields/topics}, the following tags have been used at least once: alternative medicine, attraction, cardiology, climate change, covid-19, criminology, dentistry, ecology, education, engineering, epidemiology, evolution, human factors, medicine, memory, obstetrics, oncology, persuasion, primary care, psychiatry, psychology, social work, sociology.
-      \item In terms of \sQuote{outcome measures}, the following tags have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, raw mean differences, odds ratios, proportions, ratios of means, raw means, risk differences, risk ratios, (semi-)partial correlations, standardized mean change, standardized mean differences.
-      \item In terms of \sQuote{methods/concepts}, the following tags have been used at least once: cluster-robust inference, component network meta-analysis, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation.
+      \item In terms of \sQuote{outcome measures}, the following tags have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, raw mean differences, odds ratios, proportions, ratios of means, raw means, risk differences, risk ratios, (semi-)partial correlations, standardized mean changes, standardized mean differences.
+      \item In terms of \sQuote{models/methods/concepts}, the following tags have been used at least once: cluster-robust inference, component network meta-analysis, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation.
    }
 }
 \author{
@@ -40,7 +40,7 @@ if (FALSE) {
    datsearch("standardized mean differences")
 
    # find all datasets tagged with the concept terms 'odds ratio' AND 'multilevel'
-   datsearch(c("odds ratio", "multilevel"))
+   datsearch("odds ratio, multilevel")
 
    # do a full-text search for the term 'infarct'
    datsearch("infarct", concept=FALSE)

@@ -121,5 +121,5 @@ res
 }
 \keyword{datasets}
 \concept{psychiatry}
-\concept{standardized mean change}
+\concept{standardized mean changes}
 \concept{network meta-analysis}
