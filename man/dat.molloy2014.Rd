@@ -67,3 +67,6 @@ funnel(res)
 \concept{psychology}
 \concept{medicine}
 \concept{correlation coefficients}
+\section{Concept Terms}{
+   psychology, medicine, correlation coefficients
+}

@@ -61,3 +61,6 @@ print(res, digits=3)
 \concept{proportions}
 \concept{single-arm studies}
 \concept{meta-regression}
+\section{Concept Terms}{
+   psychology, medicine, proportions, single-arm studies, meta-regression
+}

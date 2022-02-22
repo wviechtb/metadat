@@ -75,3 +75,6 @@ netgraph(net, points = TRUE, cex.points = 3, cex = 1.5,
 \concept{medicine}
 \concept{raw mean differences}
 \concept{network meta-analysis}
+\section{Concept Terms}{
+   medicine, raw mean differences, network meta-analysis
+}

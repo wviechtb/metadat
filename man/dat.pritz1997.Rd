@@ -67,3 +67,6 @@ predict(res, transf=transf.ilogit)
 \concept{medicine}
 \concept{single-arm studies}
 \concept{proportions}
+\section{Concept Terms}{
+   medicine, single-arm studies, proportions
+}

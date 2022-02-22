@@ -59,3 +59,6 @@ forest(net, ref = "Placebo", drop = TRUE,
 \concept{medicine}
 \concept{odds ratios}
 \concept{network meta-analysis}
+\section{Concept Terms}{
+   medicine, odds ratios, network meta-analysis
+}

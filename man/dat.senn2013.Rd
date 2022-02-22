@@ -194,3 +194,6 @@ cbind(pscore=round(sort(apply(tab, 1, mean, na.rm=TRUE), decreasing=TRUE), 3))
 \concept{medicine}
 \concept{raw mean differences}
 \concept{network meta-analysis}
+\section{Concept Terms}{
+   medicine, raw mean differences, network meta-analysis
+}

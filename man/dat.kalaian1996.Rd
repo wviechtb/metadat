@@ -94,3 +94,6 @@ res
 \concept{standardized mean differences}
 \concept{multivariate models}
 \concept{meta-regression}
+\section{Concept Terms}{
+   education, standardized mean differences, multivariate models, meta-regression
+}

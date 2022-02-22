@@ -94,3 +94,6 @@ res_femalep
 \concept{psychology}
 \concept{attraction}
 \concept{standardized mean differences}
+\section{Concept Terms}{
+   psychology, attraction, standardized mean differences
+}

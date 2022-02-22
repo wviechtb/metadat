@@ -62,3 +62,6 @@ print(res, digits=3)
 \concept{dentistry}
 \concept{raw mean differences}
 \concept{multivariate models}
+\section{Concept Terms}{
+   medicine, dentistry, raw mean differences, multivariate models
+}

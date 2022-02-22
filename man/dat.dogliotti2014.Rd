@@ -82,3 +82,6 @@ forest(net)
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{Mantel-Haenszel method}
+\section{Concept Terms}{
+   medicine, odds ratios, network meta-analysis, Mantel-Haenszel method
+}

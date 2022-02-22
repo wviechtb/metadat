@@ -66,3 +66,6 @@ print(res_subjective, digits=2)
 \concept{medicine}
 \concept{covid-19}
 \concept{proportions}
+\section{Concept Terms}{
+   medicine, covid-19, proportions
+}

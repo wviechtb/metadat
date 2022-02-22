@@ -81,3 +81,6 @@ print(res, digits=2)
 \concept{psychology}
 \concept{persuasion}
 \concept{raw mean differences}
+\section{Concept Terms}{
+   psychology, persuasion, raw mean differences
+}

@@ -70,3 +70,6 @@ predict(res, newmods=c(rep(0,26), 1, -1), transf=exp, digits=2)
 \concept{odds ratios}
 \concept{Mantel-Haenszel method}
 \concept{network meta-analysis}
+\section{Concept Terms}{
+   medicine, odds ratios, Mantel-Haenszel method, network meta-analysis
+}

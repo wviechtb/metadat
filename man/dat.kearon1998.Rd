@@ -122,3 +122,6 @@ predict(res, newmods = c(1,1), transf=exp, digits=2)
 \concept{diagnostic accuracy studies}
 \concept{multivariate models}
 \concept{publication bias}
+\section{Concept Terms}{
+   medicine, odds ratios, diagnostic accuracy studies, multivariate models, publication bias
+}

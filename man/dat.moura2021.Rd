@@ -95,3 +95,6 @@ predict(res, newmods = rbind(c(0,0,0),c(1,0,0),c(0,1,0),c(1,1,1)), transf=transf
 \concept{multivariate models}
 \concept{phylogeny}
 \concept{meta-regression}
+\section{Concept Terms}{
+   ecology, evolution, correlation coefficients, multivariate models, phylogeny, meta-regression
+}

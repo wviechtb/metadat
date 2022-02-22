@@ -77,3 +77,6 @@ res
 \concept{psychology}
 \concept{correlation coefficients}
 \concept{meta-regression}
+\section{Concept Terms}{
+   psychology, correlation coefficients, meta-regression
+}

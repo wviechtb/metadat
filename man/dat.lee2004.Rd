@@ -45,3 +45,6 @@ predict(res, transf=exp, digits=2)
 \concept{medicine}
 \concept{alternative medicine}
 \concept{risk ratios}
+\section{Concept Terms}{
+   medicine, alternative medicine, risk ratios
+}

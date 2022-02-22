@@ -57,3 +57,6 @@ predict(res, transf=exp, digits=2)
 \concept{medicine}
 \concept{oncology}
 \concept{hazard ratios}
+\section{Concept Terms}{
+   medicine, oncology, hazard ratios
+}

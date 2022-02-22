@@ -64,3 +64,6 @@ predict(res, newmods=0:1, transf=exp, digits=2)
 \concept{sociology}
 \concept{odds ratios}
 \concept{multilevel models}
+\section{Concept Terms}{
+   sociology, odds ratios, multilevel models
+}

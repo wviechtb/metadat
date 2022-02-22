@@ -83,3 +83,6 @@ forest(nc, xlim = c(0.2, 50))
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{component network meta-analysis}
+\section{Concept Terms}{
+   medicine, psychiatry, odds ratios, network meta-analysis, component network meta-analysis
+}

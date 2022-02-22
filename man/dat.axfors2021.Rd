@@ -63,3 +63,6 @@ print(res_cq, digits=2)
 \concept{medicine}
 \concept{covid-19}
 \concept{odds ratios}
+\section{Concept Terms}{
+   medicine, covid-19, odds ratios
+}

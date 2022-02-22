@@ -125,3 +125,6 @@ regplot(sav, xlab="Task Difficulty", ylab="Standardized Mean Difference", las=1,
 \concept{multivariate models}
 \concept{cluster-robust inference}
 \concept{meta-regression}
+\section{Concept Terms}{
+   psychology, standardized mean differences, multilevel models, multivariate models, cluster-robust inference, meta-regression
+}

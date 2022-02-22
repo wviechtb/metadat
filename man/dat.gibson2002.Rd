@@ -96,3 +96,6 @@ predict(res, newmods=1, digits=2)
 \concept{primary care}
 \concept{risk ratios}
 \concept{standardized mean differences}
+\section{Concept Terms}{
+   medicine, primary care, risk ratios, standardized mean differences
+}
