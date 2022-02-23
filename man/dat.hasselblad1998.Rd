@@ -132,6 +132,7 @@ res
 \keyword{datasets}
 \concept{medicine}
 \concept{psychology}
+\concept{smoking}
 \concept{odds ratios}
 \concept{network meta-analysis}
 \section{Concepts}{
