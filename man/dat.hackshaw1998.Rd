@@ -63,5 +63,5 @@ dat$vi <- ((log(dat$or.ub) - log(dat$or.lb)) / (2*qnorm(.975)))^2
 \concept{smoking}
 \concept{odds ratios}
 \section{Concepts}{
-   medicine, oncology, epidemiology, odds ratios
+   medicine, oncology, epidemiology, smoking, odds ratios
 }

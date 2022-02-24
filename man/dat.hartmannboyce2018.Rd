@@ -55,5 +55,5 @@ rma.mh(measure="RR", ai=x.nrt,  n1i=n.nrt,
 \concept{risk ratios}
 \concept{Mantel-Haenszel method}
 \section{Concepts}{
-   medicine, risk ratios, Mantel-Haenszel method
+   medicine, smoking, risk ratios, Mantel-Haenszel method
 }

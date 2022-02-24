@@ -1,7 +1,7 @@
-# metadat 1.1-0 (2022-02-23)
+# metadat 1.1-0 (2022-02-24)
 
 - added some more info to `dat.knapp2017`
-- added `dat.bakdash2021`, `dat.baker2009`, `dat.dogliotti2014`, `dat.dong2013`, `dat.franchini2012`, `dat.gurusamy2011`, `dat.hartmannboyce2018`, `dat.lehmann2018`, `dat.linde2015`, `dat.linde2016`, `dat.mccurdy2020`, `dat.michael2013`, `dat.stowe2010`, `dat.woods2010`
+- added `dat.bakdash2021`, `dat.baker2009`, `dat.dogliotti2014`, `dat.dong2013`, `dat.franchini2012`, `dat.gurusamy2011`, `dat.hartmannboyce2018`, `dat.lehmann2018`, `dat.linde2015`, `dat.linde2016`, `dat.mccurdy2020`, `dat.michael2013`, `dat.stowe2010`, `dat.tannersmith2016`, `dat.woods2010`
 - changed concept term 'mean differences' to 'raw mean differences' (to better distinguish it from the concept 'standardized mean differences')
 - help files now include a 'Concepts' section listing the concept terms
 - datsearch() function slightly improved (single match opens directly, enter exits, can include commas to split up multiple patterns, continue prompting until exit)
