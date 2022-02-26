@@ -93,25 +93,28 @@
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>pattern</dt>
-<dd><p>character string or vector of strings specifying the search pattern(s) to search for within the datasets.</p></dd>
+<dd><p>character string or vector of strings specifying the terms to search for within the datasets. Can also be left unspecified to start the function in an interactive mode.</p></dd>
 <dt>concept</dt>
 <dd><p>logical indicating whether the search should be confined to the concept terms (<code>TRUE</code> by default) or whether a full-text search should be conducted.</p></dd>
 <dt>matchall</dt>
-<dd><p>logical indicating whether only the datasets matching all patterns (if multiple are specified) are returned (<code>TRUE</code> by default) or whether datasets matching any one of the patterns are returned.</p></dd>
+<dd><p>logical indicating whether only the datasets matching all terms (if multiple are specified) are returned (<code>TRUE</code> by default) or whether datasets matching any one of the terms are returned.</p></dd>
 <dt>fixed</dt>
-<dd><p>logical indicating whether a pattern is a string to be matched as is (<code>TRUE</code> by default). If <code>FALSE</code>, a pattern is a regular expression that <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></code> will search for. Only relevant when <code>concept=FALSE</code> (i.e., when doing a full-text search).</p></dd>
+<dd><p>logical indicating whether a term is a string to be matched as is (<code>TRUE</code> by default). If <code>FALSE</code>, a search term is a regular expression that <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></code> will search for. Only relevant when <code>concept=FALSE</code> (i.e., when doing a full-text search).</p></dd>
 <dt>pkgdown</dt>
-<dd><p>logical indicating whether the local help file or the pkgdown docs (at <a href="https://wviechtb.github.io/metadat/" class="external-link">https://wviechtb.github.io/metadat/</a>) should be shown for the chosen dataset (<code>FALSE</code> by default).</p></dd>
+<dd><p>logical indicating whether the standard help file or the pkgdown docs (at <a href="https://wviechtb.github.io/metadat/" class="external-link">https://wviechtb.github.io/metadat/</a>) should be shown for a chosen dataset (<code>FALSE</code> by default).</p></dd>
 </dl></div>
     <div id="details">
     <h2>Details</h2>
-    <p>The function can be used to search all existing datasets in the <span class="pkg">metadat</span> package based on their concept terms (see below) or based on a full-text search of their corresponding help files. One can also specify multiple search patterns by using a string vector as the <code>pattern</code> or by separating multiple patterns in a single search string with ‘,’, ‘;’, or ‘and’. If <code>matchall=TRUE</code> (the default), only datasets matching all patterns are returned. If <code>matchall=FALSE</code>, datasets matching any one of the patterns are returned.</p>
-<p>If a single match is found, the corresponding help file is shown. If multiple matches are found, the user is prompted to choose one of the matching datasets of interest and the corresponding help file is then shown.</p>
+    <p>The function can be used to search all existing datasets in the <span class="pkg">metadat</span> package based on their concept terms (see below) or based on a full-text search of their corresponding help files.</p>
+<p>When running <code>datsearch()</code> without the <code>pattern</code> argument specified, the function starts in an interactive mode and prompts for one or multiple search terms.</p>
+<p>Alternatively, one can specify a single search term via the <code>pattern</code> argument or multiple search terms by using a string vector as the <code>pattern</code> or by separating multiple search terms in a single string with ‘,’, ‘;’, or ‘and’.</p>
+<p>If <code>matchall=TRUE</code> (the default), only datasets matching all search terms (if multiple are specified) are returned. If <code>matchall=FALSE</code>, datasets matching any one of the search terms are returned.</p>
+<p>If a single match is found, the corresponding help file is directly shown. If multiple matches are found, the user is prompted to choose one of the matching datasets of interest.</p>
 <p><b>Concept Terms</b></p>
 <p>Each dataset is tagged with one or multiple concept terms that refer to various aspects of a dataset, such as the field/topic of research, the outcome measure used for the analysis, the model(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.</p>
-<p></p><ul><li><p>In terms of ‘fields/topics’, the following tags have been used at least once: alternative medicine, attraction, cardiology, climate change, covid-19, criminology, dentistry, ecology, education, engineering, epidemiology, evolution, human factors, medicine, memory, obstetrics, oncology, persuasion, primary care, psychiatry, psychology, smoking, social work, sociology.</p></li>
-<li><p>In terms of ‘outcome measures’, the following tags have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, raw mean differences, odds ratios, proportions, ratios of means, raw means, risk differences, risk ratios, (semi-)partial correlations, standardized mean changes, standardized mean differences.</p></li>
-<li><p>In terms of ‘models/methods/concepts’, the following tags have been used at least once: cluster-robust inference, component network meta-analysis, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation.</p></li>
+<p></p><ul><li><p>In terms of ‘fields/topics’, the following terms have been used at least once: alternative medicine, attraction, cardiology, climate change, covid-19, criminology, dentistry, ecology, education, engineering, epidemiology, evolution, human factors, medicine, memory, obstetrics, oncology, persuasion, primary care, psychiatry, psychology, smoking, social work, sociology.</p></li>
+<li><p>In terms of ‘outcome measures’, the following terms have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, raw mean differences, odds ratios, proportions, ratios of means, raw means, risk differences, risk ratios, (semi-)partial correlations, standardized mean changes, standardized mean differences.</p></li>
+<li><p>In terms of ‘models/methods/concepts’, the following terms have been used at least once: cluster-robust inference, component network meta-analysis, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation.</p></li>
 </ul></div>
     <div id="author">
     <h2>Author</h2>
@@ -125,17 +128,20 @@
 <span class="r-in"></span>
 <span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
 <span class="r-in"></span>
+<span class="r-in">   <span class="co"># start the function in the interactive mode</span></span>
+<span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="op">)</span></span>
+<span class="r-in"></span>
 <span class="r-in">   <span class="co"># find all datasets tagged with the concept term 'standardized mean differences'</span></span>
 <span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"standardized mean differences"</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in">   <span class="co"># find all datasets tagged with the concept terms 'odds ratio' AND 'multilevel'</span></span>
+<span class="r-in">   <span class="co"># find all datasets tagged with the concept terms 'odds ratio' and 'multilevel'</span></span>
 <span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"odds ratio, multilevel"</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in">   <span class="co"># do a full-text search for the term 'infarct'</span></span>
 <span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"infarct"</span>, concept<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in">   <span class="co"># do a full-text search for 'rma.mv(' (essentially finds all datasets where the rma.mv()</span></span>
-<span class="r-in">   <span class="co"># function was used in the examples section of a help file)</span></span>
+<span class="r-in">   <span class="co"># do a full-text search for 'rma.mv(' (essentially finds all datasets where</span></span>
+<span class="r-in">   <span class="co"># the rma.mv() function was used in the examples section of a help file)</span></span>
 <span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"rma.mv("</span>, concept<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
 <span class="r-in"></span>
 <span class="r-in"><span class="op">}</span></span>
