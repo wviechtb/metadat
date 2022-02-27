@@ -3,9 +3,7 @@
 \alias{dat.bakdash2021}
 \title{Dataset on Situation Awareness and Task Performance Associations}
 \description{Results from 77 papers with 678 effects evaluating associations among measures of situation awareness and task performance.}
-\usage{
-dat.bakdash2021
-}
+\usage{dat.bakdash2021}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
@@ -20,7 +18,7 @@ The data frame contains the following columns:
 \bold{es.z}              \tab \code{numeric}   \tab z-transformed correlation coefficient; includes ghost results (disclosed and undisclosed non-significant effects not reported in detail) imputed using the draw method described in Bakdash et al. (2021a) \cr
 \bold{vi.z}              \tab \code{numeric}   \tab variance for z-transformed correlation (calculated using \code{Sample.size.stats}, \emph{not} \code{Sample.size}) \cr
 \bold{SampleID}          \tab \code{character} \tab unique identifier for each experiment/study \cr
-\bold{Outcome}           \tab \code{integer}   \tab unique value for each effect size \cr
+\bold{Outcome}           \tab \code{integer}   \tab unique value for each effect size
 }
 }
 \details{
@@ -42,9 +40,9 @@ The data frame contains the following columns:
 
 }
 \source{
-  Bakdash, J. Z., Marusich, L. R., Cox, K. R., Geuss, M. N., Zaroukian, E. G., & Morris, K. M. (2021b). The validity of situation awareness for performance: A meta-analysis (Code Ocean Capsule). \verb{https://doi.org/10.24433/CO.1682542.v4}
+   Bakdash, J. Z., Marusich, L. R., Cox, K. R., Geuss, M. N., Zaroukian, E. G., & Morris, K. M. (2021b). The validity of situation awareness for performance: A meta-analysis (Code Ocean Capsule). \verb{https://doi.org/10.24433/CO.1682542.v4}
 
-  Bakdash, J. Z., Marusich, L. R., Cox, K. R., Geuss, M. N., Zaroukian, E. G., & Morris, K. M. (2021c). The validity of situation awareness for performance: A meta-analysis (Systematic Review, Data, and Code). \verb{https://doi.org/10.17605/OSF.IO/4K7ZV}
+   Bakdash, J. Z., Marusich, L. R., Cox, K. R., Geuss, M. N., Zaroukian, E. G., & Morris, K. M. (2021c). The validity of situation awareness for performance: A meta-analysis (Systematic Review, Data, and Code). \verb{https://doi.org/10.17605/OSF.IO/4K7ZV}
 }
 \references{
    Bakdash, J. Z., Marusich, L. R., Cox, K. R., Geuss, M. N., Zaroukian, E. G., & Morris, K. M. (2021a). The validity of situation awareness for performance: A meta-analysis. \emph{Theoretical Issues in Ergonomics Science}, 1--24. \verb{https://doi.org/10.1080/1463922X.2021.1921310}

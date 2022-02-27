@@ -1,12 +1,8 @@
 \name{dat.baker2009}
 \docType{data}
 \alias{dat.baker2009}
-\title{Studies on Pharmacologic Treatments for Chronic Obstructive
-  Pulmonary Disease}
-\description{  
-Results from 39 trials examining pharmacologic treatments for chronic
-obstructive pulmonary disease (COPD).
-}
+\title{Studies on Pharmacologic Treatments for Chronic Obstructive Pulmonary Disease}
+\description{Results from 39 trials examining pharmacologic treatments for chronic obstructive pulmonary disease (COPD).}
 \usage{dat.baker2009}
 \format{
 The data frame contains the following columns:
@@ -20,35 +16,22 @@ The data frame contains the following columns:
 }
 }
 \details{
-This data set comes from a systematic review of randomized controlled
-trials on pharmacologic treatments for chronic obstructive pulmonary
-disease (COPD) (Baker et al., 2009).
+   This data set comes from a systematic review of randomized controlled trials on pharmacologic treatments for chronic obstructive pulmonary disease (COPD) (Baker et al., 2009).
 
-The primary outcome, occurrence of one or more episodes of COPD
-exacerbation, is binary (yes / no). For this outcome, five drug
-treatments (fluticasone, budesonide, salmeterol, formoterol, tiotropium)
-and two combinations (fluticasone + salmeterol, budesonide + formoterol)
-were compared to placebo. The authors considered the two combinations as
-separate treatments instead of evaluating the individual components.
+   The primary outcome, occurrence of one or more episodes of COPD exacerbation, is binary (yes / no). For this outcome, five drug treatments (fluticasone, budesonide, salmeterol, formoterol, tiotropium) and two combinations (fluticasone + salmeterol, budesonide + formoterol) were compared to placebo. The authors considered the two combinations as separate treatments instead of evaluating the individual components.
 }
-\source{  
-Baker, W. L., Baker, E. L., & Coleman, C. I. (2009).
-Pharmacologic treatments for chronic obstructive pulmonary disease: A
-mixed-treatment comparison meta-analysis.
-\emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug
- Therapy},
-\bold{29}(8), 891--905.
-\verb{https://doi.org/10.1592/phco.29.8.891}
+\source{
+   Baker, W. L., Baker, E. L., & Coleman, C. I. (2009). Pharmacologic treatments for chronic obstructive pulmonary disease: A mixed-treatment comparison meta-analysis. \emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy}, \bold{29}(8), 891--905. \verb{https://doi.org/10.1592/phco.29.8.891}
 }
 \author{
-Guido Schwarzer, \email{sc@imbi.uni-freiburg.de},
-\url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first 6 rows of the dataset
 head(dat.baker2009)
 
 \dontrun{
+
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -84,6 +67,7 @@ cnet
 ### Compare results of NMA and additive CNMA
 nb <- netbind(net, cnet, name = c("Standard NMA", "Additive CNMA"))
 forest(nb)
+
 }
 }
 \seealso{
