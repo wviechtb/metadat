@@ -24,7 +24,7 @@ The data frame contains the following columns:
 \details{
    The dataset contains behavioral experiments from 77 papers/79 studies with a total of 678 effects, evaluating associations among measures of situation awareness (\dQuote{knowing what is going on}) and task performance. Examples of situation awareness include knowledge of current vehicle speed in a simulated driving task and location and heading of aircraft in a simulated air traffic control task. Corresponding examples of task performance include \dQuote{the number of collisions in a simulated driving task} and \dQuote{subject matter expert rating of conflict management in a simulated air control task} (Bakdash et al. 2021a, p. 2). This dataset and the \sQuote{Examples} are a highly simplified version of the data and code in Bakdash et al. (2021b; 2021c). The journal article by Bakdash et al. (2021a) describes the systematic review and meta-analysis in detail.
 
-   This dataset is used to illustrate multilevel multivariate meta-analytic models for the overall pooled effect and pooled effects by situation awareness measure. We also adjust meta-analytic models using cluster robust variance estimation / cluster robust inference with the \code{\link[metafor]{robust}} function in \emph{metafor}. Results are shown graphically in a customized forest plot with a prediction interval (estimated plausible range of individual effects). Last, we create a table summarizing the estimated meta-analytic heterogeneity parameters.
+   This dataset is used to illustrate multilevel multivariate meta-analytic models for the overall pooled effect and pooled effects by situation awareness measure. We also adjust meta-analytic models using cluster-robust variance estimation / cluster-robust inference with the \code{\link[metafor]{robust}} function in \emph{metafor}. Results are shown graphically in a customized forest plot with a prediction interval (estimated plausible range of individual effects). Last, we create a table summarizing the estimated meta-analytic heterogeneity parameters.
 
    The meta-analytic results show most pooled effect sizes in the positive medium range or less. There was also substantial meta-analytic heterogeneity (estimated systematic variance in true effects), nearing the magnitude of the overall pooled effect. We interpret the meta-analytic results as situation awareness typically having limited validity for task performance (i.e., good situation awareness does not tend to have strong probabilistic links with good performance and vice-versa). More formally, measures of situation awareness do not generally and meaningfully capture cognitive processes and other relevant factors underlying task performance.
 
@@ -74,7 +74,7 @@ res.overall
 ### get prediction interval
 predict(res.overall)
 
-### cluster robust variance estimation (CRVE) / cluster-robust inference
+### cluster-robust variance estimation (CRVE) / cluster-robust inference
 res.overall.crve <- robust(res.overall, cluster = SampleID)
 res.overall.crve
 
@@ -89,7 +89,7 @@ res.sa <-  rma.mv(es.z, vi.z, mods = ~ SA.measure.type - 1,
                   test = "t")
 res.sa
 
-### cluster robust variance estimation (CRVE) / cluster-robust inference
+### cluster-robust variance estimation (CRVE) / cluster-robust inference
 res.sa.crve <- robust(res.sa, cluster = SampleID)
 res.sa.crve
 

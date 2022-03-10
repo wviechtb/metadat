@@ -1,10 +1,15 @@
+url: https://wviechtb.github.io/metadat/
+
 template:
   package: preferably
   #bootstrap: 5
   params:
+    #bootswatch: cosmo
     toggle: manual
-  #params:
-  #  bootswatch: cosmo
+    docsearch:
+      api_key: 8c74dd1e0cd05800bf9f222777e07625
+      index_name: wviechtb-metadat
+      app_id: B3DHC2OOU8
   opengraph:
     #image:
     #  src: man/figures/card.png
