@@ -97,7 +97,7 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>The object is a list containing a data frame called <code>dat</code> that contains the following columns and a phylogenetic tree called <code>tree</code>:</p><table class="table table"><tr><td><b>study.id</b></td><td><code>character</code></td><td>study id</td></tr><tr><td><b>effect.size.id</b></td><td><code>numeric</code></td><td>effect size id</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species</td></tr><tr><td><b>species.id</b></td><td><code>character</code></td><td>species id (as in the Open Tree of Life reference taxonomy)</td></tr><tr><td><b>subphylum</b></td><td><code>character</code></td><td>the subphyla of the species</td></tr><tr><td><b>phylum</b></td><td><code>character</code></td><td>the phyla of the species</td></tr><tr><td><b>assortment.trait</b></td><td><code>character</code></td><td>the measure of body size</td></tr><tr><td><b>trait.dimensions</b></td><td><code>character</code></td><td>dimensionality of the measure</td></tr><tr><td><b>field.collection</b></td><td><code>character</code></td><td>whether data were collected in the field</td></tr><tr><td><b>publication.year</b></td><td><code>numeric</code></td><td>publication year of the study</td></tr><tr><td><b>pooled.data</b></td><td><code>character</code></td><td>whether data were pooled either spatially and/or temporally</td></tr><tr><td><b>spatially.pooled.data</b></td><td><code>character</code></td><td>whether data were pooled spatially</td></tr><tr><td><b>temporally.pooled.data</b></td><td><code>character</code></td><td>whether data were pooled temporally</td></tr><tr><td><b>ri</b></td><td><code>numeric</code></td><td>correlation coefficient</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>sample size</td></tr></table></div>
+    <p>The object is a list containing a data frame called <code>dat</code> that contains the following columns and a phylogenetic tree called <code>tree</code>:</p><table class="table table"><tr><td><b>study.id</b></td><td><code>character</code></td><td>study id</td></tr><tr><td><b>effect.size.id</b></td><td><code>numeric</code></td><td>effect size id</td></tr><tr><td><b>species</b></td><td><code>character</code></td><td>species</td></tr><tr><td><b>species.id</b></td><td><code>character</code></td><td>species id (as in the Open Tree of Life reference taxonomy)</td></tr><tr><td><b>subphylum</b></td><td><code>character</code></td><td>the subphyla of the species</td></tr><tr><td><b>phylum</b></td><td><code>character</code></td><td>the phyla of the species</td></tr><tr><td><b>assortment.trait</b></td><td><code>character</code></td><td>the measure of body size</td></tr><tr><td><b>trait.dimensions</b></td><td><code>character</code></td><td>dimensionality of the measure</td></tr><tr><td><b>field.collection</b></td><td><code>character</code></td><td>whether data were collected in the field</td></tr><tr><td><b>publication.year</b></td><td><code>numeric</code></td><td>publication year of the study</td></tr><tr><td><b>pooled.data</b></td><td><code>character</code></td><td>whether data were pooled either spatially and/or temporally</td></tr><tr><td><b>spatially.pooled</b></td><td><code>character</code></td><td>whether data were pooled spatially</td></tr><tr><td><b>temporally.pooled</b></td><td><code>character</code></td><td>whether data were pooled temporally</td></tr><tr><td><b>ri</b></td><td><code>numeric</code></td><td>correlation coefficient</td></tr><tr><td><b>ni</b></td><td><code>numeric</code></td><td>sample size</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>The 457 studies included in this dataset provide 1828 correlation coefficients describing the similarity in some measure of body size in mating couples in 341 different species.</p>
@@ -140,13 +140,13 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4 Crustacea Arthropoda  cheliped length              uni              yes             1985</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5 Crustacea Arthropoda           weight              uni              yes             1985</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6 Crustacea Arthropoda           weight              uni              yes             1985</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   pooled.data spatially.pooled.data temporally.pooled.data   ri ni</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1          no                    no                     no 0.23 53</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2         yes                   yes                     no 0.57 23</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3         yes                   yes                     no 0.54 23</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4         yes                   yes                     no 0.53 23</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5          no                    no                     no 0.85 12</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          no                    no                     no 0.82 15</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   pooled.data spatially.pooled temporally.pooled   ri ni</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1          no               no                no 0.23 53</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2         yes              yes                no 0.57 23</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3         yes              yes                no 0.54 23</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4         yes              yes                no 0.53 23</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5          no               no                no 0.85 12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6          no               no                no 0.82 15</span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># \dontrun{</span></span>
 <span class="r-in"></span>
@@ -201,7 +201,7 @@
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### examine if spatial and/or temporal pooling of data tends to yield larger correlations</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>,</span>
-<span class="r-in">   mods <span class="op">=</span> <span class="op">~</span> <span class="va">spatially.pooled.data</span> <span class="op">*</span> <span class="va">temporally.pooled.data</span>,</span>
+<span class="r-in">   mods <span class="op">=</span> <span class="op">~</span> <span class="va">spatially.pooled</span> <span class="op">*</span> <span class="va">temporally.pooled</span>,</span>
 <span class="r-in">   random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study.id</span>, <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">effect.size.id</span>, <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">species.id</span>, <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">species.id.phy</span><span class="op">)</span>,</span>
 <span class="r-in">   R<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>species.id.phy<span class="op">=</span><span class="va">A</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">res</span></span>
@@ -224,16 +224,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                     estimate      se     zval    pval    ci.lb​ </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                                               0.3457  0.1327   2.6047  0.0092   0.0856 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> spatially.pooled.datayes                              0.0810  0.0390   2.0780  0.0377   0.0046 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> temporally.pooled.datayes                             0.0599  0.0269   2.2272  0.0259   0.0072 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> spatially.pooled.datayes:temporally.pooled.datayes   -0.0729  0.0452  -1.6107  0.1073  -0.1615 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                                      ci.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                                             0.6059  ** </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> spatially.pooled.datayes                            0.1574   * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> temporally.pooled.datayes                           0.1126   * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> spatially.pooled.datayes:temporally.pooled.datayes  0.0158     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                           estimate      se     zval    pval    ci.lb   ci.ub    ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                                     0.3457  0.1327   2.6047  0.0092   0.0856  0.6059  ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> spatially.pooledyes                         0.0810  0.0390   2.0780  0.0377   0.0046  0.1574   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> temporally.pooledyes                        0.0599  0.0269   2.2272  0.0259   0.0072  0.1126   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> spatially.pooledyes:temporally.pooledyes   -0.0729  0.0452  -1.6107  0.1073  -0.1615  0.0158     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>

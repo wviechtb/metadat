@@ -152,38 +152,59 @@
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### calculate log(OR) and corresponding sampling variance with 1/2 correction</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">lh.le</span>, bi<span class="op">=</span><span class="va">lh.re</span>, ci<span class="op">=</span><span class="va">rh.le</span>, di<span class="op">=</span><span class="va">rh.re</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in escalc(measure = "OR", ai = lh.le, bi = lh.re, ci = rh.le, di = rh.re,     data = dat, add = 1/2, to = "all"):</span> One or more group sizes are &lt;= 0.</span>
 <span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">10</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    study sample    author year selection investigator   hand_assess eye_assess mage lh.le lh.re rh.le</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1      1      1     Mills 1925        no        other questionnaire      E.1.d   NA    93    17   130</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2      2      2    Downey 1927       yes psychologist questionnaire      E.1.b   37   140    91   305</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3      2      2    Downey 1927       yes psychologist questionnaire      E.1.b   37    74    57   158</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      2      2    Downey 1927       yes psychologist questionnaire      E.1.b   37    66    34   147</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5      3      3     Miles 1930        no psychologist questionnaire   E.1.a.ii   22    16    14    43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6      4      4    Quinan 1931        no        other   performance      E.1.b   25   102    97   597</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7      5      5    Jasper 1932       yes psychologist questionnaire   E.1.a.ii   20    17    14    38</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8      6      6      Lund 1932        no psychologist   performance   E.1.a.ii   20    10     2    52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9      7      7      Eyre 1933        no psychologist   performance   E.1.a.ii   15     7     2    15</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     8      8 Updegraff 1933        no psychologist   performance   E.1.a.ii    4     4     2    15</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    rh.re      sex</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    760 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    697 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    427     male</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    270   female</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    114 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6   1898 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7     80 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    170 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9    169 combined</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10    38 combined</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    study sample    author year selection investigator   hand_assess eye_assess mage lh.le lh.re rh.le </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      1      1     Mills 1925        no        other questionnaire      E.1.d   NA    93    17   130 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      2      2    Downey 1927       yes psychologist questionnaire      E.1.b   37   140    91   305 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      2      2    Downey 1927       yes psychologist questionnaire      E.1.b   37    74    57   158 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      2      2    Downey 1927       yes psychologist questionnaire      E.1.b   37    66    34   147 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5      3      3     Miles 1930        no psychologist questionnaire   E.1.a.ii   22    16    14    43 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6      4      4    Quinan 1931        no        other   performance      E.1.b   25   102    97   597 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7      5      5    Jasper 1932       yes psychologist questionnaire   E.1.a.ii   20    17    14    38 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8      6      6      Lund 1932        no psychologist   performance   E.1.a.ii   20    10     2    52 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9      7      7      Eyre 1933        no psychologist   performance   E.1.a.ii   15     7     2    15 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10     8      8 Updegraff 1933        no psychologist   performance   E.1.a.ii    4     4     2    15 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    rh.re      sex     yi     vi </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    760 combined 3.4384 0.0768 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2    697 combined 1.2544 0.0228 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3    427     male 1.2512 0.0395 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4    270   female 1.2627 0.0545 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5    114 combined 1.0970 0.1613 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6   1898 combined 1.2061 0.0222 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7     80 combined 0.9257 0.1645 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8    170 combined 2.6130 0.5202 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9    169 combined 3.4906 0.6037 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10    38 combined 1.4976 0.7127 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### overall association between handedness and eyedness</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">sex</span><span class="op">==</span><span class="st">"combined"</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> Cannot find the object/variable ('yi') specified for the 'yi' argument.</span>
 <span class="r-in"><span class="va">res</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in eval(expr, envir, enclos):</span> object 'res' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 54; tau^2 estimator: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 (estimated amount of total heterogeneity): 0.4340 (SE = 0.1208)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau (square root of estimated tau^2 value):      0.6588</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):   89.08%</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability):  9.16</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 53) = 355.7748, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   1.3135  0.1098  11.9597  &lt;.0001  1.0982  1.5287  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in predict(res, transf = exp, digits = 2):</span> object 'res' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3.72  3.00  4.61  1.00 13.77 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co"># }</span></span>
 </code></pre></div>

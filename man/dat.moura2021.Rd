@@ -8,21 +8,21 @@ dat.moura2021
 }
 \format{The object is a list containing a data frame called \code{dat} that contains the following columns and a phylogenetic tree called \code{tree}:
 \tabular{lll}{
-\bold{study.id}               \tab \code{character} \tab study id \cr
-\bold{effect.size.id}         \tab \code{numeric}   \tab effect size id \cr
-\bold{species}                \tab \code{character} \tab species \cr
-\bold{species.id}             \tab \code{character} \tab species id (as in the Open Tree of Life reference taxonomy) \cr
-\bold{subphylum}              \tab \code{character} \tab the subphyla of the species \cr
-\bold{phylum}                 \tab \code{character} \tab the phyla of the species \cr
-\bold{assortment.trait}       \tab \code{character} \tab the measure of body size \cr
-\bold{trait.dimensions}       \tab \code{character} \tab dimensionality of the measure \cr
-\bold{field.collection}       \tab \code{character} \tab whether data were collected in the field \cr
-\bold{publication.year}       \tab \code{numeric}   \tab publication year of the study \cr
-\bold{pooled.data}            \tab \code{character} \tab whether data were pooled either spatially and/or temporally \cr
-\bold{spatially.pooled.data}  \tab \code{character} \tab whether data were pooled spatially \cr
-\bold{temporally.pooled.data} \tab \code{character} \tab whether data were pooled temporally \cr
-\bold{ri}                     \tab \code{numeric}   \tab correlation coefficient \cr
-\bold{ni}                     \tab \code{numeric}   \tab sample size
+\bold{study.id}          \tab \code{character} \tab study id \cr
+\bold{effect.size.id}    \tab \code{numeric}   \tab effect size id \cr
+\bold{species}           \tab \code{character} \tab species \cr
+\bold{species.id}        \tab \code{character} \tab species id (as in the Open Tree of Life reference taxonomy) \cr
+\bold{subphylum}         \tab \code{character} \tab the subphyla of the species \cr
+\bold{phylum}            \tab \code{character} \tab the phyla of the species \cr
+\bold{assortment.trait}  \tab \code{character} \tab the measure of body size \cr
+\bold{trait.dimensions}  \tab \code{character} \tab dimensionality of the measure \cr
+\bold{field.collection}  \tab \code{character} \tab whether data were collected in the field \cr
+\bold{publication.year}  \tab \code{numeric}   \tab publication year of the study \cr
+\bold{pooled.data}       \tab \code{character} \tab whether data were pooled either spatially and/or temporally \cr
+\bold{spatially.pooled}  \tab \code{character} \tab whether data were pooled spatially \cr
+\bold{temporally.pooled} \tab \code{character} \tab whether data were pooled temporally \cr
+\bold{ri}                \tab \code{numeric}   \tab correlation coefficient \cr
+\bold{ni}                \tab \code{numeric}   \tab sample size
 }
 }
 \details{
@@ -77,7 +77,7 @@ res
 
 ### examine if spatial and/or temporal pooling of data tends to yield larger correlations
 res <- rma.mv(yi, vi,
-   mods = ~ spatially.pooled.data * temporally.pooled.data,
+   mods = ~ spatially.pooled * temporally.pooled,
    random = list(~ 1 | study.id, ~ 1 | effect.size.id, ~ 1 | species.id, ~ 1 | species.id.phy),
    R=list(species.id.phy=A), data=dat)
 res

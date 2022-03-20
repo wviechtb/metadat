@@ -7,6 +7,8 @@
 suppressPackageStartupMessages(library(ape, quietly=TRUE))
 
 dat <- read.table("data-raw/dat.moura2021.txt", header=TRUE, as.is=TRUE, sep="\t")
+names(dat)[names(dat) == "spatially.pooled.data"]  <- "spatially.pooled"
+names(dat)[names(dat) == "temporally.pooled.data"] <- "temporally.pooled"
 tree <- read.tree("data-raw/dat.moura2021.tre")
 dat.moura2021 <- list(dat=dat, tree=tree)
 save(dat.moura2021, file="data/dat.moura2021.rda")
