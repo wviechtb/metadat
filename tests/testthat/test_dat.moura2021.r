@@ -3,7 +3,7 @@ context("Checking: dat.moura2021")
 library(digest)
 
 test_that("md5 hash matches for the data", {
-   expect_match(digest(metadat::dat.moura2021$dat, algo="md5"), "ebcefce49e0e91e7861847aa878279ce")
+   expect_match(digest(metadat::dat.moura2021$dat, algo="md5"), "313e588a5e1d08ee541260392beb9ae3")
 })
 
 test_that("md5 hash matches for the tree", {
