@@ -157,7 +157,7 @@ generalization, single-arm studies, spatial correlation.")
       } else {
 
          for (i in 1:n) {
-            hits <- try(grep(pattern[i], tmpenv$rdtxt, fixed=fixed), silent=TRUE) # grep for pattern in rdtxt
+            hits <- try(grep(ifelse(fixed, tolower(pattern[i]), pattern[i]), tmpenv$rdtxt, fixed=fixed), silent=TRUE) # grep for pattern in rdtxt
             if (inherits(hits, "try-error")) {
                warning(paste0("Search pattern '", pattern[i], "' is not a valid regular expression that can be searched for."), call.=FALSE)
                hits <- "none"
