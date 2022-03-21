@@ -237,7 +237,6 @@
 <span class="r-in"><span class="co">### compute the relative excess heterozygosity in the controls</span></span>
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"REH"</span>, ai<span class="op">=</span><span class="va">ct.ins.ins</span>, bi<span class="op">=</span><span class="va">ct.ins.del</span>, ci<span class="op">=</span><span class="va">ct.del.del</span>,</span>
 <span class="r-in">              slab<span class="op">=</span><span class="va">study</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in escalc(measure = "REH", ai = ct.ins.ins, bi = ct.ins.del, ci = ct.del.del,     slab = study, data = dat):</span> Unknown 'measure' specified.</span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### fit random-effects model and get the pooled REH value (with 90</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, level<span class="op">=</span><span class="fl">90</span><span class="op">)</span></span>
@@ -245,18 +244,18 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 4; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 (estimated amount of total heterogeneity): 0 (SE = 0.0052)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tau (square root of estimated tau^2 value):      0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):   0.00%</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 (estimated amount of total heterogeneity): 0.0000 (SE = 0.0019)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau (square root of estimated tau^2 value):      0.0011</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> I^2 (total heterogeneity / total variability):   0.05%</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> H^2 (total variability / sampling variability):  1.00</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 3) = 1.6413, p-val = 0.6501</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 3) = 3.2001, p-val = 0.3618</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb   ci.ub   ​ </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  -0.0481  0.0373  -1.2921  0.1963  -0.1094  0.0131    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval    ci.lb   ci.ub   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   0.0143  0.0228  0.6242  0.5325  -0.0233  0.0518    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
@@ -264,7 +263,7 @@
 <span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  0.95  0.90  1.01  0.90  1.01 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1.01  0.98  1.05  0.98  1.05 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
 <span class="r-in"><span class="co">### draw forest plot</span></span>
