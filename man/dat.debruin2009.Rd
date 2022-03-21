@@ -3,7 +3,9 @@
 \alias{dat.debruin2009}
 \title{Studies on Standard Care Quality and HAART-Adherence}
 \description{Results from 13 trials providing information about standard care quality and HAART-adherence in control groups.}
-\usage{dat.debruin2009}
+\usage{
+dat.debruin2009
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}      \tab \code{character} \tab (first) author of study \cr

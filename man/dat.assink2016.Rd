@@ -3,7 +3,9 @@
 \alias{dat.assink2016}
 \title{Studies on the Association between Recidivism and Mental Health}
 \description{Results from 17 studies on the association between recidivism and mental health in delinquent juveniles.}
-\usage{dat.assink2016}
+\usage{
+dat.assink2016
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{numeric}   \tab study id number \cr

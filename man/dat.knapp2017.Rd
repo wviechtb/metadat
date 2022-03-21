@@ -3,7 +3,9 @@
 \alias{dat.knapp2017}
 \title{Studies on Differences in Planning Performance in Schizophrenia Patients versus Healthy Controls}
 \description{Results from 31 studies examining differences in planning performance in schizophrenia patients versus healthy controls.}
-\usage{dat.knapp2017}
+\usage{
+dat.knapp2017
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}     \tab \code{character} \tab study author(s) \cr

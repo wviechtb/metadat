@@ -3,7 +3,9 @@
 \alias{dat.crede2010}
 \title{Studies on the Relationship between Class Attendance and Grades in College Students}
 \description{Results from 68 studies on the relationship between class attendence and class performance and/or grade point average in college students.}
-\usage{dat.crede2010}
+\usage{
+dat.crede2010
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{studyid}   \tab \code{numeric}   \tab study number \cr

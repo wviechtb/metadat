@@ -3,7 +3,9 @@
 \alias{dat.hackshaw1998}
 \title{Studies on the Risk of Lung Cancer in Women Exposed to Environmental Tobacco Smoke}
 \description{Results from 37 studies on the risk of lung cancer in women exposed to environmental tobacco smoke (ETS) from their smoking spouse.}
-\usage{dat.hackshaw1998}
+\usage{
+dat.hackshaw1998
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr

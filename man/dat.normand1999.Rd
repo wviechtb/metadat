@@ -3,7 +3,9 @@
 \alias{dat.normand1999}
 \title{Studies on the Length of Hospital Stay of Stroke Patients}
 \description{Results from 9 studies on the length of the hospital stay of stroke patients under specialized care and under conventional/routine (non-specialist) care.}
-\usage{dat.normand1999}
+\usage{
+dat.normand1999
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study number \cr

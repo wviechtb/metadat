@@ -3,7 +3,9 @@
 \alias{dat.nielweise2007}
 \title{Studies on Anti-Infective-Treated Central Venous Catheters for Prevention of Catheter-Related Bloodstream Infections}
 \description{Results from 18 studies comparing the risk of catheter-related bloodstream infection when using anti-infective-treated versus standard catheters in the acute care setting.}
-\usage{dat.nielweise2007}
+\usage{
+dat.nielweise2007
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}  \tab \code{numeric}   \tab study number \cr

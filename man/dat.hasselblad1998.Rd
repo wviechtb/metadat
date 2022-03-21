@@ -3,7 +3,9 @@
 \alias{dat.hasselblad1998}
 \title{Studies on the Effectiveness of Counseling for Smoking Cessation}
 \description{Results from 24 studies on the effectiveness of various counseling types for smoking cessation.}
-\usage{dat.hasselblad1998}
+\usage{
+dat.hasselblad1998
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}         \tab \code{numeric}    \tab id number for each treatment arm \cr

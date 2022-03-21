@@ -3,7 +3,9 @@
 \alias{dat.molloy2014}
 \title{Studies on the Relationship between Conscientiousness and Medication Adherence}
 \description{Results from 16 studies on the correlation between conscientiousness and medication adherence.}
-\usage{dat.molloy2014}
+\usage{
+dat.molloy2014
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{authors}   \tab \code{character} \tab study authors \cr

@@ -3,7 +3,9 @@
 \alias{dat.berkey1998}
 \title{Studies on Treatments for Periodontal Disease}
 \description{Results from 5 trials comparing surgical and non-surgical treatments for medium-severity periodontal disease one year after treatment. \loadmathjax}
-\usage{dat.berkey1998}
+\usage{
+dat.berkey1998
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial}      \tab \code{numeric}    \tab trial number \cr

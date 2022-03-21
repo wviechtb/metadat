@@ -3,7 +3,9 @@
 \alias{dat.pritz1997}
 \title{Studies on the Effectiveness of Hyperdynamic Therapy for Treating Cerebral Vasospasm}
 \description{Results from 14 studies on the effectiveness of hyperdynamic therapy for treating cerebral vasospasm.}
-\usage{dat.pritz1997}
+\usage{
+dat.pritz1997
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study number \cr

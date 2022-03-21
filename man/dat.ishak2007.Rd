@@ -3,7 +3,9 @@
 \alias{dat.ishak2007}
 \title{Studies on Deep-Brain Stimulation in Patients with Parkinson's disease}
 \description{Results from 46 studies examining the effects of deep-brain stimulation on motor skills of patients with Parkinson's disease.}
-\usage{dat.ishak2007}
+\usage{
+dat.ishak2007
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{character}  \tab (first) author and year \cr

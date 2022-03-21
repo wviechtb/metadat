@@ -3,7 +3,9 @@
 \alias{dat.collins1985a}
 \title{Studies on the Treatment of Upper Gastrointestinal Bleeding by a Histamine H2 Antagonist}
 \description{Results from studies examining the effectiveness of histamine H2 antagonists (cimetidine or ranitidine) in treating patients with acute upper gastrointestinal hemorrhage.}
-\usage{dat.collins1985a}
+\usage{
+dat.collins1985a
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}    \tab \code{numeric}   \tab study number \cr

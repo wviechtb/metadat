@@ -3,7 +3,9 @@
 \alias{dat.bonett2010}
 \title{Studies on the Reliability of the CES-D Scale}
 \description{Results from 9 studies on the reliability of the Center for Epidemiologic Studies Depression (CES-D) Scale administered to children providing care to an elderly parent.}
-\usage{dat.bonett2010}
+\usage{
+dat.bonett2010
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr

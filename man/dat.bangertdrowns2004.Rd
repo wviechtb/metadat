@@ -3,7 +3,9 @@
 \alias{dat.bangertdrowns2004}
 \title{Studies on the Effectiveness of Writing-to-Learn Interventions}
 \description{Results from 48 studies on the effectiveness of school-based writing-to-learn interventions on academic achievement. \loadmathjax}
-\usage{dat.bangertdrowns2004}
+\usage{
+dat.bangertdrowns2004
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}       \tab \code{numeric}   \tab study number \cr

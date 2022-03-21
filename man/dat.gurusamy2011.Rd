@@ -3,7 +3,9 @@
 \alias{dat.gurusamy2011}
 \title{Studies on Interventions to Reduce Mortality after Liver Transplantation}
 \description{Results from 14 trials examining the mortality risk of interventions for decreasing blood loss and blood transfusion requirements during liver transplantation.}
-\usage{dat.gurusamy2011}
+\usage{
+dat.gurusamy2011
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

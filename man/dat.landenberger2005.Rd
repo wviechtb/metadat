@@ -3,7 +3,9 @@
 \alias{dat.landenberger2005}
 \title{Studies on the Effectiveness of CBT for Reducing Recidivism}
 \description{Results from 58 studies on the effectiveness of cognitive-behavioral therapy (CBT) for reducing recidivism in juvenile and adult offenders.}
-\usage{dat.landenberger2005}
+\usage{
+dat.landenberger2005
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}            \tab \code{character} \tab (first) author and year \cr

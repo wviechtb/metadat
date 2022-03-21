@@ -3,7 +3,9 @@
 \alias{dat.yusuf1985}
 \title{Studies of Beta Blockers During and After Myocardial Infarction}
 \description{Results from studies examining the effectiveness of beta blockers for reducing mortality and reinfarction. \loadmathjax}
-\usage{dat.yusuf1985}
+\usage{
+dat.yusuf1985
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{table}  \tab \code{character} \tab table number \cr

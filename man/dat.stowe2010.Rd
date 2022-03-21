@@ -3,7 +3,9 @@
 \alias{dat.stowe2010}
 \title{Studies on Adjuvant Treatments to Levodopa Therapy for Parkinson disease}
 \description{Results from 29 trials assessing efficacy of three drug classes as adjuvant treatment to levodopa therapy in patients with Parkinson disease and motor complications.}
-\usage{dat.stowe2010}
+\usage{
+dat.stowe2010
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

@@ -3,7 +3,9 @@
 \alias{dat.lee2004}
 \title{Studies on Acupoint P6 Stimulation for Preventing Nausea}
 \description{Results from studies examining the effectiveness of wrist acupuncture point P6 stimulation for preventing postoperative nausea.}
-\usage{dat.lee2004}
+\usage{
+dat.lee2004
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}     \tab \code{numeric}   \tab trial id number \cr

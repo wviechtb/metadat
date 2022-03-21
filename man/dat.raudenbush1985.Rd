@@ -3,7 +3,9 @@
 \alias{dat.raudenbush1985}
 \title{Studies on Assessing the Effects of Teacher Expectations on Pupil IQ}
 \description{Results from 19 studies examining how teachers' expectations about their pupils can influence actual IQ levels.}
-\usage{dat.raudenbush1985}
+\usage{
+dat.raudenbush1985
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr

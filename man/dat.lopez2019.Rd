@@ -3,7 +3,9 @@
 \alias{dat.lopez2019}
 \title{Studies on the Effectiveness of CBT for Depression}
 \description{Results from 76 studies examining the effectiveness of cognitive behavioral therapy (CBT) for depression in adults.}
-\usage{dat.lopez2019}
+\usage{
+dat.lopez2019
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab (first) author and year of study \cr

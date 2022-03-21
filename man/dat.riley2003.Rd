@@ -3,7 +3,9 @@
 \alias{dat.riley2003}
 \title{Studies on MYC-N as a Prognostic Marker for Neuroblastoma}
 \description{Results from 81 studies examining overall and disease-free survival in neuroblastoma patients with amplified versus normal MYC-N protein levels.}
-\usage{dat.riley2003}
+\usage{
+dat.riley2003
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr

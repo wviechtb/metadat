@@ -3,7 +3,9 @@
 \alias{dat.linde2016}
 \title{Studies on Antidepressants for the Primary Care Setting}
 \description{Results from 93 trials examining 22 interventions (including placebo and usual care) for the primary care of depression.}
-\usage{dat.linde2016}
+\usage{
+dat.linde2016
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

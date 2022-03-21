@@ -3,7 +3,9 @@
 \alias{dat.pagliaro1992}
 \title{Studies on the Effectiveness of Nonsurgical Treatments in Cirrhosis}
 \description{Results from 26 trials examining the effectiveness of beta-blockers and sclerotherapy for the prevention of first bleeding in patients with cirrhosis}
-\usage{dat.pagliaro1992}
+\usage{
+dat.pagliaro1992
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study id \cr

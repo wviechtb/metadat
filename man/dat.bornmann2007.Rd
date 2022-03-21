@@ -3,7 +3,9 @@
 \alias{dat.bornmann2007}
 \title{Studies on Gender Differences in Grant and Fellowship Awards}
 \description{Results from 21 studies on gender differences in grant and fellowship awards.}
-\usage{dat.bornmann2007}
+\usage{
+dat.bornmann2007
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{character} \tab study reference \cr

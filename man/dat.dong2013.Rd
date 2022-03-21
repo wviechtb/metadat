@@ -3,7 +3,9 @@
 \alias{dat.dong2013}
 \title{Studies on Safety of Inhaled Medications for Chronic Obstructive Pulmonary Disease}
 \description{Results from 41 trials examining the safety of inhaled medications in patients with chronic obstructive pulmonary disease.}
-\usage{dat.dong2013}
+\usage{
+dat.dong2013
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

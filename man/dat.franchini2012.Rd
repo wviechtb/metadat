@@ -3,7 +3,9 @@
 \alias{dat.franchini2012}
 \title{Studies on Dopamine Agonists to Reduce \dQuote{Off-Time} in Patients with Advanced Parkinson Disease}
 \description{Results from 7 trials examining the effectiveness of four dopamine agonists and placebo to reduce \dQuote{off-time} in patients with advanced Parkinson disease.}
-\usage{dat.franchini2012}
+\usage{
+dat.franchini2012
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

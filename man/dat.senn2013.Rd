@@ -3,7 +3,9 @@
 \alias{dat.senn2013}
 \title{Studies on the Effectiveness of Glucose-Lowering Agents}
 \description{Results from 26 trials examining the effectiveness of glucose-lowering agents in patients with type 2 diabetes}
-\usage{dat.senn2013}
+\usage{
+dat.senn2013
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab (first) author and year of study \cr

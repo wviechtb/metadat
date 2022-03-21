@@ -3,7 +3,9 @@
 \alias{dat.dogliotti2014}
 \title{Studies on Antithrombotic Treatments to Prevent Strokes}
 \description{Results from 20 trials examining the effectiveness of antithrombotic treatments to prevent strokes in patients with non-valvular atrial fibrillation.}
-\usage{dat.dogliotti2014}
+\usage{
+dat.dogliotti2014
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

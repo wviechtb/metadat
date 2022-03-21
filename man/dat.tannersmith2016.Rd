@@ -3,7 +3,9 @@
 \alias{dat.tannersmith2016}
 \title{Studies on the Relationship between School Motivation and Criminal Behavior}
 \description{Results from 17 studies on the correlation between school motivation/attitudes and subsequent delinquent/criminal behavior.}
-\usage{dat.tannersmith2016}
+\usage{
+dat.tannersmith2016
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{studyid}  \tab \code{numeric}   \tab study identifier \cr

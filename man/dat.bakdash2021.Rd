@@ -3,7 +3,9 @@
 \alias{dat.bakdash2021}
 \title{Dataset on Situation Awareness and Task Performance Associations}
 \description{Results from 77 papers with 678 effects evaluating associations among measures of situation awareness and task performance.}
-\usage{dat.bakdash2021}
+\usage{
+dat.bakdash2021
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

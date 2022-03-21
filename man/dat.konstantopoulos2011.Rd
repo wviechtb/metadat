@@ -3,7 +3,9 @@
 \alias{dat.konstantopoulos2011}
 \title{Studies on the Effects of Modified School Calendars on Student Achievement}
 \description{Results from 56 studies on the effects of modified school calendars on student achievement.}
-\usage{dat.konstantopoulos2011}
+\usage{
+dat.konstantopoulos2011
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{district} \tab \code{numeric}   \tab district id number \cr

@@ -1,5 +1,10 @@
 ############################################################################
 
+Note: When adding a new keyword, this also needs to be added to datsearch.r
+and datsearch.Rd!
+
+############################################################################
+
 fields/topics:
 
 # social sciences / topics
@@ -31,6 +36,7 @@ fields/topics:
 \concept{primary care}
 \concept{epidemiology}
 \concept{covid-19}
+\concept{genetics}
 
 # other field / topics
 \concept{engineering}

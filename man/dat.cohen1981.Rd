@@ -3,7 +3,9 @@
 \alias{dat.cohen1981}
 \title{Studies on the Relationship between Course Instructor Ratings and Student Achievement}
 \description{Results from 20 studies on the correlation between course instructor ratings and student achievement.}
-\usage{dat.cohen1981}
+\usage{
+dat.cohen1981
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab study author(s) and year \cr

@@ -3,7 +3,9 @@
 \alias{dat.dagostino1998}
 \title{Studies on the Effectiveness of Antihistamines in Reducing Symptoms of the Common Cold}
 \description{Results from 9 studies on the effectiveness of antihistamines in reducing the severity of runny nose and sneezing in the common cold.}
-\usage{dat.dagostino1998}
+\usage{
+dat.dagostino1998
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study id \cr

@@ -3,7 +3,9 @@
 \alias{dat.kalaian1996}
 \title{Studies on the Effectiveness of Coaching for the SAT}
 \description{Results from studies examining the effectiveness of coaching on the performance on the Scholastic Aptitude Test (SAT).}
-\usage{dat.kalaian1996}
+\usage{
+dat.kalaian1996
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}          \tab \code{numeric}   \tab row (effect) id \cr

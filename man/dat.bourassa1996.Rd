@@ -3,7 +3,9 @@
 \alias{dat.bourassa1996}
 \title{Studies on the Association between Handedness and Eye-Dominance}
 \description{Results from 47 studies on the association between handedness and eye-dominance. \loadmathjax}
-\usage{dat.bourassa1996}
+\usage{
+dat.bourassa1996
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}        \tab \code{numeric}   \tab study number \cr

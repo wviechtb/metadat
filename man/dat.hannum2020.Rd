@@ -3,7 +3,9 @@
 \alias{dat.hannum2020}
 \title{Studies Comparing Objective and Subjective Olfactory Loss in COVID-19 Patients}
 \description{Results from 35 studies measuring olfactory loss in COVID-19 patients using either objective or subjective measures.}
-\usage{dat.hannum2020}
+\usage{
+dat.hannum2020
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{authorName}           \tab \code{character} \tab (first) author of study \cr

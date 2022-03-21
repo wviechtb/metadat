@@ -3,7 +3,9 @@
 \alias{dat.craft2003}
 \title{Studies on the Relationship between the Competitive State Anxiety Inventory-2 and Sport Performance}
 \description{Results from 10 studies on the relationship between the Competitive State Anxiety Inventory-2 (CSAI-2) and sport performance.}
-\usage{dat.craft2003}
+\usage{
+dat.craft2003
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study} \tab \code{numeric}   \tab study number \cr

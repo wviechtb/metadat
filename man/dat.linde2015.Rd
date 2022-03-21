@@ -3,7 +3,9 @@
 \alias{dat.linde2015}
 \title{Studies on Classes of Antidepressants for the Primary Care Setting}
 \description{Results from 66 trials examining eight classes of antidepressants and placebo for the primary care setting.}
-\usage{dat.linde2015}
+\usage{
+dat.linde2015
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

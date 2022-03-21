@@ -3,7 +3,9 @@
 \alias{dat.woods2010}
 \title{Studies on Treatments for Chronic Obstructive Pulmonary Disease}
 \description{Results from 3 trials examining the mortality risk of three treatments and placebo in patients with chronic obstructive pulmonary disease.}
-\usage{dat.woods2010}
+\usage{
+dat.woods2010
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

@@ -3,7 +3,9 @@
 \alias{dat.obrien2003}
 \title{Studies on the Relationship Between BMI and Risk of Preeclampsia}
 \description{Results from 13 studies on the relationship between maternal body mass index (BMI) and the risk of preeclampsia.}
-\usage{dat.obrien2003}
+\usage{
+dat.obrien2003
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study id \cr

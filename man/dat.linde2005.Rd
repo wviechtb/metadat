@@ -3,7 +3,9 @@
 \alias{dat.linde2005}
 \title{Studies on the Effectiveness of St. John's Wort for Treating Depression}
 \description{Results from 26 studies on the effectiveness of Hypericum perforatum extracts (St. John's wort) for treating depression.}
-\usage{dat.linde2005}
+\usage{
+dat.linde2005
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}       \tab \code{numeric}   \tab study number \cr

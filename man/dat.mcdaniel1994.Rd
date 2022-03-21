@@ -3,7 +3,9 @@
 \alias{dat.mcdaniel1994}
 \title{Studies on the Validity of Employment Interviews}
 \description{Results from 160 studies on the correlation between employment interview assessments and job performance.}
-\usage{dat.mcdaniel1994}
+\usage{
+dat.mcdaniel1994
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study number \cr

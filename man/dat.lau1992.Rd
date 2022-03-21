@@ -3,7 +3,9 @@
 \alias{dat.lau1992}
 \title{Studies on Intravenous Streptokinase for Acute Myocardial Infarction}
 \description{Results from 33 trials comparing intravenous streptokinase versus placebo or no therapy in patients who had been hospitalized for acute myocardial infarction.}
-\usage{dat.lau1992}
+\usage{
+dat.lau1992
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial} \tab \code{character} \tab trial name \cr

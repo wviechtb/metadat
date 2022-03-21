@@ -3,7 +3,9 @@
 \alias{dat.baker2009}
 \title{Studies on Pharmacologic Treatments for Chronic Obstructive Pulmonary Disease}
 \description{Results from 39 trials examining pharmacologic treatments for chronic obstructive pulmonary disease (COPD).}
-\usage{dat.baker2009}
+\usage{
+dat.baker2009
+}
 \format{
 The data frame contains the following columns:
 \tabular{lll}{

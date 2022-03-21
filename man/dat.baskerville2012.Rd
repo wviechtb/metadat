@@ -3,7 +3,9 @@
 \alias{dat.baskerville2012}
 \title{Studies on the Effectiveness of Practice Facilitation Interventions}
 \description{Results from 23 studies on the effectiveness of practice facilitation interventions within the primary care practice setting.}
-\usage{dat.baskerville2012}
+\usage{
+dat.baskerville2012
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}    \tab \code{character} \tab study author(s) \cr

@@ -3,7 +3,9 @@
 \alias{dat.hine1989}
 \title{Studies on Prophylactic Use of Lidocaine After a Heart Attack}
 \description{Results from 6 studies evaluating mortality from prophylactic use of lidocaine in acute myocardial infarction.}
-\usage{dat.hine1989}
+\usage{
+dat.hine1989
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}  \tab \code{numeric}   \tab study number \cr

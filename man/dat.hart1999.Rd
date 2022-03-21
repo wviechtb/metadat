@@ -3,7 +3,9 @@
 \alias{dat.hart1999}
 \title{Studies on the Effectiveness of Warfarin for Preventing Strokes}
 \description{Results from 6 clinical trials examining the effectiveness of adjusted-dose warfarin for preventing strokes in patients with atrial fibrillation.}
-\usage{dat.hart1999}
+\usage{
+dat.hart1999
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial}    \tab \code{numeric}   \tab trial number \cr

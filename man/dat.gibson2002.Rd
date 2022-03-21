@@ -3,7 +3,9 @@
 \alias{dat.gibson2002}
 \title{Studies on the Effectiveness of Self-Management Education and Regular Medical Review for Adults with Asthma}
 \description{Results from 15 trials examining the effectiveness of self-management education and regular medical review for adults with asthma.}
-\usage{dat.gibson2002}
+\usage{
+dat.gibson2002
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}   \tab \code{character} \tab first author of study \cr

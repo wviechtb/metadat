@@ -3,7 +3,9 @@
 \alias{dat.collins1985b}
 \title{Studies on the Effects of Diuretics in Pregnancy}
 \description{Results from 9 studies examining the effects of diuretics in pregnancy on various outcomes.}
-\usage{dat.collins1985b}
+\usage{
+dat.collins1985b
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}      \tab \code{numeric}   \tab study number \cr

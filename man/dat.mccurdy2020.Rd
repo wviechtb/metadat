@@ -3,7 +3,9 @@
 \alias{dat.mccurdy2020}
 \title{Studies on the Generation Effect}
 \description{Results from 126 articles that examined the so-called \sQuote{generation effect}.}
-\usage{dat.mccurdy2020}
+\usage{
+dat.mccurdy2020
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{article}          \tab \code{numeric}   \tab article identifier \cr

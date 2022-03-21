@@ -3,7 +3,9 @@
 \alias{dat.cannon2006}
 \title{Studies on the Effectiveness of Intensive Versus Moderate Statin Therapy for Preventing Coronary Death or Myocardial Infarction}
 \description{Results from 4 trials examining the effectiveness of intensive (high dose) versus moderate (standard dose) statin therapy for preventing coronary death or myocardial infarction.}
-\usage{dat.cannon2006}
+\usage{
+dat.cannon2006
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial} \tab \code{character} \tab trial name \cr

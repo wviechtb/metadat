@@ -3,7 +3,9 @@
 \alias{dat.curtis1998}
 \title{Studies on the Effects of Elevated CO2 Levels on Woody Plant Mass}
 \description{Results from studies examining the effects of elevated CO2 levels on woody plant mass.}
-\usage{dat.curtis1998}
+\usage{
+dat.curtis1998
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}       \tab \code{numeric}   \tab observation number \cr

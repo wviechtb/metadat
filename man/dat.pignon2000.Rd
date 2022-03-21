@@ -3,7 +3,9 @@
 \alias{dat.pignon2000}
 \title{Studies on the Effectiveness of Locoregional Treatment plus Chemotherapy for Head and Neck Squamous-Cell Carcinoma}
 \description{Results from studies examining mortality risk in patients with nonmetastatic head and neck squamous-cell carcinoma receiving either locoregional treatment plus chemotherapy versus locoregional treatment alone.}
-\usage{dat.pignon2000}
+\usage{
+dat.pignon2000
+}
 \format{The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}         \tab \code{numeric}    \tab study id number \cr
