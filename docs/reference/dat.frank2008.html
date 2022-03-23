@@ -140,7 +140,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">bc.ins.del</span>, bi<span class="op">=</span><span class="va">bc.ins.ins</span>,</span>
 <span class="r-in">                            ci<span class="op">=</span><span class="va">ct.ins.del</span>, di<span class="op">=</span><span class="va">ct.ins.ins</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in"><span class="co">### fit random-effects model and get the pooled odds ratio (with 95</span></span>
+<span class="r-in"><span class="co">### fit random-effects model and get the pooled odds ratio (with 95% CI)</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">res</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -172,7 +172,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">bc.del.del</span>, bi<span class="op">=</span><span class="va">bc.ins.ins</span>,</span>
 <span class="r-in">                            ci<span class="op">=</span><span class="va">ct.del.del</span>, di<span class="op">=</span><span class="va">ct.ins.ins</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in"><span class="co">### fit random-effects model and get the pooled odds ratio (with 95</span></span>
+<span class="r-in"><span class="co">### fit random-effects model and get the pooled odds ratio (with 95% CI)</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">res</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -204,7 +204,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">bc.ins.del</span><span class="op">+</span><span class="va">bc.del.del</span>, bi<span class="op">=</span><span class="va">bc.ins.ins</span>,</span>
 <span class="r-in">                            ci<span class="op">=</span><span class="va">ct.ins.del</span><span class="op">+</span><span class="va">ct.del.del</span>, di<span class="op">=</span><span class="va">ct.ins.ins</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in"><span class="co">### fit random-effects model and get the pooled odds ratio (with 95</span></span>
+<span class="r-in"><span class="co">### fit random-effects model and get the pooled odds ratio (with 95% CI)</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">res</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -238,7 +238,7 @@
 <span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"REH"</span>, ai<span class="op">=</span><span class="va">ct.ins.ins</span>, bi<span class="op">=</span><span class="va">ct.ins.del</span>, ci<span class="op">=</span><span class="va">ct.del.del</span>,</span>
 <span class="r-in">              slab<span class="op">=</span><span class="va">study</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
 <span class="r-in"></span>
-<span class="r-in"><span class="co">### fit random-effects model and get the pooled REH value (with 90</span></span>
+<span class="r-in"><span class="co">### fit random-effects model and get the pooled REH value (with 90% CI)</span></span>
 <span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, level<span class="op">=</span><span class="fl">90</span><span class="op">)</span></span>
 <span class="r-in"><span class="va">res</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>

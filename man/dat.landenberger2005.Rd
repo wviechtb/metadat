@@ -73,7 +73,7 @@ dat <- escalc(measure="OR", ai=n.cbt.non, bi=n.cbt.rec, ci=n.ctrl.non, di=n.ctrl
 res <- rma(yi, vi, data=dat)
 res
 
-### estimated average OR and corresponding 95% CI/PI
+### estimated average OR and corresponding 95\% CI/PI
 predict(res, transf=exp, digits=2)
 
 ### examine if number of treatment sessions per week is a potential moderator

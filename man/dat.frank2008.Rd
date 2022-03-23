@@ -46,7 +46,7 @@ library(metafor)
 dat <- escalc(measure="OR", ai=bc.ins.del, bi=bc.ins.ins,
                             ci=ct.ins.del, di=ct.ins.ins, data=dat)
 
-### fit random-effects model and get the pooled odds ratio (with 95% CI)
+### fit random-effects model and get the pooled odds ratio (with 95\% CI)
 res <- rma(yi, vi, data=dat)
 res
 predict(res, transf=exp, digits=2)
@@ -55,7 +55,7 @@ predict(res, transf=exp, digits=2)
 dat <- escalc(measure="OR", ai=bc.del.del, bi=bc.ins.ins,
                             ci=ct.del.del, di=ct.ins.ins, data=dat)
 
-### fit random-effects model and get the pooled odds ratio (with 95% CI)
+### fit random-effects model and get the pooled odds ratio (with 95\% CI)
 res <- rma(yi, vi, data=dat)
 res
 predict(res, transf=exp, digits=2)
@@ -64,7 +64,7 @@ predict(res, transf=exp, digits=2)
 dat <- escalc(measure="OR", ai=bc.ins.del+bc.del.del, bi=bc.ins.ins,
                             ci=ct.ins.del+ct.del.del, di=ct.ins.ins, data=dat)
 
-### fit random-effects model and get the pooled odds ratio (with 95% CI)
+### fit random-effects model and get the pooled odds ratio (with 95\% CI)
 res <- rma(yi, vi, data=dat)
 res
 predict(res, transf=exp, digits=2)
@@ -75,7 +75,7 @@ predict(res, transf=exp, digits=2)
 dat <- escalc(measure="REH", ai=ct.ins.ins, bi=ct.ins.del, ci=ct.del.del,
               slab=study, data=dat)
 
-### fit random-effects model and get the pooled REH value (with 90% CI)
+### fit random-effects model and get the pooled REH value (with 90\% CI)
 res <- rma(yi, vi, data=dat, level=90)
 res
 predict(res, transf=exp, digits=2)

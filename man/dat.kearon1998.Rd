@@ -54,7 +54,7 @@ res
 res <- rma(yi, vi, data=dat, subset=patients=="asymptomatic")
 res
 
-### estimated average diagnostic odds ratio (with 95% CI)
+### estimated average diagnostic odds ratio (with 95\% CI)
 predict(res, transf=exp, digits=2)
 
 ### regression test for funnel plot asymmetry using SE as predictor

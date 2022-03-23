@@ -52,7 +52,7 @@ dat <- escalc(measure="OR", ai=waward, n1i=wtotal, ci=maward, n2i=mtotal, data=d
 res <- rma.mv(yi, vi, random = ~ 1 | study/obs, data=dat)
 res
 
-### estimated average odds ratio (with 95% CI/PI)
+### estimated average odds ratio (with 95\% CI/PI)
 predict(res, transf=exp, digits=2)
 
 ### test for a difference between fellowship and grant applications
