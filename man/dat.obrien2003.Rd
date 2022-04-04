@@ -89,6 +89,29 @@ regplot(res, xlab=expression("Within-Study Mean Centered BMI"~(kg/m^2)),
 res <- rma.mv(yi, vi, mods = ~ bmicent, random = ~ bmicent | study, struct="GEN", data=dat)
 res
 
+### load rms package
+library(rms)
+
+### fit restricted cubic spline model
+res <- rma.mv(yi, vi, mods = ~ rcs(bmicent, 4), random = ~ 1 | study/grp, data=dat)
+res
+
+### get knot positions
+knots <- attr(rcs(model.matrix(res)[,2], 4), "parms")
+
+### computed predicted values based on the model
+xs <- seq(-10, 10, length=1000)
+sav <- predict(res, newmods=rcspline.eval(xs, knots, inclx=TRUE))
+
+### draw scatterplot with regression line based on the model
+tmp <- regplot(res, mod=2, pred=sav,
+               xvals=xs, xlab=expression("Within-Study Mean Centered BMI"~(kg/m^2)),
+               ylab="Preeclampsia Prevalence (\%)", las=1, bty="l",
+               at=seq(0,18,by=2), olim=c(0,100), psize=2, bg="gray90",
+               label=TRUE, offset=0, labsize=0.6)
+abline(v=knots, lty="dotted")
+points(tmp)
+
 }
 }
 \keyword{datasets}

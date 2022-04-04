@@ -308,6 +308,80 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"></span>
+<span class="r-in"><span class="co">### load rms package</span></span>
+<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://hbiostat.org/R/rms/" class="external-link">rms</a></span><span class="op">)</span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: Hmisc</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: lattice</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: survival</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: Formula</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: ggplot2</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘Hmisc’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:ape’:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>     zoom</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> The following objects are masked from ‘package:base’:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>     format.pval, units</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: SparseM</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘SparseM’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:base’:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>     backsolve</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘rms’</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:metafor’:</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span>     vif</span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co">### fit restricted cubic spline model</span></span>
+<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/pkg/rms/man/rms.trans.html" class="external-link">rcs</a></span><span class="op">(</span><span class="va">bmicent</span>, <span class="fl">4</span><span class="op">)</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span><span class="op">/</span><span class="va">grp</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
+<span class="r-in"><span class="va">res</span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 43; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             estim    sqrt  nlvls  fixed     factor </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1  6.1415  2.4782     13     no      study </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2  2.4792  1.5746     43     no  study/grp </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 39) = 16235.7782, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 2:4):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 3) = 61.3532, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                           estimate      se     zval    pval    ci.lb   ci.ub    ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                     4.2726  1.5574   2.7435  0.0061   1.2203  7.3250  ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rcs(bmicent, 4)bmicent      0.3142  0.3432   0.9154  0.3600  -0.3585  0.9869     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rcs(bmicent, 4)bmicent'    -0.0560  0.8852  -0.0633  0.9496  -1.7910  1.6790     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rcs(bmicent, 4)bmicent''    1.1102  2.2030   0.5039  0.6143  -3.2077  5.4281     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co">### get knot positions</span></span>
+<span class="r-in"><span class="va">knots</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/attr.html" class="external-link">attr</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/rms/man/rms.trans.html" class="external-link">rcs</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/SparseM/man/SparseM.hb.html" class="external-link">model.matrix</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span>, <span class="fl">4</span><span class="op">)</span>, <span class="st">"parms"</span><span class="op">)</span></span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co">### computed predicted values based on the model</span></span>
+<span class="r-in"><span class="va">xs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>, <span class="fl">10</span>, length<span class="op">=</span><span class="fl">1000</span><span class="op">)</span></span>
+<span class="r-in"><span class="va">sav</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/pkg/Hmisc/man/rcspline.eval.html" class="external-link">rcspline.eval</a></span><span class="op">(</span><span class="va">xs</span>, <span class="va">knots</span>, inclx<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"></span>
+<span class="r-in"><span class="co">### draw scatterplot with regression line based on the model</span></span>
+<span class="r-in"><span class="va">tmp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regplot.html" class="external-link">regplot</a></span><span class="op">(</span><span class="va">res</span>, mod<span class="op">=</span><span class="fl">2</span>, pred<span class="op">=</span><span class="va">sav</span>,</span>
+<span class="r-in">               xvals<span class="op">=</span><span class="va">xs</span>, xlab<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="st">"Within-Study Mean Centered BMI"</span><span class="op">~</span><span class="op">(</span><span class="va">kg</span><span class="op">/</span><span class="va">m</span><span class="op">^</span><span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span>
+<span class="r-in">               ylab<span class="op">=</span><span class="st">"Preeclampsia Prevalence (%)"</span>, las<span class="op">=</span><span class="fl">1</span>, bty<span class="op">=</span><span class="st">"l"</span>,</span>
+<span class="r-in">               at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">18</span>,by<span class="op">=</span><span class="fl">2</span><span class="op">)</span>, olim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">100</span><span class="op">)</span>, psize<span class="op">=</span><span class="fl">2</span>, bg<span class="op">=</span><span class="st">"gray90"</span>,</span>
+<span class="r-in">               label<span class="op">=</span><span class="cn">TRUE</span>, offset<span class="op">=</span><span class="fl">0</span>, labsize<span class="op">=</span><span class="fl">0.6</span><span class="op">)</span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="va">knots</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span>
+<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/points.html" class="external-link">points</a></span><span class="op">(</span><span class="va">tmp</span><span class="op">)</span></span>
+<span class="r-plt img"><img src="dat.obrien2003-3.png" alt="" width="864" height="768"></span>
+<span class="r-in"></span>
 <span class="r-in"><span class="co"># }</span></span>
 </code></pre></div>
     </div>

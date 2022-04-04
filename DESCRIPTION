@@ -1,6 +1,6 @@
 Package: metadat
 Version: 1.1-0
-Date: 2022-03-21
+Date: 2022-04-04
 Title: Meta-Analysis Datasets
 Authors@R: c(
   person(given = "Thomas", family="White",
@@ -23,7 +23,7 @@ Authors@R: c(
   comment = c(ORCID = "0000-0001-6214-9087")))
 Depends: R (>= 4.0.0)
 Imports: utils, tools, mathjaxr
-Suggests: metafor, numDeriv, BiasedUrn, dfoptim, igraph, ape, testthat, digest, lme4, clubSandwich, meta, netmeta, mvtnorm, gridExtra
+Suggests: metafor, numDeriv, BiasedUrn, dfoptim, igraph, ape, testthat, digest, lme4, clubSandwich, meta, netmeta, mvtnorm, gridExtra, rms
 Description: A collection of meta-analysis datasets for teaching purposes, illustrating/testing meta-analytic methods, and validating published analyses.
 License: GPL (>=2)
 ByteCompile: TRUE
