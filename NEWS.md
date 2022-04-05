@@ -1,4 +1,4 @@
-# metadat 1.1-0 (2022-04-04)
+# metadat 1.2-0 (2022-04-05)
 
 - added some more info to `dat.knapp2017`
 - added `dat.bakdash2021`, `dat.baker2009`, `dat.dogliotti2014`, `dat.dong2013`, `dat.franchini2012`, `dat.frank2008`, `dat.gurusamy2011`, `dat.hartmannboyce2018`, `dat.lehmann2018`, `dat.linde2015`, `dat.linde2016`, `dat.mccurdy2020`, `dat.michael2013`, `dat.stowe2010`, `dat.tannersmith2016`, `dat.woods2010`
