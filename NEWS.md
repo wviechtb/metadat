@@ -1,3 +1,7 @@
+# metadat 1.3-0 (2022-04-06)
+
+- placeholder for updates in new devel version
+
 # metadat 1.2-0 (2022-04-05)
 
 - added some more info to `dat.knapp2017`
