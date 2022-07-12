@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.bcg</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.bcg</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -124,9 +124,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.bcg</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.bcg</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    trial               author year tpos  tneg cpos  cneg ablat      alloc</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1              Aronson 1948    4   119   11   128    44     random</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      2     Ferguson &amp; Simes 1949    6   300   29   274    55     random</span>
@@ -141,15 +141,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11    11       Comstock et al 1974  186 50448  141 27197    18 systematic</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12    12   Comstock &amp; Webster 1969    5  2493    3  2338    33 systematic</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13    13       Comstock et al 1976   27 16886   29 17825    33 systematic</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate log risk ratios and corresponding sampling variances</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"RR"</span>, ai<span class="op">=</span><span class="va">tpos</span>, bi<span class="op">=</span><span class="va">tneg</span>, ci<span class="op">=</span><span class="va">cpos</span>, di<span class="op">=</span><span class="va">cneg</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate log risk ratios and corresponding sampling variances</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"RR"</span>, ai<span class="op">=</span><span class="va">tpos</span>, bi<span class="op">=</span><span class="va">tneg</span>, ci<span class="op">=</span><span class="va">cpos</span>, di<span class="op">=</span><span class="va">cneg</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    trial               author year tpos  tneg cpos  cneg ablat      alloc      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1              Aronson 1948    4   119   11   128    44     random -0.8893 0.3256 </span>
@@ -166,10 +166,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12    12   Comstock &amp; Webster 1969    5  2493    3  2338    33 systematic  0.4459 0.5325 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13    13       Comstock et al 1976   27 16886   29 17825    33 systematic -0.0173 0.0714 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### random-effects model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### random-effects model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 13; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -183,23 +183,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval    ci.lb    ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.7145  0.1798  -3.9744  &lt;.0001  -1.0669  -0.3622  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### average risk ratio with 95% CI</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### average risk ratio with 95% CI</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    pred  ci.lb  ci.ub  pi.lb  pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  0.4894 0.3441 0.6962 0.1546 1.5490 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### mixed-effects model with absolute latitude and publication year as moderators</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">ablat</span> <span class="op">+</span> <span class="va">year</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### mixed-effects model with absolute latitude and publication year as moderators</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">ablat</span> <span class="op">+</span> <span class="va">year</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 13; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -217,7 +217,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate       se     zval    pval     ci.lb    ci.ub    ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate       se     zval    pval     ci.lb    ci.ub     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt   -3.5455  29.0959  -0.1219  0.9030  -60.5724  53.4814     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ablat     -0.0280   0.0102  -2.7371  0.0062   -0.0481  -0.0080  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> year       0.0019   0.0147   0.1299  0.8966   -0.0269   0.0307     </span>
@@ -225,10 +225,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### predicted average risk ratios for 10-60 degrees absolute latitude</span></span>
-<span class="r-in"><span class="co">### holding the publication year constant at 1970</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span>from<span class="op">=</span><span class="fl">10</span>, to<span class="op">=</span><span class="fl">60</span>, by<span class="op">=</span><span class="fl">10</span><span class="op">)</span>, <span class="fl">1970</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### predicted average risk ratios for 10-60 degrees absolute latitude</span></span></span>
+<span class="r-in"><span><span class="co">### holding the publication year constant at 1970</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span>from<span class="op">=</span><span class="fl">10</span>, to<span class="op">=</span><span class="fl">60</span>, by<span class="op">=</span><span class="fl">10</span><span class="op">)</span>, <span class="fl">1970</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     pred  ci.lb  ci.ub  pi.lb  pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.9345 0.5833 1.4973 0.4179 2.0899 </span>
@@ -238,16 +238,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5 0.3048 0.1916 0.4848 0.1369 0.6787 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6 0.2303 0.1209 0.4386 0.0921 0.5761 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### note: the interpretation of the results is difficult because absolute</span></span>
-<span class="r-in"><span class="co">### latitude and publication year are strongly correlated (the more recent</span></span>
-<span class="r-in"><span class="co">### studies were conducted closer to the equator)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">ablat</span> <span class="op">~</span> <span class="va">year</span>, data<span class="op">=</span><span class="va">dat</span>, pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Publication Year"</span>, ylab<span class="op">=</span><span class="st">"Absolute Lattitude"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### note: the interpretation of the results is difficult because absolute</span></span></span>
+<span class="r-in"><span><span class="co">### latitude and publication year are strongly correlated (the more recent</span></span></span>
+<span class="r-in"><span><span class="co">### studies were conducted closer to the equator)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">ablat</span> <span class="op">~</span> <span class="va">year</span>, data<span class="op">=</span><span class="va">dat</span>, pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Publication Year"</span>, ylab<span class="op">=</span><span class="st">"Absolute Lattitude"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.bcg-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">ablat</span>, <span class="va">dat</span><span class="op">$</span><span class="va">year</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">ablat</span>, <span class="va">dat</span><span class="op">$</span><span class="va">year</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.6630572</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -262,7 +262,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

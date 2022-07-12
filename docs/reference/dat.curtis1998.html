@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.curtis1998</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.curtis1998</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -129,9 +129,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.curtis1998</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.curtis1998</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id paper   genus     species fungrp co2.ambi co2.elev units time pot method stock xtrt   level</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT    HIGH</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 22    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT CONTROL</span>
@@ -146,16 +146,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4  5.9100 1.7420000   5 6.6200 1.6310000   5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5  4.6100 1.4070000   4 4.1000 1.2570000   4</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6 10.7800 1.1630000   5 6.4200 2.0260000   3</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate (log transformed) ratios of means and corresponding sampling variances</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"ROM"</span>, m1i<span class="op">=</span><span class="va">m1i</span>, sd1i<span class="op">=</span><span class="va">sd1i</span>, n1i<span class="op">=</span><span class="va">n1i</span>,</span>
-<span class="r-in">                             m2i<span class="op">=</span><span class="va">m2i</span>, sd2i<span class="op">=</span><span class="va">sd2i</span>, n2i<span class="op">=</span><span class="va">n2i</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate (log transformed) ratios of means and corresponding sampling variances</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"ROM"</span>, m1i<span class="op">=</span><span class="va">m1i</span>, sd1i<span class="op">=</span><span class="va">sd1i</span>, n1i<span class="op">=</span><span class="va">n1i</span>,</span></span>
+<span class="r-in"><span>                             m2i<span class="op">=</span><span class="va">m2i</span>, sd2i<span class="op">=</span><span class="va">sd2i</span>, n2i<span class="op">=</span><span class="va">n2i</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id paper   genus     species fungrp co2.ambi co2.elev units time pot method stock xtrt   level </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 21    44   ALNUS       RUBRA  N2FIX      350      650  ul/l   47 0.5     GC  SEED FERT    HIGH </span>
@@ -172,10 +172,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5  4.6100 1.4070000   4 4.1000 1.2570000   4  0.1172 0.0468 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6 10.7800 1.1630000   5 6.4200 2.0260000   3  0.5183 0.0355 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### meta-analysis using a random-effects model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### meta-analysis using a random-effects model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 102; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -189,37 +189,37 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2531  0.0185  13.6965  &lt;.0001  0.2168  0.2893  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### average ratio of means with 95% CI</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### average ratio of means with 95% CI</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  1.29  1.24  1.34  0.96  1.72 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### meta-analysis for plants grown under nutrient stress</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">xtrt</span><span class="op">==</span><span class="st">"FERT"</span> <span class="op">&amp;</span> <span class="va">level</span><span class="op">==</span><span class="st">"LOW"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### meta-analysis for plants grown under nutrient stress</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">xtrt</span><span class="op">==</span><span class="st">"FERT"</span> <span class="op">&amp;</span> <span class="va">level</span><span class="op">==</span><span class="st">"LOW"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  1.14  1.04  1.26  0.82  1.59 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### meta-analysis for plants grown under low light conditions</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">xtrt</span><span class="op">==</span><span class="st">"LIGHT"</span> <span class="op">&amp;</span> <span class="va">level</span><span class="op">==</span><span class="st">"LOW"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### meta-analysis for plants grown under low light conditions</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, method<span class="op">=</span><span class="st">"DL"</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">xtrt</span><span class="op">==</span><span class="st">"LIGHT"</span> <span class="op">&amp;</span> <span class="va">level</span><span class="op">==</span><span class="st">"LOW"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  1.57  1.34  1.85  0.94  2.63 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -234,7 +234,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

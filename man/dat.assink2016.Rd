@@ -50,7 +50,7 @@ res <- rma.mv(yi, vi, random = ~ 1 | study/esid, data=dat)
 res
 
 ### use cluster-robust inference methods
-robust(res, cluster=study)
+robust(res, cluster=study, clubSandwich=TRUE)
 
 ### LRTs for the variance components
 res0 <- rma.mv(yi, vi, random = ~ 1 | study/esid, data=dat, sigma2=c(0,NA))
@@ -74,7 +74,19 @@ res <- rma.mv(yi, V, random = ~ 1 | study/esid, data=dat)
 res
 
 ### use cluster-robust inference methods
-robust(res, cluster=study)
+robust(res, cluster=study, clubSandwich=TRUE)
+
+### use a correlation of 0.7 for effect sizes corresponding to the same type of
+### delinquent behavior and a correlation of 0.5 for effect sizes corresponding
+### to different types of delinquent behavior
+V <- vcalc(vi, cluster=study, type=deltype, obs=esid, data=dat, rho=c(0.7, 0.5))
+
+### fit multilevel model using this approximate V matrix
+res <- rma.mv(yi, V, random = ~ 1 | study/esid, data=dat)
+res
+
+### use cluster-robust inference methods
+robust(res, cluster=study, clubSandwich=TRUE)
 
 }
 }

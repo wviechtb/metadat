@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.linde2015</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.linde2015</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -127,9 +127,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### Show results from first three studies (including three-arm study</span></span>
-<span class="r-in"><span class="co">### Lecrubier 1997)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.linde2015</span>, <span class="fl">3</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### Show results from first three studies (including three-arm study</span></span></span>
+<span class="r-in"><span><span class="co">### Lecrubier 1997)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.linde2015</span>, <span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id           author year treatment1 treatment2 treatment3 n1 resp1 remi1 loss1 loss.ae1 ae1 n2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1  1        Lecrubier 1997        TCA       SNRI    Placebo 75    49    NA    23       10  NA 78</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2  4          Blashki 1971        TCA    Placebo            35    20    16     8        7  NA 23</span>
@@ -138,36 +138,36 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1    60    NA    23       11  NA 76    48    NA    19        4  NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     8     6     5        4  NA NA    NA    NA    NA       NA  NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3    12     5     5       NA  NA NA    NA    NA    NA       NA  NA</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Load netmeta package</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Print odds ratios and confidence limits with two digits</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Change appearance of confidence intervals</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/print.meta.html" class="external-link">cilayout</a></span><span class="op">(</span><span class="st">"("</span>, <span class="st">"-"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Define order of treatments in printouts</span></span>
-<span class="r-in"><span class="va">trts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"TCA"</span>, <span class="st">"SSRI"</span>, <span class="st">"SNRI"</span>, <span class="st">"NRI"</span>, <span class="st">"Low-dose SARI"</span>,</span>
-<span class="r-in"> <span class="st">"NaSSa"</span>, <span class="st">"rMAO-A"</span>, <span class="st">"Hypericum"</span>, <span class="st">"Placebo"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Transform data from wide arm-based format to contrast-based format</span></span>
-<span class="r-in"><span class="co">### (outcome: early response). Argument 'sm' has to be used for odds</span></span>
-<span class="r-in"><span class="co">### ratio as summary measure; by default the risk ratio is used in the</span></span>
-<span class="r-in"><span class="co">### metabin function called internally.</span></span>
-<span class="r-in"><span class="va">pw1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span>
-<span class="r-in">  event <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">resp1</span>, <span class="va">resp2</span>, <span class="va">resp3</span><span class="op">)</span>,</span>
-<span class="r-in">  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span>
-<span class="r-in">  studlab <span class="op">=</span> <span class="va">id</span>, data <span class="op">=</span> <span class="va">dat.linde2015</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Conduct random effects network meta-analysis for primary outcome</span></span>
-<span class="r-in"><span class="co">### (early response); small number of early responses is bad (argument</span></span>
-<span class="r-in"><span class="co">### small.values)</span></span>
-<span class="r-in"><span class="va">net1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw1</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, reference <span class="op">=</span> <span class="st">"Placebo"</span>, seq <span class="op">=</span> <span class="va">trts</span>,</span>
-<span class="r-in">  small.values <span class="op">=</span> <span class="st">"bad"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Load netmeta package</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Print odds ratios and confidence limits with two digits</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Change appearance of confidence intervals</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/print.meta.html" class="external-link">cilayout</a></span><span class="op">(</span><span class="st">"("</span>, <span class="st">"-"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Define order of treatments in printouts</span></span></span>
+<span class="r-in"><span><span class="va">trts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"TCA"</span>, <span class="st">"SSRI"</span>, <span class="st">"SNRI"</span>, <span class="st">"NRI"</span>, <span class="st">"Low-dose SARI"</span>,</span></span>
+<span class="r-in"><span> <span class="st">"NaSSa"</span>, <span class="st">"rMAO-A"</span>, <span class="st">"Hypericum"</span>, <span class="st">"Placebo"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Transform data from wide arm-based format to contrast-based format</span></span></span>
+<span class="r-in"><span><span class="co">### (outcome: early response). Argument 'sm' has to be used for odds</span></span></span>
+<span class="r-in"><span><span class="co">### ratio as summary measure; by default the risk ratio is used in the</span></span></span>
+<span class="r-in"><span><span class="co">### metabin function called internally.</span></span></span>
+<span class="r-in"><span><span class="va">pw1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  event <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">resp1</span>, <span class="va">resp2</span>, <span class="va">resp3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  studlab <span class="op">=</span> <span class="va">id</span>, data <span class="op">=</span> <span class="va">dat.linde2015</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Conduct random effects network meta-analysis for primary outcome</span></span></span>
+<span class="r-in"><span><span class="co">### (early response); small number of early responses is bad (argument</span></span></span>
+<span class="r-in"><span><span class="co">### small.values)</span></span></span>
+<span class="r-in"><span><span class="va">net1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw1</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, reference <span class="op">=</span> <span class="st">"Placebo"</span>, seq <span class="op">=</span> <span class="va">trts</span>,</span></span>
+<span class="r-in"><span>  small.values <span class="op">=</span> <span class="st">"bad"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Comparisons with missing TE / seTE or zero seTE not considered in network meta-analysis.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Comparisons not considered in network meta-analysis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  studlab treat1  treat2 TE seTE</span>
@@ -181,7 +181,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>      130  NaSSa Placebo NA   NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      131   SSRI    SNRI NA   NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="va">net1</span></span>
+<span class="r-in"><span><span class="va">net1</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 59</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 73</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 12681</span>
@@ -210,14 +210,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           79.37   58  0.0327</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  49.41   39  0.1226</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 29.95   19  0.0524</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Random effects NMA for early remission</span></span>
-<span class="r-in"><span class="va">pw2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span>treat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span>
-<span class="r-in">  event <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">remi1</span>, <span class="va">remi2</span>, <span class="va">remi3</span><span class="op">)</span>,</span>
-<span class="r-in">  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span>
-<span class="r-in">  studlab <span class="op">=</span> <span class="va">id</span>, data <span class="op">=</span> <span class="va">dat.linde2015</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">net2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw2</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>,</span>
-<span class="r-in">   seq <span class="op">=</span> <span class="va">trts</span>, ref <span class="op">=</span> <span class="st">"Placebo"</span>, small.values <span class="op">=</span> <span class="st">"bad"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Random effects NMA for early remission</span></span></span>
+<span class="r-in"><span><span class="va">pw2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span>treat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  event <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">remi1</span>, <span class="va">remi2</span>, <span class="va">remi3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  studlab <span class="op">=</span> <span class="va">id</span>, data <span class="op">=</span> <span class="va">dat.linde2015</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">net2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw2</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>,</span></span>
+<span class="r-in"><span>   seq <span class="op">=</span> <span class="va">trts</span>, ref <span class="op">=</span> <span class="st">"Placebo"</span>, small.values <span class="op">=</span> <span class="st">"bad"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Comparisons with missing TE / seTE or zero seTE not considered in network meta-analysis.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Comparisons not considered in network meta-analysis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  studlab        treat1  treat2 TE seTE</span>
@@ -243,7 +243,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>      130           TCA Placebo NA   NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      130         NaSSa Placebo NA   NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="va">net2</span></span>
+<span class="r-in"><span><span class="va">net2</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 53</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 61</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 12220</span>
@@ -272,11 +272,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           60.71   49  0.1218</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  36.83   36  0.4303</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 23.88   13  0.0323</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Ranking of treatments</span></span>
-<span class="r-in"><span class="va">nr1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net1</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">nr2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">nr1</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Ranking of treatments</span></span></span>
+<span class="r-in"><span><span class="va">nr1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net1</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">nr2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">nr1</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               P-score</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Hypericum      0.8939</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Low-dose SARI  0.7201</span>
@@ -287,7 +287,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> NaSSa          0.2128</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> rMAO-A         0.1521</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo        0.0908</span>
-<span class="r-in"><span class="va">nr2</span></span>
+<span class="r-in"><span><span class="va">nr2</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               P-score</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SNRI           0.7681</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Hypericum      0.7453</span>
@@ -298,14 +298,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> NaSSa          0.3346</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> rMAO-A         0.3196</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo        0.0063</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Partial order of treatment rankings (two outcomes)</span></span>
-<span class="r-in"><span class="va">outcomes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Early response"</span>, <span class="st">"Early remission"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">po12</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netposet.html" class="external-link">netposet</a></span><span class="op">(</span><span class="va">nr1</span>, <span class="va">nr2</span>, outcomes <span class="op">=</span> <span class="va">outcomes</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">po12</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Partial order of treatment rankings (two outcomes)</span></span></span>
+<span class="r-in"><span><span class="va">outcomes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Early response"</span>, <span class="st">"Early remission"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">po12</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netposet.html" class="external-link">netposet</a></span><span class="op">(</span><span class="va">nr1</span>, <span class="va">nr2</span>, outcomes <span class="op">=</span> <span class="va">outcomes</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">po12</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.linde2015-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -320,7 +320,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.kalaian1996</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.kalaian1996</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -121,9 +121,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.kalaian1996</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">12</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.kalaian1996</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">12</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    id                 study year n1i n2i outcome    yi     vi  hrs ets homework type</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   1 Alderman &amp; Powers (A) 1980  28  22  verbal  0.22 0.0817  7.0   1        1    1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2   2 Alderman &amp; Powers (B) 1980  39  40  verbal  0.09 0.0507 10.0   1        1    1</span>
@@ -137,41 +137,41 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10 10      Evans &amp; Pike (A) 1973 145 129    math  0.12 0.0147 21.0   1        1    1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11 11      Evans &amp; Pike (B) 1973  72 129  verbal  0.25 0.0218 21.0   1        1    1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12 12      Evans &amp; Pike (B) 1973  72 129    math  0.06 0.0216 21.0   1        1    1</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### check ranges</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/range.html" class="external-link">range</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span><span class="op">)</span> <span class="co"># -0.35 to 0.74 according to page 230</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### check ranges</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/range.html" class="external-link">range</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span><span class="op">)</span> <span class="co"># -0.35 to 0.74 according to page 230</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.38  0.74</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/range.html" class="external-link">range</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span><span class="op">)</span>   <span class="co"># -0.53 to 0.60 according to page 231</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/range.html" class="external-link">range</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span><span class="op">)</span>   <span class="co"># -0.53 to 0.60 according to page 231</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.53  0.60</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### comparing this with Figure 1 in the paper reveals some discrepancies</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>, mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">4</span>,<span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span><span class="op">)</span>, <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span>,</span>
-<span class="r-in">     pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (verbal)"</span>,</span>
-<span class="r-in">     xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">6</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">1</span><span class="op">)</span>, xaxs<span class="op">=</span><span class="st">"i"</span>, yaxs<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">0</span>,<span class="fl">0.5</span><span class="op">)</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">18</span><span class="op">)</span><span class="op">)</span>,  lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span><span class="op">)</span>, <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span>,</span>
-<span class="r-in">     pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (math)"</span>,</span>
-<span class="r-in">     xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">6</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.0</span>,<span class="fl">1</span><span class="op">)</span>, xaxs<span class="op">=</span><span class="st">"i"</span>, yaxs<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">0</span>,<span class="fl">0.5</span><span class="op">)</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">18</span><span class="op">)</span><span class="op">)</span>,  lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### comparing this with Figure 1 in the paper reveals some discrepancies</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>, mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">4</span>,<span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span><span class="op">)</span>, <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span>     pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (verbal)"</span>,</span></span>
+<span class="r-in"><span>     xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">6</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">1</span><span class="op">)</span>, xaxs<span class="op">=</span><span class="st">"i"</span>, yaxs<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">0</span>,<span class="fl">0.5</span><span class="op">)</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">18</span><span class="op">)</span><span class="op">)</span>,  lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span><span class="op">)</span>, <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span>     pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (math)"</span>,</span></span>
+<span class="r-in"><span>     xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">6</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.0</span>,<span class="fl">1</span><span class="op">)</span>, xaxs<span class="op">=</span><span class="st">"i"</span>, yaxs<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">0</span>,<span class="fl">0.5</span><span class="op">)</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">18</span><span class="op">)</span><span class="op">)</span>,  lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.kalaian1996-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct variance-covariance matrix assuming rho = 0.66 for effect sizes</span></span>
-<span class="r-in"><span class="co">### corresponding to the 'verbal' and 'math' outcome types</span></span>
-<span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">study</span>, type<span class="op">=</span><span class="va">outcome</span>, data<span class="op">=</span><span class="va">dat</span>, rho<span class="op">=</span><span class="fl">0.66</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit multivariate random-effects model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">-</span> <span class="fl">1</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>,</span>
-<span class="r-in">              data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct variance-covariance matrix assuming rho = 0.66 for effect sizes</span></span></span>
+<span class="r-in"><span><span class="co">### corresponding to the 'verbal' and 'math' outcome types</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">study</span>, type<span class="op">=</span><span class="va">outcome</span>, data<span class="op">=</span><span class="va">dat</span>, rho<span class="op">=</span><span class="fl">0.66</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit multivariate random-effects model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">-</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>,</span></span>
+<span class="r-in"><span>              data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 67; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -196,16 +196,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath       0.138  0.043  3.171  0.002  0.053  0.223   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal     0.117  0.034  3.459  &lt;.001  0.051  0.183  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### test whether the effect differs for the math and verbal subtest</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/anova.rma.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res</span>, X<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### test whether the effect differs for the math and verbal subtest</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res</span>, X<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Hypothesis:                                   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1: outcomemath - outcomeverbal = 0 </span>
@@ -217,16 +217,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Hypothesis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 1) = 0.183, p-val = 0.669</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### log-transform and mean center the hours of coaching variable</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">loghrs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">)</span>, na.rm<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit multivariate model with log(hrs) as moderator</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">+</span> <span class="va">outcome</span><span class="op">:</span><span class="va">loghrs</span> <span class="op">-</span> <span class="fl">1</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>,</span>
-<span class="r-in">              data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### log-transform and mean center the hours of coaching variable</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">loghrs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">)</span> <span class="op">-</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">)</span>, na.rm<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit multivariate model with log(hrs) as moderator</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">+</span> <span class="va">outcome</span><span class="op">:</span><span class="va">loghrs</span> <span class="op">-</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>,</span></span>
+<span class="r-in"><span>              data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Rows with NAs omitted from model fitting.</span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 65; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -251,7 +251,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub    ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.101  0.049  2.085  0.037   0.006  0.197   * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.110  0.035  3.164  0.002   0.042  0.178  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.170  0.073  2.339  0.019   0.028  0.312   * </span>
@@ -260,13 +260,13 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit model with tau2 = 0 for outcome verbal (which also constrains rho = 0)</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">+</span> <span class="va">outcome</span><span class="op">:</span><span class="va">loghrs</span> <span class="op">-</span> <span class="fl">1</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, tau2<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="fl">0</span><span class="op">)</span>,</span>
-<span class="r-in">              data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit model with tau2 = 0 for outcome verbal (which also constrains rho = 0)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">+</span> <span class="va">outcome</span><span class="op">:</span><span class="va">loghrs</span> <span class="op">-</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, tau2<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="cn">NA</span>,<span class="fl">0</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>              data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Rows with NAs omitted from model fitting.</span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 65; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -291,7 +291,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.107  0.051  2.100  0.036   0.007  0.206    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.114  0.034  3.395  &lt;.001   0.048  0.180  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.188  0.076  2.466  0.014   0.039  0.337    * </span>
@@ -300,8 +300,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -316,7 +316,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

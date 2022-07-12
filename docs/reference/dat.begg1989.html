@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.begg1989</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.begg1989</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -122,9 +122,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.begg1989</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.begg1989</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study trt arms     yi   sei     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 BMT    2 0.4600 0.118 0.0139 </span>
@@ -148,29 +148,29 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 19    15 CMO    1 0.2400 0.084 0.0071 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 20    16 CMO    1 0.5300 0.084 0.0071 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### turn trt and arms into factors and set reference levels</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">trt</span>  <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/relevel.html" class="external-link">relevel</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span>, ref<span class="op">=</span><span class="st">"CMO"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">arms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/relevel.html" class="external-link">relevel</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">arms</span><span class="op">)</span>, ref<span class="op">=</span><span class="st">"2"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### create data frame with the treatment differences for the controlled studies</span></span>
-<span class="r-in"><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>yi <span class="op">=</span> <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span><span class="op">)</span><span class="op">]</span> <span class="op">-</span> <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span>,</span>
-<span class="r-in">                   vi <span class="op">=</span> <span class="va">dat</span><span class="op">$</span><span class="va">vi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span><span class="op">)</span><span class="op">]</span> <span class="op">+</span> <span class="va">dat</span><span class="op">$</span><span class="va">vi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat2</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### turn trt and arms into factors and set reference levels</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span>  <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/relevel.html" class="external-link">relevel</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span>, ref<span class="op">=</span><span class="st">"CMO"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">arms</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/relevel.html" class="external-link">relevel</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">arms</span><span class="op">)</span>, ref<span class="op">=</span><span class="st">"2"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### create data frame with the treatment differences for the controlled studies</span></span></span>
+<span class="r-in"><span><span class="va">dat2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>yi <span class="op">=</span> <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span><span class="op">)</span><span class="op">]</span> <span class="op">-</span> <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span>                   vi <span class="op">=</span> <span class="va">dat</span><span class="op">$</span><span class="va">vi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span><span class="op">)</span><span class="op">]</span> <span class="op">+</span> <span class="va">dat</span><span class="op">$</span><span class="va">vi</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat2</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     yi       vi</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.21 0.019400</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.27 0.014489</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.05 0.024037</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4 0.22 0.080789</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### DerSimonian and Laird method using the treatment differences</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat2</span>, method<span class="op">=</span><span class="st">"DL"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### DerSimonian and Laird method using the treatment differences</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat2</span>, method<span class="op">=</span><span class="st">"DL"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 4; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -184,17 +184,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub    ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.20  0.08  2.59  &lt;.01   0.05   0.34  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Begg &amp; Pilote (1991) model incorporating the uncontrolled studies</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>,</span>
-<span class="r-in">              data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Begg &amp; Pilote (1991) model incorporating the uncontrolled studies</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>,</span></span>
+<span class="r-in"><span>              data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 20; method: ML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -211,18 +211,18 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate    se   zval  pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate    se   zval  pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt      0.32  0.02  16.47  &lt;.01   0.28   0.36  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> trtBMT       0.15  0.04   4.06  &lt;.01   0.08   0.22  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### model involving bias terms for the uncontrolled studies</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span> <span class="op">+</span> <span class="va">trt</span><span class="op">:</span><span class="va">arms</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>,</span>
-<span class="r-in">              data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### model involving bias terms for the uncontrolled studies</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span> <span class="op">+</span> <span class="va">trt</span><span class="op">:</span><span class="va">arms</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>,</span></span>
+<span class="r-in"><span>              data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 20; method: ML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -239,7 +239,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               estimate    se   zval  pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>               estimate    se   zval  pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt           0.30  0.05   6.63  &lt;.01   0.21   0.39  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> trtBMT            0.20  0.08   2.64  &lt;.01   0.05   0.35   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> trtCMO:arms1      0.03  0.05   0.52  0.60  -0.07   0.12      </span>
@@ -248,11 +248,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### model with a random treatment effect</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>, <span class="op">~</span> <span class="va">trt</span> <span class="op">|</span> <span class="va">study</span><span class="op">)</span>,</span>
-<span class="r-in">              struct<span class="op">=</span><span class="st">"UN"</span>, tau2<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="cn">NA</span><span class="op">)</span>, rho<span class="op">=</span><span class="fl">0</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### model with a random treatment effect</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>, <span class="op">~</span> <span class="va">trt</span> <span class="op">|</span> <span class="va">study</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>              struct<span class="op">=</span><span class="st">"UN"</span>, tau2<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="cn">NA</span><span class="op">)</span>, rho<span class="op">=</span><span class="fl">0</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 20; method: ML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -280,18 +280,18 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate    se   zval  pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate    se   zval  pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt      0.32  0.02  16.47  &lt;.01   0.28   0.36  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> trtBMT       0.15  0.04   4.06  &lt;.01   0.08   0.22  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### model with a random treatment effect, but with equal variances in both arms</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>, <span class="op">~</span> <span class="va">trt</span> <span class="op">|</span> <span class="va">study</span><span class="op">)</span>,</span>
-<span class="r-in">              struct<span class="op">=</span><span class="st">"CS"</span>, rho<span class="op">=</span><span class="fl">0</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### model with a random treatment effect, but with equal variances in both arms</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span>, <span class="op">~</span> <span class="va">trt</span> <span class="op">|</span> <span class="va">study</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>              struct<span class="op">=</span><span class="st">"CS"</span>, rho<span class="op">=</span><span class="fl">0</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 20; method: ML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -315,15 +315,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate    se   zval  pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate    se   zval  pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt      0.32  0.02  16.49  &lt;.01   0.28   0.36  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> trtBMT       0.15  0.04   3.95  &lt;.01   0.07   0.22  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -338,7 +338,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

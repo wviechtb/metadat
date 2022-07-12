@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.debruin2009</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.debruin2009</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -117,9 +117,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.debruin2009</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.debruin2009</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             author year   scq  ni  xi  mi ethnicity   patients select sens</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   Andrade et al. 2005 21.00  29  11  18     other   starting     no &lt;400</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2   Fairley et al. 2003 22.67  33  24   9 caucasian continuing    yes &lt;400</span>
@@ -134,15 +134,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11   van Servellen 2005  7.80 138  26 112     other continuing    yes  400</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12   Wagner et al. 2006 10.47  55  23  32     other   starting    yes  400</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13     Wohl et al. 2006 22.80  54  40  14     other   starting     no  400</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate proportions and corresponding sampling variances</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PR"</span>, xi<span class="op">=</span><span class="va">xi</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate proportions and corresponding sampling variances</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PR"</span>, xi<span class="op">=</span><span class="va">xi</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             author year   scq  ni  xi  mi ethnicity   patients select sens     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   Andrade et al. 2005 21.00  29  11  18     other   starting     no &lt;400 0.3793 0.0081 </span>
@@ -159,10 +159,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12   Wagner et al. 2006 10.47  55  23  32     other   starting    yes  400 0.4182 0.0044 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13     Wohl et al. 2006 22.80  54  40  14     other   starting     no  400 0.7407 0.0036 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### random-effects model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### random-effects model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 13; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -176,16 +176,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se   zval  pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se   zval  pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.48  0.05  10.45  &lt;.01   0.39   0.57  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### mixed-effects meta-regression model with all predictors/covariates</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">scq</span> <span class="op">+</span> <span class="va">ethnicity</span> <span class="op">+</span> <span class="va">patients</span> <span class="op">+</span> <span class="va">select</span> <span class="op">+</span> <span class="va">sens</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### mixed-effects meta-regression model with all predictors/covariates</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">scq</span> <span class="op">+</span> <span class="va">ethnicity</span> <span class="op">+</span> <span class="va">patients</span> <span class="op">+</span> <span class="va">select</span> <span class="op">+</span> <span class="va">sens</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 13; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -203,7 +203,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate     se    zval   pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt              0.458  0.087   5.243  &lt;.001   0.287   0.629  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> scq                  0.014  0.005   3.168  0.002   0.005   0.023   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ethnicityother      -0.231  0.084  -2.759  0.006  -0.395  -0.067   ** </span>
@@ -214,10 +214,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### mixed-effects meta-regression model with scq and ethnicity as predictors/covariates</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">scq</span> <span class="op">+</span> <span class="va">ethnicity</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### mixed-effects meta-regression model with scq and ethnicity as predictors/covariates</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">scq</span> <span class="op">+</span> <span class="va">ethnicity</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 13; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -235,7 +235,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate     se    zval   pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt            0.430  0.075   5.698  &lt;.001   0.282   0.577  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> scq                0.011  0.005   2.324  0.020   0.002   0.020    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ethnicityother    -0.196  0.072  -2.725  0.006  -0.337  -0.055   ** </span>
@@ -243,8 +243,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -259,7 +259,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

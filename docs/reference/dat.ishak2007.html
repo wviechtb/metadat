@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.ishak2007</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.ishak2007</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -118,9 +118,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.ishak2007</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">5</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.ishak2007</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">5</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               study   y1i  v1i   y2i   v2i   y3i v3i  y4i  v4i mdur mbase </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1    Alegret (2001) -33.4 14.3    NA    NA    NA  NA &lt;NA&gt; &lt;NA&gt; 16.1  53.6 </span>
@@ -129,21 +129,21 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4   Burchiel (1999) -20.0  8.0 -20.0   8.0 -18.0 5.0 &lt;NA&gt; &lt;NA&gt; 13.6  48.0 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5       Chen (2003)    NA   NA -32.9 125.0    NA  NA &lt;NA&gt; &lt;NA&gt; 12.1  65.7 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### create long format dataset</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/reshape.html" class="external-link">reshape</a></span><span class="op">(</span><span class="va">dat</span>, direction<span class="op">=</span><span class="st">"long"</span>, idvar<span class="op">=</span><span class="st">"study"</span>, v.names<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"yi"</span>,<span class="st">"vi"</span><span class="op">)</span>,</span>
-<span class="r-in">               varying<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span>,<span class="fl">9</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html" class="external-link">order</a></span><span class="op">(</span><span class="va">study</span>, <span class="va">time</span><span class="op">)</span>,<span class="op">]</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### remove missing measurement occasions from dat.long</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">yi</span><span class="op">)</span>,<span class="op">]</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">8</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### create long format dataset</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/reshape.html" class="external-link">reshape</a></span><span class="op">(</span><span class="va">dat</span>, direction<span class="op">=</span><span class="st">"long"</span>, idvar<span class="op">=</span><span class="st">"study"</span>, v.names<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"yi"</span>,<span class="st">"vi"</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>               varying<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">4</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span>,<span class="fl">5</span>,<span class="fl">7</span>,<span class="fl">9</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/order.html" class="external-link">order</a></span><span class="op">(</span><span class="va">study</span>, <span class="va">time</span><span class="op">)</span>,<span class="op">]</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### remove missing measurement occasions from dat.long</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="va">yi</span><span class="op">)</span>,<span class="op">]</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">8</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               study mdur mbase time    yi    vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1    Alegret (2001) 16.1  53.6    1 -33.4  14.3 </span>
@@ -155,21 +155,21 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 7   Burchiel (1999) 13.6  48.0    3 -18.0   5.0 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8       Chen (2003) 12.1  65.7    2 -32.9 125.0 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct the full (block diagonal) V matrix with an AR(1) structure</span></span>
-<span class="r-in"><span class="co">### assuming an autocorrelation of 0.97 as estimated by Ishak et al. (2007)</span></span>
-<span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">study</span>, time1<span class="op">=</span><span class="va">time</span>, phi<span class="op">=</span><span class="fl">0.97</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### plot data</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">with</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fu"><a href="https://rdrr.io/r/stats/interaction.plot.html" class="external-link">interaction.plot</a></span><span class="op">(</span><span class="va">time</span>, <span class="va">study</span>, <span class="va">yi</span>, type<span class="op">=</span><span class="st">"b"</span>, pch<span class="op">=</span><span class="fl">19</span>, lty<span class="op">=</span><span class="st">"solid"</span>, xaxt<span class="op">=</span><span class="st">"n"</span>,</span>
-<span class="r-in">          legend<span class="op">=</span><span class="cn">FALSE</span>, xlab<span class="op">=</span><span class="st">"Time Point"</span>, ylab<span class="op">=</span><span class="st">"Mean Difference"</span>, bty<span class="op">=</span><span class="st">"l"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/axis.html" class="external-link">axis</a></span><span class="op">(</span>side<span class="op">=</span><span class="fl">1</span>, at<span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span>, lab<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1 (3 months)"</span>, <span class="st">"2 (6 months)"</span>, <span class="st">"3 (12 months)"</span>, <span class="st">"4 (12+ months)"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct the full (block diagonal) V matrix with an AR(1) structure</span></span></span>
+<span class="r-in"><span><span class="co">### assuming an autocorrelation of 0.97 as estimated by Ishak et al. (2007)</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">study</span>, time1<span class="op">=</span><span class="va">time</span>, phi<span class="op">=</span><span class="fl">0.97</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### plot data</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/with.html" class="external-link">with</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fu"><a href="https://rdrr.io/r/stats/interaction.plot.html" class="external-link">interaction.plot</a></span><span class="op">(</span><span class="va">time</span>, <span class="va">study</span>, <span class="va">yi</span>, type<span class="op">=</span><span class="st">"b"</span>, pch<span class="op">=</span><span class="fl">19</span>, lty<span class="op">=</span><span class="st">"solid"</span>, xaxt<span class="op">=</span><span class="st">"n"</span>,</span></span>
+<span class="r-in"><span>          legend<span class="op">=</span><span class="cn">FALSE</span>, xlab<span class="op">=</span><span class="st">"Time Point"</span>, ylab<span class="op">=</span><span class="st">"Mean Difference"</span>, bty<span class="op">=</span><span class="st">"l"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/axis.html" class="external-link">axis</a></span><span class="op">(</span>side<span class="op">=</span><span class="fl">1</span>, at<span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span>, lab<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"1 (3 months)"</span>, <span class="st">"2 (6 months)"</span>, <span class="st">"3 (12 months)"</span>, <span class="st">"4 (12+ months)"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.ishak2007-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### multivariate model with heteroscedastic AR(1) structure for the true effects</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">time</span><span class="op">)</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">time</span> <span class="op">|</span> <span class="va">study</span>,</span>
-<span class="r-in">              struct <span class="op">=</span> <span class="st">"HAR"</span>, data <span class="op">=</span> <span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### multivariate model with heteroscedastic AR(1) structure for the true effects</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">time</span><span class="op">)</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">time</span> <span class="op">|</span> <span class="va">study</span>,</span></span>
+<span class="r-in"><span>              struct <span class="op">=</span> <span class="st">"HAR"</span>, data <span class="op">=</span> <span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 82; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -193,7 +193,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate    se    zval  pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                estimate    se    zval  pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)1    -25.90  1.01  -25.60  &lt;.01  -27.89  -23.92  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)2    -27.46  1.14  -24.08  &lt;.01  -29.70  -25.23  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(time)3    -28.66  1.03  -27.76  &lt;.01  -30.68  -26.63  *** </span>
@@ -202,8 +202,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -218,7 +218,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

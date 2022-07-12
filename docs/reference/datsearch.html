@@ -92,21 +92,26 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">datsearch</span><span class="op">(</span><span class="va">pattern</span>, concept<span class="op">=</span><span class="cn">TRUE</span>, matchall<span class="op">=</span><span class="cn">TRUE</span>, fixed<span class="op">=</span><span class="cn">TRUE</span>, pkgdown<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">datsearch</span><span class="op">(</span><span class="va">pattern</span>, concept<span class="op">=</span><span class="cn">TRUE</span>, matchall<span class="op">=</span><span class="cn">TRUE</span>, fixed<span class="op">=</span><span class="cn">TRUE</span>, pkgdown<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>pattern</dt>
 <dd><p>character string or vector of strings specifying the terms to search for within the datasets. Can also be left unspecified to start the function in an interactive mode.</p></dd>
-<dt>concept</dt>
+
+   <dt>concept</dt>
 <dd><p>logical indicating whether the search should be confined to the concept terms (<code>TRUE</code> by default) or whether a full-text search should be conducted.</p></dd>
-<dt>matchall</dt>
+
+   <dt>matchall</dt>
 <dd><p>logical indicating whether only the datasets matching all terms (if multiple are specified) are returned (<code>TRUE</code> by default) or whether datasets matching any one of the terms are returned.</p></dd>
-<dt>fixed</dt>
+
+   <dt>fixed</dt>
 <dd><p>logical indicating whether a term is a string to be matched as is (<code>TRUE</code> by default). If <code>FALSE</code>, a search term is a regular expression that <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></code> will search for. Only relevant when <code>concept=FALSE</code> (i.e., when doing a full-text search).</p></dd>
-<dt>pkgdown</dt>
+
+   <dt>pkgdown</dt>
 <dd><p>logical indicating whether the standard help file or the pkgdown docs (at <a href="https://wviechtb.github.io/metadat/">https://wviechtb.github.io/metadat/</a>) should be shown for a chosen dataset (<code>FALSE</code> by default).</p></dd>
+
 </dl></div>
     <div id="details">
     <h2>Details</h2>
@@ -129,27 +134,27 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co"># note: the examples below are not run since they require interactivity</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in"></span>
-<span class="r-in">   <span class="co"># start the function in the interactive mode</span></span>
-<span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in">   <span class="co"># find all datasets tagged with the concept term 'standardized mean differences'</span></span>
-<span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"standardized mean differences"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in">   <span class="co"># find all datasets tagged with the concept terms 'odds ratio' and 'multilevel'</span></span>
-<span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"odds ratio, multilevel"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in">   <span class="co"># do a full-text search for the term 'infarct'</span></span>
-<span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"infarct"</span>, concept<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in">   <span class="co"># do a full-text search for 'rma.mv(' (essentially finds all datasets where</span></span>
-<span class="r-in">   <span class="co"># the rma.mv() function was used in the examples section of a help file)</span></span>
-<span class="r-in">   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"rma.mv("</span>, concept<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="op">}</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># note: the examples below are not run since they require interactivity</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span>   <span class="co"># start the function in the interactive mode</span></span></span>
+<span class="r-in"><span>   <span class="fu">datsearch</span><span class="op">(</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span>   <span class="co"># find all datasets tagged with the concept term 'standardized mean differences'</span></span></span>
+<span class="r-in"><span>   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"standardized mean differences"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span>   <span class="co"># find all datasets tagged with the concept terms 'odds ratio' and 'multilevel'</span></span></span>
+<span class="r-in"><span>   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"odds ratio, multilevel"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span>   <span class="co"># do a full-text search for the term 'infarct'</span></span></span>
+<span class="r-in"><span>   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"infarct"</span>, concept<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span>   <span class="co"># do a full-text search for 'rma.mv(' (essentially finds all datasets where</span></span></span>
+<span class="r-in"><span>   <span class="co"># the rma.mv() function was used in the examples section of a help file)</span></span></span>
+<span class="r-in"><span>   <span class="fu">datsearch</span><span class="op">(</span><span class="st">"rma.mv("</span>, concept<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="op">}</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -164,7 +169,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

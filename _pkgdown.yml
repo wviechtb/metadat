@@ -67,6 +67,11 @@ navbar:
      href: https://github.com/wviechtb/metadat
 
 reference:
+  - title: "Package Introduction"
+    desc: >
+      Introduction to the package
+    contents:
+    - metadat-package
   - title: "Datasets"
     desc: >
       Datasets included in the package:

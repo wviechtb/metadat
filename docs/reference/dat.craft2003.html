@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.craft2003</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.craft2003</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -122,9 +122,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.craft2003</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">18</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.craft2003</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">18</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study  ni sport    ri var1 var2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 142     I -0.55 acog perf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      1 142     I -0.48 asom perf</span>
@@ -144,19 +144,19 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 16     6  16     T  0.67 acog asom</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 17     6  16     T    NA acog conf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 18     6  16     T    NA asom conf</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct dataset and var-cov matrix of the correlations</span></span>
-<span class="r-in"><span class="va">tmp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rcalc.html" class="external-link">rcalc</a></span><span class="op">(</span><span class="va">ri</span> <span class="op">~</span> <span class="va">var1</span> <span class="op">+</span> <span class="va">var2</span> <span class="op">|</span> <span class="va">study</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="va">tmp</span><span class="op">$</span><span class="va">V</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">tmp</span><span class="op">$</span><span class="va">dat</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### examine data for study 1</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">1</span>,<span class="op">]</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct dataset and var-cov matrix of the correlations</span></span></span>
+<span class="r-in"><span><span class="va">tmp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rcalc.html" class="external-link">rcalc</a></span><span class="op">(</span><span class="va">ri</span> <span class="op">~</span> <span class="va">var1</span> <span class="op">+</span> <span class="va">var2</span> <span class="op">|</span> <span class="va">study</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="va">tmp</span><span class="op">$</span><span class="va">V</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">tmp</span><span class="op">$</span><span class="va">dat</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### examine data for study 1</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">1</span>,<span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   study var1 var2 var1.var2    yi  ni</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     1 acog perf acog.perf -0.55 142</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     1 asom perf asom.perf -0.48 142</span>
@@ -164,7 +164,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4     1 acog asom acog.asom  0.47 142</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5     1 acog conf acog.conf -0.38 142</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6     1 asom conf asom.conf -0.46 142</span>
-<span class="r-in"><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">1</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">1</span><span class="op">]</span></span>
+<span class="r-in"><span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">1</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">1</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>               acog.perf     asom.perf     conf.perf     acog.asom    acog.conf     asom.conf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.perf  0.0034503989  0.0013265149 -0.0005545798 -0.0013967848  0.002501895  0.0009322372</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> asom.perf  0.0013265149  0.0042005969 -0.0009521407 -0.0019433591  0.001264856  0.0025160783</span>
@@ -172,9 +172,9 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.asom -0.0013967848 -0.0019433591  0.0005791091  0.0043049419 -0.001802689 -0.0012050560</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.conf  0.0025018954  0.0012648562 -0.0015337979 -0.0018026891  0.005191854  0.0018844047</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> asom.conf  0.0009322372  0.0025160783 -0.0010692460 -0.0012050560  0.001884405  0.0044083302</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### examine data for study 6</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span>,<span class="op">]</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### examine data for study 6</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span>,<span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study var1 var2 var1.var2   yi ni</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 13     6 acog perf acog.perf 0.44 16</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 14     6 asom perf asom.perf 0.46 16</span>
@@ -182,7 +182,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 16     6 acog asom acog.asom 0.67 16</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 17     6 acog conf acog.conf   NA 16</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 18     6 asom conf asom.conf   NA 16</span>
-<span class="r-in"><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span><span class="op">]</span></span>
+<span class="r-in"><span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             acog.perf   asom.perf conf.perf   acog.asom acog.conf asom.conf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.perf 0.043352064 0.025583395        NA 0.009529623        NA        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> asom.perf 0.025583395 0.041438304        NA 0.008459787        NA        NA</span>
@@ -190,9 +190,9 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.asom 0.009529623 0.008459787        NA 0.020247414        NA        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.conf          NA          NA        NA          NA        NA        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> asom.conf          NA          NA        NA          NA        NA        NA</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### examine data for study 17</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">17</span>,<span class="op">]</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### examine data for study 17</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">17</span>,<span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study var1 var2 var1.var2    yi ni</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 25    17 acog perf acog.perf  0.10 45</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 26    17 asom perf asom.perf  0.31 45</span>
@@ -200,7 +200,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    17 acog asom acog.asom    NA 45</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 29    17 acog conf acog.conf    NA 45</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 30    17 asom conf asom.conf    NA 45</span>
-<span class="r-in"><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">17</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">17</span><span class="op">]</span></span>
+<span class="r-in"><span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">17</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">17</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           acog.perf  asom.perf  conf.perf acog.asom acog.conf asom.conf</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.perf  0.022275         NA         NA        NA        NA        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> asom.perf        NA 0.01856898         NA        NA        NA        NA</span>
@@ -208,11 +208,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.asom        NA         NA         NA        NA        NA        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> acog.conf        NA         NA         NA        NA        NA        NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> asom.conf        NA         NA         NA        NA        NA        NA</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### multivariate random-effects model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">var1.var2</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">var1.var2</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### multivariate random-effects model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">var1.var2</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">var1.var2</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Rows with NAs omitted from model fitting.</span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 51; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -252,7 +252,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                     estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                     estimate      se     zval    pval    ci.lb    ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> var1.var2acog.asom    0.5671  0.0367  15.4640  &lt;.0001   0.4953   0.6390  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> var1.var2acog.conf   -0.4888  0.0509  -9.6048  &lt;.0001  -0.5886  -0.3891  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> var1.var2acog.perf   -0.0600  0.1408  -0.4264  0.6698  -0.3359   0.2159      </span>
@@ -263,8 +263,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -279,7 +279,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.mccurdy2020</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.mccurdy2020</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -125,9 +125,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.mccurdy2020</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.mccurdy2020</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   article experiment sample id pairing     yi      vi ni stimuli condition gen_difficulty manip_type </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      12          1      1  1       1 0.8790 0.00068 12      20  generate           &lt;NA&gt;    between </span>
@@ -151,17 +151,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6 verbal/speaking word stem      full   &lt;NA&gt;          no younger       immediate </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit multilevel mixed-effects meta-regression model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">condition</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">article</span><span class="op">/</span><span class="va">experiment</span><span class="op">/</span><span class="va">sample</span><span class="op">/</span><span class="va">id</span>, <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">pairing</span><span class="op">)</span>,</span>
-<span class="r-in">              data<span class="op">=</span><span class="va">dat</span>, sparse<span class="op">=</span><span class="cn">TRUE</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit multilevel mixed-effects meta-regression model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">condition</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">article</span><span class="op">/</span><span class="va">experiment</span><span class="op">/</span><span class="va">sample</span><span class="op">/</span><span class="va">id</span>, <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">pairing</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>              data<span class="op">=</span><span class="va">dat</span>, sparse<span class="op">=</span><span class="cn">TRUE</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 1653; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -182,73 +182,27 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate     se    zval   pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate     se    zval   pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt               0.478  0.016  30.446  &lt;.001  0.448  0.509  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> conditiongenerate     0.102  0.004  24.042  &lt;.001  0.094  0.110  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### proportion of total amount of heterogeneity due to each component</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>source<span class="op">=</span><span class="va">res</span><span class="op">$</span><span class="va">s.names</span>, sigma2<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">sigma2</span>, <span class="fl">3</span><span class="op">)</span>,</span>
-<span class="r-in">   prop<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">sigma2</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">sigma2</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                         source sigma2 prop</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1                      article  0.022 0.43</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2           article/experiment  0.006 0.12</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    article/experiment/sample  0.000 0.00</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 article/experiment/sample/id  0.006 0.13</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5                      pairing  0.017 0.33</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### apply cluster-robust inference</span></span>
-<span class="r-in"><span class="va">sav</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">article</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">sav</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 1653; method: REML)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            estim   sqrt  nlvls  fixed                        factor </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1  0.022  0.148    126     no                       article </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2  0.006  0.078    310     no            article/experiment </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.3  0.000  0.000    582     no     article/experiment/sample </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.4  0.006  0.080   1653     no  article/experiment/sample/id </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.5  0.017  0.128    804     no                       pairing </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 1651) = 211160.207, p-val &lt; .001</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Number of estimates:   1653</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Number of clusters:    126</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Estimates per cluster: 2-48 (mean: 13.12, median: 9)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficient 2):¹</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> F(df1 = 1, df2 = 124) = 191.874, p-val &lt; .001</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate    se¹   tval¹  df¹  pval¹  ci.lb¹  ci.ub¹     ​ </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt               0.478  0.016  29.275  124  &lt;.001   0.446   0.511  *** </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> conditiongenerate     0.102  0.007  13.852  124  &lt;.001   0.087   0.117  *** </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR1,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = residual method)</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### estimated average recall rate in read and generate conditions</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">sav</span>, newmods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    pred    se ci.lb ci.ub pi.lb pi.ub </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.478 0.016 0.446 0.511 0.031 0.926 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.581 0.016 0.549 0.612 0.133 1.028 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### use methods from clubSandwich package</span></span>
-<span class="r-in"><span class="va">sav</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">article</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">sav</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### proportion of total amount of heterogeneity due to each component</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>source<span class="op">=</span><span class="va">res</span><span class="op">$</span><span class="va">s.names</span>, sigma2<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">sigma2</span>, <span class="fl">3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>   prop<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">sigma2</span> <span class="op">/</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">sigma2</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                                    source sigma2 prop</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> article                                           article  0.022 0.43</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> article/experiment                     article/experiment  0.006 0.12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> article/experiment/sample       article/experiment/sample  0.000 0.00</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> article/experiment/sample/id article/experiment/sample/id  0.006 0.13</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> pairing                                           pairing  0.017 0.33</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### apply cluster-robust inference methods</span></span></span>
+<span class="r-in"><span><span class="va">sav</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">article</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">sav</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 1653; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -273,7 +227,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate    se¹   tval¹     df¹  pval¹  ci.lb¹  ci.ub¹     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate    se¹   tval¹     df¹  pval¹  ci.lb¹  ci.ub¹      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt               0.478  0.016  29.382  120.17  &lt;.001   0.446   0.511  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> conditiongenerate     0.102  0.007  13.875   74.70  &lt;.001   0.087   0.117  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -283,8 +237,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### estimated average recall rate in read and generate conditions</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">sav</span>, newmods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    pred    se ci.lb ci.ub pi.lb pi.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.478 0.016 0.446 0.511 0.031 0.926 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.581 0.016 0.549 0.612 0.133 1.028 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -299,7 +261,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

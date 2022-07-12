@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.bakdash2021</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.bakdash2021</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -134,9 +134,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.bakdash2021</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">:</span><span class="fl">12</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.bakdash2021</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">6</span>,<span class="fl">8</span><span class="op">:</span><span class="fl">12</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                  Author Year SA.measure.type Sample.size.stats      es.z       vi.z</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 Cummings and Guerlain 2007            SPAM                42 0.4623530 0.02564103</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Cummings and Guerlain 2007           SAGAT                42 0.1498943 0.02564103</span>
@@ -151,19 +151,19 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4                 Durso1998       4</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5                Durso 2006       5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6                Durso 2006       6</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"><span class="co">#start.time &lt;- Sys.time()</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### multilevel meta-analytic model to get the overall pooled effect</span></span>
-<span class="r-in"><span class="va">res.overall</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span>,</span>
-<span class="r-in">                      random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">SampleID</span> <span class="op">/</span> <span class="va">Outcome</span>,</span>
-<span class="r-in">                      data <span class="op">=</span> <span class="va">dat</span>,</span>
-<span class="r-in">                      test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res.overall</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span><span class="co">#start.time &lt;- Sys.time()</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### multilevel meta-analytic model to get the overall pooled effect</span></span></span>
+<span class="r-in"><span><span class="va">res.overall</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>                      random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">SampleID</span> <span class="op">/</span> <span class="va">Outcome</span>,</span></span>
+<span class="r-in"><span>                      data <span class="op">=</span> <span class="va">dat</span>,</span></span>
+<span class="r-in"><span>                      test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res.overall</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 678; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -178,23 +178,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     tval   df    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     tval   df    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2692  0.0240  11.2329  677  &lt;.0001  0.2222  0.3163  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### get prediction interval</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res.overall</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### get prediction interval</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res.overall</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    pred     se  ci.lb  ci.ub   pi.lb  pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  0.2692 0.0240 0.2222 0.3163 -0.1474 0.6858 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### cluster-robust variance estimation (CRVE) / cluster-robust inference</span></span>
-<span class="r-in"><span class="va">res.overall.crve</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res.overall</span>, cluster <span class="op">=</span> <span class="va">SampleID</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res.overall.crve</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### cluster-robust variance estimation (CRVE) / cluster-robust inference</span></span></span>
+<span class="r-in"><span><span class="va">res.overall.crve</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res.overall</span>, cluster <span class="op">=</span> <span class="va">SampleID</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res.overall.crve</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 678; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -213,7 +213,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹    tval¹  df¹   pval¹  ci.lb¹  ci.ub¹     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹    tval¹  df¹   pval¹  ci.lb¹  ci.ub¹      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2692  0.0239  11.2408   78  &lt;.0001  0.2215  0.3169  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -222,21 +222,21 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR1,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t-test and confidence interval, dfs = residual method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### get prediction interval</span></span>
-<span class="r-in"><span class="va">res.overall.crve.pred</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res.overall.crve</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res.overall.crve.pred</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### get prediction interval</span></span></span>
+<span class="r-in"><span><span class="va">res.overall.crve.pred</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res.overall.crve</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res.overall.crve.pred</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    pred     se  ci.lb  ci.ub   pi.lb  pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  0.2692 0.0239 0.2215 0.3169 -0.1532 0.6916 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### multilevel meta-analytic model for SA measures</span></span>
-<span class="r-in"><span class="va">res.sa</span> <span class="op">&lt;-</span>  <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">SA.measure.type</span> <span class="op">-</span> <span class="fl">1</span>,</span>
-<span class="r-in">                  random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">SampleID</span> <span class="op">/</span> <span class="va">Outcome</span>,</span>
-<span class="r-in">                  data <span class="op">=</span> <span class="va">dat</span>,</span>
-<span class="r-in">                  test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res.sa</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### multilevel meta-analytic model for SA measures</span></span></span>
+<span class="r-in"><span><span class="va">res.sa</span> <span class="op">&lt;-</span>  <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">SA.measure.type</span> <span class="op">-</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>                  random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">SampleID</span> <span class="op">/</span> <span class="va">Outcome</span>,</span></span>
+<span class="r-in"><span>                  data <span class="op">=</span> <span class="va">dat</span>,</span></span>
+<span class="r-in"><span>                  test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res.sa</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 678; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -254,7 +254,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                 estimate      se    tval   df    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                 estimate      se    tval   df    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SA.measure.typeDirect-SR          0.3781  0.1131  3.3437  668  0.0009   0.1561  0.6002  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SA.measure.typeExplicit Recall    0.2297  0.0732  3.1366  668  0.0018   0.0859  0.3734   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SA.measure.typeGeneral Know.      0.2161  0.0570  3.7941  668  0.0002   0.1043  0.3279  *** </span>
@@ -269,10 +269,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### cluster-robust variance estimation (CRVE) / cluster-robust inference</span></span>
-<span class="r-in"><span class="va">res.sa.crve</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res.sa</span>, cluster <span class="op">=</span> <span class="va">SampleID</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res.sa.crve</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### cluster-robust variance estimation (CRVE) / cluster-robust inference</span></span></span>
+<span class="r-in"><span><span class="va">res.sa.crve</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res.sa</span>, cluster <span class="op">=</span> <span class="va">SampleID</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res.sa.crve</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 678; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -294,7 +294,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                                 estimate     se¹   tval¹  df¹   pval¹   ci.lb¹  ci.ub¹     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                 estimate     se¹   tval¹  df¹   pval¹   ci.lb¹  ci.ub¹      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SA.measure.typeDirect-SR          0.3781  0.0552  6.8448   69  &lt;.0001   0.2679  0.4884  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SA.measure.typeExplicit Recall    0.2297  0.0608  3.7776   69  0.0003   0.1084  0.3510  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> SA.measure.typeGeneral Know.      0.2161  0.0447  4.8381   69  &lt;.0001   0.1270  0.3052  *** </span>
@@ -312,84 +312,84 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR1,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = residual method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### profile likelihood plots</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/profile.rma.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res.sa.crve</span>, progbar <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### profile likelihood plots</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/profile.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res.sa.crve</span>, progbar <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.bakdash2021-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### format and combine output of meta-analytic models for the forest plot</span></span>
-<span class="r-in"><span class="va">all.z</span>        <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">beta</span>,            <span class="co"># SA measures</span></span>
-<span class="r-in">                  <span class="va">res.overall.crve</span><span class="op">$</span><span class="va">beta</span>,       <span class="co"># pooled effect for confidence interval (CI)</span></span>
-<span class="r-in">                  <span class="va">res.overall.crve</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span>       <span class="co"># pooled effect for prediction interval (PI)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">all.ci.lower</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">ci.lb</span>,           <span class="co"># SA measures</span></span>
-<span class="r-in">                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">ci.lb</span>, <span class="co"># pooled effect, lower CI</span></span>
-<span class="r-in">                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">pi.lb</span><span class="op">)</span> <span class="co"># pooled effect, lower PI</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">all.ci.upper</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">ci.ub</span>,           <span class="co"># SA measures</span></span>
-<span class="r-in">                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">ci.ub</span>, <span class="co"># pooled effect, upper CI</span></span>
-<span class="r-in">                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">pi.ub</span><span class="op">)</span> <span class="co"># pooled effect, upper PI</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### note: there is no p-value for the PI</span></span>
-<span class="r-in"><span class="va">all.pvals</span>  <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">pval</span>, <span class="va">res.overall.crve</span><span class="op">$</span><span class="va">pval</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">all.labels</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sort.html" class="external-link">sort</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">SA.measure.type</span><span class="op">)</span><span class="op">)</span>, <span class="st">"Overall"</span>, <span class="st">"95% Prediction Interval"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### function to round p-values for the forest plot</span></span>
-<span class="r-in"><span class="va">pvals.round</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">input</span><span class="op">)</span> <span class="op">{</span></span>
-<span class="r-in">  <span class="va">input</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">input</span> <span class="op">&lt;</span> <span class="fl">0.001</span>, <span class="st">"&lt; 0.001"</span>,</span>
-<span class="r-in">           <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">input</span> <span class="op">&lt;</span> <span class="fl">0.01</span>, <span class="st">"&lt; 0.01"</span>,</span>
-<span class="r-in">           <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">input</span> <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="op">&amp;</span> <span class="va">input</span> <span class="op">&gt;=</span> <span class="fl">0.045</span>, <span class="st">"&lt; 0.05"</span>,</span>
-<span class="r-in">           <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">input</span>, <span class="fl">2</span><span class="op">)</span> <span class="op">==</span> <span class="fl">1.00</span>, <span class="st">"0.99"</span>,</span>
-<span class="r-in">           <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">input</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">}</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">all.pvals.rounded</span> <span class="op">&lt;-</span> <span class="fu">pvals.round</span><span class="op">(</span><span class="va">all.pvals</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### forest plot</span></span>
-<span class="r-in"><span class="va">plot.vals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">all.labels</span>, <span class="va">all.z</span>, <span class="va">all.ci.lower</span>, <span class="va">all.ci.upper</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.z</span>,</span>
-<span class="r-in">       ci.lb <span class="op">=</span> <span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.lower</span>,</span>
-<span class="r-in">       ci.ub <span class="op">=</span> <span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.upper</span>,</span>
-<span class="r-in">       slab  <span class="op">=</span> <span class="va">plot.vals</span><span class="op">$</span><span class="va">all.labels</span>,</span>
-<span class="r-in">       psize <span class="op">=</span> <span class="fl">1</span>,</span>
-<span class="r-in">       efac <span class="op">=</span> <span class="fl">0</span>, xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.8</span>, <span class="fl">2.5</span><span class="op">)</span>, clim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span>,</span>
-<span class="r-in">       transf <span class="op">=</span> <span class="va">transf.ztor</span>, <span class="co"># transform z to r</span></span>
-<span class="r-in">       at <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>, <span class="fl">1</span>, by <span class="op">=</span> <span class="fl">0.25</span><span class="op">)</span>,</span>
-<span class="r-in">       xlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="st">"Correlation Coefficient"</span><span class="op">~</span><span class="st">"("</span><span class="op">*</span><span class="fu"><a href="https://rdrr.io/r/grDevices/plotmath.html" class="external-link">italic</a></span><span class="op">(</span><span class="st">'r'</span><span class="op">)</span><span class="op">*</span><span class="st">")"</span><span class="op">)</span>,</span>
-<span class="r-in">       main <span class="op">=</span> <span class="st">"\n\n\nSA Measures"</span>,</span>
-<span class="r-in">       ilab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">all.pvals.rounded</span>, <span class="st">""</span><span class="op">)</span>, ilab.xpos <span class="op">=</span> <span class="fl">2.45</span>, ilab.pos <span class="op">=</span> <span class="fl">2.5</span>,</span>
-<span class="r-in">       digits <span class="op">=</span> <span class="fl">2</span>, refline <span class="op">=</span> <span class="fl">0</span>, annotate <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### keep trailing zero using sprintf</span></span>
-<span class="r-in"><span class="va">output</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.z</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span>
-<span class="r-in">                <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.lower</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span>
-<span class="r-in">                <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.upper</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### alignment kludge</span></span>
-<span class="r-in"><span class="va">annotext</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/apply.html" class="external-link">apply</a></span><span class="op">(</span><span class="va">output</span>, <span class="fl">1</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"  "</span>, <span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, <span class="st">" ["</span>, <span class="va">x</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span>,<span class="st">", "</span>, <span class="va">x</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span>, <span class="st">"]"</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">1.05</span>, <span class="fl">12</span><span class="op">:</span><span class="fl">1</span>, <span class="va">annotext</span>, pos <span class="op">=</span> <span class="fl">4</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.475</span>, <span class="fl">14.00</span>, <span class="st">"SA Measure"</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">2.30</span>,  <span class="fl">14.00</span>, <span class="fu"><a href="https://rdrr.io/r/base/substitute.html" class="external-link">substitute</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/grDevices/plotmath.html" class="external-link">italic</a></span><span class="op">(</span><span class="st">'p-value'</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">1.55</span>,  <span class="fl">14.00</span>, <span class="st">"Correlation [95% CI]"</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">1.5</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### black polygon for overall mean CIs</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/addpoly.html" class="external-link">addpoly</a></span><span class="op">(</span><span class="va">all.z</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>, ci.lb <span class="op">=</span> <span class="va">all.ci.lower</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>, ci.ub <span class="op">=</span> <span class="va">all.ci.upper</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>,</span>
-<span class="r-in">        rows <span class="op">=</span> <span class="fl">2</span>, annotate <span class="op">=</span> <span class="cn">FALSE</span>, efac <span class="op">=</span> <span class="fl">1.5</span>, transf <span class="op">=</span> <span class="va">transf.ztor</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### white polygon for PI</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/addpoly.html" class="external-link">addpoly</a></span><span class="op">(</span><span class="va">all.z</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>, ci.lb <span class="op">=</span> <span class="va">all.ci.lower</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>, ci.ub <span class="op">=</span> <span class="va">all.ci.upper</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>,</span>
-<span class="r-in">        rows <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"white"</span>, border <span class="op">=</span> <span class="st">"black"</span>,</span>
-<span class="r-in">        annotate <span class="op">=</span> <span class="cn">FALSE</span>, efac <span class="op">=</span> <span class="fl">1.5</span>, transf <span class="op">=</span> <span class="va">transf.ztor</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### format and combine output of meta-analytic models for the forest plot</span></span></span>
+<span class="r-in"><span><span class="va">all.z</span>        <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">beta</span>,            <span class="co"># SA measures</span></span></span>
+<span class="r-in"><span>                  <span class="va">res.overall.crve</span><span class="op">$</span><span class="va">beta</span>,       <span class="co"># pooled effect for confidence interval (CI)</span></span></span>
+<span class="r-in"><span>                  <span class="va">res.overall.crve</span><span class="op">$</span><span class="va">beta</span><span class="op">)</span>       <span class="co"># pooled effect for prediction interval (PI)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">all.ci.lower</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">ci.lb</span>,           <span class="co"># SA measures</span></span></span>
+<span class="r-in"><span>                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">ci.lb</span>, <span class="co"># pooled effect, lower CI</span></span></span>
+<span class="r-in"><span>                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">pi.lb</span><span class="op">)</span> <span class="co"># pooled effect, lower PI</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">all.ci.upper</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">ci.ub</span>,           <span class="co"># SA measures</span></span></span>
+<span class="r-in"><span>                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">ci.ub</span>, <span class="co"># pooled effect, upper CI</span></span></span>
+<span class="r-in"><span>                  <span class="va">res.overall.crve.pred</span><span class="op">$</span><span class="va">pi.ub</span><span class="op">)</span> <span class="co"># pooled effect, upper PI</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### note: there is no p-value for the PI</span></span></span>
+<span class="r-in"><span><span class="va">all.pvals</span>  <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">pval</span>, <span class="va">res.overall.crve</span><span class="op">$</span><span class="va">pval</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">all.labels</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sort.html" class="external-link">sort</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unique.html" class="external-link">unique</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">SA.measure.type</span><span class="op">)</span><span class="op">)</span>, <span class="st">"Overall"</span>, <span class="st">"95% Prediction Interval"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### function to round p-values for the forest plot</span></span></span>
+<span class="r-in"><span><span class="va">pvals.round</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">input</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span>  <span class="va">input</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">input</span> <span class="op">&lt;</span> <span class="fl">0.001</span>, <span class="st">"&lt; 0.001"</span>,</span></span>
+<span class="r-in"><span>           <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">input</span> <span class="op">&lt;</span> <span class="fl">0.01</span>, <span class="st">"&lt; 0.01"</span>,</span></span>
+<span class="r-in"><span>           <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">input</span> <span class="op">&lt;</span> <span class="fl">0.05</span> <span class="op">&amp;</span> <span class="va">input</span> <span class="op">&gt;=</span> <span class="fl">0.045</span>, <span class="st">"&lt; 0.05"</span>,</span></span>
+<span class="r-in"><span>           <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">input</span>, <span class="fl">2</span><span class="op">)</span> <span class="op">==</span> <span class="fl">1.00</span>, <span class="st">"0.99"</span>,</span></span>
+<span class="r-in"><span>           <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">input</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="op">}</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">all.pvals.rounded</span> <span class="op">&lt;-</span> <span class="fu">pvals.round</span><span class="op">(</span><span class="va">all.pvals</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### forest plot</span></span></span>
+<span class="r-in"><span><span class="va">plot.vals</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">all.labels</span>, <span class="va">all.z</span>, <span class="va">all.ci.lower</span>, <span class="va">all.ci.upper</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.z</span>,</span></span>
+<span class="r-in"><span>       ci.lb <span class="op">=</span> <span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.lower</span>,</span></span>
+<span class="r-in"><span>       ci.ub <span class="op">=</span> <span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.upper</span>,</span></span>
+<span class="r-in"><span>       slab  <span class="op">=</span> <span class="va">plot.vals</span><span class="op">$</span><span class="va">all.labels</span>,</span></span>
+<span class="r-in"><span>       psize <span class="op">=</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>       efac <span class="op">=</span> <span class="fl">0</span>, xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.8</span>, <span class="fl">2.5</span><span class="op">)</span>, clim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>       transf <span class="op">=</span> <span class="va">transf.ztor</span>, <span class="co"># transform z to r</span></span></span>
+<span class="r-in"><span>       at <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>, <span class="fl">1</span>, by <span class="op">=</span> <span class="fl">0.25</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>       xlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="st">"Correlation Coefficient"</span><span class="op">~</span><span class="st">"("</span><span class="op">*</span><span class="fu">italic</span><span class="op">(</span><span class="st">'r'</span><span class="op">)</span><span class="op">*</span><span class="st">")"</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>       main <span class="op">=</span> <span class="st">"\n\n\nSA Measures"</span>,</span></span>
+<span class="r-in"><span>       ilab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">all.pvals.rounded</span>, <span class="st">""</span><span class="op">)</span>, ilab.xpos <span class="op">=</span> <span class="fl">2.45</span>, ilab.pos <span class="op">=</span> <span class="fl">2.5</span>,</span></span>
+<span class="r-in"><span>       digits <span class="op">=</span> <span class="fl">2</span>, refline <span class="op">=</span> <span class="fl">0</span>, annotate <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### keep trailing zero using sprintf</span></span></span>
+<span class="r-in"><span><span class="va">output</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.z</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>                <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.lower</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>                <span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.ci.upper</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### alignment kludge</span></span></span>
+<span class="r-in"><span><span class="va">annotext</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/apply.html" class="external-link">apply</a></span><span class="op">(</span><span class="va">output</span>, <span class="fl">1</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"  "</span>, <span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, <span class="st">" ["</span>, <span class="va">x</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span>,<span class="st">", "</span>, <span class="va">x</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span>, <span class="st">"]"</span><span class="op">)</span><span class="op">}</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">1.05</span>, <span class="fl">12</span><span class="op">:</span><span class="fl">1</span>, <span class="va">annotext</span>, pos <span class="op">=</span> <span class="fl">4</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.475</span>, <span class="fl">14.00</span>, <span class="st">"SA Measure"</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">2.30</span>,  <span class="fl">14.00</span>, <span class="fu"><a href="https://rdrr.io/r/base/substitute.html" class="external-link">substitute</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="fu">italic</span><span class="op">(</span><span class="st">'p-value'</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">1.55</span>,  <span class="fl">14.00</span>, <span class="st">"Correlation [95% CI]"</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">1.5</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### black polygon for overall mean CIs</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/addpoly.html" class="external-link">addpoly</a></span><span class="op">(</span><span class="va">all.z</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>, ci.lb <span class="op">=</span> <span class="va">all.ci.lower</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>, ci.ub <span class="op">=</span> <span class="va">all.ci.upper</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span>        rows <span class="op">=</span> <span class="fl">2</span>, annotate <span class="op">=</span> <span class="cn">FALSE</span>, efac <span class="op">=</span> <span class="fl">1.5</span>, transf <span class="op">=</span> <span class="va">transf.ztor</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### white polygon for PI</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/addpoly.html" class="external-link">addpoly</a></span><span class="op">(</span><span class="va">all.z</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>, ci.lb <span class="op">=</span> <span class="va">all.ci.lower</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>, ci.ub <span class="op">=</span> <span class="va">all.ci.upper</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>,</span></span>
+<span class="r-in"><span>        rows <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"white"</span>, border <span class="op">=</span> <span class="st">"black"</span>,</span></span>
+<span class="r-in"><span>        annotate <span class="op">=</span> <span class="cn">FALSE</span>, efac <span class="op">=</span> <span class="fl">1.5</span>, transf <span class="op">=</span> <span class="va">transf.ztor</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.bakdash2021-2.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="co"># reset graph parameters to default</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### confidence intervals for the variance components</span></span>
-<span class="r-in"><span class="va">re.CI.variances</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/confint.rma.html" class="external-link">confint</a></span><span class="op">(</span><span class="va">res.overall</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">re.CI.variances</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="co"># reset graph parameters to default</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### confidence intervals for the variance components</span></span></span>
+<span class="r-in"><span><span class="va">re.CI.variances</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/confint.html" class="external-link">confint</a></span><span class="op">(</span><span class="va">res.overall</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">re.CI.variances</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           estimate  ci.lb  ci.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1   0.0298 0.0179 0.0490 </span>
@@ -399,71 +399,71 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2   0.0147 0.0101 0.0204 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> sigma.2     0.1212 0.1003 0.1429 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">sigma1.z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">re.CI.variances</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="st">"random"</span><span class="op">]</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">sigma2.z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">re.CI.variances</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="st">"random"</span><span class="op">]</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit model using alternative multivariate parameterization</span></span>
-<span class="r-in"><span class="va">res.overall.alt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span>,</span>
-<span class="r-in">                          random <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">Outcome</span><span class="op">)</span> <span class="op">|</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">SampleID</span><span class="op">)</span>,</span>
-<span class="r-in">                          data <span class="op">=</span> <span class="va">dat</span>,</span>
-<span class="r-in">                          test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### confidence intervals for the total amount of heterogeneity variance component</span></span>
-<span class="r-in"><span class="va">res.overall.alt.tau</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/confint.rma.html" class="external-link">confint</a></span><span class="op">(</span><span class="va">res.overall.alt</span>, tau2<span class="op">=</span><span class="fl">1</span><span class="op">)</span><span class="op">$</span><span class="va">random</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### I^2: http://www.metafor-project.org/doku.php/tips:i2_multilevel_multivariate</span></span>
-<span class="r-in"><span class="va">W</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="fl">1</span><span class="op">/</span><span class="va">dat</span><span class="op">$</span><span class="va">vi.z</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">X</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/model.matrix.rma.html" class="external-link">model.matrix</a></span><span class="op">(</span><span class="va">res.overall</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">P</span> <span class="op">&lt;-</span> <span class="va">W</span> <span class="op">-</span> <span class="va">W</span> <span class="op"><a href="https://rdrr.io/pkg/Matrix/man/matrix-products.html" class="external-link">%*%</a></span> <span class="va">X</span> <span class="op"><a href="https://rdrr.io/pkg/Matrix/man/matrix-products.html" class="external-link">%*%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/solve-methods.html" class="external-link">solve</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/t.html" class="external-link">t</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/Matrix/man/matrix-products.html" class="external-link">%*%</a></span> <span class="va">W</span> <span class="op"><a href="https://rdrr.io/pkg/Matrix/man/matrix-products.html" class="external-link">%*%</a></span> <span class="va">X</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/Matrix/man/matrix-products.html" class="external-link">%*%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/t.html" class="external-link">t</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/pkg/Matrix/man/matrix-products.html" class="external-link">%*%</a></span> <span class="va">W</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### I^2 (variance due to heterogeneity): 61%</span></span>
-<span class="r-in"><span class="va">I2</span> <span class="op">&lt;-</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">res.overall.alt</span><span class="op">$</span><span class="va">tau2</span> <span class="op">/</span></span>
-<span class="r-in">      <span class="op">(</span><span class="va">res.overall.alt</span><span class="op">$</span><span class="va">tau2</span> <span class="op">+</span> <span class="op">(</span><span class="va">res.overall</span><span class="op">$</span><span class="va">k</span><span class="op">-</span><span class="va">res.overall</span><span class="op">$</span><span class="va">p</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">P</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">I2</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">sigma1.z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">re.CI.variances</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="st">"random"</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">sigma2.z</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="va">re.CI.variances</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="st">"random"</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit model using alternative multivariate parameterization</span></span></span>
+<span class="r-in"><span><span class="va">res.overall.alt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>                          random <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">Outcome</span><span class="op">)</span> <span class="op">|</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">SampleID</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>                          data <span class="op">=</span> <span class="va">dat</span>,</span></span>
+<span class="r-in"><span>                          test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### confidence intervals for the total amount of heterogeneity variance component</span></span></span>
+<span class="r-in"><span><span class="va">res.overall.alt.tau</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/confint.html" class="external-link">confint</a></span><span class="op">(</span><span class="va">res.overall.alt</span>, tau2<span class="op">=</span><span class="fl">1</span><span class="op">)</span><span class="op">$</span><span class="va">random</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### I^2: http://www.metafor-project.org/doku.php/tips:i2_multilevel_multivariate</span></span></span>
+<span class="r-in"><span><span class="va">W</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="fl">1</span><span class="op">/</span><span class="va">dat</span><span class="op">$</span><span class="va">vi.z</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">X</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/model.matrix.html" class="external-link">model.matrix</a></span><span class="op">(</span><span class="va">res.overall</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">P</span> <span class="op">&lt;-</span> <span class="va">W</span> <span class="op">-</span> <span class="va">W</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="va">X</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="fu"><a href="https://rdrr.io/pkg/Matrix/man/solve-methods.html" class="external-link">solve</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/t.html" class="external-link">t</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="va">W</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="va">X</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/t.html" class="external-link">t</a></span><span class="op">(</span><span class="va">X</span><span class="op">)</span> <span class="op"><a href="https://rdrr.io/r/base/matmult.html" class="external-link">%*%</a></span> <span class="va">W</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### I^2 (variance due to heterogeneity): 61%</span></span></span>
+<span class="r-in"><span><span class="va">I2</span> <span class="op">&lt;-</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">res.overall.alt</span><span class="op">$</span><span class="va">tau2</span> <span class="op">/</span></span></span>
+<span class="r-in"><span>      <span class="op">(</span><span class="va">res.overall.alt</span><span class="op">$</span><span class="va">tau2</span> <span class="op">+</span> <span class="op">(</span><span class="va">res.overall</span><span class="op">$</span><span class="va">k</span><span class="op">-</span><span class="va">res.overall</span><span class="op">$</span><span class="va">p</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">P</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">I2</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 60.99124</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### 95% CI for I^2 using uncertainty around tau^2</span></span>
-<span class="r-in"><span class="va">I2.CI.lb</span> <span class="op">&lt;-</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">]</span> <span class="op">/</span></span>
-<span class="r-in">            <span class="op">(</span><span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">]</span> <span class="op">+</span> <span class="op">(</span><span class="va">res.overall</span><span class="op">$</span><span class="va">k</span><span class="op">-</span><span class="va">res.overall</span><span class="op">$</span><span class="va">p</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">P</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">I2.CI.lb</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### 95% CI for I^2 using uncertainty around tau^2</span></span></span>
+<span class="r-in"><span><span class="va">I2.CI.lb</span> <span class="op">&lt;-</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">]</span> <span class="op">/</span></span></span>
+<span class="r-in"><span>            <span class="op">(</span><span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">]</span> <span class="op">+</span> <span class="op">(</span><span class="va">res.overall</span><span class="op">$</span><span class="va">k</span><span class="op">-</span><span class="va">res.overall</span><span class="op">$</span><span class="va">p</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">P</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">I2.CI.lb</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 53.00297</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">I2.CI.ub</span> <span class="op">&lt;-</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span> <span class="op">/</span></span>
-<span class="r-in">            <span class="op">(</span><span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span> <span class="op">+</span> <span class="op">(</span><span class="va">res.overall</span><span class="op">$</span><span class="va">k</span><span class="op">-</span><span class="va">res.overall</span><span class="op">$</span><span class="va">p</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">P</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">I2.CI.ub</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">I2.CI.ub</span> <span class="op">&lt;-</span> <span class="fl">100</span> <span class="op">*</span> <span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span> <span class="op">/</span></span></span>
+<span class="r-in"><span>            <span class="op">(</span><span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">1</span>,<span class="fl">3</span><span class="op">]</span> <span class="op">+</span> <span class="op">(</span><span class="va">res.overall</span><span class="op">$</span><span class="va">k</span><span class="op">-</span><span class="va">res.overall</span><span class="op">$</span><span class="va">p</span><span class="op">)</span><span class="op">/</span><span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="va">P</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">I2.CI.ub</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 69.15562</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### total amount of heterogeneity (tau)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="va">res.overall.alt</span><span class="op">$</span><span class="va">tau2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### total amount of heterogeneity (tau)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="va">res.overall.alt</span><span class="op">$</span><span class="va">tau2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 0.2108226</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### heterogeneity table</span></span>
-<span class="r-in"><span class="va">table.heterogeneity</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span>ncol <span class="op">=</span> <span class="fl">3</span>, nrow <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">table.heterogeneity</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Parameter Value"</span>,</span>
-<span class="r-in">                                   <span class="st">"Lower 95% CI"</span>,</span>
-<span class="r-in">                                   <span class="st">"Upper 95% CI"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">table.heterogeneity</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Tau (Total)"</span>,</span>
-<span class="r-in">                                   <span class="st">"Tau1 (Between paper)"</span>,</span>
-<span class="r-in">                                   <span class="st">"Tau2 (Within paper)"</span>,</span>
-<span class="r-in">                                   <span class="st">"I2 (%)"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span></span>
-<span class="r-in"><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="va">sigma1.z</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span></span>
-<span class="r-in"><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="va">sigma2.z</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span></span>
-<span class="r-in"><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">4</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">I2</span>, <span class="va">I2.CI.lb</span>, <span class="va">I2.CI.ub</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">table.heterogeneity</span>, <span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### heterogeneity table</span></span></span>
+<span class="r-in"><span><span class="va">table.heterogeneity</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span>ncol <span class="op">=</span> <span class="fl">3</span>, nrow <span class="op">=</span> <span class="fl">4</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">table.heterogeneity</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Parameter Value"</span>,</span></span>
+<span class="r-in"><span>                                   <span class="st">"Lower 95% CI"</span>,</span></span>
+<span class="r-in"><span>                                   <span class="st">"Upper 95% CI"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">table.heterogeneity</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Tau (Total)"</span>,</span></span>
+<span class="r-in"><span>                                   <span class="st">"Tau1 (Between paper)"</span>,</span></span>
+<span class="r-in"><span>                                   <span class="st">"Tau2 (Within paper)"</span>,</span></span>
+<span class="r-in"><span>                                   <span class="st">"I2 (%)"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="va">res.overall.alt.tau</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span></span></span>
+<span class="r-in"><span><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="va">sigma1.z</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span></span></span>
+<span class="r-in"><span><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="va">sigma2.z</span><span class="op">[</span><span class="fl">2</span>,<span class="op">]</span></span></span>
+<span class="r-in"><span><span class="va">table.heterogeneity</span><span class="op">[</span><span class="fl">4</span>,<span class="op">]</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">I2</span>, <span class="va">I2.CI.lb</span>, <span class="va">I2.CI.ub</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">table.heterogeneity</span>, <span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                      Parameter Value Lower 95% CI Upper 95% CI</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tau (Total)                     0.21         0.18         0.25</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tau1 (Between paper)            0.17         0.13         0.22</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tau2 (Within paper)             0.12         0.10         0.14</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> I2 (%)                         60.99        53.00        69.16</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">#end.time &lt;- Sys.time()</span></span>
-<span class="r-in"><span class="co">#end.time - start.time</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">#end.time &lt;- Sys.time()</span></span></span>
+<span class="r-in"><span><span class="co">#end.time - start.time</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -478,7 +478,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

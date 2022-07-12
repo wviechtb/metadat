@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.berkey1998</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.berkey1998</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -119,9 +119,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.berkey1998</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.berkey1998</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    trial           author year ni outcome      yi     vi    v1i    v2i </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 Pihlstrom et al. 1983 14      PD  0.4700 0.0075 0.0075 0.0030 </span>
@@ -135,18 +135,18 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9      5    Becker et al. 1988 16      PD  0.5600 0.0148 0.0148 0.0072 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10     5    Becker et al. 1988 16      AL -0.3900 0.0304 0.0072 0.0304 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct block diagonal var-cov matrix of the observed outcomes based on variables v1i and v2i</span></span>
-<span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span>vi<span class="op">=</span><span class="fl">1</span>, cluster<span class="op">=</span><span class="va">author</span>, rvars<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">v1i</span>, <span class="va">v2i</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit multiple outcomes (meta-regression) model (with REML estimation)</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">trial</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct block diagonal var-cov matrix of the observed outcomes based on variables v1i and v2i</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span>vi<span class="op">=</span><span class="fl">1</span>, cluster<span class="op">=</span><span class="va">author</span>, rvars<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">v1i</span>, <span class="va">v2i</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit multiple outcomes (meta-regression) model (with REML estimation)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">trial</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 10; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -171,16 +171,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>            estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            estimate     se    zval   pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeAL    -0.339  0.088  -3.859  &lt;.001  -0.512  -0.167  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomePD     0.353  0.059   6.006  &lt;.001   0.238   0.469  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### test/estimate difference between the two outcomes</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/anova.rma.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res</span>, X<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### test/estimate difference between the two outcomes</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res</span>, X<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Hypothesis:                             </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1: outcomeAL - outcomePD = 0 </span>
@@ -192,11 +192,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Hypothesis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 1) = 86.7134, p-val &lt; .0001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit model including publication year as moderator for both outcomes (with ML estimation)</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">+</span> <span class="va">outcome</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/AsIs.html" class="external-link">I</a></span><span class="op">(</span><span class="va">year</span> <span class="op">-</span> <span class="fl">1983</span><span class="op">)</span> <span class="op">-</span> <span class="fl">1</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">trial</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit model including publication year as moderator for both outcomes (with ML estimation)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">+</span> <span class="va">outcome</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/AsIs.html" class="external-link">I</a></span><span class="op">(</span><span class="va">year</span> <span class="op">-</span> <span class="fl">1983</span><span class="op">)</span> <span class="op">-</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">trial</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"ML"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 10; method: ML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -221,7 +221,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                           estimate     se    zval   pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                           estimate     se    zval   pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeAL                   -0.335  0.079  -4.261  &lt;.001  -0.489  -0.181  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomePD                    0.348  0.052   6.694  &lt;.001   0.246   0.450  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomeAL:I(year - 1983)    -0.011  0.024  -0.445  0.656  -0.059   0.037      </span>
@@ -230,8 +230,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -246,7 +246,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

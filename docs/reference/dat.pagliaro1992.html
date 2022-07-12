@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.pagliaro1992</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.pagliaro1992</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -117,9 +117,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.pagliaro1992</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.pagliaro1992</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study           trt xi  ni</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 beta-blockers  2  43</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      1 sclerotherapy  9  42</span>
@@ -175,15 +175,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 52    25       control  5  28</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 53    26 sclerotherapy  6  22</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 54    26       control  2  24</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### restructure dataset to a contrast-based format</span></span>
-<span class="r-in"><span class="va">dat.c</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/to.wide.html" class="external-link">to.wide</a></span><span class="op">(</span><span class="va">dat</span>, study<span class="op">=</span><span class="st">"study"</span>, grp<span class="op">=</span><span class="st">"trt"</span>, grpvars<span class="op">=</span><span class="fl">3</span><span class="op">:</span><span class="fl">4</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat.c</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### restructure dataset to a contrast-based format</span></span></span>
+<span class="r-in"><span><span class="va">dat.c</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/to.wide.html" class="external-link">to.wide</a></span><span class="op">(</span><span class="va">dat</span>, study<span class="op">=</span><span class="st">"study"</span>, grp<span class="op">=</span><span class="st">"trt"</span>, grpvars<span class="op">=</span><span class="fl">3</span><span class="op">:</span><span class="fl">4</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat.c</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study         trt.1 xi.1 ni.1   trt.2 xi.2 ni.2 id  comp   design</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 beta-blockers    2   43 control   13   41  1 be-co be-sc-co</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      1 sclerotherapy    9   42 control   13   41  2 sc-co be-sc-co</span>
@@ -213,10 +213,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 26    24 sclerotherapy    3   13 control   12   16 26 sc-co    sc-co</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27    25 sclerotherapy    3   21 control    5   28 27 sc-co    sc-co</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    26 sclerotherapy    6   22 control    2   24 28 sc-co    sc-co</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Mantel-Haenszel results for beta-blockers and sclerotherapy versus control, respectively</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mh.html" class="external-link">rma.mh</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">xi.1</span>, n1i<span class="op">=</span><span class="va">ni.1</span>, ci<span class="op">=</span><span class="va">xi.2</span>, n2i<span class="op">=</span><span class="va">ni.2</span>,</span>
-<span class="r-in">       data<span class="op">=</span><span class="va">dat.c</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">trt.1</span><span class="op">==</span><span class="st">"beta-blockers"</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Mantel-Haenszel results for beta-blockers and sclerotherapy versus control, respectively</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mh.html" class="external-link">rma.mh</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">xi.1</span>, n1i<span class="op">=</span><span class="va">ni.1</span>, ci<span class="op">=</span><span class="va">xi.2</span>, n2i<span class="op">=</span><span class="va">ni.2</span>,</span></span>
+<span class="r-in"><span>       data<span class="op">=</span><span class="va">dat.c</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">trt.1</span><span class="op">==</span><span class="st">"beta-blockers"</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Equal-Effects Model (k = 9)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -239,8 +239,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Cochran-Mantel-Haenszel Test:    CMH = 14.14, df = 1, p-val &lt; 0.01</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tarone's Test for Heterogeneity: X^2 = 22.76, df = 8, p-val &lt; 0.01</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mh.html" class="external-link">rma.mh</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">xi.1</span>, n1i<span class="op">=</span><span class="va">ni.1</span>, ci<span class="op">=</span><span class="va">xi.2</span>, n2i<span class="op">=</span><span class="va">ni.2</span>,</span>
-<span class="r-in">       data<span class="op">=</span><span class="va">dat.c</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">trt.1</span><span class="op">==</span><span class="st">"sclerotherapy"</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mh.html" class="external-link">rma.mh</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">xi.1</span>, n1i<span class="op">=</span><span class="va">ni.1</span>, ci<span class="op">=</span><span class="va">xi.2</span>, n2i<span class="op">=</span><span class="va">ni.2</span>,</span></span>
+<span class="r-in"><span>       data<span class="op">=</span><span class="va">dat.c</span>, subset<span class="op">=</span><span class="op">(</span><span class="va">trt.1</span><span class="op">==</span><span class="st">"sclerotherapy"</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Equal-Effects Model (k = 19)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -263,10 +263,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Cochran-Mantel-Haenszel Test:    CMH = 24.20, df = 1,  p-val &lt; 0.01</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tarone's Test for Heterogeneity: X^2 = 94.46, df = 18, p-val &lt; 0.01</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate log odds for each study arm</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">xi</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate log odds for each study arm</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">xi</span>, ni<span class="op">=</span><span class="va">ni</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study           trt xi  ni      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 beta-blockers  2  43 -3.0204 0.5244 </span>
@@ -324,17 +324,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 53    26 sclerotherapy  6  22 -0.9808 0.2292 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 54    26       control  2  24 -2.3979 0.5455 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### turn treatment variable into factor and set reference level</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">trt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/relevel.html" class="external-link">relevel</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span>, ref<span class="op">=</span><span class="st">"control"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### add a space before each level (this makes the output a bit more legible)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/levels.html" class="external-link">levels</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">" "</span>, <span class="fu"><a href="https://rdrr.io/r/base/levels.html" class="external-link">levels</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### network meta-analysis using an arm-based random-effects model with fixed study effects</span></span>
-<span class="r-in"><span class="co">### (by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons)</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">study</span><span class="op">)</span> <span class="op">+</span> <span class="va">trt</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span> <span class="op">|</span> <span class="va">study</span>, rho<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### turn treatment variable into factor and set reference level</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/relevel.html" class="external-link">relevel</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span>, ref<span class="op">=</span><span class="st">"control"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### add a space before each level (this makes the output a bit more legible)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/levels.html" class="external-link">levels</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">" "</span>, <span class="fu"><a href="https://rdrr.io/r/base/levels.html" class="external-link">levels</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">trt</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### network meta-analysis using an arm-based random-effects model with fixed study effects</span></span></span>
+<span class="r-in"><span><span class="co">### (by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="va">study</span><span class="op">)</span> <span class="op">+</span> <span class="va">trt</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">trt</span> <span class="op">|</span> <span class="va">study</span>, rho<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 54; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -355,7 +355,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate      se     zval    pval    ci.lb    ci.ub   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                    estimate      se     zval    pval    ci.lb    ci.ub    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(study)1      -1.1071  0.8684  -1.2748  0.2024  -2.8091   0.5950    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(study)2      -1.0951  0.8483  -1.2910  0.1967  -2.7577   0.5675    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> factor(study)3      -0.8816  0.9712  -0.9077  0.3641  -2.7851   1.0220    </span>
@@ -388,27 +388,27 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### average odds ratio comparing beta-blockers and sclerotherapy versus control, respectively</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">26</span><span class="op">)</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### average odds ratio comparing beta-blockers and sclerotherapy versus control, respectively</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">26</span><span class="op">)</span>, <span class="fl">1</span>, <span class="fl">0</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  0.49  0.23  1.04  0.06  3.96 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">26</span><span class="op">)</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">26</span><span class="op">)</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  0.56  0.33  0.94  0.07  4.21 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### average odds ratio comparing beta-blockers versus sclerotherapy</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">26</span><span class="op">)</span>, <span class="fl">1</span>, <span class="op">-</span><span class="fl">1</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### average odds ratio comparing beta-blockers versus sclerotherapy</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">26</span><span class="op">)</span>, <span class="fl">1</span>, <span class="op">-</span><span class="fl">1</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  0.88  0.36  2.11  0.10  7.45 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -423,7 +423,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

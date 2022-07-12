@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.dagostino1998</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.dagostino1998</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -121,9 +121,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.dagostino1998</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">16</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.dagostino1998</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">16</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study    cold scale.rn scale.sn             drug tnt tnc outcome    mt   sdt    mc   sdc  xt  xc</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      1 natural      0-3      0-3 chlorpheniramine 128 136   rnic1 0.932 0.593 0.810 0.556  NA  NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2      1 natural      0-3      0-3 chlorpheniramine 128 136   rnic2 1.433 0.648 1.182 0.629  NA  NA</span>
@@ -158,22 +158,22 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 14  62  64</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 15  50  49</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 16  49  49</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### compute standardized mean differences and corresponding sampling variances</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SMD"</span>, m1i<span class="op">=</span><span class="va">mt</span>, m2i<span class="op">=</span><span class="va">mc</span>, sd1i<span class="op">=</span><span class="va">sdt</span>, sd2i<span class="op">=</span><span class="va">sdc</span>, n1i<span class="op">=</span><span class="va">nt</span>, n2i<span class="op">=</span><span class="va">nc</span>, data<span class="op">=</span><span class="va">dat</span>,</span>
-<span class="r-in">              add.measure<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### compute log odds ratios and corresponding sampling variances</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>,  ai<span class="op">=</span><span class="va">xt</span>, ci<span class="op">=</span><span class="va">xc</span>, n1i<span class="op">=</span><span class="va">nt</span>, n2i<span class="op">=</span><span class="va">nc</span>, data<span class="op">=</span><span class="va">dat</span>,</span>
-<span class="r-in">              replace<span class="op">=</span><span class="cn">FALSE</span>, add.measure<span class="op">=</span><span class="cn">TRUE</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### inspect data for the first study</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">8</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### compute standardized mean differences and corresponding sampling variances</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SMD"</span>, m1i<span class="op">=</span><span class="va">mt</span>, m2i<span class="op">=</span><span class="va">mc</span>, sd1i<span class="op">=</span><span class="va">sdt</span>, sd2i<span class="op">=</span><span class="va">sdc</span>, n1i<span class="op">=</span><span class="va">nt</span>, n2i<span class="op">=</span><span class="va">nc</span>, data<span class="op">=</span><span class="va">dat</span>,</span></span>
+<span class="r-in"><span>              add.measure<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### compute log odds ratios and corresponding sampling variances</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>,  ai<span class="op">=</span><span class="va">xt</span>, ci<span class="op">=</span><span class="va">xc</span>, n1i<span class="op">=</span><span class="va">nt</span>, n2i<span class="op">=</span><span class="va">nc</span>, data<span class="op">=</span><span class="va">dat</span>,</span></span>
+<span class="r-in"><span>              replace<span class="op">=</span><span class="cn">FALSE</span>, add.measure<span class="op">=</span><span class="cn">TRUE</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### inspect data for the first study</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span>, <span class="fl">8</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   study    cold scale.rn scale.sn             drug tnt tnc outcome    mt   sdt    mc   sdc  xt  xc </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     1 natural      0-3      0-3 chlorpheniramine 128 136   rnic1 0.932 0.593 0.810 0.556  NA  NA </span>
@@ -194,10 +194,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 7 118 118 -0.1805 0.0905      OR </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8 118 118  0.8761 0.2413      OR </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit a random-effects model for incremental change in runny nose severity at day 1</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span><span class="op">==</span><span class="st">"rnic1"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit a random-effects model for incremental change in runny nose severity at day 1</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span><span class="op">==</span><span class="st">"rnic1"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 9; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -211,16 +211,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.2325  0.0630  3.6919  0.0002  0.1091  0.3559  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit a random-effects model for reaching the goal of therapy for runny nose severity at day 1</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span><span class="op">==</span><span class="st">"rngoal1"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit a random-effects model for reaching the goal of therapy for runny nose severity at day 1</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span><span class="op">==</span><span class="st">"rngoal1"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 9; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -234,28 +234,28 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.5313  0.1530  3.4726  0.0005  0.2314  0.8312  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    pred  ci.lb  ci.ub  pi.lb  pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  1.7012 1.2604 2.2961 1.2604 2.2961 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct approximate V matrix assuming a correlation of 0.7 for sampling errors within studies</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">esid</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/ave.html" class="external-link">ave</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span>, FUN<span class="op">=</span><span class="va">seq</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">study</span>, obs<span class="op">=</span><span class="va">esid</span>, rho<span class="op">=</span><span class="fl">0.7</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit a model for incremental change in runny nose severity at day 1 and at day 2, allowing for</span></span>
-<span class="r-in"><span class="co">### correlated sampling errors (no random effects added, since there does not appear to be any</span></span>
-<span class="r-in"><span class="co">### noteworthy heterogeneity in these data)</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">-</span> <span class="fl">1</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"rnic1"</span>,<span class="st">"rnic2"</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct approximate V matrix assuming a correlation of 0.7 for sampling errors within studies</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">esid</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/ave.html" class="external-link">ave</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span>, FUN<span class="op">=</span><span class="va">seq</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">study</span>, obs<span class="op">=</span><span class="va">esid</span>, rho<span class="op">=</span><span class="fl">0.7</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit a model for incremental change in runny nose severity at day 1 and at day 2, allowing for</span></span></span>
+<span class="r-in"><span><span class="co">### correlated sampling errors (no random effects added, since there does not appear to be any</span></span></span>
+<span class="r-in"><span><span class="co">### noteworthy heterogeneity in these data)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">outcome</span> <span class="op">-</span> <span class="fl">1</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"rnic1"</span>,<span class="st">"rnic2"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Redundant predictors dropped from the model.</span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 18; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -269,16 +269,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>               estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>               estimate      se    zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomernic1    0.2315  0.0630  3.6773  0.0002  0.1081  0.3549  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> outcomernic2    0.2528  0.0634  3.9896  &lt;.0001  0.1286  0.3769  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### test if there is a difference in effects at day 1 and day 2</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/anova.rma.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res</span>, X<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### test if there is a difference in effects at day 1 and day 2</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res</span>, X<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="op">-</span><span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Hypothesis:                                   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1: outcomernic1 - outcomernic2 = 0 </span>
@@ -290,8 +290,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Hypothesis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 1) = 0.1885, p-val = 0.6642</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -306,7 +306,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

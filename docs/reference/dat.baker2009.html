@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.baker2009</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.baker2009</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -124,8 +124,8 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### Show first 6 rows of the dataset</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.baker2009</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### Show first 6 rows of the dataset</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.baker2009</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                  study year id   treatment exac total</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 Llewellyn-Jones 1996 1996  1 Fluticasone    0     8</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Llewellyn-Jones 1996 1996  1     Placebo    3     8</span>
@@ -133,25 +133,25 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4            Boyd 1997 1997  2     Placebo   59   227</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5        Paggiaro 1998 1998  3 Fluticasone   45   142</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6        Paggiaro 1998 1998  3     Placebo   51   139</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Load netmeta package</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Print odds ratios and confidence limits with two digits</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Transform data from long arm-based format to contrast-based</span></span>
-<span class="r-in"><span class="co">### format. Argument 'sm' has to be used for odds ratio as summary</span></span>
-<span class="r-in"><span class="co">### measure; by default the risk ratio is used in the metabin function</span></span>
-<span class="r-in"><span class="co">### called internally.</span></span>
-<span class="r-in"><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="va">treatment</span>, <span class="va">exac</span>, <span class="va">total</span>, studlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">study</span>, <span class="va">year</span><span class="op">)</span>,</span>
-<span class="r-in">  data <span class="op">=</span> <span class="va">dat.baker2009</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Conduct random effects network meta-analysis (NMA)</span></span>
-<span class="r-in"><span class="co">### with placebo as reference</span></span>
-<span class="r-in"><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Load netmeta package</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Print odds ratios and confidence limits with two digits</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Transform data from long arm-based format to contrast-based</span></span></span>
+<span class="r-in"><span><span class="co">### format. Argument 'sm' has to be used for odds ratio as summary</span></span></span>
+<span class="r-in"><span><span class="co">### measure; by default the risk ratio is used in the metabin function</span></span></span>
+<span class="r-in"><span><span class="co">### called internally.</span></span></span>
+<span class="r-in"><span><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="va">treatment</span>, <span class="va">exac</span>, <span class="va">total</span>, studlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">study</span>, <span class="va">year</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  data <span class="op">=</span> <span class="va">dat.baker2009</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Conduct random effects network meta-analysis (NMA)</span></span></span>
+<span class="r-in"><span><span class="co">### with placebo as reference</span></span></span>
+<span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Comparisons with missing TE / seTE or zero seTE not considered in network meta-analysis.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Comparisons not considered in network meta-analysis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             studlab                 treat1     treat2 TE seTE</span>
@@ -159,17 +159,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  DalNegro 2003 2008 Fluticasone+Salmeterol Salmeterol NA   NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  DalNegro 2003 2008             Salmeterol    Placebo NA   NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Show network graph</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, seq <span class="op">=</span> <span class="st">"optimal"</span>, start <span class="op">=</span> <span class="st">"prcomp"</span>,</span>
-<span class="r-in">  labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"+"</span>, <span class="st">" +\n"</span>, <span class="va">trts</span>, fixed <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span>
-<span class="r-in">  plastic <span class="op">=</span> <span class="cn">TRUE</span>, thickness <span class="op">=</span> <span class="st">"se.fixed"</span>, number <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">  points <span class="op">=</span> <span class="cn">TRUE</span>, cex.points <span class="op">=</span> <span class="fl">5</span>, col.points <span class="op">=</span> <span class="st">"red"</span>,</span>
-<span class="r-in">  offset <span class="op">=</span> <span class="fl">0.025</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Show network graph</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, seq <span class="op">=</span> <span class="st">"optimal"</span>, start <span class="op">=</span> <span class="st">"prcomp"</span>,</span></span>
+<span class="r-in"><span>  labels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">gsub</a></span><span class="op">(</span><span class="st">"+"</span>, <span class="st">" +\n"</span>, <span class="va">trts</span>, fixed <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  plastic <span class="op">=</span> <span class="cn">TRUE</span>, thickness <span class="op">=</span> <span class="st">"se.fixed"</span>, number <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
+<span class="r-in"><span>  points <span class="op">=</span> <span class="cn">TRUE</span>, cex.points <span class="op">=</span> <span class="fl">5</span>, col.points <span class="op">=</span> <span class="st">"red"</span>,</span></span>
+<span class="r-in"><span>  offset <span class="op">=</span> <span class="fl">0.025</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.baker2009-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Print and plot results for network meta-analysis</span></span>
-<span class="r-in"><span class="va">net</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Print and plot results for network meta-analysis</span></span></span>
+<span class="r-in"><span><span class="va">net</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 38</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 74</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 28217</span>
@@ -197,12 +197,12 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           60.86   46  0.0700</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  43.20   34  0.1340</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 17.66   12  0.1264</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/forest.meta.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.baker2009-2.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Conduct component network meta-analysis (CNMA)</span></span>
-<span class="r-in"><span class="va">cnet</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netcomb.html" class="external-link">netcomb</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">cnet</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Conduct component network meta-analysis (CNMA)</span></span></span>
+<span class="r-in"><span><span class="va">cnet</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netcomb.html" class="external-link">netcomb</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">cnet</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 38</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 74</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of treatments: n = 8</span>
@@ -237,13 +237,13 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Additive model 62.62 47  0.0632</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Standard model 60.86 46  0.0700</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Difference      1.76  1  0.1841</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Compare results of NMA and additive CNMA</span></span>
-<span class="r-in"><span class="va">nb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netbind.html" class="external-link">netbind</a></span><span class="op">(</span><span class="va">net</span>, <span class="va">cnet</span>, name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Standard NMA"</span>, <span class="st">"Additive CNMA"</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/forest.meta.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">nb</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Compare results of NMA and additive CNMA</span></span></span>
+<span class="r-in"><span><span class="va">nb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netbind.html" class="external-link">netbind</a></span><span class="op">(</span><span class="va">net</span>, <span class="va">cnet</span>, name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Standard NMA"</span>, <span class="st">"Additive CNMA"</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">nb</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.baker2009-3.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -258,7 +258,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

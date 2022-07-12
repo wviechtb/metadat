@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.kearon1998</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.kearon1998</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -122,9 +122,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.kearon1998</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.kearon1998</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id           study year    patients  tp  np  tn  nn</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1  1    Elias et al. 1987 symptomatic 325 333 483 505</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2  2 Appleman et al. 1987 symptomatic  NA  NA  47  49</span>
@@ -132,15 +132,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4  4   Cronan et al. 1987 symptomatic  25  28  23  23</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5  5  O'Leary et al. 1988 symptomatic  22  25  24  25</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6  6  Lensing et al. 1989 symptomatic  70  77 142 143</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate diagnostic log odds ratios and corresponding sampling variances</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">tp</span>, n1i<span class="op">=</span><span class="va">np</span>, ci<span class="op">=</span><span class="va">nn</span><span class="op">-</span><span class="va">tn</span>, n2i<span class="op">=</span><span class="va">nn</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate diagnostic log odds ratios and corresponding sampling variances</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">tp</span>, n1i<span class="op">=</span><span class="va">np</span>, ci<span class="op">=</span><span class="va">nn</span><span class="op">-</span><span class="va">tn</span>, n2i<span class="op">=</span><span class="va">nn</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   id           study year    patients  tp  np  tn  nn     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1  1    Elias et al. 1987 symptomatic 325 333 483 505 6.7128 0.1672 </span>
@@ -150,11 +150,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5  5  O'Leary et al. 1988 symptomatic  22  25  24  25 4.6540 1.0376 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6  6  Lensing et al. 1989 symptomatic  70  77 142 143 6.7946 0.8212 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit random-effects model for the symptomatic patients</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"symptomatic"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit random-effects model for the symptomatic patients</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"symptomatic"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from model fitting.</span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 16; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -168,17 +168,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   5.1733  0.3747  13.8057  &lt;.0001  4.4388  5.9077  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit random-effects model for the asymptomatic patients</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"asymptomatic"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit random-effects model for the asymptomatic patients</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"asymptomatic"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from model fitting.</span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 14; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -192,23 +192,23 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   3.0039  0.2682  11.2017  &lt;.0001  2.4783  3.5295  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### estimated average diagnostic odds ratio (with 95% CI)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### estimated average diagnostic odds ratio (with 95% CI)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  20.16 11.92 34.11  4.87 83.47 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### regression test for funnel plot asymmetry using SE as predictor</span></span>
-<span class="r-in"><span class="va">reg</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">res</span>, model<span class="op">=</span><span class="st">"lm"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">reg</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### regression test for funnel plot asymmetry using SE as predictor</span></span></span>
+<span class="r-in"><span><span class="va">reg</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">res</span>, model<span class="op">=</span><span class="st">"lm"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">reg</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Regression Test for Funnel Plot Asymmetry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -218,16 +218,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Funnel Plot Asymmetry: t = 2.7886, df = 12, p = 0.0164</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Limit Estimate (as sei -&gt; 0):   b = 0.9192 (CI: -0.6698, 2.5082)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### corresponding funnel plot</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">res</span>, atransf<span class="op">=</span><span class="va">exp</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">7</span><span class="op">)</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>,<span class="fl">100</span>,<span class="fl">1000</span><span class="op">)</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1.5</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">4</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">ys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2</span>, length<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">*</span><span class="va">ys</span>, <span class="va">ys</span>, lwd<span class="op">=</span><span class="fl">2</span>, lty<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### corresponding funnel plot</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">res</span>, atransf<span class="op">=</span><span class="va">exp</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">7</span><span class="op">)</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>,<span class="fl">100</span>,<span class="fl">1000</span><span class="op">)</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1.5</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">4</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">2</span>, length<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">*</span><span class="va">ys</span>, <span class="va">ys</span>, lwd<span class="op">=</span><span class="fl">2</span>, lty<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.kearon1998-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### regression test for funnel plot asymmetry using total sample size as predictor</span></span>
-<span class="r-in"><span class="va">reg</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">res</span>, model<span class="op">=</span><span class="st">"lm"</span>, predictor<span class="op">=</span><span class="st">"ni"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">reg</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### regression test for funnel plot asymmetry using total sample size as predictor</span></span></span>
+<span class="r-in"><span><span class="va">reg</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">res</span>, model<span class="op">=</span><span class="st">"lm"</span>, predictor<span class="op">=</span><span class="st">"ni"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">reg</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Regression Test for Funnel Plot Asymmetry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -236,19 +236,19 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Funnel Plot Asymmetry: t = 1.8919, df = 12, p = 0.0829</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### corresponding funnel plot</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">res</span>, yaxis<span class="op">=</span><span class="st">"ni"</span>, atransf<span class="op">=</span><span class="va">exp</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">7</span><span class="op">)</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>,<span class="fl">100</span>,<span class="fl">1000</span><span class="op">)</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">300</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">4</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">ys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">300</span>, length<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">*</span><span class="va">ys</span>, <span class="va">ys</span>, lwd<span class="op">=</span><span class="fl">2</span>, lty<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### corresponding funnel plot</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">res</span>, yaxis<span class="op">=</span><span class="st">"ni"</span>, atransf<span class="op">=</span><span class="va">exp</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">7</span><span class="op">)</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>,<span class="fl">100</span>,<span class="fl">1000</span><span class="op">)</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">300</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">4</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">300</span>, length<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">*</span><span class="va">ys</span>, <span class="va">ys</span>, lwd<span class="op">=</span><span class="fl">2</span>, lty<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.kearon1998-2.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### regression test for funnel plot asymmetry using 1/sqrt(ESS) as predictor (Deeks et al., 2005)</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">invessi</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">/</span><span class="op">(</span><span class="fl">4</span><span class="op">*</span><span class="va">dat</span><span class="op">$</span><span class="va">np</span><span class="op">)</span> <span class="op">+</span> <span class="fl">1</span><span class="op">/</span><span class="op">(</span><span class="fl">4</span><span class="op">*</span><span class="va">dat</span><span class="op">$</span><span class="va">nn</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">tmp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">invessi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"asymptomatic"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### regression test for funnel plot asymmetry using 1/sqrt(ESS) as predictor (Deeks et al., 2005)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">invessi</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">/</span><span class="op">(</span><span class="fl">4</span><span class="op">*</span><span class="va">dat</span><span class="op">$</span><span class="va">np</span><span class="op">)</span> <span class="op">+</span> <span class="fl">1</span><span class="op">/</span><span class="op">(</span><span class="fl">4</span><span class="op">*</span><span class="va">dat</span><span class="op">$</span><span class="va">nn</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">tmp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">invessi</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"asymptomatic"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from model fitting.</span>
-<span class="r-in"><span class="va">reg</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">tmp</span>, model<span class="op">=</span><span class="st">"lm"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">reg</span></span>
+<span class="r-in"><span><span class="va">reg</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">tmp</span>, model<span class="op">=</span><span class="st">"lm"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">reg</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Regression Test for Funnel Plot Asymmetry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -258,21 +258,21 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Funnel Plot Asymmetry: t = -0.1182, df = 12, p = 0.9079</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Limit Estimate (as sei -&gt; 0):   b = 3.6227 (CI: -0.8066, 8.0520)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### corresponding funnel plot</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">tmp</span>, atransf<span class="op">=</span><span class="va">exp</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">7</span><span class="op">)</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>,<span class="fl">100</span>,<span class="fl">1000</span><span class="op">)</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">.15</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">4</span>,</span>
-<span class="r-in">       refline<span class="op">=</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>, level<span class="op">=</span><span class="fl">0</span>, ylab<span class="op">=</span><span class="st">"1/root(ess)"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">ys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">.20</span>, length<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/coef.rma.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">*</span><span class="va">ys</span>, <span class="va">ys</span>, lwd<span class="op">=</span><span class="fl">2</span>, lty<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### corresponding funnel plot</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">tmp</span>, atransf<span class="op">=</span><span class="va">exp</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">7</span><span class="op">)</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>,<span class="fl">100</span>,<span class="fl">1000</span><span class="op">)</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">.15</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">4</span>,</span></span>
+<span class="r-in"><span>       refline<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>, level<span class="op">=</span><span class="fl">0</span>, ylab<span class="op">=</span><span class="st">"1/root(ess)"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ys</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">.20</span>, length<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span> <span class="op">+</span> <span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">reg</span><span class="op">$</span><span class="va">fit</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span><span class="op">*</span><span class="va">ys</span>, <span class="va">ys</span>, lwd<span class="op">=</span><span class="fl">2</span>, lty<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.kearon1998-3.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### convert data to long format</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/to.long.html" class="external-link">to.long</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">tp</span>, n1i<span class="op">=</span><span class="va">np</span>, ci<span class="op">=</span><span class="va">tn</span>, n2i<span class="op">=</span><span class="va">nn</span>,</span>
-<span class="r-in">               data<span class="op">=</span><span class="va">dat.kearon1998</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"asymptomatic"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### convert data to long format</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/to.long.html" class="external-link">to.long</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">tp</span>, n1i<span class="op">=</span><span class="va">np</span>, ci<span class="op">=</span><span class="va">tn</span>, n2i<span class="op">=</span><span class="va">nn</span>,</span></span>
+<span class="r-in"><span>               data<span class="op">=</span><span class="va">dat.kearon1998</span>, subset<span class="op">=</span><span class="va">patients</span><span class="op">==</span><span class="st">"asymptomatic"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Tables with NAs omitted.</span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="fl">9</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/levels.html" class="external-link">levels</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">group</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"sensitivity"</span>, <span class="st">"specificity"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="fl">9</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/levels.html" class="external-link">levels</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">group</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"sensitivity"</span>, <span class="st">"specificity"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study       group out1 out2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     19 specificity   10   15</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2     19 sensitivity   47    6</span>
@@ -302,11 +302,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 26    32 sensitivity  104    0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27    33 specificity   26   29</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    33 sensitivity   81    8</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate logit-transformed sensitivities</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">out1</span>, mi<span class="op">=</span><span class="va">out2</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span>,</span>
-<span class="r-in">              include<span class="op">=</span><span class="va">group</span><span class="op">==</span><span class="st">"sensitivity"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate logit-transformed sensitivities</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">out1</span>, mi<span class="op">=</span><span class="va">out2</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span>,</span></span>
+<span class="r-in"><span>              include<span class="op">=</span><span class="va">group</span><span class="op">==</span><span class="st">"sensitivity"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study       group out1 out2     yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     19 specificity   10   15     NA     NA </span>
@@ -338,11 +338,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27    33 specificity   26   29     NA     NA </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    33 sensitivity   81    8 2.2605 0.1299 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### calculate logit-transformed specificities</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">out1</span>, mi<span class="op">=</span><span class="va">out2</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span>,</span>
-<span class="r-in">              include<span class="op">=</span><span class="va">group</span><span class="op">==</span><span class="st">"specificity"</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate logit-transformed specificities</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLO"</span>, xi<span class="op">=</span><span class="va">out1</span>, mi<span class="op">=</span><span class="va">out2</span>, data<span class="op">=</span><span class="va">dat</span>, add<span class="op">=</span><span class="fl">1</span><span class="op">/</span><span class="fl">2</span>, to<span class="op">=</span><span class="st">"all"</span>,</span></span>
+<span class="r-in"><span>              include<span class="op">=</span><span class="va">group</span><span class="op">==</span><span class="st">"specificity"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    study       group out1 out2      yi     vi </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     19 specificity   10   15 -0.3895 0.1598 </span>
@@ -374,10 +374,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 27    33 specificity   26   29 -0.1072 0.0716 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 28    33 sensitivity   81    8  2.2605 0.1299 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### bivariate random-effects model for logit sensitivity and specificity</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">group</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">group</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### bivariate random-effects model for logit sensitivity and specificity</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">group</span> <span class="op">-</span> <span class="fl">1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">group</span> <span class="op">|</span> <span class="va">study</span>, struct<span class="op">=</span><span class="st">"UN"</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 28; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -402,30 +402,30 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                   estimate      se     zval    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> groupsensitivity    3.0092  0.2582  11.6531  &lt;.0001   2.5031  3.5154  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> groupspecificity   -0.0498  0.2027  -0.2457  0.8059  -0.4472  0.3475      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### estimated average sensitivity and specificity based on the model</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">transf.ilogit</span>, tau2.levels<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### estimated average sensitivity and specificity based on the model</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">rbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">0</span><span class="op">)</span>,<span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">transf.ilogit</span>, tau2.levels<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   pred ci.lb ci.ub pi.lb pi.ub  tau2.level </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.95  0.92  0.97  0.81  0.99 sensitivity </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.49  0.39  0.59  0.20  0.78 specificity </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### estimated average diagnostic odds ratio based on the model</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/predict.rma.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### estimated average diagnostic odds ratio based on the model</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   pred ci.lb ci.ub pi.lb pi.ub tau2.level </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  19.29 11.22 33.14    NA    NA         NA </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -440,7 +440,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

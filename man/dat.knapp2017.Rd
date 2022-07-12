@@ -104,7 +104,7 @@ predict(res, digits=2)
 ### use cluster-robust inference methods based on this model
 robust(res, cluster=study)
 
-### use methods from clubSandwich package
+### use methods from the clubSandwich package
 robust(res, cluster=study, clubSandwich=TRUE)
 
 ### examine if task difficulty is a potential moderator of the effect

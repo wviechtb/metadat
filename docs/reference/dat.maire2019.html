@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.maire2019</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.maire2019</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -123,9 +123,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.maire2019</span><span class="op">$</span><span class="va">dat</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">[</span><span class="op">-</span><span class="fl">10</span><span class="op">]</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.maire2019</span><span class="op">$</span><span class="va">dat</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">[</span><span class="op">-</span><span class="fl">10</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>      site station site_station  s1      vars1   s2      vars2   s3      vars3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1   site1    sta1   site1_sta1 168  3502.7424    9  2301.0000 -109  2301.0000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2   site1    sta2   site1_sta2 123  2301.0000   -9  2301.0000  -71  1603.4889</span>
@@ -162,25 +162,25 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 33 site11    sta3  site11_sta3 225  3107.6097  -75  4550.3333   -6  4550.3333</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 34 site11    sta4  site11_sta4  37  1096.6667  -44  1096.6667   11  1096.6667</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 35 site11    sta5  site11_sta5  44  1661.3690   -5   950.0000   46   950.0000</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### copy distance matrix into 'dmat' and examine first 5 rows/columns</span></span>
-<span class="r-in"><span class="va">dmat</span> <span class="op">&lt;-</span> <span class="va">dat.maire2019</span><span class="op">$</span><span class="va">dmat</span></span>
-<span class="r-in"><span class="va">dmat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">]</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### copy distance matrix into 'dmat' and examine first 5 rows/columns</span></span></span>
+<span class="r-in"><span><span class="va">dmat</span> <span class="op">&lt;-</span> <span class="va">dat.maire2019</span><span class="op">$</span><span class="va">dmat</span></span></span>
+<span class="r-in"><span><span class="va">dmat</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>,<span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>            site1_sta1 site1_sta2 site2_sta1 site2_sta2 site2_sta3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> site1_sta1          0          6      10000      10000      10000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> site1_sta2          6          0      10000      10000      10000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> site2_sta1      10000      10000          0          1          1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> site2_sta2      10000      10000          1          0          1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> site2_sta3      10000      10000          1          1          0</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit a standard random-effects model ignoring spatial correlation</span></span>
-<span class="r-in"><span class="va">res1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">s1</span>, <span class="va">vars1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">site_station</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res1</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit a standard random-effects model ignoring spatial correlation</span></span></span>
+<span class="r-in"><span><span class="va">res1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">s1</span>, <span class="va">vars1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">site_station</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res1</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 35; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -194,17 +194,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 187.5809  20.0424  9.3592  &lt;.0001  148.2984  226.8633  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit model allowing for spatial correlation</span></span>
-<span class="r-in"><span class="va">res2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">s1</span>, <span class="va">vars1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">site_station</span> <span class="op">|</span> <span class="va">const</span>, struct<span class="op">=</span><span class="st">"SPGAU"</span>,</span>
-<span class="r-in">               data<span class="op">=</span><span class="va">dat</span>, dist<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">dmat</span><span class="op">)</span>, control<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>rho.init<span class="op">=</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res2</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit model allowing for spatial correlation</span></span></span>
+<span class="r-in"><span><span class="va">res2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">s1</span>, <span class="va">vars1</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">site_station</span> <span class="op">|</span> <span class="va">const</span>, struct<span class="op">=</span><span class="st">"SPGAU"</span>,</span></span>
+<span class="r-in"><span>               data<span class="op">=</span><span class="va">dat</span>, dist<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">dmat</span><span class="op">)</span>, control<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>rho.init<span class="op">=</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res2</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 35; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -222,17 +222,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 176.5775  26.3986  6.6889  &lt;.0001  124.8372  228.3178  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### add random effects for sites and stations within sites</span></span>
-<span class="r-in"><span class="va">res3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">s1</span>, <span class="va">vars1</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">site</span><span class="op">/</span><span class="va">station</span>, <span class="op">~</span> <span class="va">site_station</span> <span class="op">|</span> <span class="va">const</span><span class="op">)</span>, struct<span class="op">=</span><span class="st">"SPGAU"</span>,</span>
-<span class="r-in">               data<span class="op">=</span><span class="va">dat</span>, dist<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">dmat</span><span class="op">)</span>, control<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>rho.init<span class="op">=</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res3</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### add random effects for sites and stations within sites</span></span></span>
+<span class="r-in"><span><span class="va">res3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">s1</span>, <span class="va">vars1</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">site</span><span class="op">/</span><span class="va">station</span>, <span class="op">~</span> <span class="va">site_station</span> <span class="op">|</span> <span class="va">const</span><span class="op">)</span>, struct<span class="op">=</span><span class="st">"SPGAU"</span>,</span></span>
+<span class="r-in"><span>               data<span class="op">=</span><span class="va">dat</span>, dist<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">dmat</span><span class="op">)</span>, control<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>rho.init<span class="op">=</span><span class="fl">10</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res3</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 35; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -254,44 +254,44 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate       se    zval    pval     ci.lb     ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 182.1199  31.2808  5.8221  &lt;.0001  120.8107  243.4291  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### likelihood ratio tests comparing the models</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/anova.rma.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res1</span>, <span class="va">res2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### likelihood ratio tests comparing the models</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res1</span>, <span class="va">res2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         df      AIC      BIC     AICc    logLik     LRT   pval       QE tau^2 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Full     3 402.3380 406.9171 403.1380 -198.1690                191.4837    NA </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Reduced  2 423.8050 426.8577 424.1921 -209.9025 23.4670 &lt;.0001 191.4837    NA </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         df      AIC      BIC     AICc    logLik     LRT   pval       QE </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Full     3 402.3380 406.9171 403.1380 -198.1690                191.4837 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Reduced  2 423.8050 426.8577 424.1921 -209.9025 23.4670 &lt;.0001 191.4837 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/anova.rma.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res2</span>, <span class="va">res3</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">res2</span>, <span class="va">res3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         df      AIC      BIC     AICc    logLik    LRT   pval       QE tau^2 </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Full     5 403.7355 411.3673 405.8783 -196.8677               191.4837    NA </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Reduced  3 402.3380 406.9171 403.1380 -198.1690 2.6025 0.2722 191.4837    NA </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         df      AIC      BIC     AICc    logLik    LRT   pval       QE </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Full     5 403.7355 411.3673 405.8783 -196.8677               191.4837 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Reduced  3 402.3380 406.9171 403.1380 -198.1690 2.6025 0.2722 191.4837 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### profile likelihood plots for model res2</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/profile.rma.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res2</span>, cline<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### profile likelihood plots for model res2</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/profile.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res2</span>, cline<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Profiling tau2 = 1 </span>
 <span class="r-plt img"><img src="dat.maire2019-1.png" alt="" width="864" height="768"></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Profiling rho = 1 </span>
 <span class="r-plt img"><img src="dat.maire2019-2.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### effective range (river-km for which the spatial correlation is &gt;= .05)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">*</span> <span class="va">res2</span><span class="op">$</span><span class="va">rho</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### effective range (river-km for which the spatial correlation is &gt;= .05)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/MathFun.html" class="external-link">sqrt</a></span><span class="op">(</span><span class="fl">3</span><span class="op">)</span> <span class="op">*</span> <span class="va">res2</span><span class="op">$</span><span class="va">rho</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] 26.07908</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### note: it was necessary to adjust the starting value for rho in models</span></span>
-<span class="r-in"><span class="co">### res2 and res3 so that the optimizer does not get stuck in a local maximum</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/profile.rma.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res2</span>, rho<span class="op">=</span><span class="fl">1</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">200</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### note: it was necessary to adjust the starting value for rho in models</span></span></span>
+<span class="r-in"><span><span class="co">### res2 and res3 so that the optimizer does not get stuck in a local maximum</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/profile.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res2</span>, rho<span class="op">=</span><span class="fl">1</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">200</span><span class="op">)</span>, steps<span class="op">=</span><span class="fl">100</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.maire2019-3.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -306,7 +306,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

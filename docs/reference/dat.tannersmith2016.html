@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.tannersmith2016</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.tannersmith2016</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -120,9 +120,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.tannersmith2016</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.tannersmith2016</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   studyid    yi    vi   sei aget1 aget2 propmale sexmix</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1       2 -0.06 0.001 0.027  14.5  18.0        1   male</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2       2 -0.05 0.001 0.027  14.5  18.0        1   male</span>
@@ -130,26 +130,26 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4       3 -0.05 0.001 0.028  14.5  18.0        0 female</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5       5 -0.01 0.006 0.080  11.5  13.5        1   male</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6       5  0.03 0.006 0.080  11.5  13.5        1   male</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### compute mean age variables within studies</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">aget1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/ave.html" class="external-link">ave</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">aget1</span>, <span class="va">dat</span><span class="op">$</span><span class="va">studyid</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">aget2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/ave.html" class="external-link">ave</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">aget2</span>, <span class="va">dat</span><span class="op">$</span><span class="va">studyid</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct an effect size identifier variable</span></span>
-<span class="r-in"><span class="va">dat</span><span class="op">$</span><span class="va">esid</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### construct an approximate var-cov matrix assuming a correlation of 0.8</span></span>
-<span class="r-in"><span class="co">### for multiple coefficients arising from the same study</span></span>
-<span class="r-in"><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">studyid</span>, obs<span class="op">=</span><span class="va">esid</span>, rho<span class="op">=</span><span class="fl">0.8</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### fit a multivariate random-effects model using the approximate var-cov matrix V</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">esid</span> <span class="op">|</span> <span class="va">studyid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">res</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### compute mean age variables within studies</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">aget1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/ave.html" class="external-link">ave</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">aget1</span>, <span class="va">dat</span><span class="op">$</span><span class="va">studyid</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">aget2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/ave.html" class="external-link">ave</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">aget2</span>, <span class="va">dat</span><span class="op">$</span><span class="va">studyid</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct an effect size identifier variable</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">$</span><span class="va">esid</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct an approximate var-cov matrix assuming a correlation of 0.8</span></span></span>
+<span class="r-in"><span><span class="co">### for multiple coefficients arising from the same study</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">studyid</span>, obs<span class="op">=</span><span class="va">esid</span>, rho<span class="op">=</span><span class="fl">0.8</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit a multivariate random-effects model using the approximate var-cov matrix V</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, random <span class="op">=</span> <span class="op">~</span> <span class="va">esid</span> <span class="op">|</span> <span class="va">studyid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 113; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -167,15 +167,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se    zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.1023  0.0241  4.2433  &lt;.0001  0.0550  0.1496  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### use cluster-robust inference methods</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### use cluster-robust inference methods</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 113; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -197,7 +197,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹   tval¹    df¹   pval¹  ci.lb¹  ci.ub¹     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹   tval¹    df¹   pval¹  ci.lb¹  ci.ub¹      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>   0.1023  0.0241  4.2474  14.88  0.0007  0.0509  0.1537  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
@@ -206,17 +206,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t-test and confidence interval, dfs = Satterthwaite method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### note: the results obtained above and below are slightly different compared</span></span>
-<span class="r-in"><span class="co">### to those given by Tanner-Smith et al. (2016) since the approach illustrated</span></span>
-<span class="r-in"><span class="co">### here makes use a multivariate random-effects model for the 'working model'</span></span>
-<span class="r-in"><span class="co">### before applying the cluster-robust inference methods, while the results given</span></span>
-<span class="r-in"><span class="co">### in the paper are based on a somewhat simpler working model</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### examine the main effects of the age variables</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">aget1</span> <span class="op">+</span> <span class="va">aget2</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">studyid</span><span class="op">/</span><span class="va">esid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### note: the results obtained above and below are slightly different compared</span></span></span>
+<span class="r-in"><span><span class="co">### to those given by Tanner-Smith et al. (2016) since the approach illustrated</span></span></span>
+<span class="r-in"><span><span class="co">### here makes use a multivariate random-effects model for the 'working model'</span></span></span>
+<span class="r-in"><span><span class="co">### before applying the cluster-robust inference methods, while the results given</span></span></span>
+<span class="r-in"><span><span class="co">### in the paper are based on a somewhat simpler working model</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### examine the main effects of the age variables</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">aget1</span> <span class="op">+</span> <span class="va">aget2</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">studyid</span><span class="op">/</span><span class="va">esid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 113; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -238,7 +238,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate     se¹    tval¹   df¹   pval¹   ci.lb¹  ci.ub¹   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate     se¹    tval¹   df¹   pval¹   ci.lb¹  ci.ub¹    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.3960  0.1632   2.4270  6.69  0.0472   0.0065  0.7855  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> aget1      0.0451  0.0329   1.3702  2.55  0.2788  -0.0710  0.1613    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> aget2     -0.0562  0.0328  -1.7157  1.84  0.2390  -0.2095  0.0971    </span>
@@ -249,11 +249,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### also examine their interaction</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">aget1</span> <span class="op">*</span> <span class="va">aget2</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">studyid</span><span class="op">/</span><span class="va">esid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### also examine their interaction</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">aget1</span> <span class="op">*</span> <span class="va">aget2</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">studyid</span><span class="op">/</span><span class="va">esid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 113; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -275,7 +275,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate     se¹    tval¹   df¹   pval¹   ci.lb¹  ci.ub¹   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate     se¹    tval¹   df¹   pval¹   ci.lb¹  ci.ub¹    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt       -2.3900  1.1001  -2.1726  5.27  0.0791  -5.1746  0.3946  . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> aget1          0.2656  0.0969   2.7406  6.39  0.0316   0.0319  0.4992  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> aget2          0.1027  0.0740   1.3877  6.07  0.2140  -0.0779  0.2834    </span>
@@ -287,11 +287,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### add the sexmix factor to the model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">aget1</span> <span class="op">*</span> <span class="va">aget2</span> <span class="op">+</span> <span class="va">sexmix</span>,</span>
-<span class="r-in">              random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">studyid</span><span class="op">/</span><span class="va">esid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### add the sexmix factor to the model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">aget1</span> <span class="op">*</span> <span class="va">aget2</span> <span class="op">+</span> <span class="va">sexmix</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">studyid</span><span class="op">/</span><span class="va">esid</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">studyid</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 113; method: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -313,7 +313,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate     se¹    tval¹   df¹   pval¹   ci.lb¹   ci.ub¹   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate     se¹    tval¹   df¹   pval¹   ci.lb¹   ci.ub¹    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt       -2.5352  1.1935  -2.1241  5.20  0.0850  -5.5687   0.4983  . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> aget1          0.2827  0.1003   2.8186  5.82  0.0315   0.0354   0.5300  * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> aget2          0.1078  0.0793   1.3592  5.96  0.2232  -0.0866   0.3022    </span>
@@ -327,8 +327,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -343,7 +343,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.michael2013</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.michael2013</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -124,9 +124,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.michael2013</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.michael2013</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                                                   Study No_brain_n No_brain_m No_brain_s Brain_n</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1  McCabe and Castel, 2008 - Experiment 3 - No Critique         28       2.89       0.79      26</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2                   Michael et al., 2013 - Experiment 1         99       2.90       0.58      98</span>
@@ -166,30 +166,30 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 10 -0.05 0.009699967</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 11  0.18 0.009267368</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 12 -0.02 0.009691588</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Data prep</span></span>
-<span class="r-in"><span class="co"># yi and vi are already provided, but here's how you would use escalc() to obtain</span></span>
-<span class="r-in"><span class="co"># a raw-mean difference and its variance.</span></span>
-<span class="r-in"><span class="co"># Note the measure parameter is "MD" for 'raw mean difference'</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu">metafor</span><span class="fu">::</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span></span>
-<span class="r-in">  measure <span class="op">=</span> <span class="st">"MD"</span>,</span>
-<span class="r-in">  m1i <span class="op">=</span> <span class="va">Brain_m</span>,</span>
-<span class="r-in">  m2i <span class="op">=</span> <span class="va">No_brain_m</span>,</span>
-<span class="r-in">  sd1i <span class="op">=</span> <span class="va">Brain_s</span>,</span>
-<span class="r-in">  sd2i <span class="op">=</span> <span class="va">No_brain_s</span>,</span>
-<span class="r-in">  n1i <span class="op">=</span> <span class="va">Brain_n</span>,</span>
-<span class="r-in">  n2i <span class="op">=</span> <span class="va">No_brain_n</span>,</span>
-<span class="r-in">  data <span class="op">=</span> <span class="va">dat</span></span>
-<span class="r-in"><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### meta-analysis using a random-effects model of the raw mean differences</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Data prep</span></span></span>
+<span class="r-in"><span><span class="co"># yi and vi are already provided, but here's how you would use escalc() to obtain</span></span></span>
+<span class="r-in"><span><span class="co"># a raw-mean difference and its variance.</span></span></span>
+<span class="r-in"><span><span class="co"># Note the measure parameter is "MD" for 'raw mean difference'</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu">metafor</span><span class="fu">::</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span></span></span>
+<span class="r-in"><span>  measure <span class="op">=</span> <span class="st">"MD"</span>,</span></span>
+<span class="r-in"><span>  m1i <span class="op">=</span> <span class="va">Brain_m</span>,</span></span>
+<span class="r-in"><span>  m2i <span class="op">=</span> <span class="va">No_brain_m</span>,</span></span>
+<span class="r-in"><span>  sd1i <span class="op">=</span> <span class="va">Brain_s</span>,</span></span>
+<span class="r-in"><span>  sd2i <span class="op">=</span> <span class="va">No_brain_s</span>,</span></span>
+<span class="r-in"><span>  n1i <span class="op">=</span> <span class="va">Brain_n</span>,</span></span>
+<span class="r-in"><span>  n2i <span class="op">=</span> <span class="va">No_brain_n</span>,</span></span>
+<span class="r-in"><span>  data <span class="op">=</span> <span class="va">dat</span></span></span>
+<span class="r-in"><span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### meta-analysis using a random-effects model of the raw mean differences</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 12; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -203,16 +203,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.07  0.03  1.94  0.05  -0.00   0.14  . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### examine if Included_Critique is a potential moderator</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">Included_Critique</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### examine if Included_Critique is a potential moderator</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">Included_Critique</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 12; tau^2 estimator: REML)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -230,15 +230,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                               estimate    se   zval  pval  ci.lb  ci.ub   ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                               estimate    se   zval  pval  ci.lb  ci.ub    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                           0.11  0.05   1.94  0.05  -0.00   0.21  . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Included_CritiqueNo_critique     -0.06  0.07  -0.92  0.36  -0.20   0.07    </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -253,7 +253,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

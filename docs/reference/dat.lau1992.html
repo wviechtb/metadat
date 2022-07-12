@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.lau1992</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.lau1992</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -117,9 +117,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.lau1992</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.lau1992</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>           trial year  ai  n1i   ci  n2i</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1      Fletcher 1959   1   12    4   11</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2         Dewar 1963   4   21    7   21</span>
@@ -154,15 +154,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 31      Kennedy 1988  12  191   17  177</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 32       ISIS-2 1988 791 8592 1029 8595</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 33    Wisenberg 1988   2   41    5   25</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### meta-analysis of log odds ratios using the MH method</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mh.html" class="external-link">rma.mh</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">ai</span>, n1i<span class="op">=</span><span class="va">n1i</span>, ci<span class="op">=</span><span class="va">ci</span>, n2i<span class="op">=</span><span class="va">n2i</span>, data<span class="op">=</span><span class="va">dat</span>, slab<span class="op">=</span><span class="va">trial</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### meta-analysis of log odds ratios using the MH method</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mh.html" class="external-link">rma.mh</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">ai</span>, n1i<span class="op">=</span><span class="va">n1i</span>, ci<span class="op">=</span><span class="va">ci</span>, n2i<span class="op">=</span><span class="va">n2i</span>, data<span class="op">=</span><span class="va">dat</span>, slab<span class="op">=</span><span class="va">trial</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Equal-Effects Model (k = 33)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -185,26 +185,26 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Cochran-Mantel-Haenszel Test:    CMH = 66.60, df = 1,  p-val &lt; 0.01</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tarone's Test for Heterogeneity: X^2 = 43.84, df = 32, p-val = 0.08</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### forest plot</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">res</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>,<span class="fl">9</span><span class="op">)</span>, atransf<span class="op">=</span><span class="va">exp</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">.01</span>, <span class="fl">0.1</span>, <span class="fl">1</span>, <span class="fl">10</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span>,</span>
-<span class="r-in">       header<span class="op">=</span><span class="cn">TRUE</span>, top<span class="op">=</span><span class="fl">2</span>, ilab<span class="op">=</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span>, ilab.xpos<span class="op">=</span><span class="op">-</span><span class="fl">6</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">6</span>, <span class="fl">35</span>, <span class="st">"Year"</span>, font<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### forest plot</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">res</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>,<span class="fl">9</span><span class="op">)</span>, atransf<span class="op">=</span><span class="va">exp</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">.01</span>, <span class="fl">0.1</span>, <span class="fl">1</span>, <span class="fl">10</span>, <span class="fl">100</span><span class="op">)</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>       header<span class="op">=</span><span class="cn">TRUE</span>, top<span class="op">=</span><span class="fl">2</span>, ilab<span class="op">=</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span>, ilab.xpos<span class="op">=</span><span class="op">-</span><span class="fl">6</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">6</span>, <span class="fl">35</span>, <span class="st">"Year"</span>, font<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.lau1992-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### cumulative meta-analysis</span></span>
-<span class="r-in"><span class="va">sav</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/cumul.html" class="external-link">cumul</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### forest plot of the cumulative results</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">sav</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">5</span>,<span class="fl">4</span><span class="op">)</span>, atransf<span class="op">=</span><span class="va">exp</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span>,</span>
-<span class="r-in">       header<span class="op">=</span><span class="cn">TRUE</span>, top<span class="op">=</span><span class="fl">2</span>, ilab<span class="op">=</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span>, ilab.xpos<span class="op">=</span><span class="op">-</span><span class="fl">3</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">3</span>, <span class="fl">35</span>, <span class="st">"Year"</span>, font<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">8</span>, <span class="fl">15</span>, <span class="fl">33</span><span class="op">)</span> <span class="co"># rows for which the z/p-values should be shown (as in Lau et al., 1992)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="fl">1.1</span>, <span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">k</span><span class="op">:</span><span class="fl">1</span><span class="op">)</span><span class="op">[</span><span class="va">id</span><span class="op">]</span>, <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"z = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/formatc.html" class="external-link">formatC</a></span><span class="op">(</span><span class="va">sav</span><span class="op">$</span><span class="va">zval</span><span class="op">[</span><span class="va">id</span><span class="op">]</span>, format<span class="op">=</span><span class="st">"f"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span>,</span>
-<span class="r-in">                                <span class="st">", p = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/formatc.html" class="external-link">formatC</a></span><span class="op">(</span><span class="va">sav</span><span class="op">$</span><span class="va">pval</span><span class="op">[</span><span class="va">id</span><span class="op">]</span>, format<span class="op">=</span><span class="st">"f"</span>, digits<span class="op">=</span><span class="fl">4</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### cumulative meta-analysis</span></span></span>
+<span class="r-in"><span><span class="va">sav</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/cumul.html" class="external-link">cumul</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### forest plot of the cumulative results</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">sav</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">5</span>,<span class="fl">4</span><span class="op">)</span>, atransf<span class="op">=</span><span class="va">exp</span>, at<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.1</span>, <span class="fl">0.5</span>, <span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">10</span><span class="op">)</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>       header<span class="op">=</span><span class="cn">TRUE</span>, top<span class="op">=</span><span class="fl">2</span>, ilab<span class="op">=</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span>, ilab.xpos<span class="op">=</span><span class="op">-</span><span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">3</span>, <span class="fl">35</span>, <span class="st">"Year"</span>, font<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">id</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">4</span>, <span class="fl">8</span>, <span class="fl">15</span>, <span class="fl">33</span><span class="op">)</span> <span class="co"># rows for which the z/p-values should be shown (as in Lau et al., 1992)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="fl">1.1</span>, <span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">k</span><span class="op">:</span><span class="fl">1</span><span class="op">)</span><span class="op">[</span><span class="va">id</span><span class="op">]</span>, <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste0</a></span><span class="op">(</span><span class="st">"z = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/formatc.html" class="external-link">formatC</a></span><span class="op">(</span><span class="va">sav</span><span class="op">$</span><span class="va">zval</span><span class="op">[</span><span class="va">id</span><span class="op">]</span>, format<span class="op">=</span><span class="st">"f"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>                                <span class="st">", p = "</span>, <span class="fu"><a href="https://rdrr.io/r/base/formatc.html" class="external-link">formatC</a></span><span class="op">(</span><span class="va">sav</span><span class="op">$</span><span class="va">pval</span><span class="op">[</span><span class="va">id</span><span class="op">]</span>, format<span class="op">=</span><span class="st">"f"</span>, digits<span class="op">=</span><span class="fl">4</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.lau1992-2.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -219,7 +219,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

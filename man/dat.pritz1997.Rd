@@ -49,6 +49,29 @@ round(c(estimate = theta.hat, se = se.theta.hat, ci.lb = ci.lb, ci.ub = ci.ub), 
 ### this is identical to an equal-effects model with sample size weights
 rma(yi, vi, weights=ni, method="EE", data=dat)
 
+### compute sampling variances under the assumption of homogeneity
+dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat, add=0, vtype="AV")
+dat
+
+### fit equal-effects model (same estimate, but SE is slightly different)
+rma(yi, vi, data=dat, method="EE")
+
+### under the assumption of homogeneity, the sum of independent binomial
+### counts also follows a binomial distribution; this approach yields the same
+### estimate and SE as above
+agg <- escalc(measure="PR", xi=sum(dat$xi), ni=sum(dat$ni))
+summary(agg)
+
+### could also compute an 'exact' CI based on the Clopper-Pearson method
+binom.test(sum(dat$xi), sum(dat$ni))
+
+### logistic regression model
+res <- rma.glmm(measure="PLO", xi=xi, ni=ni, data=dat, method="EE")
+res
+predict(res, transf=transf.ilogit)
+
+### the results above suggest that the true proportions may be heterogeneous
+
 ### random-effects model with raw proportions
 dat <- escalc(measure="PR", xi=xi, ni=ni, data=dat)
 res <- rma(yi, vi, data=dat)

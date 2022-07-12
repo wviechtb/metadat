@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.stowe2010</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.stowe2010</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -122,51 +122,51 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### Show results from three studies (including three-arm study LARGO)</span></span>
-<span class="r-in"><span class="va">dat.stowe2010</span><span class="op">[</span><span class="fl">18</span><span class="op">:</span><span class="fl">20</span>, <span class="op">]</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### Show results from three studies (including three-arm study LARGO)</span></span></span>
+<span class="r-in"><span><span class="va">dat.stowe2010</span><span class="op">[</span><span class="fl">18</span><span class="op">:</span><span class="fl">20</span>, <span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                study id    t1    y1  sd1  n1      t2    y2  sd2  n2    t3    y3  sd3  n3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 18   COMTI(E) INT-OZ 18 COMTI -0.86 2.90  99 Placebo -0.54 3.13  63          NA   NA  NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 19             LARGO 19 COMTI -1.20 2.21 218 Placebo -0.40 2.21 218 MAOBI -1.18 2.23 222</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 20 COMTI(E) Nomecomt 20 COMTI -1.30 2.20  85 Placebo -0.10 2.45  86          NA   NA  NA</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Load netmeta package</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Print mean differences with two digits and standard errors with 3</span></span>
-<span class="r-in"><span class="co">### digits</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span>, digits.se <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Transform data from wide arm-based format to contrast-based</span></span>
-<span class="r-in"><span class="co">### format. Argument 'sm' must not be provided as the mean difference</span></span>
-<span class="r-in"><span class="co">### is the default in R function metacont() called internally.</span></span>
-<span class="r-in"><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span>treat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">t1</span>, <span class="va">t2</span>, <span class="va">t3</span><span class="op">)</span>, n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span>
-<span class="r-in">  mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">y1</span>, <span class="va">y2</span>, <span class="va">y3</span><span class="op">)</span>, sd <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">sd1</span>, <span class="va">sd2</span>, <span class="va">sd3</span><span class="op">)</span>,</span>
-<span class="r-in">  studlab <span class="op">=</span> <span class="va">study</span>, data <span class="op">=</span> <span class="va">dat.stowe2010</span>, sm <span class="op">=</span> <span class="st">"MD"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Show calculated mean differences (TE) for three studies</span></span>
-<span class="r-in"><span class="va">selstudy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"COMTI(E) INT-OZ"</span>, <span class="st">"LARGO"</span>, <span class="st">"COMTI(E) Nomecomt"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">pw</span>, <span class="va">studlab</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="va">selstudy</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Load netmeta package</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Print mean differences with two digits and standard errors with 3</span></span></span>
+<span class="r-in"><span><span class="co">### digits</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span>, digits.se <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Transform data from wide arm-based format to contrast-based</span></span></span>
+<span class="r-in"><span><span class="co">### format. Argument 'sm' must not be provided as the mean difference</span></span></span>
+<span class="r-in"><span><span class="co">### is the default in R function metacont() called internally.</span></span></span>
+<span class="r-in"><span><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span>treat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">t1</span>, <span class="va">t2</span>, <span class="va">t3</span><span class="op">)</span>, n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">y1</span>, <span class="va">y2</span>, <span class="va">y3</span><span class="op">)</span>, sd <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">sd1</span>, <span class="va">sd2</span>, <span class="va">sd3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  studlab <span class="op">=</span> <span class="va">study</span>, data <span class="op">=</span> <span class="va">dat.stowe2010</span>, sm <span class="op">=</span> <span class="st">"MD"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Show calculated mean differences (TE) for three studies</span></span></span>
+<span class="r-in"><span><span class="va">selstudy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"COMTI(E) INT-OZ"</span>, <span class="st">"LARGO"</span>, <span class="st">"COMTI(E) Nomecomt"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">pw</span>, <span class="va">studlab</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="va">selstudy</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>              studlab  treat1  treat2  n1 mean1 mean2    TE</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 18   COMTI(E) INT-OZ   COMTI Placebo  99 -0.86 -0.54 -0.32</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 19             LARGO   COMTI Placebo 218 -1.20 -0.40 -0.80</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 20             LARGO   COMTI   MAOBI 218 -1.20 -1.18 -0.02</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 21             LARGO Placebo   MAOBI 218 -0.40 -1.18  0.78</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 22 COMTI(E) Nomecomt   COMTI Placebo  85 -1.30 -0.10 -1.20</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Conduct random effects network meta-analysis (NMA)</span></span>
-<span class="r-in"><span class="co">### with placebo as reference</span></span>
-<span class="r-in"><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Show network graph</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, number <span class="op">=</span> <span class="cn">TRUE</span>, multiarm <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span class="r-in">  cex <span class="op">=</span> <span class="fl">1.25</span>, offset <span class="op">=</span> <span class="fl">0.025</span>,</span>
-<span class="r-in">  cex.number <span class="op">=</span> <span class="fl">1</span>, pos.number.of.studies <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Conduct random effects network meta-analysis (NMA)</span></span></span>
+<span class="r-in"><span><span class="co">### with placebo as reference</span></span></span>
+<span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Show network graph</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, number <span class="op">=</span> <span class="cn">TRUE</span>, multiarm <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
+<span class="r-in"><span>  cex <span class="op">=</span> <span class="fl">1.25</span>, offset <span class="op">=</span> <span class="fl">0.025</span>,</span></span>
+<span class="r-in"><span>  cex.number <span class="op">=</span> <span class="fl">1</span>, pos.number.of.studies <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.stowe2010-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Print NMA results</span></span>
-<span class="r-in"><span class="va">net</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Print NMA results</span></span></span>
+<span class="r-in"><span><span class="va">net</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 29</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 31</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 5331</span>
@@ -190,28 +190,28 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           48.15   27  0.0074</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  46.91   25  0.0050</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs  1.24    2  0.5376</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Forest plot with NMA results</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/forest.meta.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Forest plot with NMA results</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.stowe2010-2.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Forest plot showing all network estimates of active treatments</span></span>
-<span class="r-in"><span class="co">### compared with other treatments</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/forest.meta.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span>, ref <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"M"</span><span class="op">)</span>, baseline <span class="op">=</span> <span class="cn">FALSE</span>, drop <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Forest plot showing all network estimates of active treatments</span></span></span>
+<span class="r-in"><span><span class="co">### compared with other treatments</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span>, ref <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"C"</span>, <span class="st">"D"</span>, <span class="st">"M"</span><span class="op">)</span>, baseline <span class="op">=</span> <span class="cn">FALSE</span>, drop <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.stowe2010-3.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Treatment ranking using P-scores</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Treatment ranking using P-scores</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                  P-score</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dopamine Agonist  0.9677</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> MAOBI             0.5664</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> COMTI             0.4659</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo           0.0000</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Rankogram with all ranking probabilities</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1909</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">ran</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/rankogram.html" class="external-link">rankogram</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">ran</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Rankogram with all ranking probabilities</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1909</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ran</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/rankogram.html" class="external-link">rankogram</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">ran</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Rankogram (based on 1000 simulations)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model: </span>
@@ -221,11 +221,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dopamine Agonist 0.9170 0.0800 0.0030 0.0000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> MAOBI            0.0770 0.5680 0.3550 0.0000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo          0.0000 0.0000 0.0000 1.0000</span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">ran</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">ran</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.stowe2010-4.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Treatment ranking using SUCRAs</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">ran</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Treatment ranking using SUCRAs</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">ran</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                   SUCRA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Dopamine Agonist 0.9713</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> MAOBI            0.5740</span>
@@ -233,17 +233,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Placebo          0.0000</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - based on 1000 simulations</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### League table showing network and direct estimates</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netleague.html" class="external-link">netleague</a></span><span class="op">(</span><span class="va">net</span>, seq <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span>, ci <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### League table showing network and direct estimates</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netleague.html" class="external-link">netleague</a></span><span class="op">(</span><span class="va">net</span>, seq <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span>, ci <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> League table (random effects model):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                                      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  Dopamine Agonist     .     .   -1.49</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             -0.46 MAOBI  0.02   -1.03</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             -0.55 -0.09 COMTI   -0.93</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             -1.49 -1.03 -0.95 Placebo</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -258,7 +258,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.franchini2012</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.franchini2012</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -119,50 +119,50 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### Show results from first three studies; third study is a three-arm</span></span>
-<span class="r-in"><span class="co">### study</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.franchini2012</span>, <span class="fl">3</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### Show results from first three studies; third study is a three-arm</span></span></span>
+<span class="r-in"><span><span class="co">### study</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.franchini2012</span>, <span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>            Study Treatment1    y1 sd1  n1  Treatment2    y2  sd2  n2    Treatment3   y3 sd3 n3</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 Lieberman 1998    Placebo -1.22 3.7  54  Ropinirole -1.53 4.28  95          &lt;NA&gt;   NA  NA NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Lieberman 1997    Placebo -0.70 3.7 172 Pramipexole -2.40 3.40 173          &lt;NA&gt;   NA  NA NA</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3   Guttman 1997    Placebo -0.30 4.4  76 Pramipexole -2.60 4.30  71 Bromocriptine -1.2 4.3 81</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Load netmeta package</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Print mean differences with two digits</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Transform data from wide arm-based format to contrast-based</span></span>
-<span class="r-in"><span class="co">### format. Argument 'sm' must not be provided as the mean difference</span></span>
-<span class="r-in"><span class="co">### is the default in R function metacont() called internally.</span></span>
-<span class="r-in"><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">Treatment1</span>, <span class="va">Treatment2</span>, <span class="va">Treatment3</span><span class="op">)</span>,</span>
-<span class="r-in">  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span>
-<span class="r-in">  mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">y1</span>, <span class="va">y2</span>, <span class="va">y3</span><span class="op">)</span>,</span>
-<span class="r-in">  sd <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">sd1</span>, <span class="va">sd2</span>, <span class="va">sd3</span><span class="op">)</span>,</span>
-<span class="r-in">  data <span class="op">=</span> <span class="va">dat.franchini2012</span>, studlab <span class="op">=</span> <span class="va">Study</span>, sm <span class="op">=</span> <span class="st">"MD"</span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Show calculated mean differences (TE) for first three studies</span></span>
-<span class="r-in"><span class="va">pw</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Load netmeta package</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/netmeta" class="external-link">netmeta</a></span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Print mean differences with two digits</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Transform data from wide arm-based format to contrast-based</span></span></span>
+<span class="r-in"><span><span class="co">### format. Argument 'sm' must not be provided as the mean difference</span></span></span>
+<span class="r-in"><span><span class="co">### is the default in R function metacont() called internally.</span></span></span>
+<span class="r-in"><span><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">Treatment1</span>, <span class="va">Treatment2</span>, <span class="va">Treatment3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  mean <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">y1</span>, <span class="va">y2</span>, <span class="va">y3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  sd <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">sd1</span>, <span class="va">sd2</span>, <span class="va">sd3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>  data <span class="op">=</span> <span class="va">dat.franchini2012</span>, studlab <span class="op">=</span> <span class="va">Study</span>, sm <span class="op">=</span> <span class="st">"MD"</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Show calculated mean differences (TE) for first three studies</span></span></span>
+<span class="r-in"><span><span class="va">pw</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>          studlab      treat1        treat2  n1 mean1 mean2    TE</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 Lieberman 1998     Placebo    Ropinirole  54 -1.22 -1.53  0.31</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Lieberman 1997     Placebo   Pramipexole 172 -0.70 -2.40  1.70</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 3   Guttman 1997     Placebo   Pramipexole  76 -0.30 -2.60  2.30</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 4   Guttman 1997     Placebo Bromocriptine  76 -0.30 -1.20  0.90</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5   Guttman 1997 Pramipexole Bromocriptine  71 -2.60 -1.20 -1.40</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Conduct network meta-analysis</span></span>
-<span class="r-in"><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span><span class="op">)</span></span>
-<span class="r-in"><span class="va">net</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Conduct network meta-analysis</span></span></span>
+<span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">net</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 9</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 1613</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of treatments: n = 5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of designs: d = 5</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Fixed effects model</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Common effects model</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Treatment estimate (sm = 'MD', comparison: other treatments vs 'Bromocriptine'):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                  MD        95%-CI     z p-value</span>
@@ -190,14 +190,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           2.29    4  0.6830</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  1.61    2  0.4473</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 0.68    2  0.7121</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### Draw network graph</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, points <span class="op">=</span> <span class="cn">TRUE</span>, cex.points <span class="op">=</span> <span class="fl">3</span>, cex <span class="op">=</span> <span class="fl">1.5</span>,</span>
-<span class="r-in">  plastic <span class="op">=</span> <span class="cn">TRUE</span>, thickness <span class="op">=</span> <span class="st">"se.fixed"</span>,</span>
-<span class="r-in">  iterate <span class="op">=</span> <span class="cn">TRUE</span>, start <span class="op">=</span> <span class="st">"eigen"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### Draw network graph</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, points <span class="op">=</span> <span class="cn">TRUE</span>, cex.points <span class="op">=</span> <span class="fl">3</span>, cex <span class="op">=</span> <span class="fl">1.5</span>,</span></span>
+<span class="r-in"><span>  plastic <span class="op">=</span> <span class="cn">TRUE</span>, thickness <span class="op">=</span> <span class="st">"se.fixed"</span>,</span></span>
+<span class="r-in"><span>  iterate <span class="op">=</span> <span class="cn">TRUE</span>, start <span class="op">=</span> <span class="st">"eigen"</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.franchini2012-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -212,7 +212,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

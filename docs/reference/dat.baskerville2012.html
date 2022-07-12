@@ -92,7 +92,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="va">dat.baskerville2012</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="va">dat.baskerville2012</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -117,9 +117,9 @@
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="co">### copy data into 'dat' and examine data</span></span>
-<span class="r-in"><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.baskerville2012</span></span>
-<span class="r-in"><span class="va">dat</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.baskerville2012</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>              author year score design alloconc blind itt fumonths retention country outcomes duration</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     Kottke et al. 1992     6    cct        0     1   1       19      83.0      US        2       18</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2    McBride et al. 2000     6    rct        0     0   0       18     100.0      US        4       12</span>
@@ -168,15 +168,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 21  11.0      9.0  1.00      1 0.60 0.31</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 22   8.0     18.0  4.00      1 0.94 0.53</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 23  14.0      9.0  0.75      1 0.11 0.27</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># \dontrun{</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### load metafor package</span></span>
-<span class="r-in"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### random-effects model</span></span>
-<span class="r-in"><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### load metafor package</span></span></span>
+<span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### random-effects model</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -190,26 +190,26 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate    se  zval  pval  ci.lb  ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>     0.56  0.06  8.70  &lt;.01   0.43   0.68  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### funnel plot</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">res</span>, xlab<span class="op">=</span><span class="st">"Standardized Mean Difference"</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0.6</span><span class="op">)</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### funnel plot</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/funnel.html" class="external-link">funnel</a></span><span class="op">(</span><span class="va">res</span>, xlab<span class="op">=</span><span class="st">"Standardized Mean Difference"</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0.6</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.baskerville2012-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### rank and regression tests for funnel plot asymmetry</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/ranktest.html" class="external-link">ranktest</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### rank and regression tests for funnel plot asymmetry</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/ranktest.html" class="external-link">ranktest</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Cannot compute exact p-value with ties</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Rank Correlation Test for Funnel Plot Asymmetry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Kendall's tau = 0.4284, p = 0.0049</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/regtest.html" class="external-link">regtest</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Regression Test for Funnel Plot Asymmetry</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -219,9 +219,9 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Funnel Plot Asymmetry: z = 3.1763, p = 0.0015</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Limit Estimate (as sei -&gt; 0):   b = 0.0519 (CI: -0.2615, 0.3653)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co">### meta-regression analyses examining various potential moderators</span></span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">score</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### meta-regression analyses examining various potential moderators</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">score</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -239,14 +239,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub    ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.6830  0.2183   3.1286  0.0018   0.2551  1.1109  ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> score     -0.0149  0.0253  -0.5877  0.5567  -0.0646  0.0348     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">alloconc</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">alloconc</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -264,14 +264,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se     zval    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt     0.5786  0.1041   5.5588  &lt;.0001   0.3746  0.7827  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> alloconc   -0.0275  0.1348  -0.2041  0.8383  -0.2917  0.2366      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">blind</span>,    data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">blind</span>,    data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -289,14 +289,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.5809  0.0972   5.9752  &lt;.0001   0.3903  0.7714  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> blind     -0.0349  0.1325  -0.2635  0.7921  -0.2946  0.2248      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">itt</span>,      data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">itt</span>,      data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -314,14 +314,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.5496  0.0926  5.9355  &lt;.0001   0.3681  0.7310  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> itt        0.0250  0.1319  0.1897  0.8496  -0.2336  0.2836      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">duration</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">duration</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -339,14 +339,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se    zval    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>           estimate      se    zval    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt     0.5601  0.1451  3.8605  0.0001   0.2757  0.8444  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> duration    0.0002  0.0088  0.0190  0.9849  -0.0171  0.0174      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">tailor</span>,   data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">tailor</span>,   data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -364,14 +364,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se    zval    pval    ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.3717  0.1084  3.4281  0.0006   0.1592  0.5843  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> tailor     0.2434  0.1292  1.8835  0.0596  -0.0099  0.4967    . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">pperf</span>,    data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">pperf</span>,    data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from model fitting.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 21; tau^2 estimator: DL)</span>
@@ -390,14 +390,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb    ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se     zval    pval    ci.lb    ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.7318  0.0997   7.3429  &lt;.0001   0.5365   0.9272  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> pperf     -0.0137  0.0051  -2.7021  0.0069  -0.0236  -0.0038   ** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/AsIs.html" class="external-link">I</a></span><span class="op">(</span><span class="va">meetings</span> <span class="op">*</span> <span class="va">hours</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">smd</span>, sei<span class="op">=</span><span class="va">se</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fu"><a href="https://rdrr.io/r/base/AsIs.html" class="external-link">I</a></span><span class="op">(</span><span class="va">meetings</span> <span class="op">*</span> <span class="va">hours</span><span class="op">)</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Mixed-Effects Model (k = 23; tau^2 estimator: DL)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -415,15 +415,15 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                      estimate      se    zval    pval   ci.lb   ci.ub     ​ </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      estimate      se    zval    pval   ci.lb   ci.ub      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt                0.4453  0.0773  5.7644  &lt;.0001  0.2939  0.5968  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> I(meetings * hours)    0.0073  0.0037  1.9640  0.0495  0.0000  0.0146    * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># }</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -438,7 +438,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

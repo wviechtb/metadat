@@ -113,10 +113,11 @@ forest(coef(res), diag(vcov(res)), slab=sub(".", " ", names(coef(res)), fixed=TR
        xlim=c(-5,5), alim=c(-3,3), psize=1, header="Treatment",
        xlab="Difference in Standardized Mean Change (compared to TAU)")
 
-### fit random inconsistency effects model
+### fit random inconsistency effects model (might have to switch optimizer to get convergence)
 res <- rma.mv(yi, V, data=dat,
          mods = ~ No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT - 1,
-         random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2)
+         random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2,
+         control=list(optimizer="BFGS"))
 res
 
 }
