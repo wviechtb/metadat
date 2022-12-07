@@ -1,6 +1,6 @@
-# metadat 1.3-0 (2022-04-06)
+# metadat 1.3-0 (2022-12-07)
 
-- placeholder for updates in new devel version
+- added `dat.roever2022` and `dat.ursino2021`
 
 # metadat 1.2-0 (2022-04-05)
 

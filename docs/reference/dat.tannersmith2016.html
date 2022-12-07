@@ -197,14 +197,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> estimate     se¹   tval¹    df¹   pval¹  ci.lb¹  ci.ub¹      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>   0.1023  0.0241  4.2474  14.88  0.0007  0.0509  0.1537  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se¹    tval¹     df¹    pval¹   ci.lb¹   ci.ub¹      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   0.1023  0.0241   4.2474   14.88   0.0007   0.0509   0.1537   *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t-test and confidence interval, dfs = Satterthwaite method)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx t-test and confidence interval, df: Satterthwaite approx)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### note: the results obtained above and below are slightly different compared</span></span></span>
@@ -238,16 +238,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate     se¹    tval¹   df¹   pval¹   ci.lb¹  ci.ub¹    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.3960  0.1632   2.4270  6.69  0.0472   0.0065  0.7855  * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget1      0.0451  0.0329   1.3702  2.55  0.2788  -0.0710  0.1613    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget2     -0.0562  0.0328  -1.7157  1.84  0.2390  -0.2095  0.0971    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          estimate      se¹     tval¹    df¹    pval¹    ci.lb¹   ci.ub¹    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt    0.3960  0.1632    2.4270   6.69   0.0472    0.0065   0.7855   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget1      0.0451  0.0329    1.3702   2.55   0.2788   -0.0710   0.1613     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget2     -0.0562  0.0328   -1.7157   1.84   0.2390   -0.2095   0.0971     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx t/F-tests and confidence intervals, df: Satterthwaite approx)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### also examine their interaction</span></span></span>
@@ -275,17 +275,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate     se¹    tval¹   df¹   pval¹   ci.lb¹  ci.ub¹    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt       -2.3900  1.1001  -2.1726  5.27  0.0791  -5.1746  0.3946  . </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget1          0.2656  0.0969   2.7406  6.39  0.0316   0.0319  0.4992  * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget2          0.1027  0.0740   1.3877  6.07  0.2140  -0.0779  0.2834    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget1:aget2   -0.0125  0.0052  -2.3828  6.51  0.0513  -0.0251  0.0001  . </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate      se¹     tval¹    df¹    pval¹    ci.lb¹   ci.ub¹    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt       -2.3900  1.1001   -2.1726   5.27   0.0791   -5.1746   0.3946   . </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget1          0.2656  0.0969    2.7406   6.39   0.0316    0.0319   0.4992   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget2          0.1027  0.0740    1.3877   6.07   0.2140   -0.0779   0.2834     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget1:aget2   -0.0125  0.0052   -2.3828   6.51   0.0513   -0.0251   0.0001   . </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx t/F-tests and confidence intervals, df: Satterthwaite approx)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### add the sexmix factor to the model</span></span></span>
@@ -313,19 +313,19 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate     se¹    tval¹   df¹   pval¹   ci.lb¹   ci.ub¹    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt       -2.5352  1.1935  -2.1241  5.20  0.0850  -5.5687   0.4983  . </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget1          0.2827  0.1003   2.8186  5.82  0.0315   0.0354   0.5300  * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget2          0.1078  0.0793   1.3592  5.96  0.2232  -0.0866   0.3022    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sexmixmale     0.0312  0.0620   0.5036  5.20  0.6352  -0.1264   0.1889    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> sexmixmixed   -0.0071  0.0542  -0.1317  6.58  0.8991  -0.1371   0.1228    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> aget1:aget2   -0.0133  0.0053  -2.5048  6.08  0.0457  -0.0263  -0.0004  * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              estimate      se¹     tval¹    df¹    pval¹    ci.lb¹    ci.ub¹    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> intrcpt       -2.5352  1.1935   -2.1241    5.2   0.0850   -5.5687    0.4983   . </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget1          0.2827  0.1003    2.8186   5.82   0.0315    0.0354    0.5300   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget2          0.1078  0.0793    1.3592   5.96   0.2232   -0.0866    0.3022     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sexmixmale     0.0312  0.0620    0.5036    5.2   0.6352   -0.1264    0.1889     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sexmixmixed   -0.0071  0.0542   -0.1317   6.58   0.8991   -0.1371    0.1228     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> aget1:aget2   -0.0133  0.0053   -2.5048   6.08   0.0457   -0.0263   -0.0004   * </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    approx. t/F-tests and confidence intervals, dfs = Satterthwaite method)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx t/F-tests and confidence intervals, df: Satterthwaite approx)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># }</span></span></span>
@@ -343,7 +343,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.5.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
