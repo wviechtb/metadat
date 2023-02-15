@@ -17,7 +17,7 @@ The data frame contains the following columns:
 }
 }
 \details{
-   This data set comes from a systematic review aiming to estimate the effects of eight antithrombotic treatments including placebo in reducing the incidence of major thrombotic events in patients with non-valvular atrial fibrillation (Dogliotti et al., 2014).
+   This dataset comes from a systematic review aiming to estimate the effects of eight antithrombotic treatments including placebo in reducing the incidence of major thrombotic events in patients with non-valvular atrial fibrillation (Dogliotti et al., 2014).
 
    The review included 20 studies with 79,808 participants, four studies are three-arm studies. The primary outcome is stroke reduction (yes / no).
 }

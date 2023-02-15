@@ -25,7 +25,7 @@ The data frame contains the following columns:
    Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
-### Show full data set
+### Show full dataset
 dat.woods2010
 
 \dontrun{

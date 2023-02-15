@@ -17,11 +17,11 @@ The data frame contains the following columns:
 }
 }
 \details{
-   This data set comes from a network meta-analysis of 22 treatments of depression in primary care (Linde et al., 2016), based on 93 trials (79 two-arm trials, 13 three-arm trials, and one four-arm trial). The primary outcome was response after treatment (yes/no), defined as a reduction from baseline by at least 50\% on a depression scale. The data set contains log odds ratios with standard errors for all pairwise comparisons.
+   This dataset comes from a network meta-analysis of 22 treatments of depression in primary care (Linde et al., 2016), based on 93 trials (79 two-arm trials, 13 three-arm trials, and one four-arm trial). The primary outcome was response after treatment (yes/no), defined as a reduction from baseline by at least 50\% on a depression scale. The dataset contains log odds ratios with standard errors for all pairwise comparisons.
 
    The interventions comprised both medical and psychological treatments, also in combination, including placebo and usual care (UC) (Linde et al., 2016). Pharmacological interventions were tricyclic antidepressants (TCA), selective serotonin reuptake inhibitors (SSRI), serotonin-noradrenaline reuptake inhibitors (SNRI), noradrenaline reuptake inhibitors (NRI), low- dose serotonin (5-HT2) antagonists and reuptake inhibitors (low-dose SARI), noradrenergic and specific serotonergic agents (NaSSa), reversible inhibitors of monoaminoxidase A (rMAO-A), hypericum extracts, and an individualized drug. Psychological interventions were cognitive behavioral therapy (CBT; four forms: face-to-face CBT, remote therapist-led CBT, guided self-help CBT, and no or minimal contact CBT), face-to-face problem-solving therapy (PST), face-to-face interpersonal psychotherapy, face-to-face psychodynamic therapy, and \dQuote{other face-to-face therapy}. Combination therapies were face-to-face CBT + SSRI, face-to-face PST + SSRI, and face-to-face interpersonal psychotherapy + SSRI.
 
-   The data set was used as an example in Rücker et al. (2020) to illustrate component network meta-analysis using frequentist methods.
+   The dataset was used as an example in Rücker et al. (2020) to illustrate component network meta-analysis using frequentist methods.
 }
 \source{
    Linde, K., Rücker, G., Schneider, A., & Kriston, L. (2016). Questionable assumptions hampered interpretation of a network meta-analysis of primary care depression treatments. \emph{Journal of Clinical Epidemiology}, \bold{71}, 86--96. \verb{https://doi.org/10.1016/j.jclinepi.2015.10.010}

@@ -27,7 +27,7 @@ The data frame contains the following columns:
 \details{
    This network meta-analysis compared the effectiveness of four active treatments and placebo in patients with advanced Parkinson disease (Franchini et al., 2012). The outcome is mean lost work-time reduction in patients given dopamine agonists as adjunct therapy. The data are given as sample size, mean, and standard deviation in each trial arm.
 
-   This data set was used as an example in the supplemental material of Dias et al. (2013) where placebo is coded as 1 and the four active drugs as 2 to 5.
+   This dataset was used as an example in the supplemental material of Dias et al. (2013) where placebo is coded as 1 and the four active drugs as 2 to 5.
 }
 \source{
    Dias, S., Sutton, A. J., Ades, A. E., & Welton, N. J. (2013). Evidence synthesis for decision making 2: A generalized linear modeling framework for pairwise and network meta-analysis of randomized controlled trials. \emph{Medical Decision Making}, \bold{33}(5), 607--617. \verb{https://doi.org/10.1177/0272989X12458724}

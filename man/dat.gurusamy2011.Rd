@@ -20,7 +20,7 @@ The data frame contains the following columns:
 
    Fourteen studies reported mortality at 60 days, in 1,002 patients. Forty-five deaths were reported across all studies (4.5\%). Six studies observed deaths in all treatment arms while three studies did not observe any deaths.
 
-   This data set was used in Efthimiou et al. (2019) to introduce the Mantel-Haenszel method for network meta-analysis.
+   This dataset was used in Efthimiou et al. (2019) to introduce the Mantel-Haenszel method for network meta-analysis.
 
    One of the treatments (solvent detergent plasma) was only included in one study with zero events in both treatment arms; this study was excluded from all network meta-analyses. In addition, no death was observed in the antithrombin III arm of the only study evaluating this treatment which was excluded from the Mantel-Haenszel network meta-analysis.
 }

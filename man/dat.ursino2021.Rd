@@ -1,7 +1,7 @@
 \name{dat.ursino2021}
 \docType{data}
 \alias{dat.ursino2021}
-\title{Sorafenib toxicity data set}
+\title{Sorafenib Toxicity Dataset}
 \description{13 studies investigating the occurrence of dose limiting toxicities (DLTs) at different doses of Sorafenib.}
 \usage{
 dat.ursino2021
@@ -17,7 +17,7 @@ The data frame contains the following columns:
 }
 }
 \details{
-   Sorafenib (BAY 43-9006, Nexavar) is a kinase inhibitor that is used in the treatment of advanced renal cell carcinoma, hepatocellular carcinoma, and radioactive iodine resistant advanced thyroid carcinoma. Thirteen trials with published results, described in eleven manuscripts, were identified in a literature search. This data set contains the doses investigated, the numbers of patients treated, and the number of dose-limiting toxicities (DLTs) observed. In general, each study investigated several doses according to some dose-escalation scheme.
+   Sorafenib (BAY 43-9006, Nexavar) is a kinase inhibitor that is used in the treatment of advanced renal cell carcinoma, hepatocellular carcinoma, and radioactive iodine resistant advanced thyroid carcinoma. Thirteen trials with published results, described in eleven manuscripts, were identified in a literature search. This dataset contains the doses investigated, the numbers of patients treated, and the number of dose-limiting toxicities (DLTs) observed. In general, each study investigated several doses according to some dose-escalation scheme.
 }
 \source{
    Ursino, M., Roever, C., Zohar,  S., & Friede T. (2021). Random-effects meta-analysis of phase I dose-finding studies using stochastic process priors. \emph{The Annals of Applied Statistics}, \bold{15}(1), 174--193. \verb{https://doi.org/10.1214/20-AOAS1390}

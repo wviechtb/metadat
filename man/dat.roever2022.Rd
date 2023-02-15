@@ -1,7 +1,7 @@
 \name{dat.roever2022}
 \docType{data}
 \alias{dat.roever2022}
-\title{Irinotecan / S-1 toxicity data set}
+\title{Irinotecan / S-1 Toxicity Dataset}
 \description{12 studies investigating the occurrence of dose limiting toxicities (DLTs) at different doses of a combination therapy of Irinotecan and S-1.}
 \usage{
 dat.roever2022
@@ -17,7 +17,7 @@ The data frame contains the following columns:
 }
 }
 \details{
-   A combination therapy of Irinotecan (a topoisomerase 1 inhibitor) and S-1 (a combination of three pharmacological compounds, namely, tegafur, gimeracil, and oteracil potassium) was tested in advanced colorectal and gastric cancer. This data set contains data from twelve studies investigating this therapy in a Japanese population; it contains the doses investigated, the numbers of patients treated, and the number of dose-limiting toxicities (DLTs) observed. In general, each study investigated several doses according to some dose-escalation scheme.
+   A combination therapy of Irinotecan (a topoisomerase 1 inhibitor) and S-1 (a combination of three pharmacological compounds, namely, tegafur, gimeracil, and oteracil potassium) was tested in advanced colorectal and gastric cancer. This dataset contains data from twelve studies investigating this therapy in a Japanese population; it contains the doses investigated, the numbers of patients treated, and the number of dose-limiting toxicities (DLTs) observed. In general, each study investigated several doses according to some dose-escalation scheme.
 }
 \source{
    Ursino, M., Roever, C., Zohar,  S., & Friede T. (2021). Random-effects meta-analysis of phase I dose-finding studies using stochastic process priors. \emph{The Annals of Applied Statistics}, \bold{15}(1), 174--193. \verb{https://doi.org/10.1214/20-AOAS1390}
