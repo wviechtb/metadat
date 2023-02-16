@@ -1,6 +1,6 @@
-# metadat 1.3-0 (2022-12-07)
+# metadat 1.3-0 (2023-02-16)
 
-- added `dat.roever2022` and `dat.ursino2021`
+- added `dat.crisafulli2020`, `dat.roever2022` and `dat.ursino2021`
 
 # metadat 1.2-0 (2022-04-05)
 
