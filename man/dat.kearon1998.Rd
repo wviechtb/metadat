@@ -91,7 +91,7 @@ lines(coef(reg$fit)[1] + coef(reg$fit)[2]*ys, ys, lwd=2, lty=3)
 dat <- to.long(measure="OR", ai=tp, n1i=np, ci=tn, n2i=nn,
                data=dat.kearon1998, subset=patients=="asymptomatic")
 dat <- dat[9:12]
-levels(dat$group) <- c("sensitivity", "specificity")
+dat$group <- factor(dat$group, levels=c(1,2), labels=c("sensitivity", "specificity"))
 dat
 
 ### calculate logit-transformed sensitivities
@@ -113,7 +113,6 @@ predict(res, newmods = rbind(c(1,0),c(0,1)), transf=transf.ilogit, tau2.levels=c
 
 ### estimated average diagnostic odds ratio based on the model
 predict(res, newmods = c(1,1), transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}
