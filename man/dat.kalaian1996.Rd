@@ -49,14 +49,14 @@ range(dat$yi[dat$outcome == "verbal"]) # -0.35 to 0.74 according to page 230
 range(dat$yi[dat$outcome == "math"])   # -0.53 to 0.60 according to page 231
 
 ### comparing this with Figure 1 in the paper reveals some discrepancies
-par(mfrow=c(1,2), mar=c(5,4,1,1))
+par(mfrow=c(1,2), mar=c(5,5,1,3.4))
 plot(log(dat$hrs[dat$outcome == "verbal"]), dat$yi[dat$outcome == "verbal"],
-     pch=19, xlab="Log(Coaching Hours)", ylab="Effect Size (verbal)",
+     pch=19, col=rgb(0,0,0,.4), xlab="Log(Coaching Hours)", ylab="Effect Size (verbal)",
      xlim=c(1,6), ylim=c(-0.5,1), xaxs="i", yaxs="i")
 abline(h=c(-0.5,0,0.5), lty="dotted")
 abline(v=log(c(5,18)),  lty="dotted")
 plot(log(dat$hrs[dat$outcome == "math"]), dat$yi[dat$outcome == "math"],
-     pch=19, xlab="Log(Coaching Hours)", ylab="Effect Size (math)",
+     pch=19, col=rgb(0,0,0,.4), xlab="Log(Coaching Hours)", ylab="Effect Size (math)",
      xlim=c(1,6), ylim=c(-1.0,1), xaxs="i", yaxs="i")
 abline(h=c(-0.5,0,0.5), lty="dotted")
 abline(v=log(c(5,18)),  lty="dotted")

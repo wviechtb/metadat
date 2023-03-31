@@ -150,14 +150,14 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] -0.53  0.60</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### comparing this with Figure 1 in the paper reveals some discrepancies</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>, mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">4</span>,<span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span><span class="op">)</span>, mar<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">5</span>,<span class="fl">1</span>,<span class="fl">3.4</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span><span class="op">)</span>, <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"verbal"</span><span class="op">]</span>,</span></span>
-<span class="r-in"><span>     pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (verbal)"</span>,</span></span>
+<span class="r-in"><span>     pch<span class="op">=</span><span class="fl">19</span>, col<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/grDevices/rgb.html" class="external-link">rgb</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">.4</span><span class="op">)</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (verbal)"</span>,</span></span>
 <span class="r-in"><span>     xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">6</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">1</span><span class="op">)</span>, xaxs<span class="op">=</span><span class="st">"i"</span>, yaxs<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">0</span>,<span class="fl">0.5</span><span class="op">)</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">18</span><span class="op">)</span><span class="op">)</span>,  lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">hrs</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span><span class="op">)</span>, <span class="va">dat</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"math"</span><span class="op">]</span>,</span></span>
-<span class="r-in"><span>     pch<span class="op">=</span><span class="fl">19</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (math)"</span>,</span></span>
+<span class="r-in"><span>     pch<span class="op">=</span><span class="fl">19</span>, col<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/grDevices/rgb.html" class="external-link">rgb</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">0</span>,<span class="fl">.4</span><span class="op">)</span>, xlab<span class="op">=</span><span class="st">"Log(Coaching Hours)"</span>, ylab<span class="op">=</span><span class="st">"Effect Size (math)"</span>,</span></span>
 <span class="r-in"><span>     xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">6</span><span class="op">)</span>, ylim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.0</span>,<span class="fl">1</span><span class="op">)</span>, xaxs<span class="op">=</span><span class="st">"i"</span>, yaxs<span class="op">=</span><span class="st">"i"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.5</span>,<span class="fl">0</span>,<span class="fl">0.5</span><span class="op">)</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/Log.html" class="external-link">log</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5</span>,<span class="fl">18</span><span class="op">)</span><span class="op">)</span>,  lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
@@ -181,7 +181,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> inner factor: outcome (nlvls = 2)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>            estim   sqrt  k.lvl  fixed   level </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.1    0.012  0.111     29     no    math </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.1    0.012  0.110     29     no    math </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.2    0.003  0.051     38     no  verbal </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         rho.math  rho.vrbl    math  vrbl </span>
@@ -189,16 +189,16 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> verbal    -1.000         1      no     - </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 65) = 72.261, p-val = 0.251</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 65) = 72.163, p-val = 0.253</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 1:2):</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 2) = 18.090, p-val &lt; .001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 2) = 18.129, p-val &lt; .001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                estimate     se   zval   pval  ci.lb  ci.ub      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath       0.138  0.043  3.171  0.002  0.053  0.223   ** </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal     0.117  0.034  3.459  &lt;.001  0.051  0.183  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath       0.138  0.043  3.178  0.001  0.053  0.223   ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal     0.117  0.034  3.460  &lt;.001  0.051  0.183  *** </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
@@ -212,10 +212,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    estimate    se  zval  pval </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1:    0.021 0.049 0.427 0.669 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1:    0.021 0.049 0.433 0.665 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Hypothesis:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 1) = 0.183, p-val = 0.669</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 1) = 0.187, p-val = 0.665</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### log-transform and mean center the hours of coaching variable</span></span></span>
@@ -244,18 +244,18 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> verbal    -1.000         1      no     - </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 61) = 68.018, p-val = 0.251</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 61) = 67.958, p-val = 0.252</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 1:4):</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 4) = 23.634, p-val &lt; .001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 4) = 23.646, p-val &lt; .001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.101  0.049  2.085  0.037   0.006  0.197   * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.110  0.035  3.164  0.002   0.042  0.178  ** </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.170  0.073  2.339  0.019   0.028  0.312   * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal:loghrs     0.049  0.046  1.069  0.285  -0.041  0.139     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.102  0.049  2.088  0.037   0.006  0.197   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.110  0.035  3.166  0.002   0.042  0.178  ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.169  0.073  2.335  0.020   0.027  0.312   * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal:loghrs     0.049  0.046  1.068  0.285  -0.041  0.139     </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
@@ -284,18 +284,18 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> verbal     0.000         1     yes     - </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 61) = 68.018, p-val = 0.251</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 61) = 67.958, p-val = 0.252</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 1:4):</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 4) = 23.340, p-val &lt; .001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 4) = 23.350, p-val &lt; .001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                       estimate     se   zval   pval   ci.lb  ci.ub      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.107  0.051  2.100  0.036   0.007  0.206    * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.114  0.034  3.395  &lt;.001   0.048  0.180  *** </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.188  0.076  2.466  0.014   0.039  0.337    * </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal:loghrs     0.060  0.044  1.358  0.175  -0.027  0.147      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath              0.107  0.051  2.103  0.035   0.007  0.207    * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal            0.114  0.034  3.396  &lt;.001   0.048  0.180  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemath:loghrs       0.187  0.076  2.463  0.014   0.038  0.337    * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeverbal:loghrs     0.060  0.044  1.357  0.175  -0.027  0.147      </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>

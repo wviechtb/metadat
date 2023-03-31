@@ -1,7 +1,8 @@
-# metadat 1.3-0 (2023-03-27)
+# metadat 1.3-0 (2023-03-31)
 
 - added `dat.crisafulli2020`, `dat.roever2022` and `dat.ursino2021`
 - fixed the mislabeling of sensitivity and specificity in the example code for `dat.kearon1998`
+- minor correction to one of the sampling variances in `dat.kalaian1996` and the coding of the `ets` variable
 
 # metadat 1.2-0 (2022-04-05)
 
