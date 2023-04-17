@@ -19,12 +19,9 @@ The data frame contains the following columns:
 }
 }
 \details{
-   Hasselblad et al. (1992) investigated the effects of nitrogen dioxide (NO2) exposure on the occurrence of respiratory illness in children. Their data were picked up by DuMouchel (1994) as an illustrative example in his article on Bayesian meta-analysis, and were also part of his \dQuote{\code{hblm}} S-Plus software package.
+   Hasselblad et al. (1992) investigated the effects of nitrogen dioxide (NO2) exposure on the occurrence of respiratory illness in children. Their data were picked up by DuMouchel (1994) as an illustrative example in his article on Bayesian meta-analysis, and were also part of his \dQuote{\code{hblm}} S-Plus software package. DuMouchel's dataset differs slightly from the figures quoted by Hasselblad et al. (1992), apparently because he had additional, more detailed data available.
 
    The data set features three study-level covariables reflecting characteristics of the study designs, namely, whether the quoted estimate had been adjusted for parents' smoking status, whether NO2 exposure had been measured directly (or presence of a gas stove in the household had been used as a proxy instead), and whether the quoted effect had been adjusted for gender. Inclusion of the covariables allows to account for the studies' design features, quantify their effects, and adjust for these.
-}
-\note{
-   The data used by DuMouchel (1994) do not actually match the data given in Hasselblad et al. (1992). The reason for this discrepancy is unclear.
 }
 \source{
    DuMouchel, W. H. (1994). Hierarchical Bayes linear models for meta-analysis. Technical Report 27, National Institute of Statistical Sciences (NISS); Research Triangle Park, NC, USA. \verb{https://www.niss.org/research/technical-reports/hierarchical-bayes-linear-models-meta-analysis-1994}
