@@ -6,7 +6,8 @@
 \usage{
 dat.hart1999
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial}    \tab \code{numeric}   \tab trial number \cr
 \bold{study}    \tab \code{character} \tab study name (abbreviated) \cr
@@ -37,7 +38,6 @@ dat <- dat.hart1999
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -68,7 +68,6 @@ par(op)
 ### meta-analysis of incidence rate differences using a random-effects model
 res <- rma(measure="IRD", x1i=x1i, x2i=x2i, t1i=t1i, t2i=t2i, data=dat)
 res
-
 }
 }
 \keyword{datasets}

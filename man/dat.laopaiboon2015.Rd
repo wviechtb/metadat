@@ -6,7 +6,8 @@
 \usage{
 dat.laopaiboon2015
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}  \tab \code{character} \tab author(s) \cr
 \bold{year}    \tab \code{numeric}   \tab publication year \cr
@@ -36,7 +37,6 @@ dat <- dat.laopaiboon2015
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -52,7 +52,6 @@ res
 
 ### average risk ratio with 95\% CI
 predict(res, transf=exp)
-
 }
 }
 \keyword{datasets}

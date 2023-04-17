@@ -136,8 +136,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 8     8              Brody et al. (1990) 311 0.91 20      mixed</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 9     9              Brody et al. (1995) 492 0.90 20      women</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
-<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### load metafor package</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
@@ -223,7 +221,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### forest plot</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">res</span>, slab<span class="op">=</span><span class="va">source</span>, header<span class="op">=</span><span class="cn">TRUE</span>, atransf<span class="op">=</span><span class="va">transf.iabt</span>, refline<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">res</span>, slab<span class="op">=</span><span class="va">source</span>, header<span class="op">=</span><span class="cn">TRUE</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>,<span class="fl">4.5</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>       atransf<span class="op">=</span><span class="va">transf.iabt</span>, refline<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.bonett2010-1.png" alt="" width="864" height="768"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### examine whether female/mixed samples yield different alphas (with raw alphas)</span></span></span>
@@ -259,8 +258,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1 0.89 0.01  0.88  0.91  0.86  0.93 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.92 0.01  0.90  0.94  0.89  0.96 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>

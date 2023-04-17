@@ -32,7 +32,6 @@ The data frame contains the following columns:
 head(dat.dogliotti2014, 7)
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -73,7 +72,6 @@ forest(nb, xlim = c(0.15, 2), at = c(0.2, 0.5, 1, 2))
 ### Print and plot results for inverse variance NMA
 net
 forest(net)
-
 }
 }
 \seealso{  

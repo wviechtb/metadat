@@ -6,7 +6,8 @@
 \usage{
 dat.vanhowe1999
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{character} \tab study author \cr
 \bold{category} \tab \code{character} \tab study type (high-risk group, partner study, or population survey) \cr
@@ -41,7 +42,6 @@ dat <- dat.vanhowe1999
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -78,7 +78,6 @@ res <- rma(yi, vi, data=dat, method="DL", subset=category=="partner study")
 predict(res, transf=exp, digits=2)
 res <- rma(yi, vi, data=dat, method="DL", subset=category=="population survey")
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

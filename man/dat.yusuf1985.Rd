@@ -6,7 +6,8 @@
 \usage{
 dat.yusuf1985
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{table}  \tab \code{character} \tab table number \cr
 \bold{id}     \tab \code{character} \tab trial id number \cr
@@ -34,7 +35,6 @@ dat <- dat.yusuf1985
 dat[dat$table == 6,]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -48,7 +48,6 @@ apply(dat[dat$table==tab,4:7], 2, sum, na.rm=TRUE)
 res <- rma.peto(ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, subset=(table==tab))
 res
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

@@ -224,7 +224,6 @@ round(table.heterogeneity, 2)
 
 #end.time <- Sys.time()
 #end.time - start.time
-
 }
 }
 \keyword{datasets}

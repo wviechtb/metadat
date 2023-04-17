@@ -6,7 +6,8 @@
 \usage{
 dat.fine1993
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr
 \bold{nei}        \tab \code{numeric}    \tab sample size in the experimental group receiving radiotherapy plus adjuvant chemotherapy \cr
@@ -43,7 +44,6 @@ dat <- dat.fine1993
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -118,7 +118,6 @@ profile(res, tau2=4, xlim=c(.1,.3))
 ### profile the autocorrelation coefficient
 par(mfrow=c(1,1))
 profile(res, rho=1)
-
 }
 }
 \keyword{datasets}

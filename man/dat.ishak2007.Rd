@@ -6,7 +6,8 @@
 \usage{
 dat.ishak2007
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{character}  \tab (first) author and year \cr
 \bold{y1i}        \tab \code{numeric}    \tab observed mean difference at 3 months \cr
@@ -38,7 +39,6 @@ dat <- dat.ishak2007
 head(dat, 5)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -65,7 +65,6 @@ axis(side=1, at=1:4, lab=c("1 (3 months)", "2 (6 months)", "3 (12 months)", "4 (
 res <- rma.mv(yi, V, mods = ~ factor(time) - 1, random = ~ time | study,
               struct = "HAR", data = dat)
 print(res, digits=2)
-
 }
 }
 \keyword{datasets}

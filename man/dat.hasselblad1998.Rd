@@ -6,7 +6,8 @@
 \usage{
 dat.hasselblad1998
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}         \tab \code{numeric}    \tab id number for each treatment arm \cr
 \bold{study}      \tab \code{numeric}    \tab study id number \cr
@@ -41,7 +42,6 @@ dat <- dat.hasselblad1998
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -128,7 +128,6 @@ predict(res, newmods=diag(3), transf=exp, digits=2)
 res <- rma.mv(yi, V, mods = ~ self_help + ind_counseling + grp_counseling - 1,
               random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2, data=dat)
 res
-
 }
 }
 \keyword{datasets}

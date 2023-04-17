@@ -6,7 +6,8 @@
 \usage{
 dat.pritz1997
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study number \cr
 \bold{authors}  \tab \code{character} \tab study authors \cr
@@ -34,7 +35,6 @@ dat <- dat.pritz1997
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -85,7 +85,6 @@ predict(res, transf=transf.ilogit)
 ### mixed-effects logistic regression model
 res <- rma.glmm(measure="PLO", xi=xi, ni=ni, data=dat)
 predict(res, transf=transf.ilogit)
-
 }
 }
 \keyword{datasets}

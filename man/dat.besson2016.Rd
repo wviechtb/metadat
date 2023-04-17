@@ -93,7 +93,6 @@ dat <- dat.besson2016
 head(dat)
 
 \dontrun{
-
 ### load metafor
 library(metafor)
 
@@ -108,7 +107,6 @@ dat <- escalc(measure="SMD", m1i=exp_mean, m2i=con_mean, sd1i=sd_e, sd2i=sd_c,
 ### fit model
 mod1 <- rma.mv(yi ~ 1, V = vi, random = list(~ 1 | study_ID, ~ 1 | comp_ID), data = dat)
 mod1
-
 }
 }
 \keyword{datasets}

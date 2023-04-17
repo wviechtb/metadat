@@ -6,7 +6,8 @@
 \usage{
 dat.bornmann2007
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{character} \tab study reference \cr
 \bold{obs}        \tab \code{numeric}   \tab observation within study \cr
@@ -41,7 +42,6 @@ dat <- dat.bornmann2007
 head(dat, 16)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -59,7 +59,6 @@ predict(res, transf=exp, digits=2)
 res <- rma.mv(yi, vi, mods = ~ type, random = ~ 1 | study/obs, data=dat)
 res
 predict(res, newmods=0:1, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

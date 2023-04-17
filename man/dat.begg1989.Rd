@@ -6,7 +6,8 @@
 \usage{
 dat.begg1989
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr
 \bold{trt}        \tab \code{character}  \tab treatment (BMT or CMO) \cr
@@ -36,7 +37,6 @@ dat <- dat.begg1989
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -72,7 +72,6 @@ res
 res <- rma.mv(yi, vi, mods = ~ trt, random = list(~ 1 | study, ~ trt | study),
               struct="CS", rho=0, data=dat, method="ML", digits=2)
 res
-
 }
 }
 \keyword{datasets}

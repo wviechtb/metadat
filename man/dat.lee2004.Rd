@@ -6,7 +6,8 @@
 \usage{
 dat.lee2004
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}     \tab \code{numeric}   \tab trial id number \cr
 \bold{study}  \tab \code{character} \tab first author \cr
@@ -32,7 +33,6 @@ dat <- dat.lee2004
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -40,7 +40,6 @@ library(metafor)
 res <- rma(measure="RR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat)
 res
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

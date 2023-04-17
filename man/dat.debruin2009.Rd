@@ -6,7 +6,8 @@
 \usage{
 dat.debruin2009
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}      \tab \code{character} \tab (first) author of study \cr
 \bold{year}        \tab \code{numeric}   \tab publication year \cr
@@ -35,7 +36,6 @@ dat <- dat.debruin2009
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -54,7 +54,6 @@ print(res, digits=3)
 ### mixed-effects meta-regression model with scq and ethnicity as predictors/covariates
 res <- rma(yi, vi, mods = ~ scq + ethnicity, data=dat)
 print(res, digits=3)
-
 }
 }
 \keyword{datasets}

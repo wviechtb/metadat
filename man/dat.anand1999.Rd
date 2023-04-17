@@ -6,7 +6,8 @@
 \usage{
 dat.anand1999
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab author(s) or trial name \cr
 \bold{year}      \tab \code{numeric}   \tab publication year \cr
@@ -39,7 +40,6 @@ dat <- dat.anand1999
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -62,7 +62,6 @@ rma.mh(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat,
 ### Low-Intensity OA and Aspirin vs Aspirin
 rma.mh(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat,
        subset=(intensity=="low" & asp.t==1 & asp.c==1), digits=2)
-
 }
 }
 \keyword{datasets}

@@ -6,7 +6,8 @@
 \usage{
 dat.berkey1998
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial}      \tab \code{numeric}    \tab trial number \cr
 \bold{author}     \tab \code{character}  \tab study author(s) \cr
@@ -38,7 +39,6 @@ dat <- dat.berkey1998
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -56,7 +56,6 @@ anova(res, X=c(1,-1))
 res <- rma.mv(yi, V, mods = ~ outcome + outcome:I(year - 1983) - 1,
               random = ~ outcome | trial, struct="UN", data=dat, method="ML")
 print(res, digits=3)
-
 }
 }
 \keyword{datasets}

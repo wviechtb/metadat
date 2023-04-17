@@ -6,7 +6,8 @@
 \usage{
 dat.kearon1998
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}       \tab \code{numeric}   \tab study id \cr
 \bold{author}   \tab \code{character} \tab study author(s) \cr
@@ -38,7 +39,6 @@ dat <- dat.kearon1998
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 

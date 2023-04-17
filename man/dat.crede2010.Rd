@@ -6,7 +6,8 @@
 \usage{
 dat.crede2010
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{studyid}   \tab \code{numeric}   \tab study number \cr
 \bold{year}      \tab \code{numeric}   \tab publication year \cr
@@ -38,7 +39,6 @@ dat <- dat.crede2010
 head(dat, 18)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -89,7 +89,6 @@ predict(res, transf=transf.ztor, digits=2)
 res <- rma.mv(yi, vi, random = ~ 1 | studyid/sampleid, data=dat, subset=criterion=="gpa")
 res
 predict(res, transf=transf.ztor, digits=2)
-
 }
 }
 \keyword{datasets}

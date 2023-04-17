@@ -6,7 +6,8 @@
 \usage{
 dat.curtis1998
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}       \tab \code{numeric}   \tab observation number \cr
 \bold{paper}    \tab \code{numeric}   \tab paper number \cr
@@ -58,7 +59,6 @@ dat <- dat.curtis1998
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -81,7 +81,6 @@ predict(res, transf=exp, digits=2)
 ### meta-analysis for plants grown under low light conditions
 res <- rma(yi, vi, method="DL", data=dat, subset=(xtrt=="LIGHT" & level=="LOW"))
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

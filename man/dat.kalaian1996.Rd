@@ -6,7 +6,8 @@
 \usage{
 dat.kalaian1996
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}          \tab \code{numeric}   \tab row (effect) id \cr
 \bold{study}       \tab \code{character} \tab study identifier \cr
@@ -40,7 +41,6 @@ dat <- dat.kalaian1996
 head(dat, 12)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -88,7 +88,6 @@ res <- rma.mv(yi, V, mods = ~ outcome + outcome:loghrs - 1,
               random = ~ outcome | study, struct="UN", tau2=c(NA,0),
               data=dat, digits=3)
 res
-
 }
 }
 \keyword{datasets}

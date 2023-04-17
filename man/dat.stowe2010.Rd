@@ -41,7 +41,6 @@ The data frame contains the following columns:
 dat.stowe2010[18:20, ]
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -93,7 +92,6 @@ netrank(ran)
 
 ### League table showing network and direct estimates
 netleague(net, seq = netrank(net), ci = FALSE)
-
 }
 }
 \seealso{

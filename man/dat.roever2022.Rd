@@ -60,12 +60,10 @@ The data frame contains the following columns:
    Christian Roever, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
-# load data
-data("dat.roever2022")
-
 # show (some) data
 head(dat.roever2022, n=10)
 
+\dontrun{
 # illustrate data
 plot(NA, xlim=range(dat.roever2022$dose), ylim=0:1,
      xlab="dose (mg / m²)", ylab="proportion",
@@ -79,7 +77,7 @@ for (i in 1:length(studylab)) {
         col=colvec[i], type="b")
 }
 legend("topleft", studylab, col=colvec, pch=15)
-
+}
 }
 \keyword{datasets}
 \concept{medicine}

@@ -43,7 +43,6 @@ The data frame contains the following columns:
 head(dat.franchini2012, 3)
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -70,7 +69,6 @@ net
 netgraph(net, points = TRUE, cex.points = 3, cex = 1.5,
   plastic = TRUE, thickness = "se.fixed",
   iterate = TRUE, start = "eigen")
-
 }
 }
 \keyword{datasets}

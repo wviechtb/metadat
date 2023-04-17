@@ -6,7 +6,8 @@
 \usage{
 dat.gibson2002
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}   \tab \code{character} \tab first author of study \cr
 \bold{year}     \tab \code{numeric}   \tab publication year \cr
@@ -49,7 +50,6 @@ dat <- dat.gibson2002
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -90,7 +90,6 @@ print(res, digits=2)
 res <- rma(yi, vi, mods = ~ measure, data=dat)
 print(res, digits=2)
 predict(res, newmods=1, digits=2)
-
 }
 }
 \keyword{datasets}

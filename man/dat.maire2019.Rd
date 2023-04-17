@@ -6,7 +6,8 @@
 \usage{
 dat.maire2019
 }
-\format{The object is a list containing a data frame called \code{dat} that contains the following columns and distance matrix called \code{dmat}:
+\format{
+The object is a list containing a data frame called \code{dat} that contains the following columns and distance matrix called \code{dmat}:
 \tabular{lll}{
 \bold{site}         \tab \code{character} \tab study site \cr
 \bold{station}      \tab \code{character} \tab sampling station at site \cr
@@ -46,7 +47,6 @@ dmat <- dat.maire2019$dmat
 dmat[1:5,1:5]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -77,7 +77,6 @@ sqrt(3) * res2$rho
 ### note: it was necessary to adjust the starting value for rho in models
 ### res2 and res3 so that the optimizer does not get stuck in a local maximum
 profile(res2, rho=1, xlim=c(0,200), steps=100)
-
 }
 }
 \keyword{datasets}

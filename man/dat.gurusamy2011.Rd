@@ -44,7 +44,6 @@ subset(dat.gurusamy2011, study == "Williamson 1999")
 subset(dat.gurusamy2011, study == "Baudo 1992")
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -96,7 +95,6 @@ netleague(net.MH)
 ### Assess inconsistency
 print(netsplit(net.MH), show = "both", ci = TRUE, overall = FALSE,
   nchar.trts = 6)
-
 }
 }
 \seealso{

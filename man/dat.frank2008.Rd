@@ -6,7 +6,8 @@
 \usage{
 dat.frank2008
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{character} \tab study identifier \cr
 \bold{bc.ins.ins} \tab \code{numeric}   \tab number of cases who have a homozygous insertion polymorphism \cr
@@ -38,7 +39,6 @@ dat <- dat.frank2008
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -84,7 +84,6 @@ predict(res, transf=exp, digits=2)
 forest(res, atransf=exp, header=TRUE, xlim=c(-1.5,1.5), at=log(c(0.5,5/7,1,7/5,2)))
 segments(log(5/7), -2, log(5/7), res$k+1, lty="dotted")
 segments(log(7/5), -2, log(7/5), res$k+1, lty="dotted")
-
 }
 }
 \keyword{datasets}

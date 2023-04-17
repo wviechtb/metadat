@@ -6,7 +6,8 @@
 \usage{
 dat.damico2009
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}   \tab \code{character} \tab first author \cr
 \bold{year}    \tab \code{numeric}   \tab publication year \cr
@@ -33,7 +34,6 @@ dat <- dat.damico2009
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -47,7 +47,6 @@ dat <- escalc(measure="OR", ai=xt, n1i=nt, ci=xc, n2i=nc, data=dat)
 res <- rma(yi, vi, data=dat, method="DL")
 res
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

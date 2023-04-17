@@ -6,7 +6,8 @@
 \usage{
 dat.graves2010
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}   \tab \code{character} \tab author/study name and publication year \cr
 \bold{ai}      \tab \code{numeric}   \tab number of cholera cases in the vaccinated group \cr
@@ -30,13 +31,11 @@ dat <- dat.graves2010
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
 ### analysis using the Mantel-Haenszel method
 rma.mh(measure="RR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, digits=2)
-
 }
 }
 \keyword{datasets}

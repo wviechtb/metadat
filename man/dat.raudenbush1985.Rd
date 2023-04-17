@@ -6,7 +6,8 @@
 \usage{
 dat.raudenbush1985
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr
 \bold{author}     \tab \code{character}  \tab study author(s) \cr
@@ -43,7 +44,6 @@ dat <- dat.raudenbush1985
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -57,7 +57,6 @@ dat$weeks.c <- ifelse(dat$weeks > 3, 3, dat$weeks)
 ### mixed-effects model with weeks.c variable as moderator
 res <- rma(yi, vi, mods = ~ weeks.c, data = dat, digits = 3)
 res
-
 }
 }
 \keyword{datasets}

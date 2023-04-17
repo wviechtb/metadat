@@ -6,7 +6,8 @@
 \usage{
 dat.mccurdy2020
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{article}          \tab \code{numeric}   \tab article identifier \cr
 \bold{experiment}       \tab \code{character} \tab experiment (within article) identifier \cr
@@ -62,7 +63,6 @@ dat <- dat.mccurdy2020
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -82,7 +82,6 @@ sav
 
 ### estimated average recall rate in read and generate conditions
 predict(sav, newmods = c(0,1), digits=3)
-
 }
 }
 \keyword{datasets}

@@ -6,7 +6,8 @@
 \usage{
 dat.lim2014
 }
-\format{The object is a list containing data frames \code{m_o_size}, \code{m_o_fecundity}, \code{o_o_unadj}, and \code{o_o_adj} that contain the following columns and the corresponding phylogenetic trees called \code{m_o_size_tree}, \code{m_o_fecundity_tree}, \code{o_o_unadj_tree}, and \code{o_o_adj_tree}:
+\format{
+The object is a list containing data frames \code{m_o_size}, \code{m_o_fecundity}, \code{o_o_unadj}, and \code{o_o_adj} that contain the following columns and the corresponding phylogenetic trees called \code{m_o_size_tree}, \code{m_o_fecundity_tree}, \code{o_o_unadj_tree}, and \code{o_o_adj_tree}:
 \tabular{lll}{
 \bold{article}     \tab \code{numeric}   \tab article id \cr
 \bold{author}      \tab \code{character} \tab study author(s) \cr
@@ -48,7 +49,6 @@ dat <- dat.lim2014$o_o_unadj
 dat[1:14, -c(2:3)]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -78,7 +78,6 @@ res <- rma.mv(yi, vi,
    random = list(~ 1 | article, ~ 1 | esid, ~ 1 | species, ~ 1 | species.phy),
    R=list(species.phy=A), data=dat)
 res
-
 }
 }
 \keyword{datasets}

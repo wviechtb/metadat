@@ -38,7 +38,6 @@ The data frame contains the following columns:
 head(dat.linde2016, 5)
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -73,7 +72,6 @@ forest(net, xlim = c(0.2, 50))
 nc <- netcomb(net, inactive = "placebo")
 nc
 forest(nc, xlim = c(0.2, 50))
-
 }
 }
 \seealso{

@@ -6,7 +6,8 @@
 \usage{
 dat.pignon2000
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}         \tab \code{numeric}    \tab study id number \cr
 \bold{trial}      \tab \code{character}  \tab trial abbreviation \cr
@@ -32,7 +33,6 @@ dat <- dat.pignon2000
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -60,7 +60,6 @@ predict(res, transf=exp)
 res <- rma(yi, vi, data=dat, method="EE", subset=grp==3, digits=2)
 res
 predict(res, transf=exp)
-
 }
 }
 \keyword{datasets}

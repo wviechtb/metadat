@@ -6,7 +6,8 @@
 \usage{
 dat.normand1999
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study number \cr
 \bold{source}   \tab \code{character} \tab source of data \cr
@@ -33,7 +34,6 @@ dat <- dat.normand1999
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -61,7 +61,6 @@ dat
 res <- rma(yi, vi, data=dat)
 res
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

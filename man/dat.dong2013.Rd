@@ -36,7 +36,6 @@ The data frame contains the following columns:
 head(dat.dong2013)
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -76,7 +75,6 @@ netleague(net)
 ### Assess inconsistency
 print(netsplit(net), show = "both", ci = TRUE, overall = FALSE,
   nchar.trts = 6)
-
 }
 }
 \seealso{

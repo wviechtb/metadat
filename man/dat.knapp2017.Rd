@@ -6,7 +6,8 @@
 \usage{
 dat.knapp2017
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}     \tab \code{character} \tab study author(s) \cr
 \bold{year}       \tab \code{numeric}   \tab publication year \cr
@@ -48,7 +49,6 @@ dat <- dat.knapp2017
 dat[-c(1:2)]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -117,7 +117,6 @@ sav
 
 ### draw bubble plot
 regplot(sav, xlab="Task Difficulty", ylab="Standardized Mean Difference", las=1, digits=1, bty="l")
-
 }
 }
 \keyword{datasets}

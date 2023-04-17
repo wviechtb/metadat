@@ -41,7 +41,6 @@ dat <- dat.white2020
 head(dat, 10)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -51,7 +50,6 @@ dat <- escalc(measure="ZCOR", ri=r, ni=n, data=dat)
 ### fit multilevel meta-analytic model
 res <- rma.mv(yi, vi, random = list(~ 1 | study_id, ~ 1 | obs), data=dat)
 res
-
 }
 }
 \keyword{datasets}

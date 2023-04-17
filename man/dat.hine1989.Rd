@@ -6,7 +6,8 @@
 \usage{
 dat.hine1989
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}  \tab \code{numeric}   \tab study number \cr
 \bold{source} \tab \code{character} \tab source of data \cr
@@ -36,7 +37,6 @@ dat <- dat.hine1989
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -47,7 +47,6 @@ dat
 ### meta-analysis of risk differences using a random-effects model
 res <- rma(yi, vi, data=dat)
 res
-
 }
 }
 \keyword{datasets}

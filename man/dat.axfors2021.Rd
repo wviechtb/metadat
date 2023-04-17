@@ -6,7 +6,8 @@
 \usage{
 dat.axfors2021
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}                \tab \code{character} \tab registry number \cr
 \bold{acronym}           \tab \code{character} \tab shortened registry number \cr
@@ -41,7 +42,6 @@ dat <- dat.axfors2021
 dat
 
 \dontrun{
-
 # load metafor package
 library(metafor)
 
@@ -56,7 +56,6 @@ print(res_hcq, digits=2)
 # meta-analysis Chloroquine
 res_cq <- rma(yi, vi, subset=(hcq_cq=="cq"), slab = id, data=dat)
 print(res_cq, digits=2)
-
 }
 }
 \keyword{datasets}

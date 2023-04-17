@@ -128,7 +128,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 5     Cowan (1980)    1980      AU 1960 1971    99 532302</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 6   Danieli (1980)    1980      IT 1952 1972   105 371698</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
 <span class="r-in"><span><span class="co"># compute logarithmic proportions and associated standard errors</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">logp</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"PLN"</span>,</span></span>
@@ -161,9 +160,8 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co"># illustrate in a forest plot</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">rma01</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">rma01</span>, header<span class="op">=</span><span class="cn">TRUE</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">12</span>,<span class="op">-</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.crisafulli2020-1.png" alt="" width="864" height="768"></span>
-<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>

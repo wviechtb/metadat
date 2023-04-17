@@ -2,7 +2,7 @@
 \docType{data}
 \alias{dat.dumouchel1994}
 \title{Nitrogen dioxide data set}
-\description{Nine studies investigating the effect of NO2 exposure on repiratory illness in children.}
+\description{Nine studies investigating the effect of NO2 exposure on respiratory illness in children.}
 \usage{
 dat.dumouchel1994
 }
@@ -15,59 +15,40 @@ The data frame contains the following columns:
 \bold{gender} \tab \code{factor}    \tab adjustment for gender (y/n) \cr
 \bold{or}     \tab \code{numeric}   \tab odds ratio for childhood respiratory illness \cr
 \bold{lower}  \tab \code{numeric}   \tab lower bound of 95 percent CI \cr
-\bold{upper}  \tab \code{numeric}   \tab upper bound of 95 percent CI \cr
+\bold{upper}  \tab \code{numeric}   \tab upper bound of 95 percent CI
 }
 }
 \details{
-  Hasselblad \emph{et al.} (1992) investigated the effects of nitrogen
-  dioxide (NO2) exposure on the occurrence of respiratory illness in
-  children. Their data were picked up by DuMouchel (1994) as an
-  illustrative example in his article on Bayesian meta-analysis, and
-  were also part of his \dQuote{\code{hblm}} S-Plus software package.
+   Hasselblad et al. (1992) investigated the effects of nitrogen dioxide (NO2) exposure on the occurrence of respiratory illness in children. Their data were picked up by DuMouchel (1994) as an illustrative example in his article on Bayesian meta-analysis, and were also part of his \dQuote{\code{hblm}} S-Plus software package.
 
-  The data set features three study-level covariables reflecting
-  characteristics of the study designs, namely, whether the quoted
-  estimate had been adjusted for parents' smoking status, whether NO2
-  exposure had been measured directly (or presence of a gas stove in the
-  household had been used as a proxy instead), and whether the quoted
-  effect had been adjusted for gender. Inclusion of the covariables
-  allows to account for the studies' design features, quantify their
-  effects, and adjust for these.
+   The data set features three study-level covariables reflecting characteristics of the study designs, namely, whether the quoted estimate had been adjusted for parents' smoking status, whether NO2 exposure had been measured directly (or presence of a gas stove in the household had been used as a proxy instead), and whether the quoted effect had been adjusted for gender. Inclusion of the covariables allows to account for the studies' design features, quantify their effects, and adjust for these.
+}
+\note{
+   The data used by DuMouchel (1994) do not actually match the data given in Hasselblad et al. (1992). The reason for this discrepancy is unclear.
 }
 \source{
-  DuMouchel, W. H. (1994).
-  Hierarchical Bayes linear models for meta-analysis.
-  Technical Report 27, National Institute of Statistical Sciences (NISS);
-  Research Triangle Park, NC, USA.
-  \url{https://www.niss.org/research/technical-reports/hierarchical-bayes-linear-models-meta-analysis-1994}
+   DuMouchel, W. H. (1994). Hierarchical Bayes linear models for meta-analysis. Technical Report 27, National Institute of Statistical Sciences (NISS); Research Triangle Park, NC, USA. \verb{https://www.niss.org/research/technical-reports/hierarchical-bayes-linear-models-meta-analysis-1994}
 }
 \references{
-  Hasselblad, V., Eddy, D. M., Kotchmar, D. J. (1992).
-  Synthesis of environmental evidence: nitrogen dioxide epidemiology studies.
-  \emph{Journal of the Air and Waste Management Association},
-  \bold{42}:5, 662--671.
-  \doi{10.1080/10473289.1992.10467018}
+   Hasselblad, V., Eddy, D. M., & Kotchmar, D. J. (1992). Synthesis of environmental evidence: Nitrogen dioxide epidemiology studies. \emph{Journal of the Air and Waste Management Association}, \bold{42}(5), 662--671. \verb{https://doi.org/10.1080/10473289.1992.10467018}
 }
 \author{
    Christian Roever, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
-# load data:
-data("dat.dumouchel1994")
-
 # show data:
 dat.dumouchel1994
 
+\dontrun{
 # derive effect sizes (log-ORs):
-library("metafor")
+library(metafor)
 no2 <- escalc(measure="OR", yi=log(or),
               sei=(log(upper)-log(lower))/(2*qnorm(0.975)),
               slab=study, data=dat.dumouchel1994)
 summary(no2)
 
-\dontrun{
 # compute overall meta-analysis:
-library("bayesmeta")
+library(bayesmeta)
 bm01 <- bayesmeta(no2, tau.prior="DuMouchel")
 
 # show results:
@@ -86,12 +67,12 @@ bm02 <- bmr(no2, X=X, tau.prior="DuMouchel")
 # show results:
 bm02
 forestplot(bm02)
-forestplot(bm02, xlab="log-OR",
-           X.mean=rbind("none"      = c(1,0,0,0),
-                        "smoke"     = c(1,1,0,0),
-                        "no2"       = c(1,0,1,0),
-                        "gender"    = c(1,0,0,1),
-                        "all three" = c(1,1,1,1)))
+#forestplot(bm02, xlab="log-OR",
+#           X.mean=rbind("none"      = c(1,0,0,0),
+#                        "smoke"     = c(1,1,0,0),
+#                        "no2"       = c(1,0,1,0),
+#                        "gender"    = c(1,0,0,1),
+#                        "all three" = c(1,1,1,1)))
 traceplot(bm02)
 }
 }

@@ -6,7 +6,8 @@
 \usage{
 dat.konstantopoulos2011
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{district} \tab \code{numeric}   \tab district id number \cr
 \bold{school}   \tab \code{numeric}   \tab school id number (within district) \cr
@@ -38,7 +39,6 @@ dat <- dat.konstantopoulos2011
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -66,7 +66,6 @@ round(sum(res.ml$sigma2), 3)
 
 ### rho from multivariate model = intraclass correlation coefficient based on the multilevel model
 round(res.ml$sigma2[1] / sum(res.ml$sigma2), 3)
-
 }
 }
 \keyword{datasets}

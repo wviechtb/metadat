@@ -6,7 +6,8 @@
 \usage{
 dat.senn2013
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab (first) author and year of study \cr
 \bold{ni}        \tab \code{numeric}   \tab sample size of the study arm \cr
@@ -38,7 +39,6 @@ dat <- dat.senn2013
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -189,7 +189,6 @@ cbind(pscore=round(sort(apply(tab, 1, mean, na.rm=TRUE), decreasing=TRUE), 3))
 # estimator for the amount of heterogeneity by default
 
 ############################################################################
-
 }
 }
 \keyword{datasets}

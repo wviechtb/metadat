@@ -6,7 +6,8 @@
 \usage{
 dat.dagostino1998
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study id \cr
 \bold{cold}     \tab \code{character} \tab natural or induced cold study \cr
@@ -48,7 +49,6 @@ dat <- dat.dagostino1998
 head(dat, 16)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -84,7 +84,6 @@ res
 
 ### test if there is a difference in effects at day 1 and day 2
 anova(res, X=c(1,-1))
-
 }
 }
 \keyword{datasets}

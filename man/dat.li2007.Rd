@@ -6,7 +6,8 @@
 \usage{
 dat.li2007
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}    \tab \code{numeric}   \tab trial id number \cr
 \bold{study} \tab \code{character} \tab first author or trial name \cr
@@ -35,7 +36,6 @@ dat <- dat.li2007
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -51,7 +51,6 @@ predict(res, transf=exp, digits=2)
 
 ### contour-enhanced funnel plot centered at 0
 funnel(res, refline=0, level=c(90, 95, 99), shade=c("white", "gray", "darkgray"))
-
 }
 }
 \keyword{datasets}

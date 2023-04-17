@@ -6,7 +6,8 @@
 \usage{
 dat.cohen1981
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab study author(s) and year \cr
 \bold{sample}    \tab \code{character} \tab course type \cr
@@ -35,7 +36,6 @@ dat <- dat.cohen1981
 dat[c(1,4,5)]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -49,7 +49,6 @@ res
 
 ### predicted average correlation with 95\% CI
 predict(res, transf=transf.ztor)
-
 }
 }
 \keyword{datasets}

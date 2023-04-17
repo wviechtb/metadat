@@ -6,7 +6,8 @@
 \usage{
 dat.hahn2001
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study} \tab \code{character} \tab trial name and year \cr
 \bold{ai}    \tab \code{numeric}   \tab number of children requiring unscheduled intravenous infusion in the reduced rehydration solution group \cr
@@ -30,7 +31,6 @@ dat <- dat.hahn2001
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -40,9 +40,8 @@ res
 
 ### forest plot (also show studies that were excluded from the analysis)
 options(na.action="na.pass")
-forest(res, atransf=exp, at=log(c(.01, .1, 1, 10, 100)), header=TRUE)
+forest(res, atransf=exp, xlim=c(-11,9), at=log(c(.01, .1, 1, 10, 100)), header=TRUE)
 options(na.action="na.omit")
-
 }
 }
 \keyword{datasets}

@@ -6,7 +6,8 @@
 \usage{
 dat.mcdaniel1994
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}    \tab \code{numeric}   \tab study number \cr
 \bold{ni}       \tab \code{numeric}   \tab sample size of the study \cr
@@ -39,7 +40,6 @@ dat <- dat.mcdaniel1994
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -82,7 +82,6 @@ table(dat$type, dat$struct, useNA="always")
 ### meta-analysis of raw correlations using a random-effects model
 res <- rma(measure="COR", ri=ri, ni=ni, data=dat.mcdaniel1994)
 res
-
 }
 }
 \keyword{datasets}

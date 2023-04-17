@@ -6,7 +6,8 @@
 \usage{
 dat.collins1985a
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}    \tab \code{numeric}   \tab study number \cr
 \bold{trial} \tab \code{character} \tab first author of trial \cr
@@ -42,7 +43,6 @@ dat <- dat.collins1985a
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -73,7 +73,6 @@ print(res, digits=2)
 ### meta-analysis of log ORs using Peto's method (outcome: death)
 res <- rma.peto(ai=d.xti, n1i=nti, ci=d.xci, n2i=nci, data=dat)
 print(res, digits=2)
-
 }
 }
 \keyword{datasets}

@@ -6,7 +6,8 @@
 \usage{
 dat.moura2021
 }
-\format{The object is a list containing a data frame called \code{dat} that contains the following columns and a phylogenetic tree called \code{tree}:
+\format{
+The object is a list containing a data frame called \code{dat} that contains the following columns and a phylogenetic tree called \code{tree}:
 \tabular{lll}{
 \bold{study.id}          \tab \code{character} \tab study id \cr
 \bold{effect.size.id}    \tab \code{numeric}   \tab effect size id \cr
@@ -47,7 +48,6 @@ dat <- dat.moura2021$dat
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -85,7 +85,6 @@ res
 ### estimated average correlation without pooling, when pooling spatially,
 ### when pooling temporally, and when pooling spatially and temporally
 predict(res, newmods = rbind(c(0,0,0),c(1,0,0),c(0,1,0),c(1,1,1)), transf=transf.ztor, digits=2)
-
 }
 }
 \keyword{datasets}

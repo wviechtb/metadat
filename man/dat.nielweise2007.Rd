@@ -6,7 +6,8 @@
 \usage{
 dat.nielweise2007
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}  \tab \code{numeric}   \tab study number \cr
 \bold{author} \tab \code{character} \tab (first) author \cr
@@ -37,7 +38,6 @@ dat <- dat.nielweise2007
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -50,7 +50,6 @@ predict(res, transf=exp, digits=2)
 res <- rma.glmm(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, model="CM.EL")
 print(res, digits=3)
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

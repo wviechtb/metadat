@@ -6,7 +6,8 @@
 \usage{
 dat.hannum2020
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{authorName}           \tab \code{character} \tab (first) author of study \cr
 \bold{DOI}                  \tab \code{character} \tab article DOI number \cr
@@ -38,7 +39,6 @@ dat <- dat.hannum2020
 dat
 
 \dontrun{
-   
 # load metafor package
 library(metafor)
 
@@ -61,7 +61,6 @@ print(res_objective, digits=2)
 # random-effects model subjective
 res_subjective <- rma(yi, vi, data=dat_subjective)
 print(res_subjective, digits=2)
-
 }
 }
 \keyword{datasets}

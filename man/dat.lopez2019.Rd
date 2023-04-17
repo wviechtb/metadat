@@ -6,7 +6,8 @@
 \usage{
 dat.lopez2019
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{character} \tab (first) author and year of study \cr
 \bold{treatment} \tab \code{character} \tab treatment provided (see \sQuote{Details}) \cr
@@ -63,7 +64,6 @@ dat <- dat.lopez2019
 dat[1:10,1:6]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -119,7 +119,6 @@ res <- rma.mv(yi, V, data=dat,
          random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2,
          control=list(optimizer="BFGS"))
 res
-
 }
 }
 \keyword{datasets}

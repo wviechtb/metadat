@@ -6,7 +6,8 @@
 \usage{
 dat.bonett2010
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr
 \bold{source}     \tab \code{character}  \tab source of data \cr
@@ -36,7 +37,6 @@ dat <- dat.bonett2010
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -57,13 +57,13 @@ res
 predict(res, transf=transf.iabt)
 
 ### forest plot
-forest(res, slab=source, header=TRUE, atransf=transf.iabt, refline=coef(res))
+forest(res, slab=source, header=TRUE, xlim=c(0,4.5),
+       atransf=transf.iabt, refline=coef(res))
 
 ### examine whether female/mixed samples yield different alphas (with raw alphas)
 res <- rma(measure="ARAW", ai=ai, mi=mi, ni=ni, mods = ~ caregivers, data=dat)
 res
 predict(res, newmods=c(0,1), digits=2)
-
 }
 }
 \keyword{datasets}

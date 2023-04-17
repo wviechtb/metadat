@@ -6,7 +6,8 @@
 \usage{
 dat.molloy2014
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{authors}   \tab \code{character} \tab study authors \cr
 \bold{year}      \tab \code{numeric}   \tab publication year \cr
@@ -40,7 +41,6 @@ dat <- dat.molloy2014
 dat[-c(5:6)]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -62,7 +62,6 @@ forest(res, addpred=TRUE, xlim=c(-1.6,1.6), atransf=transf.ztor,
 
 ### funnel plot
 funnel(res)
-
 }
 }
 \keyword{datasets}

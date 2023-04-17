@@ -6,7 +6,8 @@
 \usage{
 dat.hartmannboyce2018
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{numeric}   \tab study identifier \cr
 \bold{x.nrt}     \tab \code{numeric}   \tab number of participants in the NRT group who were abstinent at the follow-up \cr
@@ -31,7 +32,6 @@ dat <- dat.hartmannboyce2018
 head(dat, 10)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -46,7 +46,6 @@ lapply(split(dat, dat$treatment), function(x)
 ### all combined
 rma.mh(measure="RR", ai=x.nrt,  n1i=n.nrt,
                      ci=x.ctrl, n2i=n.ctrl, data=dat, digits=2)
-
 }
 }
 \keyword{datasets}

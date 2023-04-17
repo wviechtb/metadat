@@ -57,7 +57,6 @@ The data frame contains the following columns:
 head(dat.linde2015, 3)
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -106,7 +105,6 @@ nr2
 outcomes <- c("Early response", "Early remission")
 po12 <- netposet(nr1, nr2, outcomes = outcomes)
 plot(po12)
-
 }
 }
 \seealso{

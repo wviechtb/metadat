@@ -6,7 +6,8 @@
 \usage{
 dat.landenberger2005
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}            \tab \code{character} \tab (first) author and year \cr
 \bold{pubtype}          \tab \code{character} \tab publication type (book chapter, journal article, report, or thesis) \cr
@@ -62,7 +63,6 @@ dat <- dat.landenberger2005
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -82,7 +82,6 @@ res
 
 ### predicted ORs for 1, 2, 5, or 10 sessions per week
 predict(res, newmods=c(1,2,5,10), transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

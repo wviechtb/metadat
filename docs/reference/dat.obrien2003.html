@@ -165,8 +165,6 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> 42    13        Baeten 2001  15  no  no yes   3   25.0   29.9 27.45  1594  17501</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 43    13        Baeten 2001  15  no  no yes   4   30.0     NA 30.10  1321   9778</span>
 <span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># \dontrun{</span></span></span>
-<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### load metafor package</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
@@ -319,15 +317,6 @@
 <span class="r-msg co"><span class="r-pr">#&gt;</span> The following objects are masked from ‘package:base’:</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span>     format.pval, units</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: survival</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: lattice</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: ggplot2</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Loading required package: SparseM</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘SparseM’</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:base’:</span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span>     backsolve</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> Attaching package: ‘rms’</span>
 <span class="r-msg co"><span class="r-pr">#&gt;</span> The following object is masked from ‘package:metafor’:</span>
@@ -365,7 +354,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### get knot positions</span></span></span>
-<span class="r-in"><span><span class="va">knots</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/attr.html" class="external-link">attr</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/rms/man/rms.trans.html" class="external-link">rcs</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/SparseM/man/SparseM.hb.html" class="external-link">model.matrix</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span>, <span class="fl">4</span><span class="op">)</span>, <span class="st">"parms"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">knots</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/attr.html" class="external-link">attr</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/pkg/rms/man/rms.trans.html" class="external-link">rcs</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/model.matrix.html" class="external-link">model.matrix</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span>, <span class="fl">4</span><span class="op">)</span>, <span class="st">"parms"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### computed predicted values based on the model</span></span></span>
 <span class="r-in"><span><span class="va">xs</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/seq.html" class="external-link">seq</a></span><span class="op">(</span><span class="op">-</span><span class="fl">10</span>, <span class="fl">10</span>, length<span class="op">=</span><span class="fl">1000</span><span class="op">)</span></span></span>
@@ -380,8 +369,6 @@
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>v<span class="op">=</span><span class="va">knots</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/points.html" class="external-link">points</a></span><span class="op">(</span><span class="va">tmp</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="dat.obrien2003-3.png" alt="" width="864" height="768"></span>
-<span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># }</span></span></span>
 </code></pre></div>
     </div>
   </div>

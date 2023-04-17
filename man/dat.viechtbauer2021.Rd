@@ -6,7 +6,8 @@
 \usage{
 dat.viechtbauer2021
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{trial}  \tab \code{numeric}   \tab trial number \cr
 \bold{nTi}    \tab \code{numeric}   \tab number of patients in the treatment group \cr
@@ -31,7 +32,6 @@ dat <- dat.viechtbauer2021
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -232,7 +232,6 @@ title("Covariance Ratios")
 rma(yi, vi, mods = ~ dose, data=dat, method="DL", subset=-3)
 rma(yi, vi, mods = ~ dose, data=dat, method="DL", subset=-6)
 rma(yi, vi, mods = ~ dose, data=dat, method="DL", subset=-c(3,6))
-
 }
 }
 \keyword{datasets}

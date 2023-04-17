@@ -48,7 +48,6 @@ dat <- dat.michael2013
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -74,7 +73,6 @@ print(res, digits=2)
 ### examine if Included_Critique is a potential moderator
 res <- rma(yi, vi, mods = ~ Included_Critique, data=dat)
 print(res, digits=2)
-
 }
 }
 \keyword{datasets}

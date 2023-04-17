@@ -6,7 +6,8 @@
 \usage{
 dat.bangertdrowns2004
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}       \tab \code{numeric}   \tab study number \cr
 \bold{author}   \tab \code{character} \tab study author(s) \cr
@@ -43,7 +44,6 @@ dat <- dat.bangertdrowns2004
 dat[1:10,-13]
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -58,7 +58,6 @@ res <- rma(yi, vi, mods = ~ length, data=dat)
 res
 res <- rma(yi, vi, mods = ~ info + pers + imag + meta, data=dat)
 res
-
 }
 }
 \keyword{datasets}

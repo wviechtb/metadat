@@ -6,7 +6,8 @@
 \usage{
 dat.assink2016
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}     \tab \code{numeric}   \tab study id number \cr
 \bold{esid}      \tab \code{numeric}   \tab effect size within study id number \cr
@@ -41,7 +42,6 @@ dat <- dat.assink2016
 head(dat, 9)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -87,7 +87,6 @@ res
 
 ### use cluster-robust inference methods
 robust(res, cluster=study, clubSandwich=TRUE)
-
 }
 }
 \keyword{datasets}

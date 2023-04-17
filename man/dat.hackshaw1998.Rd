@@ -6,7 +6,8 @@
 \usage{
 dat.hackshaw1998
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr
 \bold{author}     \tab \code{character}  \tab first author of study \cr
@@ -40,7 +41,6 @@ dat <- dat.hackshaw1998
 head(dat, 10)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -55,7 +55,6 @@ predict(res, transf=exp, digits=2)
 ### were back-calculated based on the reported odds ratios and CI bounds
 dat$yi <- log(dat$or)
 dat$vi <- ((log(dat$or.ub) - log(dat$or.lb)) / (2*qnorm(.975)))^2
-
 }
 }
 \keyword{datasets}

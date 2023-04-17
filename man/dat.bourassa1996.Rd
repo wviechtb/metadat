@@ -6,7 +6,8 @@
 \usage{
 dat.bourassa1996
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}        \tab \code{numeric}   \tab study number \cr
 \bold{sample}       \tab \code{numeric}   \tab sample number \cr
@@ -43,7 +44,6 @@ dat <- dat.bourassa1996
 head(dat, 10)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -55,7 +55,6 @@ head(dat, 10)
 res <- rma(yi, vi, data=dat, subset=sex=="combined")
 res
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

@@ -6,7 +6,8 @@
 \usage{
 dat.obrien2003
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study id \cr
 \bold{author}     \tab \code{character}  \tab (first) author of the study \cr
@@ -37,7 +38,6 @@ dat <- dat.obrien2003
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -111,7 +111,6 @@ tmp <- regplot(res, mod=2, pred=sav,
                label=TRUE, offset=0, labsize=0.6)
 abline(v=knots, lty="dotted")
 points(tmp)
-
 }
 }
 \keyword{datasets}

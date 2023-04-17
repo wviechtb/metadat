@@ -6,7 +6,8 @@
 \usage{
 dat.tannersmith2016
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{studyid}  \tab \code{numeric}   \tab study identifier \cr
 \bold{yi}       \tab \code{numeric}   \tab r-to-z transformed correlation coefficient \cr
@@ -39,7 +40,6 @@ dat <- dat.tannersmith2016
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -81,7 +81,6 @@ robust(res, cluster=studyid, clubSandwich=TRUE)
 res <- rma.mv(yi, V, mods = ~ aget1 * aget2 + sexmix,
               random = ~ 1 | studyid/esid, data=dat)
 robust(res, cluster=studyid, clubSandwich=TRUE)
-
 }
 }
 \keyword{datasets}

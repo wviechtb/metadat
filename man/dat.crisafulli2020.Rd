@@ -46,7 +46,7 @@ rma01 <- rma.uni(logp)
 rma01
 
 # illustrate in a forest plot
-forest(rma01)
+forest(rma01, header=TRUE, xlim=c(-12,-5))
 }
 }
 \keyword{datasets}

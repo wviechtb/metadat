@@ -6,7 +6,8 @@
 \usage{
 dat.riley2003
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}      \tab \code{numeric}    \tab study number \cr
 \bold{yi}         \tab \code{numeric}    \tab log hazard ratio of the outcome in those with amplified versus normal MYC-N protein levels \cr
@@ -39,7 +40,6 @@ dat <- dat.riley2003
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -52,7 +52,6 @@ predict(res, transf=exp, digits=2)
 res <- rma(yi, sei=sei, data=dat, subset=(outcome == "OS"), method="DL")
 res
 predict(res, transf=exp, digits=2)
-
 }
 }
 \keyword{datasets}

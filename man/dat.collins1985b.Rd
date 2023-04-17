@@ -6,7 +6,8 @@
 \usage{
 dat.collins1985b
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}      \tab \code{numeric}   \tab study number \cr
 \bold{author}  \tab \code{character} \tab study author(s) \cr
@@ -41,7 +42,6 @@ dat <- dat.collins1985b
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -59,7 +59,6 @@ rma.peto(n1i=pre.nti, n2i=pre.nci, ai=pre.xti, ci=pre.xci, data=dat, digits=2, s
 rma.peto(n1i=fup.nti, n2i=fup.nci, ai=ped.xti, ci=ped.xci, data=dat, digits=2)
 rma.peto(n1i=fup.nti, n2i=fup.nci, ai=stb.xti, ci=stb.xci, data=dat, digits=2)
 rma.peto(n1i=fup.nti, n2i=fup.nci, ai=ned.xti, ci=ned.xci, data=dat, digits=2)
-
 }
 }
 \keyword{datasets}

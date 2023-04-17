@@ -75,7 +75,6 @@ dat <- dat.lehmann2018
 head(dat)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -87,7 +86,6 @@ res_malep <- rma(yi, vi, data=red_romance_malep, test="knha")
 res_malep
 res_femalep <- rma(yi, vi, data=red_romance_femalep, test="knha")
 res_femalep
-
 }
 }
 \keyword{datasets}

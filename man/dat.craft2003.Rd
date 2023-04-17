@@ -6,7 +6,8 @@
 \usage{
 dat.craft2003
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study} \tab \code{numeric}   \tab study number \cr
 \bold{ni}    \tab \code{numeric}   \tab sample size \cr
@@ -36,7 +37,6 @@ dat <- dat.craft2003
 head(dat, 18)
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -60,7 +60,6 @@ V[dat$study == 17, dat$study == 17]
 ### multivariate random-effects model
 res <- rma.mv(yi, V, mods = ~ var1.var2 - 1, random = ~ var1.var2 | study, struct="UN", data=dat)
 res
-
 }
 }
 \keyword{datasets}

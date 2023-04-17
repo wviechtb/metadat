@@ -36,7 +36,6 @@ dat <- dat.aloe2013
 dat
 
 \dontrun{
-
 ### load metafor package
 suppressPackageStartupMessages(library(metafor))
 
@@ -71,7 +70,6 @@ dat
 ### random-effects model
 res <- rma(yi, vi, data=dat)
 res
-
 }
 }
 \keyword{datasets}

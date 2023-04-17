@@ -6,7 +6,8 @@
 \usage{
 dat.baskerville2012
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}    \tab \code{character} \tab study author(s) \cr
 \bold{year}      \tab \code{numeric}   \tab publication year \cr
@@ -43,7 +44,6 @@ dat <- dat.baskerville2012
 dat
 
 \dontrun{
-
 ### load metafor package
 library(metafor)
 
@@ -67,7 +67,6 @@ rma(smd, sei=se, mods = ~ duration, data=dat, method="DL")
 rma(smd, sei=se, mods = ~ tailor,   data=dat, method="DL")
 rma(smd, sei=se, mods = ~ pperf,    data=dat, method="DL")
 rma(smd, sei=se, mods = ~ I(meetings * hours), data=dat, method="DL")
-
 }
 }
 \keyword{datasets}

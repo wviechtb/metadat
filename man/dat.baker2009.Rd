@@ -33,7 +33,6 @@ The data frame contains the following columns:
 head(dat.baker2009)
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -69,7 +68,6 @@ cnet
 ### Compare results of NMA and additive CNMA
 nb <- netbind(net, cnet, name = c("Standard NMA", "Additive CNMA"))
 forest(nb)
-
 }
 }
 \seealso{

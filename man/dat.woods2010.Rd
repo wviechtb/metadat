@@ -29,7 +29,6 @@ The data frame contains the following columns:
 dat.woods2010
 
 \dontrun{
-
 ### Load netmeta package
 suppressPackageStartupMessages(library(netmeta))
 
@@ -54,7 +53,6 @@ net
 ### Show forest plot
 forest(net, ref = "Placebo", drop = TRUE,
   leftlabs = "Contrast to Placebo")
-
 }
 }
 \keyword{datasets}
