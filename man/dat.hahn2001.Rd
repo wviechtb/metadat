@@ -40,7 +40,7 @@ res
 
 ### forest plot (also show studies that were excluded from the analysis)
 options(na.action="na.pass")
-forest(res, atransf=exp, xlim=c(-11,9), at=log(c(.01, .1, 1, 10, 100)), header=TRUE)
+forest(res, atransf=exp, xlim=c(-11,9), at=log(c(0.01, 0.1, 1, 10, 100)), header=TRUE, top=2)
 options(na.action="na.omit")
 }
 }

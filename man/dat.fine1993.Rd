@@ -85,8 +85,8 @@ Vc <- V
 ### replace any (near) singular var-cov matrices with ridge corrected versions
 repl.Vi <- function(Vi) {
    res <- eigen(Vi)
-   if (any(res$values <= .08)) {
-      round(res$vectors \%*\% diag(res$values + .08) \%*\% t(res$vectors), 12)
+   if (any(res$values <= 0.08)) {
+      round(res$vectors \%*\% diag(res$values + 0.08) \%*\% t(res$vectors), 12)
    } else {
       Vi
    }
@@ -110,10 +110,10 @@ print(res, digits=3)
 
 ### profile the variance components
 par(mfrow=c(2,2))
-profile(res, tau2=1, xlim=c( 0,.2))
-profile(res, tau2=2, xlim=c( 0,.2))
-profile(res, tau2=3, xlim=c( 0,.2))
-profile(res, tau2=4, xlim=c(.1,.3))
+profile(res, tau2=1, xlim=c(  0, 0.2))
+profile(res, tau2=2, xlim=c(  0, 0.2))
+profile(res, tau2=3, xlim=c(  0, 0.2))
+profile(res, tau2=4, xlim=c(0.1, 0.3))
 
 ### profile the autocorrelation coefficient
 par(mfrow=c(1,1))

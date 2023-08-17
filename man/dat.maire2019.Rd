@@ -71,7 +71,7 @@ anova(res2, res3)
 ### profile likelihood plots for model res2
 profile(res2, cline=TRUE)
 
-### effective range (river-km for which the spatial correlation is >= .05)
+### effective range (river-km for which the spatial correlation is >= 0.05)
 sqrt(3) * res2$rho
 
 ### note: it was necessary to adjust the starting value for rho in models

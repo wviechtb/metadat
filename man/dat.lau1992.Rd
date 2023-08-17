@@ -40,9 +40,9 @@ res <- rma.mh(measure="OR", ai=ai, n1i=n1i, ci=ci, n2i=n2i, data=dat, slab=trial
 print(res, digits=2)
 
 ### forest plot
-forest(res, xlim=c(-10,9), atransf=exp, at=log(c(.01, 0.1, 1, 10, 100)),
-       header=TRUE, top=2, ilab=dat$year, ilab.xpos=-6)
-text(-6, 35, "Year", font=2)
+forest(res, xlim=c(-11,9), atransf=exp, at=log(c(0.01, 0.1, 1, 10, 100)),
+       header=TRUE, top=2, ilab=dat$year, ilab.xpos=-7)
+text(-7, 35, "Year", font=2)
 
 ### cumulative meta-analysis
 sav <- cumul(res)

@@ -110,7 +110,7 @@ res
 
 ### forest plot of the contrast estimates (treatments versus TAU)
 forest(coef(res), diag(vcov(res)), slab=sub(".", " ", names(coef(res)), fixed=TRUE),
-       xlim=c(-5,5), alim=c(-3,3), psize=1, header="Treatment",
+       xlim=c(-5,5), alim=c(-3,3), psize=1, header="Treatment", top=2,
        xlab="Difference in Standardized Mean Change (compared to TAU)")
 
 ### fit random inconsistency effects model (might have to switch optimizer to get convergence)

@@ -1,6 +1,6 @@
 Package: metadat
 Version: 1.3-0
-Date: 2023-04-17
+Date: 2023-08-17
 Title: Meta-Analysis Datasets
 Authors@R: c(
   person(given = "Thomas", family="White",

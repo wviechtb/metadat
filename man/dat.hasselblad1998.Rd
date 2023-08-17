@@ -85,12 +85,10 @@ predict(res, newmods=cbind(matrix(0, nrow=3, ncol=24), rbind(c(-1,1,0), c(-1,0,1
         intercept=FALSE, transf=exp, digits=2)
 
 ### forest plot of ORs of interventions versus no contact
-dev.new(width=7, height=4)
-par(mar=c(5,4,1,2))
 forest(c(0,res$beta[25:27]), sei=c(0,res$se[25:27]), psize=1, xlim=c(-3,4), digits=c(2,1), efac=2,
        slab=c("No Contact", "Self-Help", "Individual Counseling", "Group Counseling"),
        atransf=exp, at=log(c(.5, 1, 2, 4, 8)), xlab="Odds Ratio for Intervention vs. No Contact",
-       header=c("Intervention", "Odds Ratio [95\% CI]"))
+       header=c("Intervention", "Odds Ratio [95\% CI]"), top=2)
 
 ############################################################################
 

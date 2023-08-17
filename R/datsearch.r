@@ -71,8 +71,9 @@ In terms of fields/topics, the following terms have been used at least once:
 
 alternative medicine, attraction, cardiology, climate change, covid-19,
 criminology, dentistry, ecology, education, engineering, epidemiology,
-evolution, genetics, human factors, medicine, memory, obstetrics, oncology, persuasion,
-primary care, psychiatry, psychology, smoking, social work, sociology.
+evolution, genetics, human factors, medicine, memory, obstetrics, oncology,
+persuasion, primary care, psychiatry, psychology, smoking, social work,
+sociology.
 
 In terms of outcome measures, the following terms have been used at least once:
 

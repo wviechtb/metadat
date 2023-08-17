@@ -81,10 +81,10 @@ par(mar=c(5,4,4,2))
 
 ### number of standardized deleted residuals larger than +-1.96 in each model
 
-sum(abs(rstudent(res.CE)$z) >= qnorm(.975))
-sum(abs(rstudent(res.MR)$z) >= qnorm(.975))
-sum(abs(rstudent(res.RE)$z) >= qnorm(.975))
-sum(abs(rstudent(res.ME)$z) >= qnorm(.975))
+sum(abs(rstudent(res.CE)$z) >= qnorm(0.975))
+sum(abs(rstudent(res.MR)$z) >= qnorm(0.975))
+sum(abs(rstudent(res.RE)$z) >= qnorm(0.975))
+sum(abs(rstudent(res.ME)$z) >= qnorm(0.975))
 
 ### plot of the standardized deleted residuals for the RE and ME models
 

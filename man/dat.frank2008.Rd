@@ -81,7 +81,7 @@ res
 predict(res, transf=exp, digits=2)
 
 ### draw forest plot
-forest(res, atransf=exp, header=TRUE, xlim=c(-1.5,1.5), at=log(c(0.5,5/7,1,7/5,2)))
+forest(res, atransf=exp, header=TRUE, top=2, xlim=c(-1.4,1.4), at=log(c(0.5,5/7,1,7/5,2)))
 segments(log(5/7), -2, log(5/7), res$k+1, lty="dotted")
 segments(log(7/5), -2, log(7/5), res$k+1, lty="dotted")
 }

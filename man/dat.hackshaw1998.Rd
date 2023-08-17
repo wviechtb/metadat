@@ -52,9 +52,13 @@ res
 predict(res, transf=exp, digits=2)
 
 ### illustrate how the log odds ratios and corresponding sampling variances
-### were back-calculated based on the reported odds ratios and CI bounds
-dat$yi <- log(dat$or)
-dat$vi <- ((log(dat$or.ub) - log(dat$or.lb)) / (2*qnorm(.975)))^2
+### can be back-calculated based on the reported odds ratios and CI bounds
+dat$yi <- NULL
+dat$vi <- NULL
+dat <- as.data.frame(dat)
+head(dat, 10)
+dat <- conv.wald(out=or, ci.lb=or.lb, ci.ub=or.ub, data=dat, transf=log)
+head(dat, 10)
 }
 }
 \keyword{datasets}

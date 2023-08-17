@@ -158,7 +158,7 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### meta-analysis of log ORs using Peto's method (outcome: persistent or recurrent bleedings)</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.peto.html" class="external-link">rma.peto</a></span><span class="op">(</span>ai<span class="op">=</span><span class="va">b.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">b.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Tables with NAs omitted from model fitting.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>2 studies with NAs omitted from model fitting.</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -184,7 +184,7 @@
 <span class="r-in"><span><span class="co">### meta-analysis of log ORs using a conditional logistic regression model (FE model)</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.glmm.html" class="external-link">rma.glmm</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">b.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">b.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span>,</span></span>
 <span class="r-in"><span>                model<span class="op">=</span><span class="st">"CM.EL"</span>, method<span class="op">=</span><span class="st">"FE"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from model fitting.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>3 studies with NAs omitted from model fitting.</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -215,13 +215,13 @@
 <span class="r-in"><span><span class="co">### plot the likelihoods of the odds ratios</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/llplot.html" class="external-link">llplot</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">b.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">b.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span>,</span></span>
 <span class="r-in"><span>       lwd<span class="op">=</span><span class="fl">1</span>, refline<span class="op">=</span><span class="cn">NA</span>, xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">4</span>,<span class="fl">4</span><span class="op">)</span>, drop00<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from plotting.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>2 studies with NAs omitted from plotting.</span>
 <span class="r-plt img"><img src="dat.collins1985a-1.png" alt="" width="864" height="768"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### meta-analysis of log odds ratios using a conditional logistic regression model (RE model)</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.glmm.html" class="external-link">rma.glmm</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"OR"</span>, ai<span class="op">=</span><span class="va">b.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">b.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span>,</span></span>
 <span class="r-in"><span>                model<span class="op">=</span><span class="st">"CM.EL"</span>, method<span class="op">=</span><span class="st">"ML"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Studies with NAs omitted from model fitting.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>3 studies with NAs omitted from model fitting.</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -256,7 +256,7 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### meta-analysis of log ORs using Peto's method (outcome: need for surgery)</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.peto.html" class="external-link">rma.peto</a></span><span class="op">(</span>ai<span class="op">=</span><span class="va">o.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">o.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Tables with NAs omitted from model fitting.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>5 studies with NAs omitted from model fitting.</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -281,7 +281,7 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### meta-analysis of log ORs using Peto's method (outcome: death)</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.peto.html" class="external-link">rma.peto</a></span><span class="op">(</span>ai<span class="op">=</span><span class="va">d.xti</span>, n1i<span class="op">=</span><span class="va">nti</span>, ci<span class="op">=</span><span class="va">d.xci</span>, n2i<span class="op">=</span><span class="va">nci</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Tables with NAs omitted from model fitting.</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>3 studies with NAs omitted from model fitting.</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Some yi/vi values are NA.</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">res</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
