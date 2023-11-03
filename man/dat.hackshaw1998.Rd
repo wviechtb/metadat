@@ -55,7 +55,7 @@ predict(res, transf=exp, digits=2)
 ### can be back-calculated based on the reported odds ratios and CI bounds
 dat$yi <- NULL
 dat$vi <- NULL
-dat <- as.data.frame(dat)
+dat <- data.frame(dat)
 head(dat, 10)
 dat <- conv.wald(out=or, ci.lb=or.lb, ci.ub=or.ub, data=dat, transf=log)
 head(dat, 10)

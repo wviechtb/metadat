@@ -66,7 +66,7 @@ dat.long <- data.frame(study=rep(1:nrow(dat), each=4), time=1:4,
                        yi=c(t(dat[c("y1i","y2i","y3i","y4i")])),
                        vi=c(t(dat[c("v1i","v2i","v3i","v4i")])))
 
-### var-cov matrices of the sudies
+### var-cov matrices of the studies
 V <- lapply(split(dat, dat$study),
             function(x) matrix(c( x$v1i, x$v12i, x$v13i, x$v14i,
                                  x$v12i,  x$v2i, x$v23i, x$v24i,
