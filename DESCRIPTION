@@ -30,5 +30,5 @@ ByteCompile: TRUE
 LazyData: TRUE
 Encoding: UTF-8
 RdMacros: mathjaxr
-URL: https://github.com/wviechtb/metadat
+URL: https://github.com/wviechtb/metadat, https://wviechtb.github.io/metadat/
 BugReports: https://github.com/wviechtb/metadat/issues
