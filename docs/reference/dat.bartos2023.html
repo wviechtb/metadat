@@ -53,16 +53,10 @@
         </li>
         
         <li>
-  <a href="https://twitter.com/wviechtb" class="external-link">
-    <span class="fa fa-twitter"></span>
-     
-  </a>
+  <a href="https://scholar.social/@wviechtb" class="external-link">Mastodon</a>
 </li>
 <li>
-  <a href="https://github.com/wviechtb/metadat" class="external-link">
-    <span class="fa fa-github"></span>
-     
-  </a>
+  <a href="https://github.com/wviechtb/metadat" class="external-link">GitHub</a>
 </li>
         
         
@@ -613,10 +607,10 @@
 <span class="r-in"><span><span class="op">}</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># add the points</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/invisible.html" class="external-link">invisible</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/tapply.html" class="external-link">tapply</a></span><span class="op">(</span><span class="va">dat</span>, <span class="va">dat</span><span class="op">$</span><span class="va">person</span>, \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/graphics/points.html" class="external-link">points</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span>, <span class="va">x</span><span class="op">$</span><span class="va">yi</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span>, pch<span class="op">=</span><span class="fl">21</span>, bg<span class="op">=</span><span class="st">"gray80"</span>, cex<span class="op">=</span><span class="fl">1.5</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="co"># add the 95</span></span></span>
+<span class="r-in"><span><span class="co"># add the 95% PI ellipsis based on the model</span></span></span>
 <span class="r-in"><span><span class="va">xy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dmurdoch.github.io/ellipse/reference/ellipse.html" class="external-link">ellipse</a></span><span class="op">(</span><span class="va">res</span><span class="op">$</span><span class="va">G</span>, centre<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>, level<span class="op">=</span><span class="fl">0.95</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="va">xy</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>,<span class="va">xy</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span>, col<span class="op">=</span><span class="st">"gray30"</span>, lwd<span class="op">=</span><span class="fl">3</span>, lty<span class="op">=</span><span class="st">"dotted"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="co"># add the 95</span></span></span>
+<span class="r-in"><span><span class="co"># add the 95% CI ellipsis based on the model</span></span></span>
 <span class="r-in"><span><span class="va">xy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dmurdoch.github.io/ellipse/reference/ellipse.html" class="external-link">ellipse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/vcov.html" class="external-link">vcov</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>, centre<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>, level<span class="op">=</span><span class="fl">0.95</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/lines.html" class="external-link">lines</a></span><span class="op">(</span><span class="va">xy</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span>,<span class="va">xy</span><span class="op">[</span>,<span class="fl">2</span><span class="op">]</span>, col<span class="op">=</span><span class="st">"gray30"</span>, lwd<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="co"># add the point for the pooled effects</span></span></span>

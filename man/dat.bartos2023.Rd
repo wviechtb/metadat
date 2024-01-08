@@ -113,10 +113,10 @@ invisible(tapply(dat, dat$person, \(x) {
 }))
 # add the points
 invisible(tapply(dat, dat$person, \(x) points(x$yi[1], x$yi[2], pch=21, bg="gray80", cex=1.5)))
-# add the 95% PI ellipsis based on the model
+# add the 95\% PI ellipsis based on the model
 xy <- ellipse(res$G, centre=coef(res), level=0.95)
 lines(xy[,1],xy[,2], col="gray30", lwd=3, lty="dotted")
-# add the 95% CI ellipsis based on the model
+# add the 95\% CI ellipsis based on the model
 xy <- ellipse(vcov(res), centre=coef(res), level=0.95)
 lines(xy[,1],xy[,2], col="gray30", lwd=3)
 # add the point for the pooled effects
