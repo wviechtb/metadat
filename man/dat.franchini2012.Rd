@@ -35,7 +35,7 @@ The data frame contains the following columns:
    Franchini, A. J., Dias, S., Ades, A. E., Jansen, J. P., & Welton, N. J. (2012). Accounting for correlation in network meta-analysis with multi-arm trials. \emph{Research Synthesis Methods}, \bold{3}(2), 142--160. \verb{https://doi.org/10.1002/jrsm.1049}
 }
 \author{
-   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show results from first three studies; third study is a three-arm
@@ -44,10 +44,10 @@ head(dat.franchini2012, 3)
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library(netmeta))
+suppressPackageStartupMessages(library("netmeta"))
 
 ### Print mean differences with two digits
-settings.meta(digits = 2)
+oldset <- settings.meta(digits = 2)
 
 ### Transform data from wide arm-based format to contrast-based
 ### format. Argument 'sm' must not be provided as the mean difference
@@ -69,6 +69,9 @@ net
 netgraph(net, points = TRUE, cex.points = 3, cex = 1.5,
   plastic = TRUE, thickness = "se.fixed",
   iterate = TRUE, start = "eigen")
+
+### Use previous settings
+settings.meta(oldset)
 }
 }
 \keyword{datasets}

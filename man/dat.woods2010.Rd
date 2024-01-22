@@ -22,7 +22,7 @@ The data frame contains the following columns:
    Woods, B. S., Hawkins, N., & Scott, D. A. (2010). Network meta-analysis on the log-hazard scale, combining count and hazard ratio statistics accounting for multi-arm trials: A tutorial. \emph{BMC Medical Research Methodology}, \bold{10}, 54. \verb{https://doi.org/10.1186/1471-2288-10-54}
 }
 \author{
-   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show full dataset
@@ -30,10 +30,10 @@ dat.woods2010
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library(netmeta))
+suppressPackageStartupMessages(library("netmeta"))
 
 ### Print odds ratios and confidence limits with two digits
-settings.meta(digits = 2)
+oldset <- settings.meta(digits = 2)
 
 ### Change appearance of confidence intervals
 cilayout("(", "-")
@@ -53,6 +53,9 @@ net
 ### Show forest plot
 forest(net, ref = "Placebo", drop = TRUE,
   leftlabs = "Contrast to Placebo")
+
+### Use previous settings
+settings.meta(oldset)
 }
 }
 \keyword{datasets}

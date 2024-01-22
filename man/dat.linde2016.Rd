@@ -30,7 +30,7 @@ The data frame contains the following columns:
    Rücker, G., Petropoulou, M., & Schwarzer, G. (2020). Network meta-analysis of multicomponent interventions. \emph{Biometrical Journal}, \bold{62}(3), 808--821. \verb{https://doi.org/10.1002/bimj.201800167}
 }
 \author{
-   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show results of first three studies (first study has three treatment
@@ -39,10 +39,10 @@ head(dat.linde2016, 5)
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library(netmeta))
+suppressPackageStartupMessages(library("netmeta"))
 
 ### Print odds ratios and confidence limits with two digits
-settings.meta(digits = 2)
+oldset <- settings.meta(digits = 2)
 
 ### Define order of treatments in printouts and forest plots
 trts <- c("SSRI",
@@ -72,6 +72,9 @@ forest(net, xlim = c(0.2, 50))
 nc <- netcomb(net, inactive = "placebo")
 nc
 forest(nc, xlim = c(0.2, 50))
+
+### Use previous settings
+settings.meta(oldset)
 }
 }
 \seealso{
