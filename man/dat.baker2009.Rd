@@ -26,7 +26,7 @@ The data frame contains the following columns:
    Baker, W. L., Baker, E. L., & Coleman, C. I. (2009). Pharmacologic treatments for chronic obstructive pulmonary disease: A mixed-treatment comparison meta-analysis. \emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy}, \bold{29}(8), 891--905. \verb{https://doi.org/10.1592/phco.29.8.891}
 }
 \author{
-   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.deguido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first 6 rows of the dataset
