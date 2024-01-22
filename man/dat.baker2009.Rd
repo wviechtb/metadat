@@ -26,7 +26,7 @@ The data frame contains the following columns:
    Baker, W. L., Baker, E. L., & Coleman, C. I. (2009). Pharmacologic treatments for chronic obstructive pulmonary disease: A mixed-treatment comparison meta-analysis. \emph{Pharmacotherapy: The Journal of Human Pharmacology and Drug Therapy}, \bold{29}(8), 891--905. \verb{https://doi.org/10.1592/phco.29.8.891}
 }
 \author{
-   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.deguido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first 6 rows of the dataset
@@ -34,10 +34,10 @@ head(dat.baker2009)
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library(netmeta))
+suppressPackageStartupMessages(library("netmeta"))
 
 ### Print odds ratios and confidence limits with two digits
-settings.meta(digits = 2)
+oldset <- settings.meta(digits = 2)
 
 ### Transform data from long arm-based format to contrast-based
 ### format. Argument 'sm' has to be used for odds ratio as summary
@@ -68,6 +68,9 @@ cnet
 ### Compare results of NMA and additive CNMA
 nb <- netbind(net, cnet, name = c("Standard NMA", "Additive CNMA"))
 forest(nb)
+
+### Use previous settings
+settings.meta(oldset)
 }
 }
 \seealso{

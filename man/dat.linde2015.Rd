@@ -49,7 +49,7 @@ The data frame contains the following columns:
    Rücker, G., & Schwarzer, G. (2017). Resolve conflicting rankings of outcomes in network meta-analysis: Partial ordering of treatments. \emph{Research Synthesis Methods}, \bold{8}(4), 526--536. \verb{https://doi.org/10.1002/jrsm.1270}
 }
 \author{
-   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show results from first three studies (including three-arm study
@@ -58,10 +58,10 @@ head(dat.linde2015, 3)
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library(netmeta))
+suppressPackageStartupMessages(library("netmeta"))
 
 ### Print odds ratios and confidence limits with two digits
-settings.meta(digits = 2)
+oldset <- settings.meta(digits = 2)
 
 ### Change appearance of confidence intervals
 cilayout("(", "-")
@@ -105,6 +105,9 @@ nr2
 outcomes <- c("Early response", "Early remission")
 po12 <- netposet(nr1, nr2, outcomes = outcomes)
 plot(po12)
+
+### Use previous settings
+settings.meta(oldset)
 }
 }
 \seealso{
