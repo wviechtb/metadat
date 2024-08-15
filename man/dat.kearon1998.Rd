@@ -105,7 +105,7 @@ dat <- escalc(measure="PLO", xi=out1, mi=out2, data=dat, add=1/2, to="all",
 dat
 
 ### bivariate random-effects model for logit sensitivity and specificity
-res <- rma.mv(yi, vi, mods = ~ group - 1, random = ~ group | study, struct="UN", data=dat)
+res <- rma.mv(yi, vi, mods = ~ 0 + group, random = ~ group | study, struct="UN", data=dat)
 res
 
 ### estimated average sensitivity and specificity based on the model

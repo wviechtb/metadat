@@ -58,7 +58,7 @@ dat[dat$study == 17,]
 V[dat$study == 17, dat$study == 17]
 
 ### multivariate random-effects model
-res <- rma.mv(yi, V, mods = ~ var1.var2 - 1, random = ~ var1.var2 | study, struct="UN", data=dat)
+res <- rma.mv(yi, V, mods = ~ 0 + var1.var2, random = ~ var1.var2 | study, struct="UN", data=dat)
 res
 }
 }

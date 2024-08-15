@@ -80,7 +80,7 @@ res <- rma(yi, vi, data=dat, method="DL")
 res
 
 ### mixed-effects meta-regression model with stratification variable
-res <- rma(yi, vi, mods = ~ factor(group) - 1, data=dat, method="DL")
+res <- rma(yi, vi, mods = ~ 0 + factor(group), data=dat, method="DL")
 res
 
 ### predicted average risk ratio for each level of the stratification variable

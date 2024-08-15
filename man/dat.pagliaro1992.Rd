@@ -55,7 +55,7 @@ levels(dat$trt) <- paste0(" ", levels(dat$trt))
 
 ### network meta-analysis using an arm-based random-effects model with fixed study effects
 ### (by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons)
-res <- rma.mv(yi, vi, mods = ~ factor(study) + trt - 1, random = ~ trt | study, rho=1/2, data=dat)
+res <- rma.mv(yi, vi, mods = ~ 0 + factor(study) + trt, random = ~ trt | study, rho=1/2, data=dat)
 res
 
 ### average odds ratio comparing beta-blockers and sclerotherapy versus control, respectively

@@ -62,7 +62,7 @@ with(dat, interaction.plot(time, study, yi, type="b", pch=19, lty="solid", xaxt=
 axis(side=1, at=1:4, lab=c("1 (3 months)", "2 (6 months)", "3 (12 months)", "4 (12+ months)"))
 
 ### multivariate model with heteroscedastic AR(1) structure for the true effects
-res <- rma.mv(yi, V, mods = ~ factor(time) - 1, random = ~ time | study,
+res <- rma.mv(yi, V, mods = ~ 0 + factor(time), random = ~ time | study,
               struct = "HAR", data = dat)
 print(res, digits=2)
 }

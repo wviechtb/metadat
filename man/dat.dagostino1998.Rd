@@ -79,7 +79,7 @@ V <- vcalc(vi, cluster=study, obs=esid, rho=0.7, data=dat)
 ### fit a model for incremental change in runny nose severity at day 1 and at day 2, allowing for
 ### correlated sampling errors (no random effects added, since there does not appear to be any
 ### noteworthy heterogeneity in these data)
-res <- rma.mv(yi, V, mods = ~ outcome - 1, data=dat, subset=outcome \%in\% c("rnic1","rnic2"))
+res <- rma.mv(yi, V, mods = ~ 0 + outcome, data=dat, subset=outcome \%in\% c("rnic1","rnic2"))
 res
 
 ### test if there is a difference in effects at day 1 and day 2

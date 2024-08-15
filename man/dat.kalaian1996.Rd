@@ -66,7 +66,7 @@ abline(v=log(c(5,18)),  lty="dotted")
 V <- vcalc(vi, cluster=study, type=outcome, data=dat, rho=0.66)
 
 ### fit multivariate random-effects model
-res <- rma.mv(yi, V, mods = ~ outcome - 1,
+res <- rma.mv(yi, V, mods = ~ 0 + outcome,
               random = ~ outcome | study, struct="UN",
               data=dat, digits=3)
 res
@@ -78,13 +78,13 @@ anova(res, X=c(1,-1))
 dat$loghrs <- log(dat$hrs) - mean(log(dat$hrs), na.rm=TRUE)
 
 ### fit multivariate model with log(hrs) as moderator
-res <- rma.mv(yi, V, mods = ~ outcome + outcome:loghrs - 1,
+res <- rma.mv(yi, V, mods = ~ 0 + outcome + outcome:loghrs,
               random = ~ outcome | study, struct="UN",
               data=dat, digits=3)
 res
 
 ### fit model with tau2 = 0 for outcome verbal (which also constrains rho = 0)
-res <- rma.mv(yi, V, mods = ~ outcome + outcome:loghrs - 1,
+res <- rma.mv(yi, V, mods = ~ 0 + outcome + outcome:loghrs,
               random = ~ outcome | study, struct="UN", tau2=c(NA,0),
               data=dat, digits=3)
 res

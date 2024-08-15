@@ -104,7 +104,7 @@ dat <- contrmat(dat, grp1="treatment1", grp2="treatment2")
 ### by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons
 ### the treatment left out (TAU) becomes the reference level for the treatment comparisons
 res <- rma.mv(yi, V, data=dat,
-         mods = ~ No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT - 1,
+         mods = ~ 0 + No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT,
          random = ~ comp | study, rho=1/2)
 res
 
@@ -115,7 +115,7 @@ forest(coef(res), diag(vcov(res)), slab=sub(".", " ", names(coef(res)), fixed=TR
 
 ### fit random inconsistency effects model (might have to switch optimizer to get convergence)
 res <- rma.mv(yi, V, data=dat,
-         mods = ~ No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT - 1,
+         mods = ~ 0 + No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT,
          random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2,
          control=list(optimizer="BFGS"))
 res

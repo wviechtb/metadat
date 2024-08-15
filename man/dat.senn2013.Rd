@@ -70,7 +70,7 @@ dat$treatment <- relevel(factor(dat$treatment), ref="placebo")
 levels(dat$treatment) <- paste0(" ", levels(dat$treatment))
 
 ### network meta-analysis using an arm-based fixed-effects model with fixed study effects
-res.fe <- rma.mv(yi, vi, mods = ~ study + treatment - 1, data=dat, slab=paste0(study, treatment))
+res.fe <- rma.mv(yi, vi, mods = ~ 0 + study + treatment, data=dat, slab=paste0(study, treatment))
 res.fe
 
 ### test if treatment factor as a whole is significant
@@ -92,7 +92,7 @@ heatmap(w, Rowv=NA, Colv=NA, scale="none", margins=c(6,11), col=cols,
 
 ### network meta-analysis using an arm-based random-effects model with fixed study effects
 ### by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons
-res.re <- rma.mv(yi, vi, mods = ~ study + treatment - 1, random = ~ treatment | study, rho=1/2,
+res.re <- rma.mv(yi, vi, mods = ~ 0 + study + treatment, random = ~ treatment | study, rho=1/2,
                  data=dat, slab=paste0(study, treatment))
 res.re
 
@@ -145,8 +145,8 @@ dat
 ### network meta-analysis using a contrast-based random-effects model
 ### by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons
 ### the treatment left out (placebo) becomes the reference level for the treatment comparisons
-res <- rma.mv(yi, V, mods = ~ acarbose + benfluorex + metformin + miglitol + pioglitazone +
-                              rosiglitazone + sitagliptin + sulfonylurea + vildagliptin - 1,
+res <- rma.mv(yi, V, mods = ~ 0 + acarbose + benfluorex + metformin + miglitol + pioglitazone +
+                              rosiglitazone + sitagliptin + sulfonylurea + vildagliptin,
               random = ~ comp | study, rho=1/2, data=dat)
 res
 
@@ -164,8 +164,8 @@ sav[["slab"]] <- rownames(contr)
 sav
 
 ### fit random inconsistency effects model (see Law et al., 2016)
-inc <- rma.mv(yi, V, mods = ~ acarbose + benfluorex + metformin + miglitol + pioglitazone +
-                              rosiglitazone + sitagliptin + sulfonylurea + vildagliptin - 1,
+inc <- rma.mv(yi, V, mods = ~ 0 + acarbose + benfluorex + metformin + miglitol + pioglitazone +
+                              rosiglitazone + sitagliptin + sulfonylurea + vildagliptin,
               random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2, data=dat)
 inc
 

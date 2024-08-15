@@ -100,11 +100,11 @@ Vc[[17]] <- V[[17]]
 Vc <- bldiag(Vc)
 
 ### multivariate fixed-effects model
-res <- rma.mv(yi, Vc, mods = ~ factor(time) - 1, method="FE", data=dat.long)
+res <- rma.mv(yi, Vc, mods = ~ 0 + factor(time), method="FE", data=dat.long)
 print(res, digits=3)
 
 ### multivariate random-effects model with heteroscedastic AR(1) structure for the true effects
-res <- rma.mv(yi, Vc, mods = ~ factor(time) - 1, random = ~ time | study,
+res <- rma.mv(yi, Vc, mods = ~ 0 + factor(time), random = ~ time | study,
               struct="HAR", data=dat.long, control=list(optimizer="hjk"))
 print(res, digits=3)
 
