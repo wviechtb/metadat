@@ -34,7 +34,7 @@ The data frame contains the following columns:
    Stowe, R., Ives, N., Clarke, C. E., Deane, K., Hilten, V., Wheatley, K., Gray, R., Handley, K., & Furmston, A. (2010). Evaluation of the efficacy and safety of adjuvant treatment to levodopa therapy in Parkinson's disease patients with motor complications. \emph{Cochrane Database of Systematic Reviews}, \bold{7}, CD007166. \verb{https://doi.org/10.1002/14651858.CD007166.pub2}
 }
 \author{
-   Guido Schwarzer, \email{sc@imbi.uni-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show results from three studies (including three-arm study LARGO)
@@ -42,11 +42,11 @@ dat.stowe2010[18:20, ]
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library(netmeta))
+suppressPackageStartupMessages(library("netmeta"))
 
 ### Print mean differences with two digits and standard errors with 3
 ### digits
-settings.meta(digits = 2, digits.se = 3)
+oldset <- settings.meta(digits = 2, digits.se = 3)
 
 ### Transform data from wide arm-based format to contrast-based
 ### format. Argument 'sm' must not be provided as the mean difference
@@ -92,6 +92,9 @@ netrank(ran)
 
 ### League table showing network and direct estimates
 netleague(net, seq = netrank(net), ci = FALSE)
+
+### Use previous settings
+settings.meta(oldset)
 }
 }
 \seealso{
