@@ -89,7 +89,7 @@ meta-analysis, diagnostic accuracy studies, dose response models, generalized
 linear models, longitudinal models, Mantel-Haenszel method, meta-regression,
 model checks, multilevel models, multivariate models, network meta-analysis,
 outliers, Peto's method, phylogeny, publication bias, reliability
-generalization, single-arm studies, spatial correlation.")
+generalization, single-arm studies, spatial correlation, subgroup analysis.")
          cat("\n\n")
          pattern <- NULL
          next
