@@ -15,7 +15,7 @@
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]--><!-- Flatly Theme - Light  --><link id="css-light" rel="stylesheet" href="https://bootswatch.com/3/flatly/bootstrap.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"><!-- Darkly Theme - Dark --><link id="css-dark" rel="stylesheet" href="https://bootswatch.com/3/darkly/bootstrap.css" media="(prefers-color-scheme: dark)"><!-- preferably CSS --><link rel="stylesheet" href="../preferably.css"><link id="css-code-light" rel="stylesheet" href="../code-color-scheme-light.css" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"><link id="css-code-dark" rel="stylesheet" href="../code-color-scheme-dark.css" media="(prefers-color-scheme: dark)"><script src="../darkswitch.js"></script></head><body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-reference-topic">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -37,7 +37,7 @@
       <ul class="nav navbar-nav"><li>
   <a href="../index.html">
     <span class="fa fa-home fa-lg"></span>
-     
+
   </a>
 </li>
 <li>
@@ -51,33 +51,33 @@
             <span class="fas fa-adjust fa-lg"></span>
           </a>
         </li>
-        
+
         <li>
   <a href="https://scholar.social/@wviechtb" class="external-link">Mastodon</a>
 </li>
 <li>
   <a href="https://github.com/wviechtb/metadat" class="external-link">GitHub</a>
 </li>
-        
-        
+
+
 
 
       </ul><form class="navbar-form navbar-right hidden-xs hidden-sm" role="search">
         <div class="form-group">
           <input type="search" class="form-control" name="search-input" id="search-input" placeholder="Search..." aria-label="Search for..." autocomplete="off"></div>
       </form>
-      
+
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>Search Function for the Datasets</h1>
-    
+
     <div class="hidden name"><code>datsearch.Rd</code></div>
     </div>
 
@@ -91,19 +91,20 @@
 
     <div id="arguments">
     <h2>Arguments</h2>
-    <dl><dt>pattern</dt>
+    <p></p>
+<dl><dt id="arg-pattern">pattern<a class="anchor" aria-label="anchor" href="#arg-pattern"></a></dt>
 <dd><p>character string or vector of strings specifying the terms to search for within the datasets. Can also be left unspecified to start the function in an interactive mode.</p></dd>
 
-   <dt>concept</dt>
+   <dt id="arg-concept">concept<a class="anchor" aria-label="anchor" href="#arg-concept"></a></dt>
 <dd><p>logical indicating whether the search should be confined to the concept terms (<code>TRUE</code> by default) or whether a full-text search should be conducted.</p></dd>
 
-   <dt>matchall</dt>
+   <dt id="arg-matchall">matchall<a class="anchor" aria-label="anchor" href="#arg-matchall"></a></dt>
 <dd><p>logical indicating whether only the datasets matching all terms (if multiple are specified) are returned (<code>TRUE</code> by default) or whether datasets matching any one of the terms are returned.</p></dd>
 
-   <dt>fixed</dt>
+   <dt id="arg-fixed">fixed<a class="anchor" aria-label="anchor" href="#arg-fixed"></a></dt>
 <dd><p>logical indicating whether a term is a string to be matched as is (<code>TRUE</code> by default). If <code>FALSE</code>, a search term is a regular expression that <code><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></code> will search for. Only relevant when <code>concept=FALSE</code> (i.e., when doing a full-text search).</p></dd>
 
-   <dt>pkgdown</dt>
+   <dt id="arg-pkgdown">pkgdown<a class="anchor" aria-label="anchor" href="#arg-pkgdown"></a></dt>
 <dd><p>logical indicating whether the standard help file or the pkgdown docs (at <a href="https://wviechtb.github.io/metadat/">https://wviechtb.github.io/metadat/</a>) should be shown for a chosen dataset (<code>FALSE</code> by default).</p></dd>
 
 </dl></div>
@@ -118,7 +119,7 @@
 <p>Each dataset is tagged with one or multiple concept terms that refer to various aspects of a dataset, such as the field/topic of research, the outcome measure used for the analysis, the model(s) used for analyzing the data, and the methods/concepts that can be illustrated with the dataset.</p>
 <p></p><ul><li><p>In terms of ‘fields/topics’, the following terms have been used at least once: alternative medicine, attraction, cardiology, climate change, covid-19, criminology, dentistry, ecology, education, engineering, epidemiology, evolution, genetics, human factors, medicine, memory, obstetrics, oncology, persuasion, physics, primary care, psychiatry, psychology, smoking, social work, sociology.</p></li>
 <li><p>In terms of ‘outcome measures’, the following terms have been used at least once: correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates, raw mean differences, odds ratios, proportions, ratios of means, raw means, risk differences, risk ratios, (semi-)partial correlations, standardized mean changes, standardized mean differences.</p></li>
-<li><p>In terms of ‘models/methods/concepts’, the following terms have been used at least once: cluster-robust inference, component network meta-analysis, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation.</p></li>
+<li><p>In terms of ‘models/methods/concepts’, the following terms have been used at least once: cluster-robust inference, component network meta-analysis, cumulative meta-analysis, diagnostic accuracy studies, dose response models, generalized linear models, longitudinal models, Mantel-Haenszel method, meta-regression, model checks, multilevel models, multivariate models, network meta-analysis, outliers, Peto's method, phylogeny, publication bias, reliability generalization, single-arm studies, spatial correlation, subgroup analysis.</p></li>
 </ul></div>
     <div id="author">
     <h2>Author</h2>
@@ -163,17 +164,17 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
       </footer></div>
 
-  
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/docsearch.js/2.6.1/docsearch.min.js" integrity="sha256-GKvGqXDznoRYHCwKXGnuchvKSwmx9SRMrZOTh2g4Sb0=" crossorigin="anonymous"></script><script>
   docsearch({
     appId: 'B3DHC2OOU8',
-    
+
     apiKey: '8c74dd1e0cd05800bf9f222777e07625',
     indexName: 'wviechtb-metadat',
     inputSelector: 'input#search-input.form-control',

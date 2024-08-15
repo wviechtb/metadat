@@ -43,7 +43,7 @@ The data frame contains the following columns:
 
    Shiozawa, M., Sugano, N., Tsuchida, K., Morinaga, S., Akaike, M., & Sugimasa, Y. (2009). A phase I study of combination therapy with S-1 and irinotecan (CPT-11) in patients with advanced colorectal cancer. \emph{Journal of Cancer Research and Clinical Oncology}, \bold{135}(3), 365--370. \verb{https://doi.org/10.1007/s00432-008-0480-5}
 
-   Yoshioka, T., Kato, S., Gamoh, M., \emph{et al.} (2009). Phase I/II study of sequential therapy with irinotecan and S-1 for metastatic colorectal cancer. \emph{British Journal of Cancer}, \bold{101}, 1972-1977. \verb{https://doi.org/10.1038/sj.bjc.6605432}
+   Yoshioka, T., Kato, S., Gamoh, M., \emph{et al.} (2009). Phase I/II study of sequential therapy with irinotecan and S-1 for metastatic colorectal cancer. \emph{British Journal of Cancer}, \bold{101}, 1972--1977. \verb{https://doi.org/10.1038/sj.bjc.6605432}
 
    Komatsu, Y., Yuki, S., Fuse, N., \emph{et al.} (2010). Phase 1/2 clinical study of irinotecan and oral S-1 (IRIS) in patients with advanced gastric cancer. \emph{Advances in Therapy}, \bold{27}(7), 483--492. \verb{https://doi.org/10.1007/s12325-010-0037-2}
 

@@ -1,291 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://wviechtb.github.io/metadat/404.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/index.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.aloe2013.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.anand1999.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.assink2016.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.axfors2021.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bakdash2021.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.baker2009.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bangertdrowns2004.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bartos2023.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.baskerville2012.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bcg.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.begg1989.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.berkey1998.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.besson2016.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bonett2010.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bornmann2007.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.bourassa1996.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.cannon2006.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.cohen1981.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.colditz1994.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.collins1985a.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.collins1985b.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.craft2003.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.crede2010.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.crisafulli2020.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.curtis1998.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.dagostino1998.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.damico2009.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.debruin2009.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.dogliotti2014.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.dong2013.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.dorn2007.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.dumouchel1994.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.egger2001.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.fine1993.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.franchini2012.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.frank2008.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.gibson2002.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.graves2010.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.gurusamy2011.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hackshaw1998.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hahn2001.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hannum2020.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hart1999.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hartmannboyce2018.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hasselblad1998.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.hine1989.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.ishak2007.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.kalaian1996.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.kearon1998.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.knapp2017.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.konstantopoulos2011.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.landenberger2005.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.laopaiboon2015.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.lau1992.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.lee2004.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.lehmann2018.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.li2007.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.lim2014.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.linde2005.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.linde2015.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.linde2016.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.lopez2019.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.maire2019.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.mccurdy2020.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.mcdaniel1994.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.michael2013.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.molloy2014.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.moura2021.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.nakagawa2007.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.nielweise2007.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.nielweise2008.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.normand1999.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.obrien2003.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.pagliaro1992.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.pignon2000.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.pritz1997.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.raudenbush1985.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.riley2003.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.roever2022.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.senn2013.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.stowe2010.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.tannersmith2016.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.ursino2021.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.vanhowe1999.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.viechtbauer2021.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.white2020.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.woods2010.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/dat.yusuf1985.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/datsearch.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/metadat-package.html</loc>
-  </url>
-  <url>
-    <loc>https://wviechtb.github.io/metadat/reference/prep_dat.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://wviechtb.github.io/metadat/404.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/authors.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/index.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/news/index.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.aloe2013.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.anand1999.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.assink2016.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.axfors2021.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bakdash2021.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.baker2009.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bangertdrowns2004.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bartos2023.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.baskerville2012.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bassler2004.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bcg.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.begg1989.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.berkey1998.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.besson2016.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bonett2010.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bornmann2007.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.bourassa1996.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.cannon2006.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.cohen1981.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.colditz1994.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.collins1985a.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.collins1985b.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.craft2003.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.crede2010.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.crisafulli2020.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.curtin2002.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.curtis1998.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.dagostino1998.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.damico2009.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.debruin2009.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.dogliotti2014.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.dong2013.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.dorn2007.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.dumouchel1994.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.egger2001.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.fine1993.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.franchini2012.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.frank2008.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.furukawa2003.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.gibson2002.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.graves2010.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.gurusamy2011.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hackshaw1998.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hahn2001.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hannum2020.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hart1999.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hartmannboyce2018.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hasselblad1998.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.hine1989.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.ishak2007.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.kalaian1996.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.kearon1998.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.knapp2017.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.konstantopoulos2011.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.landenberger2005.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.laopaiboon2015.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.lau1992.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.lee2004.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.lehmann2018.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.li2007.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.lim2014.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.linde2005.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.linde2015.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.linde2016.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.lopez2019.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.maire2019.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.mccurdy2020.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.mcdaniel1994.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.michael2013.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.molloy2014.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.moura2021.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.nakagawa2007.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.nielweise2007.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.nielweise2008.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.normand1999.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.obrien2003.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.pagliaro1992.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.pignon2000.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.pritz1997.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.raudenbush1985.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.riley2003.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.roever2022.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.senn2013.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.spooner2002.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.stowe2010.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.tannersmith2016.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.ursino2021.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.vanhowe1999.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.viechtbauer2021.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.white2020.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.woods2010.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/dat.yusuf1985.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/datsearch.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/index.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/metadat-package.html</loc></url>
+<url><loc>https://wviechtb.github.io/metadat/reference/prep_dat.html</loc></url>
 </urlset>
+
