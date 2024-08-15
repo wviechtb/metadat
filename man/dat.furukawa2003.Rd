@@ -54,3 +54,6 @@ settings.meta(oldset)
 }
 \keyword{datasets}
 \concept{standardized mean differences}
+\section{Concepts}{
+   standardized mean differences
+}

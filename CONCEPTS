@@ -20,7 +20,6 @@ fields/topics:
 
 # natural sciences / topics
 \concept{ecology}
-\concept{plants}
 \concept{evolution}
 \concept{climate change}
 \concept{phylogeny}
@@ -43,12 +42,6 @@ fields/topics:
 \concept{physics}
 
 \concept{smoking}
-
-############################################################################
-
-populations:
-
-\concept{infants}
 
 ############################################################################
 
@@ -96,15 +89,25 @@ methods/concepts:
 \concept{cluster-robust inference}
 \concept{outliers}
 \concept{model checks}
-\concept{second order meta-analysis}
 \concept{subgroup analysis}
 
 ############################################################################
 ############################################################################
 ############################################################################
 
-potential terms to add:
+potential groups/terms to add:
+
+fields/topics:
+
+\concept{plants}
+
+populations:
+
+\concept{infants}
+
+methods/concepts:
 
 \concept{meta-analysis of p-values}
+\concept{second order meta-analysis}
 
 ############################################################################

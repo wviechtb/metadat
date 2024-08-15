@@ -70,3 +70,6 @@ settings.meta(oldset)
 \concept{risk ratios}
 \concept{medicine}
 \concept{subgroup analysis}
+\section{Concepts}{
+   risk ratios, medicine, subgroup analysis
+}
