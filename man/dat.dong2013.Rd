@@ -81,7 +81,7 @@ settings.meta(oldset)
 }
 }
 \seealso{
-   \code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmetabin}}
+   \code{\link[meta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmetabin}}
 }
 \keyword{datasets}
 \concept{medicine}

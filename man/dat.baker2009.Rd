@@ -74,7 +74,7 @@ settings.meta(oldset)
 }
 }
 \seealso{
-\code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}},
+\code{\link[meta]{pairwise}}, \code{\link[meta]{metabin}},
 \code{\link[netmeta]{netmeta}}, \code{\link[netmeta]{netcomb}},
 \code{\link[netmeta]{netmetabin}}
 }
