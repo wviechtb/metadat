@@ -82,15 +82,14 @@ reg <- regtest(tmp, model="lm")
 reg
 
 ### corresponding funnel plot
-funnel(tmp, atransf=exp, xlim=c(0,7), at=log(c(1,10,100,1000)), ylim=c(0,.15), steps=4,
+funnel(tmp, atransf=exp, xlim=c(0,7), at=log(c(1,10,100,1000)), ylim=c(0,0.15), steps=4,
        refline=coef(res), level=0, ylab="1/root(ess)")
-ys <- seq(0, .20, length=100)
+ys <- seq(0, 0.2, length=100)
 lines(coef(reg$fit)[1] + coef(reg$fit)[2]*ys, ys, lwd=2, lty=3)
 
 ### convert data to long format
 dat <- to.long(measure="OR", ai=tp, n1i=np, ci=tn, n2i=nn,
-               data=dat.kearon1998, subset=patients=="asymptomatic")
-dat <- dat[9:12]
+               data=dat.kearon1998, subset=patients=="asymptomatic", append=FALSE)
 dat$group <- factor(dat$group, levels=c(1,2), labels=c("sensitivity", "specificity"))
 dat
 

@@ -50,7 +50,7 @@ The data frame contains the following columns:
    Chen, Y.-B., Li, S., Lane, A. A., \emph{et al.} (2014). Phase I trial of maintenance sorafenib after allogeneic hematopoietic stem cell transplantation for FMS-like tyrosine kinase 3 internal tandem duplication acute myeloid leukemia. \emph{Biology of Blood and Marrow Transplantation}, \bold{20}(12), 2042--2048. \verb{https://doi.org/10.1016/j.bbmt.2014.09.007}
 }
 \seealso{
-   \code{\link{dat.roever2022}}.
+   \code{\link{dat.roever2022}}
 }
 \author{
    Christian Roever, \email{christian.roever@med.uni-goettingen.de}

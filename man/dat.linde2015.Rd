@@ -110,9 +110,6 @@ plot(po12)
 settings.meta(oldset)
 }
 }
-\seealso{
-\code{\link[netmeta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmeta}}, \code{\link[netmeta]{netrank}}
-}
 \keyword{datasets}
 \concept{medicine}
 \concept{psychiatry}

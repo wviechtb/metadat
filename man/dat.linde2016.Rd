@@ -77,9 +77,6 @@ forest(nc, xlim = c(0.2, 50))
 settings.meta(oldset)
 }
 }
-\seealso{
-   \code{\link[netmeta]{netmeta}}
-}
 \keyword{datasets}
 \concept{medicine}
 \concept{psychiatry}

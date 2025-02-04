@@ -155,6 +155,9 @@ generalization, single-arm studies, spatial correlation, subgroup analysis.")
             matches[[i]] <- utils::help.search(pattern[i], package="metadat", fields="concept")$matches
          }
 
+         if (pattern == "")
+            matches[[1]] <- matches[[1]][!is.element(matches[[1]]$Name, c("datsearch", "metadat-package", "prep_dat")),]
+
       } else {
 
          for (i in 1:n) {

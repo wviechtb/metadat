@@ -4,7 +4,7 @@ metadat: Meta-Analysis Datasets for R
 [![License: GPL (>=2)](https://img.shields.io/badge/license-GPL-blue)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 [![R build status](https://github.com/wviechtb/metadat/workflows/R-CMD-check/badge.svg)](https://github.com/wviechtb/metadat/actions)
 [![CRAN Version](https://www.r-pkg.org/badges/version/metadat)](https://cran.r-project.org/package=metadat)
-[![devel Version](https://img.shields.io/badge/devel-1.3--0-brightgreen.svg)](https://github.com/wviechtb/metadat)
+[![devel Version](https://img.shields.io/badge/devel-1.5--x-brightgreen.svg)](https://github.com/wviechtb/metadat)
 [![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/metadat)](https://cran.r-project.org/package=metadat)
 
 ## Description

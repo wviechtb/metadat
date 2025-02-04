@@ -2,7 +2,7 @@
 \docType{data}
 \alias{dat.spooner2002}
 \title{Studies on Nedocromil Sodium for Preventing Exercise-Induced Bronchoconstriction}
-\description{Results from 17 trials, 11 studies in children and 6 studies in adults, reporting the maximum fall in the forced expiratory volume in 1 second (FEV$_1$) over the course of follow-up, expressed as a percentage.}
+\description{Results from 17 trials, 11 studies in children and 6 studies in adults, reporting the maximum fall in the forced expiratory volume in 1 second (FEV_1) over the course of follow-up, expressed as a percentage.}
 \usage{
 dat.spooner2002
 }
@@ -12,16 +12,16 @@ The data frame contains the following columns:
 \bold{author}   \tab \code{character} \tab first author \cr
 \bold{year}     \tab \code{character} \tab year of publication \cr
 \bold{Ne}       \tab \code{integer}   \tab number of participants in nedocromil sodium group \cr
-\bold{Me}       \tab \code{numeric}   \tab maximum fall in the FEV$_1$ (nedocromil sodium) \cr
+\bold{Me}       \tab \code{numeric}   \tab maximum fall in the FEV_1 (nedocromil sodium) \cr
 \bold{Se}       \tab \code{numeric}   \tab standard deviation (nedocromil sodium) \cr
 \bold{Nc}       \tab \code{integer}   \tab number of participants in placebo group \cr
-\bold{Mc}       \tab \code{numeric}   \tab maximum fall in the FEV$_1$ (placebo) \cr
+\bold{Mc}       \tab \code{numeric}   \tab maximum fall in the FEV_1 (placebo) \cr
 \bold{Sc}       \tab \code{numeric}   \tab standard deviation (placebo) \cr
 \bold{agegroup} \tab \code{factor}    \tab age group (children or adults) \cr
 }
 }
 \details{
-   Spooner et al. (2002) conducted a Cochrane review comparing nedocromil sodium (experimental treatment) with placebo (control) for preventing exercise-induced bronchoconstriction. Primary outcome was the maximum fall in the forced expiratory volume in 1 second (FEV$_1$) over the course of follow-up, expressed as a percentage. This outcome is available for 17 studies, 11 studies in children and 6 studies in adults. For each study, the mean value, standard deviation, and sample size are reported for both the experimental and control group. The authors conducted a random-effects meta-analysis with the mean difference as effect measure, i.e.\ mean value in the nedocromil sodium group minus mean value in the placebo group.
+   Spooner et al. (2002) conducted a Cochrane review comparing nedocromil sodium (experimental treatment) with placebo (control) for preventing exercise-induced bronchoconstriction. Primary outcome was the maximum fall in the forced expiratory volume in 1 second (FEV_1) over the course of follow-up, expressed as a percentage. This outcome is available for 17 studies, 11 studies in children and 6 studies in adults. For each study, the mean value, standard deviation, and sample size are reported for both the experimental and control group. The authors conducted a random-effects meta-analysis with the mean difference as effect measure, i.e.\ mean value in the nedocromil sodium group minus mean value in the placebo group.
 
    This data set is used as an example in Schwarzer et al. (2015).
 }

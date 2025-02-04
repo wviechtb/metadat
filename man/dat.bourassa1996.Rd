@@ -26,11 +26,11 @@ The data frame contains the following columns:
 }
 }
 \details{
-   The 47 studies included in this meta-analysis examined the association between handedness and eye-dominance (ocular dominance or eyedness). Results are given in terms of \mjeqn{2 \times 2}{2x2} tables, indicating the number of left-handed left-eyed, left-handed right-eyed, right-handed left-eyed, and right-handed right-eyed individuals. Note that some studies included multiple (independent) samples, so that the meta-analysis included 54 samples in total. Also, for some studies, the combined data of the males and females are further broken down into the two subgroups.
+   The 47 studies included in this meta-analysis examined the association between handedness and eye-dominance (ocular dominance or eyedness). Results are given in terms of \mjeqn{2 \times 2}{2x2} tables, indicating the number of left-handed left-eyed, left-handed right-eyed, right-handed left-eyed, and right-handed right-eyed individuals in each sample. Note that some studies included multiple (independent) samples, so that the meta-analysis included 54 samples in total. Also, for some studies, the combined data of the males and females are further broken down into the two subgroups.
 
    In some studies, there was indication that the selection of subjects was not random with respect to handedness and/or eyedness. While this should not influence the size of the association as measured with the odds ratio, this invalidates those studies for assessing the overall percentage of left-eyed and left-handed individuals.
 
-   Handedness was assessed in the individual studies either based on a questionnaire or inventory or based on task performance. Eyedness was assessed based on various methods: \code{E.1} methods are based on task performance, while \code{E.2.a} denotes assessment based on a questionnaire. The performance based methods could be further broken down into: \code{E.1.a.i} (monocular procedure with object/instrument held in one hand), \code{E.1.a.ii} (monocular procedure with object/instrument held in both hands), \code{E.1.b} (binocular procedure), \code{E.1.c} (a combination of the previous methods), and \code{E.1.d} (some other method).
+   Handedness was assessed in the individual studies either based on a questionnaire or based on task performance. Eyedness was assessed based on various methods: \code{E.1} methods are based on task performance, while \code{E.2.a} denotes assessment based on a questionnaire. The performance based methods could be further broken down into: \code{E.1.a.i} (monocular procedure with object/instrument held in one hand), \code{E.1.a.ii} (monocular procedure with object/instrument held in both hands), \code{E.1.b} (binocular procedure), \code{E.1.c} (a combination of the previous methods), and \code{E.1.d} (some other method).
 }
 \source{
    Bourassa, D. C., McManus, I. C., & Bryden, M. P. (1996). Handedness and eye-dominance: A meta-analysis of their relationship. \emph{Laterality}, \bold{1}(1), 5--34. \verb{https://doi.org/10.1080/713754206}
@@ -55,11 +55,35 @@ head(dat, 10)
 res <- rma(yi, vi, data=dat, subset=sex=="combined")
 res
 predict(res, transf=exp, digits=2)
+
+### multilevel model to account for heterogeneity at the study and sample levels
+res <- rma.mv(yi, vi, random = ~ 1 | study/sample, data=dat, subset=sex=="combined")
+res
+predict(res, transf=exp, digits=2)
+
+### restructure the dataset to keep only the male/female data when it is reported
+### separately and the combined data when this is the only data reported
+dat <- lapply(split(dat, dat$sample), function(x) {
+   if (nrow(x) == 3L) {
+      x[-which(x$sex == "combined"),]
+   } else {
+      x
+   }
+})
+dat <- do.call(rbind, dat)
+rownames(dat) <- NULL
+dat
+
+### multilevel model to account for heterogeneity at the study, sample, and subgroup levels
+res <- rma.mv(yi, vi, random = ~ 1 | study/sample/sex, data=dat)
+res
+predict(res, transf=exp, digits=2)
 }
 }
 \keyword{datasets}
 \concept{psychology}
 \concept{odds ratios}
+\concept{multilevel models}
 \section{Concepts}{
-   psychology, odds ratios
+   psychology, odds ratios, multilevel models
 }

@@ -97,9 +97,6 @@ netleague(net, seq = netrank(net), ci = FALSE)
 settings.meta(oldset)
 }
 }
-\seealso{
-   \code{\link[netmeta]{pairwise}}, \code{\link[meta]{metacont}}, \code{\link[netmeta]{netmeta}}, \code{\link[netmeta]{netrank}}, \code{\link[netmeta]{rankogram}}, \code{\link[netmeta]{netleague}}
-}
 \keyword{datasets}
 \concept{medicine}
 \concept{raw mean differences}

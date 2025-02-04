@@ -41,7 +41,7 @@ print(res, digits=2)
 
 ### forest plot
 forest(res, xlim=c(-11,9), atransf=exp, at=log(c(0.01, 0.1, 1, 10, 100)),
-       header=TRUE, top=2, ilab=dat$year, ilab.xpos=-7)
+       ilab=dat$year, ilab.xpos=-7)
 text(-7, 35, "Year", font=2)
 
 ### cumulative meta-analysis
@@ -49,7 +49,7 @@ sav <- cumul(res)
 
 ### forest plot of the cumulative results
 forest(sav, xlim=c(-5,4), atransf=exp, at=log(c(0.1, 0.5, 1, 2, 10)),
-       header=TRUE, top=2, ilab=dat$year, ilab.xpos=-3)
+       ilab=dat$year, ilab.xpos=-3)
 text(-3, 35, "Year", font=2)
 id <- c(4, 8, 15, 33) # rows for which the z/p-values should be shown (as in Lau et al., 1992)
 text(1.1, (res$k:1)[id], paste0("z = ", fmtx(sav$zval[id], digits=2),
