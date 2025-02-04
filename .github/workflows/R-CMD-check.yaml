@@ -36,6 +36,8 @@ jobs:
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
+          install.packages("BiocManager")
+          BiocManager::install("Rgraphviz")
           remotes::install_deps(dependencies = TRUE)
           remotes::install_github("wviechtb/metafor")
         shell: Rscript {0}
