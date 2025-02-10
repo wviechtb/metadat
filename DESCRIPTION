@@ -1,6 +1,6 @@
 Package: metadat
-Version: 1.4-0
-Date: 2025-02-04
+Version: 1.5-0
+Date: 2025-02-10
 Title: Meta-Analysis Datasets
 Authors@R: c(
   person(given = "Wolfgang", family = "Viechtbauer",
