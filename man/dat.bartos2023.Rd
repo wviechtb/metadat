@@ -62,10 +62,10 @@ res
 confint(res, type="PL")
 
 ### forest plot
-forest(res, header=TRUE, refline=0.5, xlim=c(0.38,0.72), digits=c(3,2))
+forest(res, refline=0.5, xlim=c(0.38,0.72), digits=c(3,2), efac=c(0,1))
 
 ### funnel plot
-funnel(res, xlim=c(0.45,0.6), ylim=c(0,.02))
+funnel(res, xlim=c(0.45,0.6), ylim=c(0,0.02))
 
 ### fit a random-effects model excluding those with same-side proportions larger than 0.53
 res <- rma(yi, vi, data=dat, subset=yi<=0.53)

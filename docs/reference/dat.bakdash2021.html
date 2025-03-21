@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
       </span>
     </div>
 
@@ -225,7 +225,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### multilevel meta-analytic model for SA measures</span></span></span>
-<span class="r-in"><span><span class="va">res.sa</span> <span class="op">&lt;-</span>  <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="va">SA.measure.type</span> <span class="op">-</span> <span class="fl">1</span>,</span></span>
+<span class="r-in"><span><span class="va">res.sa</span> <span class="op">&lt;-</span>  <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">es.z</span>, <span class="va">vi.z</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fl">0</span> <span class="op">+</span> <span class="va">SA.measure.type</span>,</span></span>
 <span class="r-in"><span>                  random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">SampleID</span> <span class="op">/</span> <span class="va">Outcome</span>,</span></span>
 <span class="r-in"><span>                  data <span class="op">=</span> <span class="va">dat</span>,</span></span>
 <span class="r-in"><span>                  test <span class="op">=</span> <span class="st">"t"</span><span class="op">)</span></span></span>
@@ -309,7 +309,7 @@
 <span class="r-in"><span><span class="co">### profile likelihood plots</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>,<span class="fl">1</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/profile.html" class="external-link">profile</a></span><span class="op">(</span><span class="va">res.sa.crve</span>, progbar <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.bakdash2021-1.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.bakdash2021-1.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### format and combine output of meta-analytic models for the forest plot</span></span></span>
 <span class="r-in"><span><span class="va">all.z</span>        <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">res.sa.crve</span><span class="op">$</span><span class="va">beta</span>,            <span class="co"># SA measures</span></span></span>
@@ -353,7 +353,7 @@
 <span class="r-in"><span>       xlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/expression.html" class="external-link">expression</a></span><span class="op">(</span><span class="st">"Correlation Coefficient"</span><span class="op">~</span><span class="st">"("</span><span class="op">*</span><span class="fu">italic</span><span class="op">(</span><span class="st">'r'</span><span class="op">)</span><span class="op">*</span><span class="st">")"</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>       main <span class="op">=</span> <span class="st">"\n\n\nSA Measures"</span>,</span></span>
 <span class="r-in"><span>       ilab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">all.pvals.rounded</span>, <span class="st">""</span><span class="op">)</span>, ilab.xpos <span class="op">=</span> <span class="fl">2.45</span>, ilab.pos <span class="op">=</span> <span class="fl">2.5</span>,</span></span>
-<span class="r-in"><span>       digits <span class="op">=</span> <span class="fl">2</span>, refline <span class="op">=</span> <span class="fl">0</span>, annotate <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
+<span class="r-in"><span>       digits <span class="op">=</span> <span class="fl">2</span>, refline <span class="op">=</span> <span class="fl">0</span>, annotate <span class="op">=</span> <span class="cn">FALSE</span>, header <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### keep trailing zero using sprintf</span></span></span>
 <span class="r-in"><span><span class="va">output</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/cbind.html" class="external-link">cbind</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/sprintf.html" class="external-link">sprintf</a></span><span class="op">(</span><span class="st">"%.2f"</span>, <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/transf.html" class="external-link">transf.ztor</a></span><span class="op">(</span><span class="va">plot.vals</span><span class="op">$</span><span class="va">all.z</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span>,</span></span>
@@ -366,7 +366,7 @@
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span><span class="op">-</span><span class="fl">1.475</span>, <span class="fl">14.00</span>, <span class="st">"SA Measure"</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">2.30</span>,  <span class="fl">14.00</span>, <span class="fu"><a href="https://rdrr.io/r/base/substitute.html" class="external-link">substitute</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="fu">italic</span><span class="op">(</span><span class="st">'p-value'</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/text.html" class="external-link">text</a></span><span class="op">(</span> <span class="fl">1.55</span>,  <span class="fl">14.00</span>, <span class="st">"Correlation [95% CI]"</span>, cex <span class="op">=</span> <span class="fl">1.05</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">1.5</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/abline.html" class="external-link">abline</a></span><span class="op">(</span>h <span class="op">=</span> <span class="fl">2.5</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### black polygon for overall mean CIs</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/addpoly.html" class="external-link">addpoly</a></span><span class="op">(</span><span class="va">all.z</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>, ci.lb <span class="op">=</span> <span class="va">all.ci.lower</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>, ci.ub <span class="op">=</span> <span class="va">all.ci.upper</span><span class="op">[</span><span class="fl">11</span><span class="op">]</span>,</span></span>
@@ -376,7 +376,7 @@
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/addpoly.html" class="external-link">addpoly</a></span><span class="op">(</span><span class="va">all.z</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>, ci.lb <span class="op">=</span> <span class="va">all.ci.lower</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>, ci.ub <span class="op">=</span> <span class="va">all.ci.upper</span><span class="op">[</span><span class="fl">12</span><span class="op">]</span>,</span></span>
 <span class="r-in"><span>        rows <span class="op">=</span> <span class="fl">1</span>, col <span class="op">=</span> <span class="st">"white"</span>, border <span class="op">=</span> <span class="st">"black"</span>,</span></span>
 <span class="r-in"><span>        annotate <span class="op">=</span> <span class="cn">FALSE</span>, efac <span class="op">=</span> <span class="fl">1.5</span>, transf <span class="op">=</span> <span class="va">transf.ztor</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.bakdash2021-2.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.bakdash2021-2.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/par.html" class="external-link">par</a></span><span class="op">(</span>mfrow<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span><span class="op">)</span>, cex <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="co"># reset graph parameters to default</span></span></span>
 <span class="r-in"><span></span></span>
@@ -465,11 +465,11 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
+  <p></p><p>Developed by Wolfgang Viechtbauer, Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

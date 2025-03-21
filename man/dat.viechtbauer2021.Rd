@@ -63,11 +63,10 @@ res.ME
 par(mar=c(5,4,1,2))
 
 forest(dat$yi, dat$vi, psize=0.8, efac=0, xlim=c(-4,6), ylim=c(-3,23),
-       cex=1, width=c(5,5,5), xlab="Log Odds Ratio (LnOR)")
-addpoly(res.CE, row=-1.5, mlab="CE Model")
-addpoly(res.RE, row=-2.5, mlab="RE Model")
-text(-4, 22, "Trial",         pos=4, font=2)
-text( 6, 22, "LnOR [95\% CI]", pos=2, font=2)
+       cex=1, width=c(5,5,5), xlab="Log Odds Ratio (LnOR)",
+       header=c("Trial", "LnOR [95\% CI]"))
+addpoly(res.CE, row=-1, mlab="CE Model")
+addpoly(res.RE, row=-2, mlab="RE Model")
 abline(h=0)
 
 tmp <- regplot(res.ME, xlim=c(0,250), ylim=c(-1,1.5), predlim=c(0,250), shade=FALSE, digits=1,

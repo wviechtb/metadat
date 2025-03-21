@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
       </span>
     </div>
 
@@ -94,9 +94,9 @@
     <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>numeric</code></td><td>study number</td></tr><tr><td><b>sample</b></td><td><code>numeric</code></td><td>sample number</td></tr><tr><td><b>author</b></td><td><code>character</code></td><td>(first) author</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>selection</b></td><td><code>character</code></td><td>selection of subjects on the basis of eyedness or handedness</td></tr><tr><td><b>investigator</b></td><td><code>character</code></td><td>investigator (psychologist, educationalist, or other)</td></tr><tr><td><b>hand_assess</b></td><td><code>character</code></td><td>method to assess handedness (questionnaire or performance based)</td></tr><tr><td><b>eye_assess</b></td><td><code>character</code></td><td>method to assess eyedness (see ‘Details’)</td></tr><tr><td><b>mage</b></td><td><code>numeric</code></td><td>mean age of sample</td></tr><tr><td><b>lh.le</b></td><td><code>numeric</code></td><td>number of left-handed left-eyed individuals</td></tr><tr><td><b>lh.re</b></td><td><code>numeric</code></td><td>number of left-handed right-eyed individuals</td></tr><tr><td><b>rh.le</b></td><td><code>numeric</code></td><td>number of right-handed left-eyed individuals</td></tr><tr><td><b>rh.re</b></td><td><code>numeric</code></td><td>number of right-handed right-eyed individuals</td></tr><tr><td><b>sex</b></td><td><code>character</code></td><td>sex of the sample (combined, male, or female)</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
-    <p>The 47 studies included in this meta-analysis examined the association between handedness and eye-dominance (ocular dominance or eyedness). Results are given in terms of <em></em>\(2 \times 2\) tables, indicating the number of left-handed left-eyed, left-handed right-eyed, right-handed left-eyed, and right-handed right-eyed individuals. Note that some studies included multiple (independent) samples, so that the meta-analysis included 54 samples in total. Also, for some studies, the combined data of the males and females are further broken down into the two subgroups.</p>
+    <p>The 47 studies included in this meta-analysis examined the association between handedness and eye-dominance (ocular dominance or eyedness). Results are given in terms of <em></em>\(2 \times 2\) tables, indicating the number of left-handed left-eyed, left-handed right-eyed, right-handed left-eyed, and right-handed right-eyed individuals in each sample. Note that some studies included multiple (independent) samples, so that the meta-analysis included 54 samples in total. Also, for some studies, the combined data of the males and females are further broken down into the two subgroups.</p>
 <p>In some studies, there was indication that the selection of subjects was not random with respect to handedness and/or eyedness. While this should not influence the size of the association as measured with the odds ratio, this invalidates those studies for assessing the overall percentage of left-eyed and left-handed individuals.</p>
-<p>Handedness was assessed in the individual studies either based on a questionnaire or inventory or based on task performance. Eyedness was assessed based on various methods: <code>E.1</code> methods are based on task performance, while <code>E.2.a</code> denotes assessment based on a questionnaire. The performance based methods could be further broken down into: <code>E.1.a.i</code> (monocular procedure with object/instrument held in one hand), <code>E.1.a.ii</code> (monocular procedure with object/instrument held in both hands), <code>E.1.b</code> (binocular procedure), <code>E.1.c</code> (a combination of the previous methods), and <code>E.1.d</code> (some other method).</p>
+<p>Handedness was assessed in the individual studies either based on a questionnaire or based on task performance. Eyedness was assessed based on various methods: <code>E.1</code> methods are based on task performance, while <code>E.2.a</code> denotes assessment based on a questionnaire. The performance based methods could be further broken down into: <code>E.1.a.i</code> (monocular procedure with object/instrument held in one hand), <code>E.1.a.ii</code> (monocular procedure with object/instrument held in both hands), <code>E.1.b</code> (binocular procedure), <code>E.1.c</code> (a combination of the previous methods), and <code>E.1.d</code> (some other method).</p>
     </div>
     <div id="source">
     <h2>Source</h2>
@@ -108,7 +108,7 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>psychology, odds ratios</p>
+    <p>psychology, odds ratios, multilevel models</p>
     </div>
 
     <div id="ref-examples">
@@ -197,6 +197,232 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  3.72  3.00  4.61  1.00 13.77 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### multilevel model to account for heterogeneity at the study and sample levels</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span><span class="op">/</span><span class="va">sample</span>, data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">sex</span><span class="op">==</span><span class="st">"combined"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 54; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             estim    sqrt  nlvls  fixed        factor </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1  0.2097  0.4579     47     no         study </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2  0.1985  0.4455     54     no  study/sample </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 53) = 355.7748, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   1.2712  0.1133  11.2169  &lt;.0001  1.0491  1.4934  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3.57  2.86  4.45  1.00 12.72 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### restructure the dataset to keep only the male/female data when it is reported</span></span></span>
+<span class="r-in"><span><span class="co">### separately and the combined data when this is the only data reported</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">lapply</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/split.html" class="external-link">split</a></span><span class="op">(</span><span class="va">dat</span>, <span class="va">dat</span><span class="op">$</span><span class="va">sample</span><span class="op">)</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span>   <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">==</span> <span class="fl">3L</span><span class="op">)</span> <span class="op">{</span></span></span>
+<span class="r-in"><span>      <span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/which.html" class="external-link">which</a></span><span class="op">(</span><span class="va">x</span><span class="op">$</span><span class="va">sex</span> <span class="op">==</span> <span class="st">"combined"</span><span class="op">)</span>,<span class="op">]</span></span></span>
+<span class="r-in"><span>   <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span></span>
+<span class="r-in"><span>      <span class="va">x</span></span></span>
+<span class="r-in"><span>   <span class="op">}</span></span></span>
+<span class="r-in"><span><span class="op">}</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/do.call.html" class="external-link">do.call</a></span><span class="op">(</span><span class="va">rbind</span>, <span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="cn">NULL</span></span></span>
+<span class="r-in"><span><span class="va">dat</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    study sample       author year selection   investigator   hand_assess eye_assess mage lh.le lh.re </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1      1      1        Mills 1925        no          other questionnaire      E.1.d   NA    93    17 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      2      2       Downey 1927       yes   psychologist questionnaire      E.1.b   37    74    57 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      2      2       Downey 1927       yes   psychologist questionnaire      E.1.b   37    66    34 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      3      3        Miles 1930        no   psychologist questionnaire   E.1.a.ii   22    16    14 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5      4      4       Quinan 1931        no          other   performance      E.1.b   25   102    97 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6      5      5       Jasper 1932       yes   psychologist questionnaire   E.1.a.ii   20    17    14 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7      6      6         Lund 1932        no   psychologist   performance   E.1.a.ii   20    10     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8      7      7         Eyre 1933        no   psychologist   performance   E.1.a.ii   15     7     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9      8      8    Updegraff 1933        no   psychologist   performance   E.1.a.ii    4     4     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10     9      9        Gates 1936        no educationalist   performance      E.1.c    5     2     3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11    10     10        Witty 1936        no educationalist questionnaire      E.1.c   10     3     4 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12    11     11         Fink 1938        no          other   performance      E.1.d   NA     4     3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13    12     12      Castner 1939        no   psychologist   performance   E.1.a.ii   10     2     1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14    13     13     Schonell 1941        no educationalist   performance   E.1.a.ii   10     3     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15    14     14       Lavery 1944        no          other questionnaire      E.1.d   31    27     0 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16    15     15     Hildreth 1945        no   psychologist   performance   E.1.a.ii    9     9    11 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17    16     16    Stevenson 1953        no educationalist   performance      E.1.d    5     5     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18    17     17      Merrell 1957        no          other   performance      E.1.c   22    20    13 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19    18     18        Meuhl 1963        no educationalist   performance   E.1.a.ii    5     6     8 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20    19     19       Harmon 1966       yes          other   performance      E.1.d   NA     8     5 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21    20     20   Rengstorff 1967        no          other questionnaire   E.1.a.ii   24   241   211 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22    21     21     Stephens 1967       yes educationalist   performance      E.1.c    6    11     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23    21     21     Stephens 1967       yes educationalist   performance      E.1.c    6     8     4 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24    21     22     Stephens 1967        no   psychologist   performance   E.1.a.ii   27     2     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25    21     22     Stephens 1967        no   psychologist   performance   E.1.a.ii   27     0     0 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26    22     23       Dawson 1972        no   psychologist   performance   E.1.a.ii   27     4     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27    22     23       Dawson 1972        no   psychologist   performance   E.1.a.ii   27     4     0 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28    23     24          Gur 1974       yes   psychologist questionnaire      E.1.b   22     9     9 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29    23     24          Gur 1974       yes   psychologist questionnaire      E.1.b   22     4     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30    24     25    Chaurasia 1976        no          other questionnaire      E.1.b   25     8    14 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31    24     25    Chaurasia 1976        no          other questionnaire      E.1.b   25     2     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32    25     26      Hardyck 1976        no   psychologist   performance   E.1.a.ii    9   429   311 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33    26     27       Dawson 1977        no   psychologist   performance   E.1.a.ii   17    10    10 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34    27     28          Gur 1977        no   psychologist questionnaire      E.1.c   35    10     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35    27     28          Gur 1977        no   psychologist questionnaire      E.1.c   35     1     5 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36    28     29     Van-Camp 1977        no   psychologist   performance      E.1.c    7    18    20 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37    29     30      Birkett 1979       yes   psychologist questionnaire      E.1.b   23    11    10 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38    29     30      Birkett 1979       yes   psychologist questionnaire      E.1.b   23    27     4 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39    30     31    Hovsepian 1980        no   psychologist questionnaire    E.1.a.i   22    19     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40    31     32        Porac 1980        no   psychologist   performance   E.1.a.ii   10    19    12 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41    32     33        Porac 1981        no   psychologist questionnaire      E.2.a   21   247   125 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42    32     33        Porac 1981        no   psychologist questionnaire      E.2.a   21   164    73 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 43    33     34       Hebben 1981        no   psychologist questionnaire      E.1.c    8     4     5 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 44    33     34       Hebben 1981        no   psychologist questionnaire      E.1.c    8     5     3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 45    34     35       Noonan 1981       yes   psychologist   performance      E.1.c   22    26    34 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 46    35     36     Van-Camp 1981        no   psychologist questionnaire   E.1.a.ii   75     1     1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 47    35     36     Van-Camp 1981        no   psychologist questionnaire   E.1.a.ii   75     3     1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 48    36     37        Combs 1983       yes   psychologist questionnaire      E.1.b   29    18    19 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 49    37     38        Rymar 1983        no          other   performance      E.1.c   10    31     8 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 50    37     39        Rymar 1983        no          other questionnaire      E.1.b   29    11    21 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 51    38     40      Nachson 1983        no   psychologist   performance   E.1.a.ii    7    22    16 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 52    38     40      Nachson 1983        no   psychologist   performance   E.1.a.ii    7    15    11 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53    38     41      Nachson 1983        no   psychologist   performance   E.1.a.ii    7   242   156 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54    38     41      Nachson 1983        no   psychologist   performance   E.1.a.ii    7   225   144 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55    39     42    Shan-Ming 1985        no   psychologist   performance   E.1.a.ii   30     7    10 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 56    39     42    Shan-Ming 1985        no   psychologist   performance   E.1.a.ii   30     9     5 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 57    40     43 Hoogmaartens 1987        no          other questionnaire      E.2.a   23    10     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 58    41     44  Whittington 1987        no          other   performance    E.1.a.i   11   563   320 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 59    42     45      Costeff 1988        no          other   performance   E.1.a.ii   42     5     1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 60    43     46        Brown 1988        no   psychologist   performance    E.1.a.i   23    19     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61    44     47       Bryden 1988       yes   psychologist questionnaire   E.1.a.ii   22    46    32 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62    45     48       Bryden 1989       yes   psychologist questionnaire      E.1.b   20    43    44 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 63    45     48       Bryden 1989       yes   psychologist questionnaire      E.1.b   20    46    26 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 64    46     49     Levander 1989       yes   psychologist questionnaire      E.1.c   22    12    25 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 65    46     49     Levander 1989       yes   psychologist questionnaire      E.1.c   22    13    28 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 66    47     50 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   25    61    21 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 67    47     50 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   25    80    33 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 68    47     51 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   22    11    11 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 69    47     51 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   22    12     6 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 70    47     52 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   30    24    12 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 71    47     52 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   30     8     1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 72    47     53 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   25    11     2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 73    47     53 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   25     9    10 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 74    47     54 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   25    18     7 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 75    47     54 Dargent-Pare 1992        no   psychologist questionnaire      E.2.a   25    12     1 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    rh.le rh.re      sex      yi     vi </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    130   760 combined  3.4384 0.0768 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2    158   427     male  1.2512 0.0395 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3    147   270   female  1.2627 0.0545 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4     43   114 combined  1.0970 0.1613 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5    597  1898 combined  1.2061 0.0222 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6     38    80 combined  0.9257 0.1645 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7     52   170 combined  2.6130 0.5202 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8     15   169 combined  3.4906 0.6037 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9     15    38 combined  1.4976 0.7127 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10    24    39 combined  0.1412 0.7518 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11    18    39 combined  0.5072 0.5873 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12    29    89 combined  1.3612 0.5530 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13    20    49 combined  1.3924 1.1356 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14    19    45 combined  1.1838 0.7590 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15   101   261 combined  4.9537 2.0500 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16    59    98 combined  0.3130 0.2192 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17    23    38 combined  1.2821 0.6503 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18   137   327 combined  1.2856 0.1332 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19    14    34 combined  0.5985 0.3694 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20    31    56 combined  1.0196 0.3489 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21  1587  3440 combined  0.9061 0.0098 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22    11    16     male  0.9316 0.3884 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23    16    17   female  0.6948 0.4576 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24    27    75     male  1.0099 0.8496 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25     6     9   female  0.3795 4.2591 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26    19    31     male  1.0674 0.7053 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27    10    25   female  3.0845 2.3567 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28     4    25     male  1.7346 0.4720 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29    13    17   female -0.1082 0.5073 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30    69   146     male  0.2116 0.2078 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31    28    40   female -0.6041 0.6136 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32  2528  4418 combined  0.8794 0.0062 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33    12    48 combined  1.3558 0.2911 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34    27    57     male  1.2172 0.3028 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35    29    65   female -0.5016 0.8977 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36   118   155 combined  0.1691 0.1177 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37    16    17     male  0.1498 0.2999 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38    23    17   female  1.5153 0.3583 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39    16    33 combined  1.8068 0.2956 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40   172   352 combined  1.1593 0.1399 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41   500  1884     male  2.0049 0.0145 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42   575  1579   female  1.8152 0.0221 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 43    22    63     male  0.8369 0.4642 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 44    29    60   female  1.1702 0.5180 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 45    42    90 combined  0.4920 0.1013 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 46     8    11     male  0.3023 1.5379 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 47    35    54   female  1.2760 0.9989 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 48    31    75 combined  0.8215 0.1503 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 49   271   543 combined  2.0040 0.1549 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 50   180   353 combined  0.0464 0.1418 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 51    90   131     male  0.6838 0.1237 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 52   100   129   female  0.5520 0.1691 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 53  1203  1725     male  0.7982 0.0119 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 54  1298  1739   female  0.7374 0.0127 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 55    24   159     male  1.5369 0.2757 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 56    44   174   female  1.9130 0.3153 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 57    32    84 combined  2.3906 0.5378 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 58  2703  6927 combined  1.5052 0.0054 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 59    14    37 combined  2.2495 0.9441 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 60    29   132 combined  2.6008 0.2466 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61    48   171 combined  1.6212 0.0787 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62    78   193     male  0.8795 0.0634 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 63    65   191   female  1.6351 0.0797 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 64     4    35     male  1.3525 0.3696 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 65    12    33   female  0.2386 0.2190 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 66   150   708     male  2.6002 0.0708 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 67   224   811   female  2.1617 0.0480 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 68    50   280     male  1.7146 0.1973 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 69    39   225   female  2.3959 0.2636 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 70    92   307     male  1.8742 0.1349 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 71    36   133   female  3.0314 0.8192 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 72    70   198     male  2.5612 0.5062 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 73    93   178   female  0.5465 0.2168 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 74    56   236     male  2.3346 0.2093 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 75    73   211   female  3.1772 0.7650 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### multilevel model to account for heterogeneity at the study, sample, and subgroup levels</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span><span class="op">/</span><span class="va">sample</span><span class="op">/</span><span class="va">sex</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 75; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             estim    sqrt  nlvls  fixed            factor </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.1  0.1828  0.4276     47     no             study </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.2  0.2259  0.4753     54     no      study/sample </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sigma^2.3  0.0000  0.0000     75     no  study/sample/sex </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Q(df = 74) = 386.3457, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> estimate      se     zval    pval   ci.lb   ci.ub      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   1.2681  0.1130  11.2219  &lt;.0001  1.0466  1.4895  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, transf<span class="op">=</span><span class="va">exp</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  pred ci.lb ci.ub pi.lb pi.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3.55  2.85  4.44  1.00 12.69 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>
   </div>
@@ -207,11 +433,11 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
+  <p></p><p>Developed by Wolfgang Viechtbauer, Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

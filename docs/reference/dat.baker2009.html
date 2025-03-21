@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
       </span>
     </div>
 
@@ -105,12 +105,6 @@
     <h2>Author</h2>
     <p>Guido Schwarzer, <a href="mailto:guido.schwarzer@uniklinik-freiburg.de">guido.schwarzer@uniklinik-freiburg.de</a>, <a href="https://github.com/guido-s/" class="external-link">https://github.com/guido-s/</a></p>
     </div>
-    <div id="see-also">
-    <h2>See also</h2>
-    <div class="dont-index"><p><code><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></code>, <code><a href="https://rdrr.io/pkg/meta/man/metabin.html" class="external-link">metabin</a></code>,
-<code><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></code>, <code><a href="https://rdrr.io/pkg/netmeta/man/netcomb.html" class="external-link">netcomb</a></code>,
-<code><a href="https://rdrr.io/pkg/netmeta/man/netmetabin.html" class="external-link">netmetabin</a></code></p></div>
-    </div>
     <div id="concepts">
     <h2>Concepts</h2>
     <p>medicine, odds ratios, network meta-analysis, component network meta-analysis</p>
@@ -138,12 +132,13 @@
 <span class="r-in"><span><span class="co">### format. Argument 'sm' has to be used for odds ratio as summary</span></span></span>
 <span class="r-in"><span><span class="co">### measure; by default the risk ratio is used in the metabin function</span></span></span>
 <span class="r-in"><span><span class="co">### called internally.</span></span></span>
-<span class="r-in"><span><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="va">treatment</span>, <span class="va">exac</span>, <span class="va">total</span>, studlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">study</span>, <span class="va">year</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="va">treatment</span>, <span class="va">exac</span>, <span class="va">total</span>, studlab <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">study</span>, <span class="va">year</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  data <span class="op">=</span> <span class="va">dat.baker2009</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Conduct random effects network meta-analysis (NMA)</span></span></span>
 <span class="r-in"><span><span class="co">### with placebo as reference</span></span></span>
 <span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use argument 'common' instead of 'fixed' (deprecated).</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Comparisons with missing TE / seTE or zero seTE not considered in network meta-analysis.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Comparisons not considered in network meta-analysis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>             studlab                 treat1     treat2 TE seTE</span>
@@ -158,7 +153,7 @@
 <span class="r-in"><span>  plastic <span class="op">=</span> <span class="cn">TRUE</span>, thickness <span class="op">=</span> <span class="st">"se.fixed"</span>, number <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
 <span class="r-in"><span>  points <span class="op">=</span> <span class="cn">TRUE</span>, cex.points <span class="op">=</span> <span class="fl">5</span>, col.points <span class="op">=</span> <span class="st">"red"</span>,</span></span>
 <span class="r-in"><span>  offset <span class="op">=</span> <span class="fl">0.025</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.baker2009-1.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.baker2009-1.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Print and plot results for network meta-analysis</span></span></span>
 <span class="r-in"><span><span class="va">net</span></span></span>
@@ -189,8 +184,13 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           60.86   46  0.0700</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  43.20   34  0.1340</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 17.66   12  0.1264</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Details of network meta-analysis methods:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Frequentist graph-theoretical approach</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - DerSimonian-Laird estimator for tau^2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.baker2009-2.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.baker2009-2.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Conduct component network meta-analysis (CNMA)</span></span></span>
 <span class="r-in"><span><span class="va">cnet</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netcomb.html" class="external-link">netcomb</a></span><span class="op">(</span><span class="va">net</span><span class="op">)</span></span></span>
@@ -236,11 +236,17 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Additive model 62.62 47  0.0632</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Standard model 60.86 46  0.0700</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Difference      1.76  1  0.1841</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Details of network meta-analysis methods:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Frequentist graph-theoretical approach</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Component network meta-analysis</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - DerSimonian-Laird estimator for tau^2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Compare results of NMA and additive CNMA</span></span></span>
 <span class="r-in"><span><span class="va">nb</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netbind.html" class="external-link">netbind</a></span><span class="op">(</span><span class="va">net</span>, <span class="va">cnet</span>, name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Standard NMA"</span>, <span class="st">"Additive CNMA"</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">nb</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.baker2009-3.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.baker2009-3.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Use previous settings</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span><span class="va">oldset</span><span class="op">)</span></span></span>
@@ -254,11 +260,11 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
+  <p></p><p>Developed by Wolfgang Viechtbauer, Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

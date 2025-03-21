@@ -61,7 +61,7 @@ subset(pw, studlab \%in\% selstudy)[, c(3:7, 10, 1)]
 
 ### Conduct random effects network meta-analysis (NMA)
 ### with placebo as reference
-net <- netmeta(pw, fixed = FALSE, ref = "plac")
+net <- netmeta(pw, common = FALSE, ref = "plac")
 
 ### Show network graph
 netgraph(net, number = TRUE, multiarm = TRUE,
@@ -96,9 +96,6 @@ netleague(net, seq = netrank(net), ci = FALSE)
 ### Use previous settings
 settings.meta(oldset)
 }
-}
-\seealso{
-   \code{\link[meta]{pairwise}}, \code{\link[meta]{metacont}}, \code{\link[netmeta]{netmeta}}, \code{\link[netmeta]{netrank}}, \code{\link[netmeta]{rankogram}}, \code{\link[netmeta]{netleague}}
 }
 \keyword{datasets}
 \concept{medicine}

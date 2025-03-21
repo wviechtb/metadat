@@ -58,7 +58,7 @@ trts <- c("SSRI",
 ### Conduct random effects network meta-analysis
 net <- netmeta(lnOR, selnOR, treat1, treat2, id,
   data = dat.linde2016, reference.group = "placebo",
-  seq = trts, sm = "OR", fixed = FALSE)
+  seq = trts, sm = "OR", common = FALSE)
 
 ### Network graph
 netgraph(net, seq = "o", number = TRUE)
@@ -76,9 +76,6 @@ forest(nc, xlim = c(0.2, 50))
 ### Use previous settings
 settings.meta(oldset)
 }
-}
-\seealso{
-   \code{\link[netmeta]{netmeta}}
 }
 \keyword{datasets}
 \concept{medicine}

@@ -78,7 +78,7 @@ anova(res.fe, btt="treatment")
 
 ### forest plot of the contrast estimates (treatments versus placebos)
 forest(tail(coef(res.fe), 9), tail(diag(vcov(res.fe)), 9), slab=levels(dat$treatment)[-1],
-       xlim=c(-2.5, 1.5), alim=c(-1.5, 0.5), psize=1, xlab="Estimate", header="Treatment", top=2)
+       xlim=c(-2.5, 1.5), alim=c(-1.5, 0.5), psize=1, xlab="Estimate", header="Treatment")
 
 ### weight matrix for the estimation of the fixed effects (leaving out the study effects)
 w <- t(tail(vcov(res.fe) \%*\% t(model.matrix(res.fe)) \%*\% weights(res.fe, type="matrix"), 9))
@@ -101,7 +101,7 @@ anova(res.re, btt="treatment")
 
 ### forest plot of the contrast estimates (treatments versus placebos)
 forest(tail(coef(res.re), 9), tail(diag(vcov(res.re)), 9), slab=levels(dat$treatment)[-1],
-       xlim=c(-2.5, 1.5), alim=c(-1.5, 0.5), psize=1, xlab="Estimate", header="Treatment", top=2)
+       xlim=c(-2.5, 1.5), alim=c(-1.5, 0.5), psize=1, xlab="Estimate", header="Treatment")
 
 ### compute the contribution of each study to the overall Q-test value
 qi <- sort(by((resid(res.fe) / sqrt(dat$vi))^2, dat$study, sum))

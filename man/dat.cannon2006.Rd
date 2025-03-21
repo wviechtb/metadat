@@ -50,8 +50,8 @@ res <- rma.mh(measure="OR", ai=ep1t, n1i=nt, ci=ep1c, n2i=nc, data=dat, slab=tri
 print(res, digits=2)
 
 ### forest plot
-forest(res, xlim=c(-.8,.8), atransf=exp, at=log(c(2/3, 1, 3/2)),
-       header=TRUE, top=2, cex=1.2, xlab="Odds Ratio")
+forest(res, xlim=c(-.8,0.8), atransf=exp, at=log(c(2/3, 1, 3/2)),
+       cex=1.2, xlab="Odds Ratio")
 mtext("(high dose better)", side=1, line=par("mgp")[1]-0.5, at=log(2/3), cex=1.2, font=3)
 mtext("(standard dose better)", side=1, line=par("mgp")[1]-0.5, at=log(3/2), cex=1.2, font=3)
 }

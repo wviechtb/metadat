@@ -57,7 +57,7 @@ res
 predict(res, transf=transf.iabt)
 
 ### forest plot
-forest(res, slab=source, header=TRUE, top=2, xlim=c(0,4.5),
+forest(res, slab=source, xlim=c(0,4.5),
        atransf=transf.iabt, refline=coef(res))
 
 ### examine whether female/mixed samples yield different alphas (with raw alphas)

@@ -54,7 +54,7 @@ The data frame contains the following columns:
    Goya, H., Kuraishi, H., Koyama, S., \emph{et al.} (2012). Phase I/II study of S-1 combined with biweekly irinotecan chemotherapy in previously treated advanced non-small cell lung cancer. \emph{Cancer Chemotherapy and Pharmacology}, \bold{70}(5), 691--697. \verb{https://doi.org/10.1007/s00280-012-1957-0}
 }
 \seealso{
-   \code{\link{dat.ursino2021}}.
+   \code{\link{dat.ursino2021}}
 }
 \author{
    Christian Roever, \email{christian.roever@med.uni-goettingen.de}

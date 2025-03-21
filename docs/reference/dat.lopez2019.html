@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
       </span>
     </div>
 
@@ -163,7 +163,7 @@
 <span class="r-in"><span>     layout<span class="op">=</span><span class="fu"><a href="https://r.igraph.org/reference/layout_in_circle.html" class="external-link">layout_in_circle</a></span><span class="op">(</span><span class="va">g</span>, order<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Wait list"</span>, <span class="st">"No treatment"</span>, <span class="st">"TAU"</span>, <span class="st">"Multimedia CBT"</span>,</span></span>
 <span class="r-in"><span>                                        <span class="st">"Hybrid CBT"</span>, <span class="st">"F2F CBT"</span>, <span class="st">"Placebo"</span><span class="op">)</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>     vertex.size<span class="op">=</span><span class="fl">45</span>, vertex.color<span class="op">=</span><span class="st">"lightgray"</span>, vertex.label.color<span class="op">=</span><span class="st">"black"</span>, vertex.label.font<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.lopez2019-1.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.lopez2019-1.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### restructure data into wide format</span></span></span>
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/to.wide.html" class="external-link">to.wide</a></span><span class="op">(</span><span class="va">dat</span>, study<span class="op">=</span><span class="st">"study"</span>, grp<span class="op">=</span><span class="st">"treatment"</span>, ref<span class="op">=</span><span class="st">"TAU"</span>,</span></span>
@@ -225,9 +225,9 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### forest plot of the contrast estimates (treatments versus TAU)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span>, <span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/vcov.html" class="external-link">vcov</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">)</span>, slab<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">sub</a></span><span class="op">(</span><span class="st">"."</span>, <span class="st">" "</span>, <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/coef.html" class="external-link">coef</a></span><span class="op">(</span><span class="va">res</span><span class="op">)</span><span class="op">)</span>, fixed<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span>,</span></span>
-<span class="r-in"><span>       xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">5</span>,<span class="fl">5</span><span class="op">)</span>, alim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">3</span>,<span class="fl">3</span><span class="op">)</span>, psize<span class="op">=</span><span class="fl">1</span>, header<span class="op">=</span><span class="st">"Treatment"</span>, top<span class="op">=</span><span class="fl">2</span>,</span></span>
+<span class="r-in"><span>       xlim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">5</span>,<span class="fl">5</span><span class="op">)</span>, alim<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">3</span>,<span class="fl">3</span><span class="op">)</span>, psize<span class="op">=</span><span class="fl">1</span>, header<span class="op">=</span><span class="st">"Treatment"</span>,</span></span>
 <span class="r-in"><span>       xlab<span class="op">=</span><span class="st">"Difference in Standardized Mean Change (compared to TAU)"</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.lopez2019-2.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.lopez2019-2.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### fit random inconsistency effects model (might have to switch optimizer to get convergence)</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, data<span class="op">=</span><span class="va">dat</span>,</span></span>
@@ -258,7 +258,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 90) = 18276.4524, p-val &lt; .0001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 1:6):</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 6) = 74.8281, p-val &lt; .0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 6) = 74.8282, p-val &lt; .0001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -283,11 +283,11 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
+  <p></p><p>Developed by Wolfgang Viechtbauer, Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

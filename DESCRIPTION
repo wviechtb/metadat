@@ -1,8 +1,11 @@
 Package: metadat
-Version: 1.3-0
-Date: 2025-01-21
+Version: 1.5-1
+Date: 2025-03-14
 Title: Meta-Analysis Datasets
 Authors@R: c(
+  person(given = "Wolfgang", family = "Viechtbauer",
+  role = c("aut","cre"), email = "wvb@metafor-project.org",
+  comment = c(ORCID = "0000-0003-3463-4063")),
   person(given = "Thomas", family="White",
   role="aut", email = "thomas.white@sydney.edu.au",
   comment = c(ORCID = "0000-0002-3976-1734")),
@@ -15,9 +18,6 @@ Authors@R: c(
   person(given = "W. Kyle", family="Hamilton",
   role="aut", email = "whamilton@ucmerced.edu",
   comment = c(ORCID = "0000-0002-8642-7990")),
-  person(given = "Wolfgang", family = "Viechtbauer",
-  role = c("aut","cre"), email = "wvb@metafor-project.org",
-  comment = c(ORCID = "0000-0003-3463-4063")),
   person(given = "Guido", family = "Schwarzer",
   role = "dtc", email = "guido.schwarzer@uniklinik-freiburg.de",
   comment = c(ORCID = "0000-0001-6214-9087")))
@@ -33,3 +33,4 @@ RdMacros: mathjaxr
 BuildManual: TRUE
 URL: https://github.com/wviechtb/metadat, https://wviechtb.github.io/metadat/
 BugReports: https://github.com/wviechtb/metadat/issues
+

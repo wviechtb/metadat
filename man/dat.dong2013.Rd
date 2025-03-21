@@ -80,9 +80,6 @@ print(netsplit(net), show = "both", ci = TRUE, overall = FALSE,
 settings.meta(oldset)
 }
 }
-\seealso{
-   \code{\link[meta]{pairwise}}, \code{\link[meta]{metabin}}, \code{\link[netmeta]{netmetabin}}
-}
 \keyword{datasets}
 \concept{medicine}
 \concept{odds ratios}

@@ -85,7 +85,7 @@ res.overall.crve.pred <- predict(res.overall.crve)
 res.overall.crve.pred
 
 ### multilevel meta-analytic model for SA measures
-res.sa <-  rma.mv(es.z, vi.z, mods = ~ SA.measure.type - 1,
+res.sa <-  rma.mv(es.z, vi.z, mods = ~ 0 + SA.measure.type,
                   random = ~ 1 | SampleID / Outcome,
                   data = dat,
                   test = "t")
@@ -141,7 +141,7 @@ forest(plot.vals$all.z,
        xlab = expression("Correlation Coefficient"~"("*italic('r')*")"),
        main = "\n\n\nSA Measures",
        ilab = c(all.pvals.rounded, ""), ilab.xpos = 2.45, ilab.pos = 2.5,
-       digits = 2, refline = 0, annotate = FALSE)
+       digits = 2, refline = 0, annotate = FALSE, header = FALSE)
 
 ### keep trailing zero using sprintf
 output <- cbind(sprintf("\%.2f", round(transf.ztor(plot.vals$all.z), 2)),
@@ -154,7 +154,7 @@ text( 1.05, 12:1, annotext, pos = 4, cex = 1.05)
 text(-1.475, 14.00, "SA Measure", cex = 1.05)
 text( 2.30,  14.00, substitute(paste(italic('p-value'))), cex = 1.05)
 text( 1.55,  14.00, "Correlation [95\% CI]", cex = 1.05)
-abline(h = 1.5)
+abline(h = 2.5)
 
 ### black polygon for overall mean CIs
 addpoly(all.z[11], ci.lb = all.ci.lower[11], ci.ub = all.ci.upper[11],

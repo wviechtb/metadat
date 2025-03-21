@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.3-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
       </span>
     </div>
 
@@ -110,10 +110,6 @@
     <h2>Author</h2>
     <p>Guido Schwarzer, <a href="mailto:guido.schwarzer@uniklinik-freiburg.de">guido.schwarzer@uniklinik-freiburg.de</a>, <a href="https://github.com/guido-s/" class="external-link">https://github.com/guido-s/</a></p>
     </div>
-    <div id="see-also">
-    <h2>See also</h2>
-    <div class="dont-index"><p><code><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></code>, <code><a href="https://rdrr.io/pkg/meta/man/metabin.html" class="external-link">metabin</a></code>, <code><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></code>, <code><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></code></p></div>
-    </div>
     <div id="concepts">
     <h2>Concepts</h2>
     <p>medicine, psychiatry, odds ratios, network meta-analysis</p>
@@ -150,7 +146,7 @@
 <span class="r-in"><span><span class="co">### (outcome: early response). Argument 'sm' has to be used for odds</span></span></span>
 <span class="r-in"><span><span class="co">### ratio as summary measure; by default the risk ratio is used in the</span></span></span>
 <span class="r-in"><span><span class="co">### metabin function called internally.</span></span></span>
-<span class="r-in"><span><span class="va">pw1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span><span class="va">pw1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  event <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">resp1</span>, <span class="va">resp2</span>, <span class="va">resp3</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  studlab <span class="op">=</span> <span class="va">id</span>, data <span class="op">=</span> <span class="va">dat.linde2015</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
@@ -160,6 +156,7 @@
 <span class="r-in"><span><span class="co">### small.values)</span></span></span>
 <span class="r-in"><span><span class="va">net1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw1</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, reference <span class="op">=</span> <span class="st">"Placebo"</span>, seq <span class="op">=</span> <span class="va">trts</span>,</span></span>
 <span class="r-in"><span>  small.values <span class="op">=</span> <span class="st">"bad"</span><span class="op">)</span></span></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use argument 'common' instead of 'fixed' (deprecated).</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Comparisons with missing TE / seTE or zero seTE not considered in network meta-analysis.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Comparisons not considered in network meta-analysis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  studlab treat1  treat2 TE seTE</span>
@@ -202,14 +199,20 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           79.37   58  0.0327</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  49.41   39  0.1226</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 29.95   19  0.0524</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Details of network meta-analysis methods:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Frequentist graph-theoretical approach</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - DerSimonian-Laird estimator for tau^2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Random effects NMA for early remission</span></span></span>
-<span class="r-in"><span><span class="va">pw2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span>treat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span><span class="va">pw2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span>treat <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">treatment1</span>, <span class="va">treatment2</span>, <span class="va">treatment3</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  event <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">remi1</span>, <span class="va">remi2</span>, <span class="va">remi3</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  n <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="va">n1</span>, <span class="va">n2</span>, <span class="va">n3</span><span class="op">)</span>,</span></span>
 <span class="r-in"><span>  studlab <span class="op">=</span> <span class="va">id</span>, data <span class="op">=</span> <span class="va">dat.linde2015</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">net2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw2</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>,</span></span>
 <span class="r-in"><span>   seq <span class="op">=</span> <span class="va">trts</span>, ref <span class="op">=</span> <span class="st">"Placebo"</span>, small.values <span class="op">=</span> <span class="st">"bad"</span><span class="op">)</span></span></span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use argument 'common' instead of 'fixed' (deprecated).</span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Comparisons with missing TE / seTE or zero seTE not considered in network meta-analysis.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Comparisons not considered in network meta-analysis:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  studlab        treat1  treat2 TE seTE</span>
@@ -264,6 +267,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Total           60.71   49  0.1218</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Within designs  36.83   36  0.4303</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Between designs 23.88   13  0.0323</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Details of network meta-analysis methods:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Frequentist graph-theoretical approach</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - DerSimonian-Laird estimator for tau^2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Ranking of treatments</span></span></span>
 <span class="r-in"><span><span class="va">nr1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netrank.html" class="external-link">netrank</a></span><span class="op">(</span><span class="va">net1</span><span class="op">)</span></span></span>
@@ -295,7 +303,7 @@
 <span class="r-in"><span><span class="va">outcomes</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Early response"</span>, <span class="st">"Early remission"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">po12</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netposet.html" class="external-link">netposet</a></span><span class="op">(</span><span class="va">nr1</span>, <span class="va">nr2</span>, outcomes <span class="op">=</span> <span class="va">outcomes</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="va">po12</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="dat.linde2015-1.png" alt="" width="864" height="768"></span>
+<span class="r-plt img"><img src="dat.linde2015-1.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Use previous settings</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span><span class="va">oldset</span><span class="op">)</span></span></span>
@@ -309,11 +317,11 @@
 
 
       <footer><div class="copyright">
-  <p></p><p>Developed by Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton, Wolfgang Viechtbauer.</p>
+  <p></p><p>Developed by Wolfgang Viechtbauer, Thomas White, Daniel Noble, Alistair Senior, W. Kyle Hamilton.</p>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
