@@ -61,7 +61,7 @@ subset(pw, studlab \%in\% selstudy)[, c(3:7, 10, 1)]
 
 ### Conduct random effects network meta-analysis (NMA)
 ### with placebo as reference
-net <- netmeta(pw, fixed = FALSE, ref = "plac")
+net <- netmeta(pw, common = FALSE, ref = "plac")
 
 ### Show network graph
 netgraph(net, number = TRUE, multiarm = TRUE,
