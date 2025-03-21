@@ -33,4 +33,3 @@ RdMacros: mathjaxr
 BuildManual: TRUE
 URL: https://github.com/wviechtb/metadat, https://wviechtb.github.io/metadat/
 BugReports: https://github.com/wviechtb/metadat/issues
-
