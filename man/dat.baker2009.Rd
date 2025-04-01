@@ -48,7 +48,7 @@ pw <- pairwise(treatment, exac, total, studlab = paste(study, year),
 
 ### Conduct random effects network meta-analysis (NMA)
 ### with placebo as reference
-net <- netmeta(pw, fixed = FALSE, ref = "plac")
+net <- netmeta(pw, common = FALSE, ref = "plac")
 
 ### Show network graph
 netgraph(net, seq = "optimal", start = "prcomp",
