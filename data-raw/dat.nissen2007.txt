@@ -1,0 +1,97 @@
+"study","group","intervention","detailed.intervention","phase","duration","n.all","n","deaths","infarcts","type","population","period","age","male","hemoglobin"
+"49653/011","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,24,357,357,1,2,"Trials included in original registration package","Type 2 DM","Sept. 1996-Sept. 1997",60.15,65.7,8.9
+"49653/011","Control","Placebo","Placebo",3,24,176,176,0,0,"Trials included in original registration package","Type 2 DM","Sept. 1996-Sept. 1997",58.8,65.8,9
+"49653/020","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,52,391,391,0,2,"Trials included in original registration package","Type 2 DM","Oct. 1996-May 1998",60.65,62.9,8.15
+"49653/020","Control","Sulfonylurea","Glyburide",3,52,207,207,0,1,"Trials included in original registration package","Type 2 DM","Oct. 1996-May 1998",60.1,70.4,8.2
+"49653/024","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,26,774,774,0,1,"Trials included in original registration package","Type 2 DM","Jan. 1997-Feb. 1998",57.425,60.825,8.925
+"49653/024","Control","Placebo","Placebo",3,26,185,185,0,1,"Trials included in original registration package","Type 2 DM","Jan. 1997-Feb. 1998",57.7,68.8,8.9
+"49653/093","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,26,213,213,0,0,"Trials included in original registration package","Type 2 DM poorly controlled on Met","June 1997-April 1998",57.8,60,8.7
+"49653/093","Control","Metformin","Metformin",3,26,109,109,0,1,"Trials included in original registration package","Type 2 DM poorly controlled on Met","June 1997-April 1998",59.5,67,8.8
+"49653/094","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,26,232,232,1,1,"Trials included in original registration package","Type 2 DM poorly controlled on Met","April 1997-March 1998",57.9,65.15,8.9
+"49653/094","Control","Metformin","Metformin",3,26,116,116,0,0,"Trials included in original registration package","Type 2 DM poorly controlled on Met","April 1997-March 1998",58.8,74.3,8.6
+"100684","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glyburide",4,52,43,43,0,0,"Additional phase 2, 3, and 4 efficacy trials","Korean patients with type 2 DM","Dec. 2003-July 2005",55.2,53.5,NA
+"100684","Control","Sulfonylurea","Glyburide",4,52,47,47,0,1,"Additional phase 2, 3, and 4 efficacy trials","Korean patients with type 2 DM","Dec. 2003-July 2005",54.5,45.6,NA
+"49653/143","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glyburide",4,24,121,121,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on glyburide","July 2000-Jan. 2003",52,45.3,9.2
+"49653/143","Control","Sulfonylurea","Glyburide",4,24,124,124,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on glyburide","July 2000-Jan. 2003",53,48.3,9.4
+"49653/211","Rosiglitazone","Rosiglitazone + Usual care","Rosiglitazone + Usual care",4,52,110,110,3,5,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM with CHF","July 2001-Nov. 2003",64.3,84.3,7.7
+"49653/211","Control","Usual care","Usual care",4,52,114,114,2,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM with CHF","July 2001-Nov. 2003",63.9,79,7.8
+"49653/284","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",4,24,382,382,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","June 2001-Feb. 2003",55.5,51.1,8.1
+"49653/284","Control","Metformin","Metformin",4,24,384,384,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","June 2001-Feb. 2003",55.6,51,7.9
+"712753/008","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",4,48,284,284,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on Met","June 2003-Dec. 2005",55.3,64.2,NA
+"712753/008","Control","Metformin","Metformin",4,48,135,135,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on Met","June 2003-Dec. 2005",56.9,53.4,NA
+"AVM100264","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",4,52,294,294,2,0,"Additional phase 2, 3, and 4 efficacy trials","Overweight patients with type 2 DM poorly controlled on Met","July 2004-Jan. 2006",58.5,52.7,8
+"AVM100264","Control","Metformin + Sulfonylurea","Metformin + Sulfonylurea",4,52,302,302,1,1,"Additional phase 2, 3, and 4 efficacy trials","Overweight patients with type 2 DM poorly controlled on Met","July 2004-Jan. 2006",59.3,52.5,8
+"49653/185","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",4,32,563,563,0,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","May 2000-May 2002",58.5,62.7,7.45
+"49653/185","Control","Metformin","Metformin",4,32,142,142,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","May 2000-May 2002",60,56.4,7.5
+"49653/334","Rosiglitazone","Rosiglitazone","Rosiglitazone",4,52,278,278,0,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM or insulin resistance syndrome","March 2002-Nov. 2004",67.7,44.8,6.3
+"49653/334","Control","Placebo","Placebo",4,52,279,279,1,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM or insulin resistance syndrome","March 2002-Nov. 2004",67.3,47.7,6.3
+"49653/347","Rosiglitazone","Rosiglitazone + Insulin","Rosiglitazone + Insulin",4,24,418,418,0,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on insulin","Nov. 2002-April 2004",52.65,54.05,8.95
+"49653/347","Control","Insulin","Insulin",4,24,212,212,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on insulin","Nov. 2002-April 2004",53.8,46.2,9.1
+"49653/015","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Sulfonylurea",3,24,395,395,2,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Aug. 1996-March 1998",60.8,58,9.2
+"49653/015","Control","Sulfonylurea","Sulfonylurea",3,24,198,198,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Aug. 1996-March 1998",61.9,57.3,9.2
+"49653/079","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glyburide",3,26,203,203,1,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on maximum dose of Gly","April 1997-March 1998",57.7,69.4,9.2
+"49653/079","Control","Sulfonylurea","Glyburide",3,26,106,106,1,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on maximum dose of Gly","April 1997-March 1998",58.5,66.7,9.3
+"49653/080","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,156,104,104,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Nov. 1996-May 2000",55.1,75,8.9
+"49653/080","Control","Sulfonylurea","Glyburide",3,156,99,99,0,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Nov. 1996-May 2000",56.1,70.1,9.4
+"49653/082","Rosiglitazone","Rosiglitazone + Insulin","Rosiglitazone + Insulin",3,26,212,212,1,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on insulin","July 1997-Aug. 1998",57.4,55.45,9.05
+"49653/082","Control","Insulin","Insulin",3,26,107,107,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on insulin","July 1997-Aug. 1998",55.6,55.8,8.9
+"49653/085","Rosiglitazone","Rosiglitazone + Insulin","Rosiglitazone + Insulin",3,26,138,138,1,3,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","May 2000-June 2001",61.3,54,NA
+"49653/085","Control","Insulin","Insulin",3,26,139,139,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","May 2000-June 2001",61.5,46.8,NA
+"49653/095","Rosiglitazone","Rosiglitazone + Insulin","Rosiglitazone + Insulin",3,26,196,196,1,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on insulin","Aug. 1997-Dec. 1998",57.6,61.4,8.95
+"49653/095","Control","Insulin","Insulin",3,26,96,96,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on insulin","Aug. 1997-Dec. 1998",58.9,45.3,9.1
+"49653/097","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,156,122,122,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Aug. 1997-Jan. 2001",55.8,72.1,8.9
+"49653/097","Control","Sulfonylurea","Glyburide",3,156,120,120,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Aug. 1997-Jan. 2001",56,70.8,8.8
+"49653/125","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Sulfonylurea",3,26,175,175,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","May 1999-Aug. 2000",54.6,45.7,9.1
+"49653/125","Control","Sulfonylurea","Sulfonylurea",3,26,173,173,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","May 1999-Aug. 2000",57.3,42.4,8.9
+"49653/127","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glyburide",3,26,56,56,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on Gly","Jan. 1999-Dec. 1999",60,51,9.1
+"49653/127","Control","Sulfonylurea","Glyburide",3,26,58,58,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled on Gly","Jan. 1999-Dec. 1999",59.4,66,8.9
+"49653/128","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Sulfonylurea",3,26,39,39,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM on concurrent Su","May 1999-June 2000",58.3,51.3,9.6
+"49653/128","Control","Sulfonylurea","Sulfonylurea",3,26,38,38,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM on concurrent Su","May 1999-June 2000",57.7,42.1,9.9
+"49653/134","Rosiglitazone","Rosiglitazone + Sulfonylurea + Metformin","Rosiglitazone + Glyburide + Metformin",3,26,561,561,1,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM on Gly and Met","March 1999-Aug. 2000",55.55,60,8.65
+"49653/134","Control","Sulfonylurea + Metformin","Glyburide + Metformin",3,26,276,276,0,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM on Gly and Met","March 1999-Aug. 2000",55.8,61,8.7
+"49653/135","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glipizide",3,104,116,116,2,2,"Additional phase 2, 3, and 4 efficacy trials","Elderly patients with type 2 DM","May 1999-Oct. 2002",68.7,74.1,7.6
+"49653/135","Control","Sulfonylurea","Glipizide",3,104,111,111,1,3,"Additional phase 2, 3, and 4 efficacy trials","Elderly patients with type 2 DM","May 1999-Oct. 2002",68.2,71.2,7.3
+"49653/136","Rosiglitazone","Rosiglitazone + Sulfonylurea + Insulin","Rosiglitazone + Sulfonylurea + Insulin",3,26,148,148,2,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM with chronic renal failure on Su, insulin, or both","July 1999-June 2001",64.9,60.7,8.2
+"49653/136","Control","Sulfonylurea + Insulin","Sulfonylurea + Insulin",3,26,143,143,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM with chronic renal failure on Su, insulin, or both","July 1999-June 2001",66.3,60.8,8.3
+"49653/145","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Gliclazide",3,26,231,231,1,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Oct. 1999-Nov. 2000",61.1,57.3,8.5
+"49653/145","Control","Sulfonylurea","Gliclazide",3,26,242,242,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Oct. 1999-Nov. 2000",61.9,62.7,8.6
+"49653/147","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Sulfonylurea",3,26,89,89,0,1,"Additional phase 2, 3, and 4 efficacy trials","Indo-Asian patients with type 2 DM","July 1999-Aug. 2000",54.3,20.2,9.2
+"49653/147","Control","Sulfonylurea","Sulfonylurea",3,26,88,88,0,0,"Additional phase 2, 3, and 4 efficacy trials","Indo-Asian patients with type 2 DM","July 1999-Aug. 2000",54.1,25.3,9.1
+"49653/162","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glyburide",3,26,168,168,1,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Nov. 2000-April 2002",60,55.1,7.9
+"49653/162","Control","Sulfonylurea","Glyburide",3,26,172,172,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Nov. 2000-April 2002",59.9,61.8,8
+"49653/234","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glimepiride",3,26,116,116,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Jan. 2001-Feb. 2002",61.7,50.5,8.15
+"49653/234","Control","Sulfonylurea","Glimepiride",3,26,61,61,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","Jan. 2001-Feb. 2002",65,60,7.9
+"49653/330","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,52,1181,1172,1,1,"Additional phase 2, 3, and 4 efficacy trials","Chronic psoriasis","Jan. 2003-Oct. 2004",44.7,64.6666666666667,NA
+"49653/330","Control","Placebo","Placebo",3,52,382,377,0,0,"Additional phase 2, 3, and 4 efficacy trials","Chronic psoriasis","Jan. 2003-Oct. 2004",44.5,63,NA
+"49653/331","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,52,706,706,1,0,"Additional phase 2, 3, and 4 efficacy trials","Chronic psoriasis","Jan. 2003-Oct. 2004",45.05,63.05,NA
+"49653/331","Control","Placebo","Placebo",3,52,325,325,0,0,"Additional phase 2, 3, and 4 efficacy trials","Chronic psoriasis","Jan. 2003-Oct. 2004",46.4,58.3,NA
+"49653/137","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,26,204,204,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","April 2000-March 2004",60,63.4,NA
+"49653/137","Control","Sulfonylurea + Metformin","Glyburide + Metformin",3,26,185,185,1,2,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM","April 2000-March 2004",58.8,68.9,NA
+"712753/002","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,24,288,288,1,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled","July 2003-June 2004",58.1,58.3,7.4
+"712753/002","Control","Metformin","Metformin",3,24,280,280,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM poorly controlled","July 2003-June 2004",57.6,56.8,7.5
+"712753/003","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,32,254,254,0,1,"Additional phase 2, 3, and 4 efficacy trials","Mild type 2 DM","June 2003-Dec. 2004",58.9,54.7,7.2
+"712753/003","Control","Metformin","Metformin",3,32,272,272,0,0,"Additional phase 2, 3, and 4 efficacy trials","Mild type 2 DM","June 2003-Dec. 2004",59,55.5,7.2
+"712753/007","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,32,314,314,0,1,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM without previous drug therapy","Oct. 2003-Dec. 2004",50.1,57.4,8.9
+"712753/007","Control","Metformin","Metformin",3,32,154,154,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM without previous drug therapy","Oct. 2003-Dec. 2004",50.6,58.5,8.8
+"712753/009","Rosiglitazone","Rosiglitazone + Metformin + Insulin","Rosiglitazone + Metformin + Insulin",3,24,162,162,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM with insulin","Oct. 2003-Nov. 2004",57.2,51.8,8.7
+"712753/009","Control","Insulin","Insulin",3,24,160,160,0,0,"Additional phase 2, 3, and 4 efficacy trials","Type 2 DM with insulin","Oct. 2003-Nov. 2004",56.9,53.1,8.8
+"49653/132","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Sulfonylurea",2,24,442,442,1,1,"Additional phase 2, 3, and 4 efficacy trials","Patients in China with type 2 DM","April 1999-Feb. 2000",58.95,44.5,9.8
+"49653/132","Control","Sulfonylurea","Sulfonylurea",2,24,112,112,0,0,"Additional phase 2, 3, and 4 efficacy trials","Patients in China with type 2 DM","April 1999-Feb. 2000",58.8,45.7,9.6
+"AVA100193","Rosiglitazone","Rosiglitazone","Rosiglitazone",2,24,394,394,1,1,"Additional phase 2, 3, and 4 efficacy trials","Mild-to-moderate Alzheimer's disease","Jan. 2004-May 2005",70.6666666666667,40.6666666666667,NA
+"AVA100193","Control","Placebo","Placebo",2,24,124,124,0,0,"Additional phase 2, 3, and 4 efficacy trials","Mild-to-moderate Alzheimer's disease","Jan. 2004-May 2005",72,36.9,NA
+"DREAM","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,156,2635,2635,12,15,"Recently published large, prospective, randomized trials","Impaired glucose tolerance or fasting glucose","July 2001-Aug. 2003",54.6,41.7,104.5
+"DREAM","Control","Placebo","Placebo",3,156,2634,2634,10,9,"Recently published large, prospective, randomized trials","Impaired glucose tolerance or fasting glucose","July 2001-Aug. 2003",54.8,39.9,104.5
+"ADOPT","Rosiglitazone","Rosiglitazone","Rosiglitazone",3,208,1456,1456,2,27,"Recently published large, prospective, randomized trials","Recently diagnosed type 2 DM","April 2000-June 2002",56.3,55.7,7.4
+"ADOPT","Control","Metformin + Sulfonylurea","Metformin + Glyburide",3,208,2895,2895,5,41,"Recently published large, prospective, randomized trials","Recently diagnosed type 2 DM","April 2000-June 2002",57.15,58.7,7.4
+"49653/369","Rosiglitazone","Rosiglitazone","Rosiglitazone",4,26,NA,25,0,0,"All zero","Type 2 DM","Jan. 2003-Oct. 2003",NA,NA,NA
+"49653/369","Control","Sulfonylurea","Glibenclamide",4,26,NA,24,0,0,"All zero","Type 2 DM","Jan. 2003-Oct. 2003",NA,NA,NA
+"49653/282","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",4,24,NA,70,0,0,"All zero","Type 2 DM","June 2001-Nov. 2002",NA,NA,NA
+"49653/282","Control","Sulfonylurea + Metformin","Glyburide + Metformin",4,24,NA,75,0,0,"All zero","Type 2 DM","June 2001-Nov. 2002",NA,NA,NA
+"49653/044","Rosiglitazone","Rosiglitazone + Metformin","Rosiglitazone + Metformin",3,26,NA,101,0,0,"All zero","Type 2 DM poorly controlled on Met","Jan. 1998-Dec. 1999",NA,NA,NA
+"49653/044","Control","Placebo + Metformin","Placebo + Metformin",3,26,NA,51,0,0,"All zero","Type 2 DM poorly controlled on Met","Jan. 1998-Dec. 1999",NA,NA,NA
+"49653/325","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glimepiride",3,24,NA,196,0,0,"All zero","Type 2 DM poorly controlled on non-TZD","March 2003-June 2004",NA,NA,NA
+"49653/325","Control","Placebo + Sulfonylurea","Placebo + Glimepiride",3,24,NA,195,0,0,"All zero","Type 2 DM poorly controlled on non-TZD","March 2003-June 2004",NA,NA,NA
+"49653/096","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glyburide",3,26,NA,232,0,0,"All zero","Type 2 DM poorly controlled on glyburide","April 1997-March 1998",NA,NA,NA
+"49653/096","Control","Placebo + Sulfonylurea","Placebo + Glyburide",3,26,NA,115,0,0,"All zero","Type 2 DM poorly controlled on glyburide","April 1997-March 1998",NA,NA,NA
+"797620/004","Rosiglitazone","Rosiglitazone + Sulfonylurea","Rosiglitazone + Glimepiride",3,28,NA,676,0,0,"All zero","Type 2 DM","Dec. 2003-Dec. 2004",NA,NA,NA
+"797620/004","Control","Sulfonylurea","Glimepiride",3,28,NA,225,0,0,"All zero","Type 2 DM","Dec. 2003-Dec. 2004",NA,NA,NA
