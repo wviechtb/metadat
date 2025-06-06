@@ -10,10 +10,18 @@ dat.linde2016
 The data frame contains the following columns:
 \tabular{lll}{
 \bold{id}     \tab \code{integer}   \tab study ID \cr
+\bold{author} \tab \code{character} \tab first author \cr
+\bold{year}   \tab \code{numeric}   \tab year of publication \cr
+\bold{treat1} \tab \code{character} \tab first treatment \cr
+\bold{treat2} \tab \code{character} \tab second treatment \cr
+\bold{treat1.long} \tab \code{character} \tab first treatment (full name) \cr
+\bold{treat2.long} \tab \code{character} \tab second treatment (full name) \cr
 \bold{lnOR}   \tab \code{numeric}   \tab response after treatment (log odds ratio) \cr
 \bold{selnOR} \tab \code{numeric}   \tab standard error of log odds ratio \cr
-\bold{treat1} \tab \code{character} \tab first treatment \cr
-\bold{treat2} \tab \code{character} \tab second treatment
+\bold{resp1}  \tab \code{numeric}   \tab number of responder (first group) \cr
+\bold{n1}     \tab \code{numeric}   \tab number of patients (first group) \cr
+\bold{resp2}  \tab \code{numeric}   \tab number of responder (second group) \cr
+\bold{n2}     \tab \code{numeric}   \tab number of patients (second group)
 }
 }
 \details{
