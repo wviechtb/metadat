@@ -75,6 +75,7 @@ mod_glmm <- update(mod_mh, method = "glmm", model = "CM.AL",
   text.common = "GLMM (common)",
   text.random = "GLMM (random)")
 
+if (requireNamespace("brglm2", quietly = TRUE)) {
 ### Fit the logistic regression model with penalized likelihood (LRP)
 mod_plma <- update(mod_glmm, method = "LRP",
   text.common = "LRP method (common)",
@@ -85,14 +86,20 @@ mod_plma1 <- metabin(event1, n1, event2, n2, studlab = study,
   data = subset(pw, !is.na(lnOR)), sm = "OR", method = "LRP",
   text.common = "LRP method, exclude zeros (common)",
   text.random = "LRP method, exclude zeros (random)")
+}
 
 ### Create forest plot with all results
 mm <- metaadd(mod_iv, data = mod_mh)
 mm <- metaadd(mm, data = mod_peto)
 mm <- metaadd(mm, data = mod_glmm)
+#
+if (requireNamespace("brglm2", quietly = TRUE)) {
 mm <- metaadd(mm, data = mod_plma)
 mm <- metaadd(mm, data = mod_plma1)
+}
+#
 # Filename for forest plot
+#
 fname <- tempfile(pattern = "forest", fileext = ".pdf")
 fname
 #
