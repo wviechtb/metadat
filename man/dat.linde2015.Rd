@@ -83,7 +83,7 @@ pw1 <- pairwise(list(treatment1, treatment2, treatment3),
 ### (early response); small number of early responses is bad (argument
 ### small.values)
 net1 <- netmeta(pw1, common = FALSE, reference = "Placebo", seq = trts,
-  small.values = "bad")
+  small.values = "undesirable")
 net1
 
 ### Random effects NMA for early remission
@@ -92,7 +92,7 @@ pw2 <- pairwise(treat = list(treatment1, treatment2, treatment3),
   n = list(n1, n2, n3),
   studlab = id, data = dat.linde2015, sm = "OR")
 net2 <- netmeta(pw2, common = FALSE,
-   seq = trts, ref = "Placebo", small.values = "bad")
+   seq = trts, ref = "Placebo", small.values = "undesirable")
 net2
 
 ### Ranking of treatments

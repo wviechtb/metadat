@@ -1,125 +1,202 @@
-"id","author","year","treat1","treat2","treat1.long","treat2.long","lnOR","selnOR","resp1","n1","resp2","n2"
-1,"Lecrubier",1997,"SNRI","Placebo","SNRI","Placebo",0.664976303593249,0.35884514943056,60,78,48,76
-1,"Lecrubier",1997,"TCA","Placebo","TCA","Placebo",0.0947272593564576,0.339731247862871,49,75,48,76
-1,"Lecrubier",1997,"TCA","SNRI","TCA","SNRI",-0.570249044236791,0.362066187249054,49,75,60,78
-2,"Smit",2006,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.466237146450259,0.411963334764098,16,44,19,72
-4,"Blashki",1971,"TCA","Placebo","TCA","Placebo",0.916290731874155,0.555277708298589,20,35,8,23
-5,"Bedi",2000,"Ind drug","Other face-to-face","Individualized antidepressant","Other face-to-face psychosocial therapies",0.283879786502042,0.411889575613807,20,51,17,52
-6,"Proudfoot",2004,"Self-help CBT","UC","Guided self-help CBT","UC",0.54493333975536,0.274410660028945,49,146,29,128
-7,"Barge-Schaapveld",2002,"TCA","Placebo","TCA","Placebo",0.45953232937844,0.510847249459857,16,32,12,31
-9,"Simon",1996,"TCA","SSRI","TCA","SSRI",0.00388873947457281,0.206279221749242,101,363,48,173
-11,"Doogan",1994,"SSRI","Placebo","SSRI","Placebo",0.442197117376894,0.286009800336032,50,99,40,101
-11,"Doogan",1994,"TCA","Placebo","TCA","Placebo",0.198850858745165,0.280879765420991,48,108,40,101
-11,"Doogan",1994,"TCA","SSRI","TCA","SSRI",-0.243346258631729,0.27912033832257,48,108,50,99
-12,"Van Schaik",2006,"Face-to-face interpsy","UC","Face-to-face interpersonal psychotherapy","UC",-0.062723258473356,0.393421685905849,16,69,18,74
-16,"Mynor-Wallis",2000,"Face-to-face PST","Face-to-face PST + SSRI","Face-to-face PST","Face-to-face PST + SSRI",-0.23767165187712,0.408286585880716,41,80,20,35
-16,"Mynor-Wallis",2000,"SSRI","Face-to-face PST","SSRI","Face-to-face PST",0.643136759985284,0.4183673858506,24,36,41,80
-16,"Mynor-Wallis",2000,"SSRI","Face-to-face PST + SSRI","SSRI","Face-to-face PST + SSRI",0.405465108108164,0.491596040125088,24,36,20,35
-17,"Boyer Teil 1",1996,"TCA","Placebo","TCA","Placebo",1.08059378316543,0.292269870305414,55,111,27,108
-18,"Boyer Teil 2",1996,"TCA","Placebo","TCA","Placebo",0.537100765567788,0.348037321156012,31,73,22,73
-20,"Moon",1994,"TCA","SSRI","TCA","SSRI",-0.00858374369139144,0.389420082669001,29,55,27,51
-22,"Christiansen",1996,"TCA","SSRI","TCA","SSRI",0.0425596144187959,0.350103504364232,48,73,46,71
-23,"Freed",1999,"TCA","SSRI","TCA","SSRI",-0.231221278488044,0.219333878668614,122,191,127,184
-24,"Mynor-Wallis",1995,"Face-to-face PST","Placebo","Face-to-face PST","Placebo",1.39384156675527,0.549791622877812,19,30,9,30
-24,"Mynor-Wallis",1995,"TCA","Face-to-face PST","TCA","Face-to-face PST",-0.482005185230499,0.522213880055984,16,31,19,30
-24,"Mynor-Wallis",1995,"TCA","Placebo","TCA","Placebo",0.911836381524775,0.536560178728188,16,31,9,30
-26,"Lepola",2003,"SSRI","Placebo","SSRI","Placebo",0.412250371109981,0.197766483950365,183,314,74,154
-29,"Corne",1989,"TCA","SSRI","TCA","SSRI",0.89501333342687,0.410149944284808,31,51,19,49
-30,"Wheatley",1989,"NaSSa","rMAO-A","NaSSA","rMAO-A",0.0689928714869514,0.397588435393834,17,38,34,79
-31,"Hollyman",1988,"TCA","Placebo","TCA","Placebo",0.67951905305859,0.323663139405014,37,90,23,88
-33,"Beaumont",1993,"TCA","rMAO-A","TCA","rMAO-A",0.543769779485345,0.224443312749475,120,175,95,170
-34,"Moon",1996,"TCA","SSRI","TCA","SSRI",-0.230690756949593,0.341233422085444,33,68,38,70
-35,"Teasdale",1984,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.680243775724037,0.637124325330156,11,24,6,20
-37,"Hutchinson",1992,"TCA","SSRI","TCA","SSRI",-0.168539417279358,0.446132061642201,18,32,35,58
-39,"Brink",1984,"NaSSa","Placebo","NaSSA","Placebo",0.303186258987746,0.557006651896017,15,27,12,25
-41,"Tylee",1997,"SSRI","SNRI","SSRI","SNRI",0.413661875312343,0.218059076043623,98,170,81,171
-43,"Schulberg",1996,"Face-to-face interpsy","UC","Face-to-face interpersonal psychotherapy","UC",0.430206992704656,0.300845469965714,43,93,33,92
-43,"Schulberg",1996,"TCA","Face-to-face interpsy","TCA","Face-to-face interpersonal psychotherapy",0.349273828458422,0.296050769051403,50,91,43,93
-43,"Schulberg",1996,"TCA","UC","TCA","UC",0.779480821163077,0.302725001854558,50,91,33,92
-46,"Gastpar",2005,"SSRI","Hypericum","SSRI","Hypericum",0.169821394029723,0.262262574794208,72,118,70,123
-48,"Wade",2002,"SSRI","Placebo","SSRI","Placebo",0.488424687076824,0.206933591199506,103,191,79,189
-49,"Williams",2000,"Face-to-face PST","Placebo","Face-to-face PST","Placebo",0.31040728513774,0.253818377016947,52,138,43,140
-49,"Williams",2000,"SSRI","Face-to-face PST","SSRI","Face-to-face PST",0.253642718040497,0.245992593102299,60,137,52,138
-49,"Williams",2000,"SSRI","Placebo","SSRI","Placebo",0.564050003178237,0.251433434446741,60,137,43,140
-50,"Gastpar",2006,"Hypericum","Placebo","Hypericum","Placebo",0.60595753456191,0.251032357863038,71,131,51,130
-50,"Gastpar",2006,"SSRI","Hypericum","SSRI","Hypericum",0.0689928714869514,0.250385350227038,71,127,71,131
-50,"Gastpar",2006,"SSRI","Placebo","SSRI","Placebo",0.674950406048862,0.253392424679098,71,127,51,130
-52,"Lingjarde",1995,"TCA","rMAO-A","TCA","rMAO-A",0.710096738873718,0.564168670589323,14,23,13,30
-53,"Malt",1999,"NaSSa","Placebo","NaSSA","Placebo",0.288797521535647,0.253773872830938,65,121,60,129
-53,"Malt",1999,"SSRI","NaSSa","SSRI","NaSSA",0.283828503135791,0.259978085785331,74,122,65,121
-53,"Malt",1999,"SSRI","Placebo","SSRI","Placebo",0.572626024671438,0.255941921413242,74,122,60,129
-55,"Philipp",1999,"Hypericum","Placebo","Hypericum","Placebo",0.452611886533866,0.369499042280789,76,106,29,47
-55,"Philipp",1999,"TCA","Hypericum","TCA","Hypericum",-0.369920170688753,0.292877008923353,70,110,76,106
-55,"Philipp",1999,"TCA","Placebo","TCA","Placebo",0.0826917158451134,0.35961650193221,70,110,29,47
-56,"Rosenberg",1994,"TCA","SSRI","TCA","SSRI",0.00413603530794447,0.232878616013556,49,92,202,380
-57,"Ravindran",1997,"TCA","SSRI","TCA","SSRI",-0.0555030244881806,0.129999097368819,317,506,328,513
-58,"Scott",1992,"Face-to-face CBT","Other face-to-face","Face-to-face CBT","Other face-to-face psychosocial therapies",-0.146603474191875,0.541793936710683,19,30,20,30
-58,"Scott",1992,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.278279719773391,0.528476372405901,19,30,17,30
-58,"Scott",1992,"Other face-to-face","UC","Other face-to-face psychosocial therapies","UC",0.424883193965266,0.534552716142049,20,30,17,30
-58,"Scott",1992,"TCA","Face-to-face CBT","TCA","Face-to-face CBT",-0.740699720809027,0.523252110073906,14,31,19,30
-58,"Scott",1992,"TCA","Other face-to-face","TCA","Other face-to-face psychosocial therapies",-0.887303195000903,0.529388421520849,14,31,20,30
-58,"Scott",1992,"TCA","UC","TCA","UC",-0.462420001035637,0.515750624987675,14,31,17,30
-59,"Scott",1997,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.27443684570176,0.743391941675028,5,24,4,24
-61,"Bjerkenstedt",2005,"Hypericum","Placebo","Hypericum","Placebo",0.0746908926015892,0.386552453649953,22,57,21,57
-61,"Bjerkenstedt",2005,"SSRI","Hypericum","SSRI","Hypericum",-0.123481056771021,0.389620009501247,20,56,22,57
-61,"Bjerkenstedt",2005,"SSRI","Placebo","SSRI","Placebo",-0.0487901641694321,0.391375271542037,20,56,21,57
-64,"Schrader",2000,"SSRI","Hypericum","SSRI","Hypericum",-0.813106495638924,0.263924520111336,45,114,75,126
-65,"Harrer",1991,"Hypericum","Placebo","Hypericum","Placebo",1.94591014905531,0.434248118673448,35,60,10,60
-66,"Huebner",1993,"Hypericum","Placebo","Hypericum","Placebo",1.04796855584935,0.663411968625409,14,20,9,20
-67,"Harrer",1999,"SSRI","Hypericum","SSRI","Hypericum",0.131028262406404,0.334092702289644,57,84,50,77
-68,"Schmidt",1989,"Hypericum","Placebo","Hypericum","Placebo",1.38629436111989,0.715891053163818,10,20,4,20
-70,"van Gurp",2002,"SSRI","Hypericum","SSRI","Hypericum",-0.178691788743376,0.423004499177149,23,45,25,45
-71,"Witte",1995,"Hypericum","Placebo","Hypericum","Placebo",0.846481200480648,0.427208383346021,34,48,25,49
-72,"Wheatley",1997,"TCA","Hypericum","TCA","Hypericum",0.120286165874502,0.312005665822642,40,78,42,87
-73,"König",1993,"Hypericum","Placebo","Hypericum","Placebo",0.295150367059307,0.380690563587464,32,55,29,57
-74,"Laakmann",1998,"Hypericum","Placebo","Hypericum","Placebo",0.47778576968779,0.366388676733243,43,98,16,49
-76,"Montgomery",2004,"SSRI","SNRI","SSRI","SNRI",-0.0896121586896872,0.278425113119626,113,148,113,145
-78,"Kessler",2009,"Remote CBT","UC","Remote therapist-lead CBT","UC",0.92606975064769,0.256073037262412,64,149,34,148
-79,"Corney",2005,"Other face-to-face","UC","Other face-to-face psychosocial therapies","UC",0.273695830477041,0.357226926603472,23,92,18,89
-82,"Browne",2002,"Face-to-face interpsy","Face-to-face interpsy + SSRI","Face-to-face interpersonal psychotherapy","Face-to-face interpersonal psychotherapy + SSRI",-0.554078973398472,0.187087334791312,83,231,122,247
-82,"Browne",2002,"SSRI","Face-to-face interpsy","SSRI","Face-to-face interpersonal psychotherapy",0.622046729470179,0.190474485176942,117,229,83,231
-82,"Browne",2002,"SSRI","Face-to-face interpsy + SSRI","SSRI","Face-to-face interpersonal psychotherapy + SSRI",0.0679677560717061,0.183500139746692,117,229,122,247
-83,"Blacker",1988,"Low-dose SARI","NaSSa","Low-dose SARI","NaSSA",0.523444087725202,0.390695552459943,58,112,14,36
-83,"Blacker",1988,"TCA","Low-dose SARI","TCA","Low-dose SARI",0.818398510823855,0.3116011899136,56,79,58,112
-83,"Blacker",1988,"TCA","NaSSa","TCA","NaSSA",1.34184259854906,0.422159354521281,56,79,14,36
-84,"Casanas",2012,"Other face-to-face","UC","Other face-to-face psychosocial therapies","UC",0.70432048115807,0.342762242751706,30,119,16,112
-86,"de Graaf",2009,"No contact CBT","UC","No/minimal contact CBT","UC",0.45202802470619,0.348132423635559,37,200,13,103
-88,"Beaumont",1984,"Low-dose SARI","NaSSa","Low-dose SARI","NaSSA",0.946777765058682,0.368015048583988,38,61,25,64
-90,"Fairwheather",1999,"TCA","SSRI","TCA","SSRI",0.587786664902119,0.446028921642755,21,42,15,42
-91,"Gachoud",1994,"TCA","rMAO-A","TCA","rMAO-A",0.309413088507207,0.351971135577445,35,64,31,66
-94,"GSK-PAR2906",1985,"TCA","SSRI","TCA","SSRI",0.402325388103497,0.322266556834621,36,80,29,82
-95,"GSK-2906",1991,"TCA","SSRI","TCA","SSRI",0.359902488429599,0.3473038679108,35,67,29,67
-96,"GSK-PARMDUK",1986,"TCA","SSRI","TCA","SSRI",-0.615536577855021,0.530693798674619,11,30,15,29
-100,"Guelfi",1999,"TCA","SSRI","TCA","SSRI",-0.382034856299778,0.262057489586458,57,115,72,122
-103,"King",2000,"Face-to-face CBT","Other face-to-face","Face-to-face CBT","Other face-to-face psychosocial therapies",-0.0392959039499632,0.352974744149109,33,71,28,59
-104,"Ward",2000,"Face-to-face CBT","Other face-to-face","Face-to-face CBT","Other face-to-face psychosocial therapies",-0.0654572166546437,0.351213836067539,30,63,33,67
-104,"Ward",2000,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.553385238184787,0.360335811755093,30,63,23,67
-104,"Ward",2000,"Other face-to-face","UC","Other face-to-face psychosocial therapies","UC",0.61884245483943,0.354852544877095,33,67,23,67
-105,"Kyle",1998,"TCA","SSRI","TCA","SSRI",-0.0678225963387611,0.223459457950866,124,186,122,179
-107,"Laidlaw",2008,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.723918839226699,0.618527087180309,11,21,8,23
-110,"Simon",2004,"Remote CBT","UC","Remote therapist-lead CBT","UC",0.468592860142718,0.204365696030506,100,198,76,195
-112,"McPartlin",1998,"SSRI","SNRI","SSRI","SNRI",-0.344241988086757,0.225376141433269,113,178,130,183
-113,"Moon",1990,"TCA","Low-dose SARI","TCA","Low-dose SARI",-0.0705301508058379,0.265603062245184,52,114,54,114
-114,"Moon",1988,"Low-dose SARI","NaSSa","Low-dose SARI","NaSSA",0,0.730296743340221,15,20,15,20
-115,"Dwight-Johnson",2011,"Remote CBT","UC","Remote therapist-lead CBT","UC",1.01831234626647,0.43530409701835,23,50,12,51
-116,"Moon",1991,"SSRI","NaSSa","SSRI","NaSSA",0.806475865866949,0.7587583842794,28,31,25,31
-117,"Naeem",2010,"SSRI","Face-to-face CBT + SSRI","SSRI","Face-to-face CBT + SSRI",-2.89037175789616,0.921954445729289,2,17,12,17
-118,"Oxman",2008,"Face-to-face PST","UC","Face-to-face PST","UC",0.0392207131532813,0.339447137231055,32,72,30,69
-120,"Peveler",2005,"TCA","SSRI","TCA","SSRI",0.0224312316767316,0.259621274384214,63,218,31,109
-121,"Richards",1982,"Low-dose SARI","NaSSa","Low-dose SARI","NaSSA",1.03407376753054,0.454096579709321,27,43,15,40
-123,"Wade",2003,"SSRI","NaSSa","SSRI","NaSSA",-0.47033602080605,0.287808254614611,47,98,59,99
-124,"Salminen",2008,"SSRI","Face-to-face psychodyn","SSRI","Face-to-face psychodynamic therapy",0.105360515657826,0.579750904364203,16,25,16,26
-125,"Naylor",2008,"No contact CBT","UC","No/minimal contact CBT","UC",0.352220593589352,0.844097150806707,4,19,3,19
-126,"Serfaty",2009,"Face-to-face CBT","UC","Face-to-face CBT","UC",0.311939050097341,0.387472649385229,21,70,16,67
-127,"Corney",1984,"Other face-to-face","UC","Other face-to-face psychosocial therapies","UC",0.211309093667207,0.43790414173455,28,45,24,42
-128,"Serrano-Blanco",2006,"TCA","SSRI","TCA","SSRI",0.180051408259415,0.400047345682831,22,50,21,53
-131,"Thase",2011,"SSRI","SNRI","SSRI","SNRI",-0.246629609875955,0.10772550183649,336,697,374,688
-132,"Trick",2004,"TCA","SNRI","TCA","SNRI",0.176623535679317,0.427871000505518,21,43,20,45
-134,"Mohr",2012,"Face-to-face CBT","Remote CBT","Face-to-face CBT","Remote therapist-lead CBT",0.184800632171218,0.222675370207586,79,162,72,163
-135,"Wiles",2012,"SSRI","NRI","SSRI","NRI",0.168962728300541,0.168877783128248,117,298,107,303
-200,"Levesque",2011,"No contact CBT","UC","No/minimal contact CBT","UC",0.405632178528735,0.268498955857833,41,174,30,176
-201,"Levin",2011,"No contact CBT","UC","No/minimal contact CBT","UC",0.426742506555449,0.310307872246101,38,100,26,91
-202,"Joling",2011,"Self-help CBT","UC","Guided self-help CBT","UC",0.0994677466906755,0.308290047206345,40,86,37,84
-204,"Williams",2013,"Self-help CBT","UC","Guided self-help CBT","UC",0.70228894051804,0.286627890757432,43,141,25,140
-205,"Watkins",2012,"Self-help CBT","UC","Guided self-help CBT","UC",0.936093359170335,0.510958346024946,15,40,8,42
-206,"MacPherson",2013,"Other face-to-face","UC","Other face-to-face psychosocial therapies","UC",0.349790991451586,0.239712251959795,81,302,31,151
+"id","author","year","resp","n","int","int.long"
+1,"Lecrubier",1997,60,78,"SNRI","SNRI"
+1,"Lecrubier",1997,48,76,"Placebo","Placebo"
+1,"Lecrubier",1997,49,75,"TCA","TCA"
+2,"Smit",2006,16,44,"Face-to-face CBT","Face-to-face CBT"
+2,"Smit",2006,19,72,"UC","UC"
+4,"Blashki",1971,20,35,"TCA","TCA"
+4,"Blashki",1971,8,23,"Placebo","Placebo"
+5,"Bedi",2000,20,51,"Ind drug","Individualized antidepressant"
+5,"Bedi",2000,17,52,"Other face-to-face","Other face-to-face psychosocial therapies"
+6,"Proudfoot",2004,49,146,"Self-help CBT","Guided self-help CBT"
+6,"Proudfoot",2004,29,128,"UC","UC"
+7,"Barge-Schaapveld",2002,16,32,"TCA","TCA"
+7,"Barge-Schaapveld",2002,12,31,"Placebo","Placebo"
+9,"Simon",1996,101,363,"TCA","TCA"
+9,"Simon",1996,48,173,"SSRI","SSRI"
+11,"Doogan",1994,50,99,"SSRI","SSRI"
+11,"Doogan",1994,40,101,"Placebo","Placebo"
+11,"Doogan",1994,48,108,"TCA","TCA"
+12,"Van Schaik",2006,16,69,"Face-to-face interpsy","Face-to-face interpersonal psychotherapy"
+12,"Van Schaik",2006,18,74,"UC","UC"
+16,"Mynor-Wallis",2000,41,80,"Face-to-face PST","Face-to-face PST"
+16,"Mynor-Wallis",2000,20,35,"Face-to-face PST + SSRI","Face-to-face PST + SSRI"
+16,"Mynor-Wallis",2000,24,36,"SSRI","SSRI"
+17,"Boyer Teil 1",1996,55,111,"TCA","TCA"
+17,"Boyer Teil 1",1996,27,108,"Placebo","Placebo"
+18,"Boyer Teil 2",1996,31,73,"TCA","TCA"
+18,"Boyer Teil 2",1996,22,73,"Placebo","Placebo"
+20,"Moon",1994,29,55,"TCA","TCA"
+20,"Moon",1994,27,51,"SSRI","SSRI"
+22,"Christiansen",1996,48,73,"TCA","TCA"
+22,"Christiansen",1996,46,71,"SSRI","SSRI"
+23,"Freed",1999,122,191,"TCA","TCA"
+23,"Freed",1999,127,184,"SSRI","SSRI"
+24,"Mynor-Wallis",1995,19,30,"Face-to-face PST","Face-to-face PST"
+24,"Mynor-Wallis",1995,9,30,"Placebo","Placebo"
+24,"Mynor-Wallis",1995,16,31,"TCA","TCA"
+26,"Lepola",2003,183,314,"SSRI","SSRI"
+26,"Lepola",2003,74,154,"Placebo","Placebo"
+29,"Corne",1989,31,51,"TCA","TCA"
+29,"Corne",1989,19,49,"SSRI","SSRI"
+30,"Wheatley",1989,17,38,"NaSSa","NaSSA"
+30,"Wheatley",1989,34,79,"rMAO-A","rMAO-A"
+31,"Hollyman",1988,37,90,"TCA","TCA"
+31,"Hollyman",1988,23,88,"Placebo","Placebo"
+33,"Beaumont",1993,120,175,"TCA","TCA"
+33,"Beaumont",1993,95,170,"rMAO-A","rMAO-A"
+34,"Moon",1996,33,68,"TCA","TCA"
+34,"Moon",1996,38,70,"SSRI","SSRI"
+35,"Teasdale",1984,11,24,"Face-to-face CBT","Face-to-face CBT"
+35,"Teasdale",1984,6,20,"UC","UC"
+37,"Hutchinson",1992,18,32,"TCA","TCA"
+37,"Hutchinson",1992,35,58,"SSRI","SSRI"
+39,"Brink",1984,15,27,"NaSSa","NaSSA"
+39,"Brink",1984,12,25,"Placebo","Placebo"
+41,"Tylee",1997,98,170,"SSRI","SSRI"
+41,"Tylee",1997,81,171,"SNRI","SNRI"
+43,"Schulberg",1996,43,93,"Face-to-face interpsy","Face-to-face interpersonal psychotherapy"
+43,"Schulberg",1996,33,92,"UC","UC"
+43,"Schulberg",1996,50,91,"TCA","TCA"
+46,"Gastpar",2005,72,118,"SSRI","SSRI"
+46,"Gastpar",2005,70,123,"Hypericum","Hypericum"
+48,"Wade",2002,103,191,"SSRI","SSRI"
+48,"Wade",2002,79,189,"Placebo","Placebo"
+49,"Williams",2000,52,138,"Face-to-face PST","Face-to-face PST"
+49,"Williams",2000,43,140,"Placebo","Placebo"
+49,"Williams",2000,60,137,"SSRI","SSRI"
+50,"Gastpar",2006,71,131,"Hypericum","Hypericum"
+50,"Gastpar",2006,51,130,"Placebo","Placebo"
+50,"Gastpar",2006,71,127,"SSRI","SSRI"
+52,"Lingjarde",1995,14,23,"TCA","TCA"
+52,"Lingjarde",1995,13,30,"rMAO-A","rMAO-A"
+53,"Malt",1999,65,121,"NaSSa","NaSSA"
+53,"Malt",1999,60,129,"Placebo","Placebo"
+53,"Malt",1999,74,122,"SSRI","SSRI"
+55,"Philipp",1999,76,106,"Hypericum","Hypericum"
+55,"Philipp",1999,29,47,"Placebo","Placebo"
+55,"Philipp",1999,70,110,"TCA","TCA"
+56,"Rosenberg",1994,49,92,"TCA","TCA"
+56,"Rosenberg",1994,202,380,"SSRI","SSRI"
+57,"Ravindran",1997,317,506,"TCA","TCA"
+57,"Ravindran",1997,328,513,"SSRI","SSRI"
+58,"Scott",1992,19,30,"Face-to-face CBT","Face-to-face CBT"
+58,"Scott",1992,20,30,"Other face-to-face","Other face-to-face psychosocial therapies"
+58,"Scott",1992,17,30,"UC","UC"
+58,"Scott",1992,14,31,"TCA","TCA"
+59,"Scott",1997,5,24,"Face-to-face CBT","Face-to-face CBT"
+59,"Scott",1997,4,24,"UC","UC"
+61,"Bjerkenstedt",2005,22,57,"Hypericum","Hypericum"
+61,"Bjerkenstedt",2005,21,57,"Placebo","Placebo"
+61,"Bjerkenstedt",2005,20,56,"SSRI","SSRI"
+64,"Schrader",2000,45,114,"SSRI","SSRI"
+64,"Schrader",2000,75,126,"Hypericum","Hypericum"
+65,"Harrer",1991,35,60,"Hypericum","Hypericum"
+65,"Harrer",1991,10,60,"Placebo","Placebo"
+66,"Huebner",1993,14,20,"Hypericum","Hypericum"
+66,"Huebner",1993,9,20,"Placebo","Placebo"
+67,"Harrer",1999,57,84,"SSRI","SSRI"
+67,"Harrer",1999,50,77,"Hypericum","Hypericum"
+68,"Schmidt",1989,10,20,"Hypericum","Hypericum"
+68,"Schmidt",1989,4,20,"Placebo","Placebo"
+70,"van Gurp",2002,23,45,"SSRI","SSRI"
+70,"van Gurp",2002,25,45,"Hypericum","Hypericum"
+71,"Witte",1995,34,48,"Hypericum","Hypericum"
+71,"Witte",1995,25,49,"Placebo","Placebo"
+72,"Wheatley",1997,40,78,"TCA","TCA"
+72,"Wheatley",1997,42,87,"Hypericum","Hypericum"
+73,"König",1993,32,55,"Hypericum","Hypericum"
+73,"König",1993,29,57,"Placebo","Placebo"
+74,"Laakmann",1998,43,98,"Hypericum","Hypericum"
+74,"Laakmann",1998,16,49,"Placebo","Placebo"
+76,"Montgomery",2004,113,148,"SSRI","SSRI"
+76,"Montgomery",2004,113,145,"SNRI","SNRI"
+78,"Kessler",2009,64,149,"Remote CBT","Remote therapist-lead CBT"
+78,"Kessler",2009,34,148,"UC","UC"
+79,"Corney",2005,23,92,"Other face-to-face","Other face-to-face psychosocial therapies"
+79,"Corney",2005,18,89,"UC","UC"
+82,"Browne",2002,83,231,"Face-to-face interpsy","Face-to-face interpersonal psychotherapy"
+82,"Browne",2002,122,247,"Face-to-face interpsy + SSRI","Face-to-face interpersonal psychotherapy + SSRI"
+82,"Browne",2002,117,229,"SSRI","SSRI"
+83,"Blacker",1988,58,112,"Low-dose SARI","Low-dose SARI"
+83,"Blacker",1988,14,36,"NaSSa","NaSSA"
+83,"Blacker",1988,56,79,"TCA","TCA"
+84,"Casanas",2012,30,119,"Other face-to-face","Other face-to-face psychosocial therapies"
+84,"Casanas",2012,16,112,"UC","UC"
+86,"de Graaf",2009,37,200,"No contact CBT","No/minimal contact CBT"
+86,"de Graaf",2009,13,103,"UC","UC"
+88,"Beaumont",1984,38,61,"Low-dose SARI","Low-dose SARI"
+88,"Beaumont",1984,25,64,"NaSSa","NaSSA"
+90,"Fairwheather",1999,21,42,"TCA","TCA"
+90,"Fairwheather",1999,15,42,"SSRI","SSRI"
+91,"Gachoud",1994,35,64,"TCA","TCA"
+91,"Gachoud",1994,31,66,"rMAO-A","rMAO-A"
+94,"GSK-PAR2906",1985,36,80,"TCA","TCA"
+94,"GSK-PAR2906",1985,29,82,"SSRI","SSRI"
+95,"GSK-2906",1991,35,67,"TCA","TCA"
+95,"GSK-2906",1991,29,67,"SSRI","SSRI"
+96,"GSK-PARMDUK",1986,11,30,"TCA","TCA"
+96,"GSK-PARMDUK",1986,15,29,"SSRI","SSRI"
+100,"Guelfi",1999,57,115,"TCA","TCA"
+100,"Guelfi",1999,72,122,"SSRI","SSRI"
+103,"King",2000,33,71,"Face-to-face CBT","Face-to-face CBT"
+103,"King",2000,28,59,"Other face-to-face","Other face-to-face psychosocial therapies"
+104,"Ward",2000,30,63,"Face-to-face CBT","Face-to-face CBT"
+104,"Ward",2000,33,67,"Other face-to-face","Other face-to-face psychosocial therapies"
+104,"Ward",2000,23,67,"UC","UC"
+105,"Kyle",1998,124,186,"TCA","TCA"
+105,"Kyle",1998,122,179,"SSRI","SSRI"
+107,"Laidlaw",2008,11,21,"Face-to-face CBT","Face-to-face CBT"
+107,"Laidlaw",2008,8,23,"UC","UC"
+110,"Simon",2004,100,198,"Remote CBT","Remote therapist-lead CBT"
+110,"Simon",2004,76,195,"UC","UC"
+112,"McPartlin",1998,113,178,"SSRI","SSRI"
+112,"McPartlin",1998,130,183,"SNRI","SNRI"
+113,"Moon",1990,52,114,"TCA","TCA"
+113,"Moon",1990,54,114,"Low-dose SARI","Low-dose SARI"
+114,"Moon",1988,15,20,"Low-dose SARI","Low-dose SARI"
+114,"Moon",1988,15,20,"NaSSa","NaSSA"
+115,"Dwight-Johnson",2011,23,50,"Remote CBT","Remote therapist-lead CBT"
+115,"Dwight-Johnson",2011,12,51,"UC","UC"
+116,"Moon",1991,28,31,"SSRI","SSRI"
+116,"Moon",1991,25,31,"NaSSa","NaSSA"
+117,"Naeem",2010,2,17,"SSRI","SSRI"
+117,"Naeem",2010,12,17,"Face-to-face CBT + SSRI","Face-to-face CBT + SSRI"
+118,"Oxman",2008,32,72,"Face-to-face PST","Face-to-face PST"
+118,"Oxman",2008,30,69,"UC","UC"
+120,"Peveler",2005,63,218,"TCA","TCA"
+120,"Peveler",2005,31,109,"SSRI","SSRI"
+121,"Richards",1982,27,43,"Low-dose SARI","Low-dose SARI"
+121,"Richards",1982,15,40,"NaSSa","NaSSA"
+123,"Wade",2003,47,98,"SSRI","SSRI"
+123,"Wade",2003,59,99,"NaSSa","NaSSA"
+124,"Salminen",2008,16,25,"SSRI","SSRI"
+124,"Salminen",2008,16,26,"Face-to-face psychodyn","Face-to-face psychodynamic therapy"
+125,"Naylor",2008,4,19,"No contact CBT","No/minimal contact CBT"
+125,"Naylor",2008,3,19,"UC","UC"
+126,"Serfaty",2009,21,70,"Face-to-face CBT","Face-to-face CBT"
+126,"Serfaty",2009,16,67,"UC","UC"
+127,"Corney",1984,28,45,"Other face-to-face","Other face-to-face psychosocial therapies"
+127,"Corney",1984,24,42,"UC","UC"
+128,"Serrano-Blanco",2006,22,50,"TCA","TCA"
+128,"Serrano-Blanco",2006,21,53,"SSRI","SSRI"
+131,"Thase",2011,336,697,"SSRI","SSRI"
+131,"Thase",2011,374,688,"SNRI","SNRI"
+132,"Trick",2004,21,43,"TCA","TCA"
+132,"Trick",2004,20,45,"SNRI","SNRI"
+134,"Mohr",2012,79,162,"Face-to-face CBT","Face-to-face CBT"
+134,"Mohr",2012,72,163,"Remote CBT","Remote therapist-lead CBT"
+135,"Wiles",2012,117,298,"SSRI","SSRI"
+135,"Wiles",2012,107,303,"NRI","NRI"
+200,"Levesque",2011,41,174,"No contact CBT","No/minimal contact CBT"
+200,"Levesque",2011,30,176,"UC","UC"
+201,"Levin",2011,38,100,"No contact CBT","No/minimal contact CBT"
+201,"Levin",2011,26,91,"UC","UC"
+202,"Joling",2011,40,86,"Self-help CBT","Guided self-help CBT"
+202,"Joling",2011,37,84,"UC","UC"
+204,"Williams",2013,43,141,"Self-help CBT","Guided self-help CBT"
+204,"Williams",2013,25,140,"UC","UC"
+205,"Watkins",2012,15,40,"Self-help CBT","Guided self-help CBT"
+205,"Watkins",2012,8,42,"UC","UC"
+206,"MacPherson",2013,81,302,"Other face-to-face","Other face-to-face psychosocial therapies"
+206,"MacPherson",2013,31,151,"UC","UC"
