@@ -10,12 +10,13 @@ dat.furukawa2003
 The data frame contains the following columns:
 \tabular{lll}{
 \bold{author} \tab \code{character} \tab First author with information on dosage in parentheses \cr
-\bold{Ne}     \tab \code{integer}   \tab number of patients in low TCA group \cr
-\bold{Me}     \tab \code{numeric}   \tab depression severity (low TCA) \cr
-\bold{Se}     \tab \code{numeric}   \tab standard deviation (low TCA) \cr
-\bold{Nc}     \tab \code{integer}   \tab number of patients in placebo group \cr
-\bold{Mc}     \tab \code{numeric}   \tab depression severity (placebo) \cr
-\bold{Sc}     \tab \code{numeric}   \tab standard deviation (placebo) \cr
+\bold{Ne} \tab \code{integer} \tab number of patients in low TCA group \cr
+\bold{Me} \tab \code{numeric} \tab depression severity (low TCA) \cr
+\bold{Se} \tab \code{numeric} \tab standard deviation (low TCA) \cr
+\bold{Nc} \tab \code{integer} \tab number of patients in placebo group \cr
+\bold{Mc} \tab \code{numeric} \tab depression severity (placebo) \cr
+\bold{Sc} \tab \code{numeric} \tab standard deviation (placebo) \cr
+\bold{measure} \tab \code{character} \tab depression scale \cr
 }
 }
 \details{
@@ -45,7 +46,7 @@ oldset <- settings.meta("RevMan5", digits = 2)
 
 ### Conduct random effects meta-analysis with Hedges' g as effect measure
 mc2 <- metacont(Ne, Me, Se, Nc, Mc, Sc, common = FALSE,
-                data = dat.furukawa2003, sm = "SMD")
+  data = dat.furukawa2003, sm = "SMD")
 mc2
 
 ### Use previous settings
