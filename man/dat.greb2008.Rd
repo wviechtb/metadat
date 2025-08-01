@@ -22,7 +22,7 @@ Greb et al. (2008) conducted a Cochrane Review to assess the effects of high-dos
 This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-Greb, A., Bohlius, J., Schiefer, D., et al. (2008). High‐dose chemotherapy with autologous stem cell transplantation in the first line treatment of aggressive non‐Hodgkin lymphoma (NHL) in adults. Cochrane Database of Systematic Reviews, \bold{1}, \verb{ https://doi.org/10.1002/14651858.CD004024.pub2}
+Greb, A., Bohlius, J., Schiefer, D., et al. (2008). High‐dose chemotherapy with autologous stem cell transplantation in the first line treatment of aggressive non‐Hodgkin lymphoma (NHL) in adults. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \verb{https://doi.org/10.1002/14651858.CD004024.pub2}
 }
 \references{
 Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
