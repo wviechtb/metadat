@@ -23,7 +23,7 @@ Authors@R: c(
   comment = c(ORCID = "0000-0001-6214-9087")))
 Depends: R (>= 4.0.0)
 Imports: utils, tools, mathjaxr
-Suggests: metafor, numDeriv, BiasedUrn, dfoptim, igraph, ape, testthat, digest, lme4, clubSandwich, meta, netmeta, mvtnorm, gridExtra, rms, bayesmeta, ellipse
+Suggests: metafor, numDeriv, BiasedUrn, dfoptim, igraph, ape, testthat, digest, lme4, clubSandwich, meta, netmeta, mvtnorm, gridExtra, rms, bayesmeta, ellipse, metasens
 Description: A collection of meta-analysis datasets for teaching purposes, illustrating/testing meta-analytic methods, and validating published analyses.
 License: GPL (>=2)
 ByteCompile: TRUE
