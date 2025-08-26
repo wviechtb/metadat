@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-2</span>
       </span>
     </div>
 
@@ -138,12 +138,12 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Show calculated mean differences (TE) for first three studies</span></span></span>
 <span class="r-in"><span><span class="va">pw</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>          studlab      treat1        treat2  n1 mean1 mean2    TE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1 Lieberman 1998     Placebo    Ropinirole  54 -1.22 -1.53  0.31</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Lieberman 1997     Placebo   Pramipexole 172 -0.70 -2.40  1.70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3   Guttman 1997     Placebo   Pramipexole  76 -0.30 -2.60  2.30</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4   Guttman 1997     Placebo Bromocriptine  76 -0.30 -1.20  0.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   Guttman 1997 Pramipexole Bromocriptine  71 -2.60 -1.20 -1.40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>          treat2    TE      seTE  n1 mean1 mean2        studlab</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    Ropinirole  0.31 0.6680897  54 -1.22 -1.53 Lieberman 1998</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2   Pramipexole  1.70 0.3826406 172 -0.70 -2.40 Lieberman 1997</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3   Pramipexole  2.30 0.7177460  76 -0.30 -2.60   Guttman 1997</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Bromocriptine  0.90 0.6949881  76 -0.30 -1.20   Guttman 1997</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Bromocriptine -1.40 0.6990666  71 -2.60 -1.20   Guttman 1997</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Conduct network meta-analysis</span></span></span>
 <span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span><span class="op">)</span></span></span>
@@ -210,7 +210,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
