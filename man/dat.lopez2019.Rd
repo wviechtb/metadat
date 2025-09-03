@@ -103,22 +103,54 @@ dat <- contrmat(dat, grp1="treatment1", grp2="treatment2")
 ### network meta-analysis using a contrast-based random-effects model
 ### by setting rho=1/2, tau^2 reflects the amount of heterogeneity for all treatment comparisons
 ### the treatment left out (TAU) becomes the reference level for the treatment comparisons
-res <- rma.mv(yi, V, data=dat,
+res1 <- rma.mv(yi, V, data=dat,
          mods = ~ 0 + No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT,
          random = ~ comp | study, rho=1/2)
-res
+res1
 
 ### forest plot of the contrast estimates (treatments versus TAU)
-forest(coef(res), diag(vcov(res)), slab=sub(".", " ", names(coef(res)), fixed=TRUE),
+forest(coef(res1), diag(vcov(res1)), slab=sub(".", " ", names(coef(res1)), fixed=TRUE),
        xlim=c(-5,5), alim=c(-3,3), psize=1, header="Treatment",
        xlab="Difference in Standardized Mean Change (compared to TAU)")
 
 ### fit random inconsistency effects model (might have to switch optimizer to get convergence)
-res <- rma.mv(yi, V, data=dat,
+res2 <- rma.mv(yi, V, data=dat,
          mods = ~ 0 + No.treatment + Wait.list + Placebo + F2F.CBT + Hybrid.CBT + Multimedia.CBT,
          random = list(~ comp | study, ~ comp | design), rho=1/2, phi=1/2,
          control=list(optimizer="BFGS"))
-res
+res2
+
+### likelihood ratio test comparing the two models
+anova(res1, res2)
+
+### collapse the different CBT forms into a single category
+dat$CBT <- with(dat, ifelse(F2F.CBT + Hybrid.CBT + Multimedia.CBT > 0, 1, 0))
+
+### fit the model with this treatment indicator
+res3 <- rma.mv(yi, V, data=dat,
+         mods = ~ 0 + No.treatment + Wait.list + Placebo + CBT,
+         random = ~ comp | study, rho=1/2)
+res3
+
+### component network meta-analysis (effect of CBT may be larger/smaller depending on
+### the presence of various components; leaving out 'mind' and 'act' as in the paper)
+res4 <- rma.mv(yi, V, data=dat,
+         mods = ~ 0 + No.treatment + Wait.list + Placebo + CBT +
+         CBT:(multi + cog + ba + psed + home + prob + soc + relax + goal + final),
+         random = ~ comp | study, rho=1/2)
+res4
+
+rownames <- names(coef(res4))
+rownames <- sub(".", " ", rownames, fixed=TRUE)
+rownames[5:14] <- c("Multimedia", "Cognitive Techniques", "Behavioral Activiation",
+                    "Psycheducation", "Homework", "Problem Solving", "Social Skills Training",
+                    "Relaxation", "Goal Setting", "Final Session")
+
+### forest plot of the estimates
+forest(coef(res4), diag(vcov(res4)), slab=rownames,
+       xlim=c(-5,5), alim=c(-3,3), psize=1, header="Treatment",
+       xlab="Difference in Standardized Mean Change (compared to TAU)")
+abline(h=10.5, lty="dashed")
 }
 }
 \keyword{datasets}

@@ -1,6 +1,7 @@
-# metadat 1.5-1 (2025-03-14)
+# metadat 1.5-2 (2025-08-26)
 
-- bump to new development version
+- added `dat.demir2022`
+- fixed problem with `datsearch()` failing when using multiple search terms
 
 # metadat 1.4-0 (2025-02-04)
 

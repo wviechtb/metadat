@@ -1,8 +1,8 @@
 pandoc: '2.5'
-pkgdown: 2.1.1.9000
-pkgdown_sha: 0a18bc718640aee7160a0ebbcdef5ecaae2ac4a4
+pkgdown: 2.1.3
+pkgdown_sha: ~
 articles: {}
-last_built: 2025-02-10T10:35Z
+last_built: 2025-08-26T11:16Z
 urls:
   reference: https://wviechtb.github.io/metadat/reference
   article: https://wviechtb.github.io/metadat/articles

@@ -1,0 +1,34 @@
+studyid esid author year pubtype country participants n alpha items
+1   1 "Wittkowski et al."  2007 Article UK "Postnatal mothers" 98 0.55 8
+1   2 "Wittkowski et al."  2007 Article UK "Postnatal mothers" 98 0.49 8
+2   3 "Horsch et al."      2017 Article Switzerland "Postnatal mothers" 287 0.77 8
+3   4 "Handelzalts et al." 2016 Article Israel "Expectant mothers" 33 0.63 8
+4   5 "Ertan et al."       2021 Article France "Postnatal mothers" 916 0.82 8
+5   6 "Eapen et al."       2014 Article Australia "Expectant mothers" 127 0.91 8
+6   7 "Coktay et al."      2020 Article Turkey "Postnatal mothers" 335 0.79 8
+7   8 "Mbabazi"            2014 Thesis USA "Postnatal mothers" 89 0.77 8
+8   9 "Calhoun"            2015 Thesis USA "Postnatal mothers" 107 0.52 7
+9  10 "Lim"                2013 Thesis USA "Postnatal mothers" 13 0.92 8
+10 11 "Suchy et al."       2020 Article USA "Postnatal fathers" 98 0.36 8
+11 12 "Shreffler et al."   2021 Article USA "Expectant mothers" 177 0.71 8
+12 13 "Stuijfzand et al."  2020 Article Switzerland "Postnatal mothers" 210 0.73 8
+12 14 "Stuijfzand et al."  2020 Article Switzerland "Postnatal mothers" 91 0.73 8
+12 15 "Stuijfzand et al."  2020 Article Switzerland "Postnatal mothers" 301 0.73 8
+13 16 "Roth et al."        2021 Article USA "Postnatal mothers" 125 0.76 8
+14 17 "Mendelson et al."   2018 Article USA "Postnatal mothers" 27 0.71 8
+15 18 "Mayopoulos et al."  2021 Article USA "Expectant mothers" 2251 0.78 8
+16 19 "Foli et al."        2013 Article USA "Adoptive fathers" 38 0.86 8
+17 20 "South et al."       2012 Article USA "Adoptive mothers" 251 0.90 8
+18 21 "Foli et al."        2012 Article USA "Adoptive mothers" 284 0.89 8
+19 22 "Shorey et al."      2019 Article Singapore "Expectant mothers and fathers" 236 0.70 8
+19 23 "Shorey et al."      2019 Article Singapore "Postnatal mothers and fathers" 210 0.58 8
+19 24 "Shorey et al."      2019 Article Singapore "Postnatal mothers and fathers" 194 0.66 8
+19 25 "Shorey et al."      2019 Article Singapore "Postnatal mothers and fathers" 186 0.62 8
+20 26 "Foli et al."        2012 Article USA "Postnatal mothers" 113 0.89 8
+21 27 "Tichelman et al."   2021 Article "The Netherlands" "Postnatal mothers" 1528 0.67 8
+22 28 "Escasa"             2012 Thesis  USA "Postnatal mothers" 260 0.69 8
+23 29 "Taylor et al."      2005 Article UK "Postnatal mothers" 144 0.71 8
+24 30 "Morelius et al."    2021 Article Sweden "Postnatal mothers" 63 0.68 8
+25 31 "Van Bussel et al."  2010 Article Belgium "Postnatal mothers" 263 0.67 8
+25 32 "Van Bussel et al."  2010 Article Belgium "Postnatal mothers" 202 0.58 8
+26 33 "Shoemark et al."    2021 Article USA "Postnatal mothers" 18 0.45 8

@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-2</span>
       </span>
     </div>
 
@@ -139,15 +139,15 @@
 <span class="r-in"><span><span class="va">pw</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/pairwise.html" class="external-link">pairwise</a></span><span class="op">(</span><span class="va">treatment</span>, event <span class="op">=</span> <span class="va">r</span>, n <span class="op">=</span> <span class="va">N</span>,</span></span>
 <span class="r-in"><span>  studlab <span class="op">=</span> <span class="va">author</span>, data <span class="op">=</span> <span class="va">dat.woods2010</span>, sm <span class="op">=</span> <span class="st">"OR"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">pw</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>         studlab      treat1     treat2          TE      seTE event1  n1 event2  n2 incr allstudies</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     Boyd 1997  Salmeterol    Placebo -0.00881063 1.4173252      1 229      1 227    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Calverly 2003 Fluticasone    Placebo -0.60382188 0.6311772      4 374      7 361    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Calverly 2003 Fluticasone        SFC  0.65457491 0.8692018      4 374      2 358    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Calverly 2003 Fluticasone Salmeterol  0.28497571 0.7672979      4 374      3 372    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Calverly 2003  Salmeterol    Placebo -0.88879759 0.6940644      3 372      7 361    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Calverly 2003  Salmeterol        SFC  0.36959919 0.9158888      3 372      2 358    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7 Calverly 2003         SFC    Placebo -1.25839679 0.8052894      2 358      7 361    0      FALSE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    Celli 2003  Salmeterol    Placebo -1.41751820 1.2270043      1 554      2 270    0      FALSE</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         studlab      treat1     treat2          TE      seTE event1  n1 event2  n2 incr1 incr2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1     Boyd 1997  Salmeterol    Placebo -0.00881063 1.4173252      1 229      1 227     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 Calverly 2003 Fluticasone    Placebo -0.60382188 0.6311772      4 374      7 361     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Calverly 2003 Fluticasone        SFC  0.65457491 0.8692018      4 374      2 358     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 Calverly 2003 Fluticasone Salmeterol  0.28497571 0.7672979      4 374      3 372     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Calverly 2003  Salmeterol    Placebo -0.88879759 0.6940644      3 372      7 361     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Calverly 2003  Salmeterol        SFC  0.36959919 0.9158888      3 372      2 358     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7 Calverly 2003         SFC    Placebo -1.25839679 0.8052894      2 358      7 361     0     0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8    Celli 2003  Salmeterol    Placebo -1.41751820 1.2270043      1 554      2 270     0     0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>          author  treatment1 treatment2 r1 r2  N1  N2</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     Boyd 1997  Salmeterol    Placebo  1  1 229 227</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 2 Calverly 2003 Fluticasone    Placebo  4  7 374 361</span>
@@ -220,7 +220,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

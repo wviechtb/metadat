@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-2</span>
       </span>
     </div>
 
@@ -136,17 +136,16 @@
 <span class="r-in"><span><span class="co">### Show calculated mean differences (TE) for three studies</span></span></span>
 <span class="r-in"><span><span class="va">selstudy</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"COMTI(E) INT-OZ"</span>, <span class="st">"LARGO"</span>, <span class="st">"COMTI(E) Nomecomt"</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/subset.html" class="external-link">subset</a></span><span class="op">(</span><span class="va">pw</span>, <span class="va">studlab</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="va">selstudy</span><span class="op">)</span><span class="op">[</span>, <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">7</span>, <span class="fl">10</span>, <span class="fl">1</span><span class="op">)</span><span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>              studlab  treat1  treat2  n1 mean1 mean2    TE</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18   COMTI(E) INT-OZ   COMTI Placebo  99 -0.86 -0.54 -0.32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19             LARGO   COMTI Placebo 218 -1.20 -0.40 -0.80</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20             LARGO   COMTI   MAOBI 218 -1.20 -1.18 -0.02</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21             LARGO Placebo   MAOBI 218 -0.40 -1.18  0.78</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22 COMTI(E) Nomecomt   COMTI Placebo  85 -1.30 -0.10 -1.20</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     treat2    TE      seTE  n1 mean1 mean2           studlab</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18 Placebo -0.32 0.4903630  99 -0.86 -0.54   COMTI(E) INT-OZ</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19 Placebo -0.80 0.2116796 218 -1.20 -0.40             LARGO</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20   MAOBI -0.02 0.2116709 218 -1.20 -1.18             LARGO</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21   MAOBI  0.78 0.2116709 218 -0.40 -1.18             LARGO</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22 Placebo -1.20 0.3560024  85 -1.30 -0.10 COMTI(E) Nomecomt</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Conduct random effects network meta-analysis (NMA)</span></span></span>
 <span class="r-in"><span><span class="co">### with placebo as reference</span></span></span>
-<span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, fixed <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span></span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>Use argument 'common' instead of 'fixed' (deprecated).</span>
+<span class="r-in"><span><span class="va">net</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, common <span class="op">=</span> <span class="cn">FALSE</span>, ref <span class="op">=</span> <span class="st">"plac"</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Show network graph</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">net</span>, number <span class="op">=</span> <span class="cn">TRUE</span>, multiarm <span class="op">=</span> <span class="cn">TRUE</span>,</span></span>
@@ -260,7 +259,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 
