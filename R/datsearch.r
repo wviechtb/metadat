@@ -77,19 +77,20 @@ social work, sociology, sports.
 
 In terms of outcome measures, the following terms have been used at least once:
 
-correlation coefficients, Cronbach's alpha, hazard ratios, incidence rates,
-raw mean differences, odds ratios, proportions, ratios of means, raw means,
-risk differences, risk ratios, (semi-)partial correlations, standardized mean
-changes, standardized mean differences.
+common language effect size, correlation coefficients, Cronbach's alpha,
+hazard ratios, incidence rates, raw mean differences, odds ratios, proportions,
+ratios of means, raw means, risk differences, risk ratios, (semi-)partial
+correlations, standardized mean changes, standardized mean differences.
 
 In terms of models/methods/concepts, the following terms have been used at least once:
 
 cluster-robust inference, component network meta-analysis, cumulative
 meta-analysis, diagnostic accuracy studies, dose response models, generalized
-linear models, longitudinal models, Mantel-Haenszel method, meta-regression,
-model checks, multilevel models, multivariate models, network meta-analysis,
-outliers, Peto's method, phylogeny, publication bias, reliability generalization,
-risk-of-bias, single-arm studies, spatial correlation, subgroup analysis.")
+linear models, individual participant data, longitudinal models,
+Mantel-Haenszel method, meta-regression, model checks, multilevel models,
+multivariate models, network meta-analysis, outliers, Peto's method, phylogeny,
+publication bias, reliability generalization, risk-of-bias, single-arm studies,
+spatial correlation, subgroup analysis.")
          cat("\n\n")
          pattern <- NULL
          next
