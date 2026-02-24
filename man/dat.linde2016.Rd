@@ -9,11 +9,13 @@ dat.linde2016
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{id}     \tab \code{integer}   \tab study ID \cr
-\bold{lnOR}   \tab \code{numeric}   \tab response after treatment (log odds ratio) \cr
-\bold{selnOR} \tab \code{numeric}   \tab standard error of log odds ratio \cr
-\bold{treat1} \tab \code{character} \tab first treatment \cr
-\bold{treat2} \tab \code{character} \tab second treatment
+\bold{id} \tab \code{integer} \tab study ID \cr
+\bold{author} \tab \code{character} \tab first author \cr
+\bold{year} \tab \code{numeric} \tab year of publication \cr
+\bold{resp} \tab \code{numeric} \tab number of responders \cr
+\bold{n} \tab \code{numeric} \tab number of patients \cr
+\bold{int} \tab \code{character} \tab intervention label \cr
+\bold{int.long} \tab \code{character} \tab intervention label (full name) \cr
 }
 }
 \details{
@@ -35,7 +37,7 @@ The data frame contains the following columns:
 \examples{
 ### Show results of first three studies (first study has three treatment
 ### arms)
-head(dat.linde2016, 5)
+head(dat.linde2016, 7)
 
 \dontrun{
 ### Load netmeta package
@@ -55,23 +57,30 @@ trts <- c("SSRI",
   "Remote CBT", "Self-help CBT", "No contact CBT",
   "UC", "Placebo")
 
+### Use pairwise() to transform data to comparison-based format
+pw <- pairwise(treat = int,
+  event = resp, n = n,
+  studlab = paste(author, year),
+  data = dat.linde2016,
+  reference = "plac",
+  sm = "OR")
+
 ### Conduct random effects network meta-analysis
-net <- netmeta(lnOR, selnOR, treat1, treat2, id,
-  data = dat.linde2016, reference.group = "placebo",
-  seq = trts, sm = "OR", common = FALSE)
+nma <- netmeta(pw, reference.group = "placebo",
+  seq = trts, common = FALSE)
 
 ### Network graph
-netgraph(net, seq = "o", number = TRUE)
+netgraph(nma, seq = "o")
 
 ### Show results
-net
-forest(net, xlim = c(0.2, 50))
+nma
+forest(nma, xlim = c(0.2, 50))
 
 ### Additive component network meta-analysis with placebo as inactive
 ### treatment
-nc <- netcomb(net, inactive = "placebo")
-nc
-forest(nc, xlim = c(0.2, 50))
+cnma <- netcomb(nma, inactive = "placebo")
+cnma
+forest(cnma, xlim = c(0.2, 50))
 
 ### Use previous settings
 settings.meta(oldset)

@@ -1,0 +1,20 @@
+author,year,region,design,source,age,males,first,questionnaire,interview,timing,depr,n
+Lauzon,2003,Canada,Longitudinal,Hospital-based,60,78.9,79.1,BDI≥10,NA,2-3 days,191,550
+Dickens,2007,UK,Longitudinal,Hospital-based,60.0,70.4,84,HADS≥17,NA,3.6 days,140,588
+Parashar,2009,USA,Longitudinal,Hospital-based,60.5,66.5,78.9,PHQ-9≥10,NA,24-72 hours,538,2411
+Hosseini,2011,Iran,Longitudinal,Hospital-based,58,69.0,86.9,BDI≥10,NA,15 days,531,806
+Kurdyak,2011,Canada,Longitudinal,Hospital-based,62.4,70.4,NA,BCDRS≥4,NA,30 days,807,1941
+Myers,2012,Israel,Longitudinal,Hospital-based,52.3,86,88,BDI≥10,NA,1 week,175,632
+Wheeler,2012,Australia,RCT,Hospital-based,59,74,NA,CES-D≥16,NA,12 months,132,337
+Larsen,2014,Denmark,Longitudinal,Population-based,67.0,69.2,100,HADS≥8,NA,12-14 weeks,167,896
+Schleifer,1989,USA,Longitudinal,Hospital-based,63.7,64,73,NA,ADS,8-10 days,128,283
+Lane,2000,UK,Longitudinal,Hospital-based,62.7,74.7,78.4,BDI≥10,NA,2-15 days,89,288
+Watkins,2002,USA,Cross-sectional,Hospital-based,58.5,58.3,77.9,NA,DIS,6 days,37,204
+Parakh,2008,USA,Longitudinal,Hospital-based,64.8,57,69.4,BDI≥10,SCID,5 days,76,284
+Johansson,2010,Sweden,Cross-sectional,Hospital-based,64,70,76.6,HADS≥8,NA,4 months,41,204
+Crowe,1996,Canada,RCT,Hospital-based,61,87,84,"Short form BDI>8",NA,2-14 days,72,785
+Hanssen,2009,Norway,RCT,Hospital-based,60.2,80.9,88.5,HADS-D≥8,NA,<3 months,33,244
+Frasure-Smith,1993,Canada,Longitudinal,Hospital-based,59.6,78,73,NA,DIS,5-15 days,35,222
+Kaufmann,1999,USA,Longitudinal,Hospital-based,65,65.6,76.6,NA,DIS,3-15 days,90,331
+Shiotani,2002,Japan,Longitudinal,Hospital-based,63,80.4,87.7,SDS≥40,NA,3 months,438,1042
+Welin,2000,Sweden,Longitudinal,Hospital-based,NA,83.6,100,SDS≥40,NA,3 months,98,267
