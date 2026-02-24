@@ -11,7 +11,7 @@ author year score design alloconc blind itt fumonths retention country outcomes 
 "Modell et al."    1998  7 rct  0 0 0 12  100  UK  1 12  13   3   1    0 0.32 0.40
 "Engels et al."    2006  7 rct  1 0 1 12   92  NL  7  5  NA   5   1    1 1.04 0.32
 "Aspy et al."      2008  7 rct  0 1 0  9  100  US  1  9   6  18   6    1 1.31 0.57
-"Deitrich et al."  1992 18 rct  0 1 0 12   96  NL 16 21  20  15   1    1 0.59 0.29
+"Deitrich et al."  1992  8 rct  0 1 0 12   96  NL 16 21  20  15   1    1 0.59 0.29
 "Lobo et al."      2002  8 rct  1 0 1 21  100  US 10  3   8   3   1    1 0.66 0.19
 "Bryce et al."     1995  9 rct  1 1 1 12 93.3  US  4 12  12   1  15    0 0.62 0.31
 "Kinsinger et al." 1998  9 rct  1 1 0 18   94  US  5 12  13  10   0.75 1 0.47 0.27

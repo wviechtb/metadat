@@ -1,4 +1,4 @@
-# metadat 1.5-2 (2025-08-26)
+# metadat 1.5-3 (2026-02-24)
 
 - added `dat.demir2022`
 - fixed problem with `datsearch()` failing when using multiple search terms
