@@ -20,9 +20,9 @@ The data frame contains the following columns:
    A combination therapy of Irinotecan (a topoisomerase 1 inhibitor) and S-1 (a combination of three pharmacological compounds, namely, tegafur, gimeracil, and oteracil potassium) was tested in advanced colorectal and gastric cancer. This dataset contains data from twelve studies investigating this therapy in a Japanese population; it contains the doses investigated, the numbers of patients treated, and the number of dose-limiting toxicities (DLTs) observed. In general, each study investigated several doses according to some dose-escalation scheme.
 }
 \source{
-   Ursino, M., Roever, C., Zohar,  S., & Friede T. (2021). Random-effects meta-analysis of phase I dose-finding studies using stochastic process priors. \emph{The Annals of Applied Statistics}, \bold{15}(1), 174--193. \verb{https://doi.org/10.1214/20-AOAS1390}
+   Ursino, M., \enc{Röver}{Roever}, C., Zohar,  S., & Friede T. (2021). Random-effects meta-analysis of phase I dose-finding studies using stochastic process priors. \emph{The Annals of Applied Statistics}, \bold{15}(1), 174--193. \verb{https://doi.org/10.1214/20-AOAS1390}
 
-   Roever, C., Ursino, M., Friede, T., & Zohar, S. (2022). A straighforward meta-analysis approach for oncology phase I dose-finding studies. \emph{Statistics in Medicine}, \bold{41}(20), 3915--3940. \verb{https://doi.org/10.1002/sim.9484}
+   \enc{Röver}{Roever}, C., Ursino, M., Friede, T., & Zohar, S. (2022). A straighforward meta-analysis approach for oncology phase I dose-finding studies. \emph{Statistics in Medicine}, \bold{41}(20), 3915--3940. \verb{https://doi.org/10.1002/sim.9484}
 }
 \references{
    European Medicines Agency (EMA) (2021). Onivyde pegylated liposomal (irinotecan hydrochloride trihydrate) EPAR summary. \verb{https://www.ema.europa.eu/en/medicines/human/EPAR/onivyde-pegylated-liposomal}
@@ -57,7 +57,7 @@ The data frame contains the following columns:
    \code{\link{dat.ursino2021}}
 }
 \author{
-   Christian Roever, \email{christian.roever@med.uni-goettingen.de}
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
 # show (some) data

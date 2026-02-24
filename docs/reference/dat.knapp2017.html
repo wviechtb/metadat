@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-2</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-3</span>
       </span>
     </div>
 
@@ -272,36 +272,44 @@
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### correlation matrix for study 3 with four patient groups and a single control group</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cov2cor</a></span><span class="op">(</span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">3</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">3</span><span class="op">]</span><span class="op">)</span>, <span class="fl">2</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      [,1] [,2] [,3] [,4]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1,] 1.00 0.47 0.38 0.42</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [2,] 0.47 1.00 0.35 0.38</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [3,] 0.38 0.35 1.00 0.32</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [4,] 0.42 0.38 0.32 1.00</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        1      2      3      4 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1.0000 0.4700 0.3800 0.4200 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.4700 1.0000 0.3500 0.3800 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.3800 0.3500 1.0000 0.3200 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 0.4200 0.3800 0.3200 1.0000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### correlation matrix for study 6 with two tasks with four difficulties</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cov2cor</a></span><span class="op">(</span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">6</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1,] 1.00 0.40 0.40 0.40 0.70 0.28 0.28 0.28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [2,] 0.40 1.00 0.40 0.40 0.28 0.70 0.28 0.28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [3,] 0.40 0.40 1.00 0.40 0.28 0.28 0.70 0.28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [4,] 0.40 0.40 0.40 1.00 0.28 0.28 0.28 0.70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [5,] 0.70 0.28 0.28 0.28 1.00 0.40 0.40 0.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [6,] 0.28 0.70 0.28 0.28 0.40 1.00 0.40 0.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [7,] 0.28 0.28 0.70 0.28 0.40 0.40 1.00 0.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [8,] 0.28 0.28 0.28 0.70 0.40 0.40 0.40 1.00</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        1      2      3      4      5      6      7      8 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1.0000 0.4000 0.4000 0.4000 0.7000 0.2800 0.2800 0.2800 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.4000 1.0000 0.4000 0.4000 0.2800 0.7000 0.2800 0.2800 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.4000 0.4000 1.0000 0.4000 0.2800 0.2800 0.7000 0.2800 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 0.4000 0.4000 0.4000 1.0000 0.2800 0.2800 0.2800 0.7000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 0.7000 0.2800 0.2800 0.2800 1.0000 0.4000 0.4000 0.4000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 0.2800 0.7000 0.2800 0.2800 0.4000 1.0000 0.4000 0.4000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7 0.2800 0.2800 0.7000 0.2800 0.4000 0.4000 1.0000 0.4000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8 0.2800 0.2800 0.2800 0.7000 0.4000 0.4000 0.4000 1.0000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### correlation matrix for study 24 with two independent groups</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cov2cor</a></span><span class="op">(</span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">24</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">24</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      [,1] [,2]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1,]    1    0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [2,]    0    1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        1      2 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1.0000      . </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      . 1.0000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### correlation matrix for study 29 with three independent groups</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/cor.html" class="external-link">cov2cor</a></span><span class="op">(</span><span class="va">V</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">29</span>, <span class="va">dat</span><span class="op">$</span><span class="va">study</span> <span class="op">==</span> <span class="fl">29</span><span class="op">]</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>      [,1] [,2] [,3]</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1,]    1    0    0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [2,]    0    1    0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [3,]    0    0    1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        1      2      3 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1.0000      .      . </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2      . 1.0000      . </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3      .      . 1.0000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### fit multilevel model as above, but now use this V matrix in the model</span></span></span>
 <span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study</span><span class="op">/</span><span class="va">comp</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
@@ -504,7 +512,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.3.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

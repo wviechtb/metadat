@@ -20,9 +20,9 @@ The data frame contains the following columns:
    Sorafenib (BAY 43-9006, Nexavar) is a kinase inhibitor that is used in the treatment of advanced renal cell carcinoma, hepatocellular carcinoma, and radioactive iodine resistant advanced thyroid carcinoma. Thirteen trials with published results, described in eleven manuscripts, were identified in a literature search. This dataset contains the doses investigated, the numbers of patients treated, and the number of dose-limiting toxicities (DLTs) observed. In general, each study investigated several doses according to some dose-escalation scheme.
 }
 \source{
-   Ursino, M., Roever, C., Zohar,  S., & Friede T. (2021). Random-effects meta-analysis of phase I dose-finding studies using stochastic process priors. \emph{The Annals of Applied Statistics}, \bold{15}(1), 174--193. \verb{https://doi.org/10.1214/20-AOAS1390}
+   Ursino, M., \enc{Röver}{Roever}, C., Zohar,  S., & Friede T. (2021). Random-effects meta-analysis of phase I dose-finding studies using stochastic process priors. \emph{The Annals of Applied Statistics}, \bold{15}(1), 174--193. \verb{https://doi.org/10.1214/20-AOAS1390}
 
-   Roever, C., Ursino, M., Friede, T., & Zohar, S. (2022). A straighforward meta-analysis approach for oncology phase I dose-finding studies. \emph{Statistics in Medicine}, \bold{41}(20), 3915--3940. \verb{https://doi.org/10.1002/sim.9484}
+   \enc{Röver}{Roever}, C., Ursino, M., Friede, T., & Zohar, S. (2022). A straighforward meta-analysis approach for oncology phase I dose-finding studies. \emph{Statistics in Medicine}, \bold{41}(20), 3915--3940. \verb{https://doi.org/10.1002/sim.9484}
 }
 \references{
    European Medicines Agency (EMA) (2022). Nexavar (sorafenib) EPAR summary. \verb{https://www.ema.europa.eu/en/medicines/human/EPAR/nexavar}
@@ -53,7 +53,7 @@ The data frame contains the following columns:
    \code{\link{dat.roever2022}}
 }
 \author{
-   Christian Roever, \email{christian.roever@med.uni-goettingen.de}
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
 # show (some) data

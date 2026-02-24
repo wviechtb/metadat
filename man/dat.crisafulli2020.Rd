@@ -26,7 +26,7 @@ The data frame contains the following columns:
    Crisafulli, S., Sultana, J., Fontana, A., Salvo, F., Messina, S., & Trifiro, G. (2020). Global epidemiology of Duchenne muscular dystrophy: an updated systematic review and meta-analysis. \emph{Orphanet Journal of Rare Diseases}, \bold{15}, 141. \verb{https://doi.org/10.1186/s13023-020-01430-8}
 }
 \author{
-   Christian Roever, \email{christian.roever@med.uni-goettingen.de}
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
 # show (some) data
@@ -53,7 +53,6 @@ forest(rma01, xlim=c(-12,-5))
 \concept{medicine}
 \concept{epidemiology}
 \concept{proportions}
-\concept{dose-response models}
 \section{Concepts}{
-   medicine, epidemiology, proportions, dose-response models
+   medicine, epidemiology, proportions
 }

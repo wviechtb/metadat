@@ -1,6 +1,6 @@
 # metadat 1.5-3 (2026-02-24)
 
-- added `dat.demir2022`
+- added `dat.demir2022`, `dat.chiarito2020`, `dat.karner2014`, `dat.meeker2017`, and `dat.nissen2007`
 - fixed problem with `datsearch()` failing when using multiple search terms
 
 # metadat 1.4-0 (2025-02-04)

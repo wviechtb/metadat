@@ -30,7 +30,7 @@ The data frame contains the following columns:
    Hasselblad, V., Eddy, D. M., & Kotchmar, D. J. (1992). Synthesis of environmental evidence: Nitrogen dioxide epidemiology studies. \emph{Journal of the Air and Waste Management Association}, \bold{42}(5), 662--671. \verb{https://doi.org/10.1080/10473289.1992.10467018}
 }
 \author{
-   Christian Roever, \email{christian.roever@med.uni-goettingen.de}
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
 # show data:
@@ -75,8 +75,9 @@ traceplot(bm02)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{pulmonology}
 \concept{odds ratios}
 \concept{meta-regression}
 \section{Concepts}{
-   medicine, odds ratios, meta-regression
+   medicine, pulmonology, odds ratios, meta-regression
 }

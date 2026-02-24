@@ -75,9 +75,10 @@ settings.meta(oldset)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{pulmonology}
 \concept{odds ratios}
 \concept{network meta-analysis}
 \concept{component network meta-analysis}
 \section{Concepts}{
-   medicine, odds ratios, network meta-analysis, component network meta-analysis
+   medicine, pulmonology, odds ratios, network meta-analysis, component network meta-analysis
 }
