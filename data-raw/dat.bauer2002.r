@@ -22,4 +22,4 @@ dat.bauer2002 <- cbind.data.frame("study"    = c("Frey", "Tammen", "Magasi",
                                   "upper"    = c(0.8005, 0.8075, 0.8435, 0.6965, 0.7615),
                                   "stderr"   = c(0.0702, 0.0477, 0.0452, 0.0385, 0.0421))[c(1,2,5,3,4),]
 
-save("dat.bauer2002", file="data/dat.bauer2002.rda")
+save(dat.bauer2002, file="data/dat.bauer2002.rda")

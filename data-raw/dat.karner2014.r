@@ -109,4 +109,4 @@ dat.karner2014[c(3:6,8:10,15:16,19,21),"rob.att"] <- "unclear"
 dat.karner2014[c(2,7,18),"rob.att"] <- "high"
 dat.karner2014[8,"rob.rep"] <- "unclear"
 
-save("dat.karner2014", file="data/dat.karner2014.rda")
+save(dat.karner2014, file="data/dat.karner2014.rda")

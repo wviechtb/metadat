@@ -59,4 +59,4 @@ dat.huber2000$treatment <- factor(dat.huber2000$treatment)
 
 rm(list=c("Frey", "Tammen", "Magasi", "Pisani", "Schulman"))
 
-save("dat.huber2000", file="data/dat.huber2000.rda")
+save(dat.huber2000, file="data/dat.huber2000.rda")

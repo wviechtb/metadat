@@ -23,4 +23,4 @@ dat.meeker2017 <- cbind.data.frame("team"=c("Chicago White Sox", "Cleveland Indi
 rownames(dat.meeker2017) <- c("CHW", "CLE", "DET", "KC", "MIN",
                               "CHC", "CIN", "MIL", "PIT", "STL")
 
-save("dat.meeker2017", file="data/dat.meeker2017.rda")
+save(dat.meeker2017, file="data/dat.meeker2017.rda")
