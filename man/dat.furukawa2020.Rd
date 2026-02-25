@@ -27,9 +27,9 @@ The dataset can be used to illustrate meta-analyses of means (pooling means for 
 Furukawa, T. A., Reijnders, M., Kishimoto, S., Sakata, M., DeRubeis, R. J., Dimidjian, S., ..., & Lespérance, F. (2020). Translating the BDI and BDI-II into the HAMD and vice versa with equipercentile linking. \emph{Epidemiology and Psychiatric Sciences}, \bold{29}.
 }
 \references{
-Beck, A. T., Ward, C., Mendelson, M., Mock, J., \& Erbaugh, J. (1961). Beck Depression Inventory (BDI). \emph{Archives of General Psychiatry}, \bold{4}(6), 561--571.
+Beck, A. T., Ward, C., Mendelson, M., Mock, J., & Erbaugh, J. (1961). Beck Depression Inventory (BDI). \emph{Archives of General Psychiatry}, \bold{4}(6), 561--571.
 
-Beck, A. T., Steer, R. A., \& Brown, G. (1996). Beck Depression Inventory--II. \emph{Psychological Assessment}.
+Beck, A. T., Steer, R. A., & Brown, G. (1996). Beck Depression Inventory--II. \emph{Psychological Assessment}.
 
 Hamilton, M. (1960). A rating scale for depression. \emph{Journal of Neurology, Neurosurgery and Psychiatry}, \bold{23}, 56--62.
 }
