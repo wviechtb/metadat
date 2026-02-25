@@ -24,7 +24,7 @@ This dataset was derived from an individual patient data analysis by Furukawa et
 The dataset can be used to illustrate meta-analyses of means (pooling means for BDI and HAM-D separately), or a bivariate meta-analysis in which both outcomes are modeled jointly.
 }
 \source{
-Furukawa, T. A., Reijnders, M., Kishimoto, S., Sakata, M., DeRubeis, R. J., Dimidjian, S., \dots, \& Lespérance, F. (2020). Translating the BDI and BDI-II into the HAMD and vice versa with equipercentile linking. \emph{Epidemiology and Psychiatric Sciences}, \bold{29}.
+Furukawa, T. A., Reijnders, M., Kishimoto, S., Sakata, M., DeRubeis, R. J., Dimidjian, S., ..., & Lespérance, F. (2020). Translating the BDI and BDI-II into the HAMD and vice versa with equipercentile linking. \emph{Epidemiology and Psychiatric Sciences}, \bold{29}.
 }
 \references{
 Beck, A. T., Ward, C., Mendelson, M., Mock, J., \& Erbaugh, J. (1961). Beck Depression Inventory (BDI). \emph{Archives of General Psychiatry}, \bold{4}(6), 561--571.
