@@ -10,25 +10,25 @@ dat.greb2008
 The data frame contains the following columns:
 \tabular{lll}{
 \bold{study} \tab \code{character} \tab study label \cr
-\bold{Ee} \tab \code{integer} \tab complete responses (high-dose chemotherapy) \cr
-\bold{Ne} \tab \code{integer} \tab number of patients (high-dose chemotherapy) \cr
-\bold{Ec} \tab \code{integer} \tab complete responses (standard chemotherapy) \cr
-\bold{Nc} \tab \code{integer} \tab number of patients (standard chemotherapy) \cr
+\bold{Ee}    \tab \code{integer}   \tab complete responses (high-dose chemotherapy) \cr
+\bold{Ne}    \tab \code{integer}   \tab number of patients (high-dose chemotherapy) \cr
+\bold{Ec}    \tab \code{integer}   \tab complete responses (standard chemotherapy) \cr
+\bold{Nc}    \tab \code{integer}   \tab number of patients (standard chemotherapy)
 }
 }
 \details{
-Greb et al. (2008) conducted a Cochrane Review to assess the effects of high-dose chemotherapy with autologous stem cell transplantation as part of the first-line treatment of adult patients with aggressive non-Hodgkin lymphoma. The primary outcome was survival time; the binary outcome 'complete response' was one of several secondary outcomes. For binary outcomes, the Cochrane review used the risk ratio and the common effect model.
+   Greb et al. (2008) conducted a Cochrane Review to assess the effects of high-dose chemotherapy with autologous stem cell transplantation as part of the first-line treatment of adult patients with aggressive non-Hodgkin lymphoma. The primary outcome was survival time; the binary outcome \sQuote{complete response} was one of several secondary outcomes. For binary outcomes, the Cochrane review used the risk ratio and the common effect model.
 
-This data set is used as an example in Schwarzer et al. (2015).
+   This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-Greb, A., Bohlius, J., Schiefer, D., et al. (2008). High‐dose chemotherapy with autologous stem cell transplantation in the first line treatment of aggressive non‐Hodgkin lymphoma (NHL) in adults. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \verb{https://doi.org/10.1002/14651858.CD004024.pub2}
+   Greb, A., Bohlius, J., Schiefer, D., Schwarzer, G., Schulz, H., & Engert, A. (2008). High-dose chemotherapy with autologous stem cell transplantation in the first line treatment of aggressive Non-Hodgkin Lymphoma (NHL) in adults. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, CD004024. \verb{https://doi.org/10.1002/14651858.cd004024.pub2}
 }
 \references{
-Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
+   Schwarzer, G., Carpenter, J. R., & \enc{Rücker}{Ruecker}, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
 }
 \author{
-Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first five studies
@@ -36,13 +36,13 @@ head(dat.greb2008, 5)
 
 \dontrun{
 ### Load meta package
-suppressPackageStartupMessages(library("meta"))
+suppressPackageStartupMessages(library(meta))
 
 ### Use RevMan 5 settings
 oldset <- settings.meta("RevMan5")
 
 ### Conduct common effect meta-analysis with risk ratio as effect measure
-mb1 <- metabin(Ee, Ne, Ec, Nc, 
+mb1 <- metabin(Ee, Ne, Ec, Nc,
   data = dat.greb2008, studlab = study,
   label.e = "High dose", label.c = "Standard",
   label.left = "Favours standard chemotherapy",

@@ -44,7 +44,7 @@ head(dat.franchini2012, 3)
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library("netmeta"))
+suppressPackageStartupMessages(library(netmeta))
 
 ### Print mean differences with two digits
 oldset <- settings.meta(digits = 2)

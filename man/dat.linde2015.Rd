@@ -58,7 +58,7 @@ head(dat.linde2015, 3)
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library("netmeta"))
+suppressPackageStartupMessages(library(netmeta))
 
 ### Print odds ratios and confidence limits with two digits
 oldset <- settings.meta(digits = 2)

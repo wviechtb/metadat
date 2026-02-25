@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-4</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-5</span>
       </span>
     </div>
 
@@ -91,7 +91,7 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>author</b></td><td><code>character</code></td><td>First author with information on dosage in parentheses</td></tr><tr><td><b>Ne</b></td><td><code>integer</code></td><td>number of patients in low TCA group</td></tr><tr><td><b>Me</b></td><td><code>numeric</code></td><td>depression severity (low TCA)</td></tr><tr><td><b>Se</b></td><td><code>numeric</code></td><td>standard deviation (low TCA)</td></tr><tr><td><b>Nc</b></td><td><code>integer</code></td><td>number of patients in placebo group</td></tr><tr><td><b>Mc</b></td><td><code>numeric</code></td><td>depression severity (placebo)</td></tr><tr><td><b>Sc</b></td><td><code>numeric</code></td><td>standard deviation (placebo)</td></tr></table></div>
+    <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>author</b></td><td><code>character</code></td><td>First author with information on dosage in parentheses</td></tr><tr><td><b>Ne</b></td><td><code>integer</code></td><td>number of patients in low TCA group</td></tr><tr><td><b>Me</b></td><td><code>numeric</code></td><td>depression severity (low TCA)</td></tr><tr><td><b>Se</b></td><td><code>numeric</code></td><td>standard deviation (low TCA)</td></tr><tr><td><b>Nc</b></td><td><code>integer</code></td><td>number of patients in placebo group</td></tr><tr><td><b>Mc</b></td><td><code>numeric</code></td><td>depression severity (placebo)</td></tr><tr><td><b>Sc</b></td><td><code>numeric</code></td><td>standard deviation (placebo)</td></tr><tr><td><b>measure</b></td><td><code>character</code></td><td>depression scale</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>Furukawa et al. (2003) carried out a systematic review comparing low dosage tricyclic antidepressants (TCA) with placebo for the treatment of depression. They reported the effect on presence/absence of depression and on depression severity at various time points. Here we focus on depression severity at four weeks. Most studies used some version of the Hamilton Depression Rating Scale, however, some studies used the Montgomery-Asberg Depression Rating Scale. Accordingly, it is not possible to pool the estimated effects directly.</p>
@@ -111,22 +111,22 @@
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>standardized mean differences</p>
+    <p>psychology, psychiatry, standardized mean differences</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### Show first five studies</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat.furukawa2003</span>, <span class="fl">5</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>             author Ne   Me   Se Nc   Mc   Sc</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1  Blashki(75&amp;150) 13  6.4  5.4 18 11.4  9.6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2   Hormazabal(86) 17 11.0  8.2 16 19.0  8.2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Jacobson(75-100) 10 17.5  8.8  6 23.0  8.8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4      Jenkins(75)  7 12.3  9.9  7 20.0 10.5</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5   Lecrubier(100) 73 15.7 10.6 73 18.7 10.6</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             author Ne   Me   Se Nc   Mc   Sc measure</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1  Blashki(75&amp;150) 13  6.4  5.4 18 11.4  9.6 HRSD-17</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2   Hormazabal(86) 17 11.0  8.2 16 19.0  8.2 HRSD-21</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 Jacobson(75-100) 10 17.5  8.8  6 23.0  8.8 HRSD-24</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4      Jenkins(75)  7 12.3  9.9  7 20.0 10.5     BDI</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5   Lecrubier(100) 73 15.7 10.6 73 18.7 10.6   MADRS</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Load meta package</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/guido-s/meta/" class="external-link">"meta"</a></span><span class="op">)</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">suppressPackageStartupMessages</a></span><span class="op">(</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/guido-s/meta/" class="external-link">meta</a></span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Use RevMan5 settings</span></span></span>
 <span class="r-in"><span><span class="va">oldset</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span><span class="st">"RevMan5"</span>, digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>

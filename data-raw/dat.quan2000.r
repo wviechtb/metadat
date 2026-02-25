@@ -3,4 +3,4 @@
 # Cochrane Database of Systematic Reviews, 2, CD002146
 
 dat.quan2000 <- read.csv("data-raw/dat.quan2000.csv")
-save(dat.quan2000, file ="data/dat.quan2000.rda")
+save(dat.quan2000, file="data/dat.quan2000.rda")

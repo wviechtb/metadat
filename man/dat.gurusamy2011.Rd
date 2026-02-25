@@ -45,7 +45,7 @@ subset(dat.gurusamy2011, study == "Baudo 1992")
 
 \dontrun{
 ### Load netmeta package
-suppressPackageStartupMessages(library("netmeta"))
+suppressPackageStartupMessages(library(netmeta))
 
 ### Print odds ratios and confidence limits with two digits
 oldset <- settings.meta(digits = 2)

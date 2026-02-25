@@ -89,8 +89,9 @@ predict(res, transf=transf.ilogit)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{cardiology}
 \concept{single-arm studies}
 \concept{proportions}
 \section{Concepts}{
-   medicine, single-arm studies, proportions
+   medicine, cardiology, single-arm studies, proportions
 }

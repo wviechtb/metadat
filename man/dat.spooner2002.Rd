@@ -18,6 +18,7 @@ The data frame contains the following columns:
 \bold{Mc}       \tab \code{numeric}   \tab maximum fall in the FEV_1 (placebo) \cr
 \bold{Sc}       \tab \code{numeric}   \tab standard deviation (placebo) \cr
 \bold{agegroup} \tab \code{factor}    \tab age group (children or adults) \cr
+\bold{order}    \tab \code{numeric}   \tab order of studies in Table 1.1 in the Cochrane review
 }
 }
 \details{
@@ -40,7 +41,7 @@ head(dat.spooner2002, 5)
 
 \dontrun{
 ### Load meta package
-suppressPackageStartupMessages(library("meta"))
+suppressPackageStartupMessages(library(meta))
 
 ### Use settings from RevMan5
 oldset <- settings.meta("RevMan5")
@@ -58,8 +59,10 @@ settings.meta(oldset)
 }
 }
 \keyword{datasets}
+\concept{medicine}
+\concept{pulmonology}
 \concept{raw mean differences}
 \concept{subgroup analysis}
 \section{Concepts}{
-   raw mean differences, subgroup analysis
+   medicine, pulmonology, raw mean differences, subgroup analysis
 }

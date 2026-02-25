@@ -9,30 +9,30 @@ dat.poole2003
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{author} \tab \code{character} \tab first author \cr
-\bold{year} \tab \code{integer} \tab publication year \cr
-\bold{Ne} \tab \code{integer} \tab sample size (mucolytic agents) \cr
-\bold{Me} \tab \code{numeric} \tab mean exacerbations per months (mucolytic agents) \cr
-\bold{Se} \tab \code{numeric} \tab standard deviation (mucolytic agents)  \cr
-\bold{Nc} \tab \code{integer} \tab sample size (placebo) \cr
-\bold{Mc} \tab \code{numeric} \tab mean exacerbations per months (placebo) \cr
-\bold{Sc} \tab \code{numeric} \tab standard deviation (placebo) \cr
-\bold{duration} \tab \code{character} \tab study duration \cr
-}  
+\bold{author}   \tab \code{character} \tab first author \cr
+\bold{year}     \tab \code{integer}   \tab publication year \cr
+\bold{Ne}       \tab \code{integer}   \tab sample size (mucolytic agents) \cr
+\bold{Me}       \tab \code{numeric}   \tab mean exacerbations per months (mucolytic agents) \cr
+\bold{Se}       \tab \code{numeric}   \tab standard deviation (mucolytic agents)  \cr
+\bold{Nc}       \tab \code{integer}   \tab sample size (placebo) \cr
+\bold{Mc}       \tab \code{numeric}   \tab mean exacerbations per months (placebo) \cr
+\bold{Sc}       \tab \code{numeric}   \tab standard deviation (placebo) \cr
+\bold{duration} \tab \code{character} \tab study duration
+}
 }
 \details{
-Poole and Black (2003) conducted a Cochrane review to evaluate mucolytic agents versus placebo for patients with chronic bronchitis or chronic obstructive pulmonary disease. The outcome used here is the mean number of acute exacerbations per month. Acute exacerbation is defined as an increase in cough and in the volume or purulence of sputum. All 17 studies included in the meta-analysis report a mean number of exacerbations and we can work with mean differences, rather than standardised mean differences. Note, later versions of this Cochrane review no longer evaluate the mean number of exacerbations per month.
+   Poole and Black (2003) conducted a Cochrane review to evaluate mucolytic agents versus placebo for patients with chronic bronchitis or chronic obstructive pulmonary disease. The outcome used here is the mean number of acute exacerbations per month. Acute exacerbation is defined as an increase in cough and in the volume or purulence of sputum. All 17 studies included in the meta-analysis report a mean number of exacerbations and we can work with mean differences, rather than standardised mean differences. Note, later versions of this Cochrane review no longer evaluate the mean number of exacerbations per month.
 
-This data set is used as an example in Schwarzer et al. (2015).
+   This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-Poole, P.J., Black, P.N. (2003). Mucolytic agents for chronic bronchitis or chronic obstructive pulmonary disease. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \verb{https://doi.org/10.1002/14651858.CD001287}
+   Poole, P. J., & Black, P. N. (2003). Mucolytic agents for chronic bronchitis or chronic obstructive pulmonary disease. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, CD001287. \verb{https://doi.org/10.1002/14651858.cd001287}
 }
 \references{
-Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
+   Schwarzer, G., Carpenter, J. R., & \enc{Rücker}{Ruecker}, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
 }
 \author{
-Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
+   Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}, \url{https://github.com/guido-s/}
 }
 \examples{
 ### Show first five studies
@@ -40,7 +40,7 @@ head(dat.poole2003, 5)
 
 \dontrun{
 ### Load meta package
-suppressPackageStartupMessages(library("meta"))
+suppressPackageStartupMessages(library(meta))
 
 ### Use RevMan 5 settings
 oldset <- settings.meta("RevMan5",
@@ -68,8 +68,9 @@ settings.meta(oldset)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{pulmonology}
 \concept{raw mean differences}
 \concept{subgroup analysis}
 \section{Concepts}{
-   medicine, raw mean differences, subgroup analysis
+   medicine, pulmonology, raw mean differences, subgroup analysis
 }

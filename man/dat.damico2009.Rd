@@ -51,7 +51,8 @@ predict(res, transf=exp, digits=2)
 }
 \keyword{datasets}
 \concept{medicine}
+\concept{pulmonology}
 \concept{odds ratios}
 \section{Concepts}{
-   medicine, odds ratios
+   medicine, pulmonology, odds ratios
 }

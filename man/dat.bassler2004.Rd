@@ -38,7 +38,7 @@ dat.bassler2004
 
 \dontrun{
 ### Load meta package
-suppressPackageStartupMessages(library("meta"))
+suppressPackageStartupMessages(library(meta))
 
 ### Use DerSimonian-Laird estimator (which was the default in meta in the year 2015).
 ### Furthermore, print meta-analysis results with two digits.
