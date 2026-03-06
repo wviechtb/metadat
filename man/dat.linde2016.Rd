@@ -46,9 +46,10 @@ suppressPackageStartupMessages(library(netmeta))
 oldset <- settings.meta(digits = 2)
 
 ### Define order of treatments in printouts and forest plots
-trts <- c("SSRI", "Face-to-face CBT", "Face-to-face interpsy", "Face-to-face
-  PST", "Face-to-face CBT + SSRI", "Face-to-face interpsy + SSRI",
-  "Face-to-face PST + SSRI", "Face-to-face psychodyn", "Other face-to-face",
+trts <- c("SSRI", "Face-to-face CBT", "Face-to-face interpsy",
+  "Face-to-face PST", "Face-to-face CBT + SSRI",
+  "Face-to-face interpsy + SSRI", "Face-to-face PST + SSRI",
+  "Face-to-face psychodyn", "Other face-to-face",
   "TCA", "SNRI", "NRI", "Low-dose SARI", "NaSSa", "rMAO-A", "Ind drug",
   "Hypericum", "Remote CBT", "Self-help CBT", "No contact CBT", "UC",
   "Placebo")
