@@ -1,12 +1,13 @@
 \name{dat.nissen2007}
 \docType{data}
 \alias{dat.nissen2007}
-\title{Rosiglitazone data set}
-\description{Data on the effect of Rosiglitazone on infarction risk and mortality.}
+\title{Studies on the Effect of Rosiglitazone on the Risk of Myocardial Infarction and Death from Cardiovascular Causes}
+\description{Results from 42 trials examining the effect of rosiglitazone on the risk of myocardial infarction and death from cardiovascular causes.}
 \usage{
 dat.nissen2007
 }
-\format{The data frame contains the following columns:
+\format{
+The data frame contains the following columns:
 \tabular{lll}{
 \bold{study}            \tab \code{character} \tab study identifier \cr
 \bold{phase}            \tab \code{factor}    \tab study phase \cr
@@ -24,24 +25,31 @@ dat.nissen2007
 \details{
    Nissen and Wolski (2007) performed a systematic literature review aiming for randomized controlled trials (RCTs) investigating the effects of Rosiglitazone (Avandia) in comparison to a control treatment, and with a follow-up duration of at least 24 weeks. 42 studies were included. A meta-analysis was performed to quantify the treatment effect on the risks of myocardial infarction and cardiovascular death in terms of the associated odds ratio (OR).
 
-   The data set features a number of \dQuote{zero} trials (no event observed in one of the treatment groups) as well as \dQuote{double-zero} trials (no event in either treatment group), which poses a challenge for some analysis methods. The original analysis was a common-effect analysis based on the \emph{Peto method} (see the \code{\link[metafor]{rma.peto}} help and the example code below). The data set as well as its original analysis have subsequently been discussed by other investigators (e.g., Diamond, Bax, & Kaul, 2007; Ruecker & Schumacher, 2008; Friedrich, Beyene, & Adhikari, 2009; Nissen & Wolski, 2010). Jackson et al. (2018) later surveyed a range of (random-effects) models that may be applicable in this context; see also the examples below.
+   The data set features a number of \dQuote{zero} trials (no event observed in one of the treatment groups) as well as \dQuote{double-zero} trials (no event in either treatment group), which poses a challenge for some analysis methods. The original analysis was a common-effect analysis based on the \emph{Peto method} (see the \code{\link[metafor]{rma.peto}} help and the example code below). The data set as well as its original analysis have subsequently been discussed by other investigators (e.g., Diamond et al., 2007; Ruecker & Schumacher, 2008; Friedrich et al., 2009; Tian et al., 2009; Nissen & Wolski, 2010). Jackson et al. (2018) later surveyed a range of (random-effects) models that may be applicable in this context; see also the examples below.
+
+   See also \code{\link{dat.tian2009}} for the same dataset, but with 6 additional trials where no event was observed in either group for both outcomes.
 }
 \source{
    Nissen, S. E., & Wolski, K. (2007). Effect of Rosiglitazone on the risk of myocardial infarction and death from cardiovascular causes. \emph{New England Journal of Medicine}, \bold{356}(24), 2457-2471. \verb{https://doi.org/10.1056/NEJMoa072761}
 }
-\author{
-   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.d}}
 \references{
    Diamond, G. A., Bax, L., & Kaul, S. (2007). Uncertain effects of Rosiglitazone on the risk for myocardial infarction and cardiovascular death. \emph{Annals of Internal Medicine}, \bold{147}(8), 578--581. \verb{https://doi.org/10.7326/0003-4819-147-8-200710160-00182}
 
-   Rücker, G., & Schumacher, M. (2008). Simpson’s paradox visualized: The example of the Rosiglitazone meta-analysis. \emph{BMC Medical Research Methodology}, \bold{8}, 34. \verb{https://doi.org/10.1186/1471-2288-8-34}
-
    Friedrich, J. O., Beyene, J., & Adhikari, N. K. J. (2009). Rosiglitazone: Can meta-analysis accurately estimate excess cardiovascular risk given the available data? Re-analysis of randomized trials using various methodologic approaches. \emph{BMC Research Notes}, \bold{2}, 5. \verb{https://doi.org/10.1186/1756-0500-2-5}
+
+   Jackson, D., Law, M., Stijnen, T., Viechtbauer, W., & White, I. R. (2018). A comparison of seven random-effects models for meta-analyses that estimate the summary odds ratio. \emph{Statistics in Medicine}, \bold{37}(7), 1059--1085. \verb{https://doi.org/10.1002/sim.7588}
 
    Nissen, S. E., & Wolski, K. (2010). Rosiglitazone revisited: An updated meta-analysis of risk for myocardial infarction and cardiovascular mortality. \emph{Archives of Internal Medicine}, \bold{170}(14), 1191--1201. \verb{https://doi.org/10.1001/archinternmed.2010.207}
 
-   Jackson, D., Law, M., Stijnen, T., Viechtbauer, W., & White, I. R. (2018). A comparison of seven random-effects models for meta-analyses that estimate the summary odds ratio. \emph{Statistics in Medicine}, \bold{37}(7), 1059--1085. \verb{https://doi.org/10.1002/sim.7588}
+   Rücker, G., & Schumacher, M. (2008). Simpson’s paradox visualized: The example of the Rosiglitazone meta-analysis. \emph{BMC Medical Research Methodology}, \bold{8}, 34. \verb{https://doi.org/10.1186/1471-2288-8-34}
+
+   Tian, L., Cai, T., Pfeffer, M. A., Piankov, N., Cremieux, P.-Y., & Wei, L. J. (2009). Exact and efficient inference procedure for meta-analysis and its application to the analysis of independent 2 x 2 tables with all available data but without artificial continuity correction. \emph{Biostatistics}, \bold{10}(2), 275--281. \verb{https://doi.org/10.1093/biostatistics/kxn034}
 }
+\seealso{
+   \code{\link{dat.tian2009}}
+}
+\author{
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.d}}
 \examples{
 dat.nissen2007
 

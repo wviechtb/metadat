@@ -1,6 +1,6 @@
 Package: metadat
-Version: 1.5-5
-Date: 2026-02-25
+Version: 1.5-6
+Date: 2026-03-06
 Title: Meta-Analysis Datasets
 Authors@R: c(
   person(given = "Wolfgang", family = "Viechtbauer",
@@ -20,7 +20,10 @@ Authors@R: c(
   comment = c(ORCID = "0000-0002-8642-7990")),
   person(given = "Guido", family = "Schwarzer",
   role = "dtc", email = "guido.schwarzer@uniklinik-freiburg.de",
-  comment = c(ORCID = "0000-0001-6214-9087")))
+  comment = c(ORCID = "0000-0001-6214-9087")),
+  person(given = "Christian", family = "Röver",
+  role = "dtc", email = "christian.roever@med.uni-goettingen.de",
+  comment = c(ORCID = "0000-0002-6911-698X")))
 Depends: R (>= 4.0.0)
 Imports: utils, tools, mathjaxr
 Suggests: metafor, numDeriv, BiasedUrn, dfoptim, igraph, ape, testthat, digest, lme4, clubSandwich, meta, netmeta, mvtnorm, gridExtra, rms, bayesmeta, ellipse, metasens
