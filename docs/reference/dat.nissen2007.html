@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-6</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-7</span>
       </span>
     </div>
 
@@ -91,7 +91,7 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>study identifier</td></tr><tr><td><b>phase</b></td><td><code>factor</code></td><td>study phase</td></tr><tr><td><b>treatment</b></td><td><code>character</code></td><td>treatment group medication</td></tr><tr><td><b>control</b></td><td><code>character</code></td><td>control group medication</td></tr><tr><td><b>weeks</b></td><td><code>numeric</code></td><td>follow-up duration (weeks)</td></tr><tr><td><b>treat.total</b></td><td><code>numeric</code></td><td>total number of patients in the treatment group</td></tr><tr><td><b>treat.infarction</b></td><td><code>numeric</code></td><td>number of patients with myocardial infarction in the treatment group</td></tr><tr><td><b>treat.death</b></td><td><code>numeric</code></td><td>number of deaths in the treatment group</td></tr><tr><td><b>cont.total</b></td><td><code>numeric</code></td><td>total number of patients in the control group</td></tr><tr><td><b>cont.infarction</b></td><td><code>numeric</code></td><td>number of patients with myocardial infarction in the control group</td></tr><tr><td><b>cont.death</b></td><td><code>numeric</code></td><td>number of deaths in the control group</td></tr></table></div>
+    <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>study identifier</td></tr><tr><td><b>type</b></td><td><code>factor</code></td><td>type of trial (as in Table 1)</td></tr><tr><td><b>phase</b></td><td><code>factor</code></td><td>study phase</td></tr><tr><td><b>population</b></td><td><code>character</code></td><td>description of the study population</td></tr><tr><td><b>start</b>, <b>end</b></td><td><code>character</code></td><td>study period (year-month)</td></tr><tr><td><b>treatment</b></td><td><code>character</code></td><td>treatment group medication</td></tr><tr><td><b>control</b></td><td><code>character</code></td><td>control group medication</td></tr><tr><td><b>weeks</b></td><td><code>numeric</code></td><td>follow-up duration (weeks)</td></tr><tr><td><b>treat.total</b></td><td><code>numeric</code></td><td>total number of patients in the treatment group</td></tr><tr><td><b>treat.infarction</b></td><td><code>numeric</code></td><td>number of patients with myocardial infarction in the treatment group</td></tr><tr><td><b>treat.death</b></td><td><code>numeric</code></td><td>number of deaths in the treatment group</td></tr><tr><td><b>cont.total</b></td><td><code>numeric</code></td><td>total number of patients in the control group</td></tr><tr><td><b>cont.infarction</b></td><td><code>numeric</code></td><td>number of patients with myocardial infarction in the control group</td></tr><tr><td><b>cont.death</b></td><td><code>numeric</code></td><td>number of deaths in the control group</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
     <p>Nissen and Wolski (2007) performed a systematic literature review aiming for randomized controlled trials (RCTs) investigating the effects of Rosiglitazone (Avandia) in comparison to a control treatment, and with a follow-up duration of at least 24 weeks. 42 studies were included. A meta-analysis was performed to quantify the treatment effect on the risks of myocardial infarction and cardiovascular death in terms of the associated odds ratio (OR).</p>
@@ -127,92 +127,178 @@
     <div id="ref-examples">
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">dat.nissen2007</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>             study phase                               treatment                              control</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1       49653/011   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2       49653/020   III                           rosiglitazone                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3       49653/024   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4       49653/093   III rosiglitazone with or without metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5       49653/094   III             rosiglitazone and metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6          100684    IV             rosiglitazone and glyburide                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7       49653/143    IV             rosiglitazone and glyburide                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8       49653/211    IV            rosiglitazone and usual care                           usual care</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9       49653/284    IV             rosiglitazone and metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10     712753/008    IV              rosiglitazoneand metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11      AVM100264    IV             rosiglitazone and metformin           metformin and sulfonylurea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12 BRL 49653C/185    IV rosiglitazone with or without metformin usual care with or without metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13  BRL 49653/334    IV                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14  BRL 49653/347    IV               rosiglitazone and insulin                              insulin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 15      49653/015   III          rosiglitazone and sulfonylurea                         sulfonylurea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 16      49653/079   III rosiglitazone with or without glyburide                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 17      49653/080   III                           rosiglitazone                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18      49653/082   III               rosiglitazone and insulin                              insulin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19      49653/085   III               rosiglitazone and insulin                              insulin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20      49653/095   III               rosiglitazone and insulin                              insulin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21      49653/097   III                           rosiglitazone                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22      49653/125   III          rosiglitazone and sulfonylurea                         sulfonylurea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23      49653/127   III             rosiglitazone and glyburide                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24      49653/128   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25      49653/134   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26      49653/135   III             rosiglitazone and glipizide                            glipizide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27      49653/136   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28      49653/145   III            rosiglitazone and gliclazide                           glyclazide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29      49653/147   III           rosiglitazone and sufonylruea                         sulfonylurea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30      49653/162   III             rosiglitazone and glyburide                            glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31      49653/234   III           rosiglitazone and glimepiride                          glimepiride</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32      49653/330   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33      49653/331   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34      49653/137   III             rosiglitazone and metformin              glyburide and metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35  SB-712753/002   III             rosiglitazone and metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36  SB-712753/003   III             rosiglitazone and metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37  SB-712753/007   III rosiglitazone with or without metformin                            metformin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38  SB-712753/009   III     rosiglitazone, metformin and isulin                              insulin</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39      49653/132    II          rosiglitazone and sulfonylurea                         sulfonylurea</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40      AVA100193    II                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41          DREAM   III                           rosiglitazone                              placebo</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42          ADOPT   III                           rosiglitazone               metformin or glyburide</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    weeks treat.total treat.infarction treat.death cont.total cont.infarction cont.death</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     24         357                2           1        176               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     52         391                2           0        207               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3     26         774                1           0        185               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     26         213                0           0        109               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5     26         232                1           1        116               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6     52          43                0           0         47               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7     24         121                1           0        124               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8     52         110                5           3        114               2          2</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9     24         382                1           0        384               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10    48         284                1           0        135               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11    52         294                0           2        302               1          1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12    32         563                2           0        142               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13    52         278                2           0        279               1          1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14    24         418                2           0        212               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 15    24         395                2           2        198               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 16    26         203                1           1        106               1          1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 17   156         104                1           0         99               2          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18    26         212                2           1        107               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19    26         138                3           1        139               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20    26         196                0           1         96               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21   156         122                0           0        120               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22    26         175                0           0        173               1          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23    26          56                1           0         58               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24    28          39                1           0         38               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25    28         561                0           1        276               2          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26   104         116                2           2        111               3          1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27    26         148                1           2        143               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28    26         231                1           1        242               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29    26          89                1           0         88               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30    26         168                1           1        172               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31    26         116                0           0         61               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32    52        1172                1           1        377               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33    52         706                0           1        325               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34    32         204                1           0        185               2          1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35    24         288                1           1        280               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36    32         254                1           0        272               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37    32         314                1           0        154               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38    24         162                0           0        160               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39    24         442                1           1        112               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40    24         394                1           1        124               0          0</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41   156        2635               15          12       2634               9         10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42   208        1456               27           2       2895              41          5</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             study                   type phase</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1       49653/011  original registration   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2       49653/020  original registration   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3       49653/024  original registration   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4       49653/093  original registration   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5       49653/094  original registration   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6          100684 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7       49653/143 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8       49653/211 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9       49653/284 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10     712753/008 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11      AVM100264 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12 BRL 49653C/185 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13  BRL 49653/334 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14  BRL 49653/347 additional phase II-IV    IV</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15      49653/015 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16      49653/079 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17      49653/080 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18      49653/082 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19      49653/085 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20      49653/095 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21      49653/097 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22      49653/125 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23      49653/127 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24      49653/128 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25      49653/134 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26      49653/135 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27      49653/136 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28      49653/145 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29      49653/147 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30      49653/162 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31      49653/234 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32      49653/330 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33      49653/331 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34      49653/137 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35  SB-712753/002 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36  SB-712753/003 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37  SB-712753/007 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38  SB-712753/009 additional phase II-IV   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39      49653/132 additional phase II-IV    II</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40      AVA100193 additional phase II-IV    II</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41          DREAM      recent randomized   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42          ADOPT      recent randomized   III</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                                      population   start     end</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                                                     type 2 DM 1996-09 1997-09</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                                                     type 2 DM 1996-10 1998-05</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                                                     type 2 DM 1997-01 1998-02</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                            type 2 DM poorly controlled on Met 1997-06 1998-04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                            type 2 DM poorly controlled on Met 1997-04 1998-03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                                Korean patients with type 2 DM 2003-12 2005-07</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7                            type 2 DM poorly controlled on Gly 2000-07 2003-01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8                                            type 2 DM with CHF 2001-07 2003-11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9                                                     type 2 DM 2001-06 2003-02</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10                           type 2 DM poorly controlled on Met 2003-06 2005-12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11  overweight patients with type 2 DM poorly controlled on Met 2004-07 2006-01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12                                                    type 2 DM 2000-05 2002-05</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13                     type 2 DM or insulin resistance syndrome 2002-03 2004-11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14                       type 2 DM poorly controlled on insulin 2002-11 2004-04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15                                                    type 2 DM 1996-08 1998-03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16           type 2 DM poorly controlled on maximum dose of Gly 1997-04 1998-03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17                                                    type 2 DM 1996-11 2000-05</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18                       type 2 DM poorly controlled on insulin 1997-07 1998-08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19                                                    type 2 DM 2000-05 2001-06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20                       type 2 DM poorly controlled on insulin 1997-08 1998-12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21                                                    type 2 DM 1997-08 2001-01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22                                                    type 2 DM 1999-05 2000-08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23                           type 2 DM poorly controlled on Gly 1999-01 1999-12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24                                   type 2 DM on concurrent Su 1999-05 2000-06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25                                     type 2 DM on Gly and Met 1999-03 2000-08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26                              elderly patients with type 2 DM 1999-05 2002-10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27 type 2 DM with chronic renal failure on Su, insulin, or both 1999-07 2001-06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28                                                    type 2 DM 1999-10 2000-11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29                           Indo-Asian patients with type 2 DM 1999-07 2000-08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30                                                    type 2 DM 2000-11 2002-04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31                                                    type 2 DM 2001-01 2002-02</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32                                            chronic psoriasis 2003-01 2004-10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33                                            chronic psoriasis 2003-01 2004-10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34                                                    type 2 DM 2000-04 2004-03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35                                  type 2 DM poorly controlled 2003-07 2004-06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36                                               mild type 2 DM 2003-06 2004-12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37                          type 2 DM w/o previous drug therapy 2003-10 2004-12</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38                                       type 2 DM with insulin 2003-10 2004-11</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39                             patients in China with type 2 DM 1999-04 2000-02</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40                         mild-to-moderate Alzheimer's disease 2004-01 2005-05</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41                impaired glucose tolerance or fasting glucose 2001-07 2003-08</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42                                 recently diagnosed type 2 DM 2000-04 2002-06</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                  treatment                              control weeks treat.total</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                            rosiglitazone                              placebo    24         357</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                            rosiglitazone                            glyburide    52         391</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                            rosiglitazone                              placebo    26         774</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4  rosiglitazone with or without metformin                            metformin    26         213</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5              rosiglitazone and metformin                            metformin    26         232</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6              rosiglitazone and glyburide                            glyburide    52          43</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7              rosiglitazone and glyburide                            glyburide    24         121</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8             rosiglitazone and usual care                           usual care    52         110</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9              rosiglitazone and metformin                            metformin    24         382</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10             rosiglitazone and metformin                            metformin    48         284</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11             rosiglitazone and metformin           metformin and sulfonylurea    52         294</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12 rosiglitazone with or without metformin usual care with or without metformin    32         563</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13                           rosiglitazone                              placebo    52         278</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14               rosiglitazone and insulin                              insulin    24         418</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15          rosiglitazone and sulfonylurea                         sulfonylurea    24         395</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16 rosiglitazone with or without glyburide                            glyburide    26         203</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17                           rosiglitazone                            glyburide   156         104</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18               rosiglitazone and insulin                              insulin    26         212</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19               rosiglitazone and insulin                              insulin    26         138</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20               rosiglitazone and insulin                              insulin    26         196</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21                           rosiglitazone                            glyburide   156         122</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22          rosiglitazone and sulfonylurea                         sulfonylurea    26         175</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23             rosiglitazone and glyburide                            glyburide    26          56</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24                           rosiglitazone                              placebo    28          39</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25                           rosiglitazone                              placebo    28         561</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26             rosiglitazone and glipizide                            glipizide   104         116</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27                           rosiglitazone                              placebo    26         148</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28            rosiglitazone and gliclazide                           glyclazide    26         231</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29           rosiglitazone and sufonylruea                         sulfonylurea    26          89</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30             rosiglitazone and glyburide                            glyburide    26         168</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31           rosiglitazone and glimepiride                          glimepiride    26         116</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32                           rosiglitazone                              placebo    52        1172</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33                           rosiglitazone                              placebo    52         706</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34             rosiglitazone and metformin              glyburide and metformin    32         204</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35             rosiglitazone and metformin                            metformin    24         288</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36             rosiglitazone and metformin                            metformin    32         254</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37 rosiglitazone with or without metformin                            metformin    32         314</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38     rosiglitazone, metformin and isulin                              insulin    24         162</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39          rosiglitazone and sulfonylurea                         sulfonylurea    24         442</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40                           rosiglitazone                              placebo    24         394</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41                           rosiglitazone                              placebo   156        2635</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42                           rosiglitazone               metformin or glyburide   208        1456</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    treat.infarction treat.death cont.total cont.infarction cont.death</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1                 2           1        176               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2                 2           0        207               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3                 1           0        185               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4                 0           0        109               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5                 1           1        116               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6                 0           0         47               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7                 1           0        124               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8                 5           3        114               2          2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9                 1           0        384               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 10                1           0        135               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 11                0           2        302               1          1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 12                2           0        142               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 13                2           0        279               1          1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 14                2           0        212               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 15                2           2        198               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 16                1           1        106               1          1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 17                1           0         99               2          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 18                2           1        107               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 19                3           1        139               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 20                0           1         96               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 21                0           0        120               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 22                0           0        173               1          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 23                1           0         58               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 24                1           0         38               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 25                0           1        276               2          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 26                2           2        111               3          1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 27                1           2        143               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 28                1           1        242               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 29                1           0         88               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 30                1           1        172               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 31                0           0         61               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 32                1           1        377               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 33                0           1        325               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 34                1           0        185               2          1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 35                1           1        280               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 36                1           0        272               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 37                1           0        154               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 38                0           0        160               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 39                1           1        112               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 40                1           1        124               0          0</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 41               15          12       2634               9         10</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 42               27           2       2895              41          5</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>

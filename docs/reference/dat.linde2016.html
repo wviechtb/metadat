@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-6</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.5-7</span>
       </span>
     </div>
 
@@ -135,9 +135,10 @@
 <span class="r-in"><span><span class="va">oldset</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span>digits <span class="op">=</span> <span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Define order of treatments in printouts and forest plots</span></span></span>
-<span class="r-in"><span><span class="va">trts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"SSRI"</span>, <span class="st">"Face-to-face CBT"</span>, <span class="st">"Face-to-face interpsy"</span>, <span class="st">"Face-to-face</span></span></span>
-<span class="r-in"><span><span class="st">  PST"</span>, <span class="st">"Face-to-face CBT + SSRI"</span>, <span class="st">"Face-to-face interpsy + SSRI"</span>,</span></span>
-<span class="r-in"><span>  <span class="st">"Face-to-face PST + SSRI"</span>, <span class="st">"Face-to-face psychodyn"</span>, <span class="st">"Other face-to-face"</span>,</span></span>
+<span class="r-in"><span><span class="va">trts</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"SSRI"</span>, <span class="st">"Face-to-face CBT"</span>, <span class="st">"Face-to-face interpsy"</span>,</span></span>
+<span class="r-in"><span>  <span class="st">"Face-to-face PST"</span>, <span class="st">"Face-to-face CBT + SSRI"</span>,</span></span>
+<span class="r-in"><span>  <span class="st">"Face-to-face interpsy + SSRI"</span>, <span class="st">"Face-to-face PST + SSRI"</span>,</span></span>
+<span class="r-in"><span>  <span class="st">"Face-to-face psychodyn"</span>, <span class="st">"Other face-to-face"</span>,</span></span>
 <span class="r-in"><span>  <span class="st">"TCA"</span>, <span class="st">"SNRI"</span>, <span class="st">"NRI"</span>, <span class="st">"Low-dose SARI"</span>, <span class="st">"NaSSa"</span>, <span class="st">"rMAO-A"</span>, <span class="st">"Ind drug"</span>,</span></span>
 <span class="r-in"><span>  <span class="st">"Hypericum"</span>, <span class="st">"Remote CBT"</span>, <span class="st">"Self-help CBT"</span>, <span class="st">"No contact CBT"</span>, <span class="st">"UC"</span>,</span></span>
 <span class="r-in"><span>  <span class="st">"Placebo"</span><span class="op">)</span></span></span>
@@ -153,26 +154,141 @@
 <span class="r-in"><span><span class="co">### Conduct random effects network meta-analysis</span></span></span>
 <span class="r-in"><span><span class="va">nma</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netmeta.html" class="external-link">netmeta</a></span><span class="op">(</span><span class="va">pw</span>, reference.group <span class="op">=</span> <span class="st">"placebo"</span>,</span></span>
 <span class="r-in"><span>  seq <span class="op">=</span> <span class="va">trts</span>, common <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> Argument 'seq' must be a permutation of the following values:</span>
-<span class="r-err co"><span class="r-pr">#&gt;</span>   'Face-to-face CBT' - 'Face-to-face CBT + SSRI' - 'Face-to-face PST' - 'Face-to-face PST + SSRI' - 'Face-to-face interpsy' - 'Face-to-face interpsy + SSRI' - 'Face-to-face psychodyn' - 'Hypericum' - 'Ind drug' - 'Low-dose SARI' - 'NRI' - 'NaSSa' - 'No contact CBT' - 'Other face-to-face' - 'Placebo' - 'Remote CBT' - 'SNRI' - 'SSRI' - 'Self-help CBT' - 'TCA' - 'UC' - 'rMAO-A'</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Network graph</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netgraph.html" class="external-link">netgraph</a></span><span class="op">(</span><span class="va">nma</span>, seq <span class="op">=</span> <span class="st">"o"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'nma' not found</span>
+<span class="r-plt img"><img src="dat.linde2016-1.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Show results</span></span></span>
 <span class="r-in"><span><span class="va">nma</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'nma' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 93</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 124</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 20580</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of treatments: n = 22</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of designs: d = 40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Treatment estimate (other treatments vs 'Placebo'):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                 OR         95%-CI    z  p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SSRI                          1.71 [1.46;   2.01] 6.61 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face CBT              2.05 [1.26;   3.36] 2.86   0.0042</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face interpsy         1.11 [0.76;   1.62] 0.54   0.5897</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face PST              1.39 [0.97;   2.00] 1.77   0.0770</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face CBT + SSRI      30.86 [4.94; 192.81] 3.67   0.0002</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face interpsy + SSRI  1.75 [1.12;   2.74] 2.47   0.0135</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face PST + SSRI       1.54 [0.66;   3.59] 1.01   0.3136</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face psychodyn        1.54 [0.48;   5.00] 0.72   0.4700</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Other face-to-face            1.91 [1.18;   3.12] 2.62   0.0089</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> TCA                           1.75 [1.47;   2.07] 6.40 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SNRI                          1.93 [1.49;   2.49] 5.04 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NRI                           1.45 [0.92;   2.27] 1.61   0.1066</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Low-dose SARI                 1.84 [1.25;   2.69] 3.10   0.0019</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NaSSa                         1.22 [0.89;   1.66] 1.25   0.2102</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rMAO-A                        1.08 [0.73;   1.59] 0.36   0.7158</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Ind drug                      2.54 [0.96;   6.76] 1.87   0.0613</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Hypericum                     2.00 [1.62;   2.47] 6.48 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Remote CBT                    2.14 [1.29;   3.54] 2.94   0.0033</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Self-help CBT                 1.94 [1.13;   3.32] 2.42   0.0156</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> No contact CBT                1.77 [1.01;   3.07] 2.01   0.0446</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> UC                            1.16 [0.76;   1.76] 0.69   0.4882</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Placebo                          .              .    .        .</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity / inconsistency:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 = 0.0174; tau = 0.1319; I^2 = 15.1% [0.0%; 35.6%]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Tests of heterogeneity (within designs) and inconsistency (between designs):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      Q d.f. p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Total           102.45   87  0.1234</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Within designs   58.07   54  0.3279</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Between designs  44.38   33  0.0892</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Details of network meta-analysis methods:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Frequentist graph-theoretical approach</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - DerSimonian-Laird estimator for tau^2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">nma</span>, xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.2</span>, <span class="fl">50</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'nma' not found</span>
+<span class="r-plt img"><img src="dat.linde2016-2.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Additive component network meta-analysis with placebo as inactive treatment</span></span></span>
 <span class="r-in"><span><span class="va">cnma</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/netmeta/man/netcomb.html" class="external-link">netcomb</a></span><span class="op">(</span><span class="va">nma</span>, inactive <span class="op">=</span> <span class="st">"placebo"</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'nma' not found</span>
 <span class="r-in"><span><span class="va">cnma</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'cnma' not found</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of studies: k = 93</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of pairwise comparisons: m = 124</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of treatments: n = 22</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of active components: c = 18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of designs: d = 40</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model (inactive component: 'Placebo')</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Treatment estimate (sm = 'OR', comparison: other treatments vs 'Placebo'):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                                OR       95%-CI    z  p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SSRI                         1.69 [1.45; 1.97] 6.81 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face CBT             2.31 [1.44; 3.70] 3.48   0.0005</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face interpsy        1.10 [0.79; 1.54] 0.57   0.5693</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face PST             1.37 [0.96; 1.96] 1.72   0.0856</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face CBT + SSRI      3.91 [2.32; 6.59] 5.12 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face interpsy + SSRI 1.86 [1.25; 2.78] 3.05   0.0023</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face PST + SSRI      2.32 [1.52; 3.53] 3.91 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face psychodyn       1.52 [0.47; 4.96] 0.70   0.4853</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Other face-to-face           2.08 [1.29; 3.33] 3.02   0.0025</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> TCA                          1.74 [1.47; 2.05] 6.53 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SNRI                         1.90 [1.47; 2.46] 4.91 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NRI                          1.43 [0.90; 2.26] 1.52   0.1291</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Low-dose SARI                1.83 [1.24; 2.69] 3.05   0.0023</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NaSSa                        1.21 [0.88; 1.65] 1.18   0.2371</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rMAO-A                       1.07 [0.72; 1.59] 0.33   0.7399</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Ind drug                     2.76 [1.04; 7.33] 2.03   0.0420</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Hypericum                    1.99 [1.61; 2.46] 6.41 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Remote CBT                   2.33 [1.42; 3.81] 3.36   0.0008</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Self-help CBT                2.08 [1.23; 3.53] 2.72   0.0064</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> No contact CBT               1.89 [1.10; 3.27] 2.29   0.0219</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> UC                           1.24 [0.83; 1.85] 1.07   0.2862</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Placebo                         .            .    .        .</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Incremental effect for existing combinations:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                               iOR       95%-CI    z  p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face CBT + SSRI      3.91 [2.32; 6.59] 5.12 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face PST + SSRI      2.32 [1.52; 3.53] 3.91 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face interpsy + SSRI 1.86 [1.25; 2.78] 3.05   0.0023</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Incremental effect for components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                         iOR       95%-CI    z  p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face CBT       2.31 [1.44; 3.70] 3.48   0.0005</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face PST       1.37 [0.96; 1.96] 1.72   0.0856</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face interpsy  1.10 [0.79; 1.54] 0.57   0.5693</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Face-to-face psychodyn 1.52 [0.47; 4.96] 0.70   0.4853</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Hypericum              1.99 [1.61; 2.46] 6.41 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Ind drug               2.76 [1.04; 7.33] 2.03   0.0420</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Low-dose SARI          1.83 [1.24; 2.69] 3.05   0.0023</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NRI                    1.43 [0.90; 2.26] 1.52   0.1291</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> NaSSa                  1.21 [0.88; 1.65] 1.18   0.2371</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> No contact CBT         1.89 [1.10; 3.27] 2.29   0.0219</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Other face-to-face     2.08 [1.29; 3.33] 3.02   0.0025</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Remote CBT             2.33 [1.42; 3.81] 3.36   0.0008</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SNRI                   1.90 [1.47; 2.46] 4.91 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> SSRI                   1.69 [1.45; 1.97] 6.81 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Self-help CBT          2.08 [1.23; 3.53] 2.72   0.0064</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> TCA                    1.74 [1.47; 2.05] 6.53 &lt; 0.0001</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> UC                     1.24 [0.83; 1.85] 1.07   0.2862</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rMAO-A                 1.07 [0.72; 1.59] 0.33   0.7399</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity / inconsistency:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2 = 0.0208; tau = 0.1441; I^2 = 17.5% [0.0%; 37.1%]</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Heterogeneity statistics:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                     Q df p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Additive model 109.12 90  0.0832</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Standard model 102.45 87  0.1234</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Difference       6.67  3  0.0831</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Details of network meta-analysis methods:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Frequentist graph-theoretical approach</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Component network meta-analysis</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - DerSimonian-Laird estimator for tau^2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/forest.html" class="external-link">forest</a></span><span class="op">(</span><span class="va">cnma</span>, xlim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.2</span>, <span class="fl">50</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error:</span> object 'cnma' not found</span>
+<span class="r-plt img"><img src="dat.linde2016-3.png" alt="" width="1728" height="1536"></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### Use previous settings</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/pkg/meta/man/settings.meta.html" class="external-link">settings.meta</a></span><span class="op">(</span><span class="va">oldset</span><span class="op">)</span></span></span>

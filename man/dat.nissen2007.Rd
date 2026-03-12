@@ -9,17 +9,20 @@ dat.nissen2007
 \format{
 The data frame contains the following columns:
 \tabular{lll}{
-\bold{study}            \tab \code{character} \tab study identifier \cr
-\bold{phase}            \tab \code{factor}    \tab study phase \cr
-\bold{treatment}        \tab \code{character} \tab treatment group medication \cr
-\bold{control}          \tab \code{character} \tab control group medication \cr
-\bold{weeks}            \tab \code{numeric}   \tab follow-up duration (weeks) \cr
-\bold{treat.total}      \tab \code{numeric}   \tab total number of patients in the treatment group \cr
-\bold{treat.infarction} \tab \code{numeric}   \tab number of patients with myocardial infarction in the treatment group \cr
-\bold{treat.death}      \tab \code{numeric}   \tab number of deaths in the treatment group \cr
-\bold{cont.total}       \tab \code{numeric}   \tab total number of patients in the control group \cr
-\bold{cont.infarction}  \tab \code{numeric}   \tab number of patients with myocardial infarction in the control group \cr
-\bold{cont.death}       \tab \code{numeric}   \tab number of deaths in the control group
+\bold{study}             \tab \code{character} \tab study identifier \cr
+\bold{type}              \tab \code{factor}    \tab type of trial (as in Table 1) \cr
+\bold{phase}             \tab \code{factor}    \tab study phase \cr
+\bold{population}        \tab \code{character} \tab description of the study population \cr
+\bold{start}, \bold{end} \tab \code{character} \tab study period (year-month) \cr
+\bold{treatment}         \tab \code{character} \tab treatment group medication \cr
+\bold{control}           \tab \code{character} \tab control group medication \cr
+\bold{weeks}             \tab \code{numeric}   \tab follow-up duration (weeks) \cr
+\bold{treat.total}       \tab \code{numeric}   \tab total number of patients in the treatment group \cr
+\bold{treat.infarction}  \tab \code{numeric}   \tab number of patients with myocardial infarction in the treatment group \cr
+\bold{treat.death}       \tab \code{numeric}   \tab number of deaths in the treatment group \cr
+\bold{cont.total}        \tab \code{numeric}   \tab total number of patients in the control group \cr
+\bold{cont.infarction}   \tab \code{numeric}   \tab number of patients with myocardial infarction in the control group \cr
+\bold{cont.death}        \tab \code{numeric}   \tab number of deaths in the control group
 }
 }
 \details{
@@ -49,7 +52,8 @@ The data frame contains the following columns:
    \code{\link{dat.tian2009}}
 }
 \author{
-   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.d}}
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.d}
+}
 \examples{
 dat.nissen2007
 
