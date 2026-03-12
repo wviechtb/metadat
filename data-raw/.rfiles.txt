@@ -94,6 +94,7 @@
 "dat.quan2000.r"
 "dat.raudenbush1985.r"
 "dat.riley2003.r"
+"dat.rivera2025.r"
 "dat.roever2022.r"
 "dat.senn2013.r"
 "dat.spooner2002.r"

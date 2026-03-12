@@ -1,0 +1,11 @@
+Author;year;Title;DOI;TP;FP;FN;TN;Sensibility;Specificity;PPV;NPV;Sample.size;n1;n2;Prevalence;AUC;SampleID
+Lovgren;2016;Validity of three screening questions (3Q/TMD) in relation to the DC/TMD;10.1111/joor.12428;103;36;24;137;0,81;0,79;0,74;0,84;300;127;173;0,425;;Lovgren2016
+Lovgren;2018;Diagnostic accuracy of three screening questions (3Q/TMD) in relation to the DC/TMD in a specialized orofacial pain clinic;10.1080/00016357.2018.1439528;237;133;10;69;0,96;0,34;0,64;0,86;449;247;202;0,55;;Lovgren2018
+Stasiak;2020;TMD diagnosis: Sensitivity and specificity of the Fonseca Anamnestic Index;10.1080/08869634.2020.1839724;146;85;4;30;0,97;0,26;0,63;0,86;265;150;115;0,565;;Stasiak2020
+Besime;2020;The accuracy and reliability of the Turkish version of the Fonseca anamnestic index in temporomandibular disorders;10.1080/08869634.2020.1812808;131;9;11;54;0,94;0,83;0,94;0,83;205;142;63;0,725;0,93;Besime2020
+Zhan;2019;Psychometric evaluation of the Chinese version of the Fonseca anamnestic index for temporomandibular disorders;10.1111/joor.12893;588;16;25;41;0,96;0,72;0,97;0,62;670;613;57;0,915;;Zhan2019
+Dos Santos;2014;Accuracy of the Fonseca anamnestic index in the identification of myogenous temporomandibular disorder in female community cases;10.1016/j.jbmt.2014.08.001;103;7;17;76;0,86;0,92;0,94;0,83;203;120;83;0,593;0,94;Dos Santos2014
+Ujin;2021;Accuracy of the Fonseca Anamnestic Index for identifying pain-related and/or intra-articular Temporomandibular Disorders;10.1080/08869634.2021.1954375;812;8;43;60;0,95;0,88;0,99;0,51;923;855;68;0,926;0,96;Ujin2021
+Zagalaz Anula;2021;The Short Form of the Fonseca Anamnestic Index for the Screening of Temporomandibular Disorders: Validity and Reliability in a Spanish-Speaking Population;10.3390/jcm10245858;39;11;11;41;0,78;0,79;0,78;0,79;102;50;52;0,488;0,85;ZagalazAnula2021
+Ujin;2021;Diagnostic accuracy of the short-form Fonseca Anamnestic Index in relation to the Diagnostic Criteria for Temporomandibular Disorders;10.1016/j.prosdent.2021.02.016;771;8;41;103;0,95;0,93;0,99;0,42;923;812;111;0,879;0,97;Ujin2021
+Pires;2018;Analysis of the accuracy and reliability of the Short-Form Fonseca Anamnestic Index in the diagnosis of myogenous temporomandibular disorder in women;10.1016/j.bjpt.2018.02.003;51;3;8;61;0,86;0,95;0,94;0,89;123;59;64;0,477;0,97;Pires2018
