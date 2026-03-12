@@ -52,7 +52,7 @@ The data frame contains the following columns:
    \code{\link{dat.tian2009}}
 }
 \author{
-   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.d}
+   Christian \enc{Röver}{Roever}, \email{christian.roever@med.uni-goettingen.de}
 }
 \examples{
 dat.nissen2007

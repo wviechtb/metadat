@@ -1,7 +1,7 @@
 \name{dat.rivera2025}
 \docType{data}
 \alias{dat.rivera2025}
-\title{Comparison of two diagnostic tests for the detection of temporomandibular disorders}
+\title{Comparison of Two Diagnostic Tests for the Detection of Temporomandibular Disorders}
 \description{Studies evaluating the diagnostic accuracy of the IAF and 3Q-TMD instruments based on the reference tests RDC and DC-TMD for the diagnosis of temporomandibular disorders.}
 \usage{
 dat.rivera2025
