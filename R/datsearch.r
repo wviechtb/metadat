@@ -84,9 +84,9 @@ correlations, standardized mean changes, standardized mean differences.
 
 In terms of models/methods/concepts, the following terms have been used at least once:
 
-cluster-robust inference, component network meta-analysis, cumulative
-meta-analysis, diagnostic accuracy studies, dose response models, generalized
-linear models, individual participant data, longitudinal models,
+cluster-robust inference, combining p-values, component network meta-analysis,
+cumulative meta-analysis, diagnostic accuracy studies, dose response models,
+generalized linear models, individual participant data, longitudinal models,
 Mantel-Haenszel method, meta-regression, missing data, model checks,
 multilevel models, multivariate models, network meta-analysis, outliers,
 Peto's method, phylogeny, prevalence, publication bias, reliability generalization,
