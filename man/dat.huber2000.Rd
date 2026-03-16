@@ -19,7 +19,7 @@ dat.huber2000
    The eventual analysis was carried out based on nonparametric Wilcoxon-Mann-Whitney (WMW) tests applied for each study individually and then synthesizing the five resulting test statistic values. The WMW test statistics may be expressed in terms of \emph{common language effect sizes} (CLES), that is, the estimated probability that a patient in the treatment group has a better outcome than a control patient.
 }
 \source{
-   Bauer, H. W., Rahlfs, V. W., Lauener, P. A., & \enc{Bleßmann}{Blessmann}, G. S. S. (2002). Prevention of recurrent urinary tract infections with immuno-active E. coli fractions: A meta-analysis of five placebo-controlled double-blind studies. \emph{International Journal of Antimicrobial Agents}, \bold{19}(6), 451--456. \verb{https://doi.org/10.1016/s0924-8579(02)00106-1}
+   Huber, M., Krauter, K., Winkelmann, G., Bauer, H. W., Rahlfs, V. W., Lauener, P. A., Bleßmann, G. S. S., & Bessler, W. G. (2000). Immunostimulation by bacterial components: II. Efficacy studies and meta-analysis of the bacterial extract OM-89. \emph{International Journal of Immunopharmacology}, \bold{22}(12), 1103--1111. \verb{https://doi.org/10.1016/s0192-0561(00)00070-9}
 }
 \seealso{
    \code{\link{dat.bauer2002}}
