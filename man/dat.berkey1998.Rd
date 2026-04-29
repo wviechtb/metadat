@@ -1,10 +1,12 @@
 \name{dat.berkey1998}
 \docType{data}
 \alias{dat.berkey1998}
+\alias{dat.berkey1998r}
 \title{Studies on Treatments for Periodontal Disease}
 \description{Results from 5 trials comparing surgical and non-surgical treatments for medium-severity periodontal disease one year after treatment. \loadmathjax}
 \usage{
 dat.berkey1998
+dat.berkey1998r
 }
 \format{
 The data frame contains the following columns:
@@ -24,6 +26,8 @@ The data frame contains the following columns:
    The dataset includes the results from 5 trials that compared surgical and non-surgical methods for the treatment of medium-severity periodontal disease. Reported outcomes include the change in probing depth (PD) and attachment level (AL) one year after the treatment. The outcome measure used for this meta-analysis was the (raw) mean difference, calculated in such a way that positive values indicate that surgery was more effective than non-surgical treatment in decreasing the probing depth and increasing the attachment level (so, the results from the various trials indicate that surgery is preferable for reducing the probing depth, while non-surgical treatment is preferable for increasing the attachment level). Since each trial provides effect size estimates for both outcomes, the estimates are correlated. A multivariate model can be used to meta-analyze the two outcomes simultaneously.
 
    The \code{v1i} and \code{v2i} values are the variances and covariances of the observed effects. In particular, for each study, variables \code{v1i} and \code{v2i} form a \mjeqn{2 \times 2}{2x2} variance-covariance matrix of the observed effects, with the diagonal elements corresponding to the sampling variances of the mean differences (the first for probing depth, the second for attachment level) and the off-diagonal value corresponding to the covariance of the two mean differences. Below, the full (block diagonal) variance-covariance for all studies is constructed from these two variables.
+
+   The dataset \code{dat.berkey1998r} is the same as \code{dat.berkey1998} except that the first row of each study corresponds to outcome \code{AL} and the second to outcome \code{PD} (i.e., the rows are reversed).
 }
 \source{
    Berkey, C. S., Antczak-Bouckoms, A., Hoaglin, D. C., Mosteller, F., & Pihlstrom, B. L. (1995). Multiple-outcomes meta-analysis of treatments for periodontal disease. \emph{Journal of Dental Research}, \bold{74}(4), 1030--1039. \verb{https://doi.org/10.1177/00220345950740040201}
