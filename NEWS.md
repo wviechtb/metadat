@@ -1,3 +1,7 @@
+# metadat 1.7-0 (2026-05-01)
+
+- version bump for the development version
+
 # metadat 1.6-0 (2026-04-29)
 
 - added `dat.demir2022`, `dat.chiarito2020`, `dat.karner2014`, `dat.meeker2017`, `dat.nissen2007`, `dat.bauer2002`, `dat.huber2000`, `dat.feng2019`, `dat.greb2008`, `dat.greenland1992`, `dat.higgins2008`, `dat.thompson1999`, `dat.lloyd2010`, `dat.moore1998`, `dat.poole2003`, `dat.quan2000`, `dat.steurer2006`, `dat.tian2009`, `dat.rivera2025`, `dat.anker2025`, `dat.metap`, and `dat.berkey1998r`

@@ -2,7 +2,7 @@ pandoc: '2.5'
 pkgdown: 2.2.0
 pkgdown_sha: ~
 articles: {}
-last_built: 2026-04-29T13:26Z
+last_built: 2026-05-01T08:07Z
 urls:
   reference: https://wviechtb.github.io/metadat/reference
   article: https://wviechtb.github.io/metadat/articles
