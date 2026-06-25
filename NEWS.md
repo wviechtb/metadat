@@ -1,6 +1,6 @@
-# metadat 1.7-0 (2026-05-01)
+# metadat 1.7-1 (2026-06-25)
 
-- version bump for the development version
+- added `dat.haeuser2009`
 
 # metadat 1.6-0 (2026-04-29)
 

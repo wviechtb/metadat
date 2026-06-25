@@ -1,0 +1,72 @@
+study               ref  year  country          female  white   mage  duration  med             jadad   vantulder  tgrp  cgrp  outcome  type    nti     mti  sdti  nci    mci   sdci
+"Carette et al."    51   1986  Canada           92.6    NA      41.8  9         amitriptyline   4       9          t1    c1    pain     raw      27    4.30  3.00   32   5.00   3.00
+"Carette et al."    52   1995  Canada           95.5    NA      43.8  8         amitriptyline   4       8          t2    c2    pain     raw      22    5.07  3.22   22   7.13   2.41
+"Carette et al."    52   1995  Canada           95.5    NA      43.8  8         amitriptyline   4       8          t2    c2    fatigue  raw      22    5.62  3.07   20   7.64   1.80
+"Carette et al."    52   1995  Canada           95.5    NA      43.8  8         amitriptyline   4       8          t2    c2    sleep    raw      22    3.93  3.14   20   6.51   2.69
+"Ginsberg et al."   53   1998  Belgium          87.9    NA      39.7  4         pirlindole      3       7          t3    c3    pain     raw      33    4.85  2.11   28   6.79   1.53
+"Ginsberg et al."   54   1996  Belgium          83      92      46    8         amitriptyline   4       8          t4    c4    pain     raw      20    3.80  2.40   20   7.00   1.30
+"Ginsberg et al."   54   1996  Belgium          83      92      46    8         amitriptyline   4       8          t4    c4    fatigue  raw      20    3.80  2.50   20   5.90   2.20
+"Ginsberg et al."   54   1996  Belgium          83      92      46    8         amitriptyline   4       8          t4    c4    sleep    raw      24    2.60  3.10   22   5.10   3.00
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         fluoxetine      5       7          t5    c5    pain     raw      22    5.75  2.57   19   8.15   1.65
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         fluoxetine      5       7          t5    c5    fatigue  raw      22    6.86  2.41   19   7.37   2.51
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         fluoxetine      5       7          t5    c5    sleep    raw      22    6.66  2.66   19   7.46   2.39
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         fluoxetine      5       7          t5    c5    mood     raw      22    7.80  4.70   19   9.30   6.50
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         fluoxetine      5       7          t5    c5    qol      raw      22   47.60 19.80   19  58.50  17.10
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         amitriptyline   5       7          t6    c5    pain     raw      21    6.40  2.83   19   8.15   1.65
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         amitriptyline   5       7          t6    c5    fatigue  raw      21    6.77  2.99   19   7.37   2.51
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         amitriptyline   5       7          t6    c5    sleep    raw      21    5.70  3.48   19   7.46   2.39
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         amitriptyline   5       7          t6    c5    mood     raw      20    8.70  6.00   19   9.30   6.50
+"Goldenberg et al." 55   1996  "United States"  90      100     43.2  6         amitriptyline   5       7          t6    c5    qol      raw      21   52.30 22.90   19  58.50  17.10
+"Hannonen et al."   56   1998  Finland          100     NA      49.7  12        moclobemide     5       10         t7    c7    pain     raw      30    4.50  2.70   30   5.20   2.70
+"Hannonen et al."   56   1998  Finland          100     NA      49.7  12        moclobemide     5       10         t7    c7    fatigue  raw      30    4.90  2.70   30   4.60   2.60
+"Hannonen et al."   56   1998  Finland          100     NA      49.7  12        moclobemide     5       10         t7    c7    sleep    raw      30    5.80  3.00   30   4.80   2.90
+"Hannonen et al."   56   1998  Finland          100     NA      49.7  12        amitriptyline   5       10         t8    c7    pain     raw      32    4.50  2.80   30   5.20   2.70
+"Hannonen et al."   56   1998  Finland          100     NA      49.7  12        amitriptyline   5       10         t8    c7    fatigue  raw      32    4.70  2.80   30   4.60   2.60
+"Hannonen et al."   56   1998  Finland          100     NA      49.7  12        amitriptyline   5       10         t8    c7    sleep    raw      32    3.60  2.80   30   4.80   2.90
+"Kempenaers et al." 63   1994  Belgium          100     NA      38.7  8         amitriptyline   3       7          t9    c9    pain     raw       6    3.20  3.10    8   3.70   2.80
+"Kempenaers et al." 63   1994  Belgium          100     NA      38.7  8         amitriptyline   3       7          t9    c9    sleep    raw       6    4.70  3.00    8   6.00   2.20
+"Wolfe et al."      61   1994  "United States"  100     100     48    6         fluoxetine      3       7          t10   c10   pain     raw      15    1.60  0.79    9   1.60   0.79
+"Wolfe et al."      61   1994  "United States"  100     100     48    6         fluoxetine      3       7          t10   c10   fatigue  raw      15    7.70  3.98    9   7.80   4.20
+"Wolfe et al."      61   1994  "United States"  100     100     48    6         fluoxetine      3       7          t10   c10   sleep    raw      15    7.60  3.10    9   7.60   3.83
+"Wolfe et al."      61   1994  "United States"  100     100     48    6         fluoxetine      3       7          t10   c10   mood     raw      15    8.30  5.86    9  13.90  10.82
+"Yavuzer et al."    62   1998  Turkey           58.3    NA      33.2  6         moclobemide     1       6          t11   c11   pain     raw      26    1.57  0.88   22   1.88   0.83
+"Yavuzer et al."    62   1998  Turkey           58.3    NA      33.2  6         moclobemide     1       6          t11   c11   mood     raw      28    5.54  5.56   25   5.36   2.68
+"Heymann et al."    57   2001  Brazil           100     65      53.4  8         amitriptyline   5       8          t12   c12   qol      raw      37   39.97 19.88   33  51.68  22.90
+"Heymann et al."    57   2001  Brazil           100     65      53.4  8         nortiptyline    5       8          t13   c12   qol      raw      36   48.78 21.84   33  51.68  22.90
+"Anderberg et al."  47   2000  Sweden           100     NA      48.6  16        citalopram      4       9          t14   c14   pain     change   17   -1.00  1.86   18   0.00   2.47
+"Anderberg et al."  47   2000  Sweden           100     NA      48.6  16        citalopram      4       9          t14   c14   fatigue  change   17   -0.63  3.01   18  -0.22   2.42
+"Anderberg et al."  47   2000  Sweden           100     NA      48.6  16        citalopram      4       9          t14   c14   sleep    change   17   -0.59  0.62   18  -0.39   1.80
+"Anderberg et al."  47   2000  Sweden           100     NA      48.6  16        citalopram      4       9          t14   c14   mood     change   17   -1.13  2.87   18  -0.33   2.14
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t15   c15   pain     change  116   -2.39  2.37  118  -1.16   2.28
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t15   c15   sleep    change  116   -2.67  3.12  118  -1.71   3.04
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t15   c15   mood     change  111   -3.79  4.34  109  -2.24   4.70
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t15   c15   qol      change  114  -16.72 16.34  115  -8.35  16.40
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t16   c15   pain     change  114   -2.40  2.35  118  -1.16   2.28
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t16   c15   sleep    change  114   -2.69  3.09  118  -1.71   3.04
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t16   c15   mood     change  110   -2.97  4.72  109  -2.24   4.70
+"Arnold et al."     50   2005  "United States"  100     89.5    49.6  12        duloxetine      3       7          t16   c15   qol      change  112  -16.81 16.30  115  -8.35  16.40
+"Arnold et al."     49   2004  "United States"  88.5    88.5    49.9  12        duloxetine      5       8          t17   c17   pain     change  101   -1.98  3.01  103  -1.35   2.94
+"Arnold et al."     49   2004  "United States"  88.5    88.5    49.9  12        duloxetine      5       8          t17   c17   fatigue  change  101   -1.30  2.91  103  -0.88   2.84
+"Arnold et al."     49   2004  "United States"  88.5    88.5    49.9  12        duloxetine      5       8          t17   c17   mood     change   88   -3.32  7.97   89  -1.02   7.83
+"Arnold et al."     49   2004  "United States"  88.5    88.5    49.9  12        duloxetine      5       8          t17   c17   qol      change  101  -13.46 18.29  102  -7.93  17.47
+"Arnold et al."     48   2002  "United States"  100     90      46    12        fluoxetine      4       7          t18   c18   pain     change   19   -2.30  2.40   18  -0.10   2.50
+"Arnold et al."     48   2002  "United States"  100     90      46    12        fluoxetine      4       7          t18   c18   fatigue  change   19   -1.60  2.80   18   0.40   2.80
+"Arnold et al."     48   2002  "United States"  100     90      46    12        fluoxetine      4       7          t18   c18   mood     change   19   -1.50  2.80   18   0.50   2.10
+"Arnold et al."     48   2002  "United States"  100     90      46    12        fluoxetine      4       7          t18   c18   qol      change   19  -11.50 14.80   18  -0.40  15.00
+"Nørregaard et al." 58   1995  Denmark          NA      NA      48    8         citalopram      4       6          t19   c19   pain     change   21    1.00  2.10   21   0.70   1.10
+"Nørregaard et al." 58   1995  Denmark          NA      NA      48    8         citalopram      4       6          t19   c19   fatigue  change   21    0.50  2.20   21   0.10   2.00
+"Nørregaard et al." 58   1995  Denmark          NA      NA      48    8         citalopram      4       6          t19   c19   sleep    change   21   -1.00  2.90   21  -0.10   2.50
+"Nørregaard et al." 58   1995  Denmark          NA      NA      48    8         citalopram      4       6          t19   c19   mood     change   21   -1.00  6.10   21  -0.90   7.90
+"Nørregaard et al." 58   1995  Denmark          NA      NA      48    8         citalopram      4       6          t19   c19   qol      change   21    0.00  0.40   21   0.00   0.40
+"Patkar et al."     59   2007  "United States"  94      NA      47.9  12        paroxetine      5       9          t20   c20   pain     change   38  -12.20 18.50   48  -8.80  16.60
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t21   c21   pain     change   79   -2.22  2.49  144  -1.43   2.52
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t21   c21   fatigue  change   79   -1.79  3.91  144  -1.69   4.08
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t21   c21   qol      change   79  -14.77 16.71  144 -10.42  17.52
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t22   c21   pain     change  150   -1.98  2.57  144  -1.43   2.52
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t22   c21   fatigue  change  150   -1.83  4.16  144  -1.69   4.08
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t22   c21   qol      change  150  -12.28 17.64  144 -10.42  17.52
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t23   c21   pain     change  147   -2.26  2.55  144  -1.43   2.52
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t23   c21   fatigue  change  147   -2.12  4.00  144  -1.69   4.08
+"Russell et al."    64   2008  "United States"  94.8    84.2    51.0  28        duloxetine      4       8          t23   c21   qol      change  147  -13.86 17.10  144 -10.42  17.52
+"Vitton et al."     60   2004  "United States"  97      47      84    12        milnacipran     3       7          t24   c24   pain     change   97   -2.30  3.00   28  -0.90   2.90
+"Vitton et al."     60   2004  "United States"  97      47      84    12        milnacipran     3       7          t24   c24   sleep    change   97   -1.30  3.10   28  -0.50   2.90

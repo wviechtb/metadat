@@ -72,14 +72,14 @@ dat$species.id.phy <- dat$species.id
 ### fit multilevel phylogenetic meta-analytic model
 res <- rma.mv(yi, vi,
    random = list(~ 1 | study.id, ~ 1 | effect.size.id, ~ 1 | species.id, ~ 1 | species.id.phy),
-   R=list(species.id.phy=A), data=dat)
+   R = list(species.id.phy=A), data=dat)
 res
 
 ### examine if spatial and/or temporal pooling of data tends to yield larger correlations
 res <- rma.mv(yi, vi,
    mods = ~ spatially.pooled * temporally.pooled,
    random = list(~ 1 | study.id, ~ 1 | effect.size.id, ~ 1 | species.id, ~ 1 | species.id.phy),
-   R=list(species.id.phy=A), data=dat)
+   R = list(species.id.phy=A), data=dat)
 res
 
 ### estimated average correlation without pooling, when pooling spatially,

@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.7-0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.7-1</span>
       </span>
     </div>
 
@@ -174,11 +174,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 3175</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of events: e = 2981</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                      proportion         95%-CI</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      proportion         95% CI</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Common effect model       0.939 [0.930; 0.947]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model      0.924 [0.884; 0.951]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95%-CIs):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95% CIs):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tau^2 = 0.4762; tau = 0.6900; I^2 = 88.4% [80.7%; 93.0%]; H = 2.93 [2.28; 3.78]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of heterogeneity:</span>
@@ -192,7 +192,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> - Calculation of I^2 based on Q</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> - Logit transformation</span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">report1</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    proportion         95%-CI</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                    proportion         95% CI</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Lovgren 2016            0.811 [0.732; 0.875]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Lovgren 2018            0.960 [0.927; 0.980]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Stasiak 2020            0.973 [0.933; 0.993]</span>
@@ -208,11 +208,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 3175</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of events: e = 2981</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                      proportion         95%-CI</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      proportion         95% CI</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Common effect model       0.939 [0.930; 0.947]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model      0.924 [0.884; 0.951]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95%-CIs):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95% CIs):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tau^2 = 0.4762; tau = 0.6900; I^2 = 88.4% [80.7%; 93.0%]; H = 2.93 [2.28; 3.78]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of heterogeneity:</span>
@@ -234,7 +234,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] 0.7919 0.3416 0.2609 0.8571 0.7193 0.9157 0.8824 0.7885 0.9279 0.9531</span>
 <span class="r-in"><span><span class="va">report2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/metaprop.html" class="external-link">metaprop</a></span><span class="op">(</span><span class="va">TN</span>, <span class="va">n2</span>, data<span class="op">=</span><span class="va">dat</span>, common<span class="op">=</span><span class="cn">TRUE</span>, random<span class="op">=</span><span class="cn">TRUE</span>, studlab<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">Author</span>, <span class="va">Year</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">report2</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                    proportion         95%-CI</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                    proportion         95% CI</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Lovgren 2016            0.792 [0.724; 0.850]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Lovgren 2018            0.342 [0.276; 0.411]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Stasiak 2020            0.261 [0.183; 0.351]</span>
@@ -250,11 +250,11 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 988</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of events: e = 672</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                      proportion         95%-CI</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                      proportion         95% CI</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Common effect model       0.680 [0.650; 0.709]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model      0.795 [0.634; 0.897]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95%-CIs):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95% CIs):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tau^2 = 1.5719; tau = 1.2537; I^2 = 96.3% [94.7%; 97.4%]; H = 5.19 [4.33; 6.22]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Test of heterogeneity:</span>
@@ -275,7 +275,7 @@
 <span class="r-in"><span><span class="va">report3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/meta/man/metabin.html" class="external-link">metabin</a></span><span class="op">(</span><span class="va">TP</span>, <span class="va">n1</span>, <span class="va">n2</span><span class="op">-</span><span class="va">TN</span>, <span class="va">n2</span>, data<span class="op">=</span><span class="va">dat</span>, sm<span class="op">=</span><span class="st">"OR"</span>,common<span class="op">=</span><span class="cn">FALSE</span>, random<span class="op">=</span><span class="cn">TRUE</span>,</span></span>
 <span class="r-in"><span>                   studlab<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">Author</span>, <span class="va">Year</span><span class="op">)</span>, allstudies<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">report3</span><span class="op">)</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                         OR             95%-CI %W(random)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                         OR             95% CI %W(random)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Lovgren 2016        16.332 [  9.178;  29.062]       11.0</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Lovgren 2018        12.295 [  6.128;  24.670]       10.7</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Stasiak 2020        12.882 [  4.388;  37.821]        9.3</span>
@@ -291,10 +291,10 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of observations: o = 4163 (o.e = 3175, o.c = 988)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Number of events: e = 3297</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                          OR           95%-CI     z  p-value</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                          OR           95% CI     z  p-value</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random effects model 45.300 [22.409; 91.575] 10.62 &lt; 0.0001</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95%-CIs):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Quantifying heterogeneity (with 95% CIs):</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  tau^2 = 1.0834 [0.4077; 4.0424]; tau = 1.0409 [0.6385; 2.0106]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  I^2 = 86.4% [77.0%; 92.0%]; H = 2.72 [2.08; 3.54]</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
