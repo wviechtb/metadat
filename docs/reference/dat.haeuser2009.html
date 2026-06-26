@@ -29,7 +29,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">metadat</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.7-1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.7-2</span>
       </span>
     </div>
 
@@ -91,10 +91,11 @@
 
     <div id="format">
     <h2>Format</h2>
-    <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>study authors</td></tr><tr><td><b>ref</b></td><td><code>numeric</code></td><td>reference number as in article</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>country</b></td><td><code>numeric</code></td><td>country where study was conducted</td></tr><tr><td><b>female</b></td><td><code>numeric</code></td><td>percent of female participants</td></tr><tr><td><b>white</b></td><td><code>numeric</code></td><td>percent of white participants</td></tr><tr><td><b>mage</b></td><td><code>numeric</code></td><td>mean age of participants</td></tr><tr><td><b>duration</b></td><td><code>numeric</code></td><td>study / treatment duration</td></tr><tr><td><b>med</b></td><td><code>numeric</code></td><td>antidepressant medication</td></tr><tr><td><b>jadad</b></td><td><code>numeric</code></td><td>Jadad score</td></tr><tr><td><b>vantulder</b></td><td><code>numeric</code></td><td>van Tulder score</td></tr><tr><td><b>tgrp</b></td><td><code>numeric</code></td><td>treatment group identifier</td></tr><tr><td><b>cgrp</b></td><td><code>numeric</code></td><td>control group identifier</td></tr><tr><td><b>outcome</b></td><td><code>numeric</code></td><td>outcome variable</td></tr><tr><td><b>type</b></td><td><code>numeric</code></td><td>whether means reflect raw means of mean changes</td></tr><tr><td><b>nti</b></td><td><code>numeric</code></td><td>number of participants in the treatment group</td></tr><tr><td><b>mti</b></td><td><code>numeric</code></td><td>mean (change) in the treatment group</td></tr><tr><td><b>sdti</b></td><td><code>numeric</code></td><td>standard deviation in the treatment group</td></tr><tr><td><b>nci</b></td><td><code>numeric</code></td><td>number of participants in the control group</td></tr><tr><td><b>mci</b></td><td><code>numeric</code></td><td>mean (change) in the control group</td></tr><tr><td><b>sdci</b></td><td><code>numeric</code></td><td>standard deviation in the control group</td></tr></table></div>
+    <p>The data frame contains the following columns:</p><table class="table table"><tr><td><b>study</b></td><td><code>character</code></td><td>study authors</td></tr><tr><td><b>ref</b></td><td><code>numeric</code></td><td>reference number as in article</td></tr><tr><td><b>year</b></td><td><code>numeric</code></td><td>publication year</td></tr><tr><td><b>country</b></td><td><code>character</code></td><td>country where study was conducted</td></tr><tr><td><b>female</b></td><td><code>numeric</code></td><td>percent of female participants</td></tr><tr><td><b>white</b></td><td><code>numeric</code></td><td>percent of white participants</td></tr><tr><td><b>mage</b></td><td><code>numeric</code></td><td>mean age of participants</td></tr><tr><td><b>duration</b></td><td><code>numeric</code></td><td>study / treatment duration</td></tr><tr><td><b>med</b></td><td><code>character</code></td><td>antidepressant medication</td></tr><tr><td><b>jadad</b></td><td><code>numeric</code></td><td>Jadad score</td></tr><tr><td><b>vantulder</b></td><td><code>numeric</code></td><td>van Tulder score</td></tr><tr><td><b>tgrp</b></td><td><code>character</code></td><td>treatment group identifier</td></tr><tr><td><b>cgrp</b></td><td><code>character</code></td><td>control group identifier</td></tr><tr><td><b>outcome</b></td><td><code>character</code></td><td>outcome variable (pain, fatigue, sleep, mood, qol)</td></tr><tr><td><b>type</b></td><td><code>character</code></td><td>whether means reflect raw means of mean changes</td></tr><tr><td><b>nti</b></td><td><code>numeric</code></td><td>number of participants in the treatment group</td></tr><tr><td><b>mti</b></td><td><code>numeric</code></td><td>mean (change) in the treatment group</td></tr><tr><td><b>sdti</b></td><td><code>numeric</code></td><td>standard deviation in the treatment group</td></tr><tr><td><b>nci</b></td><td><code>numeric</code></td><td>number of participants in the control group</td></tr><tr><td><b>mci</b></td><td><code>numeric</code></td><td>mean (change) in the control group</td></tr><tr><td><b>sdci</b></td><td><code>numeric</code></td><td>standard deviation in the control group</td></tr></table></div>
     <div id="details">
     <h2>Details</h2>
-    <p>The meta-analysis by Häuser et al. (2009) examined the efficacy of antidepressants in the treatment of fibromyalgia syndrome. Several outcomes were assessed in the studies, including pain, fatigue, sleep, (depressed) mood, and health-related quality of life (variable <code>outcome</code>).</p>
+    <p>The meta-analysis by Häuser et al. (2009) examined the efficacy of antidepressants in the treatment of fibromyalgia syndrome. Several outcomes were assessed in the studies, including pain, fatigue, sleep disturbances, (depressed) mood, and health-related quality of life (variable <code>outcome</code>). For all outcomes, a higher mean reflects a more negative outcome.</p>
+<p>Riley et al. (2011) used these data in their discussion of prediction intervals in the context of the random-effects model for meta-analysis.</p>
     </div>
     <div id="note">
     <h2>Note</h2>
@@ -106,173 +107,47 @@
     <h2>Source</h2>
     <p>Häuser, W., Bernardy, K., Üçeyler, N., &amp; Sommer, C. (2009). Treatment of fibromyalgia syndrome with antidepressants: A meta-analysis. <em>Journal of the American Medical Association</em>, <b>301</b>(2), 198–209. <a href="https://doi.org/10.1001/jama.2008.944" class="external-link">https://doi.org/10.1001/jama.2008.944</a></p>
     </div>
+    <div id="references">
+    <h2>References</h2>
+    <p>Riley, R. D., Higgins, J. P. T., &amp; Deeks, J. J. (2011). Interpretation of random effects meta-analyses. <em>British Medical Journal</em>, <b>342</b>, d549. <a href="https://doi.org/10.1136/bmj.d549" class="external-link">https://doi.org/10.1136/bmj.d549</a></p>
+    </div>
     <div id="author">
     <h2>Author</h2>
     <p>Wolfgang Viechtbauer, <a href="mailto:wvb@metafor-project.org">wvb@metafor-project.org</a>, <a href="https://www.metafor-project.org" class="external-link">https://www.metafor-project.org</a></p>
     </div>
     <div id="concepts">
     <h2>Concepts</h2>
-    <p>medicine, standardized mean differences, multilevel models, cluster-robust inference</p>
+    <p>medicine, standardized mean differences, multilevel models, cluster-robust inference, multivariate models</p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data into 'dat' and examine data</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co">### copy data to 'dat' and examine the data</span></span></span>
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat.haeuser2009</span></span></span>
-<span class="r-in"><span><span class="va">dat</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>                study ref year       country female white mage duration           med jadad vantulder</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1     Carette et al.  51 1986        Canada   92.6    NA 41.8        9 amitriptyline     4         9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2     Carette et al.  52 1995        Canada   95.5    NA 43.8        8 amitriptyline     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3     Carette et al.  52 1995        Canada   95.5    NA 43.8        8 amitriptyline     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4     Carette et al.  52 1995        Canada   95.5    NA 43.8        8 amitriptyline     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    Ginsberg et al.  53 1998       Belgium   87.9    NA 39.7        4    pirlindole     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    Ginsberg et al.  54 1996       Belgium   83.0  92.0 46.0        8 amitriptyline     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    Ginsberg et al.  54 1996       Belgium   83.0  92.0 46.0        8 amitriptyline     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    Ginsberg et al.  54 1996       Belgium   83.0  92.0 46.0        8 amitriptyline     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9  Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6    fluoxetine     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6    fluoxetine     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6    fluoxetine     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6    fluoxetine     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6    fluoxetine     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6 amitriptyline     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 15 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6 amitriptyline     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 16 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6 amitriptyline     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 17 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6 amitriptyline     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18 Goldenberg et al.  55 1996 United States   90.0 100.0 43.2        6 amitriptyline     5         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19   Hannonen et al.  56 1998       Finland  100.0    NA 49.7       12   moclobemide     5        10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20   Hannonen et al.  56 1998       Finland  100.0    NA 49.7       12   moclobemide     5        10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21   Hannonen et al.  56 1998       Finland  100.0    NA 49.7       12   moclobemide     5        10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22   Hannonen et al.  56 1998       Finland  100.0    NA 49.7       12 amitriptyline     5        10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23   Hannonen et al.  56 1998       Finland  100.0    NA 49.7       12 amitriptyline     5        10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24   Hannonen et al.  56 1998       Finland  100.0    NA 49.7       12 amitriptyline     5        10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25 Kempenaers et al.  63 1994       Belgium  100.0    NA 38.7        8 amitriptyline     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26 Kempenaers et al.  63 1994       Belgium  100.0    NA 38.7        8 amitriptyline     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27      Wolfe et al.  61 1994 United States  100.0 100.0 48.0        6    fluoxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28      Wolfe et al.  61 1994 United States  100.0 100.0 48.0        6    fluoxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29      Wolfe et al.  61 1994 United States  100.0 100.0 48.0        6    fluoxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30      Wolfe et al.  61 1994 United States  100.0 100.0 48.0        6    fluoxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31    Yavuzer et al.  62 1998        Turkey   58.3    NA 33.2        6   moclobemide     1         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32    Yavuzer et al.  62 1998        Turkey   58.3    NA 33.2        6   moclobemide     1         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33    Heymann et al.  57 2001        Brazil  100.0  65.0 53.4        8 amitriptyline     5         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34    Heymann et al.  57 2001        Brazil  100.0  65.0 53.4        8  nortiptyline     5         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35  Anderberg et al.  47 2000        Sweden  100.0    NA 48.6       16    citalopram     4         9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36  Anderberg et al.  47 2000        Sweden  100.0    NA 48.6       16    citalopram     4         9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37  Anderberg et al.  47 2000        Sweden  100.0    NA 48.6       16    citalopram     4         9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38  Anderberg et al.  47 2000        Sweden  100.0    NA 48.6       16    citalopram     4         9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 43     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 44     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 45     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 46     Arnold et al.  50 2005 United States  100.0  89.5 49.6       12    duloxetine     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 47     Arnold et al.  49 2004 United States   88.5  88.5 49.9       12    duloxetine     5         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 48     Arnold et al.  49 2004 United States   88.5  88.5 49.9       12    duloxetine     5         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 49     Arnold et al.  49 2004 United States   88.5  88.5 49.9       12    duloxetine     5         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 50     Arnold et al.  49 2004 United States   88.5  88.5 49.9       12    duloxetine     5         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 51     Arnold et al.  48 2002 United States  100.0  90.0 46.0       12    fluoxetine     4         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 52     Arnold et al.  48 2002 United States  100.0  90.0 46.0       12    fluoxetine     4         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 53     Arnold et al.  48 2002 United States  100.0  90.0 46.0       12    fluoxetine     4         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 54     Arnold et al.  48 2002 United States  100.0  90.0 46.0       12    fluoxetine     4         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 55 Nørregaard et al.  58 1995       Denmark     NA    NA 48.0        8    citalopram     4         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 56 Nørregaard et al.  58 1995       Denmark     NA    NA 48.0        8    citalopram     4         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 57 Nørregaard et al.  58 1995       Denmark     NA    NA 48.0        8    citalopram     4         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 58 Nørregaard et al.  58 1995       Denmark     NA    NA 48.0        8    citalopram     4         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 59 Nørregaard et al.  58 1995       Denmark     NA    NA 48.0        8    citalopram     4         6</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 60     Patkar et al.  59 2007 United States   94.0    NA 47.9       12    paroxetine     5         9</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 61    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 62    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 63    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 64    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 65    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 66    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 67    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 68    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 69    Russell et al.  64 2008 United States   94.8  84.2 51.0       28    duloxetine     4         8</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 70     Vitton et al.  60 2004 United States   97.0  47.0 84.0       12   milnacipran     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 71     Vitton et al.  60 2004 United States   97.0  47.0 84.0       12   milnacipran     3         7</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>    tgrp cgrp outcome   type nti    mti  sdti nci    mci  sdci</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 1    t1   c1    pain    raw  27   4.30  3.00  32   5.00  3.00</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 2    t2   c2    pain    raw  22   5.07  3.22  22   7.13  2.41</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 3    t2   c2 fatigue    raw  22   5.62  3.07  20   7.64  1.80</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 4    t2   c2   sleep    raw  22   3.93  3.14  20   6.51  2.69</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 5    t3   c3    pain    raw  33   4.85  2.11  28   6.79  1.53</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 6    t4   c4    pain    raw  20   3.80  2.40  20   7.00  1.30</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 7    t4   c4 fatigue    raw  20   3.80  2.50  20   5.90  2.20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 8    t4   c4   sleep    raw  24   2.60  3.10  22   5.10  3.00</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 9    t5   c5    pain    raw  22   5.75  2.57  19   8.15  1.65</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 10   t5   c5 fatigue    raw  22   6.86  2.41  19   7.37  2.51</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 11   t5   c5   sleep    raw  22   6.66  2.66  19   7.46  2.39</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 12   t5   c5    mood    raw  22   7.80  4.70  19   9.30  6.50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 13   t5   c5     qol    raw  22  47.60 19.80  19  58.50 17.10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 14   t6   c5    pain    raw  21   6.40  2.83  19   8.15  1.65</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 15   t6   c5 fatigue    raw  21   6.77  2.99  19   7.37  2.51</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 16   t6   c5   sleep    raw  21   5.70  3.48  19   7.46  2.39</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 17   t6   c5    mood    raw  20   8.70  6.00  19   9.30  6.50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 18   t6   c5     qol    raw  21  52.30 22.90  19  58.50 17.10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 19   t7   c7    pain    raw  30   4.50  2.70  30   5.20  2.70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 20   t7   c7 fatigue    raw  30   4.90  2.70  30   4.60  2.60</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 21   t7   c7   sleep    raw  30   5.80  3.00  30   4.80  2.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 22   t8   c7    pain    raw  32   4.50  2.80  30   5.20  2.70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 23   t8   c7 fatigue    raw  32   4.70  2.80  30   4.60  2.60</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 24   t8   c7   sleep    raw  32   3.60  2.80  30   4.80  2.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 25   t9   c9    pain    raw   6   3.20  3.10   8   3.70  2.80</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 26   t9   c9   sleep    raw   6   4.70  3.00   8   6.00  2.20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 27  t10  c10    pain    raw  15   1.60  0.79   9   1.60  0.79</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 28  t10  c10 fatigue    raw  15   7.70  3.98   9   7.80  4.20</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 29  t10  c10   sleep    raw  15   7.60  3.10   9   7.60  3.83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 30  t10  c10    mood    raw  15   8.30  5.86   9  13.90 10.82</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 31  t11  c11    pain    raw  26   1.57  0.88  22   1.88  0.83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 32  t11  c11    mood    raw  28   5.54  5.56  25   5.36  2.68</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 33  t12  c12     qol    raw  37  39.97 19.88  33  51.68 22.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 34  t13  c12     qol    raw  36  48.78 21.84  33  51.68 22.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 35  t14  c14    pain change  17  -1.00  1.86  18   0.00  2.47</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 36  t14  c14 fatigue change  17  -0.63  3.01  18  -0.22  2.42</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 37  t14  c14   sleep change  17  -0.59  0.62  18  -0.39  1.80</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 38  t14  c14    mood change  17  -1.13  2.87  18  -0.33  2.14</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 39  t15  c15    pain change 116  -2.39  2.37 118  -1.16  2.28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 40  t15  c15   sleep change 116  -2.67  3.12 118  -1.71  3.04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 41  t15  c15    mood change 111  -3.79  4.34 109  -2.24  4.70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 42  t15  c15     qol change 114 -16.72 16.34 115  -8.35 16.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 43  t16  c15    pain change 114  -2.40  2.35 118  -1.16  2.28</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 44  t16  c15   sleep change 114  -2.69  3.09 118  -1.71  3.04</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 45  t16  c15    mood change 110  -2.97  4.72 109  -2.24  4.70</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 46  t16  c15     qol change 112 -16.81 16.30 115  -8.35 16.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 47  t17  c17    pain change 101  -1.98  3.01 103  -1.35  2.94</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 48  t17  c17 fatigue change 101  -1.30  2.91 103  -0.88  2.84</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 49  t17  c17    mood change  88  -3.32  7.97  89  -1.02  7.83</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 50  t17  c17     qol change 101 -13.46 18.29 102  -7.93 17.47</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 51  t18  c18    pain change  19  -2.30  2.40  18  -0.10  2.50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 52  t18  c18 fatigue change  19  -1.60  2.80  18   0.40  2.80</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 53  t18  c18    mood change  19  -1.50  2.80  18   0.50  2.10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 54  t18  c18     qol change  19 -11.50 14.80  18  -0.40 15.00</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 55  t19  c19    pain change  21   1.00  2.10  21   0.70  1.10</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 56  t19  c19 fatigue change  21   0.50  2.20  21   0.10  2.00</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 57  t19  c19   sleep change  21  -1.00  2.90  21  -0.10  2.50</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 58  t19  c19    mood change  21  -1.00  6.10  21  -0.90  7.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 59  t19  c19     qol change  21   0.00  0.40  21   0.00  0.40</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 60  t20  c20    pain change  38 -12.20 18.50  48  -8.80 16.60</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 61  t21  c21    pain change  79  -2.22  2.49 144  -1.43  2.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 62  t21  c21 fatigue change  79  -1.79  3.91 144  -1.69  4.08</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 63  t21  c21     qol change  79 -14.77 16.71 144 -10.42 17.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 64  t22  c21    pain change 150  -1.98  2.57 144  -1.43  2.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 65  t22  c21 fatigue change 150  -1.83  4.16 144  -1.69  4.08</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 66  t22  c21     qol change 150 -12.28 17.64 144 -10.42 17.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 67  t23  c21    pain change 147  -2.26  2.55 144  -1.43  2.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 68  t23  c21 fatigue change 147  -2.12  4.00 144  -1.69  4.08</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 69  t23  c21     qol change 147 -13.86 17.10 144 -10.42 17.52</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 70  t24  c24    pain change  97  -2.30  3.00  28  -0.90  2.90</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> 71  t24  c24   sleep change  97  -1.30  3.10  28  -0.50  2.90</span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             study ref year country female white mage duration           med jadad vantulder tgrp cgrp</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1  Carette et al.  51 1986  Canada   92.6    NA 41.8        9 amitriptyline     4         9   t1   c1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2  Carette et al.  52 1995  Canada   95.5    NA 43.8        8 amitriptyline     4         8   t2   c2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3  Carette et al.  52 1995  Canada   95.5    NA 43.8        8 amitriptyline     4         8   t2   c2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4  Carette et al.  52 1995  Canada   95.5    NA 43.8        8 amitriptyline     4         8   t2   c2</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 Ginsberg et al.  53 1998 Belgium   87.9    NA 39.7        4    pirlindole     3         7   t3   c3</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 Ginsberg et al.  54 1996 Belgium   83.0    92 46.0        8 amitriptyline     4         8   t4   c4</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   outcome type nti  mti sdti nci  mci sdci</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1    pain  raw  27 4.30 3.00  32 5.00 3.00</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2    pain  raw  22 5.07 3.22  22 7.13 2.41</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 fatigue  raw  22 5.62 3.07  20 7.64 1.80</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4   sleep  raw  22 3.93 3.14  20 6.51 2.69</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5    pain  raw  33 4.85 2.11  28 6.79 1.53</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6    pain  raw  20 3.80 2.40  20 7.00 1.30</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### load metafor package</span></span></span>
 <span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://www.metafor-project.org" class="external-link">metafor</a></span><span class="op">)</span></span></span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### compute the SMD values for the outcome pain</span></span></span>
-<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SMD"</span>, m1i<span class="op">=</span><span class="va">mti</span>, sd1i<span class="op">=</span><span class="va">sdti</span>, n1i<span class="op">=</span><span class="va">nti</span>,</span></span>
-<span class="r-in"><span>                             m2i<span class="op">=</span><span class="va">mci</span>, sd2i<span class="op">=</span><span class="va">sdci</span>, n2i<span class="op">=</span><span class="va">nci</span>,</span></span>
-<span class="r-in"><span>                             data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span> <span class="op">==</span> <span class="st">"pain"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="va">dat</span></span></span>
+<span class="r-in"><span><span class="va">dat.pain</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SMD"</span>, m1i<span class="op">=</span><span class="va">mti</span>, sd1i<span class="op">=</span><span class="va">sdti</span>, n1i<span class="op">=</span><span class="va">nti</span>,</span></span>
+<span class="r-in"><span>                                  m2i<span class="op">=</span><span class="va">mci</span>, sd2i<span class="op">=</span><span class="va">sdci</span>, n2i<span class="op">=</span><span class="va">nci</span>,</span></span>
+<span class="r-in"><span>                                  data<span class="op">=</span><span class="va">dat</span>, subset<span class="op">=</span><span class="va">outcome</span><span class="op">==</span><span class="st">"pain"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat.pain</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>                study ref year       country female white mage duration           med jadad vantulder </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1     Carette et al.  51 1986        Canada   92.6    NA 41.8        9 amitriptyline     4         9 </span>
@@ -323,7 +198,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### fit a random-effects model</span></span></span>
-<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat</span>, method<span class="op">=</span><span class="st">"DL"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.uni.html" class="external-link">rma</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">vi</span>, data<span class="op">=</span><span class="va">dat.pain</span>, method<span class="op">=</span><span class="st">"DL"</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Random-Effects Model (k = 22; tau^2 estimator: DL)</span>
@@ -350,9 +225,20 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span>  -0.43 0.06 -0.55 -0.30 -0.81 -0.04 </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### calculate the prediction interval as suggested by Riley et al. (2011)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, predtype<span class="op">=</span><span class="st">"riley"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   pred   se ci.lb ci.ub pi.lb pi.ub </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  -0.43 0.06 -0.55 -0.30 -0.84 -0.02 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### note: reported as -0.83 to -0.02 in Riley et al. (2011); the discrepancy is due to rounding</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">############################################################################</span></span></span>
+<span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### construct an approximate var-cov matrix of the SMD values accounting for</span></span></span>
 <span class="r-in"><span><span class="co">### the dependency in the estimates due to the use of shared control groups</span></span></span>
-<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">ref</span>, grp1<span class="op">=</span><span class="va">tgrp</span>, grp2<span class="op">=</span><span class="va">cgrp</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">ref</span>, grp1<span class="op">=</span><span class="va">tgrp</span>, grp2<span class="op">=</span><span class="va">cgrp</span>, data<span class="op">=</span><span class="va">dat.pain</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">V</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>         1      2      3      4      5      6      7      8      9     10     11     12     13     14 </span>
@@ -404,7 +290,7 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### fit a multilevel random-effects model</span></span></span>
-<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">ref</span><span class="op">/</span><span class="va">tgrp</span>, data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, random <span class="op">=</span> <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">ref</span><span class="op">/</span><span class="va">tgrp</span>, data<span class="op">=</span><span class="va">dat.pain</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="va">res</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 22; method: REML)</span>
@@ -460,6 +346,195 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    approx t-test and confidence interval, df: Satterthwaite approx)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">############################################################################</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### frequency table for the different outcomes</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/table.html" class="external-link">table</a></span><span class="op">(</span><span class="va">dat</span><span class="op">$</span><span class="va">outcome</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> fatigue    mood    pain     qol   sleep </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      14      10      22      12      13 </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### compute the SMD values for all outcomes</span></span></span>
+<span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SMD"</span>, m1i<span class="op">=</span><span class="va">mti</span>, sd1i<span class="op">=</span><span class="va">sdti</span>, n1i<span class="op">=</span><span class="va">nti</span>,</span></span>
+<span class="r-in"><span>                             m2i<span class="op">=</span><span class="va">mci</span>, sd2i<span class="op">=</span><span class="va">sdci</span>, n2i<span class="op">=</span><span class="va">nci</span>,</span></span>
+<span class="r-in"><span>                             data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### approximate correlation matrix for the 5 outcomes</span></span></span>
+<span class="r-in"><span><span class="va">R</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/utils/read.table.html" class="external-link">read.table</a></span><span class="op">(</span>header<span class="op">=</span><span class="cn">TRUE</span>, text <span class="op">=</span> <span class="st">"</span></span></span>
+<span class="r-in"><span><span class="st">outcome  fatigue  mood  pain   qol sleep</span></span></span>
+<span class="r-in"><span><span class="st">fatigue     1.00  0.60  0.65  0.70  0.60</span></span></span>
+<span class="r-in"><span><span class="st">mood        0.60  1.00  0.55  0.75  0.60</span></span></span>
+<span class="r-in"><span><span class="st">pain        0.65  0.55  1.00  0.70  0.55</span></span></span>
+<span class="r-in"><span><span class="st">qol         0.70  0.75  0.70  1.00  0.60</span></span></span>
+<span class="r-in"><span><span class="st">sleep       0.60  0.60  0.55  0.60  1.00"</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">R</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">as.matrix</a></span><span class="op">(</span><span class="va">R</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">rownames</a></span><span class="op">(</span><span class="va">R</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/colnames.html" class="external-link">colnames</a></span><span class="op">(</span><span class="va">R</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">R</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>         fatigue mood pain  qol sleep</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> fatigue    1.00 0.60 0.65 0.70  0.60</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> mood       0.60 1.00 0.55 0.75  0.60</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> pain       0.65 0.55 1.00 0.70  0.55</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> qol        0.70 0.75 0.70 1.00  0.60</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> sleep      0.60 0.60 0.55 0.60  1.00</span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### construct an approximate var-cov matrix of the SMD values accounting for</span></span></span>
+<span class="r-in"><span><span class="co">### the dependency in the estimates due to the use of shared control groups</span></span></span>
+<span class="r-in"><span><span class="co">### and for multiple outcomes measured in the same sample</span></span></span>
+<span class="r-in"><span><span class="va">V</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/vcalc.html" class="external-link">vcalc</a></span><span class="op">(</span><span class="va">vi</span>, cluster<span class="op">=</span><span class="va">ref</span>, type<span class="op">=</span><span class="va">outcome</span>, rho<span class="op">=</span><span class="va">R</span>,</span></span>
+<span class="r-in"><span>           grp1<span class="op">=</span><span class="va">tgrp</span>, grp2<span class="op">=</span><span class="va">cgrp</span>, data<span class="op">=</span><span class="va">dat</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">ref</span> <span class="op">==</span> <span class="fl">64</span>,<span class="op">]</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>             study ref year       country female white mage duration        med jadad vantulder tgrp </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t21 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t21 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 63 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t21 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 64 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t22 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 65 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t22 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 66 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t22 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 67 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t23 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 68 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t23 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 69 Russell et al.  64 2008 United States   94.8  84.2   51       28 duloxetine     4         8  t23 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    cgrp outcome   type nti    mti  sdti nci    mci  sdci      yi     vi </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 61  c21    pain change  79  -2.22  2.49 144  -1.43  2.52 -0.3137 0.0198 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 62  c21 fatigue change  79  -1.79  3.91 144  -1.69  4.08 -0.0248 0.0196 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 63  c21     qol change  79 -14.77 16.71 144 -10.42 17.52 -0.2515 0.0197 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 64  c21    pain change 150  -1.98  2.57 144  -1.43  2.52 -0.2155 0.0137 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 65  c21 fatigue change 150  -1.83  4.16 144  -1.69  4.08 -0.0339 0.0136 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 66  c21     qol change 150 -12.28 17.64 144 -10.42 17.52 -0.1055 0.0136 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 67  c21    pain change 147  -2.26  2.55 144  -1.43  2.52 -0.3265 0.0139 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 68  c21 fatigue change 147  -2.12  4.00 144  -1.69  4.08 -0.1062 0.0138 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 69  c21     qol change 147 -13.86 17.10 144 -10.42 17.52 -0.1982 0.0138 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/blsplit.html" class="external-link">blsplit</a></span><span class="op">(</span><span class="va">V</span>, <span class="va">dat</span><span class="op">$</span><span class="va">ref</span>, <span class="va">cov2cor</span><span class="op">)</span><span class="op">[[</span><span class="st">"64"</span><span class="op">]</span><span class="op">]</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        1      2      3      4      5      6      7      8      9 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 1.0000 0.6500 0.7000 0.5000 0.3250 0.3500 0.5000 0.3250 0.3500 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 0.6500 1.0000 0.7000 0.3250 0.5000 0.3500 0.3250 0.5000 0.3500 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 0.7000 0.7000 1.0000 0.3500 0.3500 0.5000 0.3500 0.3500 0.5000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 0.5000 0.3250 0.3500 1.0000 0.6500 0.7000 0.5000 0.3250 0.3500 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 0.3250 0.5000 0.3500 0.6500 1.0000 0.7000 0.3250 0.5000 0.3500 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 6 0.3500 0.3500 0.5000 0.7000 0.7000 1.0000 0.3500 0.3500 0.5000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 7 0.5000 0.3250 0.3500 0.5000 0.3250 0.3500 1.0000 0.6500 0.7000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 8 0.3250 0.5000 0.3500 0.3250 0.5000 0.3500 0.6500 1.0000 0.7000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 9 0.3500 0.3500 0.5000 0.3500 0.3500 0.5000 0.7000 0.7000 1.0000 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### fit a multivariate random-effects model allowing for different amounts</span></span></span>
+<span class="r-in"><span><span class="co">### of heterogeneity for the different outcomes</span></span></span>
+<span class="r-in"><span><span class="va">res</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span>, <span class="va">V</span>, mods <span class="op">=</span> <span class="op">~</span> <span class="fl">0</span> <span class="op">+</span> <span class="va">outcome</span>,</span></span>
+<span class="r-in"><span>              random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">ref</span>, <span class="op">~</span> <span class="va">outcome</span> <span class="op">|</span> <span class="va">tgrp</span><span class="op">)</span>,</span></span>
+<span class="r-in"><span>              struct<span class="op">=</span><span class="st">"HCS"</span>, data<span class="op">=</span><span class="va">dat</span>, digits<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="va">res</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 71; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outer factor: ref     (nlvls = 18)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> inner factor: outcome (nlvls = 5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            estim  sqrt  k.lvl  fixed    level </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.1     0.01  0.12     10     no  fatigue </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.2     0.00  0.02      8     no     mood </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.3     0.05  0.21     17     no     pain </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.4     0.02  0.14      7     no      qol </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.5     0.01  0.09     10     no    sleep </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rho         1.00                  no          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outer factor: tgrp    (nlvls = 24)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> inner factor: outcome (nlvls = 5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              estim  sqrt  k.lvl  fixed    level </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.1     0.00  0.00     14     no  fatigue </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.2     0.00  0.06     10     no     mood </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.3     0.00  0.00     22     no     pain </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.4     0.00  0.03     12     no      qol </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.5     0.03  0.17     13     no    sleep </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> phi          -1.00                  no          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 66) = 88.38, p-val = 0.03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 1:5):</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QM(df = 5) = 40.81, p-val &lt; .01</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate    se   zval  pval  ci.lb  ci.ub      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomefatigue     -0.19  0.07  -2.89  &lt;.01  -0.32  -0.06   ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemood        -0.25  0.07  -3.44  &lt;.01  -0.39  -0.11  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomepain        -0.43  0.08  -5.50  &lt;.01  -0.58  -0.28  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeqol         -0.36  0.07  -5.25  &lt;.01  -0.49  -0.23  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomesleep       -0.30  0.09  -3.39  &lt;.01  -0.48  -0.13  *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/stats/predict.html" class="external-link">predict</a></span><span class="op">(</span><span class="va">res</span>, newmods<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/diag.html" class="external-link">diag</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>, tau2.levels<span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, gamma2.levels<span class="op">=</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    pred   se ci.lb ci.ub pi.lb pi.ub tau2.level gamma2.level </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1 -0.19 0.07 -0.32 -0.06 -0.45  0.07    fatigue      fatigue </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 2 -0.25 0.07 -0.39 -0.11 -0.43 -0.06       mood         mood </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 3 -0.43 0.08 -0.58 -0.28 -0.87  0.01       pain         pain </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 4 -0.36 0.07 -0.49 -0.23 -0.68 -0.04        qol          qol </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 5 -0.30 0.09 -0.48 -0.13 -0.71  0.11      sleep        sleep </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co">### use cluster-robust inference methods</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://wviechtb.github.io/metafor/reference/robust.html" class="external-link">robust</a></span><span class="op">(</span><span class="va">res</span>, cluster<span class="op">=</span><span class="va">ref</span>, clubSandwich<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Multivariate Meta-Analysis Model (k = 71; method: REML)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Variance Components:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outer factor: ref     (nlvls = 18)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> inner factor: outcome (nlvls = 5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>            estim  sqrt  k.lvl  fixed    level </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.1     0.01  0.12     10     no  fatigue </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.2     0.00  0.02      8     no     mood </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.3     0.05  0.21     17     no     pain </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.4     0.02  0.14      7     no      qol </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> tau^2.5     0.01  0.09     10     no    sleep </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> rho         1.00                  no          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outer factor: tgrp    (nlvls = 24)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> inner factor: outcome (nlvls = 5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>              estim  sqrt  k.lvl  fixed    level </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.1     0.00  0.00     14     no  fatigue </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.2     0.00  0.06     10     no     mood </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.3     0.00  0.00     22     no     pain </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.4     0.00  0.03     12     no      qol </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> gamma^2.5     0.03  0.17     13     no    sleep </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> phi          -1.00                  no          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test for Residual Heterogeneity:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> QE(df = 66) = 88.38, p-val = 0.03</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of estimates:   71</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Number of clusters:    18</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Estimates per cluster: 1-10 (mean: 3.94, median: 3.5)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Test of Moderators (coefficients 1:5):¹</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> F(df1 = 5, df2 = 2.79) = 11.89, p-val = 0.04</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Model Results:</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                 estimate    se¹   tval¹     df¹  pval¹  ci.lb¹  ci.ub¹      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomefatigue     -0.19  0.06   -3.43    7.29   0.01   -0.32   -0.06     * </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomemood        -0.25  0.05   -4.64    4.42   &lt;.01   -0.39   -0.10    ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomepain        -0.43  0.08   -5.63   13.94   &lt;.01   -0.59   -0.27   *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomeqol         -0.36  0.07   -4.95    8.25   &lt;.01   -0.53   -0.19    ** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> outcomesleep       -0.30  0.06   -5.45    7.27   &lt;.01   -0.43   -0.17   *** </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> ---</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> 1) results based on cluster-robust inference (var-cov estimator: CR2,</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    approx t/F-tests and confidence intervals, df: Satterthwaite approx)</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 </code></pre></div>
     </div>

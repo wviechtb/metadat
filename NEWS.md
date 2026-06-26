@@ -1,6 +1,6 @@
-# metadat 1.7-1 (2026-06-25)
+# metadat 1.7-2 (2026-06-26)
 
-- added `dat.haeuser2009`
+- added `dat.haeuser2009` and `dat.bachmann2010`
 
 # metadat 1.6-0 (2026-04-29)
 
