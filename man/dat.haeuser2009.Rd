@@ -35,7 +35,7 @@ The data frame contains the following columns:
 \details{
    The meta-analysis by Häuser et al. (2009) examined the efficacy of antidepressants in the treatment of fibromyalgia syndrome. Several outcomes were assessed in the studies, including pain, fatigue, sleep disturbances, (depressed) mood, and health-related quality of life (variable \code{outcome}). For all outcomes, a higher mean reflects a more negative outcome.
 
-   Riley et al. (2011) used these data in their discussion of prediction intervals in the context of the random-effects model for meta-analysis.
+   Riley et al. (2011) used part of these data in their discussion of prediction intervals in the context of the random-effects model for meta-analysis.
 }
 \note{
    Some studies compared multiple treatment groups against a common control group. This induces dependency between the observed standardized mean differences, which was not accounted for in the analyses conducted in the original meta-analysis.

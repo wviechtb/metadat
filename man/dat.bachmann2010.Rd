@@ -1,7 +1,7 @@
 \name{dat.bachmann2010}
 \docType{data}
 \alias{dat.bachmann2010}
-\title{Studies on the Inpatient Rehabilitation for Geriatric Patients}
+\title{Studies on Inpatient Rehabilitation for Geriatric Patients}
 \description{Results from studies examining inpatient rehabilitation for geriatric patients with respect to various outcomes.}
 \usage{
 dat.bachmann2010
@@ -37,9 +37,9 @@ The data frame contains the following columns:
 }
 }
 \details{
-   The meta-analysis by Bachmann et al. (2010) assessed the effects of inpatient rehabilitation specifically designed for geriatric patients compared with usual care on functional status, admissions to nursing homes, and mortality. For outcome functional status (\code{outcome=="function"}), odds ratios with corresponding confidence interval bounds are provided via variables \code{or}, \code{lb}, and \code{ub}. For outcomes admissions to nursing homes and mortality, the number of cases and the group sizes for the intervention and control groups are given via variables \code{ai}, \code{n1i}, \code{ci}, and \code{n2i}.
+   The meta-analysis by Bachmann et al. (2010) assessed the effects of inpatient rehabilitation specifically designed for geriatric patients compared with usual care on functional status, admissions to nursing homes, and mortality. For outcome functional status, odds ratios with corresponding confidence interval bounds are provided via variables \code{or}, \code{lb}, and \code{ub}. For outcomes admissions to nursing homes and mortality, the number of cases and the group sizes for the intervention and control groups are given via variables \code{ai}, \code{n1i}, \code{ci}, and \code{n2i}.
 
-   Riley et al. (2011) used these data in their discussion of prediction intervals in the context of the random-effects model for meta-analysis.
+   Riley et al. (2011) used part of these data in their discussion of prediction intervals in the context of the random-effects model for meta-analysis.
 }
 \source{
    Bachmann, S., Finger, C., Huss, A., Egger, M., Stuck, A. E., & Clough-Gorr, K. M. (2010). Inpatient rehabilitation specifically designed for geriatric patients: Systematic review and meta-analysis of randomised controlled trials. \emph{British Medical Journal}, \bold{340}, c1718. \verb{https://doi.org/10.1136/bmj.c1718}
@@ -76,6 +76,9 @@ res <- rma(yi, vi, data=dat, method="DL",
            subset=outcome=="function"&time=="followup")
 res
 predict(res, transf=exp, digits=2)
+
+### compute the PI exactly as in Riley et al. (2011)
+predict(res, transf=exp, digits=2, predtype="riley")
 
 ### compute log risk ratios and corresponding sampling variances from the
 ### reported 2x2 table counts

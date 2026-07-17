@@ -203,7 +203,7 @@
 <span class="r-in"><span><span class="va">dat</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/escalc.html" class="external-link">escalc</a></span><span class="op">(</span>measure<span class="op">=</span><span class="st">"SMD"</span>, m1i<span class="op">=</span><span class="va">exp_mean</span>, m2i<span class="op">=</span><span class="va">con_mean</span>, sd1i<span class="op">=</span><span class="va">sd_e</span>, sd2i<span class="op">=</span><span class="va">sd_c</span>,</span></span>
 <span class="r-in"><span>              n1i<span class="op">=</span><span class="va">exp_n</span>, n2i<span class="op">=</span><span class="va">con_n</span>, data<span class="op">=</span><span class="va">dat</span>, add.measure<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></span>
 <span class="r-wrn co"><span class="r-pr">#&gt;</span> <span class="warning">Warning: </span>One or more SMD values are unusually large (i.e., abs(yi) &gt; 2).</span>
-<span class="r-wrn co"><span class="r-pr">#&gt;</span> Maybe the specified SDs are actually SEs?</span>
+<span class="r-wrn co"><span class="r-pr">#&gt;</span> Maybe SEs were used in place of SDs to compute them?</span>
 <span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="co">### fit model</span></span></span>
 <span class="r-in"><span><span class="va">mod1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://wviechtb.github.io/metafor/reference/rma.mv.html" class="external-link">rma.mv</a></span><span class="op">(</span><span class="va">yi</span> <span class="op">~</span> <span class="fl">1</span>, V <span class="op">=</span> <span class="va">vi</span>, random <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">study_ID</span>, <span class="op">~</span> <span class="fl">1</span> <span class="op">|</span> <span class="va">comp_ID</span><span class="op">)</span>, data <span class="op">=</span> <span class="va">dat</span><span class="op">)</span></span></span>
@@ -243,7 +243,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.0.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.2.1.</p>
   <p class="preferably">Using <a href="https://preferably.amirmasoudabdol.name/?source=footer" class="external-link">preferably</a> template.</p>
 </div>
 

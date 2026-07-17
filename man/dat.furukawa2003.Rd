@@ -10,17 +10,17 @@ dat.furukawa2003
 The data frame contains the following columns:
 \tabular{lll}{
 \bold{author}  \tab \code{character} \tab First author with information on dosage in parentheses \cr
-\bold{Ne}      \tab \code{integer}   \tab number of patients in low TCA group \cr
+\bold{Ne}      \tab \code{integer}   \tab number of patients in the low TCA group \cr
 \bold{Me}      \tab \code{numeric}   \tab depression severity (low TCA) \cr
 \bold{Se}      \tab \code{numeric}   \tab standard deviation (low TCA) \cr
-\bold{Nc}      \tab \code{integer}   \tab number of patients in placebo group \cr
+\bold{Nc}      \tab \code{integer}   \tab number of patients in the placebo group \cr
 \bold{Mc}      \tab \code{numeric}   \tab depression severity (placebo) \cr
 \bold{Sc}      \tab \code{numeric}   \tab standard deviation (placebo) \cr
 \bold{measure} \tab \code{character} \tab depression scale
 }
 }
 \details{
-   Furukawa et al. (2003) carried out a systematic review comparing low dosage tricyclic antidepressants (TCA) with placebo for the treatment of depression. They reported the effect on presence/absence of depression and on depression severity at various time points. Here we focus on depression severity at four weeks. Most studies used some version of the Hamilton Depression Rating Scale, however, some studies used the Montgomery-Asberg Depression Rating Scale. Accordingly, it is not possible to pool the estimated effects directly.
+   Furukawa et al. (2003) carried out a systematic review comparing low dosage tricyclic antidepressants (TCA) with placebo for the treatment of depression. They reported the effect on presence/absence of depression and on depression severity at various time points. Here we focus on depression severity at four weeks (Analysis 1.2.3). Most studies used some version of the Hamilton Depression Rating Scale, however, some studies used the Montgomery-Asberg Depression Rating Scale. Accordingly, it is not possible to pool the estimated effects in terms of mean differences. Instead, standardized mean differences can be used to make the effects comparable across studies using different scales.
 
    This data set is used as an example in Schwarzer et al. (2015).
 }
